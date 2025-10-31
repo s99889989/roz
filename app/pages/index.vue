@@ -1,86 +1,3 @@
-<template>
-  <div class="sp-calc">
-    <h1>SP 自然回復計算機 🧘‍♂️</h1>
-
-    <div class="input-section">
-      <div class="stat-input">
-        <label>INT</label>
-        <button @click="int -= 6">-</button>
-        <input type="number" style="background-color: #5a422a" v-model.number="int" class="appearance-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" />
-        <button @click="int += 6">+</button>
-        <span class="hint">再 {{int_need}} 點 INT 可使自然回復 +1</span>
-      </div>
-
-      <div class="stat-input">
-        <label>MAX SP</label>
-        <button @click="maxsp -= 100">-</button>
-        <input type="number"  style="background-color: #5a422a" v-model.number="maxsp" class="appearance-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" />
-        <button @click="maxsp += 100">+</button>
-        <span class="hint">再 {{maxsp_need}} 點 MAX SP 可使自然回復 +1</span>
-      </div>
-
-      <div class="slider">
-        <label>SP恢復力加成：{{ sprec }}%</label>
-        <input type="range" v-model.number="sprec" min="0" max="100" />
-        <span class="hint">再 {{sprec_need}}% SP恢復力 可使自然回復 +1</span>
-      </div>
-    </div>
-
-    <div class="options">
-      <div class="option">
-        <label><input type="checkbox" v-model="saintChecked" /> 聖母之頌歌(祭司)</label>
-        <p>施展者與畫面內的隊員，SP 自然恢復速度提升為 2 倍。</p>
-      </div>
-
-      <div class="option">
-        <label><input type="checkbox" v-model="meditationChecked" /> 禪心(法師)</label>
-        <p>停止時，每 10 秒額外按 MaxSP 比例恢復 SP（靜止觸發）。</p>
-      </div>
-
-      <!-- 三選一卡片（外觀可用 radio，但樣式可做成類似卡片） -->
-      <div class="option accessory">
-        <p class="opt-title">飾品（選一）</p>
-
-        <label class="radio-row">
-          <input type="radio" v-model="accessory" value="none" />
-          <span>不使用</span>
-        </label>
-
-        <label class="radio-row">
-          <input type="radio" v-model="accessory" value="merman" />
-          <span>人魚士兵卡（鞋） — SP 恢復力 +10%</span>
-        </label>
-
-        <label class="radio-row">
-          <input type="radio" v-model="accessory" value="succubus" />
-          <span>鬼女卡（鞋） — SP 恢復力 +3%</span>
-        </label>
-
-        <label class="radio-row">
-          <input type="radio" v-model="accessory" value="egg" />
-          <span>轉轉蛋卡（鞋） — SP 恢復力 +15%</span>
-        </label>
-      </div>
-    </div>
-
-    <div class="result">
-      <p>每 8 秒回復細節：自然回復 {{ natural.toFixed(0) }} = 綜合 {{ total.toFixed(0) }}</p>
-      <h2>每分鐘平均回魔量</h2>
-      <div class="value">{{ perMinute }}</div>
-    </div>
-
-    <div class="formula">
-      <h3>📘 計算公式說明</h3>
-      <ol>
-        <li>基礎回復量(SPR) = 1 + (INT / 6) + (MAX SP / 100)，INT 和 MAX SP 的計算結果皆捨去小數</li>
-        <li>最終自然回復 = 基礎回復量 × (1 + 恢復力加成%)</li>
-        <li>INT ≥ 120 時額外加成 = 最終自然回復再加 4 + (INT / 2 - 60)</li>
-        <li>綜合回復 = 將各項回復(自然回復、禪心) 換算為相同時間單位後相加並四捨五入</li>
-      </ol>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import {computed, ref} from 'vue'
 
@@ -175,6 +92,130 @@ const total = computed(() => {
 const perMinute = computed(() => Math.round(total.value * (60 / 8)))
 </script>
 
+<template>
+  <div class="sp-calc">
+    <h1>SP 自然回復計算機 🧘‍♂️</h1>
+
+    <div class="input-section">
+
+
+<!--      <div class="flex">-->
+<!--        <form class="max-w-xs mx-auto">-->
+
+<!--          <div class="relative flex items-center max-w-full">-->
+<!--            <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2">-->
+<!--              <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">-->
+<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>-->
+<!--              </svg>-->
+<!--            </button>-->
+<!--            <input type="text" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation" class="bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="999" required />-->
+<!--            <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">-->
+<!--              <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">-->
+<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>-->
+<!--              </svg>-->
+<!--            </button>-->
+<!--          </div>-->
+<!--          <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">Please select a 5 digit number from 0 to 9.</p>-->
+<!--        </form>-->
+<!--        <form class="max-w-xs mx-auto">-->
+
+<!--          <div class="relative flex items-center max-w-full">-->
+<!--            <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2">-->
+<!--              <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">-->
+<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>-->
+<!--              </svg>-->
+<!--            </button>-->
+<!--            <input type="text" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation" class="bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="999" required />-->
+<!--            <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">-->
+<!--              <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">-->
+<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>-->
+<!--              </svg>-->
+<!--            </button>-->
+<!--          </div>-->
+<!--          <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">Please select a 5 digit number from 0 to 9.</p>-->
+<!--        </form>-->
+<!--      </div>-->
+
+      <div class="stat-input">
+        <label>INT</label>
+        <button class=""  @click="int -= 6">-</button>
+        <input type="number" style="background-color: #5a422a" v-model.number="int" class="appearance-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" />
+        <button @click="int += 6">+</button>
+        <span class="hint">再 {{int_need}} 點 INT 可使自然回復 +1</span>
+      </div>
+
+      <div class="stat-input">
+        <label>MAX SP</label>
+        <button @click="maxsp -= 100">-</button>
+        <input type="number"  style="background-color: #5a422a" v-model.number="maxsp" class="appearance-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" />
+        <button @click="maxsp += 100">+</button>
+        <span class="hint">再 {{maxsp_need}} 點 MAX SP 可使自然回復 +1</span>
+      </div>
+
+      <div class="slider">
+        <label>SP自然恢復速度增加：{{ sprec }}%</label>
+        <input type="range" v-model.number="sprec" min="0" max="100" />
+        <span class="hint">再 {{sprec_need}}% SP恢復力 可使自然回復 +1</span>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="option">
+        <label><input type="checkbox" v-model="saintChecked" /> 聖母之頌歌(祭司)</label>
+        <p>施展者與畫面內的隊員，SP 自然恢復速度提升為 2 倍。</p>
+      </div>
+
+      <div class="option">
+        <label><input type="checkbox" v-model="meditationChecked" /> 禪心(法師)</label>
+        <p>停止時，每 10 秒額外按 MaxSP 比例恢復 SP（靜止觸發）。</p>
+      </div>
+
+      <!-- 三選一卡片（外觀可用 radio，但樣式可做成類似卡片） -->
+      <div class="option accessory">
+        <p class="opt-title">卡片（選一）</p>
+
+        <label class="radio-row">
+          <input type="radio" v-model="accessory" value="none" />
+          <span>不使用卡片</span>
+        </label>
+
+        <label class="radio-row">
+          <input type="radio" v-model="accessory" value="merman" />
+          <span>人魚士兵卡（鞋） — SP 恢復力 +10%</span>
+        </label>
+
+        <label class="radio-row">
+          <input type="radio" v-model="accessory" value="succubus" />
+          <span>鬼女卡（鞋） — SP 恢復力 +3%</span>
+        </label>
+
+        <label class="radio-row">
+          <input type="radio" v-model="accessory" value="egg" />
+          <span>轉轉蛋卡（鞋） — SP 恢復力 +15%</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="result">
+      <p>每 8 秒SP自然回復 {{ natural.toFixed(0) }}</p>
+      <h2>每分鐘平均回魔量</h2>
+      <div class="value">{{ perMinute }}</div>
+    </div>
+
+    <div class="formula">
+      <h3>📘 計算公式說明</h3>
+      <ol>
+        <li>1. 基礎回復量(SPR) = 1 + (INT / 6) + (MAX SP / 100)，INT 和 MAX SP 的計算結果皆捨去小數</li>
+        <li>2. 最終自然回復 = 基礎回復量 × (1 + 恢復力加成%)</li>
+        <li>3. INT ≥ 120 時額外加成 = 最終自然回復再加 4 + (INT / 2 - 60)</li>
+        <li>4. 綜合回復 = 將各項回復(自然回復、禪心) 換算為相同時間單位後相加並四捨五入</li>
+      </ol>
+    </div>
+  </div>
+</template>
+
+
+
 <style scoped>
 .sp-calc {
   background: #5a3d1a;
@@ -256,6 +297,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
 }
 
 .result {
+  background: rgba(255, 255, 255, 0.03);
   text-align: center;
   margin-top: 22px;
 }
@@ -271,7 +313,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.03);
   padding: 12px;
-  border-radius: 8px;
-  font-size: 14px;
+  //border-radius: 8px;
+  //font-size: 14px;
 }
 </style>
