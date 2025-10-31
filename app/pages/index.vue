@@ -5,24 +5,24 @@
     <div class="input-section">
       <div class="stat-input">
         <label>INT</label>
-        <button @click="int--">-</button>
-        <input type="number" style="background-color: #5a422a" v-model.number="int" />
-        <button @click="int++">+</button>
-        <span class="hint">再 6 點 INT 可使自然回復 +1</span>
+        <button @click="int -= 6">-</button>
+        <input type="number" style="background-color: #5a422a" v-model.number="int" class="appearance-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" />
+        <button @click="int += 6">+</button>
+        <span class="hint">再 {{int_need}} 點 INT 可使自然回復 +1</span>
       </div>
 
       <div class="stat-input">
         <label>MAX SP</label>
-        <button @click="maxsp -= 10">-</button>
-        <input type="number" style="background-color: #5a422a" v-model.number="maxsp" />
-        <button @click="maxsp += 10">+</button>
-        <span class="hint">再 100 點 MAX SP 可使自然回復 +1</span>
+        <button @click="maxsp -= 100">-</button>
+        <input type="number"  style="background-color: #5a422a" v-model.number="maxsp" class="appearance-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" />
+        <button @click="maxsp += 100">+</button>
+        <span class="hint">再 {{maxsp_need}} 點 MAX SP 可使自然回復 +1</span>
       </div>
 
       <div class="slider">
         <label>SP恢復力加成：{{ sprec }}%</label>
         <input type="range" v-model.number="sprec" min="0" max="100" />
-        <span class="hint">再 1% SP恢復力 可使自然回復 +1</span>
+        <span class="hint">再 {{sprec_need}}% SP恢復力 可使自然回復 +1</span>
       </div>
     </div>
 
@@ -82,11 +82,21 @@
 </template>
 
 <script setup>
-import {ref, computed} from 'vue'
+import {computed, ref} from 'vue'
 
-const int = ref(1)
-const maxsp = ref(0)
+const int = ref(6)
+const maxsp = ref(100)
 const sprec = ref(0)
+
+const int_need = computed(() => {
+  return 6 - int.value % 6
+})
+
+const maxsp_need = computed(() => {
+  return 100 - maxsp.value % 100
+})
+
+
 
 // 單選配件變數（'none' / 'merman' / 'succubus' / 'egg'）
 const accessory = ref('none')
@@ -94,6 +104,33 @@ const accessory = ref('none')
 // 其他選項
 const saintChecked = ref(false)
 const meditationChecked = ref(false)
+
+
+const sprec_need = computed(() => {
+  const INT = Math.floor(int.value)
+  const MAXSP = Math.floor(maxsp.value)
+  let SPREC = sprec.value
+
+  if (accessory.value === 'merman') SPREC += 10
+  if (accessory.value === 'succubus') SPREC += 3
+  if (accessory.value === 'egg') SPREC += 15
+
+  const base = Math.floor(1 + Math.floor(INT / 6) + Math.floor(MAXSP / 100))
+  const currentTotal = Math.floor(base * (1 + SPREC / 100))
+
+  // 目標：結果 +1
+  let target = currentTotal + 1;
+
+  let newA = SPREC;
+
+  while (Math.floor(base * (1 + newA / 100)) < target) {
+    newA++; // 每次加 1%
+  }
+
+  let delta = newA - SPREC;
+
+  return delta
+})
 
 // 計算基礎、自然、總合與每分鐘
 const natural = computed(() => {
