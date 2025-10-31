@@ -21,7 +21,7 @@ onMounted(() => {
 <template>
   <bg id="main" class="flex container-top flex-col items-center justify-center">
     <NuxtLayout>
-      <Navbar />
+<!--      <Navbar />-->
       <NuxtPage />
     </NuxtLayout>
   </bg>

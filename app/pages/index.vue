@@ -84,8 +84,8 @@
 <script setup>
 import {ref, computed} from 'vue'
 
-const int = ref(42)
-const maxsp = ref(200)
+const int = ref(1)
+const maxsp = ref(0)
 const sprec = ref(0)
 
 // 單選配件變數（'none' / 'merman' / 'succubus' / 'egg'）
