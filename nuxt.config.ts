@@ -11,4 +11,23 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=500, initial-scale=1',
+      title: 'RO樂園',
+      meta: [
+        { name: 'description', content: 'RO樂園' },
+        { name: 'og:title', content: 'RO樂園' },
+        { name: 'og:description', content: 'RO樂園' },
+        { name: 'og:image', content: '/logo.ico' },
+      ],
+      link: [
+
+      ],
+      script: [
+
+      ]
+    }
+  }
 })
