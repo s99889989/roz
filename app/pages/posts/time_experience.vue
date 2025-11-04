@@ -1,3 +1,7 @@
+<script setup>
+// 無需特別邏輯，純展示
+</script>
+
 <template>
   <div class="container">
     <h1 class="title">🕰️ 定時經驗加倍活動</h1>
@@ -37,11 +41,10 @@
   </div>
 </template>
 
-<script setup>
-// 無需特別邏輯，純展示
-</script>
+
 
 <style scoped>
+
 body {
   background-color: #3a2c1f;
   color: #fff;
@@ -51,6 +54,7 @@ body {
 }
 
 .container {
+
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
