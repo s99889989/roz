@@ -150,6 +150,7 @@ const magicalReduction = computed(() =>
   color: #fff;
   font-family: "Microsoft JhengHei", sans-serif;
   min-height: 100vh;
+  min-width: 800px;
   padding: 30px;
   text-align: center;
 }
