@@ -102,6 +102,8 @@ function calculate() {
 
   let needExpNow = -expTable[currentLv - 1].exp*end.exp/100;
 
+  let needMinutesAll = 0;
+
   for (let i = 0; i < predictLevels.value; i++) {
     const nextLv = currentLv + 1;
     const endExp = end.exp;
@@ -109,12 +111,14 @@ function calculate() {
     needExpNow += expTable[nextLv - 2].exp;
     const needExp = needExpNow;
     const minutes = needExp / gainPerMin;
-    const days = Math.floor(minutes / 1440);
-    const hours = Math.floor((minutes % 1440) / 60);
-    const mins = Math.floor(minutes % 60);
+    needMinutesAll += minutes;
+    const days = Math.floor(needMinutesAll / 1440);
+    const hours = Math.floor((needMinutesAll % 1440) / 60);
+    const mins = Math.floor(needMinutesAll % 60);
     results.value.push({ targetLevel: nextLv, endExp, needExp, days, hours, minutes: mins });
     currentLv = nextLv;
   }
+
   saveToStorage();
 }
 </script>
