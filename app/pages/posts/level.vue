@@ -1,51 +1,7 @@
-<template>
-  <div class="container">
-    <h1 class="title">📈 RO 等級經驗與升級預估計算機</h1>
-
-    <!-- 經驗輸入區 -->
-    <div class="section">
-      <h2>⏱️ 經驗紀錄</h2>
-      <div v-for="(record, index) in records" :key="index" class="record-row">
-        <label>時間：</label>
-        <input type="datetime-local" v-model="record.time" />
-        <label>等級：</label>
-        <input type="number" v-model="record.level" min="1" max="80" />
-        <label>經驗(%)：</label>
-        <input type="number" v-model="record.exp" min="0" max="100" step="0.1" />
-        <button class="del-btn" @click="removeRecord(index)">❌</button>
-      </div>
-      <button class="add-btn" @click="addRecord">➕ 新增紀錄</button>
-    </div>
-
-    <!-- 預估設定 -->
-    <div class="section">
-      <h2>🎯 預估設定</h2>
-      <label>預估升級等級數：</label>
-      <input type="number" v-model="predictLevels" min="1" />
-      <button class="calc-btn" @click="calculate">開始預估</button>
-    </div>
-
-    <!-- 結果 -->
-    <div class="section result" v-if="results.length">
-      <h2>📊 預估結果</h2>
-
-      <div class="summary">
-        <p>💡 平均每小時經驗量：約 <span class="highlight">{{ formatNumber(perHourExp) }}</span></p>
-      </div>
-
-      <div v-for="(res, i) in results" :key="i" class="result-card">
-        <h3>➡️ Lv.{{ res.targetLevel }} 預估升級時間</h3>
-        <p>需要經驗：{{ formatNumber(res.needExp) }}</p>
-        <p>預估時間：約 {{ res.days }}天 {{ res.hours }}小時 {{ res.minutes }}分鐘</p>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
-import { ref } from "vue";
+import { ref, watch, onMounted } from "vue";
 
-// 🧮 經驗表（1~80）
+// 🧮 經驗表
 const expTable = [
   { lv: 1, exp: 0 }, { lv: 2, exp: 2443 }, { lv: 3, exp: 2760 }, { lv: 4, exp: 3118 }, { lv: 5, exp: 3523 },
   { lv: 6, exp: 3980 }, { lv: 7, exp: 4497 }, { lv: 8, exp: 5081 }, { lv: 9, exp: 5741 }, { lv: 10, exp: 6487 },
@@ -67,65 +23,148 @@ const expTable = [
   { lv: 79, exp: 514149203 }, { lv: 80, exp: 580888599 },
 ];
 
-// 表單資料
 const records = ref([{ time: "", level: null, exp: null }]);
 const predictLevels = ref(1);
 const results = ref([]);
 const perHourExp = ref(0);
 
-// 工具函式
+// 📦 載入 localStorage
+onMounted(() => {
+  const saved = localStorage.getItem("expRecords");
+  const savedPredict = localStorage.getItem("expPredict");
+  if (saved) records.value = JSON.parse(saved);
+  if (savedPredict) predictLevels.value = parseInt(savedPredict);
+});
+
+// 💾 儲存
+function saveToStorage() {
+  localStorage.setItem("expRecords", JSON.stringify(records.value));
+  localStorage.setItem("expPredict", predictLevels.value);
+}
+
+function clearRecords() {
+  if (confirm("確定清除所有紀錄？")) {
+    records.value = [{ time: "", level: null, exp: null }];
+    predictLevels.value = 1;
+    results.value = [];
+    perHourExp.value = 0;
+    localStorage.removeItem("expRecords");
+    localStorage.removeItem("expPredict");
+  }
+}
+
+// 🧮 計算
 function addRecord() {
   records.value.push({ time: "", level: null, exp: null });
+  saveToStorage();
 }
 function removeRecord(i) {
   records.value.splice(i, 1);
+  saveToStorage();
 }
 function formatNumber(n) {
   return Math.round(n).toLocaleString();
 }
-
-// 主計算
 function calculate() {
   if (records.value.length < 2) {
     alert("⚠️ 至少需要兩筆紀錄！");
     return;
   }
-
-  // 按時間排序
   const sorted = [...records.value].sort((a, b) => new Date(a.time) - new Date(b.time));
   const start = sorted[0];
   const end = sorted[sorted.length - 1];
 
-  // 計算實際經驗總量（含跨等級）
-  const startExpAbs = expTable[start.level - 1].exp * (start.exp / 100);
-  let endExpAbs = expTable[end.level - 1].exp * (end.exp / 100);
-  for (let i = start.level; i < end.level; i++) endExpAbs += expTable[i - 1].exp;
+  // 計算起點與終點的絕對經驗值
+  let totalGain = 0;
 
-  const totalGain = endExpAbs - startExpAbs;
+  if (end.level === start.level) {
+    // 同一等級，只取百分比差
+    totalGain = expTable[start.level - 1].exp * ((end.exp - start.exp) / 100);
+  } else {
+    // 跨等級：起始的剩餘 + 中間完整等級 + 結尾部分
+    const startRemaining = expTable[start.level - 1].exp * ((100 - start.exp) / 100);
+    const endPortion = expTable[end.level - 1].exp * (end.exp / 100);
+    let middle = 0;
+    for (let i = start.level + 1; i < end.level; i++) {
+      middle += expTable[i - 1].exp;
+    }
+    totalGain = startRemaining + middle + endPortion;
+  }
+
+
+
   const timeDiffHr = (new Date(end.time) - new Date(start.time)) / 3600000;
   perHourExp.value = totalGain / timeDiffHr;
 
-  // 平均每分鐘經驗
   const gainPerMin = perHourExp.value / 60;
-
-  // 開始預估
   results.value = [];
   let currentLv = end.level;
 
+  let needExpNow = -expTable[currentLv - 1].exp*end.exp/100;
+
   for (let i = 0; i < predictLevels.value; i++) {
     const nextLv = currentLv + 1;
-    const needExp = expTable[nextLv - 1]?.exp ?? 0;
+    const endExp = end.exp;
+    // const needExp = expTable[nextLv - 1]?.exp ?? 0;
+    needExpNow += expTable[nextLv - 2].exp;
+    const needExp = needExpNow;
     const minutes = needExp / gainPerMin;
-
     const days = Math.floor(minutes / 1440);
     const hours = Math.floor((minutes % 1440) / 60);
     const mins = Math.floor(minutes % 60);
-
-    results.value.push({ targetLevel: nextLv, needExp, days, hours, minutes: mins });
+    results.value.push({ targetLevel: nextLv, endExp, needExp, days, hours, minutes: mins });
     currentLv = nextLv;
   }
+  saveToStorage();
 }
 </script>
+
+<template>
+  <div class="container">
+    <h1 class="title">📈 RO 等級經驗與升級預估計算機</h1>
+
+    <!-- 經驗輸入區 -->
+    <div class="section">
+      <h2>⏱️ 經驗紀錄</h2>
+      <div v-for="(record, index) in records" :key="index" class="record-row">
+        <label>時間：</label>
+        <input type="datetime-local" v-model="record.time" @change="saveToStorage" />
+        <label>等級：</label>
+        <input type="number" v-model="record.level" @change="saveToStorage" min="1" max="80" />
+        <label>經驗(%)：</label>
+        <input type="number" v-model="record.exp" @change="saveToStorage" min="0" max="100" step="0.1" />
+        <button class="del-btn" @click="removeRecord(index)">❌</button>
+      </div>
+      <button class="add-btn" @click="addRecord">➕ 新增紀錄</button>
+      <button class="clear-btn" @click="clearRecords">🗑 清除紀錄</button>
+    </div>
+
+    <!-- 預估設定 -->
+    <div class="section">
+      <h2>🎯 預估設定</h2>
+      <label>預估升級等級數：</label>
+      <input type="number" v-model="predictLevels" min="1" @change="saveToStorage" />
+      <button class="calc-btn" @click="calculate">開始預估</button>
+    </div>
+
+    <!-- 結果 -->
+    <div class="section result" v-if="results.length">
+      <h2>📊 預估結果</h2>
+
+      <div class="summary">
+        <p>💡 平均每小時經驗量：約 <span class="highlight">{{ formatNumber(perHourExp) }}</span></p>
+      </div>
+
+      <div v-for="(res, i) in results" :key="i" class="result-card">
+        <h3>➡️ Lv.{{ res.targetLevel }} 預估升級時間</h3>
+        <p>需要經驗：{{ formatNumber(res.needExp) }}</p>
+        <p>預估時間：約 {{ res.days }}天 {{ res.hours }}小時 {{ res.minutes }}分鐘</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+
 
 <style scoped>
 .container {
@@ -163,7 +202,7 @@ input {
   background-color: #3a2c1f;
   color: #fff;
 }
-.add-btn, .calc-btn, .del-btn {
+.add-btn, .calc-btn, .del-btn, .clear-btn {
   background: #ffd700;
   color: #3a2c1f;
   font-weight: bold;
@@ -171,8 +210,10 @@ input {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  //margin-right: 10px;
+  margin-left: 10px;
 }
-.add-btn:hover, .calc-btn:hover {
+.add-btn:hover, .calc-btn:hover, .clear-btn:hover {
   background: #ffea70;
 }
 .result-card {
