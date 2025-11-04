@@ -51,9 +51,9 @@
     <div class="note">
       <h3>📘 防禦公式說明</h3>
       <ol>
-        <li>實際減傷率 = DEF ÷ (DEF + 400)</li>
-        <li>實際魔法減傷率 = MDEF ÷ (MDEF + 1000)</li>
-        <li>結果取整數後以百分比顯示</li>
+        <li>1. 實際減傷率 = DEF ÷ (DEF + 400)</li>
+        <li>2. 實際魔法減傷率 = MDEF ÷ (MDEF + 1000)</li>
+        <li>3. 結果取整數後以百分比顯示</li>
       </ol>
     </div>
   </div>
@@ -141,7 +141,8 @@ const magicalReduction = computed(() =>
 
 <style scoped>
 .app {
-  background: #4b3621;
+  background: #ae9170;
+  border-radius: 12px;
   color: #fff;
   font-family: "Microsoft JhengHei", sans-serif;
   min-height: 100vh;
