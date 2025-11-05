@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, onMounted } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 
 // 🧮 經驗表
 const expTable = [
@@ -22,6 +22,10 @@ const expTable = [
   { lv: 75, exp: 315337337 }, { lv: 76, exp: 356331190 }, { lv: 77, exp: 402654244 }, { lv: 78, exp: 454999295 },
   { lv: 79, exp: 514149203 }, { lv: 80, exp: 580888599 },
 ];
+
+const windowWidth = ref(window.innerWidth);
+window.addEventListener("resize", () => (windowWidth.value = window.innerWidth));
+const columns = computed(() => (windowWidth.value >= 850 ? 4 : 2));
 
 const records = ref([{ time: "", level: null, exp: null }]);
 const predictLevels = ref(1);
@@ -165,8 +169,38 @@ function calculate() {
         <p>預估時間：約 {{ res.days }}天 {{ res.hours }}小時 {{ res.minutes }}分鐘</p>
       </div>
     </div>
+
+
+    <!-- 經驗表 -->
+    <div class="section exp-table">
+      <h2>📘 BaseLv 經驗表</h2>
+      <table class="exp-table-inner">
+        <thead>
+        <tr>
+          <template v-for="j in columns" :key="j">
+            <th>BaseLv.</th>
+            <th>需求經驗</th>
+          </template>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="i in Math.ceil(expTable.length / columns)" :key="i">
+          <template v-for="j in columns">
+            <td v-if="expTable[(i - 1) * columns + j - 1]">
+              {{ expTable[(i - 1) * columns + j - 1].lv }}
+            </td>
+            <td v-if="expTable[(i - 1) * columns + j - 1]">
+              {{ formatNumber(expTable[(i - 1) * columns + j - 1].exp) }}
+            </td>
+          </template>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </template>
+
 
 
 
@@ -206,7 +240,7 @@ input {
   background-color: #3a2c1f;
   color: #fff;
 }
-.add-btn, .calc-btn, .del-btn, .clear-btn {
+.add-btn, .calc-btn, .del-btn {
   background: #ffd700;
   color: #3a2c1f;
   font-weight: bold;
@@ -214,10 +248,8 @@ input {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  //margin-right: 10px;
-  margin-left: 10px;
 }
-.add-btn:hover, .calc-btn:hover, .clear-btn:hover {
+.add-btn:hover, .calc-btn:hover {
   background: #ffea70;
 }
 .result-card {
@@ -236,4 +268,25 @@ input {
   border-radius: 6px;
   margin-bottom: 10px;
 }
+
+.exp-table-inner {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+.exp-table-inner th,
+.exp-table-inner td {
+  border: 1px solid #7a5220;
+  padding: 5px 8px;
+}
+.exp-table-inner th {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+}
+.exp-table-inner td {
+  color: #b8faff;
+}
+
 </style>
