@@ -83,14 +83,14 @@ function calculate() {
 
   if (end.level === start.level) {
     // 同一等級，只取百分比差
-    totalGain = expTable[start.level - 1].exp * ((end.exp - start.exp) / 100);
+    totalGain = expTable[start.level].exp * ((end.exp - start.exp) / 100);
   } else {
     // 跨等級：起始的剩餘 + 中間完整等級 + 結尾部分
-    const startRemaining = expTable[start.level - 1].exp * ((100 - start.exp) / 100);
-    const endPortion = expTable[end.level - 1].exp * (end.exp / 100);
+    const startRemaining = expTable[start.level].exp * ((100 - start.exp) / 100);
+    const endPortion = expTable[end.level].exp * (end.exp / 100);
     let middle = 0;
     for (let i = start.level + 1; i < end.level; i++) {
-      middle += expTable[i - 1].exp;
+      middle += expTable[i].exp;
     }
     totalGain = startRemaining + middle + endPortion;
   }
@@ -104,7 +104,7 @@ function calculate() {
   results.value = [];
   let currentLv = end.level;
 
-  let needExpNow = -expTable[currentLv - 1].exp*end.exp/100;
+  let needExpNow = -expTable[currentLv].exp*end.exp/100;
 
   let needMinutesAll = 0;
 
@@ -112,7 +112,7 @@ function calculate() {
     const nextLv = currentLv + 1;
     const endExp = end.exp;
     // const needExp = expTable[nextLv - 1]?.exp ?? 0;
-    needExpNow += expTable[nextLv - 2].exp;
+    needExpNow += expTable[nextLv - 1].exp;
     const needExp = needExpNow;
     const minutes = needExp / gainPerMin;
     needMinutesAll += minutes;
@@ -164,9 +164,9 @@ function calculate() {
       </div>
 
       <div v-for="(res, i) in results" :key="i" class="result-card">
-        <h3>➡️ Lv.{{ res.targetLevel }} 預估升級時間</h3>
-        <p>需要經驗：{{ formatNumber(res.needExp) }}</p>
-        <p>預估時間：約 {{ res.days }}天 {{ res.hours }}小時 {{ res.minutes }}分鐘</p>
+        <h3>➡️ 升級到 Lv.{{ res.targetLevel }}</h3>
+        <p>預估需要經驗：{{ formatNumber(res.needExp) }}</p>
+        <p>預估需要時間：約 {{ res.days }}天 {{ res.hours }}小時 {{ res.minutes }}分鐘</p>
       </div>
     </div>
 
