@@ -4,7 +4,7 @@
 
     <!-- NPC 圖片區 -->
     <section class="npc-section">
-      <img src="@/assets/npc_location.png" alt="NPC 位置" class="npc-image" />
+      <img src="@/assets/image/sacred/npc_location.png" alt="NPC 位置" class="npc-image" />
       <p class="npc-tips">
         <strong>Tips：</strong>布羅克的遺願<br />
         <span>位置：prontera 254 293</span>
@@ -13,7 +13,7 @@
 
     <!-- 聖物介紹圖片 -->
     <section class="info-section">
-      <img src="@/assets/relic_info.png" alt="聖物介紹" class="info-image" />
+      <img src="@/assets/image/sacred/relic_info.png" alt="聖物介紹" class="info-image" />
     </section>
 
     <!-- 聖物文字資料 -->

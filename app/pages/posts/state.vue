@@ -89,10 +89,11 @@ function getCostForStat(statValue) {
 }
 // 總點數
 const totalPoints = computed(() => {
-  let total = 61; // 初始點數
+  let total = 48; // Lv.1 初始點數
 
   for (let lv = 2; lv <= level.value; lv++) {
-    total += 3 + Math.floor((lv - 2) / 5);
+    // 每 5 等增加 1 點： (Lv - 1) / 5
+    total += Math.floor((lv - 1) / 5) + 3;
   }
 
   return total;
@@ -228,18 +229,20 @@ function resetAll() {
   job.value = '初心者'
 }
 
+//66等騎士
 function loadSample() {
-  level.value = 66
+  level.value = 67
   baseStats.STR = 71
-  baseStats.AGI = 9
+  baseStats.AGI = 15
   baseStats.VIT = 1
   baseStats.INT = 36
   baseStats.DEX = 45
   baseStats.LUK = 1
 }
 
+//66等刺客
 function loadSample2() {
-  level.value = 66
+  level.value = 67
   baseStats.STR = 46
   baseStats.AGI = 50
   baseStats.VIT = 1
@@ -248,6 +251,7 @@ function loadSample2() {
   baseStats.LUK = 1
 }
 
+//61獵人
 function loadSample3() {
   level.value = 61
   baseStats.STR = 1
@@ -255,6 +259,17 @@ function loadSample3() {
   baseStats.VIT = 1
   baseStats.INT = 60
   baseStats.DEX = 43
+  baseStats.LUK = 1
+}
+
+//60刺客
+function loadSample4() {
+  level.value = 60
+  baseStats.STR = 20
+  baseStats.AGI = 35
+  baseStats.VIT = 1
+  baseStats.INT = 60
+  baseStats.DEX = 40
   baseStats.LUK = 1
 }
 
@@ -302,9 +317,10 @@ const cardStyle = { background: '#241D16', border: '1px solid #24242b', borderRa
               <h2 class="font-bold text-lg" :style="{ color: '#ffb300' }">素質設定</h2>
               <div class="flex gap-2">
                 <button @click="resetAll" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnWarnStyle">重置</button>
-                <button @click="loadSample" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">66騎士</button>
+                <button @click="loadSample" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">67騎士</button>
                 <button @click="loadSample2" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">66刺客</button>
                 <button @click="loadSample3" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">61獵人</button>
+                <button @click="loadSample4" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">60刺客</button>
               </div>
             </div>
 
