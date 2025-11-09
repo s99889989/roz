@@ -317,10 +317,10 @@ const cardStyle = { background: '#241D16', border: '1px solid #24242b', borderRa
               <h2 class="font-bold text-lg" :style="{ color: '#ffb300' }">素質設定</h2>
               <div class="flex gap-2">
                 <button @click="resetAll" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnWarnStyle">重置</button>
-                <button @click="loadSample" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">67騎士</button>
-                <button @click="loadSample2" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">66刺客</button>
-                <button @click="loadSample3" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">61獵人</button>
-                <button @click="loadSample4" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">60刺客</button>
+<!--                <button @click="loadSample" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">67騎士</button>-->
+<!--                <button @click="loadSample2" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">66刺客</button>-->
+<!--                <button @click="loadSample3" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">61獵人</button>-->
+<!--                <button @click="loadSample4" class="px-3 py-1 rounded-md text-sm font-semibold" :style="btnInfoStyle">60刺客</button>-->
               </div>
             </div>
 
