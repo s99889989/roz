@@ -143,8 +143,8 @@ function calculate() {
         <input type="number" v-model="record.exp" @change="saveToStorage" min="0" max="100" step="0.1" />
         <button class="del-btn" @click="removeRecord(index)">❌</button>
       </div>
-      <button class="add-btn" @click="addRecord">➕ 新增紀錄</button>
-      <button class="clear-btn" @click="clearRecords">🗑 清除紀錄</button>
+      <button class="add-btn me-2" @click="addRecord">➕ 新增紀錄</button>
+      <button class="calc-btn" @click="clearRecords">🗑 清除紀錄</button>
     </div>
 
     <!-- 預估設定 -->

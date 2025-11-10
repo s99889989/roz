@@ -33,7 +33,7 @@
         <div class="flex justify-center">
           <img
               :src="getImg(pet.image)"
-              class="w-28 h-28 object-contain drop-shadow-lg mb-3"
+              class="w-24 h-24 object-contain drop-shadow-lg mb-3"
               :alt="pet.name"
           />
         </div>
@@ -77,104 +77,104 @@ const pets = [
   },
   {
     type: "一般寵物", name: "土波利",
-    image: "1113", food: "",
-    catch: "濃縮柳橙汁", accessories: "",
+    image: "1113", food: "黃色藥草",
+    catch: "濃縮柳橙汁", accessories: "寵物書包",
     intimacy: ["有點親密: HIT+3、ATK+3"],
   },
   {
     type: "一般寵物", name: "波波利",
-    image: "1031", food: "",
-    catch: "苦味草", accessories: "",
+    image: "1031", food: "綠色藥草",
+    catch: "苦味草", accessories: "寵物書包",
     intimacy: ["有點親密: LUK+2、對毒的抗性+10%"],
   },
   {
     type: "一般寵物", name: "瘋兔",
-    image: "1063", food: "",
-    catch: "彩色紅蘿蔔", accessories: "",
+    image: "1063", food: "紅蘿蔔汁",
+    catch: "彩色紅蘿蔔", accessories: "寵物髮帶",
     intimacy: ["有點親密: CRI+2、ATK+2"],
   },
   {
     type: "一般寵物", name: "小野豬",
-    image: "1167", food: "",
-    catch: "魔物牛奶", accessories: "",
+    image: "1167", food: "寵物飼料",
+    catch: "魔物牛奶", accessories: "寵物圍兜兜",
     intimacy: ["有點親密: VIT+1、MHP+50"],
   },
   {
     type: "一般寵物", name: "搖滾蝗蟲",
-    image: "1088", food: "",
-    catch: "呢喃花", accessories: "",
+    image: "1088", food: "寵物飼料",
+    catch: "呢喃花", accessories: "蝗蟲眼鏡",
     intimacy: ["有點親密: HP恢復力+5%, MHP+ 25"],
   },
   {
     type: "一般寵物", name: "魔菇",
-    image: "1014", food: "",
-    catch: "青苔", accessories: "",
+    image: "1014", food: "寵物飼料",
+    catch: "青苔", accessories: "樹皮褲",
     intimacy: ["有點親密: HIT+ 5, ATK -2"],
   },
   {
     type: "一般寵物", name: "毒魔菇",
-    image: "1077", food: "",
-    catch: "青嫩毒草", accessories: "",
+    image: "1077", food: "寵物飼料",
+    catch: "青嫩毒草", accessories: "樹皮褲",
     intimacy: ["有點親密: STR+ 1, INt+ 1"],
   },
   {
     type: "一般寵物", name: "寶貝波利",
-    image: "2398", food: "",
+    image: "2398", food: "蘋果汁",
     catch: "青蘋果", accessories: "",
     intimacy: ["有點親密: HP恢復力+50%"],
   },
   {
     type: "一般寵物", name: "小雞",
-    image: "1049", food: "",
-    catch: "變態蚯蚓", accessories: "",
+    image: "1049", food: "紅色藥草",
+    catch: "變態蚯蚓", accessories: "寵物蛋殼帽",
     intimacy: ["有點親密: STR+ 1, ATK+ 5"],
   },
   {
     type: "一般寵物", name: "蒼蠅",
-    image: "1011", food: "",
-    catch: "腐臭之魚", accessories: "",
+    image: "1011", food: "寵物飼料",
+    catch: "腐臭之魚", accessories: "寵物防毒面具",
     intimacy: ["有點親密: AGI+ 1, FLEE+ 2"],
   },
   {
     type: "一般寵物", name: "綠蒼蠅",
-    image: "1042", food: "",
-    catch: "鏽鐵", accessories: "",
+    image: "1042", food: "鐵礦石",
+    catch: "鏽鐵", accessories: "寵物防毒面具",
     intimacy: ["有點親密: FLEE+ 6, AGI - 1"],
   },
   {
     type: "一般寵物", name: "赤蒼蠅",
-    image: "1042", food: "",
-    catch: "怪物飲料", accessories: "",
+    image: "1042", food: "紅色魔力礦石",
+    catch: "怪物飲料", accessories: "寵物防毒面具",
     intimacy: ["有點親密: 完全迴避+ 2, FLEE - 5"],
   },
   {
     type: "一般寵物", name: "沙漠幼狼",
-    image: "1107", food: "",
-    catch: "營養大骨", accessories: "",
+    image: "1107", food: "寵物飼料",
+    catch: "營養大骨", accessories: "潛水頭盔",
     intimacy: ["有點親密: INT+ 1, MSP+ 50"],
   },
   {
     type: "一般寵物", name: "大嘴鳥",
-    image: "1019", food: "",
-    catch: "營養蚯蚓", accessories: "",
+    image: "1019", food: "寵物飼料",
+    catch: "營養蚯蚓", accessories: "變形鍋子",
     intimacy: ["有點親密: MHP+ 150, MSP - 10"],
   },
   {
     type: "一般寵物", name: "狸貓",
-    image: "1056", food: "",
-    catch: "怪物番薯", accessories: "",
+    image: "1056", food: "寵物飼料",
+    catch: "怪物番薯", accessories: "紅色領巾",
     intimacy: ["有點親密: AGI+ 1, 完全迴避+ 1"],
   },
   {
     type: "一般寵物", name: "溜溜猴",
-    image: "1057", food: "",
-    catch: "怪物香蕉", accessories: "",
+    image: "1057", food: "香蕉汁",
+    catch: "怪物香蕉", accessories: "猴子髮箍",
     intimacy: ["有點親密: CRI+ 3, LUK - 1"],
   },
   {
     type: "一般寵物", name: "畢帝特地龍",
-    image: "1155", food: "",
-    catch: "閃爍之石", accessories: "",
+    image: "1155", food: "寵物飼料",
+    catch: "閃爍之石", accessories: "寵物髮夾",
     intimacy: ["有點親密: ASPD+ 1%, DEF/MDEF -2"],
   }
 ];

@@ -148,29 +148,21 @@ export default {
   background-color: #3a2c1f;
   border-radius: 10px;
   font-family: 'Microsoft JhengHei', Arial, sans-serif;
-  min-width: 900px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* 標題 */
 .title {
-  color: #ffe600;
+  color: #ffd700;
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-
-.header h1 {
-  font-size: 2.2em;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 1.1em;
-  opacity: 0.9;
-}
-
+/* Tabs */
 .tabs {
   display: flex;
   gap: 10px;
@@ -180,38 +172,41 @@ export default {
 .tab-btn {
   flex: 1;
   padding: 12px 20px;
-  background: #b82e2e;
-  border: 2px solid #ddd;
+  background: #6b4b2a;
+  color: #ffd700;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition: all 0.25s;
+  border: 2px solid #8b6b46;
 }
 
 .tab-btn:hover {
-  background: #671a1a;
+  background: #8c6239;
   transform: translateY(-2px);
 }
 
 .tab-btn.active {
-  background: linear-gradient(45deg, #667eea, #764ba2);
-  color: white;
-  border-color: #667eea;
+  background: #d1ae43;
+  color: #3a2c1f;
+  border-color: #d1ae43;
 }
 
+/* 表格外框 */
 .enhance-panel {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #8b6b46;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
 }
 
+/* Header */
 .panel-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: #ffeb3b;
+  background: #5c4428;
   padding: 15px;
   font-weight: bold;
 }
@@ -221,176 +216,90 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  color: #ffd700;
 }
 
 .header-item.success {
-  background: rgba(76, 175, 80, 0.2);
-  padding: 5px 10px;
-  border-radius: 5px;
+  background: rgba(0, 255, 150, 0.2);
 }
 
 .header-item.fail {
-  background: rgba(244, 67, 54, 0.2);
-  padding: 5px 10px;
-  border-radius: 5px;
+  background: rgba(255, 80, 80, 0.25);
 }
 
-.label {
-  color: #333;
-}
-
-.value {
-  color: #000;
-  font-weight: bold;
-}
-
+/* 表格 */
 .enhance-table {
-
   overflow-x: auto;
 }
 
 table {
-
   width: 100%;
   border-collapse: collapse;
+  color: #fff;
 }
 
 thead {
-  background: #998d21;
+  background: #8b6b46;
 }
 
 th {
-
   padding: 12px;
   text-align: center;
   font-weight: bold;
-  border: 1px solid #ddd;
+  border: 1px solid #b08a5a;
+  color: #ffd700;
 }
 
+/* 表格 TD */
 td {
-
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #6b4b2a;
   text-align: center;
 }
 
+/* 左欄：材料 */
 .material-cell {
-  background: rgb(144, 118, 68);
+  background: rgba(255, 255, 255, 0.08);
   text-align: left;
   padding-left: 15px;
 }
 
+/* 中間：費用 */
 .cost-cell {
-  background: #fff9c4;
+  background: rgba(255, 215, 0, 0.15);
   font-weight: bold;
-  color: #f57c00;
+  color: #ffd700;
 }
 
+/* 附魔欄 */
 .enchant-cell {
-  background: #1a4769;
+  background: rgba(30, 55, 80, 0.6);
   text-align: left;
   padding-left: 15px;
 }
 
+/* 能力欄 */
 .ability-cell {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.05);
   text-align: left;
   padding-left: 15px;
-  color: #d32f2f;
+  color: #ff6f6f;
 }
 
+/* Hover 效果 */
 tbody tr:hover {
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.panel-footer {
-  background: #ffebc2;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-top: 2px solid #ddd;
-}
-
-.tip-icon {
-  font-size: 1.5em;
-}
-
-.tip-text {
-  color: #c62828;
-  font-weight: bold;
-}
-
-.info-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.info-box, .warning-box {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.info-box {
-  border-left: 5px solid #2196f3;
-}
-
-.warning-box {
-  border-left: 5px solid #ff9800;
-}
-
-.info-box h3, .warning-box h3 {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.info-box ul, .warning-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info-box li, .warning-box li {
-  padding: 8px 0;
-  padding-left: 20px;
-  position: relative;
-}
-
-.info-box li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #2196f3;
-  font-weight: bold;
-}
-
-.warning-box li::before {
-  content: '⚠';
-  position: absolute;
-  left: 0;
-}
-
+/* RWD */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 1.8em;
-  }
-
   .panel-header {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-
-  .info-section {
-    grid-template-columns: 1fr;
-  }
-
   table {
     font-size: 14px;
   }
-
   th, td {
     padding: 8px 4px;
   }
