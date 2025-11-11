@@ -77,7 +77,7 @@
                   <NuxtLink to="/posts/pet" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">寵物</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/tonic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">補品</NuxtLink>
+                  <NuxtLink to="/know/tonic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">補品效率</NuxtLink>
                 </li>
               </ul>
             </div>
