@@ -1,6 +1,7 @@
 <script setup>
 import { ref, reactive, computed } from "vue"
 import {initFlowbite} from "flowbite";
+import { monstersData } from "../../assets/data/monsterstest.js";
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -54,13 +55,8 @@ const sizeList = [
   { id: "大型", name: "大型", icon: "/assets/size/large.png" },
 ]
 
-// ✅ 怪物資料（示範用）
-
-const monsters = ref(
-    [
-
-    ]
-)
+// ✅ 怪物資料
+const monsters = ref(monstersData);
 
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {
