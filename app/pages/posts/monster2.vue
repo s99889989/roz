@@ -1,5 +1,9 @@
 <script setup>
 import { ref, reactive, computed } from "vue"
+import {initFlowbite} from "flowbite";
+
+//排序切換
+const sortAsc = ref(false) // true = 小→大, false = 大→小
 
 // 搜尋輸入
 const search = ref("")
@@ -39,7 +43,8 @@ const raceList = [
   { id: "惡魔", name: "惡魔", icon: "/assets/race/demon.png" },
   { id: "天使", name: "天使", icon: "/assets/race/angel.png" },
   { id: "龍族", name: "龍族", icon: "/assets/race/dragon.png" },
-  { id: "不死", name: "不死", icon: "/assets/race/undead.png" }
+  { id: "不死", name: "不死", icon: "/assets/race/undead.png" },
+  { id: "人形", name: "人形", icon: "/assets/race/undead.png" }
 ]
 
 const sizeList = [
@@ -51,202 +56,42 @@ const sizeList = [
 
 // ✅ 怪物資料（示範用）
 
-const monsters = ref([
-  {
-    "monster_name_zh": "血腥騎士",
-    "monster_name_en": "BLOODY_KNIGHT",
-    "monster_id": 1268,
-    "image_url": "https://assets.twroz.wiki/images/monsters/1268.gif?w=80&h=80&auto=compress&format=webp",
-    "attributes": {
-      "race": "無形",
-      "element": "暗屬性4",
-      "size": "大型"
-    },
-    "stats": {
-      "level": 116,
-      "hp": 68500,
-      "base_exp": "???",
-      "job_exp": "???",
-      "attack_power": "1,303-1,831",
-      "physical_defense_def": 122,
-      "magic_defense_mdef": 50,
-      "hit_100_percent": 384,
-      "flee_95_percent": 438
-    },
-    "spawn_locations": [
-      {
-        "map_name_zh": "騎士團2樓",
-        "map_code": "gl_knt02"
-      }
-    ],
-    "drops": [
-      {
-        "item_name_zh": "亞藍斯之劍",
-        "rate_percent": 0.01,
-        "item_image_url": "https://assets.twroz.wiki/images/items/1170.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "鐮戟[1]",
-        "rate_percent": 0.01,
-        "item_image_url": "https://assets.twroz.wiki/images/items/1417.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "金屬頭盔[1]",
-        "rate_percent": 0.23,
-        "item_image_url": "https://assets.twroz.wiki/images/items/2229.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "布里刊",
-        "rate_percent": 24.25,
-        "item_image_url": "https://assets.twroz.wiki/images/items/7054.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "血腥騎士卡片",
-        "rate_percent": 0.01,
-        "item_image_url": "https://assets.twroz.wiki/images/items/27275.gif?w=24&h=24&auto=compress&format=webp"
-      }
+const monsters = ref(
+    [
+
     ]
-  },
-  {
-    "monster_name_zh": "汙染史汀",
-    "monster_name_en": "STING_MJ",
-    "monster_id": 20370,
-    "image_url": "https://assets.twroz.wiki/images/monsters/20370.gif?w=80&h=80&auto=compress&format=webp",
-    "attributes": {
-      "race": "無形",
-      "element": "地屬性3",
-      "size": "中型"
-    },
-    "stats": {
-      "level": 109,
-      "hp": 2297907,
-      "base_exp": "???",
-      "job_exp": "???",
-      "attack_power": "3,467-5,025",
-      "physical_defense_def": 276,
-      "magic_defense_mdef": 100,
-      "hit_100_percent": 420,
-      "flee_95_percent": 471
-    },
-    "spawn_locations": [
-      {
-        "map_name_zh": "地下洞穴1樓",
-        "map_code": "gl_dun01"
-      }
-    ],
-    "drops": [
-      {
-        "item_name_zh": "土靈原石",
-        "rate_percent": 0.3,
-        "item_image_url": "https://assets.twroz.wiki/images/items/997.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "煤礦",
-        "rate_percent": 1.6,
-        "item_image_url": "https://assets.twroz.wiki/images/items/1003.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "泥團",
-        "rate_percent": 10.0,
-        "item_image_url": "https://assets.twroz.wiki/images/items/7004.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "寵物髮帶",
-        "rate_percent": 0.13,
-        "item_image_url": "https://assets.twroz.wiki/images/items/10007.gif?w=24&h=24&auto=compress&format=webp"
-      }
-    ]
-  },
-  {
-    "monster_name_zh": "史汀",
-    "monster_name_en": "STING",
-    "monster_id": 1207,
-    "image_url": "https://assets.twroz.wiki/images/monsters/1207.gif?w=80&h=80&auto=compress&format=webp",
-    "attributes": {
-      "race": "無形",
-      "element": "地屬性3",
-      "size": "中型"
-    },
-    "stats": {
-      "level": 104,
-      "hp": 10143,
-      "base_exp": "???",
-      "job_exp": "???",
-      "attack_power": "847-1,165",
-      "physical_defense_def": 146,
-      "magic_defense_mdef": 34,
-      "hit_100_percent": 357,
-      "flee_95_percent": 401
-    },
-    "spawn_locations": [
-      {
-        "map_name_zh": "地下洞穴1樓",
-        "map_code": "gl_dun01"
-      },
-      {
-        "map_name_zh": "地下水道3樓",
-        "map_code": "gl_sew03"
-      }
-    ],
-    "drops": [
-      {
-        "item_name_zh": "土靈原石",
-        "rate_percent": 0.13,
-        "item_image_url": "https://assets.twroz.wiki/images/items/997.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "煤礦",
-        "rate_percent": 0.65,
-        "item_image_url": "https://assets.twroz.wiki/images/items/1003.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "史汀卡片",
-        "rate_percent": 0.01,
-        "item_image_url": "https://assets.twroz.wiki/images/items/4226.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "泥團",
-        "rate_percent": 24.25,
-        "item_image_url": "https://assets.twroz.wiki/images/items/7004.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "寵物髮帶",
-        "rate_percent": 0.05,
-        "item_image_url": "https://assets.twroz.wiki/images/items/10007.gif?w=24&h=24&auto=compress&format=webp"
-      },
-      {
-        "item_name_zh": "(服飾)史汀帽子(歸屬)",
-        "rate_percent": "???",
-        "item_image_url": "https://assets.twroz.wiki/images/items/401083.gif?w=24&h=24&auto=compress&format=webp"
-      }
-    ]
-  }
-])
+)
 
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {
   return monsters.value.filter(m => {
-    // 名稱搜尋
-    const matchesName = search.value === "" || m.name.includes(search.value)
+    // ✅ 名稱 / 地圖搜尋
+    const matchesName =
+        search.value === "" ||
+        m.monster_name_zh.includes(search.value) ||
+        m.spawn_locations.some(loc =>
+            loc.map_name_zh.includes(search.value) ||
+            loc.map_code.includes(search.value)
+        )
 
-    // 等級範圍
+    // ✅ 等級範圍
     const matchesLevel =
         (!minLevel.value || m.stats.level >= parseInt(minLevel.value)) &&
         (!maxLevel.value || m.stats.level <= parseInt(maxLevel.value))
 
-    // 屬性篩選
+    // ✅ 屬性篩選
     const matchesElement =
         selectedElement.value.length === 0 ||
         selectedElement.value.includes("all") ||
         selectedElement.value.some(e => m.attributes.element.includes(e))
 
-    // 種族篩選
+    // ✅ 種族篩選
     const matchesRace =
         selectedRace.value.length === 0 ||
         selectedRace.value.includes("all") ||
         selectedRace.value.some(r => m.attributes.race.includes(r))
 
-    // 大小篩選
+    // ✅ 大小篩選
     const matchesSize =
         selectedSize.value.length === 0 ||
         selectedSize.value.includes("all") ||
@@ -254,9 +99,20 @@ const filteredMonsters = computed(() => {
 
     return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize
   })
+      // ✅ 排序 (依 sortAsc)
+      .sort((a, b) => sortAsc.value
+          ? a.stats.level - b.stats.level  // 小 → 大
+          : b.stats.level - a.stats.level  // 大 → 小
+      )
+
+
 })
 
-
+watch(filteredMonsters, () => {
+  nextTick(() => {
+    initFlowbite()
+  })
+})
 
 // ✅ 切換種族
 function toggleRace(id) {
@@ -349,14 +205,32 @@ function clearFilters() {
   search.value = ""
   minLevel.value = ""
   maxLevel.value = ""
-  selectedElement.value = []
-  selectedRace.value = []
-  selectedSize.value = []
+  selectedElement.value = ['all']
+  selectedRace.value = ['all']
+  selectedSize.value = ['all']
+
+
 }
+
+function displayValue(value) {
+  // 如果可以轉成數字，且不是 NaN，就做千分位格式化
+  if (!isNaN(value)) {
+    return Number(value).toLocaleString();
+  }
+
+  // 否則當字串回傳
+  return value;
+}
+
+function selectMap(value) {
+  search.value = value
+}
+
 </script>
 
 <template>
-  <div class="p-4 text-white bg-[#3a2c1f] min-h-screen">
+<!--   bg-[#3a2c1f]-->
+  <div class="p-4 text-white min-h-screen">
 
     <div class="mb-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-yellow-400">搜尋</h1>
@@ -397,6 +271,12 @@ function clearFilters() {
             class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white"
             placeholder="MAX"
         >
+        <button
+            @click="sortAsc = !sortAsc"
+            class="bg-[#2b1e12] hover:bg-red-700 px-4 py-2 rounded text-sm font-bold"
+        >
+          切換排序
+        </button>
       </div>
     </div>
 
@@ -464,19 +344,46 @@ function clearFilters() {
       </div>
     </div>
 
-<!--    &lt;!&ndash; 結果統計 &ndash;&gt;-->
-<!--    <div class="mb-4 p-3 bg-[#2b1e12] border border-yellow-600 rounded">-->
-<!--      <span class="text-yellow-400 font-bold">搜尋結果：</span>-->
-<!--      <span class="text-white">共 {{ filteredMonsters.length }} 隻怪物</span>-->
-<!--    </div>-->
+    <!-- 結果統計 -->
+    <div class="mb-4 p-3 bg-[#2b1e12] border border-yellow-600 rounded">
+      <span class="text-yellow-400 font-bold">搜尋結果：</span>
+      <span class="text-white">共 {{ filteredMonsters.length }} 隻怪物</span>
+    </div>
 
     <!-- 怪物結果 -->
-    <div class="grid md:grid-cols-3 gap-4 mt-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
       <div v-for="m in filteredMonsters" :key="m.id"
            class="bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
         <div class="flex justify-between">
-          <img src="assets/image/icon/map.png" alt="" class="w-10 h-10">
+          <!-- 圖片觸發 dropdown -->
+          <img
+              :id="'dropdownHoverButton' + m.id"
+              :data-dropdown-toggle="'dropdownHover' + m.id"
+              data-dropdown-placement="right"
+              data-dropdown-trigger="hover"
+              src="assets/image/icon/map.png"
+              alt="map icon"
+              class="w-10 h-10 cursor-pointer"
+          />
+
+          <!-- Dropdown menu -->
+          <div
+              :id="'dropdownHover' + m.id"
+              class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
+          >
+            <ul class="py-2 text-sm text-gray-200 "
+                :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
+              <li>
+                <a @click="selectMap(map.map_code)" class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
+                  {{map.map_name_zh}}({{map.map_code}})
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+
           <div class="flex h-6">
             <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
             <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.element }}</p>
@@ -488,23 +395,22 @@ function clearFilters() {
         <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
 
         <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
+        <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
+        <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
 
-
-
-        <p class="text-sm flex"><strong>等級：</strong>{{ m.stats.level }}</p>
-        <p class="text-sm flex"><strong>血量：</strong>{{ m.stats.hp }}</p>
-        <p class="text-sm flex"><strong>經驗值：</strong>{{ m.stats.base_exp }}</p>
-        <p class="text-sm flex"><strong>職業經驗值：</strong>{{ m.stats.job_exp }}</p>
-        <p class="text-sm flex"><strong>攻擊力：</strong>{{ m.stats.level }}</p>
-        <p class="text-sm flex"><strong>物理防禦：</strong>{{ m.stats.level }}</p>
-        <p class="text-sm flex"><strong>魔法防禦：</strong>{{ m.stats.level }}</p>
-        <p class="text-sm flex"><strong>100%命中：</strong>{{ m.stats.level }}</p>
-        <p class="text-sm flex"><strong>95%迴避：</strong>{{ m.stats.level }}</p>
-
+        <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{ m.stats.level }}</span></p>
+        <p class="text-sm flex justify-center"><strong>血量：</strong><span class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>經驗值：</strong><span class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{ m.stats.attack_power }}</span></p>
+        <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
+        <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
+        <p class="text-sm flex justify-center"><strong>100%命中：</strong><span class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
+        <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
 
         <hr class="my-3 border-yellow-700">
 
-        <h3 class="font-bold text-yellow-700 mb-2">💎 掉落物品</h3>
+        <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
         <ul class="text-sm">
           <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
             <div class="flex">
@@ -551,4 +457,10 @@ input[type="number"]:focus {
   border-color: #fbbf24;
   box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2);
 }
+
+.statsColor{
+  font-weight: bold;
+  color: #d2851d;
+}
+
 </style>
