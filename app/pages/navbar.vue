@@ -38,10 +38,10 @@
                   <NuxtLink to="/" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">回魔計算</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/state" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">素質計算</NuxtLink>
+                  <NuxtLink to="/calculate/state" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">素質計算</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/level" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">升級計算</NuxtLink>
+                  <NuxtLink to="/calculate/level" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">升級計算</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -56,28 +56,43 @@
             <div id="dropdownKnow" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <NuxtLink to="/posts/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">聖物</NuxtLink>
+                  <NuxtLink to="/know/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">聖物</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/time_experience" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">定時經驗加倍</NuxtLink>
+                  <NuxtLink to="/calculate/time_experience" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">定時經驗加倍</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/refining" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">精煉</NuxtLink>
+                  <NuxtLink to="/know/refining" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">精煉</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/feeding_ring" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">飼養戒指</NuxtLink>
+                  <NuxtLink to="/know/feeding_ring" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">飼養戒指</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/cuisine" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">料理</NuxtLink>
+                  <NuxtLink to="/know/cuisine" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">料理</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/item_crafting" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">物品製作</NuxtLink>
+                  <NuxtLink to="/know/Item_crafting" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">物品製作</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/posts/pet" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">寵物</NuxtLink>
+                  <NuxtLink to="/know/pet" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">寵物</NuxtLink>
                 </li>
                 <li>
                   <NuxtLink to="/know/tonic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">補品效率</NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button id="dropdownNavbar" data-dropdown-toggle="dropdownDungeon" class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              副本 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownDungeon" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDungeon">
+                <li>
+                  <NuxtLink to="/dungeon/AntTerritory" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">螞蟻地獄</NuxtLink>
                 </li>
               </ul>
             </div>

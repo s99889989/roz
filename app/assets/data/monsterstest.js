@@ -1,3 +1,5 @@
-export const monstersData = [
+export const monstersData =
+    [
 
-];
+    ]
+;
