@@ -1,7 +1,48 @@
 <script setup>
-import { ref, reactive, computed } from "vue"
+import {ref, reactive, computed, onMounted, onUnmounted} from "vue"
 import {initFlowbite} from "flowbite";
-import { monstersData } from "../../assets/data/monsters.js";
+import {monstersData} from "../../assets/data/monsters.js";
+import {RecycleScroller , DynamicScroller} from 'vue-virtual-scroller'
+import { VirtualScroll } from 'vue3-virtual-scroll'
+import 'vue3-virtual-scroll/dist/style.css'
+
+// 1. 設置 Tailwind 斷點寬度 (單位: px)
+const TAILWIND_BREAKPOINTS = {
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280
+};
+
+// 2. 響應式地追蹤當前窗口寬度
+const windowWidth = ref(window.innerWidth);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+});
+
+// 3. 根據寬度計算 VirtualScroll 需要的 :grid 屬性值
+const dynamicGridCols = computed(() => {
+  const width = windowWidth.value;
+
+  if (width >= TAILWIND_BREAKPOINTS.xl) {
+    return 4; // 對應 xl:grid-cols-4
+  } else if (width >= TAILWIND_BREAKPOINTS.md) {
+    return 3; // 對應 md:grid-cols-3
+  } else if (width >= TAILWIND_BREAKPOINTS.sm) {
+    return 2; // 對應 sm:grid-cols-2
+  } else {
+    return 1; // 對應 grid-cols-1
+  }
+});
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -19,40 +60,44 @@ const selectedElement = ref(['all'])
 const selectedRace = ref(['all'])
 const selectedSize = ref(['all'])
 
+onMounted(() => {
+  initFlowbite()
+})
+
 // ✅ icon/項目列表
 const elementList = [
-  { id: "all", name: "ALL", icon: "/assets/element/neutral.png" },
-  { id: "無", name: "無", icon: "/assets/element/neutral.png" },
-  { id: "水", name: "水", icon: "/assets/element/water.png" },
-  { id: "地", name: "地", icon: "/assets/element/earth.png" },
-  { id: "火", name: "火", icon: "/assets/element/fire.png" },
-  { id: "風", name: "風", icon: "/assets/element/wind.png" },
-  { id: "毒", name: "毒", icon: "/assets/element/poison.png" },
-  { id: "聖", name: "聖", icon: "/assets/element/holy.png" },
-  { id: "暗", name: "暗", icon: "/assets/element/shadow.png" },
-  { id: "念", name: "念", icon: "/assets/element/ghost.png" },
-  { id: "不死", name: "不死", icon: "/assets/element/undead.png" },
+  {id: "all", name: "ALL", icon: "/assets/element/neutral.png"},
+  {id: "無", name: "無", icon: "/assets/element/neutral.png"},
+  {id: "水", name: "水", icon: "/assets/element/water.png"},
+  {id: "地", name: "地", icon: "/assets/element/earth.png"},
+  {id: "火", name: "火", icon: "/assets/element/fire.png"},
+  {id: "風", name: "風", icon: "/assets/element/wind.png"},
+  {id: "毒", name: "毒", icon: "/assets/element/poison.png"},
+  {id: "聖", name: "聖", icon: "/assets/element/holy.png"},
+  {id: "暗", name: "暗", icon: "/assets/element/shadow.png"},
+  {id: "念", name: "念", icon: "/assets/element/ghost.png"},
+  {id: "不死", name: "不死", icon: "/assets/element/undead.png"},
 ]
 
 const raceList = [
-  { id: "all", name: "ALL", icon: "/assets/race/formless.png" },
-  { id: "無形", name: "無形", icon: "/assets/race/formless.png" },
-  { id: "植物", name: "植物", icon: "/assets/race/plant.png" },
-  { id: "動物", name: "動物", icon: "/assets/race/brute.png" },
-  { id: "昆蟲", name: "昆蟲", icon: "/assets/race/insect.png" },
-  { id: "魚貝", name: "魚貝", icon: "/assets/race/fish.png" },
-  { id: "惡魔", name: "惡魔", icon: "/assets/race/demon.png" },
-  { id: "天使", name: "天使", icon: "/assets/race/angel.png" },
-  { id: "龍族", name: "龍族", icon: "/assets/race/dragon.png" },
-  { id: "不死", name: "不死", icon: "/assets/race/undead.png" },
-  { id: "人形", name: "人形", icon: "/assets/race/undead.png" }
+  {id: "all", name: "ALL", icon: "/assets/race/formless.png"},
+  {id: "無形", name: "無形", icon: "/assets/race/formless.png"},
+  {id: "植物", name: "植物", icon: "/assets/race/plant.png"},
+  {id: "動物", name: "動物", icon: "/assets/race/brute.png"},
+  {id: "昆蟲", name: "昆蟲", icon: "/assets/race/insect.png"},
+  {id: "魚貝", name: "魚貝", icon: "/assets/race/fish.png"},
+  {id: "惡魔", name: "惡魔", icon: "/assets/race/demon.png"},
+  {id: "天使", name: "天使", icon: "/assets/race/angel.png"},
+  {id: "龍族", name: "龍族", icon: "/assets/race/dragon.png"},
+  {id: "不死", name: "不死", icon: "/assets/race/undead.png"},
+  {id: "人形", name: "人形", icon: "/assets/race/undead.png"}
 ]
 
 const sizeList = [
-  { id: "all", name: "ALL", icon: "/assets/size/small.png" },
-  { id: "小型", name: "小型", icon: "/assets/size/small.png" },
-  { id: "中型", name: "中型", icon: "/assets/size/medium.png" },
-  { id: "大型", name: "大型", icon: "/assets/size/large.png" },
+  {id: "all", name: "ALL", icon: "/assets/size/small.png"},
+  {id: "小型", name: "小型", icon: "/assets/size/small.png"},
+  {id: "中型", name: "中型", icon: "/assets/size/medium.png"},
+  {id: "大型", name: "大型", icon: "/assets/size/large.png"},
 ]
 
 // ✅ 怪物資料
@@ -62,13 +107,17 @@ const monsters = ref(monstersData);
 const filteredMonsters = computed(() => {
   return monsters.value.filter(m => {
     // ✅ 名稱 / 地圖搜尋
+    // 改良版：trim + toLowerCase + 防空值檢查
+    const q = (search.value || "").trim().toLowerCase();
+
     const matchesName =
-        search.value === "" ||
-        m.monster_name_zh.includes(search.value) ||
-        m.spawn_locations.some(loc =>
-            loc.map_name_zh.includes(search.value) ||
-            loc.map_code.includes(search.value)
-        )
+        q === "" ||
+        (m.monster_name_zh && m.monster_name_zh.toLowerCase().includes(q)) ||
+        (Array.isArray(m.spawn_locations) &&
+            m.spawn_locations.some(loc =>
+                (loc.map_name_zh && loc.map_name_zh.toLowerCase().includes(q)) ||
+                (loc.map_code && loc.map_code.toLowerCase().includes(q))
+            ));
 
     // ✅ 等級範圍
     const matchesLevel =
@@ -133,7 +182,7 @@ function toggleRace(id) {
   }
 
   //如果空 → 設置為all
-  if(selectedRace.value.length === 0){
+  if (selectedRace.value.length === 0) {
     selectedRace.value.push('all')
   }
 }
@@ -161,7 +210,7 @@ function toggleSize(id) {
   }
 
   //如果空 → 設置為all
-  if(selectedSize.value.length === 0){
+  if (selectedSize.value.length === 0) {
     selectedSize.value.push('all')
   }
 }
@@ -220,6 +269,21 @@ function displayValue(value) {
 
 function selectMap(value) {
   search.value = value
+}
+let pageNum = 0
+function onTouchEnd() {
+  return new Promise((resolve, reject) => {
+    getList({ page: pageNum, pageSize: 50 }).then((newList) => {
+      if (Math.random() > 0.3) {
+        list.value.push(...newList)
+        pageNum += 1;
+        resolve(true)
+      }
+      else {
+        reject(new Error('加载失败，点击重新拉取数据'))
+      }
+    })
+  })
 }
 
 </script>
@@ -347,93 +411,92 @@ function selectMap(value) {
     </div>
 
     <!-- 怪物結果 -->
-    <div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
-        <div v-for="m in filteredMonsters" :key="m.id"
-             class="bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
+      <div v-for="m in filteredMonsters" :key="m.id"
+           class="bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
-          <div class="flex justify-between">
-            <!-- 圖片觸發 dropdown -->
-            <img
-                :id="'dropdownHoverButton' + m.id"
-                :data-dropdown-toggle="'dropdownHover' + m.id"
-                data-dropdown-placement="right"
-                data-dropdown-trigger="hover"
-                src="assets/image/icon/map.png"
-                alt="map icon"
-                class="w-10 h-10 cursor-pointer"
-            />
+        <div class="flex justify-between">
+          <!-- 圖片觸發 dropdown -->
+          <img
+              :id="'dropdownHoverButton' + m.id"
+              :data-dropdown-toggle="'dropdownHover' + m.id"
+              data-dropdown-placement="right"
+              data-dropdown-trigger="hover"
+              src="assets/image/icon/map.png"
+              alt="map icon"
+              class="w-10 h-10 cursor-pointer"
+          />
 
-            <!-- Dropdown menu -->
-            <div
-                :id="'dropdownHover' + m.id"
-                class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
-            >
-              <ul class="py-2 text-sm text-gray-200 "
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
-                <li>
-                  <a @click="selectMap(map.map_code)"
-                     class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
-                    {{ map.map_name_zh }}({{ map.map_code }})
-                  </a>
-                </li>
+          <!-- Dropdown menu -->
+          <div
+              :id="'dropdownHover' + m.id"
+              class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
+          >
+            <ul class="py-2 text-sm text-gray-200 "
+                :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
+              <li>
+                <a @click="selectMap(map.map_code)"
+                   class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
+                  {{ map.map_name_zh }}({{ map.map_code }})
+                </a>
+              </li>
 
-              </ul>
-            </div>
-
-
-            <div class="flex h-6">
-              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
-              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
-                  m.attributes.element
-                }}</p>
-              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
-            </div>
-
+            </ul>
           </div>
 
-          <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
 
-          <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+          <div class="flex h-6">
+            <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
+            <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
+                m.attributes.element
+              }}</p>
+            <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
+          </div>
 
-          <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{ m.stats.level }}</span>
-          </p>
-          <p class="text-sm flex justify-center"><strong>血量：</strong><span
-              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
-              m.stats.attack_power
-            }}</span></p>
-          <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
-              class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
-          <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
-              class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
-          <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
-              class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
-          <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
-              class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
-
-          <hr class="my-3 border-yellow-700">
-
-          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
-          <ul class="text-sm">
-            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-              <div class="flex">
-                <img :src="drop.item_image_url" alt="" class="w-5 h-5">
-                <span>{{ drop.item_name_zh }}</span>
-              </div>
-              <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
-            </li>
-          </ul>
         </div>
+
+        <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
+
+        <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
+        <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
+        <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+
+        <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
+            m.stats.level
+          }}</span>
+        </p>
+        <p class="text-sm flex justify-center"><strong>血量：</strong><span
+            class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
+            class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
+            class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
+            m.stats.attack_power
+          }}</span></p>
+        <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
+            class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
+        <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
+            class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
+        <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
+            class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
+        <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
+            class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
+
+        <hr class="my-3 border-yellow-700">
+
+        <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+        <ul class="text-sm">
+          <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+            <div class="flex">
+              <img :src="drop.item_image_url" alt="" class="w-5 h-5">
+              <span>{{ drop.item_name_zh }}</span>
+            </div>
+            <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
+          </li>
+        </ul>
       </div>
     </div>
-
 
 
     <!-- 無結果提示 -->
@@ -473,5 +536,14 @@ input[type="number"]:focus {
   font-weight: bold;
   color: #d2851d;
 }
+.scroller {
+  height: 100%;
+}
 
+.user {
+  height: 32%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
 </style>
