@@ -1,7 +1,7 @@
 <script setup>
 import { ref, reactive, computed } from "vue"
 import {initFlowbite} from "flowbite";
-import { monstersData } from "../../assets/data/monsterstest.js";
+import { monstersData } from "../../assets/data/monsters.js";
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
