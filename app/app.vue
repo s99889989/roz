@@ -30,7 +30,7 @@ onMounted(() => {
 </template>
 <style scoped>
 bg {
-  background: #4b3621;
+  background: #43321c;
   color: #fff;
   font-family: 'Microsoft JhengHei', sans-serif;
   text-align: center;
