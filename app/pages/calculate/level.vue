@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch, onMounted } from "vue";
+import {computed, onMounted, ref} from "vue";
 
 // 🧮 經驗表
 const expTable = [
@@ -114,11 +114,11 @@ function calculate() {
     // const needExp = expTable[nextLv - 1]?.exp ?? 0;
     needExpNow += expTable[nextLv - 1].exp;
     const needExp = needExpNow;
-    const minutes = needExp / gainPerMin;
-    needMinutesAll += minutes;
+    needMinutesAll = needExp / gainPerMin;
     const days = Math.floor(needMinutesAll / 1440);
     const hours = Math.floor((needMinutesAll % 1440) / 60);
     const mins = Math.floor(needMinutesAll % 60);
+
     results.value.push({ targetLevel: nextLv, endExp, needExp, days, hours, minutes: mins });
     currentLv = nextLv;
   }
