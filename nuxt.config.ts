@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       tailwindcss(),
-    ],
+    ]
   },
   app: {
     head: {
@@ -23,10 +23,18 @@ export default defineNuxtConfig({
         { name: 'og:image', content: '/logo.ico' },
       ],
       link: [
-
+        {
+          href: "vue-virtual-scroller/dist/vue-virtual-scroller.css",
+          rel: "stylesheet"
+        },
       ],
       script: [
-
+        {
+          src: "vue.js",
+        },
+        {
+          src: "vue-virtual-scroller/dist/vue-virtual-scroller.min.js",
+        },
       ]
     }
   }

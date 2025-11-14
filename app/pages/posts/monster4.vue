@@ -2,7 +2,9 @@
 import {ref, reactive, computed} from "vue"
 import {initFlowbite} from "flowbite";
 import {monstersData} from "../../assets/data/monsters.js";
-
+import {RecycleScroller} from 'vue-virtual-scroller'
+import { VirtualScroll } from 'vue3-virtual-scroll'
+import 'vue3-virtual-scroll/dist/style.css'
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -230,6 +232,21 @@ function displayValue(value) {
 function selectMap(value) {
   search.value = value
 }
+let pageNum = 0
+function onTouchEnd() {
+  return new Promise((resolve, reject) => {
+    getList({ page: pageNum, pageSize: 50 }).then((newList) => {
+      if (Math.random() > 0.3) {
+        list.value.push(...newList)
+        pageNum += 1;
+        resolve(true)
+      }
+      else {
+        reject(new Error('加载失败，点击重新拉取数据'))
+      }
+    })
+  })
+}
 
 </script>
 
@@ -356,92 +373,100 @@ function selectMap(value) {
     </div>
 
     <!-- 怪物結果 -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
-      <div v-for="m in filteredMonsters" :key="m.id"
-           class="bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
+    <VirtualScroll
+        :list="filteredMonsters"
+        :item-height="121"
+        :item-buffer="8"
+        :grid="4"
+        :rowKey="itd"
+    >
+      <template #default="{ item: m, index }">
+        <div
+            class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
-        <div class="flex justify-between">
-          <!-- 圖片觸發 dropdown -->
-          <img
-              :id="'dropdownHoverButton' + m.id"
-              :data-dropdown-toggle="'dropdownHover' + m.id"
-              data-dropdown-placement="right"
-              data-dropdown-trigger="hover"
-              src="assets/image/icon/map.png"
-              alt="map icon"
-              class="w-10 h-10 cursor-pointer"
-          />
+          <div class="flex justify-between">
+            <!-- 圖片觸發 dropdown -->
+            <img
+                :id="'dropdownHoverButton' + m.id"
+                :data-dropdown-toggle="'dropdownHover' + m.id"
+                data-dropdown-placement="right"
+                data-dropdown-trigger="hover"
+                src="assets/image/icon/map.png"
+                alt="map icon"
+                class="w-10 h-10 cursor-pointer"
+            />
 
-          <!-- Dropdown menu -->
-          <div
-              :id="'dropdownHover' + m.id"
-              class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
-          >
-            <ul class="py-2 text-sm text-gray-200 "
-                :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
-              <li>
-                <a @click="selectMap(map.map_code)"
-                   class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
-                  {{ map.map_name_zh }}({{ map.map_code }})
-                </a>
-              </li>
+            <!-- Dropdown menu -->
+            <div
+                :id="'dropdownHover' + m.id"
+                class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
+            >
+              <ul class="py-2 text-sm text-gray-200 "
+                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
+                <li>
+                  <a @click="selectMap(map.map_code)"
+                     class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
+                    {{ map.map_name_zh }}({{ map.map_code }})
+                  </a>
+                </li>
 
-            </ul>
-          </div>
-
-
-          <div class="flex h-6">
-            <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
-            <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
-                m.attributes.element
-              }}</p>
-            <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
-          </div>
-
-        </div>
-
-        <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
-
-        <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
-        <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
-        <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
-
-        <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
-            m.stats.level
-          }}</span>
-        </p>
-        <p class="text-sm flex justify-center"><strong>血量：</strong><span
-            class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
-        <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
-            class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
-        <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
-            class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
-        <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
-            m.stats.attack_power
-          }}</span></p>
-        <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
-            class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
-        <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
-            class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
-        <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
-            class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
-        <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
-            class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
-
-        <hr class="my-3 border-yellow-700">
-
-        <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
-        <ul class="text-sm">
-          <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-            <div class="flex">
-              <img :src="drop.item_image_url" alt="" class="w-5 h-5">
-              <span>{{ drop.item_name_zh }}</span>
+              </ul>
             </div>
-            <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
-          </li>
-        </ul>
-      </div>
-    </div>
+
+
+            <div class="flex h-6">
+              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
+              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
+                  m.attributes.element
+                }}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
+            </div>
+
+          </div>
+
+          <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
+
+          <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+
+          <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
+              m.stats.level
+            }}</span>
+          </p>
+          <p class="text-sm flex justify-center"><strong>血量：</strong><span
+              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
+              class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
+              class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
+              m.stats.attack_power
+            }}</span></p>
+          <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
+              class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
+          <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
+              class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
+          <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
+              class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
+          <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
+              class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
+
+          <hr class="my-3 border-yellow-700">
+
+          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+          <ul class="text-sm">
+            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+              <div class="flex">
+                <img :src="drop.item_image_url" alt="" class="w-5 h-5">
+                <span>{{ drop.item_name_zh }}</span>
+              </div>
+              <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
+            </li>
+          </ul>
+        </div>
+      </template>
+    </VirtualScroll>
 
 
     <!-- 無結果提示 -->

@@ -83,19 +83,22 @@
 
       <div class="table-wrapper">
         <table class="styled-table treasure-table">
-          <thead><tr><td>名稱</td><td>說明</td></tr></thead>
+          <thead><tr><td>名稱</td><td>說明</td><td>備註/重量</td></tr></thead>
           <tbody>
           <tr>
-            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022433_A2oC5cXo.bmp" alt="微光的水晶" /><br />微光的水晶</td>
-            <td class="item-desc">體內魔力濃縮後形成的結晶，散發微弱光芒。</td>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022433_A2oC5cXo.bmp" alt="微微發光的結晶體圖片" /><br />微微發光的結晶體</td>
+            <td class="item-desc">在生物體上凝聚魔力後，以礦物形態隱隱流淌出魔法的力量。</td>
+            <td class="item-note">重量：1</td>
           </tr>
           <tr class="alt">
-            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/02/13/050759_58Za7Yid.bmp" alt="藍光晶體" /><br />藍光晶體</td>
-            <td class="item-desc">當魔力聚集時會發出藍光。</td>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/02/13/050759_58Za7Yid.bmp" alt="藍光結晶體圖片" /><br />藍光結晶體</td>
+            <td class="item-desc">由生物體掉出凝聚魔力且散發藍光的結晶體。</td>
+            <td class="item-note">重量：0</td>
           </tr>
           <tr>
-            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022517_NT2d6pur.bmp" alt="果凍碎片盒" /><br />果凍碎片盒</td>
-            <td class="item-desc">一個畫著波利的可疑盒子，裡面裝著果凍碎片。</td>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022517_NT2d6pur.bmp" alt="果凍碎片箱子圖片" /><br />果凍碎片箱子</td>
+            <td class="item-desc">畫著波利的可疑箱子。裡面裝有果凍碎片的樣子。</td>
+            <td class="item-note">重量：1</td>
           </tr>
           </tbody>
         </table>
@@ -105,13 +108,63 @@
 
       <div class="table-wrapper">
         <table class="styled-table treasure-table">
-          <thead><tr><td>名稱</td><td>說明</td></tr></thead>
+          <thead><tr><td>名稱</td><td>說明</td><td>備註/重量</td></tr></thead>
           <tbody>
           <tr>
-            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022607_WghORyXe.bmp" alt="微光的水晶" /><br />微光的水晶</td>
-            <td class="item-desc">體內魔力形成的礦物。</td>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022607_WghORyXe.bmp" alt="微微發光的結晶體圖片" /><br />微微發光的結晶體</td>
+            <td class="item-desc">在生物體上凝聚魔力後，以礦物形態隱隱流淌出魔法的力量。</td>
+            <td class="item-note">重量：1</td>
           </tr>
-
+          <tr class="alt">
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022617_gJAwBq6N.bmp" alt="鉿原石圖片" /><br />鉿原石</td>
+            <td class="item-desc">可以拿來煉銀的礦石，拿來提煉作成盔甲。</td>
+            <td class="item-note">重量：20</td>
+          </tr>
+          <tr>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022624_wv5Fw2Hw.bmp" alt="神之金屬原石圖片" /><br />神之金屬原石</td>
+            <td class="item-desc">是被稱為神之金屬的礦石。相當稀少，且得來不易，可以說是相當珍貴的物品。</td>
+            <td class="item-note">重量：20</td>
+          </tr>
+          <tr class="alt">
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022632_qzjhuXO7.bmp" alt="鋁圖片" /><br />鋁</td>
+            <td class="item-desc">很輕且沒有毒性的金屬。常被拿來作成盔甲，以此製成的所有防具將變成更強。</td>
+            <td class="item-note">重量：20</td>
+          </tr>
+          <tr>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022644_X7LGECpZ.bmp" alt="神之金屬圖片" /><br />神之金屬</td>
+            <td class="item-desc">被稱為神之金屬的神秘金屬，比什麼東西都堅硬，用它來製造武器可以得到相當強大的破壞力，可以強化等級三和四的武器。</td>
+            <td class="item-note">重量：20</td>
+          </tr>
+          <tr class="alt">
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022710_Af388qzD.bmp" alt="殘想力原石圖片" /><br />殘想力原石</td>
+            <td class="item-desc">含被殘想力之貴重礦物的原石。</td>
+            <td class="item-note">重量：1</td>
+          </tr>
+          <tr>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022734_SvU4XctJ.bmp" alt="風靈礦石圖片" /><br />風靈礦石</td>
+            <td class="item-desc">黃色的小礦石塊。擁有風屬性，提煉後可以製作出風靈原石。</td>
+            <td class="item-note">重量：5</td>
+          </tr>
+          <tr class="alt">
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022743_uHsWkvOC.bmp" alt="火靈礦石圖片" /><br />火靈礦石</td>
+            <td class="item-desc">紅色的小礦石塊。擁有火屬性，提煉後可以製作出火靈原石。</td>
+            <td class="item-note">重量：5</td>
+          </tr>
+          <tr>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022743_uHsWkvOC.bmp" alt="水靈礦石圖片" /><br />水靈礦石</td>
+            <td class="item-desc">藍色的小礦石塊。擁有水屬性，提煉後可以製作出水靈原石。</td>
+            <td class="item-note">重量：5</td>
+          </tr>
+          <tr class="alt">
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022751_cs82v3VY.bmp" alt="地靈礦石圖片" /><br />地靈礦石</td>
+            <td class="item-desc">綠色的小礦石塊。擁有地屬性，提煉後可以製作出地靈原石。</td>
+            <td class="item-note">重量：5</td>
+          </tr>
+          <tr>
+            <td class="item-name"><img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/022758_9iEzO2Wm.bmp" alt="血色漫瀾的紅寶石圖片" /><br />血色漫瀾的紅寶石</td>
+            <td class="item-desc">被染紅血色詛咒的紅寶石。看起來不常見，隨意使用的話似乎會被血色詛咒包圍。</td>
+            <td class="item-note">重量：1</td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -130,127 +183,148 @@
         <table class="styled-table equipment-table">
           <thead>
           <tr>
-            <td style="width: 30%;">名稱</td>
-            <td style="width: 70%;">說明與屬性</td>
+            <td style="width: 25%;">名稱</td>
+            <td style="width: 50%;">效果與說明</td>
+            <td style="width: 25%;">升級材料</td>
           </tr>
           </thead>
 
           <tbody>
           <tr>
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053325_6RLfCkKN.bmp" alt="遠征隊的鞋子" />
-              <br />遠征隊的鞋子
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053352_chAx6Lq1.bmp" alt="遺証降鎧甲圖片" />
+              <br />遺証降鎧甲
             </td>
             <td class="item-desc left">
-              遠征活動獎勵鞋子。<br />
-              HP 回復量 + 10%，SP 回復量 + 7%。<br />
-              精煉 +3 時，VIT + 1。<br /><br />
-              <span class="equip-detail">類型：鞋子 | 防禦：14 | 重量：25<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              DEF +30，MHP+50，MSP+5。<br />
+              精煉每+1時，MHP+10，MSP+30。<br />
+              和遺証降斗篷、遺証降長靴、遺証降戒指一起裝備時，<br />
+              精煉總和為+21以上時，攻擊速度增加（攻擊後延遲-5%）<br />
+              <span class="equip-detail">類型：鎧甲 | 防禦：56 | 重量：20 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降鎧甲 x 1個<br />
+              微微發光的結晶體 x 100個<br />
+              紅礦的原寶石 x 2個
             </td>
           </tr>
 
           <tr class="alt">
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053336_BSptHouj.bmp" alt="遠征隊的長袍" />
-              <br />遠征隊的長袍
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053336_BSptHouj.bmp" alt="遺証降外袍圖片" />
+              <br />遺証降外袍
             </td>
             <td class="item-desc left">
-              遠征活動獎勵長袍。<br />
-              MaxHP + 400，MaxSP + 50，MDEF + 5，DEF + 30。<br />
-              精煉 +3 時，DEF + 5，MaxSP + 10。<br /><br />
-              <span class="set-effect"><b>【套裝效果】</b>與 <b>遠征隊的圍巾 / 鞋子 / 魔法戒指</b> 同時裝備時：</span><br />
-              MATK + 20<br />
-              精煉合計 +21 以上時：<br />
-              固定施法 -5%，變動施法 -5%<br /><br />
-              <span class="equip-detail">類型：盔甲 | 防禦：51 | 重量：45<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              DEF +30，MHP+50，MSP+5。<br />
+              精煉每+1時，DEF+5，MSP+10。<br />
+              和遺証降斗篷、遺証降鞋子、遺証降魔法戒指一起裝備時，<br />
+              精煉總和為+21以上時，變動詠唱-5%，固定詠唱-5%。<br />
+              <span class="equip-detail">類型：鎧甲 | 防禦：51 | 重量：20 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降外袍 x 1個<br />
+              微微發光的結晶體 x 100個<br />
+              清澈的原寶石 x 2個
             </td>
           </tr>
 
           <tr>
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053344_9Jy6YSjR.bmp" alt="遠征隊的靴子" />
-              <br />遠征隊的靴子
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053422_Dg2tMgDG.bmp" alt="遺証降斗篷圖片" />
+              <br />遺証降斗篷
             </td>
             <td class="item-desc left">
-              遠征活動獎勵靴子。<br />
-              HP 回復量 + 15%，SP 回復量 + 5%。<br />
-              精煉 +3 時，AGI + 1。<br /><br />
-              <span class="equip-detail">類型：鞋子 | 防禦：16 | 重量：30<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              精煉每+1時，MHP+30，MSP+15。<br />
+              精煉+3以上時，FLEE+3。<br />
+              <span class="equip-detail">類型：披肩 | 防禦：14 | 重量：20 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降斗篷 x 1個<br />
+              微微發光的結晶體 x 50個<br />
+              神聖的原寶石 x 1個
             </td>
           </tr>
 
           <tr class="alt">
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053352_chAx6Lq1.bmp" alt="遠征隊的盔甲" />
-              <br />遠征隊的盔甲
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053406_2CuWhbaF.bmp" alt="遺証降圍巾圖片" />
+              <br />遺証降圍巾
             </td>
             <td class="item-desc left">
-              遠征活動獎勵盔甲。<br />
-              MaxHP + 500，MaxSP + 30，MDEF + 5，DEF + 30。<br />
-              精煉 +3 時，DEF + 10，MHP + 50。<br /><br />
-              <span class="set-effect"><b>【套裝效果】</b>與 <b>遠征隊的斗篷 / 靴子 / 戒指</b> 同時裝備時：</span><br />
-              ATK + 20<br />
-              精煉合計 +21 以上時：<br />
-              攻擊後延遲 -5%，固定施法 -5%<br /><br />
-              <span class="equip-detail">類型：盔甲 | 防禦：56 | 重量：50<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              精煉每+1時，MHP+20，MSP+12。<br />
+              精煉+3時，無屬性抗性額外+1%。<br />
+              <span class="equip-detail">類型：披肩 | 防禦：13 | 重量：20 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降圍巾 x 1個<br />
+              微微發光的結晶體 x 50個<br />
+              神聖的原寶石 x 1個
             </td>
           </tr>
 
           <tr>
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053358_sfcA9p1O.bmp" alt="遠征隊的魔法戒指" />
-              <br />遠征隊的魔法戒指
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053344_9Jy6YSjR.bmp" alt="遺証降長靴圖片" />
+              <br />遺証降長靴
             </td>
             <td class="item-desc left">
-              遠征活動獎勵戒指。<br />
-              INT + 3<br /><br />
-              <span class="equip-detail">類型：飾品 | 防禦：0 | 重量：10<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              精煉每+1時，MHP+50，回復力+5%。<br />
+              精煉+3以上時，AGI+1。<br />
+              <span class="equip-detail">類型：鞋子 | 防禦：16 | 重量：20 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降長靴 x 1個<br />
+              微微發光的結晶體 x 50個<br />
+              紅礦的原寶石 x 1個
             </td>
           </tr>
 
           <tr class="alt">
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053406_2CuWhbaF.bmp" alt="遠征隊的圍巾" />
-              <br />遠征隊的圍巾
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053325_6RLfCkKN.bmp" alt="遺証降鞋子圖片" />
+              <br />遺証降鞋子
             </td>
             <td class="item-desc left">
-              遠征活動獎勵圍巾。<br />
-              無屬性耐性 +9%，FLEE + 12<br />
-              精煉 +3 時，無屬性耐性 +1%<br /><br />
-              <span class="equip-detail">類型：披肩 | 防禦：13 | 重量：25<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              精煉每+1時，MHP+20，回復力+7%。<br />
+              精煉+3以上時，VIT+1。<br />
+              <span class="equip-detail">類型：鞋子 | 防禦：14 | 重量：25 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降鞋子 x 1個<br />
+              微微發光的結晶體 x 50個<br />
+              神聖的原寶石 x 1個
             </td>
           </tr>
 
           <tr>
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053413_irc8A6Gi.bmp" alt="遠征隊的戒指" />
-              <br />遠征隊的戒指
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053413_irc8A6Gi.bmp" alt="遺証降戒指圖片" />
+              <br />遺証降戒指
             </td>
             <td class="item-desc left">
-              遠征活動獎勵戒指。<br />
-              STR + 3<br /><br />
-              <span class="equip-detail">類型：飾品 | 防禦：0 | 重量：10<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              精煉每+1時，ATK+5。<br />
+              <span class="equip-detail">類型：飾品 | 防禦：0 | 重量：10 | 需求等級：70 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降戒指 x 1個<br />
+              微微發光的結晶體 x 50個<br />
+              真實的原寶石 x 3個
             </td>
           </tr>
 
           <tr class="alt">
             <td class="item-name">
-              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053422_Dg2tMgDG.bmp" alt="遠征隊的斗篷" />
-              <br />遠征隊的斗篷
+              <img src="https://imgc.gnjoy.com/ufile/common/2018/01/30/053358_sfcA9p1O.bmp" alt="遺証降魔法戒指圖片" />
+              <br />遺証降魔法戒指
             </td>
             <td class="item-desc left">
-              遠征活動獎勵斗篷。<br />
-              無屬性耐性 +8%，FLEE + 15<br />
-              精煉 +3 時，FLEE + 3<br /><br />
-              <span class="equip-detail">類型：披肩 | 防禦：14 | 重量：30<br />
-              裝備等級：70 | 職業：全職業 | SLOT：1</span>
+              精煉每+1時，INT+3。<br />
+              <span class="equip-detail">類型：飾品 | 防禦：0 | 重量：10 | 需求等級：70 | 職業：所有職業 | SLOT：1</span>
+            </td>
+            <td class="material-list">
+              遺証降戒指 x 1個<br />
+              微微發光的結晶體 x 50個<br />
+              神聖的原寶石 x 3個
             </td>
           </tr>
 
