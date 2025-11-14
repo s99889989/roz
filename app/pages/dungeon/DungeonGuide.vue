@@ -12,8 +12,9 @@
           <thead>
           <tr>
             <td style="width: 5%;">順序</td>
-            <td style="width: 35%; text-align: left;">名稱</td>
-            <td style="width: 14%;">等級需求</td>
+            <td style="width: 25%; text-align: left;">名稱</td>
+            <td style="width: 14%;">等級</td>
+<!--            <td style="width: 10%;">冷卻(天)</td>-->
             <td style="width: 23%;">連結(台)</td>
             <td style="width: 23%;">連結(韓)</td>
           </tr>
@@ -24,9 +25,13 @@
             <td class="item-name left">
               {{ item.title }}
             </td>
+
             <td :class="{'high-level': item.requiredLevel >= 150}">
               Lv.{{ item.requiredLevel }}+
             </td>
+<!--            <td class="">-->
+<!--              {{ item.day }}-->
+<!--            </td>-->
             <td>
               <template v-if="item.linkTW !== '#'">
                 <a :href="item.linkTW" target="_blank" class="detail-link">
@@ -69,12 +74,22 @@ export default {
     return {
       // 內容列表數據結構
       contentList: [
-        { id: 1, title: '波利村', requiredLevel: 30, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=1&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217651' },
-        { id: 2, title: '地下水道', requiredLevel: 59, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=2&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217842' },
-        { id: 3, title: '獸人的記憶', requiredLevel: 59, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=3&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217841' },
-        { id: 4, title: '螞蟻地獄', requiredLevel: 80, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=10&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217972' },
-        { id: 5, title: '依斯魯地下城二層', requiredLevel: 80, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=11&curpage=3' },
-        { id: 6, title: '沈船', requiredLevel: 99, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=12&curpage=3' },
+        { id: 1, title: '波利村', day: 1, requiredLevel: 30, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=1&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217651' },
+        { id: 2, title: '地下水道', day: 1, requiredLevel: 59, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=2&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217842' },
+        { id: 3, title: '獸人的記憶', day: 1, requiredLevel: 59, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=3&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217841' },
+        { id: 4, title: '螞蟻地獄', day: 1, requiredLevel: 80, linkTW: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=10&curpage=3', linkK: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217972' },
+        { id: 5, title: '依斯魯地下城二層', day: 1, requiredLevel: 80, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=11&curpage=3' },
+        { id: 6, title: '沈船', day: 1, requiredLevel: 99, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=12&curpage=3' },
+        { id: 7, title: '奧丁榮耀神殿', day: 1, requiredLevel: 90, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=48&curpage=3' },
+        { id: 8, title: '舊克雷斯特漢姆', day: 1, requiredLevel: 100, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=94&curpage=2' },
+        { id: 9, title: '臉蟲巢穴', day: 1, requiredLevel: 110, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=95&curpage=2' },
+        { id: 10, title: '莎拉的回憶', day: 1, requiredLevel: 100, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=97&curpage=2' },
+        { id: 11, title: '格芬之夜競技場', day: 3, requiredLevel: 90, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=102&curpage=2' },
+        { id: 12, title: '無限空間', day: 1, requiredLevel: 100, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=108&curpage=2' },
+        { id: 13, title: '格芬魔法錦標賽', day: 1, requiredLevel: 90, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=116&curpage=2' },
+        { id: 14, title: '幽靈宮殿', day: 1, requiredLevel: 120, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=117&curpage=2' },
+        { id: 15, title: '機械之塔', day: 1, requiredLevel: 130, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=118&curpage=2' },
+
       ]
     };
   }
@@ -136,7 +151,7 @@ export default {
   border-collapse: collapse;
   background: #3A2C1F;
   color: #fff8e1;
-  min-width: 600px;
+  min-width: 650px;
   font-size: 0.95rem;
 }
 
