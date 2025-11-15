@@ -114,6 +114,9 @@ function calculate() {
     // const needExp = expTable[nextLv - 1]?.exp ?? 0;
     needExpNow += expTable[nextLv - 1].exp;
     const needExp = needExpNow;
+    // const minutes = needExp / gainPerMin;
+    //
+    // needMinutesAll += minutes;
     needMinutesAll = needExp / gainPerMin;
     const days = Math.floor(needMinutesAll / 1440);
     const hours = Math.floor((needMinutesAll % 1440) / 60);
