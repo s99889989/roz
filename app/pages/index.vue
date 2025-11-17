@@ -159,7 +159,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
     </div>
 
     <div class="result">
-      <p>每 8 秒SP自然回復 {{ natural.toFixed(0) }}</p>
+      <p>每 8 秒SP自然回復 {{ total }}</p>
       <h2>每分鐘平均回魔量</h2>
       <div class="value">{{ perMinute }}</div>
     </div>
