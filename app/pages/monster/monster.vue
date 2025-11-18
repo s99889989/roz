@@ -285,6 +285,8 @@ function onTouchEnd() {
     })
   })
 }
+const getMasterImg = (id) => new URL(`/assets/image/monster/${id}.gif`, import.meta.url).href;
+const getItemImg = (id) => new URL(`/assets/image/item/${id}.gif`, import.meta.url).href;
 
 </script>
 
@@ -455,7 +457,7 @@ function onTouchEnd() {
 
         </div>
 
-        <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
+        <img :src="getMasterImg(m.image_url)" alt="" class="w-full h-12 object-contain mb-3 rounded">
 
         <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
         <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
@@ -489,7 +491,7 @@ function onTouchEnd() {
         <ul class="text-sm">
           <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
             <div class="flex">
-              <img :src="drop.item_image_url" alt="" class="w-5 h-5">
+              <img :src="getItemImg(drop.item_image_url)" alt="" class="w-5 h-5">
               <span>{{ drop.item_name_zh }}</span>
             </div>
             <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>

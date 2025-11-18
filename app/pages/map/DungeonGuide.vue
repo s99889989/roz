@@ -77,7 +77,7 @@ export default {
         { id: 1, title: '波利村', day: 1, requiredLevel: 30, linkTW: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217651', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=1&curpage=3' },
         { id: 2, title: '地下水道', day: 1, requiredLevel: 59, linkTW: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217842', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=3&curpage=3' },
         { id: 3, title: '獸人的記憶', day: 1, requiredLevel: 59, linkTW: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217841', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=2&curpage=3' },
-        { id: 4, title: '螞蟻地獄', day: 1, requiredLevel: 80, linkTW: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217972', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=10&curpage=3' },
+        { id: 4, title: '螞蟻地獄', day: 1, requiredLevel: 70, linkTW: 'https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217972', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=10&curpage=3' },
         { id: 5, title: '依斯魯地下城二層', day: 1, requiredLevel: 80, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=11&curpage=3' },
         { id: 6, title: '沈船', day: 1, requiredLevel: 99, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=12&curpage=3' },
         { id: 7, title: '奧丁榮耀神殿', day: 1, requiredLevel: 90, linkTW: '#', linkK: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=48&curpage=3' },

@@ -22,8 +22,84 @@
 
 
           <li>
-            <NuxtLink to="/posts/monster" href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+            <NuxtLink to="/monster/monster" href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               魔物查詢</NuxtLink>
+          </li>
+
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownItem" class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              物品 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownItem" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <NuxtLink to="/item/DungeonEquipment" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    副本裝備</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/know/refining" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    精煉</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/know/feeding_ring" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    飼養戒指</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/know/cuisine" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    料理</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/know/Item_crafting" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    物品製作</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/know/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    聖物</NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownProfession" class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              職業<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownProfession" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <NuxtLink href="https://rz.fharr.com/db/skilltree" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    技能樹</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/profession/Alchemy" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    煉金資訊</NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownMap" class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              地圖<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownMap" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <NuxtLink to="/map/DungeonGuide" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    副本</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/map/SpecialMap" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    特蘇地圖</NuxtLink>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <li>
@@ -52,36 +128,23 @@
 
           <li>
             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownKnow" class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              小知識<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              其他<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg></button>
             <!-- Dropdown menu -->
             <div id="dropdownKnow" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+
                 <li>
-                  <NuxtLink to="/know/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    聖物</NuxtLink>
+                  <NuxtLink href="https://event.gnjoy.com.tw/RoZ/RoZ_ShopSearch" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    露天網頁查詢</NuxtLink>
                 </li>
+
                 <li>
                   <NuxtLink to="/calculate/time_experience" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     定時經驗加倍</NuxtLink>
                 </li>
-                <li>
-                  <NuxtLink to="/know/refining" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    精煉</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/know/feeding_ring" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    飼養戒指</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/know/cuisine" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    料理</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/know/Item_crafting" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    物品製作</NuxtLink>
-                </li>
+
                 <li>
                   <NuxtLink to="/know/pet" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     寵物</NuxtLink>
@@ -97,32 +160,6 @@
               </ul>
             </div>
           </li>
-
-          <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownProfession" class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-black md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              職業<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownProfession" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-                <li>
-                  <NuxtLink href="https://rz.fharr.com/db/skilltree" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    技能樹</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/profession/Alchemy" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    煉金資訊</NuxtLink>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li>
-            <NuxtLink to="/dungeon/DungeonGuide" href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-              副本</NuxtLink>
-          </li>
-
 
 
         </ul>

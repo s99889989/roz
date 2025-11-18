@@ -172,7 +172,7 @@
 import { reactive, ref, computed } from 'vue';
 
 const globalQuery = ref('');
-const opened = reactive({ weapons: true, strong: false, kenbet: false, potions: false });
+const opened = reactive({ weapons: false, strong: false, kenbet: false, potions: false });
 const toggle = (k) => { opened[k] = !opened[k]; };
 const clear = () => { globalQuery.value = ''; };
 // 內容列表數據結構
@@ -180,7 +180,8 @@ const contentList =ref([
   { id: 1, title: '第一次使用需安裝生命體流程', link: 'https://forum.gamer.com.tw/Co.php?bsn=4212&sn=2787297' },
   { id: 2, title: 'AI生命體程式下載(未安裝過)', link: 'https://reurl.cc/Rk3lG6' },
   { id: 3, title: '戰兔使用的AI生命體腳本', link: 'https://reurl.cc/1kYZe8' },
-  { id: 4, title: '新生命體評估系統', link: '新生命體評估系統' },
+  { id: 4, title: '新生命體評估系統', link: 'https://docs.google.com/spreadsheets/d/1qSfiVOqicXmhYNtYa0BNKPWmL3gH2Tmjzf3Ih1gIhdQ/edit?gid=0#gid=0' },
+  { id: 5, title: '巴哈配藥資訊', link: 'https://forum.gamer.com.tw/C.php?bsn=83142&snA=1462' },
 ])
 // 武器資料（根據你提供的清單整理成結構化陣列）
 const weapons = ref([
