@@ -24,6 +24,10 @@ export default defineNuxtConfig({
       ],
       link: [
         {
+          rel: "icon",
+          href: "/logo.png",
+        },
+        {
           href: "vue-virtual-scroller/dist/vue-virtual-scroller.css",
           rel: "stylesheet"
         },
