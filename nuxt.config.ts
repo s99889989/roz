@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=500, initial-scale=1',
-      title: 'RO樂園',
+      title: 'RO樂園資訊',
       meta: [
         { name: 'description', content: 'RO樂園' },
         { name: 'og:title', content: 'RO樂園' },

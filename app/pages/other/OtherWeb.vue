@@ -2,9 +2,9 @@
   <div class="page-wrapper">
     <div class="content-card">
 
-      <h2 class="main-title">🥼 特殊地圖訊息</h2>
+      <h2 class="main-title">🥼 其他攻略網站</h2>
       <p class="description-text">
-        以下表格列出了特殊地圖訊息，您可以透過點擊連結前往詳細頁面。
+        以下表格列出了RO有關的資訊網站，您可以透過點擊連結前往詳細頁面。
       </p>
 
       <div class="table-wrapper">
@@ -52,8 +52,11 @@ export default {
     return {
       // 內容列表數據結構
       contentList: [
-        { id: 1, title: '鐘塔', link: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=15&curpage=3' },
-        { id: 2, title: '公會地下城資訊', link: 'https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=22&curpage=3' },
+        { id: 1, title: 'RO樂園查詢工具', link: 'https://twroz.wiki/' },
+        { id: 2, title: '傷害計算工具', link: 'https://landgris.github.io/ROCalculator/?zero' },
+        { id: 3, title: '仙境全書', link: 'https://ro.ntome.com/map/world' },
+        { id: 4, title: 'RODB幻想廳', link: 'https://rz.fharr.com/db/monster/1118/' },
+        { id: 5, title: '', link: '' },
       ]
     };
   }
@@ -61,6 +64,10 @@ export default {
 </script>
 
 <style scoped>
+/* ================================================= */
+/* 樣式部分新增：無連結按鈕的樣式        */
+/* ================================================= */
+/* [其他樣式保持不變，只新增無連結文字樣式] */
 
 .page-wrapper {
   background: #3a2c1f;

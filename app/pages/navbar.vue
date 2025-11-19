@@ -17,10 +17,6 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
         <ul  style="background-color: #606753" class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
-
-
-
-
           <li>
             <NuxtLink to="/monster/monster" href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               魔物查詢</NuxtLink>
@@ -39,23 +35,27 @@
                     副本裝備</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/refining" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/item/refining" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     精煉</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/feeding_ring" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/item/feeding_ring" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     飼養戒指</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/cuisine" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/item/cuisine" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     料理</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/Item_crafting" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/item/ItemCrafting" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     物品製作</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/item/CardEntries" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    卡片詞條</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/item/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     聖物</NuxtLink>
                 </li>
               </ul>
@@ -111,7 +111,7 @@
             <div id="dropdownCalculate" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <NuxtLink to="/" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/calculate/RestoreMagic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     回魔計算</NuxtLink>
                 </li>
                 <li>
@@ -121,6 +121,11 @@
                 <li>
                   <NuxtLink to="/calculate/level" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     升級計算</NuxtLink>
+                </li>
+
+                <li>
+                  <NuxtLink to="/calculate/DefenseCalculation" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    防禦計算</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -141,22 +146,30 @@
                 </li>
 
                 <li>
-                  <NuxtLink to="/calculate/time_experience" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/other/time_experience" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     定時經驗加倍</NuxtLink>
                 </li>
 
                 <li>
-                  <NuxtLink to="/know/pet" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/other/pet" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     寵物</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/know/tonic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <NuxtLink to="/other/tonic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     補品效率</NuxtLink>
                 </li>
-<!--                <li>-->
-<!--                  <NuxtLink to="/know/EnchantmentPage" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">-->
-<!--                    裝備詞條</NuxtLink>-->
-<!--                </li>-->
+                <li>
+                  <NuxtLink to="/other/OtherWeb" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    樂園資訊網站</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/other/Command" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    指令</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/other/equipment_attributes/EquipmentDataPage" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    裝備詞條</NuxtLink>
+                </li>
               </ul>
             </div>
           </li>

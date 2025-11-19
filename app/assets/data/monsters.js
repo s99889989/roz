@@ -4763,7 +4763,7 @@ export const monstersData =
             "stats": {
                 "level": 77,
                 "hp": 15168,
-                "base_exp": "???",
+                "base_exp": 11058,
                 "job_exp": "???",
                 "attack_power": "434-582",
                 "physical_defense_def": 80,

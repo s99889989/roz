@@ -23,9 +23,12 @@ onMounted(() => {
 
 
   <bg id="main" class="flex w-full container-top flex-col items-center justify-center">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <div class="w-full 2xl:w-3/4">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </div>
+
   </bg>
 </template>
 <style scoped>
