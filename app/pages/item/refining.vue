@@ -118,6 +118,27 @@ const magicalReduction = computed(() =>
       </table>
     </div>
 
+    <div class="def-section">
+      <h2>⚙️ 防禦計算</h2>
+      <div class="inputs">
+        <label>DEF：<input type="number" v-model.number="defValue" /></label>
+        <label>MDEF：<input type="number" v-model.number="mdefValue" /></label>
+      </div>
+
+      <div class="result">
+        <p>🛡️ 實際物理減傷率：<b>{{ physicalReduction }}%</b></p>
+        <p>🔮 實際魔法減傷率：<b>{{ magicalReduction }}%</b></p>
+      </div>
+    </div>
+
+    <div class="note">
+      <h3>📘 防禦公式說明</h3>
+      <ol>
+        <li>1. 實際減傷率 = DEF ÷ (DEF + 400)</li>
+        <li>2. 實際魔法減傷率 = MDEF ÷ (MDEF + 1000)</li>
+        <li>3. 結果取整數後以百分比顯示</li>
+      </ol>
+    </div>
   </div>
 </template>
 

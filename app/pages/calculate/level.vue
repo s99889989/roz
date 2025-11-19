@@ -128,6 +128,44 @@ function calculate() {
 
   saveToStorage();
 }
+
+// 經驗差計算
+function calcExpBetween(startLv, startExpPercent, endLv, endExpPercent) {
+  if (startLv === endLv) {
+    // 同一等級，只需算百分比差
+    return expTable[startLv].exp * ((endExpPercent - startExpPercent) / 100);
+  }
+
+  // 起始等級尚未滿的經驗量
+  const startRemaining = expTable[startLv].exp * ((100 - startExpPercent) / 100);
+
+  // 結尾等級的經驗量
+  const endPortion = expTable[endLv].exp * (endExpPercent / 100);
+
+  // 中間完整等級的經驗
+  let middle = 0;
+  for (let lv = startLv + 1; lv < endLv; lv++) {
+    middle += expTable[lv].exp;
+  }
+
+  return startRemaining + middle + endPortion;
+}
+
+const calcStartLv = ref(1);
+const calcStartExp = ref(0);
+const calcEndLv = ref(1);
+const calcEndExp = ref(0);
+const calcResult = ref(null);
+
+function calcDiff() {
+  calcResult.value = calcExpBetween(
+      calcStartLv.value,
+      calcStartExp.value,
+      calcEndLv.value,
+      calcEndExp.value
+  );
+}
+
 </script>
 
 <template>
@@ -173,10 +211,31 @@ function calculate() {
       </div>
     </div>
 
+    <h1 class="title">等級經驗差計算機</h1>
+    <div class="section">
+      <h2>🔍 等級經驗差計算</h2>
+
+      <label>起始等級：</label>
+      <input type="number" v-model="calcStartLv" min="1" max="80">
+      <label>起始經驗(%)：</label>
+      <input type="number" v-model="calcStartExp" min="0" max="100" step="0.1">
+
+      <label>結束等級：</label>
+      <input type="number" v-model="calcEndLv" min="1" max="80">
+      <label>結束經驗(%)：</label>
+      <input type="number" v-model="calcEndExp" min="0" max="100" step="0.1">
+
+      <button class="calc-btn" @click="calcDiff">計算</button>
+
+      <p v-if="calcResult !== null">
+        📘 共需經驗值：{{ formatNumber(calcResult) }}
+      </p>
+    </div>
+
 
     <!-- 經驗表 -->
     <div class="section exp-table">
-      <h2>📘 BaseLv 經驗表</h2>
+      <h2 class="title">📘 BaseLv 經驗表</h2>
       <table class="exp-table-inner">
         <thead>
         <tr>
@@ -220,6 +279,7 @@ function calculate() {
 .title {
   text-align: center;
   color: #ffd700;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 .section {
