@@ -81,42 +81,8 @@ const magicalReduction = computed(() =>
 
 <template>
   <div class="app">
-    <h1>🛡️ RO 精煉與防禦資料表</h1>
+    <h1 class="main-title">🛡️ RO 防禦計算</h1>
 
-    <div class="selector">
-      <label >裝備類型：</label>
-      <select style="background-color: #5a422a" v-model="type">
-        <option value="weapon1">一級武器</option>
-        <option value="weapon2">二級武器</option>
-        <option value="weapon3">三級武器</option>
-        <option value="armor">防具</option>
-      </select>
-    </div>
-
-    <div class="table-container">
-      <table>
-        <thead>
-        <tr>
-          <th>精煉等級</th>
-          <th>成功率</th>
-          <th>失敗懲罰</th>
-          <th>所需材料</th>
-          <th>防暴&防退</th>
-          <th>能力</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr v-for="(row, i) in refineTable[type]" :key="i">
-          <td>+{{ row.level }}</td>
-          <td>{{ row.success }}%</td>
-          <td>{{ row.fail }}</td>
-          <td>{{ row.material }}</td>
-          <td>{{ row.riot }}</td>
-          <td>{{ row.fun }}</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
 
     <div class="def-section">
       <h2>⚙️ 防禦計算</h2>
@@ -144,6 +110,9 @@ const magicalReduction = computed(() =>
 
 
 <style scoped>
+.main-title {
+  font-size: 1.8rem;
+}
 .app {
   background: #ae9170;
   border-radius: 12px;
