@@ -3,25 +3,22 @@
 import { ref, computed } from 'vue'
 
 const defValue = ref(200)
-const defValue2 = ref(200)
-const mdefValue = ref(100)
+const mdefValue = ref(50)
 
-// 防禦計算
+//防禦減傷計算 ( 取小數點後1位 )
 const physicalReduction = computed(() =>
-    ((defValue.value / (defValue.value + 400)) * 100).toFixed(1)
+    ( 100 -( ( (4000+defValue.value) / (4000+defValue.value*10)) * 100) ).toFixed(1)
 )
 
-const physicalReduction2 = computed(() =>
-    (((4000+defValue.value)/(4000+defValue.value*10))).toFixed(1)
-)
+//魔法減傷計算 ( 取小數點後1位 )
 const magicalReduction = computed(() =>
-    ((mdefValue.value / (mdefValue.value + 1000)) * 100).toFixed(1)
+    ( 100 - ( (1000 + mdefValue.value) / (1000 + 10 * mdefValue.value) ) * 100).toFixed(1)
 )
 </script>
 
 <template>
   <div class="app">
-    <h1 class="main-title">🛡️ RO 防禦計算</h1>
+    <h1 class="main-title">🛡️ RO 防禦減傷計算</h1>
 
 
     <div class="def-section">
@@ -32,9 +29,8 @@ const magicalReduction = computed(() =>
       </div>
 
       <div class="result">
-        <p>🛡️ 實際物理減傷率：<b>{{ physicalReduction }}%</b></p>
-        <p>🔮 實際魔法減傷率：<b>{{ magicalReduction }}%</b></p>
-        <p class="mt-5">🛡️ 實際物理減傷率2：<b>{{ physicalReduction2 }}%</b></p>
+        <p>🛡️ 物理減傷率：<b>{{ physicalReduction }}%</b></p>
+        <p>🔮 魔法減傷率：<b>{{ magicalReduction }}%</b></p>
       </div>
 
     </div>
@@ -42,9 +38,9 @@ const magicalReduction = computed(() =>
     <div class="note">
       <h3>📘 防禦公式說明</h3>
       <ol>
-        <li>1. 實際減傷率 = DEF ÷ (DEF + 400)</li>
-        <li>2. 實際魔法減傷率 = MDEF ÷ (MDEF + 1000)</li>
-        <li>3. 結果取整數後以百分比顯示</li>
+        <li>1. 減傷率 = 100 - ( (4000 + 後DEF) / (4000 + 後DEF x 10) * 100)</li>
+        <li>2. 魔法減傷率 = 100 - ( (1000 + 後MDEF) / (1000 + 後MDEF x 10) * 100)</li>
+        <li>3. 結果以百分比顯示</li>
       </ol>
     </div>
   </div>

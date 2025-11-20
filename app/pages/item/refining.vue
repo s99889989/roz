@@ -4,7 +4,7 @@ import { ref, computed } from 'vue'
 
 const type = ref('weapon1')
 const defValue = ref(200)
-const mdefValue = ref(100)
+const mdefValue = ref(50)
 
 // 精煉資料表（完整）
 const refineTable = {
@@ -70,12 +70,14 @@ const refineTable = {
   ]
 }
 
-// 防禦計算
+//防禦減傷計算 ( 取小數點後1位 )
 const physicalReduction = computed(() =>
-    ((defValue.value / (defValue.value + 400)) * 100).toFixed(1)
+    ( 100 -( ( (4000+defValue.value) / (4000+defValue.value*10)) * 100) ).toFixed(1)
 )
+
+//魔法減傷計算 ( 取小數點後1位 )
 const magicalReduction = computed(() =>
-    ((mdefValue.value / (mdefValue.value + 1000)) * 100).toFixed(1)
+    ( 100 - ( (1000 + mdefValue.value) / (1000 + 10 * mdefValue.value) ) * 100).toFixed(1)
 )
 </script>
 
