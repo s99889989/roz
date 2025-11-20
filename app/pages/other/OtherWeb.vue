@@ -17,23 +17,18 @@
           </tr>
           </thead>
           <tbody>
-          <tr v-for="(item, index) in contentList" :key="item.id" :class="{ 'alt': index % 2 === 1 }">
-            <td>{{ item.id }}</td>
-            <td class="item-name left">
-              {{ item.title }}
-            </td>
+          <tr v-for="(item, index) in contentList" :key="index" :class="{ 'alt': index % 2 === 1 }">
+            <td>{{ index + 1 }}</td>
+            <td class="item-name left">{{ item.title }}</td>
 
             <td>
               <template v-if="item.link !== '#'">
                 <a :href="item.link" target="_blank" class="detail-link">
-                  查看詳情
-                  <span class="arrow">→</span>
+                  查看詳情 <span class="arrow">→</span>
                 </a>
               </template>
               <template v-else>
-                    <span class="no-link-text">
-                      尚無資料
-                    </span>
+                <span class="no-link-text">尚無資料</span>
               </template>
             </td>
           </tr>
@@ -52,11 +47,15 @@ export default {
     return {
       // 內容列表數據結構
       contentList: [
-        { id: 1, title: 'RO樂園查詢工具', link: 'https://twroz.wiki/' },
-        { id: 2, title: '傷害計算工具', link: 'https://landgris.github.io/ROCalculator/?zero' },
-        { id: 3, title: '仙境全書', link: 'https://ro.ntome.com/map/world' },
-        { id: 4, title: 'RODB幻想廳', link: 'https://rz.fharr.com/db/monster/1118/' },
-        { id: 5, title: '', link: '' },
+        { title: '官方網站', link: 'https://roz.gnjoy.com.tw/' },
+        { title: '巴哈版', link: 'https://forum.gamer.com.tw/B.php?bsn=83142' },
+        { title: 'RO樂園查詢工具', link: 'https://twroz.wiki/' },
+        { title: '傷害計算工具', link: 'https://landgris.github.io/ROCalculator/?zero' },
+        { title: '仙境全書', link: 'https://ro.ntome.com/map/world' },
+        { title: '幻想廳', link: 'https://rz.fharr.com/db/monster/1118/' },
+        { title: '銀雪筆記', link: 'https://ronews.ginyuki.com/category/kro/roz' },
+        { title: 'RO廣播', link: 'https://ro-garden.com/ ' },
+        { title: 'DivinePride', link: 'https://www.divine-pride.net/' },
       ]
     };
   }
@@ -64,10 +63,6 @@ export default {
 </script>
 
 <style scoped>
-/* ================================================= */
-/* 樣式部分新增：無連結按鈕的樣式        */
-/* ================================================= */
-/* [其他樣式保持不變，只新增無連結文字樣式] */
 
 .page-wrapper {
   background: #3a2c1f;
@@ -152,13 +147,6 @@ export default {
   color: #ffcc66;
 }
 
-/* 等級需求強調 */
-.high-level {
-  color: #ff4d4d;
-  font-weight: bold;
-  font-size: 1.05rem;
-}
-
 /* 連結按鈕樣式 */
 .detail-link {
   display: inline-flex;
@@ -196,30 +184,5 @@ export default {
   border-radius: 5px;
   border: 1px solid #666;
   font-weight: 500;
-}
-
-
-/* 類型標籤 */
-.tag {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #3A2C1F;
-}
-
-.tag.副本 {
-  background-color: #ff6347;
-}
-.tag.活動 {
-  background-color: #7fffd4;
-}
-.tag.日常 {
-  background-color: #ffd700;
-}
-.tag.特殊 {
-  background-color: #8a2be2;
-  color: #fff;
 }
 </style>

@@ -139,7 +139,10 @@
             <!-- Dropdown menu -->
             <div id="dropdownKnow" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-
+                <li>
+                  <NuxtLink to="/other/OtherWeb" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    樂園相關網站</NuxtLink>
+                </li>
                 <li>
                   <NuxtLink href="https://event.gnjoy.com.tw/RoZ/RoZ_ShopSearch" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     露天網頁查詢</NuxtLink>
@@ -157,10 +160,6 @@
                 <li>
                   <NuxtLink to="/other/tonic" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     補品效率</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/other/OtherWeb" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    樂園資訊網站</NuxtLink>
                 </li>
                 <li>
                   <NuxtLink to="/other/Command" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
