@@ -93,7 +93,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
 </script>
 
 <template>
-  <div class="sp-calc">
+  <div class="sp-calc w-full xl:w-1/2">
     <h1>SP 自然回復計算機 🧘‍♂️</h1>
 
     <div class="input-section">
