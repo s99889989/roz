@@ -342,6 +342,27 @@ const getItemImg = (id) => new URL(`/assets/image/item/${id}.gif`, import.meta.u
       </div>
     </div>
 
+    <!-- 種族篩選 -->
+    <div class="mb-4">
+      <div class="flex items-center gap-2">
+        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+            v-for="r in raceList"
+            :key="r.id"
+            @click="toggleRace(r.id)"
+            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
+            :class="selectedRace.includes(r.id)
+              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
+              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
+        >
+          {{ r.name }}
+        </button>
+      </div>
+    </div>
+
     <!-- 屬性篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
@@ -362,27 +383,6 @@ const getItemImg = (id) => new URL(`/assets/image/item/${id}.gif`, import.meta.u
         </button>
       </div>
 
-    </div>
-
-    <!-- 種族篩選 -->
-    <div class="mb-4">
-      <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
-      </div>
-
-      <div class="flex flex-wrap gap-2">
-        <button
-            v-for="r in raceList"
-            :key="r.id"
-            @click="toggleRace(r.id)"
-            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
-            :class="selectedRace.includes(r.id)
-              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
-              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
-        >
-          {{ r.name }}
-        </button>
-      </div>
     </div>
 
     <!-- 大小 -->

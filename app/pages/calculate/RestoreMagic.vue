@@ -93,7 +93,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
 </script>
 
 <template>
-  <div class="sp-calc w-full xl:w-1/2">
+  <div class="sp-calc w-full xl:w-3/4">
     <h1>SP 自然回復計算機 🧘‍♂️</h1>
 
     <div class="input-section">
@@ -180,7 +180,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
 
 <style scoped>
 .sp-calc {
-  background: #5a3d1a;
+  background: #5A3D1A;
   color: #fff;
   font-family: 'Microsoft JhengHei';
   padding: 20px;
