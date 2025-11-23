@@ -183,7 +183,7 @@ const keyword = ref("");
 const selectedType = ref("");
 
 // 產生圖片路徑
-const getImg = (id) => new URL(`/assets/image/monster/${id}.gif`, import.meta.url).href;
+const getImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
 
 // 搜尋 + 篩選
 const filteredPets = computed(() =>

@@ -285,8 +285,8 @@ function onTouchEnd() {
     })
   })
 }
-const getMasterImg = (id) => new URL(`/assets/image/monster/${id}.gif`, import.meta.url).href;
-const getItemImg = (id) => new URL(`/assets/image/item/${id}.gif`, import.meta.url).href;
+const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
+const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
 
 </script>
 
