@@ -28575,7 +28575,7 @@ export const itemsData = {
             "official_clean": "有塗抹毒液的短劍,投向敵人就會有中毒效果。"
         },
         "category": "武器",
-        "slot": "投擲的短劍",
+        "slot": "投擲短劍",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,

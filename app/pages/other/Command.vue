@@ -64,14 +64,18 @@ export default {
         { command: '/tip', description: '打開今天的小秘訣', category: '系統/介面' },
         { command: '/help', description: '指令瀏覽', category: '系統/介面' },
         { command: '/bgm', description: '開啟/關閉背景音樂', category: '系統/介面' },
+        { command: '/music', description: '開啟/關閉背景音樂', category: '系統/介面' },
         { command: '/sound', description: '開啟/關閉效果音', category: '系統/介面' },
-        { command: '/effect', description: '效果開啟或關閉', category: '系統/介面' },
+        { command: '/mineffect', description: '簡化特效開啟/關閉', category: '系統/介面' },
+        { command: '/effect', description: '效果開啟/關閉', category: '系統/介面' },
+        { command: '/quake', description: '震動開啟/關閉', category: '系統/介面' },
         { command: '/v (0~127)', description: '調整音量', category: '系統/介面' },
         { command: '/bv (0~127)', description: '調整背景音樂音量', category: '系統/介面' },
         { command: '/where', description: '標示現在位置', category: '系統/介面' },
         { command: '/skip', description: '開啟/關閉畫面同步更新', category: '系統/介面' },
         { command: '/savechat', description: '儲存對話內容', category: '系統/介面' },
-        { command: '/aura', description: '可以使 aura 簡略化', category: '系統/介面' },
+        { command: '/aura', description: '簡化光芒效果開啟/關閉', category: '系統/介面' },
+        { command: '/lightmap', description: '消除建築物陰影', category: '系統/介面' },
         { command: '/showname', description: '變更角色姓名的顯示方式', category: '系統/介面' },
         { command: '/tingonly', description: '只能聽到聊天室入場音', category: '系統/介面' },
         { command: '/window', description: '視窗位置移動時，和其他視窗貼在一起的屬性會進到裡面On Off', category: '系統/介面' },
@@ -81,6 +85,7 @@ export default {
         { command: '/camera', description: '照相機焦點固定開啟或關閉 (使用 /camera On 或 /camera Off)', category: '系統/介面' },
         { command: '/miss', description: '攻擊失敗動畫圖示開啟或關閉', category: '系統/介面' },
         { command: '/fog', description: '開啟/關閉霧化效果', category: '系統/介面' },
+        { command: '/font', description: '角色名稱顯示在頭上', category: '系統/介面' },
 
         // 戰鬥/操作
         { command: '/Snap', description: '攻擊魔物時自動鎖定游標功能On Off', category: '戰鬥/操作' },
@@ -95,16 +100,26 @@ export default {
         { command: '/q2', description: '滑鼠滾輪可以適用快捷第一排倒數兩個按紐(預設F7 F8)', category: '戰鬥/操作' },
         { command: '/q3', description: '同時開啟q1和q2功能', category: '戰鬥/操作' },
         { command: '/set1', description: '/ noctrl + / showname + / skillfail 組合指令', category: '戰鬥/操作' },
+        { command: '/ns', description: '不用按shift鍵, 也可以用治愈術攻擊魔物。', category: '戰鬥/操作' },
+        { command: '/nc', description: '不不用按ctrl鍵, 也可以自動連續攻擊魔物。', category: '戰鬥/操作' },
+        { command: '/nt', description: '自動拒絕申請交易和申請加為好友。', category: '戰鬥/操作' },
+        { command: '/bm', description: ' 按Q ~ O 的話，可以使用技能快速鍵，窗口2的技能，\n按A ~ L的話，可以使用技能快速鍵，窗口3的技能，\n按住Z ~ > 鍵，可以使用技能快速鍵，窗口1的技能，\n按一次Space鍵，輸入文字之後就可以聊天', category: '戰鬥/操作' },
 
         // 組隊/公會
         { command: '/leave', description: '退出組隊', category: '組隊/公會' },
-        { command: '/expel ○ [ 人物名稱 ]', description: '將某指定人物從組隊中除名', category: '組隊/公會' },
-        { command: '/organize ( 構成 ) [ 組隊名稱 ]', description: '組隊構成', category: '組隊/公會' },
-        { command: '/guild [ 公會名稱 ]', description: '公會構成 ( 不可使用空格或 " 符號 )', category: '組隊/公會' },
-        { command: '/gocp [ 公會名稱 ]', description: '公會解散 ( 需將所有公會成員皆請出公會剩會長一人才可 )', category: '組隊/公會' },
+        { command: '/invite 名稱', description: '邀請指定人物加入組隊', category: '組隊/公會' },
+        { command: '/li', description: '開啟/關閉工會成員上下線顯示', category: '組隊/公會' },
+        { command: '/expel 人物名稱', description: '將某指定人物從組隊中除名', category: '組隊/公會' },
+        { command: '/organize 組隊名稱', description: '組隊構成', category: '組隊/公會' },
+        { command: '/guild 公會名稱', description: '公會構成 ( 不可使用空格或 " 符號 )', category: '組隊/公會' },
+        { command: '/gocp 公會名稱', description: '公會解散 ( 需將所有公會成員皆請出公會剩會長一人才可 )', category: '組隊/公會' },
+        { command: '/emblem', description: '開啟/關閉工會會標顯示', category: '組隊/公會' },
         { command: '發話給組隊成員', description: '在訊息前面加上 " % " 就可以發話給組隊成員。＜例如：%大家好＞', category: '組隊/公會' },
 
         // 社交/聊天
+        { command: '/chat', description: '開啟聊天室', category: '社交/聊天' },
+        { command: '/', description: '退出聊天室', category: '社交/聊天' },
+        { command: '/am', description: '自動回复密聊內容', category: '社交/聊天' },
         { command: '/ex [ 人物名稱 ]', description: '拒絕接收某指定人物的悄悄話', category: '社交/聊天' },
         { command: '/ex', description: '拒絕悄悄話的人物列表', category: '社交/聊天' },
         { command: '/in [ 人物名稱 ]', description: '接受某指定人物的悄悄話', category: '社交/聊天' },
@@ -114,6 +129,8 @@ export default {
         { command: '/notalkmsg', description: '聊天的內容不顯示在聊天視窗上。On Off', category: '社交/聊天' },
         { command: '悄悄話功能', description: '在對話欄左邊空格輸入要密語的角色名，右邊輸入你要給對方的對話內容', category: '社交/聊天' },
         { command: '/hi', description: '給登錄為朋友的角色打招呼', category: '社交/聊天' },
+        { command: '/nm', description: '屏蔽公開聊天（不包括自己說的話）', category: '社交/聊天' },
+        { command: '/nm2', description: '屏蔽工會聊天（包括自己說的話）', category: '社交/聊天' },
 
         // 動作/表情
         { command: '/emotion', description: '顯示出現在可以使用的表情符號清單', category: '動作/表情' },
@@ -122,6 +139,8 @@ export default {
         { command: '/bangbang', description: '若連續輸入這指令，玩家角色會順時鐘方向轉身', category: '動作/表情' },
         { command: '/doridori', description: '若連續輸入這指令，玩家角色會搖頭', category: '動作/表情' },
         { command: '[Insert]', description: '坐下/站立', category: '動作/表情' },
+        { command: '/sit', description: '坐下/站立', category: '動作/表情' },
+        { command: '/stand', description: '坐下/站立', category: '動作/表情' },
 
         // 快捷鍵/功能
         { command: 'F12', description: '物品快捷設定', category: '快捷鍵/功能' },
