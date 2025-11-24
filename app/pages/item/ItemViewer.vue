@@ -145,6 +145,16 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
 const getWearingBImg = (id) => new URL(`/assets/images/wearing/${id}_b.png`, import.meta.url).href;
 const getWearingGImg = (id) => new URL(`/assets/images/wearing/${id}_g.png`, import.meta.url).href;
+
+
+const formattedDescription = (text) =>{
+  if (!text) {
+    return ''; // 確保傳入空值時不會出錯
+  }
+  // 只處理傳入的 text 參數，不依賴 this.item
+  return text.replace(/\\n/g, '<br>');
+}
+
 </script>
 
 <template>
@@ -222,12 +232,19 @@ const getWearingGImg = (id) => new URL(`/assets/images/wearing/${id}_g.png`, imp
 
           <hr style="border-color: #5b4b3f; margin: 10px 0;">
 
-          <p style="font-size: 0.9em; margin-bottom: 15px;  overflow: hidden; color: #c9c1b6; line-height: 1.5;">
-            {{ item.description.official_clean }}
-            <br><strong v-if="getCardMainStat(item)" style="color: #90ee90;">{{ getCardMainStat(item) }}</strong>
+<!--          <p style="font-size: 0.9em; margin-bottom: 15px;  overflow: hidden; color: #c9c1b6; line-height: 1.5;">-->
+<!--            {{ item.description.official_clean }}-->
+<!--            <br><strong v-if="getCardMainStat(item)" style="color: #90ee90;">{{ getCardMainStat(item) }}</strong>-->
+<!--          </p>-->
+
+          <p style="font-size: 0.9em; margin-bottom: 15px; overflow: hidden; color: #c9c1b6; line-height: 1.5;">
+            <strong style="color: #90ee90;" v-html="formattedDescription(item.description.official_clean)"></strong>
+
+<!--            <br><strong v-if="getCardMainStat(item)" style="color: #90ee90;">{{ getCardMainStat(item) }}</strong>-->
           </p>
 
           <table style="width: 100%; font-size: 0.9em;">
+            <tbody>
             <tr>
               <td style="color: #b0a59a;">需求等級</td>
               <td style="text-align: right;">{{ getRequiredLevel(item) }}</td>
@@ -252,6 +269,7 @@ const getWearingGImg = (id) => new URL(`/assets/images/wearing/${id}_g.png`, imp
               <td style="color: #b0a59a;">防禦力</td>
               <td style="text-align: right;">{{ getItemDefense(item) }}</td>
             </tr>
+            </tbody>
           </table>
 
           <hr style="border-color: #5b4b3f; margin: 10px 0;">
