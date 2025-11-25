@@ -409,7 +409,7 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
           </div>
 
-<!--          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
+          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">
 
 <!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>-->
 
