@@ -409,9 +409,9 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
           </div>
 
-          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">
+<!--          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
 
-<!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>-->
+          <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
 
 <!--          <p class="text-sm flex justify-center"><strong>血量：</strong><span-->
 <!--              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>-->

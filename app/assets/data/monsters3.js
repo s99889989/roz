@@ -1,5 +1,4 @@
 export const monstersData = [
-
     {
         "id": 1001,
         "name": {
