@@ -433,16 +433,16 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
           <hr class="my-3 border-yellow-700">
 
-<!--          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>-->
-<!--          <ul class="text-sm">-->
-<!--            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">-->
-<!--              <div class="flex">-->
-<!--                <img :src="getItemImg(drop.item_id)" alt="" class="w-5 h-5">-->
-<!--                <span>{{ drop.name }}</span>-->
-<!--              </div>-->
-<!--              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>-->
-<!--            </li>-->
-<!--          </ul>-->
+          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+          <ul class="text-sm">
+            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+              <div class="flex">
+                <img :src="getItemImg(drop.item_id)" alt="" class="w-5 h-5">
+                <span>{{ drop.name }}</span>
+              </div>
+              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+            </li>
+          </ul>
 
         </div>
 
