@@ -1,4 +1,4 @@
-export const monstersData = [
+export const monstersData3 = [
     {
         "id": 1001,
         "name": {
