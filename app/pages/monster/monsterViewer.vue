@@ -1,8 +1,7 @@
 <script setup>
-import {ref, reactive, computed} from "vue"
+import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
 import {monstersData} from "~/assets/data/monsters3.js";
-import {RecycleScroller} from 'vue-virtual-scroller'
 import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
@@ -235,7 +234,7 @@ function selectMap(value) {
 
 }
 
-const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
+const getMasterImg = (path) => new URL(`/assets${path}`, import.meta.url).href;
 const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
 </script>
 
@@ -409,8 +408,10 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
           </div>
 
-<!--          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
-
+<!--          <img :src="getMasterImg(m.image_url)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
+<!--          <img src="~/assets/images/monsters/1283.gif" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
+          <img :src="`/_nuxt/assets${m.image_url}`" alt="" class="w-full h-12 object-contain mb-3 rounded">
+<!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.image_url }}</h2>-->
           <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
