@@ -1,7 +1,7 @@
 <script setup>
-import {ref, reactive, computed} from "vue"
+import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
-import {monstersData} from "../../assets/data/monsters3.js";
+import {monstersData} from "~/assets/data/monsters3.js";
 
 import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
@@ -15,9 +15,6 @@ const minLevel = ref("")
 const maxLevel = ref("")
 
 // 選取標籤（屬性 / 種族 / 大小）
-const type = reactive({
-  selectedElement: ['all']
-})
 const selectedElement = ref(['all'])
 const selectedRace = ref(['all'])
 const selectedSize = ref(['all'])
@@ -237,7 +234,6 @@ function selectMap(value) {
   selectedSize.value = ['all']
 
 }
-let pageNum = 0
 
 const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
 const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
@@ -295,6 +291,27 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
       </div>
     </div>
 
+    <!-- 種族篩選 -->
+    <div class="mb-4">
+      <div class="flex items-center gap-2">
+        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+            v-for="r in raceList"
+            :key="r.id"
+            @click="toggleRace(r.id)"
+            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
+            :class="selectedRace.includes(r.id)
+              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
+              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
+        >
+          {{ r.name }}
+        </button>
+      </div>
+    </div>
+
     <!-- 屬性篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
@@ -315,27 +332,6 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
         </button>
       </div>
 
-    </div>
-
-    <!-- 種族篩選 -->
-    <div class="mb-4">
-      <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
-      </div>
-
-      <div class="flex flex-wrap gap-2">
-        <button
-            v-for="r in raceList"
-            :key="r.id"
-            @click="toggleRace(r.id)"
-            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
-            :class="selectedRace.includes(r.id)
-              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
-              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
-        >
-          {{ r.name }}
-        </button>
-      </div>
     </div>
 
     <!-- 大小 -->
@@ -383,7 +379,7 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
                 :data-dropdown-toggle="'dropdownHover' + m.id"
                 data-dropdown-placement="right"
                 data-dropdown-trigger="hover"
-                src="assets/image/icon/map.png"
+                src="~/assets/image/icon/map.png"
                 alt="map icon"
                 class="w-10 h-10 cursor-pointer"
             />
