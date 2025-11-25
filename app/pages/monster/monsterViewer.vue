@@ -413,25 +413,25 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
           <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
 
-<!--          <p class="text-sm flex justify-center"><strong>血量：</strong><span-->
-<!--              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>經驗值：</strong><span-->
-<!--              class="statsColor">{{ displayValue(m.stats.exp.base) }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span-->
-<!--              class="statsColor">{{ displayValue(m.stats.exp.job) }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{-->
-<!--              m.stats.attack_power-->
-<!--            }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span-->
-<!--              class="statsColor">{{ m.stats.defense }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span-->
-<!--              class="statsColor">{{ m.stats.magic_defense }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>100%命中：</strong><span-->
-<!--              class="statsColor">{{ m.stats.hit_100_percent }}</span></p>-->
-<!--          <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span-->
-<!--              class="statsColor">{{ m.stats.flee_95_percent }}</span></p>-->
+          <p class="text-sm flex justify-center"><strong>血量：</strong><span
+              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
+              class="statsColor">{{ displayValue(m.stats.exp.base) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
+              class="statsColor">{{ displayValue(m.stats.exp.job) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
+              m.stats.attack_power
+            }}</span></p>
+          <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
+              class="statsColor">{{ m.stats.defense }}</span></p>
+          <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
+              class="statsColor">{{ m.stats.magic_defense }}</span></p>
+          <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
+              class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
+          <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
+              class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
 
-<!--          <hr class="my-3 border-yellow-700">-->
+          <hr class="my-3 border-yellow-700">
 
 <!--          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>-->
 <!--          <ul class="text-sm">-->
