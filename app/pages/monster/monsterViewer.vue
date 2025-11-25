@@ -374,40 +374,40 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
           <div class="flex justify-between">
             <!-- 圖片觸發 dropdown -->
-            <img
-                :id="'dropdownHoverButton' + m.id"
-                :data-dropdown-toggle="'dropdownHover' + m.id"
-                data-dropdown-placement="right"
-                data-dropdown-trigger="hover"
-                src="~/assets/image/icon/map.png"
-                alt="map icon"
-                class="w-10 h-10 cursor-pointer"
-            />
+<!--            <img-->
+<!--                :id="'dropdownHoverButton' + m.id"-->
+<!--                :data-dropdown-toggle="'dropdownHover' + m.id"-->
+<!--                data-dropdown-placement="right"-->
+<!--                data-dropdown-trigger="hover"-->
+<!--                src="~/assets/image/icon/map.png"-->
+<!--                alt="map icon"-->
+<!--                class="w-10 h-10 cursor-pointer"-->
+<!--            />-->
 
-            <!-- Dropdown menu -->
-            <div
-                :id="'dropdownHover' + m.id"
-                class="z-10 hidden bg-black rounded-xs shadow-sm"
-            >
-              <ul class="py-1 text-sm text-gray-200"
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawns">
-                <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">
-                  <a class=" px-2 py-1 w-full hover:text-white">
-                    {{ map.description }}({{ map.map_name }})
-                  </a>
-                </li>
+<!--            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--            <div-->
+<!--                :id="'dropdownHover' + m.id"-->
+<!--                class="z-10 hidden bg-black rounded-xs shadow-sm"-->
+<!--            >-->
+<!--              <ul class="py-1 text-sm text-gray-200"-->
+<!--                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawns">-->
+<!--                <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">-->
+<!--                  <a class=" px-2 py-1 w-full hover:text-white">-->
+<!--                    {{ map.description }}({{ map.map_name }})-->
+<!--                  </a>-->
+<!--                </li>-->
 
-              </ul>
-            </div>
-
-
-<!--            <div class="flex h-6">-->
-<!--              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>-->
-<!--              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{m.basic_info.element.type}}</p>-->
-<!--              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>-->
+<!--              </ul>-->
 <!--            </div>-->
 
-<!--          </div>-->
+
+            <div class="flex h-6">
+              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>
+              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{m.basic_info.element.type}}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>
+            </div>
+
+          </div>
 
 <!--          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
 
