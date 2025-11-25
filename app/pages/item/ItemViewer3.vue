@@ -1,9 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { itemsData } from "../../assets/data/items_database.js";
-import VueVirtualScroller from 'vue-virtual-scroller'
-import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
-import {VirtualScroll} from "vue3-virtual-scroll";
+
 const items = ref(itemsData); // 這裡使用模擬數據
 
 // --- 狀態 State ---
@@ -200,16 +198,13 @@ const formattedDescription = (text) =>{
 
       <hr style="border-color: #7a6a5d; margin: 20px 0;">
 
-      <VirtualScroll
-          :list="filteredItemsArray"
-          :item-height="200"
-          :bufferCount = "25"
-          :grid="4"
-          :rowKey="id"
-      >
-        <template #default="{ item: it, index }">
-          <div  class="item-card"
-                style="
+      <div class="item-card-grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+
+        <div
+            v-for="item in filteredItemsArray"
+            :key="item.id"
+            class="item-card"
+            style="
                     width: calc(25% - 15px);
                     min-width: 200px;
                     border: 1px solid #7a6a5d;
@@ -218,58 +213,60 @@ const formattedDescription = (text) =>{
                     padding: 15px;
                     color: #e0d8cc;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-                ">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-              <span class="card-type-tab" style="padding: 3px 8px; background-color: #6a5a4d; border-radius: 4px;">{{ it.category.split('/')[0] }}</span>
-              <span class="card-type-tab" style="padding: 3px 8px; background-color: #6a5a4d; border-radius: 4px;">{{ it.slot}}</span>
-            </div>
-
-
+                "
+        >
+          <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+            <span class="card-type-tab" style="padding: 3px 8px; background-color: #6a5a4d; border-radius: 4px;">{{ item.category.split('/')[0] }}</span>
+            <span class="card-type-tab" style="padding: 3px 8px; background-color: #6a5a4d; border-radius: 4px;">{{ item.slot}}</span>
+          </div>
 
           <div class="flex w-full justify-center">
-            <img :src="getItemImg(it.id)" alt="" class="h-8">
-            <img :src="getWearingBImg(it.id)" alt="" class="h-20">
-            <img :src="getWearingGImg(it.id)" alt="" class="h-20">
+            <img :src="getItemImg(item.id)" alt="" class="h-8">
+            <img :src="getWearingBImg(item.id)" alt="" class="h-20">
+            <img :src="getWearingGImg(item.id)" alt="" class="h-20">
           </div>
 
 
-          <h3 style="color: #cfbd9c; margin-top: 0; margin-bottom: 5px; font-size: 1.2em;">{{ it.name.zh_tw }}</h3>
-          <p style="font-size: 0.8em; color: #b0a59a; margin: 0;">ID: {{ it.id }}</p>
+          <h3 style="color: #cfbd9c; margin-top: 0; margin-bottom: 5px; font-size: 1.2em;">{{ item.name.zh_tw }}</h3>
+          <p style="font-size: 0.8em; color: #b0a59a; margin: 0;">ID: {{ item.id }}</p>
 
           <hr style="border-color: #5b4b3f; margin: 10px 0;">
 
-
+<!--          <p style="font-size: 0.9em; margin-bottom: 15px;  overflow: hidden; color: #c9c1b6; line-height: 1.5;">-->
+<!--            {{ item.description.official_clean }}-->
+<!--            <br><strong v-if="getCardMainStat(item)" style="color: #90ee90;">{{ getCardMainStat(item) }}</strong>-->
+<!--          </p>-->
 
           <p style="font-size: 0.9em; margin-bottom: 15px; overflow: hidden; color: #c9c1b6; line-height: 1.5;">
-            <strong style="color: #90ee90;" v-html="formattedDescription(it.description.official_clean)"></strong>
-
+            <strong style="color: #90ee90;" v-html="formattedDescription(item.description.official_clean)"></strong>
+<!--            <br><strong v-if="getCardMainStat(item)" style="color: #90ee90;">{{ getCardMainStat(item) }}</strong>-->
           </p>
 
           <table style="width: 100%; font-size: 0.9em;">
             <tbody>
             <tr>
               <td style="color: #b0a59a;">需求等級</td>
-              <td style="text-align: right;">{{ getRequiredLevel(it) }}</td>
+              <td style="text-align: right;">{{ getRequiredLevel(item) }}</td>
               <td style="color: #b0a59a;">重量</td>
-              <td style="text-align: right;">{{ it.attributes?.weight || 0 }}</td>
+              <td style="text-align: right;">{{ item.attributes?.weight || 0 }}</td>
             </tr>
             <tr>
               <td style="color: #b0a59a;">買價</td>
-              <td style="text-align: right;">{{ formatPrice(it.attributes?.buy_price) }}</td>
+              <td style="text-align: right;">{{ formatPrice(item.attributes?.buy_price) }}</td>
               <td style="color: #b0a59a;">賣價</td>
-              <td style="text-align: right;">{{ formatPrice(it.attributes?.sell_price) }}</td>
+              <td style="text-align: right;">{{ formatPrice(item.attributes?.sell_price) }}</td>
             </tr>
             <tr>
               <td style="color: #b0a59a;">洞數</td>
-              <td style="text-align: right;">{{ it.slotCount || 0 }}</td>
+              <td style="text-align: right;">{{ item.slotCount || 0 }}</td>
               <td style="color: #b0a59a;">洞數</td>
-              <td style="text-align: right;">{{ it.enchantment_slots || 0 }}</td>
+              <td style="text-align: right;">{{ item.enchantment_slots || 0 }}</td>
             </tr>
             <tr>
               <td style="color: #b0a59a;">防禦力</td>
-              <td style="text-align: right;">{{ getItemDefense(it) }}</td>
+              <td style="text-align: right;">{{ getItemDefense(item) }}</td>
               <td style="color: #b0a59a;">防禦力</td>
-              <td style="text-align: right;">{{ getItemDefense(it) }}</td>
+              <td style="text-align: right;">{{ getItemDefense(item) }}</td>
             </tr>
             </tbody>
           </table>
@@ -278,17 +275,18 @@ const formattedDescription = (text) =>{
 
           <p style="font-size: 0.9em; margin-bottom: 10px;">
             <strong style="color: #b0a59a;">可裝備職業：</strong>
-            <span style="color: #90ee90;">{{ getEquipClass(it) }}</span>
+            <span style="color: #90ee90;">{{ getEquipClass(item) }}</span>
           </p>
 
-          <div v-if="it.dropped_by && it.dropped_by.length" style="font-size: 0.8em; color: #b0a59a;">
-            <p v-for="(drop, index) in it.dropped_by.slice(0, 2)" :key="index" style="margin: 3px 0;">
+          <div v-if="item.dropped_by && item.dropped_by.length" style="font-size: 0.8em; color: #b0a59a;">
+            <p v-for="(drop, index) in item.dropped_by.slice(0, 2)" :key="index" style="margin: 3px 0;">
               👾 {{ drop.name }} <span style="float: right; color: #cfbd9c;">{{ drop.rate }}</span>
             </p>
           </div>
-          </div>
-        </template>
-      </VirtualScroll>
+
+        </div>
+
+      </div>
 
       <p v-if="filteredItemsArray.length === 0" class="no-results">
         找不到符合條件的物品。

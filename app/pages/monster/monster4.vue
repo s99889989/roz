@@ -490,7 +490,17 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 button {
   transition: all 0.2s ease;
 }
+/* 請將這些 CSS 應用到包住 VirtualScroll 的 .scrolling-viewport 容器 */
+.scrolling-viewport {
+  /* 1. 設置一個明確且有限的高度 */
+  height: 600px; /* 舉例：您可以根據您的介面設置為 500px, 80vh 等 */
 
+  /* 2. 確保內容超出時會出現滾動條 */
+  overflow-y: auto;
+
+  /* 3. 重要：如果 VirtualScroll 元件本身有 margin/padding，可能需要調整 */
+  /* 確保其內部內容從頂部開始 */
+}
 /* 輸入框樣式 */
 input[type="text"],
 input[type="number"] {

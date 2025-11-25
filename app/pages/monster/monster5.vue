@@ -1,10 +1,48 @@
 <script setup>
-import {ref, reactive, computed} from "vue"
+import {ref, reactive, computed, onMounted, onUnmounted} from "vue"
 import {initFlowbite} from "flowbite";
 import {monstersData} from "../../assets/data/monsters.js";
-import {RecycleScroller} from 'vue-virtual-scroller'
+import {RecycleScroller , DynamicScroller} from 'vue-virtual-scroller'
 import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
+
+// 1. 設置 Tailwind 斷點寬度 (單位: px)
+const TAILWIND_BREAKPOINTS = {
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280
+};
+
+// 2. 響應式地追蹤當前窗口寬度
+const windowWidth = ref(window.innerWidth);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+});
+
+// 3. 根據寬度計算 VirtualScroll 需要的 :grid 屬性值
+const dynamicGridCols = computed(() => {
+  const width = windowWidth.value;
+
+  if (width >= TAILWIND_BREAKPOINTS.xl) {
+    return 4; // 對應 xl:grid-cols-4
+  } else if (width >= TAILWIND_BREAKPOINTS.md) {
+    return 3; // 對應 md:grid-cols-3
+  } else if (width >= TAILWIND_BREAKPOINTS.sm) {
+    return 2; // 對應 sm:grid-cols-2
+  } else {
+    return 1; // 對應 grid-cols-1
+  }
+});
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -247,6 +285,8 @@ function onTouchEnd() {
     })
   })
 }
+const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
+const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
 
 </script>
 
@@ -302,6 +342,27 @@ function onTouchEnd() {
       </div>
     </div>
 
+    <!-- 種族篩選 -->
+    <div class="mb-4">
+      <div class="flex items-center gap-2">
+        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+            v-for="r in raceList"
+            :key="r.id"
+            @click="toggleRace(r.id)"
+            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
+            :class="selectedRace.includes(r.id)
+              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
+              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
+        >
+          {{ r.name }}
+        </button>
+      </div>
+    </div>
+
     <!-- 屬性篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
@@ -322,27 +383,6 @@ function onTouchEnd() {
         </button>
       </div>
 
-    </div>
-
-    <!-- 種族篩選 -->
-    <div class="mb-4">
-      <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
-      </div>
-
-      <div class="flex flex-wrap gap-2">
-        <button
-            v-for="r in raceList"
-            :key="r.id"
-            @click="toggleRace(r.id)"
-            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
-            :class="selectedRace.includes(r.id)
-              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
-              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
-        >
-          {{ r.name }}
-        </button>
-      </div>
     </div>
 
     <!-- 大小 -->
@@ -373,100 +413,92 @@ function onTouchEnd() {
     </div>
 
     <!-- 怪物結果 -->
-    <VirtualScroll
-        :list="filteredMonsters"
-        :item-height="121"
-        :item-buffer="8"
-        :grid="4"
-        :rowKey="itd"
-    >
-      <template #default="{ item: m, index }">
-        <div
-            class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
+      <div v-for="m in filteredMonsters" :key="m.id"
+           class="bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
-          <div class="flex justify-between">
-            <!-- 圖片觸發 dropdown -->
-            <img
-                :id="'dropdownHoverButton' + m.id"
-                :data-dropdown-toggle="'dropdownHover' + m.id"
-                data-dropdown-placement="right"
-                data-dropdown-trigger="hover"
-                src="assets/image/icon/map.png"
-                alt="map icon"
-                class="w-10 h-10 cursor-pointer"
-            />
+        <div class="flex justify-between">
+          <!-- 圖片觸發 dropdown -->
+          <img
+              :id="'dropdownHoverButton' + m.id"
+              :data-dropdown-toggle="'dropdownHover' + m.id"
+              data-dropdown-placement="right"
+              data-dropdown-trigger="hover"
+              src="assets/image/icon/map.png"
+              alt="map icon"
+              class="w-10 h-10 cursor-pointer"
+          />
 
-            <!-- Dropdown menu -->
-            <div
-                :id="'dropdownHover' + m.id"
-                class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
-            >
-              <ul class="py-2 text-sm text-gray-200 "
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
-                <li>
-                  <a @click="selectMap(map.map_code)"
-                     class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
-                    {{ map.map_name_zh }}({{ map.map_code }})
-                  </a>
-                </li>
+          <!-- Dropdown menu -->
+          <div
+              :id="'dropdownHover' + m.id"
+              class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
+          >
+            <ul class="py-2 text-sm text-gray-200 "
+                :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
+              <li>
+                <a @click="selectMap(map.map_code)"
+                   class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
+                  {{ map.map_name_zh }}({{ map.map_code }})
+                </a>
+              </li>
 
-              </ul>
-            </div>
-
-
-            <div class="flex h-6">
-              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
-              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
-                  m.attributes.element
-                }}</p>
-              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
-            </div>
-
+            </ul>
           </div>
 
-          <img :src="m.image_url" alt="" class="w-full h-12 object-contain mb-3 rounded">
 
-          <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+          <div class="flex h-6">
+            <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
+            <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
+                m.attributes.element
+              }}</p>
+            <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
+          </div>
 
-          <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
-              m.stats.level
-            }}</span>
-          </p>
-          <p class="text-sm flex justify-center"><strong>血量：</strong><span
-              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
-              m.stats.attack_power
-            }}</span></p>
-          <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
-              class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
-          <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
-              class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
-          <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
-              class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
-          <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
-              class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
-
-          <hr class="my-3 border-yellow-700">
-
-          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
-          <ul class="text-sm">
-            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-              <div class="flex">
-                <img :src="drop.item_image_url" alt="" class="w-5 h-5">
-                <span>{{ drop.item_name_zh }}</span>
-              </div>
-              <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
-            </li>
-          </ul>
         </div>
-      </template>
-    </VirtualScroll>
+
+        <img :src="getMasterImg(m.image_url)" alt="" class="w-full h-12 object-contain mb-3 rounded">
+
+        <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
+        <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
+        <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+
+        <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
+            m.stats.level
+          }}</span>
+        </p>
+        <p class="text-sm flex justify-center"><strong>血量：</strong><span
+            class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
+            class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
+            class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
+        <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
+            m.stats.attack_power
+          }}</span></p>
+        <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
+            class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
+        <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
+            class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
+        <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
+            class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
+        <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
+            class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
+
+        <hr class="my-3 border-yellow-700">
+
+        <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+        <ul class="text-sm">
+          <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+            <div class="flex">
+              <img :src="getItemImg(drop.item_image_url)" alt="" class="w-5 h-5">
+              <span>{{ drop.item_name_zh }}</span>
+            </div>
+            <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
+          </li>
+        </ul>
+      </div>
+    </div>
 
 
     <!-- 無結果提示 -->
@@ -506,5 +538,14 @@ input[type="number"]:focus {
   font-weight: bold;
   color: #d2851d;
 }
+.scroller {
+  height: 100%;
+}
 
+.user {
+  height: 32%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
 </style>
