@@ -233,7 +233,10 @@ function selectMap(value) {
   selectedSize.value = ['all']
 
 }
-
+const getMonsterImg = (id) => {
+  // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
+  return `/images/monsters/${id}.gif`
+}
 </script>
 
 <template>
@@ -406,8 +409,7 @@ function selectMap(value) {
 
           </div>
 
-          <img :src="`${m.image_url}`" alt="" class="w-full h-12 object-contain mb-3 rounded">
-          <!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.image_url }}</h2>-->
+          <img :src="getMonsterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">
           <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
