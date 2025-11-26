@@ -177,10 +177,10 @@
                   <NuxtLink to="/other/equipment_attributes/EquipmentDataPage" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     裝備詞條</NuxtLink>
                 </li>
-                <li>
-                  <NuxtLink to="/test/Test" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    測試</NuxtLink>
-                </li>
+<!--                <li>-->
+<!--                  <NuxtLink to="/test/Test" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">-->
+<!--                    測試</NuxtLink>-->
+<!--                </li>-->
               </ul>
             </div>
           </li>

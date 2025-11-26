@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
-import { itemsData } from "../../assets/data/items_database.js";
-import VueVirtualScroller from 'vue-virtual-scroller'
+import { itemsData } from "~/assets/data/items_database.js";
+
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import {VirtualScroll} from "vue3-virtual-scroll";
 const items = ref(itemsData); // 這裡使用模擬數據
@@ -11,19 +11,6 @@ const searchTerm = ref('');
 const selectedCategory = ref('ALL');
 const selectedSubcategory = ref('ALL');
 
-
-// --- 計算屬性 Computed ---
-
-/**
- * 提取所有不重複的主分類名稱，並將 "消耗/恢復" -> "消耗"
- */
-// const categories = computed(() => {
-//   if (!items.value || Object.keys(items.value).length === 0) {
-//     return [];
-//   }
-//   const allCategories = Object.values(items.value).map(item => item.category.split('/')[0]);
-//   return ['ALL', ...new Set(allCategories)].filter(c => c); // 排除空值並去重
-// });
 
 const categories = ['ALL', '武器', '防具', '附魔', '服飾', '卡片', '消耗', '寵物', '其他'];
 
@@ -112,22 +99,6 @@ function getRequiredLevel(item) {
 }
 
 /**
- * 獲取裝備的主要屬性，例如 'STR+2'
- */
-function getCardMainStat(item) {
-  const attrs = item.attributes;
-  if (!attrs) return '';
-
-  // 依序檢查 STR, INT, VIT, DEX 屬性
-  if (attrs.str) return `STR+${attrs.str}`;
-  if (attrs.int) return `INT+${attrs.int}`;
-  if (attrs.vit) return `VIT+${attrs.vit}`;
-  if (attrs.dex) return `DEX+${attrs.dex}`;
-  if (attrs.def) return `DEF+${attrs.def}`;
-  return item.description.official_clean.split('。')[0] || '';
-}
-
-/**
  * 獲取物品的基礎防禦力 (若為裝備)
  */
 function getItemDefense(item) {
@@ -142,12 +113,6 @@ function clearFilters() {
   selectedCategory.value = 'ALL';
   selectedSubcategory.value = 'ALL';
 }
-
-const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
-
-const getWearingBImg = (id) => new URL(`/assets/images/wearing/${id}_b.png`, import.meta.url).href;
-const getWearingGImg = (id) => new URL(`/assets/images/wearing/${id}_g.png`, import.meta.url).href;
-
 
 const formattedDescription = (text) =>{
   if (!text) {
@@ -227,9 +192,9 @@ const formattedDescription = (text) =>{
 
 
           <div class="flex w-full justify-center">
-            <img :src="getItemImg(it.id)" alt="" class="h-8">
-            <img :src="getWearingBImg(it.id)" alt="" class="h-20">
-            <img :src="getWearingGImg(it.id)" alt="" class="h-20">
+            <img :src="`${it.icon_url}`" alt="" class="h-8">
+            <img :src="`/images/wearing/${it.id}_b.png`" alt="" class="h-20">
+            <img :src="`/images/wearing/${it.id}_g.png`" alt="" class="h-20">
           </div>
 
 

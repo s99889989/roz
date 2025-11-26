@@ -32,7 +32,7 @@
         <!-- 寵物圖片 -->
         <div class="flex justify-center">
           <img
-              :src="getImg(pet.image)"
+              :src="`/images/monsters/${pet.image}.gif`"
               class="w-24 h-24 object-contain drop-shadow-lg mb-3"
               :alt="pet.name"
           />
@@ -181,9 +181,6 @@ const pets = [
 
 const keyword = ref("");
 const selectedType = ref("");
-
-// 產生圖片路徑
-const getImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
 
 // 搜尋 + 篩選
 const filteredPets = computed(() =>
