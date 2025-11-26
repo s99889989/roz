@@ -416,7 +416,7 @@ function getImage(path) {
 
 <!--          <img :src="getMasterImg(m.image_url)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
 <!--          <img src="~/assets/images/monsters/1283.gif" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
-          <img :src="getMasterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">
+          <img :src="`/images/monsters/${m.id}.gif`" alt="" class="w-full h-12 object-contain mb-3 rounded">
 <!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.image_url }}</h2>-->
           <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
