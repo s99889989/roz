@@ -121,6 +121,14 @@ const formattedDescription = (text) =>{
   // 只處理傳入的 text 參數，不依賴 this.item
   return text.replace(/\\n/g, '<br>');
 }
+const getWearingBImg = (id) => {
+  // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
+    return `/images/wearing/${id}_b.png`
+}
+const getWearingGImg = (id) => {
+    // return `https://assets.twroz.wiki/images/wearing/${id}_g.png`
+  return `/images/wearing/${id}_g.png`
+}
 
 </script>
 
@@ -165,10 +173,16 @@ const formattedDescription = (text) =>{
 
       <hr style="border-color: #7a6a5d; margin: 20px 0;">
 
+      <!-- 結果統計 -->
+      <div class="mb-4 p-3 bg-[#2b1e12] border border-yellow-600 rounded">
+        <span class="text-yellow-400 font-bold">搜尋結果：</span>
+        <span class="text-white">共 {{ filteredItemsArray.length }} 件物品</span>
+      </div>
+
       <VirtualScroll
           :list="filteredItemsArray"
           :item-height="200"
-          :bufferCount = "25"
+          :bufferCount = "82"
           :grid="4"
           :rowKey="id"
       >
@@ -193,8 +207,8 @@ const formattedDescription = (text) =>{
 
           <div class="flex w-full justify-center">
             <img :src="`${it.icon_url}`" alt="" class="h-8">
-            <img :src="`/images/wearing/${it.id}_b.png`" alt="" class="h-20">
-            <img :src="`/images/wearing/${it.id}_g.png`" alt="" class="h-20">
+            <img :src="getWearingBImg(it.id)" alt="" class="h-20">
+            <img :src="getWearingGImg(it.id)" alt="" class="h-20">
           </div>
 
 
