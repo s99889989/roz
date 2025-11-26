@@ -182,7 +182,7 @@ const getWearingGImg = (id) => {
       <VirtualScroll
           :list="filteredItemsArray"
           :item-height="200"
-          :bufferCount = "82"
+          :bufferCount = "70"
           :grid="4"
           :rowKey="id"
       >
