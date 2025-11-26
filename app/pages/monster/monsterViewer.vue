@@ -234,14 +234,6 @@ function selectMap(value) {
 
 }
 
-const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
-const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
-
-
-function getImage(path) {
-  return new URL(`/assets${path}`, import.meta.url).href
-}
-
 </script>
 
 <template>
@@ -384,7 +376,7 @@ function getImage(path) {
                 :data-dropdown-toggle="'dropdownHover' + m.id"
                 data-dropdown-placement="right"
                 data-dropdown-trigger="hover"
-                src="~/assets/image/icon/map.png"
+                :src="`/images/icon/map.png`"
                 alt="map icon"
                 class="w-10 h-10 cursor-pointer"
             />
@@ -414,9 +406,7 @@ function getImage(path) {
 
           </div>
 
-<!--          <img :src="getMasterImg(m.image_url)" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
-<!--          <img src="~/assets/images/monsters/1283.gif" alt="" class="w-full h-12 object-contain mb-3 rounded">-->
-          <img :src="`/images/monsters/${m.id}.gif`" alt="" class="w-full h-12 object-contain mb-3 rounded">
+          <img :src="`${m.image_url}`" alt="" class="w-full h-12 object-contain mb-3 rounded">
 <!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.image_url }}</h2>-->
           <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
@@ -446,7 +436,7 @@ function getImage(path) {
           <ul class="text-sm">
             <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
               <div class="flex">
-<!--                <img :src="getItemImg(drop.item_id)" alt="" class="w-5 h-5">-->
+                <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
                 <span>{{ drop.name }}</span>
               </div>
               <span class="text-red-600 font-bold">{{ drop.rate }}%</span>

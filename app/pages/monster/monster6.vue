@@ -1,7 +1,8 @@
 <script setup>
-import {ref, computed} from "vue"
+import {ref, reactive, computed} from "vue"
 import {initFlowbite} from "flowbite";
-import {monstersData3} from "~/assets/data/monsters3.js";
+import {monstersData} from "../../assets/data/monsters.js";
+import {RecycleScroller} from 'vue-virtual-scroller'
 import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
@@ -14,6 +15,9 @@ const minLevel = ref("")
 const maxLevel = ref("")
 
 // 選取標籤（屬性 / 種族 / 大小）
+const type = reactive({
+  selectedElement: ['all']
+})
 const selectedElement = ref(['all'])
 const selectedRace = ref(['all'])
 const selectedSize = ref(['all'])
@@ -59,7 +63,7 @@ const sizeList = [
 ]
 
 // ✅ 怪物資料
-const monsters = ref(monstersData3);
+const monsters = ref(monstersData);
 
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {
@@ -70,41 +74,42 @@ const filteredMonsters = computed(() => {
 
     const matchesName =
         q === "" ||
-        (m.name.zh_tw && m.name.zh_tw.includes(q)) ||
-        (Array.isArray(m.spawns) &&
-            m.spawns.some(loc =>
-                (loc.map_name && loc.map_name.toLowerCase().includes(q))
+        (m.monster_name_zh && m.monster_name_zh.toLowerCase().includes(q)) ||
+        (Array.isArray(m.spawn_locations) &&
+            m.spawn_locations.some(loc =>
+                (loc.map_name_zh && loc.map_name_zh.toLowerCase().includes(q)) ||
+                (loc.map_code && loc.map_code.toLowerCase().includes(q))
             ));
 
     // ✅ 等級範圍
     const matchesLevel =
-        (!minLevel.value || m.basic_info.level >= parseInt(minLevel.value)) &&
-        (!maxLevel.value || m.basic_info.level <= parseInt(maxLevel.value))
+        (!minLevel.value || m.stats.level >= parseInt(minLevel.value)) &&
+        (!maxLevel.value || m.stats.level <= parseInt(maxLevel.value))
 
     // ✅ 屬性篩選
     const matchesElement =
         selectedElement.value.length === 0 ||
         selectedElement.value.includes("all") ||
-        selectedElement.value.some(e => m.basic_info.element.type.includes(e))
+        selectedElement.value.some(e => m.attributes.element.includes(e))
 
     // ✅ 種族篩選
     const matchesRace =
         selectedRace.value.length === 0 ||
         selectedRace.value.includes("all") ||
-        selectedRace.value.some(r => m.basic_info.race.includes(r))
+        selectedRace.value.some(r => m.attributes.race.includes(r))
 
     // ✅ 大小篩選
     const matchesSize =
         selectedSize.value.length === 0 ||
         selectedSize.value.includes("all") ||
-        selectedSize.value.includes(m.basic_info.size+'型')
+        selectedSize.value.includes(m.attributes.size)
 
     return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize
   })
       // ✅ 排序 (依 sortAsc)
       .sort((a, b) => sortAsc.value
-          ? a.basic_info.level - b.basic_info.level  // 小 → 大
-          : b.basic_info.level - a.basic_info.level  // 大 → 小
+          ? a.stats.level - b.stats.level  // 小 → 大
+          : b.stats.level - a.stats.level  // 大 → 小
       )
 
 
@@ -226,14 +231,25 @@ function displayValue(value) {
 
 function selectMap(value) {
   search.value = value
-  minLevel.value = ""
-  maxLevel.value = ""
-  selectedElement.value = ['all']
-  selectedRace.value = ['all']
-  selectedSize.value = ['all']
-
 }
-
+let pageNum = 0
+function onTouchEnd() {
+  return new Promise((resolve, reject) => {
+    getList({ page: pageNum, pageSize: 50 }).then((newList) => {
+      if (Math.random() > 0.3) {
+        list.value.push(...newList)
+        pageNum += 1;
+        resolve(true)
+      }
+      else {
+        reject(new Error('加载失败，点击重新拉取数据'))
+      }
+    })
+  })
+}
+// const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
+const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
+const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
 </script>
 
 <template>
@@ -288,27 +304,6 @@ function selectMap(value) {
       </div>
     </div>
 
-    <!-- 種族篩選 -->
-    <div class="mb-4">
-      <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
-      </div>
-
-      <div class="flex flex-wrap gap-2">
-        <button
-            v-for="r in raceList"
-            :key="r.id"
-            @click="toggleRace(r.id)"
-            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
-            :class="selectedRace.includes(r.id)
-              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
-              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
-        >
-          {{ r.name }}
-        </button>
-      </div>
-    </div>
-
     <!-- 屬性篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
@@ -329,6 +324,27 @@ function selectMap(value) {
         </button>
       </div>
 
+    </div>
+
+    <!-- 種族篩選 -->
+    <div class="mb-4">
+      <div class="flex items-center gap-2">
+        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+            v-for="r in raceList"
+            :key="r.id"
+            @click="toggleRace(r.id)"
+            class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
+            :class="selectedRace.includes(r.id)
+              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
+              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
+        >
+          {{ r.name }}
+        </button>
+      </div>
     </div>
 
     <!-- 大小 -->
@@ -367,7 +383,8 @@ function selectMap(value) {
         :rowKey="id"
     >
       <template #default="{ item: m, index }">
-        <div class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
+        <div
+            class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
           <div class="flex justify-between">
             <!-- 圖片觸發 dropdown -->
@@ -376,7 +393,7 @@ function selectMap(value) {
                 :data-dropdown-toggle="'dropdownHover' + m.id"
                 data-dropdown-placement="right"
                 data-dropdown-trigger="hover"
-                :src="`/images/icon/map.png`"
+                src="assets/image/icon/map.png"
                 alt="map icon"
                 class="w-10 h-10 cursor-pointer"
             />
@@ -384,13 +401,14 @@ function selectMap(value) {
             <!-- Dropdown menu -->
             <div
                 :id="'dropdownHover' + m.id"
-                class="z-10 hidden bg-black rounded-xs shadow-sm"
+                class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
             >
-              <ul class="py-1 text-sm text-gray-200"
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawns">
-                <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">
-                  <a class=" px-2 py-1 w-full hover:text-white">
-                    {{ map.description }}({{ map.map_name }})
+              <ul class="py-2 text-sm text-gray-200 "
+                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
+                <li>
+                  <a @click="selectMap(map.map_code)"
+                     class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
+                    {{ map.map_name_zh }}({{ map.map_code }})
                   </a>
                 </li>
 
@@ -399,32 +417,38 @@ function selectMap(value) {
 
 
             <div class="flex h-6">
-              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>
-              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{m.basic_info.element.type}}</p>
-              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
+              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
+                  m.attributes.element
+                }}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
             </div>
 
           </div>
 
-          <img :src="`${m.image_url}`" alt="" class="w-full h-12 object-contain mb-3 rounded">
-          <!--          <h2 class="font-bold text-lg text-yellow-800">{{ m.image_url }}</h2>-->
-          <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
+          <img :src="`/images/monsters/${m.image_url}.gif`" alt="" class="w-full h-12 object-contain mb-3 rounded">
 
+          <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+
+          <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
+              m.stats.level
+            }}</span>
+          </p>
           <p class="text-sm flex justify-center"><strong>血量：</strong><span
               class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
           <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.exp.base) }}</span></p>
+              class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
           <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.exp.job) }}</span></p>
+              class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
           <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
               m.stats.attack_power
             }}</span></p>
           <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
-              class="statsColor">{{ m.stats.defense }}</span></p>
+              class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
           <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
-              class="statsColor">{{ m.stats.magic_defense }}</span></p>
+              class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
           <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
               class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
           <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
@@ -436,16 +460,13 @@ function selectMap(value) {
           <ul class="text-sm">
             <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
               <div class="flex">
-                <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
-                <span>{{ drop.name }}</span>
+                <img :src="`/images/items/${drop.item_image_url}.gif`" alt="" class="w-5 h-5">
+                <span>{{ drop.item_name_zh }}</span>
               </div>
-              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+              <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
             </li>
           </ul>
-
         </div>
-
-
       </template>
     </VirtualScroll>
 
