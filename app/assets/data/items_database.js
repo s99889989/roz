@@ -127277,7 +127277,7 @@ export const itemsData = {
             "official_clean": "裝備時普通攻擊距離增加為3格。\\nMATK+125，變動詠唱+30%。\\n精煉+3時，變動詠唱-3%，攻擊速度+3%。\\n精煉+7時，變動詠唱再-7%，攻擊速度再+7%。\\n精煉+9時，變動詠唱再-10%，攻擊速度再+15%，ASPD+2。"
         },
         "category": "武器",
-        "slot": "書",
+        "slot": "書籍",
         "slotCount": 3,
         "enchantment_slots": 0,
         "ClassNum": 15,

@@ -443,6 +443,7 @@ const getMonsterImg = (id) => {
               </div>
               <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
             </li>
+
           </ul>
 
         </div>

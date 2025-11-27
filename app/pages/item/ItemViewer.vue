@@ -17,7 +17,7 @@ const categories = ['ALL', '武器', '防具', '附魔', '服飾', '卡片', '�
 const subcategories = computed(() => {
 
   if(selectedCategory.value === '武器' && selectedCategory.value !== 'ALL') {
-    return ['ALL', '短劍', '劍', '單手矛', '雙手矛', '單手斧', '雙手斧', '鈍器', '弓', '箭矢', '手杖', '樂器', '書', '拳刃', '拳套', '鞭子', '投擲短劍'];
+    return ['ALL', '短劍', '劍', '單手矛', '雙手矛', '單手斧', '雙手斧', '鈍器', '弓', '箭矢', '手杖', '樂器', '書籍', '拳刃', '拳套', '鞭子', '投擲短劍'];
   }
 
   if(selectedCategory.value === '防具' && selectedCategory.value !== 'ALL') {
@@ -129,7 +129,10 @@ const getWearingGImg = (id) => {
     // return `https://assets.twroz.wiki/images/wearing/${id}_g.png`
   return `/images/wearing/${id}_g.png`
 }
-
+const getMonsterImg = (id) => {
+  // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
+  return `/images/monsters/${id}.gif`
+}
 </script>
 
 <template>
@@ -226,45 +229,50 @@ const getWearingGImg = (id) => {
 
           <table style="width: 100%; font-size: 0.9em;">
             <tbody>
-            <tr>
-              <td style="color: #b0a59a;">需求等級</td>
-              <td style="text-align: right;">{{ getRequiredLevel(it) }}</td>
-              <td style="color: #b0a59a;">重量</td>
-              <td style="text-align: right;">{{ it.attributes?.weight || 0 }}</td>
+            <tr class="">
+              <td class="td1">需求等級</td>
+              <td class="td2">{{ getRequiredLevel(it) }}</td>
+              <td class="td3">重量</td>
+              <td class="td4">{{ it.attributes?.weight || 0 }}</td>
             </tr>
             <tr>
-              <td style="color: #b0a59a;">買價</td>
-              <td style="text-align: right;">{{ formatPrice(it.attributes?.buy_price) }}</td>
-              <td style="color: #b0a59a;">賣價</td>
-              <td style="text-align: right;">{{ formatPrice(it.attributes?.sell_price) }}</td>
+              <td class="td1">買價</td>
+              <td class="td2">{{ formatPrice(it.attributes?.buy_price) }}</td>
+              <td class="td3">賣價</td>
+              <td class="td4">{{ formatPrice(it.attributes?.sell_price) }}</td>
             </tr>
             <tr>
-              <td style="color: #b0a59a;">洞數</td>
-              <td style="text-align: right;">{{ it.slotCount || 0 }}</td>
-              <td style="color: #b0a59a;">洞數</td>
-              <td style="text-align: right;">{{ it.enchantment_slots || 0 }}</td>
+              <td class="td1">洞數</td>
+              <td class="td2">{{ it.slotCount || 0 }}</td>
+              <td class="td3">洞數</td>
+              <td class="td4">{{ it.enchantment_slots || 0 }}</td>
             </tr>
             <tr>
-              <td style="color: #b0a59a;">防禦力</td>
-              <td style="text-align: right;">{{ getItemDefense(it) }}</td>
-              <td style="color: #b0a59a;">防禦力</td>
-              <td style="text-align: right;">{{ getItemDefense(it) }}</td>
+              <td class="td1">防禦力</td>
+              <td class="td2">{{ getItemDefense(it) }}</td>
+              <td class="td3">防禦力</td>
+              <td class="td4">{{ getItemDefense(it) }}</td>
             </tr>
             </tbody>
           </table>
 
-          <hr style="border-color: #5b4b3f; margin: 10px 0;">
-
-          <p style="font-size: 0.9em; margin-bottom: 10px;">
-            <strong style="color: #b0a59a;">可裝備職業：</strong>
-            <span style="color: #90ee90;">{{ getEquipClass(it) }}</span>
-          </p>
-
-          <div v-if="it.dropped_by && it.dropped_by.length" style="font-size: 0.8em; color: #b0a59a;">
-            <p v-for="(drop, index) in it.dropped_by.slice(0, 2)" :key="index" style="margin: 3px 0;">
-              👾 {{ drop.name }} <span style="float: right; color: #cfbd9c;">{{ drop.rate }}</span>
+            <p class="pt-2" style="font-size: 1em; margin-bottom: 10px;">
+              <strong style="color: #b0a59a;">可裝備職業：</strong>
+              <span style="color: #90ee90;">{{ getEquipClass(it) }}</span>
             </p>
+
+          <hr style="border-color: #5b4b3f; margin: 10px 0;">
+            <span v-if="it.dropped_by.length <= 0" class="font-bold">暫無道具掉落來源</span>
+          <div v-if="it.dropped_by && it.dropped_by.length" style="font-size: 0.8em; color: #b0a59a;">
+            <li v-for="(drop, index) in it.dropped_by.slice(0, 2)" class="flex justify-between" :key="index" style="margin: 3px 0;">
+              <div class="flex">
+                <img :src="getMonsterImg(drop.monster_id)" alt="" class="w-5 h-5">
+                <span>{{ drop.monster_name }}</span>
+              </div>
+              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+            </li>
           </div>
+
           </div>
         </template>
       </VirtualScroll>
@@ -279,7 +287,20 @@ const getWearingGImg = (id) => {
 
 <style scoped>
 /* 保持所有樣式不變 */
-
+.td1{
+  text-align: left;
+  color: #b0a59a;
+}
+.td2{
+  text-align: left;
+}
+.td3{
+  text-align: left;
+  color: #b0a59a;
+}
+.td4{
+  text-align: left;
+}
 /* [Your existing styles remain here] */
 .website-container { background-color: #3f352b; min-height: 100vh; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
 .content-card { background-color: #5b4b3f; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); padding: 24px 30px; max-width: 900px; width: 100%; box-sizing: border-box; border: 1px solid #4a3e35; }
