@@ -414,6 +414,8 @@ const getMonsterImg = (id) => {
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
 
+          <p class="text-sm flex justify-center"><strong>等級：</strong><span
+              class="statsColor">{{ displayValue(m.basic_info.level) }}</span></p>
           <p class="text-sm flex justify-center"><strong>血量：</strong><span
               class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
           <p class="text-sm flex justify-center"><strong>經驗值：</strong><span

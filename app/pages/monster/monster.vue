@@ -116,6 +116,13 @@ watch(filteredMonsters, () => {
   })
 })
 
+const getAttack = (min, max) => {
+  if(min === max){
+    return min;
+  }
+  return min+'-'+max;
+}
+
 // ✅ 切換種族
 function toggleRace(id) {
 // 如果點擊 ALL
@@ -414,15 +421,17 @@ const getMonsterImg = (id) => {
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
 
+          <p class="text-sm flex justify-center"><strong>等級：</strong><span
+              class="statsColor">{{ displayValue(m.basic_info.level) }}</span></p>
           <p class="text-sm flex justify-center"><strong>血量：</strong><span
               class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
           <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
               class="statsColor">{{ displayValue(m.stats.exp.base) }}</span></p>
           <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
               class="statsColor">{{ displayValue(m.stats.exp.job) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
-              m.stats.attack_power
-            }}</span></p>
+          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">
+            {{getAttack(m.stats.attack.min, m.stats.attack.max)}}
+          </span></p>
           <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
               class="statsColor">{{ m.stats.defense }}</span></p>
           <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span

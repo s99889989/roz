@@ -24,10 +24,14 @@ const tooltipStyle = computed(() => ({
 /* 區塊樣式 */
 function getStyle(area) {
   return {
-    left: area.x + '%',
-    top: area.y + '%',
-    width: area.w + '%',
-    height: area.h + '%'
+    // left: area.x + '%',
+    // top: area.y + '%',
+    // width: area.w + '%',
+    // height: area.h + '%'
+    left: (area.x * 1.151) + 'px',
+    top: (area.y * 1.1) +  'px',
+    width: area.w + 'px',
+    height: area.h + 'px',
   }
 }
 
@@ -92,27 +96,27 @@ function hideTooltip() {
         />
 
         <!-- 熱區 -->
-        <div
-            v-for="(area, i) in areas"
-            :key="i"
-            class="map-area"
-            :style="getStyle(area)"
-            @click="displayTooltip($event, area)"
-        ></div>
-
 <!--        <div-->
 <!--            v-for="(area, i) in areas"-->
 <!--            :key="i"-->
 <!--            class="map-area"-->
 <!--            :style="getStyle(area)"-->
-<!--            @mouseenter="showTooltip($event, area)"-->
-<!--            @mouseleave="hideTooltip"-->
-<!--        >-->
-<!--          <div class="p-0 m-0">-->
-<!--            <span style="font-size: 8px; color: #ffffff" class="font-bold">{{area.code}}</span>-->
-<!--          </div>-->
+<!--            @click="displayTooltip($event, area)"-->
+<!--        ></div>-->
 
-<!--        </div>-->
+        <div
+            v-for="(area, i) in areas"
+            :key="i"
+            class="map-area"
+            :style="getStyle(area)"
+            @mouseenter="showTooltip($event, area)"
+            @mouseleave="hideTooltip"
+        >
+          <div class="p-0 m-0">
+            <span style="font-size: 8px; color: #ffffff" class="font-bold">{{area.code}}</span>
+          </div>
+
+        </div>
 
         <!-- 提示框 -->
         <div
@@ -197,7 +201,7 @@ function hideTooltip() {
   width: 100%;
   border: 3px solid #8b5a2b;
   border-radius: 10px;
-
+  //padding: 2px 2vw 3rem;
 }
 
 .world-map {
