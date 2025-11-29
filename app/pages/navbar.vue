@@ -141,6 +141,11 @@
                   <NuxtLink to="/calculate/ReincarnationTechnique" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     轉生術計算</NuxtLink>
                 </li>
+
+                <li>
+                  <NuxtLink to="/calculate/HitCalc" href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    命中迴避計算</NuxtLink>
+                </li>
               </ul>
             </div>
           </li>
