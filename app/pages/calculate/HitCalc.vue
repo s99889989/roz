@@ -4,18 +4,21 @@
 
     <div class="input-section">
       <h3>玩家數值</h3>
-      <label>
-        玩家命中 (HIT)
-        <input type="number" v-model.number="playerHit" />
-      </label>
+      <div class="flex">
+        <label class="m-1">
+          玩家命中 (HIT)
+          <input type="number" v-model.number="playerHit" />
+        </label>
+
+        <label class="m-1">
+          玩家迴避 (FLEE)
+          <input type="number" v-model.number="playerFlee" />
+        </label>
+      </div>
+
 
       <label>
-        玩家迴避 (FLEE)
-        <input type="number" v-model.number="playerFlee" />
-      </label>
-
-      <label>
-        命中補正%（例如：90）
+        命中補正%（例如：90、50）
         <input type="number" step="0.1" v-model.number="hitModifier" />
       </label>
 
@@ -23,15 +26,18 @@
 
     <div class="input-section">
       <h3>魔物數值</h3>
-      <label>
-        魔物命中 (HIT 100%)
-        <input type="number" v-model.number="monsterHit" />
-      </label>
+      <div class="flex">
+        <label class="m-1">
+          魔物命中 (HIT 100%)
+          <input type="number" v-model.number="monsterHit" />
+        </label>
 
-      <label>
-        魔物迴避 (FLEE 95%)
-        <input type="number" v-model.number="monsterFlee" />
-      </label>
+        <label class="m-1">
+          魔物迴避 (FLEE 95%)
+          <input type="number" v-model.number="monsterFlee" />
+        </label>
+      </div>
+
 
 
     </div>
@@ -43,7 +49,7 @@
 
       <div class="result">
         <strong>對魔物命中率：</strong>
-        <span>{{ playerHitRate.toFixed(2) }}%</span>
+        <span>{{ playerHitRate }}%</span>
       </div>
 
       <div class="formula">
@@ -54,7 +60,7 @@
 
       <div class="result">
         <strong>對魔物閃避率：</strong>
-        <span>{{ playerDodgeRate.toFixed(2) }}%</span>
+        <span>{{ playerDodgeRate }}%</span>
       </div>
 
       <div class="formula">
@@ -80,12 +86,20 @@ const hitModifier = ref(0);
 
 // 計算：對魔物命中率
 const playerHitRate = computed(() => {
-  return (100 + playerHit.value - monsterHit.value) * ((100 + hitModifier.value) / 100);
+  let value = (100 + playerHit.value - monsterHit.value) * ((100 + hitModifier.value) / 100);
+  if(value > 100){
+    return 100;
+  }
+  return value;
 });
 
 // 計算：對魔物閃避率
 const playerDodgeRate = computed(() => {
-  return 95 + playerFlee.value - monsterFlee.value;
+  const value = 95 + playerFlee.value - monsterFlee.value;
+  if(value > 95){
+    return 95
+  }
+  return value;
 });
 </script>
 
