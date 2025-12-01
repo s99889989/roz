@@ -50938,8 +50938,8 @@ export const monstersData3 = [
                 "base": 44281,
                 "job": ""
             },
-            "flee_95_percent": 289,
-            "hit_100_percent": 294,
+            "flee_95_percent": 320,
+            "hit_100_percent": 302,
             "hp": 73800,
             "magic_attack": {
                 "max": 82,
@@ -51139,8 +51139,8 @@ export const monstersData3 = [
                 "base": 42121,
                 "job": ""
             },
-            "flee_95_percent": 287,
-            "hit_100_percent": 302,
+            "flee_95_percent": 310,
+            "hit_100_percent": 316,
             "hp": 70200,
             "magic_attack": {
                 "max": 102,
@@ -80894,8 +80894,8 @@ export const monstersData3 = [
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 287,
-            "hit_100_percent": 307,
+            "flee_95_percent": 310,
+            "hit_100_percent": 316,
             "hp": 439065,
             "magic_attack": {
                 "max": 102,
