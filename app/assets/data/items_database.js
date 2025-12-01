@@ -12281,12 +12281,12 @@ export const itemsData = {
     "789": {
         "id": 789,
         "name": {
-            "zh_tw": "耀眼盔甲",
+            "zh_tw": "耀眼鎧甲",
             "kr": "빛나는_갑옷"
         },
         "description": {
-            "official": "商人委託鐵匠製作的閃亮的盔甲。\\n比起實用性，更重視美觀，希望不用穿著這盔甲去戰鬥…\\n重量 : 0",
-            "official_clean": "商人委託鐵匠製作的閃亮的盔甲。\\n比起實用性，更重視美觀，希望不用穿著這盔甲去戰鬥…"
+            "official": "商人委託鐵匠製作的閃亮的鎧甲。\\n比起實用性，更重視美觀，希望不用穿著這鎧甲去戰鬥…\\n重量 : 0",
+            "official_clean": "商人委託鐵匠製作的閃亮的鎧甲。\\n比起實用性，更重視美觀，希望不用穿著這鎧甲去戰鬥…"
         },
         "category": "其他",
         "slot": "-",
@@ -28575,7 +28575,7 @@ export const itemsData = {
             "official_clean": "有塗抹毒液的短劍,投向敵人就會有中毒效果。"
         },
         "category": "武器",
-        "slot": "投擲短劍",
+        "slot": "投擲的短劍",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -33297,11 +33297,11 @@ export const itemsData = {
             "kr": "로드클로스"
         },
         "description": {
-            "official": "衣服上瀰漫的氣質可讓裝備者的品味更上一層樓\\nINT+ 1，MDEF+ 5\\n系列 : 盔甲  防禦 : 59\\n重量 : 250\\n需求等級 : 70\\n裝備 : 商人系列",
+            "official": "衣服上瀰漫的氣質可讓裝備者的品味更上一層樓\\nINT+ 1，MDEF+ 5\\n系列 : 鎧甲  防禦 : 59\\n重量 : 250\\n需求等級 : 70\\n裝備 : 商人系列",
             "official_clean": "衣服上瀰漫的氣質可讓裝備者的品味更上一層樓\\nINT+ 1，MDEF+ 5"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 1,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -33344,11 +33344,11 @@ export const itemsData = {
             "kr": "글리터링클로스"
         },
         "description": {
-            "official": "穿上後會讓人忍不住回頭看一眼，是一種會吸引目光的服飾。因為閃閃發光，吸引目光的能力相當卓越。\\nMDEF + 5\\n攻擊時，以3%的機率對敵人施加黑暗。\\n系列 : 盔甲  防禦 : 58\\n重量 : 250\\n需求等級 : 60\\n裝備 : 初學者以外的全職業",
+            "official": "穿上後會讓人忍不住回頭看一眼，是一種會吸引目光的服飾。因為閃閃發光，吸引目光的能力相當卓越。\\nMDEF + 5\\n攻擊時，以3%的機率對敵人施加黑暗。\\n系列 : 鎧甲  防禦 : 58\\n重量 : 250\\n需求等級 : 60\\n裝備 : 初學者以外的全職業",
             "official_clean": "穿上後會讓人忍不住回頭看一眼，是一種會吸引目光的服飾。因為閃閃發光，吸引目光的能力相當卓越。\\nMDEF + 5\\n攻擊時，以3%的機率對敵人施加黑暗。"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 1,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -33397,11 +33397,11 @@ export const itemsData = {
             "kr": "포멀드레스"
         },
         "description": {
-            "official": "兼具活動性與帥氣的男性西裝\\n系列 : 盔甲  防禦 : 40\\n重量 : 30\\n需求等級 : 1\\n裝備 : 初學者以外的全職業",
+            "official": "兼具活動性與帥氣的男性西裝\\n系列 : 鎧甲  防禦 : 40\\n重量 : 30\\n需求等級 : 1\\n裝備 : 初學者以外的全職業",
             "official_clean": "兼具活動性與帥氣的男性西裝"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 1,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -33444,11 +33444,11 @@ export const itemsData = {
             "kr": "매직코트"
         },
         "description": {
-            "official": "蘊含古代魔道學精髓的服裝，裝備後會有一股清爽感，進而提升專注力，讓使用者能輕易集中精神。\\nMDEF+ 5，INT+ 1\\n系列 : 盔甲  防禦 : 40\\n重量 : 60\\n需求等級 : 50\\n裝備 : 魔法師系列",
+            "official": "蘊含古代魔道學精髓的服裝，裝備後會有一股清爽感，進而提升專注力，讓使用者能輕易集中精神。\\nMDEF+ 5，INT+ 1\\n系列 : 鎧甲  防禦 : 40\\n重量 : 60\\n需求等級 : 50\\n裝備 : 魔法師系列",
             "official_clean": "蘊含古代魔道學精髓的服裝，裝備後會有一股清爽感，進而提升專注力，讓使用者能輕易集中精神。\\nMDEF+ 5，INT+ 1"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -34408,7 +34408,7 @@ export const itemsData = {
             {
                 "monster_id": 1091,
                 "monster_name": "龍蠅",
-                "rate": 15,
+                "rate": "???",
                 "image_url": "images/monsters/1091.gif"
             }
         ]
@@ -35006,8 +35006,8 @@ export const itemsData = {
             "kr": "활골무"
         },
         "description": {
-            "official": "為了方便拉弓弦戴在手上的布塊，遠距離物理傷害+3%。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 65\\n裝備 : 弓箭手系列",
-            "official_clean": "為了方便拉弓弦戴在手上的布塊，遠距離物理傷害+3%。"
+            "official": "為了方便拉弓弦戴在手上的布塊，遠距離武器物理傷害+3%。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 65\\n裝備 : 弓箭手系列",
+            "official_clean": "為了方便拉弓弦戴在手上的布塊，遠距離武器物理傷害+3%。"
         },
         "category": "防具",
         "slot": "飾品",
@@ -37847,11 +37847,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "盔甲的屬性為聖屬性。\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
-            "official_clean": "盔甲的屬性為聖屬性。"
+            "official": "鎧甲的屬性為聖屬性。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "鎧甲的屬性為聖屬性。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -37861,7 +37861,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4054.gif",
         "script": "",
@@ -41284,11 +41284,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "受到近距離物理攻擊的傷害反射30%\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
+            "official": "受到近距離物理攻擊的傷害反射30%\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
             "official_clean": "受到近距離物理攻擊的傷害反射30%"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -41298,7 +41298,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4135.gif",
         "script": "",
@@ -41519,11 +41519,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "盔甲的屬性為不死屬性。\\nINT + 1\\nDEF + 1\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
-            "official_clean": "盔甲的屬性為不死屬性。\\nINT + 1\\nDEF + 1"
+            "official": "鎧甲的屬性為不死屬性。\\nINT + 1\\nDEF + 1\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "鎧甲的屬性為不死屬性。\\nINT + 1\\nDEF + 1"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -41533,7 +41533,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4141.gif",
         "script": "",
@@ -42095,11 +42095,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "受到物理傷害時，以一定機率對敵人施加石化。\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
+            "official": "受到物理傷害時，以一定機率對敵人施加石化。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
             "official_clean": "受到物理傷害時，以一定機率對敵人施加石化。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -42109,7 +42109,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4170.gif",
         "script": "",
@@ -42676,11 +42676,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "受到物理傷害時，以一定機率對敵人施加眩暈效果。\\nDEX為77以上時，以更高的機率對敵人施加昏迷效果。\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
+            "official": "受到物理傷害時，以一定機率對敵人施加眩暈效果。\\nDEX為77以上時，以更高的機率對敵人施加昏迷效果。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
             "official_clean": "受到物理傷害時，以一定機率對敵人施加眩暈效果。\\nDEX為77以上時，以更高的機率對敵人施加昏迷效果。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -42690,7 +42690,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4194.gif",
         "script": "",
@@ -42923,11 +42923,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "受到物理傷害時，以一定機率對敵人施加昏迷。\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
+            "official": "受到物理傷害時，以一定機率對敵人施加昏迷。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
             "official_clean": "受到物理傷害時，以一定機率對敵人施加昏迷。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -42937,7 +42937,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4201.gif",
         "script": "",
@@ -43370,11 +43370,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "受到物理傷害時，以一定機率對敵人施加睡眠效果。\\n裝備邪骸戰士卡片時，以更高的機率對敵人施加睡眠效果。\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
+            "official": "受到物理傷害時，以一定機率對敵人施加睡眠效果。\\n裝備邪骸戰士卡片時，以更高的機率對敵人施加睡眠效果。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
             "official_clean": "受到物理傷害時，以一定機率對敵人施加睡眠效果。\\n裝備邪骸戰士卡片時，以更高的機率對敵人施加睡眠效果。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -43384,7 +43384,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4222.gif",
         "script": "",
@@ -43570,11 +43570,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "造成物理傷害時，以一定機率使用自動念咒心神凝聚1技能。\\n如果學會心神凝聚10技能，就會改用10技能心神凝聚。\\n系列：卡片\\n裝備：盔甲\\n重量 : 1",
-            "official_clean": "造成物理傷害時，以一定機率使用自動念咒心神凝聚1技能。\\n如果學會心神凝聚10技能，就會改用10技能心神凝聚。"
+            "official": "受到物理傷害時，一定機率使用自動念咒[心神凝聚]Lv1技能。\\n如果學會[心神凝聚]Lv10技能，就會改用[心神凝聚]Lv10。\\n系列：卡片\\n裝備：鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，一定機率使用自動念咒[心神凝聚]Lv1技能。\\n如果學會[心神凝聚]Lv10技能，就會改用[心神凝聚]Lv10。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -43584,7 +43584,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4234.gif",
         "script": "",
@@ -44933,11 +44933,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "造成物理傷害時，以一定機率對敵人施加中毒效果。\\n刺客或十字刺客裝備時，以更高的機率對敵人施加中毒狀態。\\n系列 : 卡片\\n裝備 : 盔甲\\n重量 : 1",
-            "official_clean": "造成物理傷害時，以一定機率對敵人施加中毒效果。\\n刺客或十字刺客裝備時，以更高的機率對敵人施加中毒狀態。"
+            "official": "受到物理傷害時，以一定機率對敵人施加中毒效果。\\n刺客或十字刺客裝備時，以更高的機率對敵人施加中毒狀態。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，以一定機率對敵人施加中毒效果。\\n刺客或十字刺客裝備時，以更高的機率對敵人施加中毒狀態。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -44947,7 +44947,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4300.gif",
         "script": "",
@@ -44980,11 +44980,11 @@ export const itemsData = {
             "kr": "이름없는카드"
         },
         "description": {
-            "official": "MHP + 50%。\\n裝備者讓道具物理/魔法防禦力固定為一半。\\n系列：卡片\\n裝備：盔甲\\n重量 :1",
+            "official": "MHP + 50%。\\n裝備者讓道具物理/魔法防禦力固定為一半。\\n系列：卡片\\n裝備：鎧甲\\n重量 :1",
             "official_clean": "MHP + 50%。\\n裝備者讓道具物理/魔法防禦力固定為一半。"
         },
         "category": "卡片",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -44994,7 +44994,7 @@ export const itemsData = {
         "defense": 0,
         "weapon_level": 0,
         "required_level": 0,
-        "equip_jobs": "盔甲",
+        "equip_jobs": "鎧甲",
         "wearing_image_url": "",
         "icon_url": "/images/items/4302.gif",
         "script": "",
@@ -49188,6 +49188,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "4859": {
+        "id": 4859,
+        "name": {
+            "zh_tw": "FLEE+1",
+            "kr": "안실라"
+        },
+        "description": {
+            "official": "FLEE+1。",
+            "official_clean": "FLEE+1。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4859.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "4860": {
         "id": 4860,
         "name": {
@@ -49212,6 +49252,46 @@ export const itemsData = {
         "equip_jobs": "",
         "wearing_image_url": "",
         "icon_url": "/images/items/4860.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4861": {
+        "id": 4861,
+        "name": {
+            "zh_tw": "MHP+1%",
+            "kr": "마력석_빨강"
+        },
+        "description": {
+            "official": "MHP+1%。",
+            "official_clean": "MHP+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4861.gif",
         "script": "",
         "can_drop": true,
         "can_trade": true,
@@ -49348,6 +49428,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "4882": {
+        "id": 4882,
+        "name": {
+            "zh_tw": "ATK+1%",
+            "kr": "마력석_빨강"
+        },
+        "description": {
+            "official": "ATK+1%。",
+            "official_clean": "ATK+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4882.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "4883": {
         "id": 4883,
         "name": {
@@ -49372,6 +49492,46 @@ export const itemsData = {
         "equip_jobs": "",
         "wearing_image_url": "",
         "icon_url": "/images/items/4883.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4884": {
+        "id": 4884,
+        "name": {
+            "zh_tw": "HIT+1",
+            "kr": "안실라"
+        },
+        "description": {
+            "official": "HIT+1。",
+            "official_clean": "HIT+1。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4884.gif",
         "script": "",
         "can_drop": true,
         "can_trade": true,
@@ -49772,6 +49932,246 @@ export const itemsData = {
         "equip_jobs": "",
         "wearing_image_url": "",
         "icon_url": "/images/items/4929.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4930": {
+        "id": 4930,
+        "name": {
+            "zh_tw": "恢復效果上升",
+            "kr": "안실라"
+        },
+        "description": {
+            "official": "治癒術、道具的HP恢復效果+2%。",
+            "official_clean": "治癒術、道具的HP恢復效果+2%。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4930.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4931": {
+        "id": 4931,
+        "name": {
+            "zh_tw": "治癒10",
+            "kr": "현자의돌"
+        },
+        "description": {
+            "official": "每10秒恢復10 HP。",
+            "official_clean": "每10秒恢復10 HP。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4931.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4932": {
+        "id": 4932,
+        "name": {
+            "zh_tw": "SP恢復1",
+            "kr": "용의보주_청"
+        },
+        "description": {
+            "official": "以近距離和遠距離物理攻擊、魔法攻擊打倒對象時，SP恢復1。",
+            "official_clean": "以近距離和遠距離物理攻擊、魔法攻擊打倒對象時，SP恢復1。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4932.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4936": {
+        "id": 4936,
+        "name": {
+            "zh_tw": "攻擊大型1",
+            "kr": "진홍색보석"
+        },
+        "description": {
+            "official": "對大型魔物的物理攻擊力+1%。",
+            "official_clean": "對大型魔物的物理攻擊力+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4936.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4937": {
+        "id": 4937,
+        "name": {
+            "zh_tw": "攻擊中型1",
+            "kr": "진홍색보석"
+        },
+        "description": {
+            "official": "對中型魔物的物理攻擊力+1%。",
+            "official_clean": "對中型魔物的物理攻擊力+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4937.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "4938": {
+        "id": 4938,
+        "name": {
+            "zh_tw": "攻擊小型1",
+            "kr": "진홍색보석"
+        },
+        "description": {
+            "official": "對小型魔物的物理攻擊力+1%。",
+            "official_clean": "對小型魔物的物理攻擊力+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4938.gif",
         "script": "",
         "can_drop": true,
         "can_trade": true,
@@ -52114,7 +52514,7 @@ export const itemsData = {
             "kr": "지르타스가면"
         },
         "description": {
-            "official": "象徵克雷斯特漢姆地下監獄的主人艾斯恩魔女的面具。戴上這個面具，似乎就會瞧不起人類。\\n對人類型、人類型玩家的抗性+5%、對人類型、人類型玩家物理攻擊力+5%。\\n系列 : 頭盔 防禦 : 3\\n位置：頭上/中 重量 : 40\\n需求等級 : 70\\n裝備 : 初學者以外的所有職業",
+            "official": "象徵克雷斯特漢姆地下監獄的主人艾斯恩魔女的面具。戴上這個面具，似乎就會瞧不起人類。\\n對人類型、人類型玩家的抗性+5%、對人類型、人類型玩家物理攻擊力+5%。\\n系列 : 頭盔 防禦 : 3\\n位置：頭上/中 重量 : 40\\n需求等級 : 70\\n裝備 : 初學者以外的全職業",
             "official_clean": "象徵克雷斯特漢姆地下監獄的主人艾斯恩魔女的面具。戴上這個面具，似乎就會瞧不起人類。\\n對人類型、人類型玩家的抗性+5%、對人類型、人類型玩家物理攻擊力+5%。"
         },
         "category": "防具",
@@ -52128,7 +52528,7 @@ export const itemsData = {
         "defense": 3,
         "weapon_level": 0,
         "required_level": 70,
-        "equip_jobs": "初學者以外的所有職業",
+        "equip_jobs": "初學者以外的全職業",
         "wearing_image_url": "",
         "icon_url": "/images/items/5121.gif",
         "script": "",
@@ -52649,6 +53049,46 @@ export const itemsData = {
         "can_guild_storage": true,
         "attributes": {
             "weight": 50,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "5915": {
+        "id": 5915,
+        "name": {
+            "zh_tw": "(服飾)天使面紗",
+            "kr": "C천사의베일"
+        },
+        "description": {
+            "official": "由許多羽毛編織而成的服飾面紗。\\n彷彿被天使環繞般的感覺，蓬鬆豐盈的翅膀極具魅力。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "由許多羽毛編織而成的服飾面紗。\\n彷彿被天使環繞般的感覺，蓬鬆豐盈的翅膀極具魅力。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1379,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/5915.gif",
+        "icon_url": "/images/items/5915.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
             "buy_price": 0,
             "sell_price": 0
         },
@@ -53846,6 +54286,166 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "6642": {
+        "id": 6642,
+        "name": {
+            "zh_tw": "攻擊石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "蘊含攻擊力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nATK+1%。\\n重量：10",
+            "official_clean": "蘊含攻擊力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nATK+1%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6642.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6643": {
+        "id": 6643,
+        "name": {
+            "zh_tw": "魔攻石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "蘊含魔法攻擊力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMATK+1%。\\n重量：10",
+            "official_clean": "蘊含魔法攻擊力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMATK+1%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6643.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6644": {
+        "id": 6644,
+        "name": {
+            "zh_tw": "命中石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "可提升命中率的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nHIT+1。\\n重量：10",
+            "official_clean": "可提升命中率的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nHIT+1。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6644.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6645": {
+        "id": 6645,
+        "name": {
+            "zh_tw": "迴避石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "可提升迴避力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nFLEE+1。\\n重量：10",
+            "official_clean": "可提升迴避力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nFLEE+1。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6645.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "6656": {
         "id": 6656,
         "name": {
@@ -53921,6 +54521,126 @@ export const itemsData = {
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6716": {
+        "id": 6716,
+        "name": {
+            "zh_tw": "Cri石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升暴擊機率的石頭。\\n於服飾頭上欄位賦予以下能力值。\\nCRI+1。\\n重量：10",
+            "official_clean": "提升暴擊機率的石頭。\\n於服飾頭上欄位賦予以下能力值。\\nCRI+1。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6716.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6717": {
+        "id": 6717,
+        "name": {
+            "zh_tw": "體力石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升體力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMaxHP+50。\\n重量：10",
+            "official_clean": "提升體力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMaxHP+50。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6717.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6718": {
+        "id": 6718,
+        "name": {
+            "zh_tw": "魔力石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升魔力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMaxSP+10。\\n重量：10",
+            "official_clean": "提升魔力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMaxSP+10。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6718.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
             "buy_price": 0,
             "sell_price": 0
         },
@@ -54003,6 +54723,366 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 10,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "6740": {
+        "id": 6740,
+        "name": {
+            "zh_tw": "恢復石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "增加恢復量的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n治癒術、道具的HP恢復效果+2%。\\n重量：10",
+            "official_clean": "增加恢復量的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n治癒術、道具的HP恢復效果+2%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6740.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6741": {
+        "id": 6741,
+        "name": {
+            "zh_tw": "恢復技能石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "可提升恢復技能使用技巧的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n恢復系列技能的恢復量+3%。\\n重量：10",
+            "official_clean": "可提升恢復技能使用技巧的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n恢復系列技能的恢復量+3%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6741.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6742": {
+        "id": 6742,
+        "name": {
+            "zh_tw": "恢復石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升恢復力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\n每10秒恢復10 HP。\\n重量：10",
+            "official_clean": "提升恢復力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\n每10秒恢復10 HP。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6742.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6743": {
+        "id": 6743,
+        "name": {
+            "zh_tw": "HP石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "增加體力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMaxHP+1%\\n重量：10",
+            "official_clean": "增加體力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMaxHP+1%"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6743.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6744": {
+        "id": 6744,
+        "name": {
+            "zh_tw": "SP石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "增加魔力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMaxSP+1%\\n重量：10",
+            "official_clean": "增加魔力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nMaxSP+1%"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6744.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6745": {
+        "id": 6745,
+        "name": {
+            "zh_tw": "恢復石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "戰鬥時，可獲得SP的石頭。\\n於服飾頭下欄位賦予以下能力值。\\n以物理攻擊、魔法攻擊打倒對象時，SP恢復1。\\n重量：10",
+            "official_clean": "戰鬥時，可獲得SP的石頭。\\n於服飾頭下欄位賦予以下能力值。\\n以物理攻擊、魔法攻擊打倒對象時，SP恢復1。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6745.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6790": {
+        "id": 6790,
+        "name": {
+            "zh_tw": "大型石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "對大型敵人相對有效的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n對大型魔物的攻擊力+1%。\\n重量：10",
+            "official_clean": "對大型敵人相對有效的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n對大型魔物的攻擊力+1%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6790.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6791": {
+        "id": 6791,
+        "name": {
+            "zh_tw": "中型石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "對中型敵人相對有效的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n對中型魔物的攻擊力+1%。\\n重量：10",
+            "official_clean": "對中型敵人相對有效的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n對中型魔物的攻擊力+1%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6791.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "6792": {
+        "id": 6792,
+        "name": {
+            "zh_tw": "小型石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "對小型敵人相對有效的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n對小型魔物的攻擊力+1%。\\n重量：10",
+            "official_clean": "對小型敵人相對有效的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n對小型魔物的攻擊力+1%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6792.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -54323,6 +55403,46 @@ export const itemsData = {
             "weight": 10,
             "buy_price": 10,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "6951": {
+        "id": 6951,
+        "name": {
+            "zh_tw": "HP石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "增加體力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMaxHP+1%\\n重量：10",
+            "official_clean": "增加體力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMaxHP+1%"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/6951.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -61864,6 +62984,86 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "9183": {
+        "id": 9183,
+        "name": {
+            "zh_tw": "廢柴寵物蛋",
+            "kr": "Fei_Chai_Egg"
+        },
+        "description": {
+            "official": "可使用攜帶用孵化器喚醒廢柴的特別寵物蛋。\\n_\\n可賦予寵物廢柴力量。\\n[附魔效果]\\n1Lv時，AGI+1、攻擊速度增加(攻擊後延遲-1%)。\\n2Lv時，AGI+3、攻擊速度增加(攻擊後延遲-3%)。\\n[可附魔裝備]\\n飼養戒指\\n種類 : 寵物蛋",
+            "official_clean": "可使用攜帶用孵化器喚醒廢柴的特別寵物蛋。\\n_\\n可賦予寵物廢柴力量。\\n[附魔效果]\\n1Lv時，AGI+1、攻擊速度增加(攻擊後延遲-1%)。\\n2Lv時，AGI+3、攻擊速度增加(攻擊後延遲-3%)。\\n[可附魔裝備]\\n飼養戒指"
+        },
+        "category": "寵物",
+        "slot": "蛋",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/9183.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "9184": {
+        "id": 9184,
+        "name": {
+            "zh_tw": "太子寵物蛋",
+            "kr": "Tai_zi_Egg"
+        },
+        "description": {
+            "official": "可使用攜帶用孵化器喚醒太子的特別寵物蛋。\\n_\\n可賦予寵物廢柴力量。\\n[附魔效果]\\n1Lv時LUK+1、暴擊傷害+1%。\\n2Lv時LUK+3、暴擊傷害+3%。\\n[可附魔裝備]\\n飼養戒指\\n種類 : 寵物蛋",
+            "official_clean": "可使用攜帶用孵化器喚醒太子的特別寵物蛋。\\n_\\n可賦予寵物廢柴力量。\\n[附魔效果]\\n1Lv時LUK+1、暴擊傷害+1%。\\n2Lv時LUK+3、暴擊傷害+3%。\\n[可附魔裝備]\\n飼養戒指"
+        },
+        "category": "寵物",
+        "slot": "蛋",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/9184.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "9539": {
         "id": 9539,
         "name": {
@@ -67997,6 +69197,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "12516": {
+        "id": 12516,
+        "name": {
+            "zh_tw": "小型生命水[活動專用]",
+            "kr": "굴라만"
+        },
+        "description": {
+            "official": "此道具不可與其他帳號交易。\\n[非賣品]此道具為活動專用。\\n從天地樹上萃取樹液後裝入小瓶子中，據說對傷口有不錯的療效。\\n服用後10分鐘內，每5秒可恢復MHP5%。\\n狂怒之槍狀態下不會觸發效果。\\n角色若變為不可戰鬥狀態，道具效果也會消失。\\n_\\n不可使用於希羅斯里亞攻城戰\\n重量：1",
+            "official_clean": "此道具不可與其他帳號交易。\\n[非賣品]此道具為活動專用。\\n從天地樹上萃取樹液後裝入小瓶子中，據說對傷口有不錯的療效。\\n服用後10分鐘內，每5秒可恢復MHP5%。\\n狂怒之槍狀態下不會觸發效果。\\n角色若變為不可戰鬥狀態，道具效果也會消失。\\n_\\n不可使用於希羅斯里亞攻城戰"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/12516.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "12548": {
         "id": 12548,
         "name": {
@@ -69015,11 +70255,11 @@ export const itemsData = {
             "kr": "낡은죄수복"
         },
         "description": {
-            "official": "只要是犯人都穿著的條紋制服，到處沾著血跡·因老舊而磨損不堪。\\n精煉每+1時，HIT+1、FLEE+1。\\n與腳鍊一起裝備時，ATK+5。根據腳鍊的精煉數值，精煉每+1時，ATK+1。\\n系列 : 盔甲  防禦 : 5\\n重量 : 150\\n需求等級 : 60\\n裝備 : 全職業",
+            "official": "只要是犯人都穿著的條紋制服，到處沾著血跡·因老舊而磨損不堪。\\n精煉每+1時，HIT+1、FLEE+1。\\n與腳鍊一起裝備時，ATK+5。根據腳鍊的精煉數值，精煉每+1時，ATK+1。\\n系列 : 鎧甲  防禦 : 5\\n重量 : 150\\n需求等級 : 60\\n裝備 : 全職業",
             "official_clean": "只要是犯人都穿著的條紋制服，到處沾著血跡·因老舊而磨損不堪。\\n精煉每+1時，HIT+1、FLEE+1。\\n與腳鍊一起裝備時，ATK+5。根據腳鍊的精煉數值，精煉每+1時，ATK+1。"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 0,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -69091,15 +70331,15 @@ export const itemsData = {
     "15220": {
         "id": 15220,
         "name": {
-            "zh_tw": "征伐隊盔甲",
+            "zh_tw": "征伐隊鎧甲",
             "kr": "프론테라군군복"
         },
         "description": {
-            "official": "作為討伐獎勵授予的盔甲。\\nMHP+300、MSP+20。\\nMDEF+5、DEF+20。\\n和征伐隊肩飾、征伐隊軍靴、征伐隊戒指一起裝備時，\\nATK+15、MATK+15，\\n精煉度總和為17以上時，\\n攻擊速度增加（攻擊後延遲-3%。），\\n變動詠唱減少5%\\n系列 : 盔甲  防禦 : 46\\n重量 : 30\\n需求等級 : 60\\n裝備 : 所有職業",
-            "official_clean": "作為討伐獎勵授予的盔甲。\\nMHP+300、MSP+20。\\nMDEF+5、DEF+20。\\n和征伐隊肩飾、征伐隊軍靴、征伐隊戒指一起裝備時，\\nATK+15、MATK+15，\\n精煉度總和為17以上時，\\n攻擊速度增加（攻擊後延遲-3%。），\\n變動詠唱減少5%"
+            "official": "作為討伐獎勵授予的鎧甲。\\nMHP+300、MSP+20。\\nMDEF+5、DEF+20。\\n和征伐隊肩飾、征伐隊軍靴、征伐隊戒指一起裝備時，\\nATK+15、MATK+15，\\n精煉度總和為17以上時，\\n攻擊速度增加（攻擊後延遲-3%。），\\n變動詠唱減少5%\\n系列 : 鎧甲  防禦 : 46\\n重量 : 30\\n需求等級 : 60\\n裝備 : 所有職業",
+            "official_clean": "作為討伐獎勵授予的鎧甲。\\nMHP+300、MSP+20。\\nMDEF+5、DEF+20。\\n和征伐隊肩飾、征伐隊軍靴、征伐隊戒指一起裝備時，\\nATK+15、MATK+15，\\n精煉度總和為17以上時，\\n攻擊速度增加（攻擊後延遲-3%。），\\n變動詠唱減少5%"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 1,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -69128,18 +70368,98 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "15221": {
+        "id": 15221,
+        "name": {
+            "zh_tw": "遠征隊鎧甲",
+            "kr": "게브네이의갑옷"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的鎧甲。\\nMHP+500、MSP+30、MDEF+5。\\nDEF + 30。\\n精煉+3時，DEF+10、MHP+50。\\n和遠征隊斗篷、遠征隊長靴、遠征隊戒指一起裝備時，\\nATK + 20。\\n精煉總和為+21以上時\\n攻擊速度增加（攻擊後延遲-5%。），\\n固定詠唱-5%。\\n系列 : 鎧甲  防禦 : 56\\n重量 : 50\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的鎧甲。\\nMHP+500、MSP+30、MDEF+5。\\nDEF + 30。\\n精煉+3時，DEF+10、MHP+50。\\n和遠征隊斗篷、遠征隊長靴、遠征隊戒指一起裝備時，\\nATK + 20。\\n精煉總和為+21以上時\\n攻擊速度增加（攻擊後延遲-5%。），\\n固定詠唱-5%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 56,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/15221.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 50,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "15222": {
+        "id": 15222,
+        "name": {
+            "zh_tw": "遠征隊外袍",
+            "kr": "캐스팅의로브"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的外袍。\\nMHP+400、MSP+50、MDEF+5。\\nDEF + 30。\\n精煉+3以上時，DEF+ 5，MSP+10。\\n和遠征隊圍巾、遠征隊鞋子、遠征隊魔法戒指一起裝備時，\\nMATK + 20。\\n精煉總和為+21以上時\\n變動詠唱-5%，\\n固定詠唱-5%。\\n系列 : 鎧甲  防禦 : 51\\n重量 : 45\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的外袍。\\nMHP+400、MSP+50、MDEF+5。\\nDEF + 30。\\n精煉+3以上時，DEF+ 5，MSP+10。\\n和遠征隊圍巾、遠征隊鞋子、遠征隊魔法戒指一起裝備時，\\nMATK + 20。\\n精煉總和為+21以上時\\n變動詠唱-5%，\\n固定詠唱-5%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 51,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/15222.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 45,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "15281": {
         "id": 15281,
         "name": {
-            "zh_tw": "卡利斯格騎士團盔甲",
+            "zh_tw": "卡利斯格騎士團鎧甲",
             "kr": "칼리츠버그기사단의갑옷"
         },
         "description": {
-            "official": "榮譽騎士團使用過的盔甲\\nHP+150\\n精煉+7以上時，HP再+150。\\n精煉+9以上時，HP再+250。\\n系列 : 盔甲  防禦 : 35\\n重量 : 100\\n需求等級 : 60\\n裝備 : 全職業",
-            "official_clean": "榮譽騎士團使用過的盔甲\\nHP+150\\n精煉+7以上時，HP再+150。\\n精煉+9以上時，HP再+250。"
+            "official": "榮譽騎士團使用過的鎧甲\\nHP+150\\n精煉+7以上時，HP再+150。\\n精煉+9以上時，HP再+250。\\n系列 : 鎧甲  防禦 : 35\\n重量 : 100\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "榮譽騎士團使用過的鎧甲\\nHP+150\\n精煉+7以上時，HP再+150。\\n精煉+9以上時，HP再+250。"
         },
         "category": "防具",
-        "slot": "盔甲",
+        "slot": "鎧甲",
         "slotCount": 1,
         "enchantment_slots": 0,
         "ClassNum": 0,
@@ -69919,7 +71239,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -69959,7 +71279,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70093,7 +71413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70133,7 +71453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70213,7 +71533,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70253,7 +71573,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70293,7 +71613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70333,7 +71653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70373,7 +71693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70413,7 +71733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70453,7 +71773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70493,7 +71813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70533,7 +71853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70573,7 +71893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70613,7 +71933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70653,7 +71973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70693,7 +72013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70733,7 +72053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70773,7 +72093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70813,7 +72133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70853,7 +72173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70893,7 +72213,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -70933,7 +72253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 10,
@@ -70973,7 +72293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71013,7 +72333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71053,7 +72373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71093,7 +72413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71133,7 +72453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71173,7 +72493,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19617": {
+        "id": 19617,
+        "name": {
+            "zh_tw": "(服飾)小狗耳朵",
+            "kr": "강아지귀"
+        },
+        "description": {
+            "official": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 199,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19617.gif",
+        "icon_url": "/images/items/19617.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71213,7 +72573,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71253,7 +72613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71293,7 +72653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71333,7 +72693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71373,7 +72733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71413,7 +72773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71453,7 +72813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71493,12 +72853,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 10,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "19649": {
+        "id": 19649,
+        "name": {
+            "zh_tw": "(服飾)白色小貓咪耳飾",
+            "kr": "하얀새끼고양이귀"
+        },
+        "description": {
+            "official": "白色小貓咪耳朵髮飾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "白色小貓咪耳朵髮飾。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 926,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19649.gif",
+        "icon_url": "/images/items/19649.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -71533,7 +72933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71573,7 +72973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71613,7 +73013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71653,7 +73053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71693,7 +73093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71733,7 +73133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71773,7 +73173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71813,7 +73213,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71853,7 +73253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 1,
@@ -71893,7 +73293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71933,7 +73333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -71973,7 +73373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72013,7 +73413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72053,7 +73453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72093,7 +73493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72133,7 +73533,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19739": {
+        "id": 19739,
+        "name": {
+            "zh_tw": "(服飾)睡貓帽",
+            "kr": "잠자는고양이모자"
+        },
+        "description": {
+            "official": "以沉睡的貓咪為樣本而製作的帽子，小心別吵醒牠。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以沉睡的貓咪為樣本而製作的帽子，小心別吵醒牠。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 838,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19739.gif",
+        "icon_url": "/images/items/19739.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72173,7 +73613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72213,7 +73653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72253,7 +73693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72293,7 +73733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72333,7 +73773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72373,12 +73813,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 10,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "19782": {
+        "id": 19782,
+        "name": {
+            "zh_tw": "(服飾)懶洋洋的貓",
+            "kr": "늘어진고양이"
+        },
+        "description": {
+            "official": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 142,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19782.gif",
+        "icon_url": "/images/items/19782.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -72413,7 +73893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72453,7 +73933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72493,7 +73973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72533,7 +74013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72573,7 +74053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72613,7 +74093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72653,7 +74133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72693,7 +74173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72733,12 +74213,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "19823": {
+        "id": 19823,
+        "name": {
+            "zh_tw": "(服飾)白貓帽T",
+            "kr": "흰고양이후드"
+        },
+        "description": {
+            "official": "有著蓬鬆鬆軟綿綿觸感的可愛貓耳造型帽子。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上/中 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "有著蓬鬆鬆軟綿綿觸感的可愛貓耳造型帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上/中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1052,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19823.gif",
+        "icon_url": "/images/items/19823.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -72773,7 +74293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72813,7 +74333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72853,7 +74373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72893,7 +74413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72933,7 +74453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -72973,7 +74493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73013,7 +74533,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73053,12 +74573,92 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 20,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "19843": {
+        "id": 19843,
+        "name": {
+            "zh_tw": "(服飾)貓耳髮圈",
+            "kr": "고양이머리띠"
+        },
+        "description": {
+            "official": "以貓耳為外型而製作的可愛小髮圈。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以貓耳為外型而製作的可愛小髮圈。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19843.gif",
+        "icon_url": "/images/items/19843.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19848": {
+        "id": 19848,
+        "name": {
+            "zh_tw": "(服飾)天使波利帽子",
+            "kr": "엔젤링모자"
+        },
+        "description": {
+            "official": "以波利之母天使波利為造型所製作的帽子，讓人湧起必須從人類手中保護種族的使命感。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以波利之母天使波利為造型所製作的帽子，讓人湧起必須從人類手中保護種族的使命感。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 204,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19848.gif",
+        "icon_url": "/images/items/19848.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -73093,7 +74693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73133,7 +74733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73173,7 +74773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73213,7 +74813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73253,7 +74853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73293,7 +74893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73333,7 +74933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73373,7 +74973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73413,7 +75013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73453,7 +75053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73493,7 +75093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73533,7 +75133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73573,7 +75173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73613,7 +75213,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73653,7 +75253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73693,7 +75293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73733,7 +75333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73773,12 +75373,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "19927": {
+        "id": 19927,
+        "name": {
+            "zh_tw": "(服飾)灰色懶洋洋的貓",
+            "kr": "회색늘어진고양이"
+        },
+        "description": {
+            "official": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 275,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19927.gif",
+        "icon_url": "/images/items/19927.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -73813,7 +75453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73853,7 +75493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73893,7 +75533,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73933,7 +75573,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -73973,7 +75613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74013,7 +75653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74053,7 +75693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74093,7 +75733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74133,7 +75773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74173,7 +75813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74213,7 +75853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74253,7 +75893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74293,7 +75933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74333,7 +75973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74373,7 +76013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74413,7 +76053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74453,7 +76093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74493,7 +76133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74533,7 +76173,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "20062": {
+        "id": 20062,
+        "name": {
+            "zh_tw": "(服飾)天使的階梯",
+            "kr": "엔젤스테어즈"
+        },
+        "description": {
+            "official": "陽光從雲間傾瀉而下、如夢幻般美麗的天氣景象被稱為「天使的階梯」。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "陽光從雲間傾瀉而下、如夢幻般美麗的天氣景象被稱為「天使的階梯」。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20062.gif",
+        "icon_url": "/images/items/20062.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74573,7 +76253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74613,7 +76293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74653,7 +76333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74693,7 +76373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74733,7 +76413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74773,7 +76453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74813,7 +76493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74853,7 +76533,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74893,7 +76573,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74933,7 +76613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -74973,7 +76653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75013,7 +76693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75053,7 +76733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75093,7 +76773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75133,7 +76813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75173,7 +76853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75213,7 +76893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75253,7 +76933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75293,7 +76973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75333,7 +77013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75373,7 +77053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75413,7 +77093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75453,7 +77133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75493,7 +77173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75533,7 +77213,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75573,7 +77253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75613,7 +77293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75653,7 +77333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75693,7 +77373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75733,7 +77413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75773,7 +77453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75813,7 +77493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75853,12 +77533,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "20198": {
+        "id": 20198,
+        "name": {
+            "zh_tw": "(服飾)布朗貓耳頭飾",
+            "kr": "갈색고양이귀"
+        },
+        "description": {
+            "official": "貓耳造型的可愛頭飾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "貓耳造型的可愛頭飾。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1295,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20198.gif",
+        "icon_url": "/images/items/20198.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -75893,7 +77613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75933,7 +77653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -75973,7 +77693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76013,7 +77733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76053,7 +77773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76093,7 +77813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76133,7 +77853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76173,7 +77893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76213,7 +77933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76253,7 +77973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76293,7 +78013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76333,7 +78053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76373,7 +78093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76413,7 +78133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76453,7 +78173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76493,7 +78213,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76533,7 +78253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76573,7 +78293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76613,7 +78333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76653,7 +78373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76693,7 +78413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76733,7 +78453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76773,7 +78493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76813,7 +78533,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76853,7 +78573,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76893,7 +78613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76933,7 +78653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -76973,7 +78693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77013,7 +78733,87 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "20401": {
+        "id": 20401,
+        "name": {
+            "zh_tw": "(服飾)天使光圈",
+            "kr": "천사의인도"
+        },
+        "description": {
+            "official": "依天使頭上閃亮的光圈外型而製作的服飾光圈，戴上後會得到天使的祝福。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "依天使頭上閃亮的光圈外型而製作的服飾光圈，戴上後會得到天使的祝福。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1188,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20401.gif",
+        "icon_url": "/images/items/20401.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "20404": {
+        "id": 20404,
+        "name": {
+            "zh_tw": "(服飾)天使的祝福",
+            "kr": "천사들의축복"
+        },
+        "description": {
+            "official": "被天使的祝福所圍繞的閃耀光茫。\\n從天上灑下來的光線讓人充滿幸福、光明和溫暖的感受。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭中 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "被天使的祝福所圍繞的閃耀光茫。\\n從天上灑下來的光線讓人充滿幸福、光明和溫暖的感受。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1425,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20404.gif",
+        "icon_url": "/images/items/20404.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77053,7 +78853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77093,7 +78893,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77133,7 +78933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77173,7 +78973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77213,7 +79013,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77253,7 +79053,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77293,7 +79093,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77333,7 +79133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77373,7 +79173,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77413,7 +79213,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77453,7 +79253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77493,7 +79293,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77533,7 +79333,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77573,7 +79373,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77613,7 +79413,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77653,7 +79453,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77693,7 +79493,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77773,7 +79573,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77813,7 +79613,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77853,7 +79653,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77893,7 +79693,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77933,7 +79733,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -77973,7 +79773,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78013,7 +79813,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78053,7 +79853,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78133,7 +79933,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78173,7 +79973,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78222,6 +80022,86 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "20868": {
+        "id": 20868,
+        "name": {
+            "zh_tw": "遠征隊斗篷",
+            "kr": "극한의상의"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的斗篷。\\n無屬性抗性+8%、FLEE+15。\\n精煉+3以上時，FLEE+3。\\n系列 : 披肩  防禦 : 14\\n重量 : 30\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的斗篷。\\n無屬性抗性+8%、FLEE+15。\\n精煉+3以上時，FLEE+3。"
+        },
+        "category": "防具",
+        "slot": "披肩",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 14,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/20868.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 30,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "20869": {
+        "id": 20869,
+        "name": {
+            "zh_tw": "遠征隊圍巾",
+            "kr": "Skin_Of_Marraco"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的圍巾。\\n無屬性抗性+9%、FLEE+12。\\n精煉+3以上時，無屬性抗性額外+1%。\\n系列 : 披肩  防禦 : 13\\n重量 : 25\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的圍巾。\\n無屬性抗性+9%、FLEE+12。\\n精煉+3以上時，無屬性抗性額外+1%。"
+        },
+        "category": "防具",
+        "slot": "披肩",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 13,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/20869.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 25,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "20992": {
         "id": 20992,
         "name": {
@@ -78253,7 +80133,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78373,7 +80253,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -78406,6 +80286,86 @@ export const itemsData = {
         "equip_jobs": "所有職業",
         "wearing_image_url": "",
         "icon_url": "/images/items/22150.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 25,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "22151": {
+        "id": 22151,
+        "name": {
+            "zh_tw": "遠征隊長靴",
+            "kr": "시즈부츠"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的長靴。\\nHP恢復量+15%，\\nSp恢復力+5%。\\n精煉+3以上時，AGI+1。\\n系列 : 鞋子  防禦 : 16\\n重量 : 30\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的長靴。\\nHP恢復量+15%，\\nSp恢復力+5%。\\n精煉+3以上時，AGI+1。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 16,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/22151.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 30,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "22152": {
+        "id": 22152,
+        "name": {
+            "zh_tw": "遠征隊鞋子",
+            "kr": "심판의슈즈"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的鞋子。\\nHP恢復量+10%，\\nSp恢復力+7%。\\n精煉+3以上時，VIT+1。\\n系列 : 鞋子  防禦 : 14\\n重量 : 25\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的鞋子。\\nHP恢復量+10%，\\nSp恢復力+7%。\\n精煉+3以上時，VIT+1。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 14,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/22152.gif",
         "script": "",
         "can_drop": true,
         "can_trade": true,
@@ -78939,6 +80899,46 @@ export const itemsData = {
             "weight": 25,
             "buy_price": 20,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "23142": {
+        "id": 23142,
+        "name": {
+            "zh_tw": "EXP糖漿",
+            "kr": "최하급성장비약"
+        },
+        "description": {
+            "official": "飲用後可取得少量的經驗值。\\n單次使用BaseLv最高幅度提升為1。\\n部分新手區域無法使用。\\n*該道具在建築内無法使用\\n重量：1\\n重量：1\\n要求等級：5\\n限制等級：49",
+            "official_clean": "飲用後可取得少量的經驗值。\\n單次使用BaseLv最高幅度提升為1。\\n部分新手區域無法使用。\\n*該道具在建築内無法使用\\n限制等級：49"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 5,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/23142.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -81149,6 +83149,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "23657": {
+        "id": 23657,
+        "name": {
+            "zh_tw": "生命保險證[活動專用]",
+            "kr": "생명보험증서"
+        },
+        "description": {
+            "official": "購買生命保險的證明，在進行危險戰鬥之前一定要簽約。\\n使用後30分鐘內，死亡時的取消死亡懲罰，並且生效後即失去效力。\\n_\\n重量：0",
+            "official_clean": "購買生命保險的證明，在進行危險戰鬥之前一定要簽約。\\n使用後30分鐘內，死亡時的取消死亡懲罰，並且生效後即失去效力。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/23657.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "23681": {
         "id": 23681,
         "name": {
@@ -81429,6 +83469,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "23725": {
+        "id": 23725,
+        "name": {
+            "zh_tw": "頂級料理套餐[活動專用]",
+            "kr": "굉장히멋진요리"
+        },
+        "description": {
+            "official": "濃縮所有對身體好的料理的最高级料理。\\n30分鐘內所有素質+10，ATK/MATK +30。\\n_\\n重量 : 1",
+            "official_clean": "濃縮所有對身體好的料理的最高级料理。\\n30分鐘內所有素質+10，ATK/MATK +30。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/23725.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "23737": {
         "id": 23737,
         "name": {
@@ -81506,6 +83586,46 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "25001": {
+        "id": 25001,
+        "name": {
+            "zh_tw": "防禦石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升防禦力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nDEF+20。\\n重量：10",
+            "official_clean": "提升防禦力的石頭。\\n於服飾頭中欄位賦予以下能力值。\\nDEF+20。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -81989,6 +84109,166 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "25014": {
+        "id": 25014,
+        "name": {
+            "zh_tw": "魔法防禦石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升魔法防禦力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMDEF+4。\\n搭配防禦石(頭中)時，追加以下能力值。\\nHIT+5，FLEE+5。\\n重量：10",
+            "official_clean": "提升魔法防禦力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMDEF+4。\\n搭配防禦石(頭中)時，追加以下能力值。\\nHIT+5，FLEE+5。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25014.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25016": {
+        "id": 25016,
+        "name": {
+            "zh_tw": "攻擊石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "蘊含攻擊力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nATK+1%。\\n服飾頭上/中/頭下裝備ATK+1%(頭上)、ATK+1%、ATK+1%(頭下)時，ATK再+2%。\\n重量：10",
+            "official_clean": "蘊含攻擊力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nATK+1%。\\n服飾頭上/中/頭下裝備ATK+1%(頭上)、ATK+1%、ATK+1%(頭下)時，ATK再+2%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25016.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25017": {
+        "id": 25017,
+        "name": {
+            "zh_tw": "魔攻石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "蘊含魔法攻擊力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMATK+1%。\\n服飾頭上/中/下裝備魔攻石時，賦予以下能力值。\\nMATK+2%.\\n重量：10",
+            "official_clean": "蘊含魔法攻擊力的石頭。\\n於服飾頭下欄位賦予以下能力值。\\nMATK+1%。\\n服飾頭上/中/下裝備魔攻石時，賦予以下能力值。\\nMATK+2%."
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25017.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25060": {
+        "id": 25060,
+        "name": {
+            "zh_tw": "暴擊石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升暴擊傷害的石頭。\\n於服飾頭中欄位賦予以下能力值。\\n暴擊傷害+3%\\n重量：10",
+            "official_clean": "提升暴擊傷害的石頭。\\n於服飾頭中欄位賦予以下能力值。\\n暴擊傷害+3%"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25060.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "25073": {
         "id": 25073,
         "name": {
@@ -82269,6 +84549,126 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "25172": {
+        "id": 25172,
+        "name": {
+            "zh_tw": "變詠石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "減少變動詠唱的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n變動詠唱-3%。\\n搭配變詠石(頭中)、變詠石(頭下)時，變動詠唱再-6%。\\n重量：10",
+            "official_clean": "減少變動詠唱的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n變動詠唱-3%。\\n搭配變詠石(頭中)、變詠石(頭下)時，變動詠唱再-6%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25172.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25173": {
+        "id": 25173,
+        "name": {
+            "zh_tw": "變詠石(頭中)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "減少變動詠唱的石頭。\\n於服飾頭中欄位賦予以下能力值。\\n變動詠唱-3%。\\n重量：10",
+            "official_clean": "減少變動詠唱的石頭。\\n於服飾頭中欄位賦予以下能力值。\\n變動詠唱-3%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25173.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25174": {
+        "id": 25174,
+        "name": {
+            "zh_tw": "變詠石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "減少變動詠唱的石頭。\\n於服飾頭下欄位賦予以下能力值。\\n變動詠唱-3%。\\n重量：10",
+            "official_clean": "減少變動詠唱的石頭。\\n於服飾頭下欄位賦予以下能力值。\\n變動詠唱-3%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25174.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "25176": {
         "id": 25176,
         "name": {
@@ -82386,6 +84786,166 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "25302": {
+        "id": 25302,
+        "name": {
+            "zh_tw": "二刀連擊石(披肩)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "可使用二刀連擊的石頭。\\n於服飾披肩欄位賦予以下能力值。\\n可使用二刀連擊Lv.3。\\n(適用所有武器)\\n已習得更高等級時，以習得等級發動。\\n重量：10",
+            "official_clean": "可使用二刀連擊的石頭。\\n於服飾披肩欄位賦予以下能力值。\\n可使用二刀連擊Lv.3。\\n(適用所有武器)\\n已習得更高等級時，以習得等級發動。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25302.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25303": {
+        "id": 25303,
+        "name": {
+            "zh_tw": "暴擊石(披肩)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升暴擊傷害的石頭。\\n於服飾披肩欄位賦予以下能力值。\\n暴擊傷害+20%.\\n搭配暴擊石頭上/中/下時，CRI +10。\\n重量：10",
+            "official_clean": "提升暴擊傷害的石頭。\\n於服飾披肩欄位賦予以下能力值。\\n暴擊傷害+20%.\\n搭配暴擊石頭上/中/下時，CRI +10。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25303.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25304": {
+        "id": 25304,
+        "name": {
+            "zh_tw": "暴擊石(頭上)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升暴擊傷害的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n暴擊傷害+3%\\n搭配暴擊石頭中/下時，暴擊傷害再+6%。\\n重量：10",
+            "official_clean": "提升暴擊傷害的石頭。\\n於服飾頭上欄位賦予以下能力值。\\n暴擊傷害+3%\\n搭配暴擊石頭中/下時，暴擊傷害再+6%。"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25304.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "25305": {
+        "id": 25305,
+        "name": {
+            "zh_tw": "暴擊石(頭下)",
+            "kr": "영혼의조각"
+        },
+        "description": {
+            "official": "提升暴擊傷害的石頭。\\n於服飾頭下欄位賦予以下能力值。\\n暴擊傷害+3%\\n重量：10",
+            "official_clean": "提升暴擊傷害的石頭。\\n於服飾頭下欄位賦予以下能力值。\\n暴擊傷害+3%"
+        },
+        "category": "附魔",
+        "slot": "(服飾)頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25305.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -83624,6 +86184,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "25475": {
+        "id": 25475,
+        "name": {
+            "zh_tw": "藍光結晶體",
+            "kr": "꿈의파편"
+        },
+        "description": {
+            "official": "由生物體掉落出凝聚魔力且散發藍光的結晶體。\\n_\\n重量 : 0",
+            "official_clean": "由生物體掉落出凝聚魔力且散發藍光的結晶體。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25475.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "25736": {
         "id": 25736,
         "name": {
@@ -83923,7 +86523,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 0
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1320,
+                "monster_name": "鴞裊首領",
+                "rate": "???",
+                "image_url": "images/monsters/1320.gif"
+            }
+        ]
     },
     "26205": {
         "id": 26205,
@@ -84451,6 +87058,86 @@ export const itemsData = {
         "equip_jobs": "所有職業",
         "wearing_image_url": "",
         "icon_url": "/images/items/28539.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "28540": {
+        "id": 28540,
+        "name": {
+            "zh_tw": "遠征隊戒指",
+            "kr": "파란반지"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的戒指。\\nSTR + 3。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的戒指。\\nSTR + 3。"
+        },
+        "category": "防具",
+        "slot": "飾品",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/28540.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 10,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "28541": {
+        "id": 28541,
+        "name": {
+            "zh_tw": "遠征隊魔法戒指",
+            "kr": "파이어링"
+        },
+        "description": {
+            "official": "作為遠征獎勵授予的魔法戒指。\\nINT + 3。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "作為遠征獎勵授予的魔法戒指。\\nINT + 3。"
+        },
+        "category": "防具",
+        "slot": "飾品",
+        "slotCount": 1,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/28541.gif",
         "script": "",
         "can_drop": true,
         "can_trade": true,
@@ -85274,6 +87961,166 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "29026": {
+        "id": 29026,
+        "name": {
+            "zh_tw": "DEF+20",
+            "kr": "마력석_검정"
+        },
+        "description": {
+            "official": "DEF+20",
+            "official_clean": "DEF+20"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29026.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29029": {
+        "id": 29029,
+        "name": {
+            "zh_tw": "ATK+1%(頭下)",
+            "kr": "마력석_파랑"
+        },
+        "description": {
+            "official": "ATK+1%。",
+            "official_clean": "ATK+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29029.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29031": {
+        "id": 29031,
+        "name": {
+            "zh_tw": "MATK+1%(頭下)",
+            "kr": "마력석_파랑"
+        },
+        "description": {
+            "official": "MATK+1%。",
+            "official_clean": "MATK+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29031.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29033": {
+        "id": 29033,
+        "name": {
+            "zh_tw": "MDEF+4",
+            "kr": "마력석_초록"
+        },
+        "description": {
+            "official": "MDEF+4\\n搭配DEF+20時，HIT+5，FLEE+5。",
+            "official_clean": "MDEF+4\\n搭配DEF+20時，HIT+5，FLEE+5。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29033.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "29047": {
         "id": 29047,
         "name": {
@@ -85298,6 +88145,126 @@ export const itemsData = {
         "equip_jobs": "",
         "wearing_image_url": "",
         "icon_url": "/images/items/29047.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29156": {
+        "id": 29156,
+        "name": {
+            "zh_tw": "變詠石(頭上)",
+            "kr": "하늘색보석"
+        },
+        "description": {
+            "official": "變動詠唱-3%。\\n搭配變詠石(頭中)、變詠石(頭下)時，變動詠唱再-6%。\\n重量：0",
+            "official_clean": "變動詠唱-3%。\\n搭配變詠石(頭中)、變詠石(頭下)時，變動詠唱再-6%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29156.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29157": {
+        "id": 29157,
+        "name": {
+            "zh_tw": "變詠石(頭中)",
+            "kr": "하늘색보석"
+        },
+        "description": {
+            "official": "變動詠唱-3%。",
+            "official_clean": "變動詠唱-3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29157.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29158": {
+        "id": 29158,
+        "name": {
+            "zh_tw": "變詠石(頭下)",
+            "kr": "하늘색보석"
+        },
+        "description": {
+            "official": "變動詠唱-3%。",
+            "official_clean": "變動詠唱-3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29158.gif",
         "script": "",
         "can_drop": true,
         "can_trade": true,
@@ -85431,6 +88398,166 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "29359": {
+        "id": 29359,
+        "name": {
+            "zh_tw": "暴擊石(頭上)",
+            "kr": "하얀묘안석"
+        },
+        "description": {
+            "official": "暴擊傷害+3%。\\n搭配暴擊石(頭中、頭下)時，暴擊傷害再+6%。\\n重量：0",
+            "official_clean": "暴擊傷害+3%。\\n搭配暴擊石(頭中、頭下)時，暴擊傷害再+6%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29359.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29360": {
+        "id": 29360,
+        "name": {
+            "zh_tw": "暴擊石(頭下)",
+            "kr": "하얀묘안석"
+        },
+        "description": {
+            "official": "暴擊傷害+3%。",
+            "official_clean": "暴擊傷害+3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29360.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29361": {
+        "id": 29361,
+        "name": {
+            "zh_tw": "致命(披肩)",
+            "kr": "하얀묘안석"
+        },
+        "description": {
+            "official": "暴擊傷害+20%。\\n搭配暴擊石頭上/中/下時，CRI +10。",
+            "official_clean": "暴擊傷害+20%。\\n搭配暴擊石頭上/中/下時，CRI +10。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29361.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29362": {
+        "id": 29362,
+        "name": {
+            "zh_tw": "二刀連擊",
+            "kr": "완력"
+        },
+        "description": {
+            "official": "可使用二刀連擊3Lv。\\n(適用所有武器)\\n已習得更高等級時，以習得等級發動。",
+            "official_clean": "可使用二刀連擊3Lv。\\n(適用所有武器)\\n已習得更高等級時，以習得等級發動。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29362.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -85674,6 +88801,2166 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "29393": {
+        "id": 29393,
+        "name": {
+            "zh_tw": "劍士精髓2Lv",
+            "kr": "검사의혼"
+        },
+        "description": {
+            "official": "怒爆SP消耗-10。\\n狂擊技能等級每+1時，攻擊速度增加（攻擊後延遲減少）1%。\\n鎧甲每精煉+2時，怒爆傷害增加15%。",
+            "official_clean": "怒爆SP消耗-10。\\n狂擊技能等級每+1時，攻擊速度增加（攻擊後延遲減少）1%。\\n鎧甲每精煉+2時，怒爆傷害增加15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29393.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29394": {
+        "id": 29394,
+        "name": {
+            "zh_tw": "商人精髓2Lv",
+            "kr": "상인의혼"
+        },
+        "description": {
+            "official": "低價買進技能等級每+1時，ATK+2。\\n高價賣出技能等級每+1時，攻擊速度增加（攻擊後延遲減少）1%。\\n鎧甲每精煉+2時，MHP+100。",
+            "official_clean": "低價買進技能等級每+1時，ATK+2。\\n高價賣出技能等級每+1時，攻擊速度增加（攻擊後延遲減少）1%。\\n鎧甲每精煉+2時，MHP+100。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29394.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29395": {
+        "id": 29395,
+        "name": {
+            "zh_tw": "盜賊精髓2Lv",
+            "kr": "도둑의혼"
+        },
+        "description": {
+            "official": "偷竊每+1級，攻擊速度增加（攻擊後延遲減少）1%。\\n鎧甲每精煉+2時，FLEE+10\\n當裝備職業為盜賊系列時，ATK+30",
+            "official_clean": "偷竊每+1級，攻擊速度增加（攻擊後延遲減少）1%。\\n鎧甲每精煉+2時，FLEE+10\\n當裝備職業為盜賊系列時，ATK+30"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29395.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29396": {
+        "id": 29396,
+        "name": {
+            "zh_tw": "魔法師精髓2Lv",
+            "kr": "마법사의혼"
+        },
+        "description": {
+            "official": "冰箭術、火箭術、雷擊術的傷害+20%。\\n火焰之壁技能等級每+1時，變動詠唱-1%。\\n每精煉+2時，MSP+50。",
+            "official_clean": "冰箭術、火箭術、雷擊術的傷害+20%。\\n火焰之壁技能等級每+1時，變動詠唱-1%。\\n每精煉+2時，MSP+50。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29396.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29397": {
+        "id": 29397,
+        "name": {
+            "zh_tw": "服事精髓2Lv",
+            "kr": "복사의혼"
+        },
+        "description": {
+            "official": "治癒術、加速術、天使之賜福SP消耗-15%。\\n治癒術技能等級每+1時，治癒量+1%。\\n鎧甲每精煉+2時，MHP+70、MSP+30。",
+            "official_clean": "治癒術、加速術、天使之賜福SP消耗-15%。\\n治癒術技能等級每+1時，治癒量+1%。\\n鎧甲每精煉+2時，MHP+70、MSP+30。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29397.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29398": {
+        "id": 29398,
+        "name": {
+            "zh_tw": "弓箭手精髓2Lv",
+            "kr": "궁수의혼"
+        },
+        "description": {
+            "official": "二連矢SP消耗-5。\\n蒼鷹之眼技能等級每+1時，弓攻擊力+2%。\\n鎧甲每精煉+2時，箭雨傷害+5%。",
+            "official_clean": "二連矢SP消耗-5。\\n蒼鷹之眼技能等級每+1時，弓攻擊力+2%。\\n鎧甲每精煉+2時，箭雨傷害+5%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29398.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29399": {
+        "id": 29399,
+        "name": {
+            "zh_tw": "騎士精髓1Lv",
+            "kr": "검사의혼"
+        },
+        "description": {
+            "official": "騎兵修練技能等級每+1時，CRI+3。\\n怪物互擊傷害+20%。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。",
+            "official_clean": "騎兵修練技能等級每+1時，CRI+3。\\n怪物互擊傷害+20%。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29399.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29400": {
+        "id": 29400,
+        "name": {
+            "zh_tw": "鐵匠精髓1Lv",
+            "kr": "상인의혼"
+        },
+        "description": {
+            "official": "武器值最大化技能等級每+1時，CRI+3。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。\\n當裝備職業為商人系列時，CRI+10。",
+            "official_clean": "武器值最大化技能等級每+1時，CRI+3。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。\\n當裝備職業為商人系列時，CRI+10。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29400.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29401": {
+        "id": 29401,
+        "name": {
+            "zh_tw": "刺客精髓1Lv",
+            "kr": "도둑의혼"
+        },
+        "description": {
+            "official": "無影之牙技能等級每+1時，CRI+3。\\n音速投擲傷害+20%。\\n鎧甲每精煉+1時，爆擊傷害+1%。",
+            "official_clean": "無影之牙技能等級每+1時，CRI+3。\\n音速投擲傷害+20%。\\n鎧甲每精煉+1時，爆擊傷害+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29401.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29402": {
+        "id": 29402,
+        "name": {
+            "zh_tw": "巫師精髓1Lv",
+            "kr": "마법사의혼"
+        },
+        "description": {
+            "official": "崩裂術技能等級每+1時，變動詠唱-3%。\\n隕石術、暴風雪、怒雷強擊傷害+20%。\\n鎧甲每精煉+2時，MATK+1%。",
+            "official_clean": "崩裂術技能等級每+1時，變動詠唱-3%。\\n隕石術、暴風雪、怒雷強擊傷害+20%。\\n鎧甲每精煉+2時，MATK+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29402.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29403": {
+        "id": 29403,
+        "name": {
+            "zh_tw": "祭司精髓1Lv",
+            "kr": "복사의혼"
+        },
+        "description": {
+            "official": "聖母之頌歌技能等級每+1時，變動詠唱-3%。\\n十字驅魔攻擊傷害+20%。\\n鎧甲每精煉+2時，十字驅魔攻擊傷害+5%。",
+            "official_clean": "聖母之頌歌技能等級每+1時，變動詠唱-3%。\\n十字驅魔攻擊傷害+20%。\\n鎧甲每精煉+2時，十字驅魔攻擊傷害+5%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29403.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29404": {
+        "id": 29404,
+        "name": {
+            "zh_tw": "獵人精髓1Lv",
+            "kr": "궁수의혼"
+        },
+        "description": {
+            "official": "閃電衝擊技能等級每+1時，攻擊速度（攻擊後延遲減少）2%。\\n閃電衝擊的傷害+40%。\\n鎧甲每精煉+1時，LUK + 1。",
+            "official_clean": "閃電衝擊技能等級每+1時，攻擊速度（攻擊後延遲減少）2%。\\n閃電衝擊的傷害+40%。\\n鎧甲每精煉+1時，LUK + 1。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29404.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29405": {
+        "id": 29405,
+        "name": {
+            "zh_tw": "十字軍精髓1Lv",
+            "kr": "검사의혼"
+        },
+        "description": {
+            "official": "信任技能等級每+1時，ATK+3。\\n聖十字攻擊傷害+15%。\\n鎧甲每精煉+2時，MHP+100。",
+            "official_clean": "信任技能等級每+1時，ATK+3。\\n聖十字攻擊傷害+15%。\\n鎧甲每精煉+2時，MHP+100。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29405.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29406": {
+        "id": 29406,
+        "name": {
+            "zh_tw": "鍊金術師精髓1Lv",
+            "kr": "상인의혼"
+        },
+        "description": {
+            "official": "知識藥水技能等級每+1時，ATK+3。\\n攻擊速度增加(攻擊後延遲減少)10%。\\n鎧甲每精煉+2時，CRI+5。",
+            "official_clean": "知識藥水技能等級每+1時，ATK+3。\\n攻擊速度增加(攻擊後延遲減少)10%。\\n鎧甲每精煉+2時，CRI+5。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29406.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29407": {
+        "id": 29407,
+        "name": {
+            "zh_tw": "流氓精髓1Lv",
+            "kr": "도둑의혼"
+        },
+        "description": {
+            "official": "抄襲技能等級每+1時，ATK+3。\\n潛擊傷害+20%\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。",
+            "official_clean": "抄襲技能等級每+1時，ATK+3。\\n潛擊傷害+20%\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29407.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29408": {
+        "id": 29408,
+        "name": {
+            "zh_tw": "賢者精髓1Lv",
+            "kr": "마법사의혼"
+        },
+        "description": {
+            "official": "自動唸咒技能等級每+1時，MATK+3。\\n崩裂術、地震術傷害+20%。\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。",
+            "official_clean": "自動唸咒技能等級每+1時，MATK+3。\\n崩裂術、地震術傷害+20%。\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29408.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29409": {
+        "id": 29409,
+        "name": {
+            "zh_tw": "武僧精髓1Lv",
+            "kr": "복사의혼"
+        },
+        "description": {
+            "official": "天使之擊技能等級每+1時，ATK+3。\\n連環全身掌傷害+20%。\\n鎧甲每精煉+2時，猛龍誇強傷害+5%。",
+            "official_clean": "天使之擊技能等級每+1時，ATK+3。\\n連環全身掌傷害+20%。\\n鎧甲每精煉+2時，猛龍誇強傷害+5%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29409.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29410": {
+        "id": 29410,
+        "name": {
+            "zh_tw": "吟遊詩人&舞孃精髓1Lv",
+            "kr": "궁수의혼"
+        },
+        "description": {
+            "official": "操控樂器、練習舞蹈技能等級每+1時，臨機應變技能冷卻時間-1秒。\\n臨機應變技能冷卻時間-60秒。\\n鎧甲每精煉+2時，MSP+30。",
+            "official_clean": "操控樂器、練習舞蹈技能等級每+1時，臨機應變技能冷卻時間-1秒。\\n臨機應變技能冷卻時間-60秒。\\n鎧甲每精煉+2時，MSP+30。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29410.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29411": {
+        "id": 29411,
+        "name": {
+            "zh_tw": "騎士精髓2Lv",
+            "kr": "검사의혼"
+        },
+        "description": {
+            "official": "騎兵修練技能等級每+1時，CRI+5。\\n怪物互擊傷害+20%。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。\\n當裝備職業為劍士系列時，爆擊傷害+7%。",
+            "official_clean": "騎兵修練技能等級每+1時，CRI+5。\\n怪物互擊傷害+20%。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。\\n當裝備職業為劍士系列時，爆擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29411.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29412": {
+        "id": 29412,
+        "name": {
+            "zh_tw": "鐵匠精髓2Lv",
+            "kr": "상인의혼"
+        },
+        "description": {
+            "official": "武器值最大化技能等級每+1時，CRI+5。\\n武器研究技能等級每+1時，爆擊傷害+1%。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。\\n當裝備職業為商人系列時，CRI+10。",
+            "official_clean": "武器值最大化技能等級每+1時，CRI+5。\\n武器研究技能等級每+1時，爆擊傷害+1%。\\n鎧甲每精煉+1時，攻擊速度增加(攻擊後延遲減少)1%。\\n當裝備職業為商人系列時，CRI+10。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29412.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29413": {
+        "id": 29413,
+        "name": {
+            "zh_tw": "刺客精髓2Lv",
+            "kr": "도둑의혼"
+        },
+        "description": {
+            "official": "無影之牙技能等級每+1時，CRI+5。\\n音速投擲傷害+20%。\\n鎧甲每精煉+1時，爆擊傷害+1%。\\n當裝備職業為盜賊系列時，攻擊速度增加 (攻擊後延遲-7%)",
+            "official_clean": "無影之牙技能等級每+1時，CRI+5。\\n音速投擲傷害+20%。\\n鎧甲每精煉+1時，爆擊傷害+1%。\\n當裝備職業為盜賊系列時，攻擊速度增加 (攻擊後延遲-7%)"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29413.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29414": {
+        "id": 29414,
+        "name": {
+            "zh_tw": "巫師精髓2Lv",
+            "kr": "마법사의혼"
+        },
+        "description": {
+            "official": "崩裂術技能等級每+1時，變動詠唱-5%。\\n隕石術、暴風雪、怒雷強擊傷害+20%。\\n鎧甲每精煉+2時，MATK+1%。\\n當裝備職業為魔法師系列時，FLEE+30。",
+            "official_clean": "崩裂術技能等級每+1時，變動詠唱-5%。\\n隕石術、暴風雪、怒雷強擊傷害+20%。\\n鎧甲每精煉+2時，MATK+1%。\\n當裝備職業為魔法師系列時，FLEE+30。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29414.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29415": {
+        "id": 29415,
+        "name": {
+            "zh_tw": "祭司精髓2Lv",
+            "kr": "복사의혼"
+        },
+        "description": {
+            "official": "聖母之頌歌技能等級每+1時，變動詠唱-5%。\\n十字驅魔攻擊傷害+20%。\\n鎧甲每精煉+2時，十字驅魔攻擊傷害+5%。\\n服事系列裝備時，MATK+7%、治癒量+15%",
+            "official_clean": "聖母之頌歌技能等級每+1時，變動詠唱-5%。\\n十字驅魔攻擊傷害+20%。\\n鎧甲每精煉+2時，十字驅魔攻擊傷害+5%。\\n服事系列裝備時，MATK+7%、治癒量+15%"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29415.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29416": {
+        "id": 29416,
+        "name": {
+            "zh_tw": "獵人精髓2Lv",
+            "kr": "궁수의혼"
+        },
+        "description": {
+            "official": "閃電衝擊技能等級每+1時，攻擊速度（攻擊後延遲減少）3%。\\n閃電衝擊、獵鷹突擊傷害+80%。\\n鎧甲每精煉+1時，LUK+1。",
+            "official_clean": "閃電衝擊技能等級每+1時，攻擊速度（攻擊後延遲減少）3%。\\n閃電衝擊、獵鷹突擊傷害+80%。\\n鎧甲每精煉+1時，LUK+1。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29416.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29417": {
+        "id": 29417,
+        "name": {
+            "zh_tw": "十字軍精髓2Lv",
+            "kr": "검사의혼"
+        },
+        "description": {
+            "official": "信任技能等級每+1時，ATK+5。\\n聖十字攻擊傷害+15%。\\n鎧甲每精煉+2時，MHP+100。\\n當裝備職業為劍士系列時，DEF+80。",
+            "official_clean": "信任技能等級每+1時，ATK+5。\\n聖十字攻擊傷害+15%。\\n鎧甲每精煉+2時，MHP+100。\\n當裝備職業為劍士系列時，DEF+80。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29417.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29418": {
+        "id": 29418,
+        "name": {
+            "zh_tw": "鍊金術師精髓2Lv",
+            "kr": "상인의혼"
+        },
+        "description": {
+            "official": "知識藥水技能等級每+1時，ATK+5。\\n攻擊速度增加(攻擊後延遲減少)10%。\\n鎧甲每精煉+2時，CRI+5。\\n當裝備職業為商人系列時，All State+7。",
+            "official_clean": "知識藥水技能等級每+1時，ATK+5。\\n攻擊速度增加(攻擊後延遲減少)10%。\\n鎧甲每精煉+2時，CRI+5。\\n當裝備職業為商人系列時，All State+7。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29418.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29419": {
+        "id": 29419,
+        "name": {
+            "zh_tw": "流氓精髓2Lv",
+            "kr": "도둑의혼"
+        },
+        "description": {
+            "official": "抄襲技能等級每+1時，ATK+5。\\n潛擊傷害+20%。\\n潛擊SP消耗-15%。\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。",
+            "official_clean": "抄襲技能等級每+1時，ATK+5。\\n潛擊傷害+20%。\\n潛擊SP消耗-15%。\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29419.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29420": {
+        "id": 29420,
+        "name": {
+            "zh_tw": "賢者精髓2Lv",
+            "kr": "마법사의혼"
+        },
+        "description": {
+            "official": "自動唸咒技能等級每+1時，MATK+5。\\n崩裂術、地震術傷害+20%。\\nASPD+1。\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。\\n地屬性魔法傷害+15%。",
+            "official_clean": "自動唸咒技能等級每+1時，MATK+5。\\n崩裂術、地震術傷害+20%。\\nASPD+1。\\n鎧甲每精煉+1時，攻擊速度增加（攻擊後延遲減少）1%。\\n地屬性魔法傷害+15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29420.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29421": {
+        "id": 29421,
+        "name": {
+            "zh_tw": "武僧精髓2Lv",
+            "kr": "복사의혼"
+        },
+        "description": {
+            "official": "天使之擊技能等級每+1時，ATK+5。\\n連環全身掌傷害+20%。\\n鎧甲每精煉+2時，猛龍誇強傷害+5%。\\n當裝備職業為服事系列時，\\n近距離普通攻擊時，以一定機率對自己施放蓄氣Lv5",
+            "official_clean": "天使之擊技能等級每+1時，ATK+5。\\n連環全身掌傷害+20%。\\n鎧甲每精煉+2時，猛龍誇強傷害+5%。\\n當裝備職業為服事系列時，\\n近距離普通攻擊時，以一定機率對自己施放蓄氣Lv5"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29421.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29422": {
+        "id": 29422,
+        "name": {
+            "zh_tw": "吟遊詩人&舞孃精髓2Lv",
+            "kr": "궁수의혼"
+        },
+        "description": {
+            "official": "操控樂器、練習舞蹈技能等級每+1時，臨機應變技能冷卻時間-3秒。\\n臨機應變技能冷卻時間-60秒。\\n鎧甲每精煉+2時，MSP+30。\\n當裝備職業為弓箭手系列時，SP自然恢復速度+50%。",
+            "official_clean": "操控樂器、練習舞蹈技能等級每+1時，臨機應變技能冷卻時間-3秒。\\n臨機應變技能冷卻時間-60秒。\\n鎧甲每精煉+2時，MSP+30。\\n當裝備職業為弓箭手系列時，SP自然恢復速度+50%。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29422.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29553": {
+        "id": 29553,
+        "name": {
+            "zh_tw": "騎士精髓Ⅱ1Lv",
+            "kr": "검사피규어"
+        },
+        "description": {
+            "official": "長槍使用熟練度技能等級每+1時，HIT+1\\n連刺攻擊傷害+20%。\\n鎧甲每精煉+1時，ATK+2。",
+            "official_clean": "長槍使用熟練度技能等級每+1時，HIT+1\\n連刺攻擊傷害+20%。\\n鎧甲每精煉+1時，ATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29553.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29554": {
+        "id": 29554,
+        "name": {
+            "zh_tw": "鐵匠精髓Ⅱ1Lv",
+            "kr": "상인피규어"
+        },
+        "description": {
+            "official": "強化火屬性技能技能等級每+1時，LUK+1。\\nDEX+10。\\n鎧甲每精煉+2時，LUK+1。",
+            "official_clean": "強化火屬性技能技能等級每+1時，LUK+1。\\nDEX+10。\\n鎧甲每精煉+2時，LUK+1。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29554.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29555": {
+        "id": 29555,
+        "name": {
+            "zh_tw": "刺客精髓Ⅱ1Lv",
+            "kr": "도둑피규어"
+        },
+        "description": {
+            "official": "左手修練技能等級每+1時，FLEE+3。\\n毒性感染傷害+20%。\\n鎧甲每精煉+2時，變動詠唱-3%。",
+            "official_clean": "左手修練技能等級每+1時，FLEE+3。\\n毒性感染傷害+20%。\\n鎧甲每精煉+2時，變動詠唱-3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29555.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29556": {
+        "id": 29556,
+        "name": {
+            "zh_tw": "巫師精髓Ⅱ1Lv",
+            "kr": "마술사피규어"
+        },
+        "description": {
+            "official": "怒雷強擊技能等級每+1時，變動詠唱-2%。\\n雷鳴術傷害提高20%。\\n鎧甲每精煉+1時，MATK+2。",
+            "official_clean": "怒雷強擊技能等級每+1時，變動詠唱-2%。\\n雷鳴術傷害提高20%。\\n鎧甲每精煉+1時，MATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29556.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29557": {
+        "id": 29557,
+        "name": {
+            "zh_tw": "祭司精髓Ⅱ1Lv",
+            "kr": "복사피규어"
+        },
+        "description": {
+            "official": "鈍器使用熟練度技能等級每+1時，ATK+3。\\n爆擊傷害+15%。\\n鎧甲每精煉+1時，ATK + 2。",
+            "official_clean": "鈍器使用熟練度技能等級每+1時，ATK+3。\\n爆擊傷害+15%。\\n鎧甲每精煉+1時，ATK + 2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29557.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29558": {
+        "id": 29558,
+        "name": {
+            "zh_tw": "獵人精髓Ⅱ1Lv",
+            "kr": "궁수피규어"
+        },
+        "description": {
+            "official": "動物殺手技能等級每+1時，ATK+3。\\n二連矢傷害+20%。\\n鎧甲每精煉+2時，弓攻擊力+3%。",
+            "official_clean": "動物殺手技能等級每+1時，ATK+3。\\n二連矢傷害+20%。\\n鎧甲每精煉+2時，弓攻擊力+3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29558.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29560": {
+        "id": 29560,
+        "name": {
+            "zh_tw": "十字軍精髓Ⅱ1Lv",
+            "kr": "검사피규어"
+        },
+        "description": {
+            "official": "信任技能等級每+1時，MATK+3。\\n聖十字審判傷害+20%。\\n鎧甲每精煉+1時，MATK + 2。",
+            "official_clean": "信任技能等級每+1時，MATK+3。\\n聖十字審判傷害+20%。\\n鎧甲每精煉+1時，MATK + 2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29560.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29561": {
+        "id": 29561,
+        "name": {
+            "zh_tw": "鍊金術師精髓Ⅱ1Lv",
+            "kr": "상인피규어"
+        },
+        "description": {
+            "official": "配藥技能等級每+1時，ATK+3。\\n金錢攻擊傷害+100%。\\n鎧甲每精煉+1時，ATK+2。",
+            "official_clean": "配藥技能等級每+1時，ATK+3。\\n金錢攻擊傷害+100%。\\n鎧甲每精煉+1時，ATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29561.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29562": {
+        "id": 29562,
+        "name": {
+            "zh_tw": "流氓精髓Ⅱ1Lv",
+            "kr": "도둑피규어"
+        },
+        "description": {
+            "official": "強奪技能等級每+1時，HIT+1。\\n背刺傷害+20%。\\n鎧甲每精煉+1時，ATK+2。",
+            "official_clean": "強奪技能等級每+1時，HIT+1。\\n背刺傷害+20%。\\n鎧甲每精煉+1時，ATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29562.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29563": {
+        "id": 29563,
+        "name": {
+            "zh_tw": "賢者精髓Ⅱ1Lv",
+            "kr": "마술사피규어"
+        },
+        "description": {
+            "official": "進化之書技能等級每+1時，MATK+3。\\n火箭術、冰箭術、雷擊術傷害+20%。\\n鎧甲每精煉+1時，MATK+2。",
+            "official_clean": "進化之書技能等級每+1時，MATK+3。\\n火箭術、冰箭術、雷擊術傷害+20%。\\n鎧甲每精煉+1時，MATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29563.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29564": {
+        "id": 29564,
+        "name": {
+            "zh_tw": "武僧精髓Ⅱ1Lv",
+            "kr": "복사피규어"
+        },
+        "description": {
+            "official": "天使之擊技能等級每+1時，浸透勁變動詠唱-3%。\\n浸透勁傷害+20%。\\n鎧甲每精煉+2時，浸透勁傷害+5%。",
+            "official_clean": "天使之擊技能等級每+1時，浸透勁變動詠唱-3%。\\n浸透勁傷害+20%。\\n鎧甲每精煉+2時，浸透勁傷害+5%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29564.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29565": {
+        "id": 29565,
+        "name": {
+            "zh_tw": "吟遊詩人&舞孃精髓Ⅱ1Lv",
+            "kr": "궁수피규어"
+        },
+        "description": {
+            "official": "操控樂器、練習舞蹈技能等級每+1時，ATK+3。\\n樂器攻擊或纏箭投擲傷害+20%。\\n鎧甲每精煉+2時，遠距離武器物理傷害+1%。",
+            "official_clean": "操控樂器、練習舞蹈技能等級每+1時，ATK+3。\\n樂器攻擊或纏箭投擲傷害+20%。\\n鎧甲每精煉+2時，遠距離武器物理傷害+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29565.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29566": {
+        "id": 29566,
+        "name": {
+            "zh_tw": "騎士精髓Ⅱ 2Lv",
+            "kr": "검사피규어"
+        },
+        "description": {
+            "official": "長槍使用熟練度技能等級每+1時，HIT+2。\\n連刺攻擊傷害+20%。\\n騎乘攻擊傷害+40%。\\n鎧甲每精煉+1時，ATK+2。",
+            "official_clean": "長槍使用熟練度技能等級每+1時，HIT+2。\\n連刺攻擊傷害+20%。\\n騎乘攻擊傷害+40%。\\n鎧甲每精煉+1時，ATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29566.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29567": {
+        "id": 29567,
+        "name": {
+            "zh_tw": "鐵匠精髓Ⅱ 2Lv",
+            "kr": "상인피규어"
+        },
+        "description": {
+            "official": "強化火屬性技能等級每+1時，LUK+2。\\nDEX + 10。\\n鎧甲每精煉+2時，LUK+1。\\n當裝備職業為商人系列時，DEX、LUK+10。",
+            "official_clean": "強化火屬性技能等級每+1時，LUK+2。\\nDEX + 10。\\n鎧甲每精煉+2時，LUK+1。\\n當裝備職業為商人系列時，DEX、LUK+10。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29567.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29568": {
+        "id": 29568,
+        "name": {
+            "zh_tw": "刺客精髓Ⅱ 2Lv",
+            "kr": "도둑피규어"
+        },
+        "description": {
+            "official": "左手修練技能等級每+1時，FLEE+5。\\n毒性感染傷害+40%。\\n鎧甲每精煉+2時，變動詠唱-3%。",
+            "official_clean": "左手修練技能等級每+1時，FLEE+5。\\n毒性感染傷害+40%。\\n鎧甲每精煉+2時，變動詠唱-3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29568.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29569": {
+        "id": 29569,
+        "name": {
+            "zh_tw": "巫師精髓Ⅱ 2Lv",
+            "kr": "마술사피규어"
+        },
+        "description": {
+            "official": "怒雷強擊技能等級每+1時，變動詠唱-3%。\\n雷鳴術傷害+40%。\\n鎧甲每精煉+1時，MATK+2。",
+            "official_clean": "怒雷強擊技能等級每+1時，變動詠唱-3%。\\n雷鳴術傷害+40%。\\n鎧甲每精煉+1時，MATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29569.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29570": {
+        "id": 29570,
+        "name": {
+            "zh_tw": "祭司精髓Ⅱ 2Lv",
+            "kr": "복사피규어"
+        },
+        "description": {
+            "official": "鈍器使用熟練度技能等級每+1時，ATK+5。\\n爆擊傷害+15%。\\n鎧甲每精煉+1時，ATK+2。\\n當裝備職業為服事系列，\\n近距離普通攻擊時，以一定機率對敵人施放狂擊Lv10。",
+            "official_clean": "鈍器使用熟練度技能等級每+1時，ATK+5。\\n爆擊傷害+15%。\\n鎧甲每精煉+1時，ATK+2。\\n當裝備職業為服事系列，\\n近距離普通攻擊時，以一定機率對敵人施放狂擊Lv10。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29570.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29571": {
+        "id": 29571,
+        "name": {
+            "zh_tw": "獵人精髓Ⅱ 2Lv",
+            "kr": "궁수피규어"
+        },
+        "description": {
+            "official": "動物殺手技能等級每+1時，ATK+5。\\n二連矢傷害+40%。\\n鎧甲每精煉+2時，弓攻擊力+3%。",
+            "official_clean": "動物殺手技能等級每+1時，ATK+5。\\n二連矢傷害+40%。\\n鎧甲每精煉+2時，弓攻擊力+3%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29571.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29573": {
+        "id": 29573,
+        "name": {
+            "zh_tw": "十字軍精髓Ⅱ 2Lv",
+            "kr": "검사피규어"
+        },
+        "description": {
+            "official": "信任技能等級每+1時，MATK+5。\\n聖十字審判傷害+20%。\\n鎧甲每精煉+1時，MATK+2。\\n當裝備職業為劍士系列時，受到治癒量+15%。",
+            "official_clean": "信任技能等級每+1時，MATK+5。\\n聖十字審判傷害+20%。\\n鎧甲每精煉+1時，MATK+2。\\n當裝備職業為劍士系列時，受到治癒量+15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29573.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29574": {
+        "id": 29574,
+        "name": {
+            "zh_tw": "鍊金術師精髓Ⅱ 2Lv",
+            "kr": "상인피규어"
+        },
+        "description": {
+            "official": "配藥技能等級每+1時，ATK+5。\\n金錢攻擊傷害+100%。\\n鎧甲每精煉+1時，ATK+2。\\n當裝備職業為商人系列，\\n近距離普通攻擊時，以一定機率對敵人施放狂擊Lv10。",
+            "official_clean": "配藥技能等級每+1時，ATK+5。\\n金錢攻擊傷害+100%。\\n鎧甲每精煉+1時，ATK+2。\\n當裝備職業為商人系列，\\n近距離普通攻擊時，以一定機率對敵人施放狂擊Lv10。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29574.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29575": {
+        "id": 29575,
+        "name": {
+            "zh_tw": "流氓精髓Ⅱ 2Lv",
+            "kr": "도둑피규어"
+        },
+        "description": {
+            "official": "強奪技能等級每+1時，HIT+2。\\n背刺傷害+40%。\\n鎧甲每精煉+1時，ATK + 2。",
+            "official_clean": "強奪技能等級每+1時，HIT+2。\\n背刺傷害+40%。\\n鎧甲每精煉+1時，ATK + 2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29575.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29576": {
+        "id": 29576,
+        "name": {
+            "zh_tw": "賢者精髓Ⅱ 2Lv",
+            "kr": "마술사피규어"
+        },
+        "description": {
+            "official": "進化之書技能等級每+1時，MATK+5。\\n火箭術、冰箭術、雷擊術傷害+40%。\\n鎧甲每精煉+1時，MATK+2。",
+            "official_clean": "進化之書技能等級每+1時，MATK+5。\\n火箭術、冰箭術、雷擊術傷害+40%。\\n鎧甲每精煉+1時，MATK+2。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29576.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29577": {
+        "id": 29577,
+        "name": {
+            "zh_tw": "武僧精髓Ⅱ 2Lv",
+            "kr": "복사피규어"
+        },
+        "description": {
+            "official": "天使之擊技能等級每+1時，浸透勁變動詠唱-5%。\\n浸透勁傷害+20%。\\n對敵人施放浸透勁時，以一定機率對自己施放蓄氣Lv5。\\n鎧甲每精煉+2時，浸透勁傷害+5%。",
+            "official_clean": "天使之擊技能等級每+1時，浸透勁變動詠唱-5%。\\n浸透勁傷害+20%。\\n對敵人施放浸透勁時，以一定機率對自己施放蓄氣Lv5。\\n鎧甲每精煉+2時，浸透勁傷害+5%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29577.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "29578": {
+        "id": 29578,
+        "name": {
+            "zh_tw": "吟遊詩人&舞孃精髓Ⅱ 2Lv",
+            "kr": "궁수피규어"
+        },
+        "description": {
+            "official": "操控樂器、練習舞蹈技能等級每+1時，ATK+5。\\n樂器攻擊或纏箭投擲傷害增加40%。\\n鎧甲每精煉+2時，遠距離武器物理傷害+1%。",
+            "official_clean": "操控樂器、練習舞蹈技能等級每+1時，ATK+5。\\n樂器攻擊或纏箭投擲傷害增加40%。\\n鎧甲每精煉+2時，遠距離武器物理傷害+1%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/29578.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "31027": {
         "id": 31027,
         "name": {
@@ -85705,7 +90992,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85745,7 +91032,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85785,7 +91072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85825,7 +91112,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85865,7 +91152,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85905,7 +91192,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85945,7 +91232,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -85985,7 +91272,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86025,7 +91312,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86065,7 +91352,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86105,7 +91392,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86145,7 +91432,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86185,7 +91472,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86225,7 +91512,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86265,7 +91552,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86305,7 +91592,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86345,7 +91632,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86385,7 +91672,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86425,7 +91712,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86465,7 +91752,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86505,7 +91792,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "31148": {
+        "id": 31148,
+        "name": {
+            "zh_tw": "(服飾)德帛硫人偶帽",
+            "kr": "더블류인형모자"
+        },
+        "description": {
+            "official": "超高人氣!卡普拉德帛硫做成帽子的頭盔!被她喊了一聲「哥哥」後就昏厥的人太多的緣故, 據說刺客公會有意高薪挖角過去。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "超高人氣!卡普拉德帛硫做成帽子的頭盔!被她喊了一聲「哥哥」後就昏厥的人太多的緣故, 據說刺客公會有意高薪挖角過去。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 359,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31148.gif",
+        "icon_url": "/images/items/31148.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86545,7 +91872,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86585,7 +91912,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86625,7 +91952,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86665,7 +91992,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86705,7 +92032,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86745,7 +92072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86785,7 +92112,87 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "31203": {
+        "id": 31203,
+        "name": {
+            "zh_tw": "(服飾)炭火爐",
+            "kr": "Charcoal_Stove"
+        },
+        "description": {
+            "official": "以使用木炭為燃料的烹調用火爐為造型所設計的服飾裝備。 因為是裝飾用，所以無法用來做料理，但重現度高到幾乎以假亂真。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭中 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以使用木炭為燃料的烹調用火爐為造型所設計的服飾裝備。 因為是裝飾用，所以無法用來做料理，但重現度高到幾乎以假亂真。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1602,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31203.gif",
+        "icon_url": "/images/items/31203.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "31204": {
+        "id": 31204,
+        "name": {
+            "zh_tw": "(服飾)進化的懶洋洋的貓",
+            "kr": "늘어진하얀고양이"
+        },
+        "description": {
+            "official": "臉部表情會隨著心情而變化的神奇貓帽。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "臉部表情會隨著心情而變化的神奇貓帽。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 378,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31204.gif",
+        "icon_url": "/images/items/31204.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86825,7 +92232,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86865,7 +92272,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86905,7 +92312,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86945,7 +92352,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -86985,7 +92392,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87025,7 +92432,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87065,7 +92472,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87105,7 +92512,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87145,7 +92552,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87185,7 +92592,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87225,7 +92632,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87305,12 +92712,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "31315": {
+        "id": 31315,
+        "name": {
+            "zh_tw": "(服飾)天使波利圍巾",
+            "kr": "C_Stall_Of_Angel"
+        },
+        "description": {
+            "official": "有著巨大天使翅膀的服飾用圍巾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭下 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "有著巨大天使翅膀的服飾用圍巾。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1664,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31315.gif",
+        "icon_url": "/images/items/31315.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -87345,7 +92792,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87385,7 +92832,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87425,7 +92872,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87465,7 +92912,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87505,7 +92952,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87545,7 +92992,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87585,7 +93032,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87625,7 +93072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87665,7 +93112,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87705,7 +93152,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87745,7 +93192,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87785,7 +93232,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87825,7 +93272,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87865,7 +93312,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87905,7 +93352,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87945,7 +93392,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -87985,7 +93432,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88025,7 +93472,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88065,7 +93512,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "31457": {
+        "id": 31457,
+        "name": {
+            "zh_tw": "(服飾)哈士奇帽子",
+            "kr": "허스키모자"
+        },
+        "description": {
+            "official": "哈士奇帽子。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "哈士奇帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1016,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31457.gif",
+        "icon_url": "/images/items/31457.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88105,7 +93592,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88145,7 +93632,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88185,7 +93672,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88225,7 +93712,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88265,7 +93752,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88305,7 +93792,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88345,7 +93832,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88385,7 +93872,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88425,7 +93912,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88465,7 +93952,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88505,7 +93992,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88545,7 +94032,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88585,7 +94072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88625,7 +94112,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88665,7 +94152,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88705,7 +94192,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88745,7 +94232,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88785,7 +94272,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88825,7 +94312,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88865,7 +94352,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88905,7 +94392,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88945,7 +94432,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -88985,7 +94472,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89025,7 +94512,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89065,7 +94552,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89105,7 +94592,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89145,7 +94632,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89185,7 +94672,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89225,7 +94712,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89265,7 +94752,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89305,7 +94792,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89345,7 +94832,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89385,7 +94872,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89425,12 +94912,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "31794": {
+        "id": 31794,
+        "name": {
+            "zh_tw": "(服飾)溫暖狗耳朵",
+            "kr": "강아지귀모자"
+        },
+        "description": {
+            "official": "有著可愛小狗耳朵的帽子。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "有著可愛小狗耳朵的帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 827,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31794.gif",
+        "icon_url": "/images/items/31794.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -89465,7 +94992,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89505,7 +95032,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89545,7 +95072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89585,7 +95112,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89625,7 +95152,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89665,7 +95192,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89705,7 +95232,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89745,7 +95272,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89785,7 +95312,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89825,7 +95352,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89865,7 +95392,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89905,7 +95432,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89945,7 +95472,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -89985,7 +95512,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90025,7 +95552,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90065,7 +95592,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90105,7 +95632,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90145,7 +95672,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90185,7 +95712,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90225,7 +95752,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90265,7 +95792,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90305,7 +95832,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90345,7 +95872,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90385,7 +95912,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90425,7 +95952,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90465,7 +95992,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90505,7 +96032,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90545,7 +96072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -90921,7 +96448,7 @@ export const itemsData = {
             "kr": "노란색감기약"
         },
         "description": {
-            "official": "人工生命體喜歡的營養劑。\\n使用時，人工生命體的親密度會增加。\\n_\\n重量: 1",
+            "official": "人工生命體喜歡的營養劑。\\n使用時，人工生命體的親密度會增加。\\n_\\n重量 : 1",
             "official_clean": "人工生命體喜歡的營養劑。\\n使用時，人工生命體的親密度會增加。"
         },
         "category": "其他",
@@ -94634,6 +100161,486 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "105821": {
+        "id": 105821,
+        "name": {
+            "zh_tw": "柴語錄禮包",
+            "kr": "SS_Scroll_TW"
+        },
+        "description": {
+            "official": "廢柴所珍藏的柴寶。\\n\\n開啟並隨機獲得以下道具一種\\n2025紀念幣x1\\n2025紀念幣x2\\n2025紀念幣x3\\n(服飾)發懶滷哥氣球\\n(服飾)招財太子\\n(服飾)懶洋洋廢柴\\n\\n重量 : 0",
+            "official_clean": "廢柴所珍藏的柴寶。\\n開啟並隨機獲得以下道具一種\\n2025紀念幣x1\\n2025紀念幣x2\\n2025紀念幣x3\\n(服飾)發懶滷哥氣球\\n(服飾)招財太子\\n(服飾)懶洋洋廢柴"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105821.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105844": {
+        "id": 105844,
+        "name": {
+            "zh_tw": "喵喵禮包A",
+            "kr": "Re_Costama_Box_2023_1"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)貓耳髮圈\\n(服飾)睡貓帽\\n(服飾)白色小貓咪耳飾\\n\\n重量：0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)貓耳髮圈\\n(服飾)睡貓帽\\n(服飾)白色小貓咪耳飾"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105844.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105846": {
+        "id": 105846,
+        "name": {
+            "zh_tw": "喵喵禮包B",
+            "kr": "Re_Costama_Box_2023_4"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)灰色懶洋洋的貓\\n(服飾)貓咪稻草帽\\n(服飾)白貓帽T\\n\\n重量：0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)灰色懶洋洋的貓\\n(服飾)貓咪稻草帽\\n(服飾)白貓帽T"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105846.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105849": {
+        "id": 105849,
+        "name": {
+            "zh_tw": "汪汪禮包A",
+            "kr": "Zonda_Support_Package"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)小狗耳朵\\n(服飾)哈士奇帽子\\n(服飾)溫暖狗耳朵\\n\\n重量：0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)小狗耳朵\\n(服飾)哈士奇帽子\\n(服飾)溫暖狗耳朵"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105849.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105850": {
+        "id": 105850,
+        "name": {
+            "zh_tw": "天使波利禮包A",
+            "kr": "NewServer_Package"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)天使的階梯\\n(服飾)天使波利帽子\\n(服飾)天使波利圍巾\\n\\n重量：0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)天使的階梯\\n(服飾)天使波利帽子\\n(服飾)天使波利圍巾"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105850.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105903": {
+        "id": 105903,
+        "name": {
+            "zh_tw": "坐騎用韁繩箱子",
+            "kr": "응급처치상자"
+        },
+        "description": {
+            "official": "裝有坐騎用韁繩1個的箱子。\\n\\n可騎乘任何職業專屬坐騎的神奇韁繩。\\n坐騎種類會依照各職業系列類別區分，轉生或是轉職時會變更為符合該系列的坐騎。\\n重量：0",
+            "official_clean": "裝有坐騎用韁繩1個的箱子。\\n可騎乘任何職業專屬坐騎的神奇韁繩。\\n坐騎種類會依照各職業系列類別區分，轉生或是轉職時會變更為符合該系列的坐騎。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105903.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105904": {
+        "id": 105904,
+        "name": {
+            "zh_tw": "戰鬥繃帶[活動專用]",
+            "kr": "투명한천조각"
+        },
+        "description": {
+            "official": "1小時內All State+7，ATK+30，MATK+30，HIT+5，FLEE+5。\\n!!注意!!此效果無法與天地樹祝福同時存在，使用後將覆蓋天地樹祝福。\\n_\\n重量：0",
+            "official_clean": "1小時內All State+7，ATK+30，MATK+30，HIT+5，FLEE+5。\\n!!注意!!此效果無法與天地樹祝福同時存在，使用後將覆蓋天地樹祝福。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105904.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105909": {
+        "id": 105909,
+        "name": {
+            "zh_tw": "服飾附魔石(頭上)箱子A",
+            "kr": "초록상자"
+        },
+        "description": {
+            "official": "開啟後隨機獲得以下其中一樣道具 :\\n\\n恢復石(頭上)1個\\n恢復技能石(頭上)1個\\n大型石(頭上)1個\\n中型石(頭上)1個\\n小型石(頭上)1個\\nCri石(頭上)1個\\n變詠石(頭上)1個\\n暴擊石(頭上)1個\\n重量：0",
+            "official_clean": "開啟後隨機獲得以下其中一樣道具 :\\n恢復石(頭上)1個\\n恢復技能石(頭上)1個\\n大型石(頭上)1個\\n中型石(頭上)1個\\n小型石(頭上)1個\\nCri石(頭上)1個\\n變詠石(頭上)1個\\n暴擊石(頭上)1個"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105909.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105910": {
+        "id": 105910,
+        "name": {
+            "zh_tw": "服飾附魔石(頭中)箱子A",
+            "kr": "초록상자"
+        },
+        "description": {
+            "official": "開啟後隨機獲得以下其中一樣道具 :\\n\\n恢復石(頭中)1個\\nHP石(頭中)1個\\nSP石(頭中)1個\\n攻擊石(頭中)1個\\n魔攻石(頭中)1個\\n體力石(頭中)1個\\n防禦石(頭中)1個\\n暴擊石(頭中)1個\\n變詠石(頭中)1個\\n重量：0",
+            "official_clean": "開啟後隨機獲得以下其中一樣道具 :\\n恢復石(頭中)1個\\nHP石(頭中)1個\\nSP石(頭中)1個\\n攻擊石(頭中)1個\\n魔攻石(頭中)1個\\n體力石(頭中)1個\\n防禦石(頭中)1個\\n暴擊石(頭中)1個\\n變詠石(頭中)1個"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105910.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105911": {
+        "id": 105911,
+        "name": {
+            "zh_tw": "服飾附魔石(頭下)箱子A",
+            "kr": "초록상자"
+        },
+        "description": {
+            "official": "開啟後隨機獲得以下其中一樣道具 :\\n\\n恢復石(頭下)1個\\n命中石(頭下)1個\\n迴避石(頭下)1個\\nHP石(頭下)1個\\n魔力石(頭下)1個\\n魔法防禦石(頭下)1個\\n攻擊石(頭下)1個\\n魔攻石(頭下)1個\\n變詠石(頭下)1個\\n暴擊石(頭下)1個\\n\\n重量：0",
+            "official_clean": "開啟後隨機獲得以下其中一樣道具 :\\n恢復石(頭下)1個\\n命中石(頭下)1個\\n迴避石(頭下)1個\\nHP石(頭下)1個\\n魔力石(頭下)1個\\n魔法防禦石(頭下)1個\\n攻擊石(頭下)1個\\n魔攻石(頭下)1個\\n變詠石(頭下)1個\\n暴擊石(頭下)1個"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105911.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105912": {
+        "id": 105912,
+        "name": {
+            "zh_tw": "服飾附魔石(披肩)箱子A",
+            "kr": "초록상자"
+        },
+        "description": {
+            "official": "開啟後隨機獲得以下其中一樣道具 :\\n\\n二刀連擊石(披肩)1個\\n暴擊石(披肩)1個\\n重量 : 0",
+            "official_clean": "開啟後隨機獲得以下其中一樣道具 :\\n二刀連擊石(披肩)1個\\n暴擊石(披肩)1個"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105912.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "105913": {
+        "id": 105913,
+        "name": {
+            "zh_tw": "服飾附魔石合成箱B",
+            "kr": "초록상자"
+        },
+        "description": {
+            "official": "置入5件非歸屬服飾後可隨機獲得以下其中一樣道具 :\\n\\n服飾附魔石(頭上)箱子A1個\\n服飾附魔石(頭中)箱子A1個\\n服飾附魔石(頭下)箱子A1個\\n服飾附魔石(披肩)箱子 A1個\\n重量：0",
+            "official_clean": "置入5件非歸屬服飾後可隨機獲得以下其中一樣道具 :\\n服飾附魔石(頭上)箱子A1個\\n服飾附魔石(頭中)箱子A1個\\n服飾附魔石(頭下)箱子A1個\\n服飾附魔石(披肩)箱子 A1個"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/105913.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "200264": {
         "id": 200264,
         "name": {
@@ -96594,6 +102601,126 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "300547": {
+        "id": 300547,
+        "name": {
+            "zh_tw": "滷哥與港口之都卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\n\\n受到無屬性敵人的物理傷害-5%。\\n\\n披肩精煉+9以上時，\\nMHP+300，受到無屬性敵人的物理傷害再-10%。\\n\\n系列 : 卡片\\n裝備 : 披肩\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\n受到無屬性敵人的物理傷害-5%。\\n披肩精煉+9以上時，\\nMHP+300，受到無屬性敵人的物理傷害再-10%。"
+        },
+        "category": "卡片",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "滷哥的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "披肩",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300547.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "300550": {
+        "id": 300550,
+        "name": {
+            "zh_tw": "廢柴與沙漠之都卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\n\\n對全體型敵人的物理傷害+8%。\\n\\n搭配「廢柴寵物蛋Lv.1」時，攻擊速度增加(攻擊後延遲-5%)。\\n\\n搭配「廢柴寵物蛋Lv.2」時，攻擊速度增加(攻擊後延遲-10%)。\\n\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\n對全體型敵人的物理傷害+8%。\\n搭配「廢柴寵物蛋Lv.1」時，攻擊速度增加(攻擊後延遲-5%)。\\n搭配「廢柴寵物蛋Lv.2」時，攻擊速度增加(攻擊後延遲-10%)。"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "廢柴的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300550.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "300551": {
+        "id": 300551,
+        "name": {
+            "zh_tw": "阿吉與魔法之都卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\n\\n受到無屬性敵人的魔法傷害-5%。\\n\\n披肩精煉+9以上時，\\nMHP+300，受到無屬性敵人的魔法傷害再-10%。\\n\\n系列 : 卡片\\n裝備 : 披肩\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\n受到無屬性敵人的魔法傷害-5%。\\n披肩精煉+9以上時，\\nMHP+300，受到無屬性敵人的魔法傷害再-10%。"
+        },
+        "category": "卡片",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "阿吉的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "披肩",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300551.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "300618": {
         "id": 300618,
         "name": {
@@ -96631,6 +102758,206 @@ export const itemsData = {
             "weight": 1,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "300735": {
+        "id": 300735,
+        "name": {
+            "zh_tw": "廢柴寵物蛋2Lv",
+            "kr": "Fei_Chai_Egg"
+        },
+        "description": {
+            "official": "AGI+3，攻擊速度增加(攻擊後延遲-3%)。",
+            "official_clean": "AGI+3，攻擊速度增加(攻擊後延遲-3%)。"
+        },
+        "category": "附魔",
+        "slot": "寵物",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300735.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "300737": {
+        "id": 300737,
+        "name": {
+            "zh_tw": "柴語錄×山岳之都卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\n對全體型敵人的物理傷害+8%。\\n搭配「太子寵物蛋Lv.1」時，暴擊傷害+9%。\\n搭配「太子寵物蛋Lv.2」時，暴擊傷害+18%。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\n對全體型敵人的物理傷害+8%。\\n搭配「太子寵物蛋Lv.1」時，暴擊傷害+9%。\\n搭配「太子寵物蛋Lv.2」時，暴擊傷害+18%。"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "太子的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300737.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "300740": {
+        "id": 300740,
+        "name": {
+            "zh_tw": "柴語錄×運河之都卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\n搭配「廢柴寵物蛋Lv.1」或「太子寵物蛋Lv.1」時，\\n物理(近/遠距離)攻擊時，以較低機率觸發ATK+60、每秒HP-50，持續3秒。\\n搭配「廢柴寵物蛋Lv.2」或「太子寵物蛋Lv.2」時，\\n物理(近/遠距離)攻擊時，以較高機率觸發ATK+60、每秒HP-50，持續3秒。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\n搭配「廢柴寵物蛋Lv.1」或「太子寵物蛋Lv.1」時，\\n物理(近/遠距離)攻擊時，以較低機率觸發ATK+60、每秒HP-50，持續3秒。\\n搭配「廢柴寵物蛋Lv.2」或「太子寵物蛋Lv.2」時，\\n物理(近/遠距離)攻擊時，以較高機率觸發ATK+60、每秒HP-50，持續3秒。"
+        },
+        "category": "卡片",
+        "slot": "頭具",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "運河之都的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "頭具",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300740.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "300741": {
+        "id": 300741,
+        "name": {
+            "zh_tw": "柴語錄×海邊之都卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\n搭配「廢柴寵物蛋Lv.1」或「太子寵物蛋Lv.1」時，\\n施展閃電衝擊時，以較低機率觸發LUK+60，持續3秒。\\n搭配「廢柴寵物蛋Lv.2」或「太子寵物蛋Lv.2」時，\\n施展閃電衝擊時，以較高機率觸發LUK+60，持續3秒。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\n搭配「廢柴寵物蛋Lv.1」或「太子寵物蛋Lv.1」時，\\n施展閃電衝擊時，以較低機率觸發LUK+60，持續3秒。\\n搭配「廢柴寵物蛋Lv.2」或「太子寵物蛋Lv.2」時，\\n施展閃電衝擊時，以較高機率觸發LUK+60，持續3秒。"
+        },
+        "category": "卡片",
+        "slot": "頭具",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "海邊之都的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "頭具",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300741.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "300742": {
+        "id": 300742,
+        "name": {
+            "zh_tw": "柴語錄×克雷斯特漢姆古城卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "[RO 樂園 × Shiba Says]\\nHP-300、SP-100。\\n搭配「廢柴寵物蛋Lv.1」或「太子寵物蛋Lv.1」時，\\n物理/魔法攻擊時，以較低機率觸發ATK+40、MATK+40，持續3秒。\\n搭配「廢柴寵物蛋Lv.2」或「太子寵物蛋Lv.2」時，\\n物理/魔法攻擊時，以較高機率觸發ATK+40、MATK+40，持續3秒。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
+            "official_clean": "[RO 樂園 × Shiba Says]\\nHP-300、SP-100。\\n搭配「廢柴寵物蛋Lv.1」或「太子寵物蛋Lv.1」時，\\n物理/魔法攻擊時，以較低機率觸發ATK+40、MATK+40，持續3秒。\\n搭配「廢柴寵物蛋Lv.2」或「太子寵物蛋Lv.2」時，\\n物理/魔法攻擊時，以較高機率觸發ATK+40、MATK+40，持續3秒。"
+        },
+        "category": "卡片",
+        "slot": "頭具",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "克雷斯特漢姆古城",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "頭具",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/300742.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 1,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -96711,6 +103038,126 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "313067": {
+        "id": 313067,
+        "name": {
+            "zh_tw": "紫星星腳印",
+            "kr": "발자국이펙트"
+        },
+        "description": {
+            "official": "紫星星腳印\\n\\n重量 : 0",
+            "official_clean": "紫星星腳印"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/313067.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "313068": {
+        "id": 313068,
+        "name": {
+            "zh_tw": "金星星腳印",
+            "kr": "발자국이펙트"
+        },
+        "description": {
+            "official": "金星星腳印\\n重量 : 0",
+            "official_clean": "金星星腳印"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/313068.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "313069": {
+        "id": 313069,
+        "name": {
+            "zh_tw": "紅星星腳印",
+            "kr": "발자국이펙트"
+        },
+        "description": {
+            "official": "紅星星腳印\\n重量 : 0",
+            "official_clean": "紅星星腳印"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/313069.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -99034,6 +105481,126 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "314783": {
+        "id": 314783,
+        "name": {
+            "zh_tw": "太子寵物蛋1Lv",
+            "kr": "Tai_zi_Egg"
+        },
+        "description": {
+            "official": "LUK+1、暴擊傷害+1%。",
+            "official_clean": "LUK+1、暴擊傷害+1%。"
+        },
+        "category": "附魔",
+        "slot": "寵物",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/314783.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "314784": {
+        "id": 314784,
+        "name": {
+            "zh_tw": "廢柴寵物蛋1Lv",
+            "kr": "Fei_Chai_Egg"
+        },
+        "description": {
+            "official": "AGI+1、攻擊速度增加(攻擊後延遲-1%)。\\n",
+            "official_clean": "AGI+1、攻擊速度增加(攻擊後延遲-1%)。"
+        },
+        "category": "附魔",
+        "slot": "寵物",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/314784.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "314785": {
+        "id": 314785,
+        "name": {
+            "zh_tw": "太子寵物蛋2Lv",
+            "kr": "Tai_zi_Egg"
+        },
+        "description": {
+            "official": "LUK+3、暴擊傷害+3%。",
+            "official_clean": "LUK+3、暴擊傷害+3%。"
+        },
+        "category": "附魔",
+        "slot": "寵物",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/314785.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "400020": {
         "id": 400020,
         "name": {
@@ -99065,12 +105632,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "400115": {
+        "id": 400115,
+        "name": {
+            "zh_tw": "(服飾)天使波利造型帽",
+            "kr": "Rag_Origin_Hat"
+        },
+        "description": {
+            "official": "天使波利充滿自信的表情十分可愛。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "天使波利充滿自信的表情十分可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2019,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/400115.gif",
+        "icon_url": "/images/items/400115.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -99105,7 +105712,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99145,7 +105752,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99185,7 +105792,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99225,7 +105832,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99265,7 +105872,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99305,7 +105912,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99345,7 +105952,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99385,12 +105992,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "400480": {
+        "id": 400480,
+        "name": {
+            "zh_tw": "(服飾)貓咪稻草帽",
+            "kr": "C_Cat_Straw_Hat"
+        },
+        "description": {
+            "official": "一頂以可愛的貓咪為靈感設計的稻草帽，不知道是不是錯覺，有時候會聽到喵喵聲……？\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "一頂以可愛的貓咪為靈感設計的稻草帽，不知道是不是錯覺，有時候會聽到喵喵聲……？"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2413,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/400480.gif",
+        "icon_url": "/images/items/400480.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -99425,7 +106072,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99465,12 +106112,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "400664": {
+        "id": 400664,
+        "name": {
+            "zh_tw": "(服飾)懶洋洋廢柴",
+            "kr": "C_CLB_SS_DF"
+        },
+        "description": {
+            "official": "很像廢柴的帽子。\\n據說因為膽小，連小事都有誇大的傾向。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "很像廢柴的帽子。\\n據說因為膽小，連小事都有誇大的傾向。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2531,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/400664.gif",
+        "icon_url": "/images/items/400664.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -99505,12 +106192,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "400709": {
+        "id": 400709,
+        "name": {
+            "zh_tw": "(服飾)小狗帽(白)",
+            "kr": "C_Puppy_Hat_WH"
+        },
+        "description": {
+            "official": "白色小狗舒適地坐著。\\n鬆軟軟好可愛。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "白色小狗舒適地坐著。\\n鬆軟軟好可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2574,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/400709.gif",
+        "icon_url": "/images/items/400709.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -99545,7 +106272,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99585,7 +106312,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99625,7 +106352,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99665,7 +106392,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -99705,7 +106432,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -103093,7 +109820,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -103133,7 +109860,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -103173,7 +109900,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -103219,6 +109946,46 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "400921": {
+        "id": 400921,
+        "name": {
+            "zh_tw": "(服飾)棕色小狗耳朵",
+            "kr": "C_Ear_Of_Puppy_OM"
+        },
+        "description": {
+            "official": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2703,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/400921.gif",
+        "icon_url": "/images/items/400921.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -106814,6 +113581,806 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "401092": {
+        "id": 401092,
+        "name": {
+            "zh_tw": "(服飾)懶洋洋廢柴(歸屬)",
+            "kr": "C_CLB_SS_DF"
+        },
+        "description": {
+            "official": "很像廢柴的帽子。\\n據說因為膽小，連小事都有誇大的傾向。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "很像廢柴的帽子。\\n據說因為膽小，連小事都有誇大的傾向。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2531,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401092.gif",
+        "icon_url": "/images/items/401092.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401093": {
+        "id": 401093,
+        "name": {
+            "zh_tw": "(服飾)貓耳髮圈(歸屬)",
+            "kr": "고양이머리띠"
+        },
+        "description": {
+            "official": "以貓耳為外型而製作的可愛小髮圈。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以貓耳為外型而製作的可愛小髮圈。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401093.gif",
+        "icon_url": "/images/items/401093.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401094": {
+        "id": 401094,
+        "name": {
+            "zh_tw": "(服飾)睡貓帽(歸屬)",
+            "kr": "잠자는고양이모자"
+        },
+        "description": {
+            "official": "以沉睡的貓咪為樣本而製作的帽子，小心別吵醒牠。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以沉睡的貓咪為樣本而製作的帽子，小心別吵醒牠。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 838,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401094.gif",
+        "icon_url": "/images/items/401094.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401095": {
+        "id": 401095,
+        "name": {
+            "zh_tw": "(服飾)白色小貓咪耳飾(歸屬)",
+            "kr": "하얀새끼고양이귀"
+        },
+        "description": {
+            "official": "白色小貓咪耳朵髮飾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "白色小貓咪耳朵髮飾。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 926,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401095.gif",
+        "icon_url": "/images/items/401095.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401096": {
+        "id": 401096,
+        "name": {
+            "zh_tw": "(服飾)灰色懶洋洋的貓(歸屬)",
+            "kr": "회색늘어진고양이"
+        },
+        "description": {
+            "official": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 275,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401096.gif",
+        "icon_url": "/images/items/401096.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401097": {
+        "id": 401097,
+        "name": {
+            "zh_tw": "(服飾)貓咪稻草帽(歸屬)",
+            "kr": "C_Cat_Straw_Hat"
+        },
+        "description": {
+            "official": "一頂以可愛的貓咪為靈感設計的稻草帽，不知道是不是錯覺，有時候會聽到喵喵聲……？\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "一頂以可愛的貓咪為靈感設計的稻草帽，不知道是不是錯覺，有時候會聽到喵喵聲……？"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2413,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401097.gif",
+        "icon_url": "/images/items/401097.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401098": {
+        "id": 401098,
+        "name": {
+            "zh_tw": "(服飾)小狗耳朵(歸屬)",
+            "kr": "강아지귀"
+        },
+        "description": {
+            "official": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 199,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401098.gif",
+        "icon_url": "/images/items/401098.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401099": {
+        "id": 401099,
+        "name": {
+            "zh_tw": "(服飾)哈士奇帽子(歸屬)",
+            "kr": "허스키모자"
+        },
+        "description": {
+            "official": "哈士奇帽子。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "哈士奇帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1016,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401099.gif",
+        "icon_url": "/images/items/401099.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401100": {
+        "id": 401100,
+        "name": {
+            "zh_tw": "(服飾)溫暖狗耳朵(歸屬)",
+            "kr": "강아지귀모자"
+        },
+        "description": {
+            "official": "有著可愛小狗耳朵的帽子。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "有著可愛小狗耳朵的帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 827,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401100.gif",
+        "icon_url": "/images/items/401100.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401101": {
+        "id": 401101,
+        "name": {
+            "zh_tw": "(服飾)天使的階梯(歸屬)",
+            "kr": "엔젤스테어즈"
+        },
+        "description": {
+            "official": "陽光從雲間傾瀉而下、如夢幻般美麗的天氣景象被稱為「天使的階梯」。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "陽光從雲間傾瀉而下、如夢幻般美麗的天氣景象被稱為「天使的階梯」。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401101.gif",
+        "icon_url": "/images/items/401101.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401102": {
+        "id": 401102,
+        "name": {
+            "zh_tw": "(服飾)天使波利帽子(歸屬)",
+            "kr": "엔젤링모자"
+        },
+        "description": {
+            "official": "以波利之母天使波利為造型所製作的帽子，讓人湧起必須從人類手中保護種族的使命感。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以波利之母天使波利為造型所製作的帽子，讓人湧起必須從人類手中保護種族的使命感。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 204,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401102.gif",
+        "icon_url": "/images/items/401102.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401103": {
+        "id": 401103,
+        "name": {
+            "zh_tw": "(服飾)進化的懶洋洋的貓(歸屬)",
+            "kr": "늘어진하얀고양이"
+        },
+        "description": {
+            "official": "臉部表情會隨著心情而變化的神奇貓帽。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "臉部表情會隨著心情而變化的神奇貓帽。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 378,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401103.gif",
+        "icon_url": "/images/items/401103.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401104": {
+        "id": 401104,
+        "name": {
+            "zh_tw": "(服飾)懶洋洋的貓(歸屬)",
+            "kr": "늘어진고양이"
+        },
+        "description": {
+            "official": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "可以放在頭上攜帶的娃娃。如果覺得好像聽到貓的叫聲，或是感覺有東西在動，都是心理作用。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 142,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401104.gif",
+        "icon_url": "/images/items/401104.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401105": {
+        "id": 401105,
+        "name": {
+            "zh_tw": "(服飾)布朗貓耳頭飾(歸屬)",
+            "kr": "갈색고양이귀"
+        },
+        "description": {
+            "official": "貓耳造型的可愛頭飾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "貓耳造型的可愛頭飾。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1295,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401105.gif",
+        "icon_url": "/images/items/401105.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401106": {
+        "id": 401106,
+        "name": {
+            "zh_tw": "(服飾)小狗帽(白)(歸屬)",
+            "kr": "C_Puppy_Hat_WH"
+        },
+        "description": {
+            "official": "白色小狗舒適地坐著。\\n鬆軟軟好可愛。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "白色小狗舒適地坐著。\\n鬆軟軟好可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2574,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401106.gif",
+        "icon_url": "/images/items/401106.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401107": {
+        "id": 401107,
+        "name": {
+            "zh_tw": "(服飾)棕色小狗耳朵(歸屬)",
+            "kr": "C_Ear_Of_Puppy_OM"
+        },
+        "description": {
+            "official": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "仿製可愛小狗耳朵的帽子，給人可愛純真的感覺。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2703,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401107.gif",
+        "icon_url": "/images/items/401107.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401108": {
+        "id": 401108,
+        "name": {
+            "zh_tw": "(服飾)天使波利造型帽(歸屬)",
+            "kr": "Rag_Origin_Hat"
+        },
+        "description": {
+            "official": "天使波利充滿自信的表情十分可愛。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "天使波利充滿自信的表情十分可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2019,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401108.gif",
+        "icon_url": "/images/items/401108.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401109": {
+        "id": 401109,
+        "name": {
+            "zh_tw": "(服飾)天使光圈(歸屬)",
+            "kr": "천사의인도"
+        },
+        "description": {
+            "official": "依天使頭上閃亮的光圈外型而製作的服飾光圈，戴上後會得到天使的祝福。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "依天使頭上閃亮的光圈外型而製作的服飾光圈，戴上後會得到天使的祝福。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1188,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401109.gif",
+        "icon_url": "/images/items/401109.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401110": {
+        "id": 401110,
+        "name": {
+            "zh_tw": "(服飾)天使面紗(歸屬)",
+            "kr": "C천사의베일"
+        },
+        "description": {
+            "official": "由許多羽毛編織而成的服飾面紗。\\n彷彿被天使環繞般的感覺，蓬鬆豐盈的翅膀極具魅力。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "由許多羽毛編織而成的服飾面紗。\\n彷彿被天使環繞般的感覺，蓬鬆豐盈的翅膀極具魅力。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1379,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401110.gif",
+        "icon_url": "/images/items/401110.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "401111": {
+        "id": 401111,
+        "name": {
+            "zh_tw": "(服飾)德帛硫人偶帽(歸屬)",
+            "kr": "더블류인형모자"
+        },
+        "description": {
+            "official": "超高人氣!卡普拉德帛硫做成帽子的頭盔!被她喊了一聲「哥哥」後就昏厥的人太多的緣故, 據說刺客公會有意高薪挖角過去。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "超高人氣!卡普拉德帛硫做成帽子的頭盔!被她喊了一聲「哥哥」後就昏厥的人太多的緣故, 據說刺客公會有意高薪挖角過去。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 359,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401111.gif",
+        "icon_url": "/images/items/401111.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "410047": {
         "id": 410047,
         "name": {
@@ -106845,7 +114412,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -106885,7 +114452,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -106925,7 +114492,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -106965,7 +114532,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107005,7 +114572,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107045,7 +114612,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107085,7 +114652,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107125,7 +114692,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107165,7 +114732,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107205,7 +114772,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107245,7 +114812,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107285,7 +114852,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107325,7 +114892,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107365,7 +114932,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107405,7 +114972,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107445,7 +115012,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107485,7 +115052,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107525,7 +115092,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107565,7 +115132,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107605,7 +115172,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107645,7 +115212,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107685,7 +115252,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107725,7 +115292,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107765,12 +115332,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "410326": {
+        "id": 410326,
+        "name": {
+            "zh_tw": "(服飾)雀躍阿吉",
+            "kr": "C_CLB_SS_EA"
+        },
+        "description": {
+            "official": "長得跟隨時都想出去散步的阿吉一模一樣的娃娃\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭中 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "長得跟隨時都想出去散步的阿吉一模一樣的娃娃"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2532,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/410326.gif",
+        "icon_url": "/images/items/410326.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -107805,7 +115412,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107845,7 +115452,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -107885,7 +115492,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -109127,7 +116734,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -110428,7 +118035,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -110508,7 +118115,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111397,6 +119004,126 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "410546": {
+        "id": 410546,
+        "name": {
+            "zh_tw": "(服飾)雀躍阿吉(歸屬)",
+            "kr": "C_CLB_SS_EA"
+        },
+        "description": {
+            "official": "長得跟隨時都想出去散步的阿吉一模一樣的娃娃\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭中 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "長得跟隨時都想出去散步的阿吉一模一樣的娃娃"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2532,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/410546.gif",
+        "icon_url": "/images/items/410546.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "410547": {
+        "id": 410547,
+        "name": {
+            "zh_tw": "(服飾)天使的祝福(歸屬)",
+            "kr": "천사들의축복"
+        },
+        "description": {
+            "official": "被天使的祝福所圍繞的閃耀光茫。\\n從天上灑下來的光線讓人充滿幸福、光明和溫暖的感受。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭中 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "被天使的祝福所圍繞的閃耀光茫。\\n從天上灑下來的光線讓人充滿幸福、光明和溫暖的感受。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1425,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/410547.gif",
+        "icon_url": "/images/items/410547.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "410548": {
+        "id": 410548,
+        "name": {
+            "zh_tw": "(服飾)炭火爐(歸屬)",
+            "kr": "Charcoal_Stove"
+        },
+        "description": {
+            "official": "以使用木炭為燃料的烹調用火爐為造型所設計的服飾裝備。 因為是裝飾用，所以無法用來做料理，但重現度高到幾乎以假亂真。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭中 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以使用木炭為燃料的烹調用火爐為造型所設計的服飾裝備。 因為是裝飾用，所以無法用來做料理，但重現度高到幾乎以假亂真。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1602,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/410548.gif",
+        "icon_url": "/images/items/410548.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "420010": {
         "id": 420010,
         "name": {
@@ -111428,7 +119155,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111468,7 +119195,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111508,7 +119235,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111548,7 +119275,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111588,7 +119315,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111628,7 +119355,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111668,7 +119395,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111708,7 +119435,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111748,7 +119475,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111788,7 +119515,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111828,7 +119555,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111868,7 +119595,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111908,7 +119635,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111948,7 +119675,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -111988,7 +119715,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112028,7 +119755,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112068,7 +119795,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112108,7 +119835,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112148,7 +119875,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112188,7 +119915,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112228,7 +119955,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112268,7 +119995,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112308,7 +120035,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112348,7 +120075,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112388,7 +120115,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112428,7 +120155,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112468,7 +120195,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112548,7 +120275,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112588,7 +120315,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112628,7 +120355,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112668,7 +120395,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "420338": {
+        "id": 420338,
+        "name": {
+            "zh_tw": "(服飾)發懶滷哥氣球",
+            "kr": "C_CLB_SS_LL"
+        },
+        "description": {
+            "official": "飄著酷似滷哥的胖嘟嘟貓咪氣球。\\n拿著的話感覺很快就會肚子餓。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "飄著酷似滷哥的胖嘟嘟貓咪氣球。\\n拿著的話感覺很快就會肚子餓。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420338.gif",
+        "icon_url": "/images/items/420338.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112708,7 +120475,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112748,7 +120515,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112788,7 +120555,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112828,7 +120595,47 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "420352": {
+        "id": 420352,
+        "name": {
+            "zh_tw": "(服飾)波利泳池",
+            "kr": "C_Pool"
+        },
+        "description": {
+            "official": "一坐下就會突然出現的服飾用泳池。\\n省去了組裝的麻煩。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭下 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "一坐下就會突然出現的服飾用泳池。\\n省去了組裝的麻煩。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2566,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420352.gif",
+        "icon_url": "/images/items/420352.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112868,7 +120675,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112908,7 +120715,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112948,7 +120755,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -112988,7 +120795,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -113028,7 +120835,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115091,7 +122898,7 @@ export const itemsData = {
         "can_cart": false,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115131,7 +122938,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115171,7 +122978,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115211,7 +123018,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115291,7 +123098,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115331,7 +123138,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -115371,7 +123178,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -118627,6 +126434,126 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "420688": {
+        "id": 420688,
+        "name": {
+            "zh_tw": "(服飾)發懶滷哥氣球(歸屬)",
+            "kr": "C_CLB_SS_LL"
+        },
+        "description": {
+            "official": "飄著酷似滷哥的胖嘟嘟貓咪氣球。\\n拿著的話感覺很快就會肚子餓。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "飄著酷似滷哥的胖嘟嘟貓咪氣球。\\n拿著的話感覺很快就會肚子餓。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420688.gif",
+        "icon_url": "/images/items/420688.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "420689": {
+        "id": 420689,
+        "name": {
+            "zh_tw": "(服飾)天使波利圍巾(歸屬)",
+            "kr": "C_Stall_Of_Angel"
+        },
+        "description": {
+            "official": "有著巨大天使翅膀的服飾用圍巾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭下 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "有著巨大天使翅膀的服飾用圍巾。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1664,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420689.gif",
+        "icon_url": "/images/items/420689.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "420692": {
+        "id": 420692,
+        "name": {
+            "zh_tw": "(服飾)波利泳池(歸屬)",
+            "kr": "C_Pool"
+        },
+        "description": {
+            "official": "一坐下就會突然出現的服飾用泳池。\\n省去了組裝的麻煩。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列：服飾裝備 防禦：0\\n位置：頭下 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "一坐下就會突然出現的服飾用泳池。\\n省去了組裝的麻煩。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 2566,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420692.gif",
+        "icon_url": "/images/items/420692.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "430011": {
         "id": 430011,
         "name": {
@@ -119008,6 +126935,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "430021": {
+        "id": 430021,
+        "name": {
+            "zh_tw": "(服飾)白貓帽T(歸屬)",
+            "kr": "흰고양이후드"
+        },
+        "description": {
+            "official": "有著蓬鬆鬆軟綿綿觸感的可愛貓耳造型帽子。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：頭上/中 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "有著蓬鬆鬆軟綿綿觸感的可愛貓耳造型帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上/中",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 1052,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/430021.gif",
+        "icon_url": "/images/items/430021.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "435001": {
         "id": 435001,
         "name": {
@@ -119079,7 +127046,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -119645,7 +127612,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122084,7 +130051,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122124,12 +130091,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "480168": {
+        "id": 480168,
+        "name": {
+            "zh_tw": "(服飾)旋律鋼琴之翼",
+            "kr": "C_Melody_Wing"
+        },
+        "description": {
+            "official": "帶有鋼琴鍵的服裝翅膀，\\n鍵盤中散播著美妙音色。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "帶有鋼琴鍵的服裝翅膀，\\n鍵盤中散播著美妙音色。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 126,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480168.gif",
+        "icon_url": "/images/items/480168.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -122164,7 +130171,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122204,7 +130211,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122244,7 +130251,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122284,7 +130291,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122324,7 +130331,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122364,7 +130371,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122404,7 +130411,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122444,7 +130451,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122484,7 +130491,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122553,7 +130560,7 @@ export const itemsData = {
             "kr": "옛영주의망토"
         },
         "description": {
-            "official": "以前某個城鎮的知名領主所穿過的斗篷，想要展現魄力的話，裝備上去比較好。\\nAGI + 1\\n系列 : 披肩  防禦 : 9\\n重量 : 60\\n需求等級 : 40\\n裝備 : 初學者以外的所有職業",
+            "official": "以前某個城鎮的知名領主所穿過的斗篷，想要展現魄力的話，裝備上去比較好。\\nAGI + 1\\n系列 : 披肩  防禦 : 9\\n重量 : 60\\n需求等級 : 40\\n裝備 : 初學者以外的全職業",
             "official_clean": "以前某個城鎮的知名領主所穿過的斗篷，想要展現魄力的話，裝備上去比較好。\\nAGI + 1"
         },
         "category": "防具",
@@ -122567,7 +130574,7 @@ export const itemsData = {
         "defense": 9,
         "weapon_level": 0,
         "required_level": 40,
-        "equip_jobs": "初學者以外的所有職業",
+        "equip_jobs": "初學者以外的全職業",
         "wearing_image_url": "",
         "icon_url": "/images/items/480379.gif",
         "script": "",
@@ -122896,6 +130903,86 @@ export const itemsData = {
             }
         ]
     },
+    "480429": {
+        "id": 480429,
+        "name": {
+            "zh_tw": "(服飾)貓咪甜甜圈",
+            "kr": "C_Cat_Donut_TW"
+        },
+        "description": {
+            "official": "在圓圓的甜甜圈上加上貓耳造型而製成的可愛模型。\\n連貓咪的臉和尾巴的花紋都精美地重現了。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：披肩 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "在圓圓的甜甜圈上加上貓耳造型而製成的可愛模型。\\n連貓咪的臉和尾巴的花紋都精美地重現了。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 212,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480429.gif",
+        "icon_url": "/images/items/480429.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "480445": {
+        "id": 480445,
+        "name": {
+            "zh_tw": "(服飾)招財太子",
+            "kr": "C_CLB_SS_LT"
+        },
+        "description": {
+            "official": "酷似太子的背包。\\n揹著時感覺好運會找上門。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "酷似太子的背包。\\n揹著時感覺好運會找上門。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 221,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480445.gif",
+        "icon_url": "/images/items/480445.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "480450": {
         "id": 480450,
         "name": {
@@ -122927,7 +131014,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -122967,7 +131054,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -123007,7 +131094,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -123047,12 +131134,52 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "480486": {
+        "id": 480486,
+        "name": {
+            "zh_tw": "(服飾)柴犬之尾",
+            "kr": "C_Shiba_Tail"
+        },
+        "description": {
+            "official": "以在空中捲起的柴犬尾巴為靈感製作的服飾。\\n輕輕搖晃的樣子非常可愛。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：披肩 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以在空中捲起的柴犬尾巴為靈感製作的服飾。\\n輕輕搖晃的樣子非常可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 239,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480486.gif",
+        "icon_url": "/images/items/480486.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -123087,7 +131214,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -123628,7 +131755,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -123788,7 +131915,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -123828,7 +131955,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -124388,7 +132515,7 @@ export const itemsData = {
         "can_cart": true,
         "can_sell_to_npc": false,
         "can_mail": true,
-        "can_auction": false,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -124956,6 +133083,166 @@ export const itemsData = {
         "can_sell_to_npc": false,
         "can_mail": true,
         "can_auction": false,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "480684": {
+        "id": 480684,
+        "name": {
+            "zh_tw": "(服飾)旋律鋼琴之翼(歸屬)",
+            "kr": "C_Melody_Wing"
+        },
+        "description": {
+            "official": "帶有鋼琴鍵的服裝翅膀，\\n鍵盤中散播著美妙音色。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "帶有鋼琴鍵的服裝翅膀，\\n鍵盤中散播著美妙音色。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 126,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480684.gif",
+        "icon_url": "/images/items/480684.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "480685": {
+        "id": 480685,
+        "name": {
+            "zh_tw": "(服飾)招財太子(歸屬)",
+            "kr": "C_CLB_SS_LT"
+        },
+        "description": {
+            "official": "酷似太子的背包。\\n揹著時感覺好運會找上門。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "酷似太子的背包。\\n揹著時感覺好運會找上門。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 221,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480685.gif",
+        "icon_url": "/images/items/480685.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "480688": {
+        "id": 480688,
+        "name": {
+            "zh_tw": "(服飾)貓咪甜甜圈(歸屬)",
+            "kr": "C_Cat_Donut_TW"
+        },
+        "description": {
+            "official": "在圓圓的甜甜圈上加上貓耳造型而製成的可愛模型。\\n連貓咪的臉和尾巴的花紋都精美地重現了。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：披肩 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "在圓圓的甜甜圈上加上貓耳造型而製成的可愛模型。\\n連貓咪的臉和尾巴的花紋都精美地重現了。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 212,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480688.gif",
+        "icon_url": "/images/items/480688.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "480689": {
+        "id": 480689,
+        "name": {
+            "zh_tw": "(服飾)柴犬之尾(歸屬)",
+            "kr": "C_Shiba_Tail"
+        },
+        "description": {
+            "official": "以在空中捲起的柴犬尾巴為靈感製作的服飾。\\n輕輕搖晃的樣子非常可愛。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列：服飾裝備 防禦：0\\n位置：披肩 重量：0\\n要求等級：1\\n裝備：全職業",
+            "official_clean": "以在空中捲起的柴犬尾巴為靈感製作的服飾。\\n輕輕搖晃的樣子非常可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 239,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480689.gif",
+        "icon_url": "/images/items/480689.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
@@ -126946,6 +135233,139 @@ export const itemsData = {
             }
         ]
     },
+    "530078": {
+        "id": 530078,
+        "name": {
+            "zh_tw": "破刃長戟",
+            "kr": "Blut_Spear"
+        },
+        "description": {
+            "official": "比一般矛長度稍短的單手矛。\\n系列 : 單手矛 攻擊 : 100\\n重量 : 85\\n武器等級 : 2\\n要求等級 : 18\\n裝備 : 劍士系列",
+            "official_clean": "比一般矛長度稍短的單手矛。"
+        },
+        "category": "武器",
+        "slot": "單手矛",
+        "slotCount": 2,
+        "enchantment_slots": 0,
+        "ClassNum": 4,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 100,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 18,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/530078.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 85,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "530079": {
+        "id": 530079,
+        "name": {
+            "zh_tw": "破刃長戟",
+            "kr": "Blut_Spear"
+        },
+        "description": {
+            "official": "比一般矛長度稍短的單手矛。\\n系列 : 單手矛 攻擊 : 100\\n重量 : 85\\n武器等級 : 2\\n要求等級 : 18\\n裝備 : 劍士系列",
+            "official_clean": "比一般矛長度稍短的單手矛。"
+        },
+        "category": "武器",
+        "slot": "單手矛",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 4,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 100,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 18,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/530079.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 85,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1023,
+                "monster_name": "獸人戰士",
+                "rate": "???",
+                "image_url": "images/monsters/1023.gif"
+            },
+            {
+                "monster_id": 1154,
+                "monster_name": "帕莎納",
+                "rate": "???",
+                "image_url": "images/monsters/1154.gif"
+            }
+        ]
+    },
+    "530080": {
+        "id": 530080,
+        "name": {
+            "zh_tw": "★破刃長戟",
+            "kr": "Z_Short_Spear_RF"
+        },
+        "description": {
+            "official": "ATK+30, CRI-40\\n精煉+3時，變動詠唱-2%、MATK+20\\n精煉+7時，變動詠唱再-4%、MATK再+40\\n精煉+9時，變動詠唱再-9%、MATK再+90\\n\\n系列 : 單手矛 攻擊 : 150\\n重量 : 85\\n武器等級 : 2\\n要求等級 : 18\\n裝備 : 十字軍系列",
+            "official_clean": "ATK+30, CRI-40\\n精煉+3時，變動詠唱-2%、MATK+20\\n精煉+7時，變動詠唱再-4%、MATK再+40\\n精煉+9時，變動詠唱再-9%、MATK再+90"
+        },
+        "category": "武器",
+        "slot": "單手矛",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 4,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 150,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 18,
+        "equip_jobs": "十字軍系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/530080.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 85,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "540084": {
         "id": 540084,
         "name": {
@@ -127277,7 +135697,7 @@ export const itemsData = {
             "official_clean": "裝備時普通攻擊距離增加為3格。\\nMATK+125，變動詠唱+30%。\\n精煉+3時，變動詠唱-3%，攻擊速度+3%。\\n精煉+7時，變動詠唱再-7%，攻擊速度再+7%。\\n精煉+9時，變動詠唱再-10%，攻擊速度再+15%，ASPD+2。"
         },
         "category": "武器",
-        "slot": "書籍",
+        "slot": "書",
         "slotCount": 3,
         "enchantment_slots": 0,
         "ClassNum": 15,
@@ -127815,7 +136235,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1153,
+                "monster_name": "獸人腐屍",
+                "rate": "???",
+                "image_url": "images/monsters/1153.gif"
+            }
+        ]
     },
     "560054": {
         "id": 560054,
@@ -128190,6 +136617,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "560087": {
+        "id": 560087,
+        "name": {
+            "zh_tw": "★賀勒拳套",
+            "kr": "Z_Hora_RF"
+        },
+        "description": {
+            "official": "ATK+60、MDEF-20、MHP-300\\n精煉+3時，攻擊速度+5%、SP消耗量-5%\\n精煉+7時，攻擊速度再+10%、SP消耗量再-10%\\n精煉+9時，攻擊速度再+20%、SP消耗量再-25%\\n\\n系列 : 拳套 攻擊 : 120\\n重量 : 45\\n武器等級 : 2\\n要求等級 : 12\\n裝備 : 武道家系列",
+            "official_clean": "ATK+60、MDEF-20、MHP-300\\n精煉+3時，攻擊速度+5%、SP消耗量-5%\\n精煉+7時，攻擊速度再+10%、SP消耗量再-10%\\n精煉+9時，攻擊速度再+20%、SP消耗量再-25%"
+        },
+        "category": "武器",
+        "slot": "拳套",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 78,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 120,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 12,
+        "equip_jobs": "武道家系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/560087.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 45,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "570055": {
         "id": 570055,
         "name": {
@@ -128275,7 +136742,20 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1267,
+                "monster_name": "卡拉特小丑",
+                "rate": "???",
+                "image_url": "images/monsters/1267.gif"
+            },
+            {
+                "monster_id": 1380,
+                "monster_name": "爆鑽傘蜥",
+                "rate": "???",
+                "image_url": "images/monsters/1380.gif"
+            }
+        ]
     },
     "570057": {
         "id": 570057,
@@ -128597,6 +137077,46 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "570092": {
+        "id": 570092,
+        "name": {
+            "zh_tw": "★魯特琴",
+            "kr": "Z_Lute_RF"
+        },
+        "description": {
+            "official": "ATK+20, HIT-60, DEF-40\\n精煉+3時，變動詠唱-2%、MHP+75\\n精煉+7時，變動詠唱再-2%、MHP再+125\\n精煉+9時，變動詠唱再-6%、MHP再+200\\n\\n系列 : 樂器 攻擊 : 125\\n重量 : 50\\n武器等級 : 2\\n要求等級 : 14\\n裝備 : 吟遊詩人系列",
+            "official_clean": "ATK+20, HIT-60, DEF-40\\n精煉+3時，變動詠唱-2%、MHP+75\\n精煉+7時，變動詠唱再-2%、MHP再+125\\n精煉+9時，變動詠唱再-6%、MHP再+200"
+        },
+        "category": "武器",
+        "slot": "樂器",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 13,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 125,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 14,
+        "equip_jobs": "吟遊詩人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/570092.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 50,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "580055": {
         "id": 580055,
         "name": {
@@ -128875,7 +137395,20 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1253,
+                "monster_name": "蝙蝠弓箭手",
+                "rate": "???",
+                "image_url": "images/monsters/1253.gif"
+            },
+            {
+                "monster_id": 1271,
+                "monster_name": "鱷魚人",
+                "rate": "???",
+                "image_url": "images/monsters/1271.gif"
+            }
+        ]
     },
     "580066": {
         "id": 580066,
@@ -129023,6 +137556,46 @@ export const itemsData = {
                 "image_url": "images/monsters/1255.gif"
             }
         ]
+    },
+    "580092": {
+        "id": 580092,
+        "name": {
+            "zh_tw": "★鋼鐵鞭子",
+            "kr": "Z_Wire_RF"
+        },
+        "description": {
+            "official": "ATK+20, HIT-40, DEF-60\\n精煉+3時，變動詠唱-2%、MHP+75\\n精煉+7時，變動詠唱再-2%、MHP再+125\\n精煉+9時，變動詠唱再-6%、MHP再+200\\n\\n系列 : 鞭子 攻擊 : 115\\n重量 : 100\\n武器等級 : 2\\n要求等級 : 16\\n裝備 : 舞孃系列",
+            "official_clean": "ATK+20, HIT-40, DEF-60\\n精煉+3時，變動詠唱-2%、MHP+75\\n精煉+7時，變動詠唱再-2%、MHP再+125\\n精煉+9時，變動詠唱再-6%、MHP再+200"
+        },
+        "category": "武器",
+        "slot": "鞭子",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 14,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 115,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 16,
+        "equip_jobs": "舞孃系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/580092.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 100,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
     },
     "590069": {
         "id": 590069,
@@ -129405,7 +137978,7 @@ export const itemsData = {
         "slot": "鈍器",
         "slotCount": 1,
         "enchantment_slots": 3,
-        "ClassNum": 62,
+        "ClassNum": 8,
         "costume": false,
         "card_prefix_name": "",
         "attack": 110,
@@ -130087,6 +138660,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1103.gif"
             },
             {
+                "monster_id": 1153,
+                "monster_name": "獸人腐屍",
+                "rate": "???",
+                "image_url": "images/monsters/1153.gif"
+            },
+            {
                 "monster_id": 1499,
                 "monster_name": "伍坦戰士",
                 "rate": "???",
@@ -130393,6 +138972,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1145.gif"
             },
             {
+                "monster_id": 1281,
+                "monster_name": "賢者蟲",
+                "rate": "???",
+                "image_url": "images/monsters/1281.gif"
+            },
+            {
                 "monster_id": 2760,
                 "monster_name": "雄壯土撥鼠",
                 "rate": 0.25,
@@ -130497,6 +139082,12 @@ export const itemsData = {
                 "monster_name": "泥人",
                 "rate": "???",
                 "image_url": "images/monsters/1165.gif"
+            },
+            {
+                "monster_id": 1275,
+                "monster_name": "愛麗絲女僕",
+                "rate": "???",
+                "image_url": "images/monsters/1275.gif"
             }
         ]
     },
@@ -130537,6 +139128,46 @@ export const itemsData = {
             "weight": 150,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "610092": {
+        "id": 610092,
+        "name": {
+            "zh_tw": "★拳刃",
+            "kr": "Z_Jur_RF"
+        },
+        "description": {
+            "official": "ATK+30、HIT-70\\n精煉+3時，CRI+2，攻擊速度+5%\\n精煉+7時，CRI+3，攻擊速度再+10%\\n精煉+9時，CRI+5，攻擊速度再+15%\\n\\n系列 : 拳刃 攻擊 : 155\\n重量 : 80\\n武器等級 : 2\\n要求等級 : 18\\n裝備 : 刺客系列",
+            "official_clean": "ATK+30、HIT-70\\n精煉+3時，CRI+2，攻擊速度+5%\\n精煉+7時，CRI+3，攻擊速度再+10%\\n精煉+9時，CRI+5，攻擊速度再+15%"
+        },
+        "category": "武器",
+        "slot": "拳刃",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 16,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 155,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 18,
+        "equip_jobs": "刺客系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/610092.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 80,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -131481,6 +140112,46 @@ export const itemsData = {
             }
         ]
     },
+    "630065": {
+        "id": 630065,
+        "name": {
+            "zh_tw": "★彎刃長矛",
+            "kr": "Z_Guisarme_RF"
+        },
+        "description": {
+            "official": "ATK+40, VIT-10\\n精煉+3時，變動詠唱-2%、HIT+5\\n精煉+7時，變動詠唱再-2%、HIT再+10\\n精煉+9時，變動詠唱再-6%、HIT再+30\\n\\n系列 : 雙手矛 攻擊 : 160\\n重量 : 100\\n武器等級 : 2\\n要求等級 : 18\\n裝備 : 劍士系列",
+            "official_clean": "ATK+40, VIT-10\\n精煉+3時，變動詠唱-2%、HIT+5\\n精煉+7時，變動詠唱再-2%、HIT再+10\\n精煉+9時，變動詠唱再-6%、HIT再+30"
+        },
+        "category": "武器",
+        "slot": "雙手矛",
+        "slotCount": 3,
+        "enchantment_slots": 0,
+        "ClassNum": 52,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 160,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 18,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/630065.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 100,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
     "700083": {
         "id": 700083,
         "name": {
@@ -132026,12 +140697,6 @@ export const itemsData = {
                 "image_url": "images/monsters/1073.gif"
             },
             {
-                "monster_id": 1242,
-                "monster_name": "冰波利",
-                "rate": "???",
-                "image_url": "images/monsters/1242.gif"
-            },
-            {
                 "monster_id": 1246,
                 "monster_name": "甜餅人",
                 "rate": "???",
@@ -132138,8 +140803,8 @@ export const itemsData = {
             "kr": "금광석"
         },
         "description": {
-            "official": "製作耀眼盔甲需要的礦石。\\n重量 : 0",
-            "official_clean": "製作耀眼盔甲需要的礦石。"
+            "official": "製作耀眼鎧甲需要的礦石。\\n重量 : 0",
+            "official_clean": "製作耀眼鎧甲需要的礦石。"
         },
         "category": "其他",
         "slot": "-",
@@ -133048,6 +141713,126 @@ export const itemsData = {
             "weight": 10,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "1001617": {
+        "id": 1001617,
+        "name": {
+            "zh_tw": "紫星星-腳印特效石(披肩)",
+            "kr": "발자국이펙트"
+        },
+        "description": {
+            "official": "在披肩服飾裝備第4欄位附魔，賦予效果。\\n紫星星腳印\\n\\n重量 : 0",
+            "official_clean": "在披肩服飾裝備第4欄位附魔，賦予效果。\\n紫星星腳印"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1001617.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1001650": {
+        "id": 1001650,
+        "name": {
+            "zh_tw": "金星星-腳印特效石(披肩)",
+            "kr": "발자국이펙트"
+        },
+        "description": {
+            "official": "在披肩服飾裝備第4欄位附魔，賦予效果。\\n金星星腳印\\n\\n重量 : 0",
+            "official_clean": "在披肩服飾裝備第4欄位附魔，賦予效果。\\n金星星腳印"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1001650.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1001651": {
+        "id": 1001651,
+        "name": {
+            "zh_tw": "紅星星-腳印特效石(披肩)",
+            "kr": "발자국이펙트"
+        },
+        "description": {
+            "official": "在披肩服飾裝備第4欄位附魔，賦予效果。\\n\\n重量 : 0",
+            "official_clean": "在披肩服飾裝備第4欄位附魔，賦予效果。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1001651.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
         },
         "dropped_by": []
     },
@@ -136033,6 +144818,326 @@ export const itemsData = {
         "can_sell_to_npc": true,
         "can_mail": true,
         "can_auction": false,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002522": {
+        "id": 1002522,
+        "name": {
+            "zh_tw": "2026紀念幣",
+            "kr": "ZTW_Coin_Anv2026"
+        },
+        "description": {
+            "official": "可向指定NPC兌換期間限定服飾。\\n重量：0",
+            "official_clean": "可向指定NPC兌換期間限定服飾。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002522.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002523": {
+        "id": 1002523,
+        "name": {
+            "zh_tw": "樂園通行證(冬季)",
+            "kr": "ZTW_Battle_Pass_02"
+        },
+        "description": {
+            "official": "只要拿去給依斯魯得的<NAVI>[樂園飛行魔書]<INFO>izlude,122,114,0,100,0,0</INFO></NAVI>，就能閱覽秘密。\\n\\n(此道具將在2026年2月的第2次定期維護刪除。)\\n重量：0",
+            "official_clean": "(此道具將在2026年2月的第2次定期維護刪除。)"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002523.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002537": {
+        "id": 1002537,
+        "name": {
+            "zh_tw": "★拳刃鑄造之證",
+            "kr": "Mocadas_Slabs"
+        },
+        "description": {
+            "official": "蒐集一定數量給<NAVI>[叨叨齋]<INFO>prontera,272,260,0,100,0,0</INFO></NAVI>可進行武器活化。\\n\\n重量 : 0",
+            "official_clean": ""
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002537.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002538": {
+        "id": 1002538,
+        "name": {
+            "zh_tw": "★魯特琴鑄造之證",
+            "kr": "Mocadas_Slabs"
+        },
+        "description": {
+            "official": "蒐集一定數量給<NAVI>[叨叨齋]<INFO>prontera,272,260,0,100,0,0</INFO></NAVI>可進行武器活化。\\n\\n重量 : 0",
+            "official_clean": ""
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002538.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002539": {
+        "id": 1002539,
+        "name": {
+            "zh_tw": "★鋼鐵鞭子鑄造之證",
+            "kr": "Mocadas_Slabs"
+        },
+        "description": {
+            "official": "蒐集一定數量給<NAVI>[叨叨齋]<INFO>prontera,272,260,0,100,0,0</INFO></NAVI>可進行武器活化。\\n\\n重量 : 0",
+            "official_clean": ""
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002539.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002540": {
+        "id": 1002540,
+        "name": {
+            "zh_tw": "★彎刃長矛鑄造之證",
+            "kr": "Mocadas_Slabs"
+        },
+        "description": {
+            "official": "蒐集一定數量給<NAVI>[叨叨齋]<INFO>prontera,272,260,0,100,0,0</INFO></NAVI>可進行武器活化。\\n\\n重量 : 0",
+            "official_clean": ""
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002540.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002542": {
+        "id": 1002542,
+        "name": {
+            "zh_tw": "★賀勒拳套鑄造之證",
+            "kr": "Mocadas_Slabs"
+        },
+        "description": {
+            "official": "蒐集一定數量給<NAVI>[叨叨齋]<INFO>prontera,272,260,0,100,0,0</INFO></NAVI>可進行武器活化。\\n\\n重量 : 0",
+            "official_clean": ""
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002542.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "attributes": {
+            "weight": 0,
+            "buy_price": 0,
+            "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "1002546": {
+        "id": 1002546,
+        "name": {
+            "zh_tw": "★破刃長戟鑄造之證",
+            "kr": "Mocadas_Slabs"
+        },
+        "description": {
+            "official": "蒐集一定數量給<NAVI>[叨叨齋]<INFO>prontera,272,260,0,100,0,0</INFO></NAVI>可進行武器活化。\\n\\n重量 : 0",
+            "official_clean": ""
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": 0,
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002546.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
         "can_guild_storage": true,
         "attributes": {
             "weight": 0,
