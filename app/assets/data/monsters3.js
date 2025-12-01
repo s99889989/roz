@@ -41291,7 +41291,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 360,
             "hit_100_percent": 374,
-            "hp": 129227,
+             "hp": 129227,
             "magic_attack": {
                 "max": 146,
                 "min": 116

@@ -66,6 +66,7 @@
       <div class="formula">
         公式：95 + 玩家迴避 {{playerFlee}} - 魔物迴避 {{monsterFlee}}
       </div>
+
     </div>
   </div>
 </template>
