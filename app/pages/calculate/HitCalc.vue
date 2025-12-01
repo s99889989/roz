@@ -28,12 +28,12 @@
       <h3>魔物數值</h3>
       <div class="flex">
         <label class="m-1">
-          魔物命中 (HIT 100%)
+          魔物需求100%命中
           <input type="number" v-model.number="monsterHit" />
         </label>
 
         <label class="m-1">
-          魔物迴避 (FLEE 95%)
+          魔物需求95%迴避
           <input type="number" v-model.number="monsterFlee" />
         </label>
       </div>
@@ -49,7 +49,7 @@
 
       <div class="result">
         <strong>對魔物命中率：</strong>
-        <span>{{ playerHitRate }}%</span>
+        <span>{{ playerHitRate.toFixed(1) }}%</span>
       </div>
 
       <div class="formula">
@@ -60,7 +60,7 @@
 
       <div class="result">
         <strong>對魔物閃避率：</strong>
-        <span>{{ playerDodgeRate }}%</span>
+        <span>{{ playerDodgeRate.toFixed(1) }}%</span>
       </div>
 
       <div class="formula">
@@ -90,6 +90,10 @@ const playerHitRate = computed(() => {
   if(value > 100){
     return 100;
   }
+  if(value < 0){
+    return 0;
+  }
+
   return value;
 });
 
@@ -98,6 +102,9 @@ const playerDodgeRate = computed(() => {
   const value = 95 + playerFlee.value - monsterFlee.value;
   if(value > 95){
     return 95
+  }
+  if(value < 0){
+    return 0;
   }
   return value;
 });

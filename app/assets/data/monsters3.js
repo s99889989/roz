@@ -41289,8 +41289,8 @@ export const monstersData3 = [
                 "base": 77537,
                 "job": ""
             },
-            "flee_95_percent": 329,
-            "hit_100_percent": 342,
+            "flee_95_percent": 360,
+            "hit_100_percent": 374,
             "hp": 129227,
             "magic_attack": {
                 "max": 146,
@@ -43946,8 +43946,8 @@ export const monstersData3 = [
                 "base": 57385,
                 "job": ""
             },
-            "flee_95_percent": 343,
-            "hit_100_percent": 358,
+            "flee_95_percent": 387,
+            "hit_100_percent": 403,
             "hp": 83926,
             "magic_attack": {
                 "max": 135,
@@ -54231,8 +54231,8 @@ export const monstersData3 = [
                 "base": 20971,
                 "job": ""
             },
-            "flee_95_percent": 276,
-            "hit_100_percent": 296,
+            "flee_95_percent": 302,
+            "hit_100_percent": 316,
             "hp": 31457,
             "magic_attack": {
                 "max": 80,
@@ -75724,8 +75724,8 @@ export const monstersData3 = [
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 329,
-            "hit_100_percent": 342,
+            "flee_95_percent": 360,
+            "hit_100_percent": 374,
             "hp": "未知",
             "magic_attack": {
                 "max": 146,
@@ -93505,8 +93505,8 @@ export const monstersData3 = [
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 276,
-            "hit_100_percent": 296,
+            "flee_95_percent": 290,
+            "hit_100_percent": 302,
             "hp": 333056,
             "magic_attack": {
                 "max": 80,
