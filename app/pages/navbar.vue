@@ -69,6 +69,10 @@
                   <NuxtLink to="/item/sacred" href="" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     聖物</NuxtLink>
                 </li>
+                <li>
+                  <NuxtLink href="https://roz.gnjoy.com.tw/Notice/Notice_Info?id=217523" target="_blank" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    服飾附魔石箱子內容</NuxtLink>
+                </li>
               </ul>
             </div>
           </li>

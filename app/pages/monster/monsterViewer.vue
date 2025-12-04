@@ -5,6 +5,10 @@ import {monstersData3} from "~/assets/data/monsters3.js";
 import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
+// ✅ 怪物資料
+const monsters = ref(monstersData3);
+
+
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
 
@@ -58,8 +62,6 @@ const sizeList = [
   {id: "大型", name: "大型", icon: "/assets/size/large.png"},
 ]
 
-// ✅ 怪物資料
-const monsters = ref(monstersData3);
 
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {

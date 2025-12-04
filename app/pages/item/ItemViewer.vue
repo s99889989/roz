@@ -121,6 +121,30 @@ const formattedDescription = (text) =>{
   // 只處理傳入的 text 參數，不依賴 this.item
   return text.replace(/\\n/g, '<br>');
 }
+const getItemImg = (id) => {
+
+  // const url = `http://localhost:3000/images/items/${id}.gif`;
+  // return url;
+  // // return `https://assets.twroz.wiki/images/items/${id}.gif`
+  return `/images/items/${id}.gif`
+}
+const onImgError = (e, id) => {
+  const fallbackUrl = `https://assets.twroz.wiki/images/items/${id}.gif`;
+  console.log(fallbackUrl);
+  e.target.src = fallbackUrl;
+  // 直接使用 <a download> 觸發下載（不用 fetch）
+
+  // const a = document.createElement('a');
+  // a.href = fallbackUrl;
+  // a.download = `${id}.gif`; // 載入原檔名稱
+  // a.target = '_blank';
+  // document.body.appendChild(a);
+  // a.click();
+  // a.remove();
+
+};
+// console.log('測試路徑: '+url)
+//  return `/images/items/${id}.gif`
 const getWearingBImg = (id) => {
   // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
     return `/images/wearing/${id}_b.png`
@@ -209,9 +233,9 @@ const getMonsterImg = (id) => {
 
 
           <div class="flex w-full justify-center">
-            <img :src="`${it.icon_url}`" alt="" class="h-8">
-            <img :src="getWearingBImg(it.id)" alt="" class="h-20">
-            <img :src="getWearingGImg(it.id)" alt="" class="h-20">
+            <img :src="getItemImg(it.id)" @error="e => onImgError(e, it.id)" alt="" class="h-8">
+<!--            <img :src="getWearingBImg(it.id)" alt="" class="h-20">-->
+<!--            <img :src="getWearingGImg(it.id)" alt="" class="h-20">-->
           </div>
 
 

@@ -2,8 +2,13 @@
 import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
 import {monstersData3} from "~/assets/data/monsters3.js";
+import {monstersDisplayIndex} from "~/assets/data/monsters_display_index.js";
 import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
+
+// ✅ 怪物資料
+const monsters1 = ref(monstersDisplayIndex);
+const monsters = ref(monstersData3);
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -13,7 +18,8 @@ const search = ref("")
 const minLevel = ref("")
 const maxLevel = ref("")
 
-// 選取標籤（屬性 / 種族 / 大小）
+// 選取標籤（類型 / 屬性 / 種族 / 大小）
+const selectedType = ref(['all'])
 const selectedElement = ref(['all'])
 const selectedRace = ref(['all'])
 const selectedSize = ref(['all'])
@@ -21,6 +27,13 @@ const selectedSize = ref(['all'])
 onMounted(() => {
   initFlowbite()
 })
+
+const typeList = [
+  {id: "all", name: "ALL", icon: "/assets/element/neutral.png"},
+  {id: "common", name: "一般", icon: "/assets/element/neutral.png"},
+  {id: "mini", name: "MINI", icon: "/assets/element/neutral.png"},
+  {id: "MVP", name: "MVP", icon: "/assets/element/neutral.png"},
+]
 
 // ✅ icon/項目列表
 const elementList = [
@@ -58,12 +71,14 @@ const sizeList = [
   {id: "大型", name: "大型", icon: "/assets/size/large.png"},
 ]
 
-// ✅ 怪物資料
-const monsters = ref(monstersData3);
+
 
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {
-  return monsters.value.filter(m => {
+
+  let monstersArray = Object.values(monsters1.value);
+
+  return monstersArray.filter(m => {
     // ✅ 名稱 / 地圖搜尋
     // 改良版：trim + toLowerCase + 防空值檢查
     const q = (search.value || "").trim().toLowerCase();
@@ -80,6 +95,26 @@ const filteredMonsters = computed(() => {
     const matchesLevel =
         (!minLevel.value || m.basic_info.level >= parseInt(minLevel.value)) &&
         (!maxLevel.value || m.basic_info.level <= parseInt(maxLevel.value))
+
+    // ✅ 類型篩選
+    const matchesType =
+        selectedType.value.length === 0 ||
+        selectedType.value.includes("all") ||
+        selectedType.value.some(t => {
+          if(m.special_status.includes(t)){
+            return true;
+          }else {
+            if(selectedType.value.includes("common")){
+              if(!m.special_status.includes('mini') && !m.special_status.includes('MVP')){
+                return true;
+              }
+            }
+          }
+
+
+          return false;
+        })
+
 
     // ✅ 屬性篩選
     const matchesElement =
@@ -99,7 +134,7 @@ const filteredMonsters = computed(() => {
         selectedSize.value.includes("all") ||
         selectedSize.value.includes(m.basic_info.size+'型')
 
-    return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize
+    return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize && matchesType
   })
       // ✅ 排序 (依 sortAsc)
       .sort((a, b) => sortAsc.value
@@ -180,6 +215,36 @@ function toggleSize(id) {
 }
 
 // ✅ 切換屬性
+function toggleType(id) {
+
+  // 如果點擊 ALL
+  // 如果有選 ALL，先清除
+  if (id === 'all') {
+    selectedType.value = ['all']
+    return
+  }
+
+  // 如果列表包含 ALL，先移除 ALL
+  if (selectedType.value.includes('all')) {
+    selectedType.value = []
+  }
+
+  // ✅ 如果已存在 → 取消選取
+  if (selectedType.value.includes(id)) {
+    selectedType.value = selectedType.value.filter(e => e !== id)
+  } else {
+    // 加入新選項
+    selectedType.value.push(id)
+  }
+
+  //如果空 → 設置為all
+  if (selectedType.value.length === 0) {
+    selectedType.value.push('all')
+  }
+
+}
+
+// ✅ 切換屬性
 function toggleElement(id) {
 
   // 如果點擊 ALL
@@ -214,6 +279,7 @@ function clearFilters() {
   search.value = ""
   minLevel.value = ""
   maxLevel.value = ""
+  selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']
   selectedSize.value = ['all']
@@ -221,6 +287,7 @@ function clearFilters() {
 
 }
 
+//數值
 function displayValue(value) {
   // 如果可以轉成數字，且不是 NaN，就做千分位格式化
   if (!isNaN(value)) {
@@ -231,10 +298,12 @@ function displayValue(value) {
   return value;
 }
 
+//選擇地圖
 function selectMap(value) {
   search.value = value
   minLevel.value = ""
   maxLevel.value = ""
+  selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']
   selectedSize.value = ['all']
@@ -296,6 +365,28 @@ const getMonsterImg = (id) => {
           切換排序
         </button>
       </div>
+    </div>
+
+    <!-- 類型篩選 -->
+    <div class="mb-4">
+      <div class="flex items-center gap-2">
+        <h3 class="text-yellow-400 font-bold mb-2">類型</h3>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+            v-for="e in typeList"
+            :key="e.id"
+            @click="toggleType(e.id)"
+            class="px-5 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
+            :class="selectedType.includes(e.id)
+              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
+              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
+        >
+          {{ e.name }}
+        </button>
+      </div>
+
     </div>
 
     <!-- 種族篩選 -->

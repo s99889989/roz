@@ -1,5 +1,5 @@
-export const monstersData3 = [
-    {
+export const monstersDisplayIndex = {
+    "1001": {
         "id": 1001,
         "name": {
             "zh_tw": "蠍子",
@@ -214,7 +214,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1002": {
         "id": 1002,
         "name": {
             "zh_tw": "波利",
@@ -564,7 +564,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1004": {
         "id": 1004,
         "name": {
             "zh_tw": "蜂兵",
@@ -764,7 +764,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1005": {
         "id": 1005,
         "name": {
             "zh_tw": "吸血蝙蝠",
@@ -1190,7 +1190,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1007": {
         "id": 1007,
         "name": {
             "zh_tw": "綠棉蟲",
@@ -1520,7 +1520,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1008": {
         "id": 1008,
         "name": {
             "zh_tw": "蟲蛹",
@@ -1773,7 +1773,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1009": {
         "id": 1009,
         "name": {
             "zh_tw": "禿鷹",
@@ -2018,7 +2018,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1010": {
         "id": 1010,
         "name": {
             "zh_tw": "樹精",
@@ -2273,7 +2273,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1011": {
         "id": 1011,
         "name": {
             "zh_tw": "蒼蠅",
@@ -2497,7 +2497,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1012": {
         "id": 1012,
         "name": {
             "zh_tw": "羅達蛙",
@@ -2670,7 +2670,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1013": {
         "id": 1013,
         "name": {
             "zh_tw": "狼",
@@ -2896,7 +2896,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1014": {
         "id": 1014,
         "name": {
             "zh_tw": "魔菇",
@@ -3182,7 +3182,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1015": {
         "id": 1015,
         "name": {
             "zh_tw": "腐屍",
@@ -3462,7 +3462,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1016": {
         "id": 1016,
         "name": {
             "zh_tw": "邪骸弓箭手",
@@ -3733,7 +3733,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1018": {
         "id": 1018,
         "name": {
             "zh_tw": "克瑞米",
@@ -4045,7 +4045,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1019": {
         "id": 1019,
         "name": {
             "zh_tw": "大嘴鳥",
@@ -4288,7 +4288,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1020": {
         "id": 1020,
         "name": {
             "zh_tw": "曼陀羅魔花",
@@ -4521,7 +4521,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1023": {
         "id": 1023,
         "name": {
             "zh_tw": "獸人戰士",
@@ -4865,7 +4865,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1024": {
         "id": 1024,
         "name": {
             "zh_tw": "森靈",
@@ -5064,7 +5064,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1025": {
         "id": 1025,
         "name": {
             "zh_tw": "青蛇",
@@ -5303,7 +5303,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1026": {
         "id": 1026,
         "name": {
             "zh_tw": "殭屍",
@@ -5589,7 +5589,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1028": {
         "id": 1028,
         "name": {
             "zh_tw": "邪骸士兵",
@@ -5926,7 +5926,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1029": {
         "id": 1029,
         "name": {
             "zh_tw": "蛇女伊絲",
@@ -6202,7 +6202,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1031": {
         "id": 1031,
         "name": {
             "zh_tw": "波波利",
@@ -6618,7 +6618,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1032": {
         "id": 1032,
         "name": {
             "zh_tw": "木乃伊犬",
@@ -6889,7 +6889,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1033": {
         "id": 1033,
         "name": {
             "zh_tw": "長老樹精",
@@ -7165,7 +7165,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1034": {
         "id": 1034,
         "name": {
             "zh_tw": "達拉蛙",
@@ -7363,7 +7363,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1035": {
         "id": 1035,
         "name": {
             "zh_tw": "赤蒼蠅",
@@ -7845,7 +7845,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1036": {
         "id": 1036,
         "name": {
             "zh_tw": "綠腐屍",
@@ -8058,7 +8058,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1037": {
         "id": 1037,
         "name": {
             "zh_tw": "黑蛇",
@@ -8337,7 +8337,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1038": {
         "id": 1038,
         "name": {
             "zh_tw": "俄塞里斯",
@@ -8453,8 +8453,8 @@ export const monstersData3 = [
                 "spawn_info": ""
             },
             {
-                "map_name": "b_pry_d06",
-                "description": "金字塔地下2樓",
+                "map_name": "b_pry_d04_z",
+                "description": "金字塔4樓",
                 "spawn_info": ""
             }
         ],
@@ -8965,7 +8965,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1040": {
         "id": 1040,
         "name": {
             "zh_tw": "巨石怪",
@@ -9207,7 +9207,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1041": {
         "id": 1041,
         "name": {
             "zh_tw": "木乃伊",
@@ -9584,7 +9584,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1042": {
         "id": 1042,
         "name": {
             "zh_tw": "綠蒼蠅",
@@ -9857,7 +9857,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1044": {
         "id": 1044,
         "name": {
             "zh_tw": "人魚",
@@ -10133,7 +10133,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1045": {
         "id": 1045,
         "name": {
             "zh_tw": "馬克",
@@ -10451,7 +10451,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1047": {
         "id": 1047,
         "name": {
             "zh_tw": "大嘴鳥蛋",
@@ -10642,7 +10642,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1048": {
         "id": 1048,
         "name": {
             "zh_tw": "盜蟲卵",
@@ -10945,7 +10945,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1049": {
         "id": 1049,
         "name": {
             "zh_tw": "小雞",
@@ -11159,7 +11159,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1050": {
         "id": 1050,
         "name": {
             "zh_tw": "蛋殼小雞",
@@ -11373,7 +11373,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1051": {
         "id": 1051,
         "name": {
             "zh_tw": "盜蟲",
@@ -11669,7 +11669,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1052": {
         "id": 1052,
         "name": {
             "zh_tw": "搖滾蝗蟲",
@@ -11879,7 +11879,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1053": {
         "id": 1053,
         "name": {
             "zh_tw": "浮勒盜蟲",
@@ -12137,7 +12137,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1054": {
         "id": 1054,
         "name": {
             "zh_tw": "瑪勒盜蟲",
@@ -12361,7 +12361,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1055": {
         "id": 1055,
         "name": {
             "zh_tw": "摩卡",
@@ -12586,7 +12586,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1056": {
         "id": 1056,
         "name": {
             "zh_tw": "狸貓",
@@ -12889,7 +12889,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1057": {
         "id": 1057,
         "name": {
             "zh_tw": "溜溜猴",
@@ -13195,7 +13195,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1058": {
         "id": 1058,
         "name": {
             "zh_tw": "重金屬蝗蟲",
@@ -13450,7 +13450,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1060": {
         "id": 1060,
         "name": {
             "zh_tw": "大腳熊",
@@ -13748,7 +13748,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1061": {
         "id": 1061,
         "name": {
             "zh_tw": "夢魘",
@@ -14015,7 +14015,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1063": {
         "id": 1063,
         "name": {
             "zh_tw": "瘋兔",
@@ -14251,7 +14251,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1064": {
         "id": 1064,
         "name": {
             "zh_tw": "邪骸食人魚",
@@ -14460,7 +14460,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1065": {
         "id": 1065,
         "name": {
             "zh_tw": "海神",
@@ -14894,7 +14894,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1066": {
         "id": 1066,
         "name": {
             "zh_tw": "螃蟹",
@@ -15156,7 +15156,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1067": {
         "id": 1067,
         "name": {
             "zh_tw": "卡那多斯",
@@ -15428,7 +15428,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1068": {
         "id": 1068,
         "name": {
             "zh_tw": "海葵",
@@ -15806,7 +15806,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1069": {
         "id": 1069,
         "name": {
             "zh_tw": "異變魚",
@@ -16123,7 +16123,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1070": {
         "id": 1070,
         "name": {
             "zh_tw": "庫克雷",
@@ -16393,7 +16393,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1071": {
         "id": 1071,
         "name": {
             "zh_tw": "邪骸海盜",
@@ -16637,7 +16637,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1073": {
         "id": 1073,
         "name": {
             "zh_tw": "卡拉蟹",
@@ -16825,7 +16825,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1074": {
         "id": 1074,
         "name": {
             "zh_tw": "貝殼魔靈",
@@ -17014,7 +17014,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1076": {
         "id": 1076,
         "name": {
             "zh_tw": "邪骸戰士",
@@ -17204,7 +17204,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1077": {
         "id": 1077,
         "name": {
             "zh_tw": "毒魔菇",
@@ -17557,7 +17557,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1078": {
         "id": 1078,
         "name": {
             "zh_tw": "紅草",
@@ -17845,7 +17845,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1079": {
         "id": 1079,
         "name": {
             "zh_tw": "藍草",
@@ -18108,7 +18108,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1080": {
         "id": 1080,
         "name": {
             "zh_tw": "綠草",
@@ -18516,7 +18516,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1081": {
         "id": 1081,
         "name": {
             "zh_tw": "黃草",
@@ -18789,7 +18789,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1082": {
         "id": 1082,
         "name": {
             "zh_tw": "白草",
@@ -19067,7 +19067,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1083": {
         "id": 1083,
         "name": {
             "zh_tw": "光芒草",
@@ -19360,7 +19360,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1084": {
         "id": 1084,
         "name": {
             "zh_tw": "黑菇",
@@ -19718,7 +19718,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1085": {
         "id": 1085,
         "name": {
             "zh_tw": "紅菇",
@@ -19941,7 +19941,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1086": {
         "id": 1086,
         "name": {
             "zh_tw": "黃金蟲",
@@ -20428,7 +20428,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1087": {
         "id": 1087,
         "name": {
             "zh_tw": "獸人英雄",
@@ -20971,7 +20971,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1088": {
         "id": 1088,
         "name": {
             "zh_tw": "蝗蟲之王",
@@ -21116,6 +21116,16 @@ export const monstersData3 = [
                 "icon_url": "images/items/530056.gif",
                 "slotCount": 4,
                 "slot": "單手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 570057,
+                "name": "小提琴",
+                "rate": "???",
+                "icon_url": "images/items/570057.gif",
+                "slotCount": 3,
+                "slot": "樂器",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -21323,7 +21333,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1089": {
         "id": 1089,
         "name": {
             "zh_tw": "蛙王",
@@ -21370,6 +21380,7 @@ export const monstersData3 = [
             "magic_defense": 6
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -21550,7 +21561,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1090": {
         "id": 1090,
         "name": {
             "zh_tw": "波利之王",
@@ -21597,6 +21608,7 @@ export const monstersData3 = [
             "magic_defense": 37
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -21823,7 +21835,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1091": {
         "id": 1091,
         "name": {
             "zh_tw": "龍蠅",
@@ -21870,6 +21882,7 @@ export const monstersData3 = [
             "magic_defense": 28
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -21943,7 +21956,7 @@ export const monstersData3 = [
             {
                 "item_id": 2607,
                 "name": "髮夾",
-                "rate": 15,
+                "rate": "???",
                 "icon_url": "images/items/2607.gif",
                 "slotCount": 1,
                 "slot": "飾品",
@@ -22143,7 +22156,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1092": {
         "id": 1092,
         "name": {
             "zh_tw": "流浪之狼",
@@ -22190,6 +22203,7 @@ export const monstersData3 = [
             "magic_defense": 51
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -22463,7 +22477,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1093": {
         "id": 1093,
         "name": {
             "zh_tw": "藍瘋兔",
@@ -22510,6 +22524,7 @@ export const monstersData3 = [
             "magic_defense": 20
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -22705,7 +22720,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1094": {
         "id": 1094,
         "name": {
             "zh_tw": "蝸牛",
@@ -22932,7 +22947,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1095": {
         "id": 1095,
         "name": {
             "zh_tw": "白蟻",
@@ -23182,7 +23197,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1096": {
         "id": 1096,
         "name": {
             "zh_tw": "天使波利",
@@ -23229,6 +23244,7 @@ export const monstersData3 = [
             "magic_defense": 285
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -23295,7 +23311,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4054.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "神聖"
             },
@@ -23629,7 +23645,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1097": {
         "id": 1097,
         "name": {
             "zh_tw": "白蟻幼蟲",
@@ -23845,7 +23861,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1098": {
         "id": 1098,
         "name": {
             "zh_tw": "胡狼頭神",
@@ -24418,7 +24434,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1099": {
         "id": 1099,
         "name": {
             "zh_tw": "艾吉歐蜈蚣",
@@ -24717,7 +24733,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1100": {
         "id": 1100,
         "name": {
             "zh_tw": "艾斯蜘蛛",
@@ -25003,7 +25019,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1101": {
         "id": 1101,
         "name": {
             "zh_tw": "小巴風特",
@@ -25356,7 +25372,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1103": {
         "id": 1103,
         "name": {
             "zh_tw": "刺蝟蟲",
@@ -25586,7 +25602,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1104": {
         "id": 1104,
         "name": {
             "zh_tw": "松鼠",
@@ -25837,7 +25853,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1105": {
         "id": 1105,
         "name": {
             "zh_tw": "兵蟻",
@@ -26087,7 +26103,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1107": {
         "id": 1107,
         "name": {
             "zh_tw": "沙漠幼狼",
@@ -26311,7 +26327,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1108": {
         "id": 1108,
         "name": {
             "zh_tw": "狄奧斯",
@@ -26574,7 +26590,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1109": {
         "id": 1109,
         "name": {
             "zh_tw": "小惡魔",
@@ -26885,7 +26901,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1110": {
         "id": 1110,
         "name": {
             "zh_tw": "土人",
@@ -27149,7 +27165,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1111": {
         "id": 1111,
         "name": {
             "zh_tw": "紅蝙蝠",
@@ -27558,7 +27574,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1112": {
         "id": 1112,
         "name": {
             "zh_tw": "海盜之王",
@@ -28050,7 +28066,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1113": {
         "id": 1113,
         "name": {
             "zh_tw": "土波利",
@@ -28305,7 +28321,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1114": {
         "id": 1114,
         "name": {
             "zh_tw": "獵蠅",
@@ -28553,7 +28569,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1115": {
         "id": 1115,
         "name": {
             "zh_tw": "虎王",
@@ -29054,7 +29070,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1116": {
         "id": 1116,
         "name": {
             "zh_tw": "轉轉蛋",
@@ -29306,7 +29322,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1117": {
         "id": 1117,
         "name": {
             "zh_tw": "闇神官",
@@ -29364,12 +29380,12 @@ export const monstersData3 = [
         ],
         "drops": [
             {
-                "item_id": 509,
-                "name": "白色藥草",
-                "rate": 10,
-                "icon_url": "images/items/509.gif",
-                "slotCount": 0,
-                "slot": "-",
+                "item_id": 450348,
+                "name": "鐵製鎧甲",
+                "rate": "???",
+                "icon_url": "images/items/450348.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -29384,22 +29400,12 @@ export const monstersData3 = [
                 "card_prefix_name": ""
             },
             {
-                "item_id": 2217,
-                "name": "聖職之帽",
-                "rate": 0.05,
-                "icon_url": "images/items/2217.gif",
-                "slotCount": 1,
-                "slot": "頭上",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 4141,
                 "name": "闇神官卡片",
                 "rate": 0.01,
                 "icon_url": "images/items/4141.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "致命"
             },
@@ -29420,16 +29426,6 @@ export const monstersData3 = [
                 "icon_url": "images/items/401075.gif",
                 "slotCount": 0,
                 "slot": "頭上",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 480382,
-                "name": "抗魔斗篷",
-                "rate": 0.01,
-                "icon_url": "images/items/480382.gif",
-                "slotCount": 0,
-                "slot": "披肩",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -29719,7 +29715,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1118": {
         "id": 1118,
         "name": {
             "zh_tw": "噬人花",
@@ -29964,7 +29960,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1119": {
         "id": 1119,
         "name": {
             "zh_tw": "傘蜥",
@@ -30320,7 +30316,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1120": {
         "id": 1120,
         "name": {
             "zh_tw": "幽靈波利",
@@ -30367,6 +30363,7 @@ export const monstersData3 = [
             "magic_defense": 72
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -30777,7 +30774,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1121": {
         "id": 1121,
         "name": {
             "zh_tw": "基爾瑟",
@@ -31050,7 +31047,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1122": {
         "id": 1122,
         "name": {
             "zh_tw": "刺刀哥布靈",
@@ -31327,7 +31324,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1123": {
         "id": 1123,
         "name": {
             "zh_tw": "鏈錘哥布靈",
@@ -31592,7 +31589,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1124": {
         "id": 1124,
         "name": {
             "zh_tw": "大斧哥布靈",
@@ -31867,7 +31864,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1125": {
         "id": 1125,
         "name": {
             "zh_tw": "榔頭哥布靈",
@@ -32132,7 +32129,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1126": {
         "id": 1126,
         "name": {
             "zh_tw": "刺錘哥布靈",
@@ -32357,7 +32354,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1127": {
         "id": 1127,
         "name": {
             "zh_tw": "蚯蚓",
@@ -32592,7 +32589,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1128": {
         "id": 1128,
         "name": {
             "zh_tw": "鍬形蟲",
@@ -32828,7 +32825,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1129": {
         "id": 1129,
         "name": {
             "zh_tw": "鬼火",
@@ -33094,7 +33091,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1130": {
         "id": 1130,
         "name": {
             "zh_tw": "南瓜先生",
@@ -33383,7 +33380,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1132": {
         "id": 1132,
         "name": {
             "zh_tw": "卡利斯格",
@@ -33422,7 +33419,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 403,
             "hit_100_percent": 352,
-            "hp": 23986,
+            "hp": 33320,
             "magic_attack": {
                 "max": 274,
                 "min": 216
@@ -33677,7 +33674,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1138": {
         "id": 1138,
         "name": {
             "zh_tw": "魔鍋蛋",
@@ -33940,7 +33937,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1139": {
         "id": 1139,
         "name": {
             "zh_tw": "螳螂",
@@ -34246,7 +34243,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1140": {
         "id": 1140,
         "name": {
             "zh_tw": "馬爾杜克",
@@ -34544,7 +34541,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1141": {
         "id": 1141,
         "name": {
             "zh_tw": "水母",
@@ -34794,7 +34791,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1142": {
         "id": 1142,
         "name": {
             "zh_tw": "氣泡蟲",
@@ -35053,7 +35050,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1143": {
         "id": 1143,
         "name": {
             "zh_tw": "傀儡娃娃",
@@ -35273,7 +35270,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1144": {
         "id": 1144,
         "name": {
             "zh_tw": "烏賊",
@@ -35515,7 +35512,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1145": {
         "id": 1145,
         "name": {
             "zh_tw": "土撥鼠",
@@ -35566,16 +35563,6 @@ export const monstersData3 = [
             "可移動"
         ],
         "drops": [
-            {
-                "item_id": 601,
-                "name": "蒼蠅翅膀",
-                "rate": 5,
-                "icon_url": "images/items/601.gif",
-                "slotCount": 0,
-                "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
             {
                 "item_id": 1017,
                 "name": "鼠鬚",
@@ -35815,7 +35802,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1146": {
         "id": 1146,
         "name": {
             "zh_tw": "黑狐",
@@ -36140,7 +36127,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1147": {
         "id": 1147,
         "name": {
             "zh_tw": "蟻后",
@@ -36746,7 +36733,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1148": {
         "id": 1148,
         "name": {
             "zh_tw": "米杜沙",
@@ -37015,7 +37002,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1149": {
         "id": 1149,
         "name": {
             "zh_tw": "米洛斯",
@@ -37332,7 +37319,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1150": {
         "id": 1150,
         "name": {
             "zh_tw": "月夜貓",
@@ -38096,7 +38083,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1151": {
         "id": 1151,
         "name": {
             "zh_tw": "麥斯特",
@@ -38353,7 +38340,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1152": {
         "id": 1152,
         "name": {
             "zh_tw": "邪骸獸人",
@@ -38628,7 +38615,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1153": {
         "id": 1153,
         "name": {
             "zh_tw": "獸人腐屍",
@@ -38863,7 +38850,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1154": {
         "id": 1154,
         "name": {
             "zh_tw": "帕莎納",
@@ -39190,7 +39177,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1155": {
         "id": 1155,
         "name": {
             "zh_tw": "畢帝特地龍",
@@ -39461,7 +39448,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1156": {
         "id": 1156,
         "name": {
             "zh_tw": "畢帝特飛龍",
@@ -39722,7 +39709,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1158": {
         "id": 1158,
         "name": {
             "zh_tw": "劍魚",
@@ -39942,7 +39929,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1159": {
         "id": 1159,
         "name": {
             "zh_tw": "皮里恩",
@@ -40506,7 +40493,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1160": {
         "id": 1160,
         "name": {
             "zh_tw": "工蟻",
@@ -40766,7 +40753,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1161": {
         "id": 1161,
         "name": {
             "zh_tw": "漂浮蟲",
@@ -40964,7 +40951,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1163": {
         "id": 1163,
         "name": {
             "zh_tw": "幽靈劍士",
@@ -41003,7 +40990,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 370,
             "hit_100_percent": 377,
-            "hp": 18408,
+            "hp": 26226,
             "magic_attack": {
                 "max": 272,
                 "min": 214
@@ -41076,6 +41063,16 @@ export const monstersData3 = [
                 "icon_url": "images/items/401080.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 26016,
+                "name": "王室騎士長矛",
+                "rate": "???",
+                "icon_url": "images/items/26016.gif",
+                "slotCount": 1,
+                "slot": "雙手矛",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -41292,7 +41289,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1164": {
         "id": 1164,
         "name": {
             "zh_tw": "諾可伊",
@@ -41329,9 +41326,9 @@ export const monstersData3 = [
                 "base": 77537,
                 "job": ""
             },
-            "flee_95_percent": 360,
-            "hit_100_percent": 374,
-             "hp": 129227,
+            "flee_95_percent": 329,
+            "hit_100_percent": 342,
+            "hp": 129227,
             "magic_attack": {
                 "max": 146,
                 "min": 116
@@ -41546,7 +41543,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1165": {
         "id": 1165,
         "name": {
             "zh_tw": "泥人",
@@ -41880,7 +41877,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1166": {
         "id": 1166,
         "name": {
             "zh_tw": "野豬",
@@ -42141,7 +42138,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1167": {
         "id": 1167,
         "name": {
             "zh_tw": "小野豬",
@@ -42370,7 +42367,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1169": {
         "id": 1169,
         "name": {
             "zh_tw": "邪骸礦工",
@@ -42624,7 +42621,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1170": {
         "id": 1170,
         "name": {
             "zh_tw": "鬼女",
@@ -42877,7 +42874,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1174": {
         "id": 1174,
         "name": {
             "zh_tw": "瓢蟲",
@@ -43169,7 +43166,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1175": {
         "id": 1175,
         "name": {
             "zh_tw": "白鼠",
@@ -43444,7 +43441,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1176": {
         "id": 1176,
         "name": {
             "zh_tw": "黑蟻",
@@ -43738,7 +43735,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1177": {
         "id": 1177,
         "name": {
             "zh_tw": "茲諾克",
@@ -43949,7 +43946,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1178": {
         "id": 1178,
         "name": {
             "zh_tw": "傑洛米",
@@ -43986,8 +43983,8 @@ export const monstersData3 = [
                 "base": 57385,
                 "job": ""
             },
-            "flee_95_percent": 387,
-            "hit_100_percent": 380,
+            "flee_95_percent": 343,
+            "hit_100_percent": 358,
             "hp": 83926,
             "magic_attack": {
                 "max": 135,
@@ -44246,7 +44243,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1179": {
         "id": 1179,
         "name": {
             "zh_tw": "白幽靈",
@@ -44580,7 +44577,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1180": {
         "id": 1180,
         "name": {
             "zh_tw": "九尾狐",
@@ -44878,7 +44875,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1188": {
         "id": 1188,
         "name": {
             "zh_tw": "妖道",
@@ -45111,7 +45108,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1190": {
         "id": 1190,
         "name": {
             "zh_tw": "獸人酋長",
@@ -45205,7 +45202,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4135.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "鏡子"
             },
@@ -45676,7 +45673,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1191": {
         "id": 1191,
         "name": {
             "zh_tw": "邪惡箱",
@@ -46071,7 +46068,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1192": {
         "id": 1192,
         "name": {
             "zh_tw": "惡靈",
@@ -46110,7 +46107,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 339,
             "hit_100_percent": 304,
-            "hp": 5168,
+            "hp": 16997,
             "magic_attack": {
                 "max": 212,
                 "min": 174
@@ -46328,7 +46325,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1194": {
         "id": 1194,
         "name": {
             "zh_tw": "捲甲蟲",
@@ -46367,7 +46364,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 450,
             "hit_100_percent": 383,
-            "hp": 10020,
+            "hp": 14944,
             "magic_attack": {
                 "max": 194,
                 "min": 170
@@ -46584,7 +46581,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1195": {
         "id": 1195,
         "name": {
             "zh_tw": "飛行魔書",
@@ -46623,7 +46620,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 370,
             "hit_100_percent": 328,
-            "hp": 3222,
+            "hp": 10563,
             "magic_attack": {
                 "max": 147,
                 "min": 133
@@ -46845,7 +46842,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1196": {
         "id": 1196,
         "name": {
             "zh_tw": "邪骸戰俘",
@@ -46884,7 +46881,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 351,
             "hit_100_percent": 329,
-            "hp": 9194,
+            "hp": 34799,
             "magic_attack": {
                 "max": 183,
                 "min": 149
@@ -46946,7 +46943,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/2320.gif",
                 "slotCount": 1,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -46966,7 +46963,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4222.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "寶球睡眠"
             },
@@ -47033,7 +47030,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1197": {
         "id": 1197,
         "name": {
             "zh_tw": "腐屍戰俘",
@@ -47072,7 +47069,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 344,
             "hit_100_percent": 330,
-            "hp": 8045,
+            "hp": 30713,
             "magic_attack": {
                 "max": 172,
                 "min": 136
@@ -47251,7 +47248,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1198": {
         "id": 1198,
         "name": {
             "zh_tw": "暗黑祭司",
@@ -47290,7 +47287,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 376,
             "hit_100_percent": 366,
-            "hp": 15216,
+            "hp": 31360,
             "magic_attack": {
                 "max": 524,
                 "min": 368
@@ -47353,7 +47350,7 @@ export const monstersData3 = [
                 "rate": 0.03,
                 "icon_url": "images/items/2319.gif",
                 "slotCount": 1,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -47528,7 +47525,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1200": {
         "id": 1200,
         "name": {
             "zh_tw": "艾斯恩魔女",
@@ -47791,7 +47788,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1201": {
         "id": 1201,
         "name": {
             "zh_tw": "瑞比歐",
@@ -47830,7 +47827,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 359,
             "hit_100_percent": 352,
-            "hp": 44411,
+            "hp": 48701,
             "magic_attack": {
                 "max": 227,
                 "min": 181
@@ -47903,7 +47900,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4194.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "寶球暈眩"
             },
@@ -48021,7 +48018,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1202": {
         "id": 1202,
         "name": {
             "zh_tw": "阿修羅狂戰士",
@@ -48060,7 +48057,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 391,
             "hit_100_percent": 373,
-            "hp": 11000,
+            "hp": 47704,
             "magic_attack": {
                 "max": 220,
                 "min": 174
@@ -48210,7 +48207,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1206": {
         "id": 1206,
         "name": {
             "zh_tw": "虎蜥人",
@@ -48249,7 +48246,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 365,
             "hit_100_percent": 381,
-            "hp": 15547,
+            "hp": 67099,
             "magic_attack": {
                 "max": 318,
                 "min": 252
@@ -48303,7 +48300,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4234.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "明鏡止水的"
             },
@@ -48324,6 +48321,26 @@ export const monstersData3 = [
                 "icon_url": "images/items/10019.gif",
                 "slotCount": 0,
                 "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2320,
+                "name": "西裝外套",
+                "rate": "???",
+                "icon_url": "images/items/2320.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 510132,
+                "name": "大馬士革短劍",
+                "rate": "???",
+                "icon_url": "images/items/510132.gif",
+                "slotCount": 2,
+                "slot": "短劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -48448,7 +48465,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1207": {
         "id": 1207,
         "name": {
             "zh_tw": "史汀",
@@ -48487,7 +48504,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 401,
             "hit_100_percent": 357,
-            "hp": 10143,
+            "hp": 12000,
             "magic_attack": {
                 "max": 226,
                 "min": 184
@@ -48562,6 +48579,16 @@ export const monstersData3 = [
                 "icon_url": "images/items/401083.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 32200,
+                "name": "某個魔法師的手套",
+                "rate": "???",
+                "icon_url": "images/items/32200.gif",
+                "slotCount": 1,
+                "slot": "飾品",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -48770,7 +48797,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1208": {
         "id": 1208,
         "name": {
             "zh_tw": "邪骸浪人",
@@ -48809,7 +48836,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 470,
             "hit_100_percent": 418,
-            "hp": 19307,
+            "hp": 31732,
             "magic_attack": {
                 "max": 272,
                 "min": 208
@@ -49055,7 +49082,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1209": {
         "id": 1209,
         "name": {
             "zh_tw": "藍鼠",
@@ -49278,7 +49305,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1214": {
         "id": 1214,
         "name": {
             "zh_tw": "巧克猴",
@@ -49659,7 +49686,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1219": {
         "id": 1219,
         "name": {
             "zh_tw": "深淵騎士",
@@ -49698,7 +49725,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 440,
             "hit_100_percent": 384,
-            "hp": 23297,
+            "hp": 85457,
             "magic_attack": {
                 "max": 442,
                 "min": 326
@@ -49752,7 +49779,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/2318.gif",
                 "slotCount": 1,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -50010,7 +50037,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1242": {
         "id": 1242,
         "name": {
             "zh_tw": "冰波利",
@@ -50140,16 +50167,6 @@ export const monstersData3 = [
                 "slotCount": 0,
                 "slot": "頭上",
                 "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 700116,
-                "name": "十字弓",
-                "rate": "???",
-                "icon_url": "images/items/700116.gif",
-                "slotCount": 3,
-                "slot": "弓",
-                "enchantment_slots": "2-3",
                 "card_prefix_name": ""
             }
         ],
@@ -50281,7 +50298,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1243": {
         "id": 1243,
         "name": {
             "zh_tw": "雪熊",
@@ -50584,7 +50601,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1246": {
         "id": 1246,
         "name": {
             "zh_tw": "甜餅人",
@@ -50941,7 +50958,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1248": {
         "id": 1248,
         "name": {
             "zh_tw": "玩具士兵",
@@ -50978,8 +50995,8 @@ export const monstersData3 = [
                 "base": 44281,
                 "job": ""
             },
-            "flee_95_percent": 320,
-            "hit_100_percent": 302,
+            "flee_95_percent": 289,
+            "hit_100_percent": 294,
             "hp": 73800,
             "magic_attack": {
                 "max": 82,
@@ -51142,7 +51159,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1249": {
         "id": 1249,
         "name": {
             "zh_tw": "邪惡禮盒",
@@ -51179,8 +51196,8 @@ export const monstersData3 = [
                 "base": 42121,
                 "job": ""
             },
-            "flee_95_percent": 310,
-            "hit_100_percent": 316,
+            "flee_95_percent": 287,
+            "hit_100_percent": 302,
             "hp": 70200,
             "magic_attack": {
                 "max": 102,
@@ -51446,7 +51463,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1253": {
         "id": 1253,
         "name": {
             "zh_tw": "蝙蝠弓箭手",
@@ -51485,7 +51502,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 413,
             "hit_100_percent": 375,
-            "hp": 8772,
+            "hp": 9233,
             "magic_attack": {
                 "max": 273,
                 "min": 219
@@ -51736,7 +51753,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1254": {
         "id": 1254,
         "name": {
             "zh_tw": "奈吉鳥",
@@ -51978,7 +51995,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1255": {
         "id": 1255,
         "name": {
             "zh_tw": "奈利蟲",
@@ -52214,7 +52231,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1256": {
         "id": 1256,
         "name": {
             "zh_tw": "單眼蟲",
@@ -52503,7 +52520,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1257": {
         "id": 1257,
         "name": {
             "zh_tw": "邪惡使者",
@@ -52542,7 +52559,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 369,
             "hit_100_percent": 364,
-            "hp": 7952,
+            "hp": 38413,
             "magic_attack": {
                 "max": 311,
                 "min": 241
@@ -52683,7 +52700,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1258": {
         "id": 1258,
         "name": {
             "zh_tw": "弓箭哥布靈",
@@ -52905,7 +52922,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1260": {
         "id": 1260,
         "name": {
             "zh_tw": "鏡妖",
@@ -52944,7 +52961,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 311,
             "hit_100_percent": 314,
-            "hp": 3520,
+            "hp": 13881,
             "magic_attack": {
                 "max": 125,
                 "min": 107
@@ -52999,7 +53016,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4170.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "硬化的"
             },
@@ -53222,7 +53239,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1261": {
         "id": 1261,
         "name": {
             "zh_tw": "狂暴野貓",
@@ -53458,7 +53475,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1262": {
         "id": 1262,
         "name": {
             "zh_tw": "半龍人",
@@ -53505,6 +53522,7 @@ export const monstersData3 = [
             "magic_defense": 20
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -53659,7 +53677,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1263": {
         "id": 1263,
         "name": {
             "zh_tw": "風魔巫師",
@@ -53698,7 +53716,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 375,
             "hit_100_percent": 328,
-            "hp": 4008,
+            "hp": 58685,
             "magic_attack": {
                 "max": 259,
                 "min": 201
@@ -53966,7 +53984,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1264": {
         "id": 1264,
         "name": {
             "zh_tw": "人魚士兵",
@@ -54070,16 +54088,6 @@ export const monstersData3 = [
                 "icon_url": "images/items/1054.gif",
                 "slotCount": 0,
                 "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 1460,
-                "name": "德瑞尹長戟",
-                "rate": 0.02,
-                "icon_url": "images/items/1460.gif",
-                "slotCount": 2,
-                "slot": "雙手矛",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -54244,7 +54252,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1265": {
         "id": 1265,
         "name": {
             "zh_tw": "綠餅人",
@@ -54281,8 +54289,8 @@ export const monstersData3 = [
                 "base": 20971,
                 "job": ""
             },
-            "flee_95_percent": 302,
-            "hit_100_percent": 316,
+            "flee_95_percent": 276,
+            "hit_100_percent": 296,
             "hp": 31457,
             "magic_attack": {
                 "max": 80,
@@ -54631,7 +54639,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1266": {
         "id": 1266,
         "name": {
             "zh_tw": "海星",
@@ -54798,7 +54806,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1267": {
         "id": 1267,
         "name": {
             "zh_tw": "卡拉特小丑",
@@ -54837,7 +54845,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 369,
             "hit_100_percent": 377,
-            "hp": 9222,
+            "hp": 55686,
             "magic_attack": {
                 "max": 242,
                 "min": 196
@@ -55151,7 +55159,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1268": {
         "id": 1268,
         "name": {
             "zh_tw": "血腥騎士",
@@ -55437,7 +55445,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1271": {
         "id": 1271,
         "name": {
             "zh_tw": "鱷魚人",
@@ -55622,7 +55630,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1272": {
         "id": 1272,
         "name": {
             "zh_tw": "黑暗之王",
@@ -55716,7 +55724,7 @@ export const monstersData3 = [
                 "rate": 1.5,
                 "icon_url": "images/items/2334.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -56081,7 +56089,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1273": {
         "id": 1273,
         "name": {
             "zh_tw": "獸人女戰士",
@@ -56332,7 +56340,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1274": {
         "id": 1274,
         "name": {
             "zh_tw": "邪惡摩艾",
@@ -56501,7 +56509,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1275": {
         "id": 1275,
         "name": {
             "zh_tw": "愛麗絲女僕",
@@ -56600,6 +56608,26 @@ export const monstersData3 = [
                 "icon_url": "images/items/7047.gif",
                 "slotCount": 0,
                 "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610082,
+                "name": "卡塔勒拳刃",
+                "rate": "???",
+                "icon_url": "images/items/610082.gif",
+                "slotCount": 2,
+                "slot": "拳刃",
+                "enchantment_slots": "2-3",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 5557,
+                "name": "狂暴野貓帽子",
+                "rate": "???",
+                "icon_url": "images/items/5557.gif",
+                "slotCount": 1,
+                "slot": "頭上",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -56826,7 +56854,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1276": {
         "id": 1276,
         "name": {
             "zh_tw": "幽靈弓箭手",
@@ -56865,7 +56893,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 396,
             "hit_100_percent": 312,
-            "hp": 4437,
+            "hp": 19716,
             "magic_attack": {
                 "max": 121,
                 "min": 109
@@ -57065,7 +57093,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1277": {
         "id": 1277,
         "name": {
             "zh_tw": "將軍魔碑",
@@ -57362,7 +57390,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1278": {
         "id": 1278,
         "name": {
             "zh_tw": "鐘乳巨石怪",
@@ -57646,7 +57674,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1279": {
         "id": 1279,
         "name": {
             "zh_tw": "三葉蟲",
@@ -57821,7 +57849,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1280": {
         "id": 1280,
         "name": {
             "zh_tw": "噴射哥布靈",
@@ -58053,7 +58081,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1281": {
         "id": 1281,
         "name": {
             "zh_tw": "賢者蟲",
@@ -58092,7 +58120,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 298,
             "hit_100_percent": 305,
-            "hp": 2872,
+            "hp": 8501,
             "magic_attack": {
                 "max": 299,
                 "min": 225
@@ -58173,6 +58201,16 @@ export const monstersData3 = [
                 "slotCount": 0,
                 "slot": "頭上",
                 "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610066,
+                "name": "拳刃",
+                "rate": "???",
+                "icon_url": "images/items/610066.gif",
+                "slotCount": 3,
+                "slot": "拳刃",
+                "enchantment_slots": "2-3",
                 "card_prefix_name": ""
             }
         ],
@@ -58332,7 +58370,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1283": {
         "id": 1283,
         "name": {
             "zh_tw": "凱美拉",
@@ -58379,6 +58417,7 @@ export const monstersData3 = [
             "magic_defense": 10
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -58445,7 +58484,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4300.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "寶球毒藥蓄力"
             },
@@ -58684,7 +58723,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1285": {
         "id": 1285,
         "name": {
             "zh_tw": "弓手監護人",
@@ -58783,7 +58822,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1286": {
         "id": 1286,
         "name": {
             "zh_tw": "騎士監護人",
@@ -58839,7 +58878,7 @@ export const monstersData3 = [
         "spawns": [],
         "skills": []
     },
-    {
+    "1287": {
         "id": 1287,
         "name": {
             "zh_tw": "士兵監護人",
@@ -58938,7 +58977,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1288": {
         "id": 1288,
         "name": {
             "zh_tw": "華麗金屬",
@@ -58985,6 +59024,7 @@ export const monstersData3 = [
             "magic_defense": 50
         },
         "special_status": [
+            "mini",
             "其他攻擊減傷",
             "物理攻擊減傷",
             "遠距離攻擊減傷",
@@ -58994,7 +59034,7 @@ export const monstersData3 = [
         "spawns": [],
         "skills": []
     },
-    {
+    "1295": {
         "id": 1295,
         "name": {
             "zh_tw": "鴞裊男爵",
@@ -59033,7 +59073,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 422,
             "hit_100_percent": 399,
-            "hp": 21000,
+            "hp": 151418,
             "magic_attack": {
                 "max": 484,
                 "min": 362
@@ -59041,6 +59081,7 @@ export const monstersData3 = [
             "magic_defense": 25
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -59315,7 +59356,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1297": {
         "id": 1297,
         "name": {
             "zh_tw": "狂暴木乃伊",
@@ -59521,7 +59562,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1299": {
         "id": 1299,
         "name": {
             "zh_tw": "哥布靈首領",
@@ -59810,7 +59851,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1302": {
         "id": 1302,
         "name": {
             "zh_tw": "迷幻之王",
@@ -59857,6 +59898,7 @@ export const monstersData3 = [
             "magic_defense": 30
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -60047,7 +60089,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1308": {
         "id": 1308,
         "name": {
             "zh_tw": "狂暴哥布靈",
@@ -60263,7 +60305,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1310": {
         "id": 1310,
         "name": {
             "zh_tw": "狂暴米洛斯",
@@ -60302,7 +60344,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 379,
             "hit_100_percent": 374,
-            "hp": 11801,
+            "hp": 28877,
             "magic_attack": {
                 "max": 724,
                 "min": 464
@@ -60376,7 +60418,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4201.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "保有暈眩"
             },
@@ -60584,7 +60626,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1313": {
         "id": 1313,
         "name": {
             "zh_tw": "流氓",
@@ -60616,14 +60658,14 @@ export const monstersData3 = [
                 "str": 72,
                 "vit": 33
             },
-            "defense": 87,
+            "defense": 88,
             "exp": {
                 "base": 2894,
                 "job": 840
             },
             "flee_95_percent": 274,
             "hit_100_percent": 295,
-            "hp": 5278,
+            "hp": 5400,
             "magic_attack": {
                 "max": 109,
                 "min": 95
@@ -60842,7 +60884,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1317": {
         "id": 1317,
         "name": {
             "zh_tw": "海豹寶寶",
@@ -61097,7 +61139,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1320": {
         "id": 1320,
         "name": {
             "zh_tw": "鴞裊首領",
@@ -61136,7 +61178,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 384,
             "hit_100_percent": 353,
-            "hp": 7381,
+            "hp": 35788,
             "magic_attack": {
                 "max": 570,
                 "min": 390
@@ -61144,6 +61186,7 @@ export const monstersData3 = [
             "magic_defense": 45
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -61222,6 +61265,16 @@ export const monstersData3 = [
                 "slotCount": 2,
                 "slot": "雙手斧",
                 "enchantment_slots": "2-3",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 26148,
+                "name": "鴞裊.D.魔杖",
+                "rate": "???",
+                "icon_url": "images/items/26148.gif",
+                "slotCount": 1,
+                "slot": "單手杖",
+                "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
         ],
@@ -61376,7 +61429,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1323": {
         "id": 1323,
         "name": {
             "zh_tw": "海獺",
@@ -61658,7 +61711,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1324": {
         "id": 1324,
         "name": {
             "zh_tw": "寶物箱子",
@@ -61780,7 +61833,7 @@ export const monstersData3 = [
         "spawns": [],
         "skills": []
     },
-    {
+    "1325": {
         "id": 1325,
         "name": {
             "zh_tw": "寶物箱子",
@@ -61882,7 +61935,7 @@ export const monstersData3 = [
         "spawns": [],
         "skills": []
     },
-    {
+    "1363": {
         "id": 1363,
         "name": {
             "zh_tw": "寶物箱子",
@@ -61984,7 +62037,7 @@ export const monstersData3 = [
         "spawns": [],
         "skills": []
     },
-    {
+    "1380": {
         "id": 1380,
         "name": {
             "zh_tw": "爆鑽傘蜥",
@@ -62340,7 +62393,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1391": {
         "id": 1391,
         "name": {
             "zh_tw": "啤酒企鵝",
@@ -62641,7 +62694,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1392": {
         "id": 1392,
         "name": {
             "zh_tw": "直升機哥布靈",
@@ -62842,7 +62895,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1493": {
         "id": 1493,
         "name": {
             "zh_tw": "森林妖姬",
@@ -63124,7 +63177,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1494": {
         "id": 1494,
         "name": {
             "zh_tw": "巨象甲蟲",
@@ -63347,7 +63400,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1495": {
         "id": 1495,
         "name": {
             "zh_tw": "石炮火樹",
@@ -63540,7 +63593,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1497": {
         "id": 1497,
         "name": {
             "zh_tw": "機木人",
@@ -63754,7 +63807,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1498": {
         "id": 1498,
         "name": {
             "zh_tw": "伍坦彈弓手",
@@ -63957,7 +64010,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1499": {
         "id": 1499,
         "name": {
             "zh_tw": "伍坦戰士",
@@ -64170,7 +64223,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1500": {
         "id": 1500,
         "name": {
             "zh_tw": "苗娃佩瑞絲",
@@ -64458,7 +64511,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1511": {
         "id": 1511,
         "name": {
             "zh_tw": "古埃及王",
@@ -64583,8 +64636,8 @@ export const monstersData3 = [
         ],
         "spawns": [
             {
-                "map_name": "b_pry_d04_z",
-                "description": "金字塔4樓",
+                "map_name": "b_pry_d06",
+                "description": "金字塔地下2樓",
                 "spawn_info": ""
             },
             {
@@ -65205,7 +65258,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1515": {
         "id": 1515,
         "name": {
             "zh_tw": "卡崙寶寶",
@@ -65408,7 +65461,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1582": {
         "id": 1582,
         "name": {
             "zh_tw": "惡魔波利",
@@ -65455,6 +65508,7 @@ export const monstersData3 = [
             "magic_defense": 91
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -65687,7 +65741,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1583": {
         "id": 1583,
         "name": {
             "zh_tw": "塔奧群卡",
@@ -65791,7 +65845,7 @@ export const monstersData3 = [
                 "rate": 0.01,
                 "icon_url": "images/items/4302.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "高風險"
             },
@@ -66178,7 +66232,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1686": {
         "id": 1686,
         "name": {
             "zh_tw": "獸人嬰兒",
@@ -66470,7 +66524,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "1687": {
         "id": 1687,
         "name": {
             "zh_tw": "綠變色龍",
@@ -66632,7 +66686,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "1960": {
         "id": 1960,
         "name": {
             "zh_tw": "魔力荊棘",
@@ -66679,6 +66733,7 @@ export const monstersData3 = [
             "magic_defense": 66
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "固定掉落",
@@ -66920,7 +66975,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2398": {
         "id": 2398,
         "name": {
             "zh_tw": "寶貝波利",
@@ -67067,7 +67122,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "2404": {
         "id": 2404,
         "name": {
             "zh_tw": "變異幽浮水母",
@@ -67193,7 +67248,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "2405": {
         "id": 2405,
         "name": {
             "zh_tw": "石斧海盜骷髏",
@@ -67309,7 +67364,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "2406": {
         "id": 2406,
         "name": {
             "zh_tw": "弱化的邪骸士兵",
@@ -67450,7 +67505,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "2450": {
         "id": 2450,
         "name": {
             "zh_tw": "盜賊波利",
@@ -67529,7 +67584,7 @@ export const monstersData3 = [
         "spawns": [],
         "skills": []
     },
-    {
+    "2604": {
         "id": 2604,
         "name": {
             "zh_tw": "雄壯腐屍戰俘",
@@ -67753,7 +67808,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2606": {
         "id": 2606,
         "name": {
             "zh_tw": "憤怒腐屍",
@@ -67988,7 +68043,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2608": {
         "id": 2608,
         "name": {
             "zh_tw": "迅捷溜溜猴",
@@ -68301,7 +68356,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2610": {
         "id": 2610,
         "name": {
             "zh_tw": "菁英森靈",
@@ -68486,7 +68541,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2611": {
         "id": 2611,
         "name": {
             "zh_tw": "憤怒伍坦戰士",
@@ -68664,7 +68719,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2613": {
         "id": 2613,
         "name": {
             "zh_tw": "迅捷狼",
@@ -68892,7 +68947,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2615": {
         "id": 2615,
         "name": {
             "zh_tw": "菁英樹精",
@@ -69133,7 +69188,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2616": {
         "id": 2616,
         "name": {
             "zh_tw": "憤怒狂暴野貓",
@@ -69339,7 +69394,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2618": {
         "id": 2618,
         "name": {
             "zh_tw": "雄壯白幽靈",
@@ -69603,7 +69658,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2620": {
         "id": 2620,
         "name": {
             "zh_tw": "憤怒邪骸浪人",
@@ -69894,7 +69949,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2628": {
         "id": 2628,
         "name": {
             "zh_tw": "雄壯螃蟹",
@@ -70126,7 +70181,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2632": {
         "id": 2632,
         "name": {
             "zh_tw": "雄壯盜蟲",
@@ -70327,7 +70382,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2633": {
         "id": 2633,
         "name": {
             "zh_tw": "菁英盜蟲",
@@ -70549,7 +70604,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2634": {
         "id": 2634,
         "name": {
             "zh_tw": "憤怒盜蟲",
@@ -70750,7 +70805,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2635": {
         "id": 2635,
         "name": {
             "zh_tw": "狡猾突變蛙",
@@ -70949,7 +71004,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2638": {
         "id": 2638,
         "name": {
             "zh_tw": "菁英白鼠",
@@ -71160,7 +71215,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2640": {
         "id": 2640,
         "name": {
             "zh_tw": "狡猾史汀",
@@ -71467,7 +71522,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2642": {
         "id": 2642,
         "name": {
             "zh_tw": "雄壯綠蒼蠅",
@@ -71655,7 +71710,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2644": {
         "id": 2644,
         "name": {
             "zh_tw": "憤怒鐘乳巨石怪",
@@ -71950,7 +72005,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2645": {
         "id": 2645,
         "name": {
             "zh_tw": "狡猾瓢蟲",
@@ -72172,7 +72227,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2646": {
         "id": 2646,
         "name": {
             "zh_tw": "迅捷魔菇",
@@ -72455,7 +72510,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2648": {
         "id": 2648,
         "name": {
             "zh_tw": "菁英邪骸士兵",
@@ -72763,7 +72818,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2649": {
         "id": 2649,
         "name": {
             "zh_tw": "憤怒邪骸士兵",
@@ -73050,7 +73105,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2651": {
         "id": 2651,
         "name": {
             "zh_tw": "迅捷鬼女",
@@ -73335,7 +73390,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2653": {
         "id": 2653,
         "name": {
             "zh_tw": "菁英青蛇",
@@ -73540,7 +73595,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2660": {
         "id": 2660,
         "name": {
             "zh_tw": "狡猾邪骸礦工",
@@ -73764,7 +73819,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2663": {
         "id": 2663,
         "name": {
             "zh_tw": "菁英黑蛇",
@@ -73994,7 +74049,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2668": {
         "id": 2668,
         "name": {
             "zh_tw": "菁英海獺",
@@ -74287,7 +74342,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2670": {
         "id": 2670,
         "name": {
             "zh_tw": "狡猾蠍子",
@@ -74508,7 +74563,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2671": {
         "id": 2671,
         "name": {
             "zh_tw": "迅捷小野豬",
@@ -74734,7 +74789,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2673": {
         "id": 2673,
         "name": {
             "zh_tw": "菁英野豬",
@@ -74961,7 +75016,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2674": {
         "id": 2674,
         "name": {
             "zh_tw": "憤怒泥人",
@@ -75270,7 +75325,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2678": {
         "id": 2678,
         "name": {
             "zh_tw": "菁英羅達蛙",
@@ -75434,7 +75489,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2679": {
         "id": 2679,
         "name": {
             "zh_tw": "憤怒羅達蛙",
@@ -75577,7 +75632,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2680": {
         "id": 2680,
         "name": {
             "zh_tw": "狡猾搖滾蝗蟲",
@@ -75767,7 +75822,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2687": {
         "id": 2687,
         "name": {
             "zh_tw": "雄壯諾可伊",
@@ -75804,9 +75859,9 @@ export const monstersData3 = [
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 360,
-            "hit_100_percent": 374,
-            "hp": "未知",
+            "flee_95_percent": 329,
+            "hit_100_percent": 342,
+            "hp": "???",
             "magic_attack": {
                 "max": 146,
                 "min": 116
@@ -75991,7 +76046,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2691": {
         "id": 2691,
         "name": {
             "zh_tw": "雄壯幽靈劍士",
@@ -76279,7 +76334,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2694": {
         "id": 2694,
         "name": {
             "zh_tw": "狡猾奈吉鳥",
@@ -76511,7 +76566,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2696": {
         "id": 2696,
         "name": {
             "zh_tw": "菁英波利",
@@ -76742,7 +76797,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2697": {
         "id": 2697,
         "name": {
             "zh_tw": "憤怒波利",
@@ -76952,7 +77007,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2698": {
         "id": 2698,
         "name": {
             "zh_tw": "狡猾波利",
@@ -77162,7 +77217,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2699": {
         "id": 2699,
         "name": {
             "zh_tw": "迅捷波利",
@@ -77419,7 +77474,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2703": {
         "id": 2703,
         "name": {
             "zh_tw": "狡猾波波利",
@@ -77640,7 +77695,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2705": {
         "id": 2705,
         "name": {
             "zh_tw": "雄壯毒魔菇",
@@ -77933,7 +77988,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2707": {
         "id": 2707,
         "name": {
             "zh_tw": "憤怒漂浮蟲",
@@ -78111,7 +78166,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2712": {
         "id": 2712,
         "name": {
             "zh_tw": "憤怒小雞",
@@ -78310,7 +78365,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2713": {
         "id": 2713,
         "name": {
             "zh_tw": "狡猾劍魚",
@@ -78500,7 +78555,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2714": {
         "id": 2714,
         "name": {
             "zh_tw": "迅捷畢帝特地龍",
@@ -78804,7 +78859,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2715": {
         "id": 2715,
         "name": {
             "zh_tw": "雄壯畢帝特地龍",
@@ -79066,7 +79121,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2718": {
         "id": 2718,
         "name": {
             "zh_tw": "狡猾大嘴鳥",
@@ -79284,7 +79339,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2719": {
         "id": 2719,
         "name": {
             "zh_tw": "迅捷帕莎納",
@@ -79323,7 +79378,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 369,
             "hit_100_percent": 355,
-            "hp": "未知",
+            "hp": "???",
             "magic_attack": {
                 "max": 151,
                 "min": 127
@@ -79604,7 +79659,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2720": {
         "id": 2720,
         "name": {
             "zh_tw": "雄壯苗娃佩瑞絲",
@@ -79893,7 +79948,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2722": {
         "id": 2722,
         "name": {
             "zh_tw": "憤怒獸人戰士",
@@ -80212,7 +80267,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2723": {
         "id": 2723,
         "name": {
             "zh_tw": "狡猾獸人腐屍",
@@ -80438,7 +80493,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2724": {
         "id": 2724,
         "name": {
             "zh_tw": "迅捷邪骸獸人",
@@ -80726,7 +80781,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2725": {
         "id": 2725,
         "name": {
             "zh_tw": "雄壯獸人女戰士",
@@ -80937,7 +80992,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2737": {
         "id": 2737,
         "name": {
             "zh_tw": "憤怒邪惡禮盒",
@@ -80974,8 +81029,8 @@ export const monstersData3 = [
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 310,
-            "hit_100_percent": 316,
+            "flee_95_percent": 287,
+            "hit_100_percent": 307,
             "hp": 439065,
             "magic_attack": {
                 "max": 102,
@@ -81221,7 +81276,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2739": {
         "id": 2739,
         "name": {
             "zh_tw": "迅捷木乃伊",
@@ -81550,7 +81605,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2740": {
         "id": 2740,
         "name": {
             "zh_tw": "雄壯木乃伊",
@@ -81837,7 +81892,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2741": {
         "id": 2741,
         "name": {
             "zh_tw": "菁英摩卡",
@@ -82063,7 +82118,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2748": {
         "id": 2748,
         "name": {
             "zh_tw": "狡猾米洛斯",
@@ -82340,7 +82395,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2749": {
         "id": 2749,
         "name": {
             "zh_tw": "迅捷米洛斯",
@@ -82659,7 +82714,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2753": {
         "id": 2753,
         "name": {
             "zh_tw": "狡猾邪惡箱",
@@ -82885,7 +82940,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2754": {
         "id": 2754,
         "name": {
             "zh_tw": "迅捷重金屬蝗蟲",
@@ -83127,7 +83182,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2757": {
         "id": 2757,
         "name": {
             "zh_tw": "憤怒人魚士兵",
@@ -83231,16 +83286,6 @@ export const monstersData3 = [
                 "icon_url": "images/items/1054.gif",
                 "slotCount": 0,
                 "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 1460,
-                "name": "德瑞尹長戟",
-                "rate": 0.1,
-                "icon_url": "images/items/1460.gif",
-                "slotCount": 2,
-                "slot": "雙手矛",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -83395,7 +83440,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2759": {
         "id": 2759,
         "name": {
             "zh_tw": "迅捷米杜沙",
@@ -83697,7 +83742,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2760": {
         "id": 2760,
         "name": {
             "zh_tw": "雄壯土撥鼠",
@@ -83917,7 +83962,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2761": {
         "id": 2761,
         "name": {
             "zh_tw": "菁英傀儡娃娃",
@@ -84159,7 +84204,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2763": {
         "id": 2763,
         "name": {
             "zh_tw": "狡猾馬爾杜克",
@@ -84198,7 +84243,7 @@ export const monstersData3 = [
             },
             "flee_95_percent": 366,
             "hit_100_percent": 363,
-            "hp": "未知",
+            "hp": "???",
             "magic_attack": {
                 "max": 259,
                 "min": 191
@@ -84457,7 +84502,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2765": {
         "id": 2765,
         "name": {
             "zh_tw": "雄壯曼陀羅魔花",
@@ -84625,7 +84670,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2767": {
         "id": 2767,
         "name": {
             "zh_tw": "憤怒狂暴米諾斯",
@@ -84738,7 +84783,7 @@ export const monstersData3 = [
                 "rate": 0.05,
                 "icon_url": "images/items/4201.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "保有暈眩"
             },
@@ -84946,7 +84991,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2768": {
         "id": 2768,
         "name": {
             "zh_tw": "狡猾魔鍋蛋",
@@ -85174,7 +85219,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2770": {
         "id": 2770,
         "name": {
             "zh_tw": "雄壯瘋兔",
@@ -85330,7 +85375,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "2771": {
         "id": 2771,
         "name": {
             "zh_tw": "菁英瘋兔",
@@ -85493,7 +85538,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2787": {
         "id": 2787,
         "name": {
             "zh_tw": "憤怒巨象甲蟲",
@@ -85681,7 +85726,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2790": {
         "id": 2790,
         "name": {
             "zh_tw": "雄壯蛇女伊絲",
@@ -85927,7 +85972,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2797": {
         "id": 2797,
         "name": {
             "zh_tw": "憤怒赤蒼蠅",
@@ -86299,7 +86344,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2798": {
         "id": 2798,
         "name": {
             "zh_tw": "狡猾蜂兵",
@@ -86484,7 +86529,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2800": {
         "id": 2800,
         "name": {
             "zh_tw": "雄壯鍬形蟲",
@@ -86670,7 +86715,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2802": {
         "id": 2802,
         "name": {
             "zh_tw": "憤怒蚯蚓",
@@ -86875,7 +86920,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2808": {
         "id": 2808,
         "name": {
             "zh_tw": "狡猾綠變色龍",
@@ -87060,7 +87105,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2809": {
         "id": 2809,
         "name": {
             "zh_tw": "迅捷將軍魔碑",
@@ -87349,7 +87394,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2812": {
         "id": 2812,
         "name": {
             "zh_tw": "憤怒巨石怪",
@@ -87597,7 +87642,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2813": {
         "id": 2813,
         "name": {
             "zh_tw": "狡猾刺刀哥布靈",
@@ -87844,7 +87889,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2814": {
         "id": 2814,
         "name": {
             "zh_tw": "迅捷刺刀哥布靈",
@@ -88133,7 +88178,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2823": {
         "id": 2823,
         "name": {
             "zh_tw": "狡猾綠腐屍",
@@ -88326,7 +88371,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2827": {
         "id": 2827,
         "name": {
             "zh_tw": "憤怒蝙蝠弓箭手",
@@ -88556,7 +88601,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2829": {
         "id": 2829,
         "name": {
             "zh_tw": "迅捷海豹寶寶",
@@ -88843,7 +88888,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2833": {
         "id": 2833,
         "name": {
             "zh_tw": "狡猾吸血蝙蝠",
@@ -89104,7 +89149,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2835": {
         "id": 2835,
         "name": {
             "zh_tw": "雄壯綠棉蟲",
@@ -89268,7 +89313,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2836": {
         "id": 2836,
         "name": {
             "zh_tw": "菁英綠棉蟲",
@@ -89468,7 +89513,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2838": {
         "id": 2838,
         "name": {
             "zh_tw": "狡猾闇神官",
@@ -89561,7 +89606,7 @@ export const monstersData3 = [
                 "rate": 0.05,
                 "icon_url": "images/items/4141.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "致命"
             },
@@ -89821,7 +89866,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2839": {
         "id": 2839,
         "name": {
             "zh_tw": "迅捷長老樹精",
@@ -90104,7 +90149,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2840": {
         "id": 2840,
         "name": {
             "zh_tw": "雄壯長老樹精",
@@ -90345,7 +90390,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2842": {
         "id": 2842,
         "name": {
             "zh_tw": "憤怒獵蠅",
@@ -90563,7 +90608,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2843": {
         "id": 2843,
         "name": {
             "zh_tw": "迅捷森林妖姬",
@@ -90877,7 +90922,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2845": {
         "id": 2845,
         "name": {
             "zh_tw": "菁英土波利",
@@ -91083,7 +91128,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2846": {
         "id": 2846,
         "name": {
             "zh_tw": "憤怒爆鑽傘蜥",
@@ -91399,7 +91444,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2847": {
         "id": 2847,
         "name": {
             "zh_tw": "狡猾紅蝙蝠",
@@ -91623,7 +91668,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2851": {
         "id": 2851,
         "name": {
             "zh_tw": "憤怒土人",
@@ -91867,7 +91912,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2854": {
         "id": 2854,
         "name": {
             "zh_tw": "雄壯小惡魔",
@@ -92158,7 +92203,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2855": {
         "id": 2855,
         "name": {
             "zh_tw": "菁英沙漠之狼",
@@ -92351,7 +92396,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2856": {
         "id": 2856,
         "name": {
             "zh_tw": "憤怒沙漠之狼",
@@ -92529,7 +92574,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2857": {
         "id": 2857,
         "name": {
             "zh_tw": "狡猾兵蟻",
@@ -92734,7 +92779,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2861": {
         "id": 2861,
         "name": {
             "zh_tw": "憤怒暗黑祭司",
@@ -92836,7 +92881,7 @@ export const monstersData3 = [
                 "rate": 0.15,
                 "icon_url": "images/items/2319.gif",
                 "slotCount": 1,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -93022,7 +93067,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2863": {
         "id": 2863,
         "name": {
             "zh_tw": "迅捷克瑞米",
@@ -93306,7 +93351,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2864": {
         "id": 2864,
         "name": {
             "zh_tw": "雄壯卡那多斯",
@@ -93548,7 +93593,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2865": {
         "id": 2865,
         "name": {
             "zh_tw": "菁英甜餅人",
@@ -93585,8 +93630,8 @@ export const monstersData3 = [
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 290,
-            "hit_100_percent": 302,
+            "flee_95_percent": 276,
+            "hit_100_percent": 296,
             "hp": 333056,
             "magic_attack": {
                 "max": 80,
@@ -93906,7 +93951,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2868": {
         "id": 2868,
         "name": {
             "zh_tw": "迅捷松鼠",
@@ -94154,7 +94199,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2869": {
         "id": 2869,
         "name": {
             "zh_tw": "雄壯松鼠",
@@ -94360,7 +94405,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2872": {
         "id": 2872,
         "name": {
             "zh_tw": "狡猾蒼蠅",
@@ -94524,7 +94569,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2877": {
         "id": 2877,
         "name": {
             "zh_tw": "狡猾卡拉特小丑",
@@ -94857,7 +94902,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2878": {
         "id": 2878,
         "name": {
             "zh_tw": "迅捷刺蝟蟲",
@@ -95084,7 +95129,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2884": {
         "id": 2884,
         "name": {
             "zh_tw": "菁英大腳熊",
@@ -95353,7 +95398,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2890": {
         "id": 2890,
         "name": {
             "zh_tw": "憤怒艾斯蜘蛛",
@@ -95584,7 +95629,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2891": {
         "id": 2891,
         "name": {
             "zh_tw": "狡猾艾吉歐蜈蚣",
@@ -95828,7 +95873,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2892": {
         "id": 2892,
         "name": {
             "zh_tw": "迅捷艾吉歐蜈蚣",
@@ -96114,7 +96159,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2899": {
         "id": 2899,
         "name": {
             "zh_tw": "憤怒虎蜥人",
@@ -96197,7 +96242,7 @@ export const monstersData3 = [
                 "rate": 0.05,
                 "icon_url": "images/items/4234.gif",
                 "slotCount": 0,
-                "slot": "盔甲",
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": "明鏡止水的"
             },
@@ -96347,7 +96392,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2902": {
         "id": 2902,
         "name": {
             "zh_tw": "雄壯白蟻",
@@ -96547,7 +96592,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2905": {
         "id": 2905,
         "name": {
             "zh_tw": "狡猾蝸牛",
@@ -96754,7 +96799,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "2907": {
         "id": 2907,
         "name": {
             "zh_tw": "雄壯鱷魚人",
@@ -96940,7 +96985,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3810": {
         "id": 3810,
         "name": {
             "zh_tw": "國王波利",
@@ -97268,7 +97313,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3811": {
         "id": 3811,
         "name": {
             "zh_tw": "巨大黃金波利",
@@ -97315,6 +97360,7 @@ export const monstersData3 = [
             "magic_defense": 10
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -97391,7 +97437,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3812": {
         "id": 3812,
         "name": {
             "zh_tw": "巨大萌萌波利",
@@ -97438,6 +97484,7 @@ export const monstersData3 = [
             "magic_defense": 10
         },
         "special_status": [
+            "mini",
             "主動攻擊",
             "可物理攻擊",
             "可移動",
@@ -97514,7 +97561,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3813": {
         "id": 3813,
         "name": {
             "zh_tw": "強化土波利",
@@ -97714,7 +97761,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3814": {
         "id": 3814,
         "name": {
             "zh_tw": "強化波波利",
@@ -97914,7 +97961,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3815": {
         "id": 3815,
         "name": {
             "zh_tw": "強化波利",
@@ -98103,7 +98150,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "3816": {
         "id": 3816,
         "name": {
             "zh_tw": "強化冰波利",
@@ -98324,7 +98371,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "20367": {
         "id": 20367,
         "name": {
             "zh_tw": "汙染幽靈劍士",
@@ -98674,7 +98721,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "20368": {
         "id": 20368,
         "name": {
             "zh_tw": "汙染幽靈弓箭手",
@@ -99010,7 +99057,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "20370": {
         "id": 20370,
         "name": {
             "zh_tw": "汙染史汀",
@@ -99328,7 +99375,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "20371": {
         "id": 20371,
         "name": {
             "zh_tw": "越獄腐屍",
@@ -99360,19 +99407,19 @@ export const monstersData3 = [
                 "str": 137,
                 "vit": 37
             },
-            "defense": 297,
+            "defense": 162,
             "exp": {
                 "base": "",
                 "job": ""
             },
             "flee_95_percent": 455,
             "hit_100_percent": 392,
-            "hp": 2375279,
+            "hp": 30138,
             "magic_attack": {
                 "max": 1882,
                 "min": 1144
             },
-            "magic_defense": 105
+            "magic_defense": 70
         },
         "special_status": [
             "主動攻擊",
@@ -99579,7 +99626,7 @@ export const monstersData3 = [
             }
         ]
     },
-    {
+    "20379": {
         "id": 20379,
         "name": {
             "zh_tw": "冰魔巫師",
@@ -99611,19 +99658,19 @@ export const monstersData3 = [
                 "str": 113,
                 "vit": 67
             },
-            "defense": 390,
+            "defense": 67,
             "exp": {
                 "base": "",
                 "job": ""
             },
             "flee_95_percent": 440,
             "hit_100_percent": 419,
-            "hp": 2418315,
+            "hp": 69300,
             "magic_attack": {
                 "max": 3092,
                 "min": 1828
             },
-            "magic_defense": 115
+            "magic_defense": 102
         },
         "special_status": [
             "主動攻擊",
@@ -99687,7 +99734,7 @@ export const monstersData3 = [
         ],
         "skills": []
     },
-    {
+    "20380": {
         "id": 20380,
         "name": {
             "zh_tw": "火魔巫師",
@@ -99719,19 +99766,19 @@ export const monstersData3 = [
                 "str": 119,
                 "vit": 16
             },
-            "defense": 237,
+            "defense": 67,
             "exp": {
                 "base": "",
                 "job": ""
             },
             "flee_95_percent": 446,
             "hit_100_percent": 418,
-            "hp": 2410282,
+            "hp": 64949,
             "magic_attack": {
                 "max": 3439,
                 "min": 2025
             },
-            "magic_defense": 118
+            "magic_defense": 102
         },
         "special_status": [
             "主動攻擊",
@@ -99795,5 +99842,4 @@ export const monstersData3 = [
         ],
         "skills": []
     }
-
-];
+}
