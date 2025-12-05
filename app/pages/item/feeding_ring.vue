@@ -41,7 +41,7 @@ export default {
           id: 'enchant',
           position: 'Lv2附魔',
           successRate: '50%',
-          failPenalty: '材料消失',
+          failPenalty: '附魔材料消失',
           cost: '10,000 Zeny',
           note: '★重點：機率100%，費用：10,000Zeny',
           items: [
