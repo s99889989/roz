@@ -474,8 +474,8 @@ const getMonsterImg = (id) => {
           <div class="flex justify-between">
             <!-- 圖片觸發 dropdown -->
             <img
-                :id="'dropdownHoverButton' + m.id"
-                :data-dropdown-toggle="'dropdownHover' + m.id"
+                :id="'dropdownHoverButtonO' + m.id"
+                :data-dropdown-toggle="'dropdownHoverO' + m.id"
                 data-dropdown-placement="right"
                 data-dropdown-trigger="hover"
                 :src="`/images/icon/map.png`"
@@ -485,11 +485,11 @@ const getMonsterImg = (id) => {
 
             <!-- Dropdown menu -->
             <div
-                :id="'dropdownHover' + m.id"
+                :id="'dropdownHoverO' + m.id"
                 class="z-10 hidden bg-black rounded-xs shadow-sm"
             >
               <ul class="py-1 text-sm text-gray-200"
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawns">
+                  :aria-labelledby="'dropdownHoverButtonO'+m.id" v-for="map in m.spawns">
                 <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">
                   <a class=" px-2 py-1 w-full hover:text-white">
                     {{ map.description }}({{ map.map_name }})
