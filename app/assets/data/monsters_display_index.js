@@ -119,7 +119,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "化學"
+                "card_prefix_name": "化學的"
             },
             {
                 "item_id": 7041,
@@ -248,8 +248,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 2,
             "exp": {
-                "base": "",
-                "job": ""
+                "base": 150,
+                "job": 30
             },
             "flee_95_percent": 178,
             "hit_100_percent": 203,
@@ -344,7 +344,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 12846,
@@ -684,7 +684,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "瑪特"
+                "card_prefix_name": "殉難者的"
             },
             {
                 "item_id": 400846,
@@ -883,7 +883,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "閃爍"
+                "card_prefix_name": "閃的"
             },
             {
                 "item_id": 500084,
@@ -1224,8 +1224,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 24,
             "exp": {
-                "base": 316,
-                "job": 42
+                "base": 158,
+                "job": 31
             },
             "flee_95_percent": 189,
             "hit_100_percent": 212,
@@ -1310,7 +1310,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "體質"
+                "card_prefix_name": "生的"
             },
             {
                 "item_id": 400836,
@@ -1638,7 +1638,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "哈德"
+                "card_prefix_name": "堅強的"
             },
             {
                 "item_id": 400862,
@@ -1892,7 +1892,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "快速"
+                "card_prefix_name": "速的"
             },
             {
                 "item_id": 700099,
@@ -2052,8 +2052,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 38,
             "exp": {
-                "base": 320,
-                "job": 49
+                "base": 160,
+                "job": 32
             },
             "flee_95_percent": 191,
             "hit_100_percent": 212,
@@ -2147,7 +2147,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "智慧"
+                "card_prefix_name": "智慧的"
             },
             {
                 "item_id": 400834,
@@ -2393,7 +2393,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "光"
+                "card_prefix_name": "發光二極體的"
             },
             {
                 "item_id": 400832,
@@ -2606,7 +2606,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球冠軍"
+                "card_prefix_name": "冠軍的"
             },
             {
                 "item_id": 400842,
@@ -2781,7 +2781,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "狼獾"
+                "card_prefix_name": "狼"
             },
             {
                 "item_id": 400827,
@@ -3015,7 +3015,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球孢子"
+                "card_prefix_name": "孢子之"
             },
             {
                 "item_id": 7033,
@@ -3305,7 +3305,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "恢復的"
+                "card_prefix_name": "回復的"
             },
             {
                 "item_id": 410402,
@@ -3583,7 +3583,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "國王"
+                "card_prefix_name": "雀王的"
             },
             {
                 "item_id": 620049,
@@ -4146,7 +4146,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球烏賊"
+                "card_prefix_name": "火星之"
             },
             {
                 "item_id": 400826,
@@ -4397,7 +4397,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "溫蒂"
+                "card_prefix_name": "強風的"
             },
             {
                 "item_id": 400859,
@@ -4555,8 +4555,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 62,
             "exp": {
-                "base": 2252,
-                "job": 594
+                "base": 1959,
+                "job": 391
             },
             "flee_95_percent": 241,
             "hit_100_percent": 269,
@@ -4634,7 +4634,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "殘爆"
+                "card_prefix_name": "獸性的"
             },
             {
                 "item_id": 420456,
@@ -4647,22 +4647,22 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 620039,
-                "name": "巨斧",
-                "rate": 0.05,
-                "icon_url": "images/items/620039.gif",
-                "slotCount": 4,
-                "slot": "雙手斧",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 530079,
                 "name": "破刃長戟",
                 "rate": "???",
                 "icon_url": "images/items/530079.gif",
                 "slotCount": 3,
                 "slot": "單手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 620039,
+                "name": "巨斧",
+                "rate": 0.05,
+                "icon_url": "images/items/620039.gif",
+                "slotCount": 4,
+                "slot": "雙手斧",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -4975,7 +4975,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "智慧"
+                "card_prefix_name": "機智的"
             },
             {
                 "item_id": 10015,
@@ -5183,7 +5183,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "不可觸碰"
+                "card_prefix_name": "無敵的"
             },
             {
                 "item_id": 400835,
@@ -5337,7 +5337,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 77,
             "exp": {
-                "base": 3178,
+                "base": 2786,
                 "job": 795
             },
             "flee_95_percent": 264,
@@ -5406,7 +5406,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "護身符"
+                "card_prefix_name": "護身符的"
             },
             {
                 "item_id": 440023,
@@ -5692,7 +5692,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "必殺攻擊力"
+                "card_prefix_name": "危急的"
             },
             {
                 "item_id": 410403,
@@ -6236,7 +6236,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 39,
             "exp": {
-                "base": 830,
+                "base": 532,
                 "job": 213
             },
             "flee_95_percent": 240,
@@ -6322,7 +6322,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "解毒的"
+                "card_prefix_name": "解毒之"
             },
             {
                 "item_id": 420452,
@@ -6748,7 +6748,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "飛翔"
+                "card_prefix_name": "羽毛長齊的"
             },
             {
                 "item_id": 700083,
@@ -7012,7 +7012,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "艾柳達伊特"
+                "card_prefix_name": "博學之"
             },
             {
                 "item_id": 400848,
@@ -7294,7 +7294,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "骷髏"
+                "card_prefix_name": "頭蓋形的"
             },
             {
                 "item_id": 400933,
@@ -7487,7 +7487,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "惡毒"
+                "card_prefix_name": "惡毒的"
             },
             {
                 "item_id": 510132,
@@ -7968,7 +7968,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "毒蛇"
+                "card_prefix_name": "毒蛇的"
             }
         ],
         "spawns": [
@@ -8092,7 +8092,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 101,
             "exp": {
-                "base": 8008,
+                "base": 9575,
                 "job": 2387
             },
             "flee_95_percent": 339,
@@ -8181,7 +8181,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "混合"
+                "card_prefix_name": "混合成的"
             },
             {
                 "item_id": 400864,
@@ -8190,6 +8190,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/400864.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 500098,
+                "name": "日本刀",
+                "rate": "???",
+                "icon_url": "images/items/500098.gif",
+                "slotCount": 2,
+                "slot": "單手劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -8443,7 +8453,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球永恆"
+                "card_prefix_name": "永恆的"
             }
         ],
         "spawns": [
@@ -8965,6 +8975,643 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1039": {
+        "id": 1039,
+        "name": {
+            "zh_tw": "巴風特",
+            "en": "BAPHOMET",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "暗"
+            },
+            "level": 105,
+            "race": "惡魔",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1039.gif",
+        "stats": {
+            "attack": {
+                "max": 3981,
+                "min": 2721
+            },
+            "base_stats": {
+                "agi": 125,
+                "dex": 186,
+                "int": 85,
+                "luk": 85,
+                "str": 120,
+                "vit": 30
+            },
+            "defense": 492,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 465,
+            "hit_100_percent": 423,
+            "hp": 91182000,
+            "magic_attack": {
+                "max": 2746,
+                "min": 1554
+            },
+            "magic_defense": 58
+        },
+        "special_status": [
+            "MVP",
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 714,
+                "name": "華麗金屬",
+                "rate": 2.5,
+                "icon_url": "images/items/714.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 984,
+                "name": "神之金屬",
+                "rate": 20.86,
+                "icon_url": "images/items/984.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 985,
+                "name": "鋁",
+                "rate": 27.16,
+                "icon_url": "images/items/985.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1466,
+                "name": "死神之鐮",
+                "rate": 2,
+                "icon_url": "images/items/1466.gif",
+                "slotCount": 0,
+                "slot": "雙手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1476,
+                "name": "死神之鐮",
+                "rate": 0.25,
+                "icon_url": "images/items/1476.gif",
+                "slotCount": 1,
+                "slot": "雙手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2256,
+                "name": "山羊頭盔",
+                "rate": 1.5,
+                "icon_url": "images/items/2256.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4147,
+                "name": "巴風特卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4147.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": 0,
+                "card_prefix_name": "像大鐮刀的"
+            },
+            {
+                "item_id": 5160,
+                "name": "山羊頭盔",
+                "rate": 0.05,
+                "icon_url": "images/items/5160.gif",
+                "slotCount": 1,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "b_maz_d03",
+                "description": "迷宮森林3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "b_maz_d03_z",
+                "description": "迷宮森林3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_GUIDEDATTACK",
+                "SkillNameZhTW": "必中攻擊",
+                "SkillID": 172,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 4,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "onspawn",
+                "ConditionValue": 0,
+                "Val1": 1101,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 6,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1431,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 6,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1431,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKBREATH",
+                "SkillNameZhTW": "黑暗呼吸",
+                "SkillID": 202,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "walk",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MO_BODYRELOCATION",
+                "SkillNameZhTW": "弓身彈影",
+                "SkillID": 264,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 200,
+                "Delay": 1000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 50,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKSTRIKE",
+                "SkillNameZhTW": "暗靈召喚",
+                "SkillID": 340,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 1000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ARMORBRAKE",
+                "SkillNameZhTW": "破壞鎧甲",
+                "SkillID": 344,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POWERUP",
+                "SkillNameZhTW": "力量提升",
+                "SkillID": 349,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "KN_BRANDISHSPEAR",
+                "SkillNameZhTW": "騎乘攻擊",
+                "SkillID": 57,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EARTHQUAKE",
+                "SkillNameZhTW": "地震連繫",
+                "SkillID": 653,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 2000,
+                "Delay": 30000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EARTHQUAKE",
+                "SkillNameZhTW": "地震連繫",
+                "SkillID": 653,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 2000,
+                "Delay": 30000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_HELLJUDGEMENT",
+                "SkillNameZhTW": "死亡天譴",
+                "SkillID": 662,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 800,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_HELLJUDGEMENT",
+                "SkillNameZhTW": "死亡天譴",
+                "SkillID": 662,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ALLHEAL",
+                "SkillNameZhTW": "生命之流",
+                "SkillID": 687,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 3000,
+                "Delay": 100000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "damagedgt",
+                "ConditionValue": 50000,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_VERMILION",
+                "SkillNameZhTW": "怒雷強擊",
+                "SkillID": 85,
+                "SkillLv": 21,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 2000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_VERMILION",
+                "SkillNameZhTW": "怒雷強擊",
+                "SkillID": 85,
+                "SkillLv": 21,
+                "Rate": "50.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 2000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_VERMILION",
+                "SkillNameZhTW": "怒雷強擊",
+                "SkillID": 85,
+                "SkillLv": 21,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 2000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            }
+        ]
+    },
     "1040": {
         "id": 1040,
         "name": {
@@ -9085,7 +9732,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "堅韌"
+                "card_prefix_name": "固體的"
             },
             {
                 "item_id": 400856,
@@ -9340,7 +9987,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "狂暴"
+                "card_prefix_name": "古代的"
             },
             {
                 "item_id": 400868,
@@ -9717,7 +10364,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球海曼"
+                "card_prefix_name": "英雄的"
             },
             {
                 "item_id": 400832,
@@ -9970,11 +10617,11 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "治療術"
+                "card_prefix_name": "治療的"
             },
             {
                 "item_id": 410400,
-                "name": "美人魚耳機(歸屬)",
+                "name": "(服飾)美人魚耳機(歸屬)",
                 "rate": "???",
                 "icon_url": "images/items/410400.gif",
                 "slotCount": 0,
@@ -10256,7 +10903,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "冰凍"
+                "card_prefix_name": "解凍的"
             },
             {
                 "item_id": 550125,
@@ -10451,6 +11098,623 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1046": {
+        "id": 1046,
+        "name": {
+            "zh_tw": "死靈",
+            "en": "DOPPELGANGER",
+            "ko_kr": "도플갱어(MVP)"
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "暗"
+            },
+            "level": 92,
+            "race": "惡魔",
+            "size": "中"
+        },
+        "image_url": "images/monsters/1046.gif",
+        "stats": {
+            "attack": {
+                "max": 2523,
+                "min": 2523
+            },
+            "base_stats": {
+                "agi": 122,
+                "dex": 203,
+                "int": 67,
+                "luk": 72,
+                "str": 122,
+                "vit": 105
+            },
+            "defense": 295,
+            "exp": {
+                "base": 7607000,
+                "job": 899009
+            },
+            "flee_95_percent": 489,
+            "hit_100_percent": 428,
+            "hp": 62923671,
+            "magic_attack": {
+                "max": 1673,
+                "min": 967
+            },
+            "magic_defense": 103
+        },
+        "special_status": [
+            "MVP",
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 984,
+                "name": "神之金屬",
+                "rate": 13.5,
+                "icon_url": "images/items/984.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 985,
+                "name": "鋁",
+                "rate": 18.43,
+                "icon_url": "images/items/985.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1168,
+                "name": "巨大雙手劍",
+                "rate": 0.75,
+                "icon_url": "images/items/1168.gif",
+                "slotCount": 0,
+                "slot": "雙手劍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2258,
+                "name": "尖角髮圈",
+                "rate": 1.75,
+                "icon_url": "images/items/2258.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 27206,
+                "name": "死靈卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/27206.gif",
+                "slotCount": 0,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": "爆漢的"
+            },
+            {
+                "item_id": 630036,
+                "name": "騎士長矛",
+                "rate": 2.75,
+                "icon_url": "images/items/630036.gif",
+                "slotCount": 2,
+                "slot": "雙手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "b_gef_d01",
+                "description": "吉芬地下密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "b_gef_d01_z",
+                "description": "吉芬地下密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "BS_HAMMERFALL",
+                "SkillNameZhTW": "大地之擊",
+                "SkillID": 110,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "BS_HAMMERFALL",
+                "SkillNameZhTW": "大地之擊",
+                "SkillID": 110,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "BS_HAMMERFALL",
+                "SkillNameZhTW": "大地之擊",
+                "SkillID": 110,
+                "SkillLv": 10,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CRITICALSLASH",
+                "SkillNameZhTW": "無視防禦攻擊",
+                "SkillID": 170,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1427,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1427,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "CR_AUTOGUARD",
+                "SkillNameZhTW": "自動防禦",
+                "SkillID": 249,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 300000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "CR_AUTOGUARD",
+                "SkillNameZhTW": "自動防禦",
+                "SkillID": 249,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 300000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "longrangeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "walk",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "friend",
+                "ConditionType": "friendhpltmaxrate",
+                "ConditionValue": 60,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "friend",
+                "ConditionType": "friendhpltmaxrate",
+                "ConditionValue": 60,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_DECAGI",
+                "SkillNameZhTW": "緩速術",
+                "SkillID": 30,
+                "SkillLv": 48,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 5,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_DECAGI",
+                "SkillNameZhTW": "緩速術",
+                "SkillID": 30,
+                "SkillLv": 48,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 5,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ARMORBRAKE",
+                "SkillNameZhTW": "破壞鎧甲",
+                "SkillID": 344,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POWERUP",
+                "SkillNameZhTW": "力量提升",
+                "SkillID": 349,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "LK_SPIRALPIERCE",
+                "SkillNameZhTW": "螺旋擊刺",
+                "SkillID": 397,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 1000,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 36,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "KN_TWOHANDQUICKEN",
+                "SkillNameZhTW": "雙手劍攻擊速度增加",
+                "SkillID": 60,
+                "SkillLv": 30,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 120000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            }
+        ]
+    },
     "1047": {
         "id": 1047,
         "name": {
@@ -10547,7 +11811,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "惡魔之眼"
+                "card_prefix_name": "觀看者之"
             },
             {
                 "item_id": 460068,
@@ -10760,7 +12024,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "僵硬的"
+                "card_prefix_name": "堅硬的"
             },
             {
                 "item_id": 400849,
@@ -11074,13 +12338,13 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "超異"
+                "card_prefix_name": "額外的"
             },
             {
-                "item_id": 400831,
-                "name": "(服飾)蛋殼小雞玩偶(歸屬)",
+                "item_id": 400830,
+                "name": "(服飾)跳躍的小雞(歸屬)",
                 "rate": "???",
-                "icon_url": "images/items/400831.gif",
+                "icon_url": "images/items/400830.gif",
                 "slotCount": 0,
                 "slot": "頭上",
                 "enchantment_slots": 0,
@@ -11268,7 +12532,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "動力"
+                "card_prefix_name": "沖的"
             },
             {
                 "item_id": 5015,
@@ -11295,6 +12559,16 @@ export const monstersDisplayIndex = {
                 "name": "(服飾)跳躍的小雞(歸屬)",
                 "rate": "???",
                 "icon_url": "images/items/400830.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 400831,
+                "name": "(服飾)蛋殼小雞玩偶(歸屬)",
+                "rate": "???",
+                "icon_url": "images/items/400831.gif",
                 "slotCount": 0,
                 "slot": "頭上",
                 "enchantment_slots": 0,
@@ -11484,7 +12758,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "迅速"
+                "card_prefix_name": "快的"
             },
             {
                 "item_id": 450347,
@@ -11703,8 +12977,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 16,
             "exp": {
-                "base": 348,
-                "job": 72
+                "base": 174,
+                "job": 34
             },
             "flee_95_percent": 203,
             "hit_100_percent": 234,
@@ -11779,7 +13053,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "熟練"
+                "card_prefix_name": "靈巧的"
             },
             {
                 "item_id": 530056,
@@ -12002,7 +13276,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "薛魯德"
+                "card_prefix_name": "機靈的"
             },
             {
                 "item_id": 436016,
@@ -12251,7 +13525,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球海爾梅斯"
+                "card_prefix_name": "賀密士之"
             },
             {
                 "item_id": 600048,
@@ -12480,7 +13754,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "精力旺盛"
+                "card_prefix_name": "有活力的"
             },
             {
                 "item_id": 410401,
@@ -12620,7 +13894,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 26,
             "exp": {
-                "base": "",
+                "base": 423,
                 "job": ""
             },
             "flee_95_percent": 229,
@@ -12716,7 +13990,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "隱匿"
+                "card_prefix_name": "隱匿的"
             },
             {
                 "item_id": 510131,
@@ -12923,7 +14197,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 40,
             "exp": {
-                "base": 1352,
+                "base": 938,
                 "job": 347
             },
             "flee_95_percent": 233,
@@ -13001,7 +14275,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球光芒"
+                "card_prefix_name": "閃爍之"
             },
             {
                 "item_id": 7182,
@@ -13308,7 +14582,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "沉默"
+                "card_prefix_name": "靜寂的"
             },
             {
                 "item_id": 420455,
@@ -13580,7 +14854,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球巨屍"
+                "card_prefix_name": "巨人之"
             },
             {
                 "item_id": 400839,
@@ -13873,7 +15147,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "睡眠"
+                "card_prefix_name": "不眠的"
             },
             {
                 "item_id": 510132,
@@ -14015,6 +15289,89 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1062": {
+        "id": 1062,
+        "name": {
+            "zh_tw": "聖誕波利",
+            "en": "PORING_",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "聖"
+            },
+            "level": 50,
+            "race": "植物",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1062.gif",
+        "stats": {
+            "attack": {
+                "max": 9,
+                "min": 7
+            },
+            "base_stats": {
+                "agi": 1,
+                "dex": 6,
+                "int": 10,
+                "luk": 5,
+                "str": 6,
+                "vit": 1
+            },
+            "defense": 220,
+            "exp": {
+                "base": 2500,
+                "job": 1
+            },
+            "flee_95_percent": 178,
+            "hit_100_percent": 203,
+            "hp": 25000,
+            "magic_attack": {
+                "max": 13,
+                "min": 11
+            },
+            "magic_defense": 80
+        },
+        "special_status": [],
+        "drops": [
+            {
+                "item_id": 1002555,
+                "name": "【X】字卡",
+                "rate": "???",
+                "icon_url": "images/items/1002555.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
     "1063": {
         "id": 1063,
         "name": {
@@ -14049,8 +15406,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 18,
             "exp": {
-                "base": 300,
-                "job": 32
+                "base": 150,
+                "job": 30
             },
             "flee_95_percent": 182,
             "hit_100_percent": 207,
@@ -14134,7 +15491,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 420453,
@@ -14380,7 +15737,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "原子"
+                "card_prefix_name": "原子化的"
             },
             {
                 "item_id": 510132,
@@ -14573,7 +15930,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "交叉"
+                "card_prefix_name": "交叉的"
             },
             {
                 "item_id": 450310,
@@ -15014,7 +16371,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "火焰"
+                "card_prefix_name": "可燃性的"
             },
             {
                 "item_id": 450348,
@@ -15276,7 +16633,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "永恆"
+                "card_prefix_name": "不朽的"
             },
             {
                 "item_id": 400825,
@@ -15557,7 +16914,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "血腥"
+                "card_prefix_name": "殘酷的"
             }
         ],
         "spawns": [
@@ -15929,7 +17286,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "水精靈"
+                "card_prefix_name": "水棲的"
             },
             {
                 "item_id": 500112,
@@ -16253,7 +17610,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "敏捷"
+                "card_prefix_name": "強壯的"
             },
             {
                 "item_id": 400824,
@@ -16506,7 +17863,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "低價買進"
+                "card_prefix_name": "低價買進的"
             },
             {
                 "item_id": 7477,
@@ -16746,7 +18103,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "癌症"
+                "card_prefix_name": "巨蟹宮的"
             },
             {
                 "item_id": 7049,
@@ -16945,7 +18302,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "殼"
+                "card_prefix_name": "拾貝殼的"
             },
             {
                 "item_id": 7049,
@@ -17134,7 +18491,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "金"
+                "card_prefix_name": "敏的"
             }
         ],
         "spawns": [
@@ -17327,7 +18684,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "毒物"
+                "card_prefix_name": "中毒的"
             },
             {
                 "item_id": 7033,
@@ -20074,7 +21431,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球德夫"
+                "card_prefix_name": "聾的"
             }
         ],
         "spawns": [
@@ -20524,7 +21881,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭盔",
                 "enchantment_slots": 0,
-                "card_prefix_name": "中性"
+                "card_prefix_name": "中性的"
             },
             {
                 "item_id": 10018,
@@ -21087,7 +22444,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "專家"
+                "card_prefix_name": "專精的"
             },
             {
                 "item_id": 420455,
@@ -21449,7 +22806,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球國王"
+                "card_prefix_name": "國王的"
             },
             {
                 "item_id": 5125,
@@ -21687,7 +23044,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "高級洛基"
+                "card_prefix_name": "高幸運的"
             },
             {
                 "item_id": 12846,
@@ -21956,6 +23313,16 @@ export const monstersDisplayIndex = {
             {
                 "item_id": 2607,
                 "name": "髮夾",
+                "rate": 15,
+                "icon_url": "images/items/2607.gif",
+                "slotCount": 1,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2607,
+                "name": "髮夾",
                 "rate": "???",
                 "icon_url": "images/items/2607.gif",
                 "slotCount": 1,
@@ -21971,7 +23338,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "聚光"
+                "card_prefix_name": "精彩的"
             },
             {
                 "item_id": 480569,
@@ -22282,7 +23649,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "狼人"
+                "card_prefix_name": "狼人的"
             }
         ],
         "spawns": [
@@ -22603,7 +23970,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抵抗魔法"
+                "card_prefix_name": "抵抗著迷魔法力的"
             }
         ],
         "spawns": [
@@ -22851,7 +24218,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球戰神"
+                "card_prefix_name": "雅典娜之"
             },
             {
                 "item_id": 420454,
@@ -23077,7 +24444,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "颶風"
+                "card_prefix_name": "颶風的"
             },
             {
                 "item_id": 420462,
@@ -23313,7 +24680,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "神聖"
+                "card_prefix_name": "神聖的"
             },
             {
                 "item_id": 400955,
@@ -23751,7 +25118,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "卓越的"
+                "card_prefix_name": "佳的"
             },
             {
                 "item_id": 510130,
@@ -23966,7 +25333,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "邪惡"
+                "card_prefix_name": "魔鬼的"
             }
         ],
         "spawns": [
@@ -24468,8 +25835,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 114,
             "exp": {
-                "base": 10012,
-                "job": 3008
+                "base": 13504,
+                "job": 2475
             },
             "flee_95_percent": 301,
             "hit_100_percent": 326,
@@ -24767,8 +26134,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 58,
             "exp": {
-                "base": 2486,
-                "job": 696
+                "base": 2620,
+                "job": 481
             },
             "flee_95_percent": 257,
             "hit_100_percent": 276,
@@ -24857,7 +26224,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "催眠"
+                "card_prefix_name": "催眠的"
             },
             {
                 "item_id": 10017,
@@ -25125,7 +26492,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球流氓"
+                "card_prefix_name": "流氓之"
             },
             {
                 "item_id": 470230,
@@ -25462,7 +26829,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "殺蟲"
+                "card_prefix_name": "殺蟲劑的"
             },
             {
                 "item_id": 420459,
@@ -25712,7 +27079,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球泥人"
+                "card_prefix_name": "睡魔之"
             },
             {
                 "item_id": 420458,
@@ -25983,7 +27350,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "颶風"
+                "card_prefix_name": "颶風的"
             },
             {
                 "item_id": 420457,
@@ -26212,7 +27579,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球沙漠"
+                "card_prefix_name": "沙漠之"
             },
             {
                 "item_id": 400829,
@@ -26437,7 +27804,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "水精靈"
+                "card_prefix_name": "水生的"
             },
             {
                 "item_id": 5011,
@@ -26659,6 +28026,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": "???",
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 984,
                 "name": "神之金屬",
                 "rate": 0.01,
@@ -26706,7 +28083,17 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "暗黑"
+                "card_prefix_name": "預視的"
+            },
+            {
+                "item_id": 420573,
+                "name": "(服飾)調皮惡魔之影(歸屬)",
+                "rate": "???",
+                "icon_url": "images/items/420573.gif",
+                "slotCount": 0,
+                "slot": "頭下",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
             },
             {
                 "item_id": 450314,
@@ -26715,6 +28102,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/450314.gif",
                 "slotCount": 1,
                 "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 630035,
+                "name": "雙刃長戟",
+                "rate": "???",
+                "icon_url": "images/items/630035.gif",
+                "slotCount": 2,
+                "slot": "雙手矛",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -26935,7 +28332,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 85,
             "exp": {
-                "base": 4426,
+                "base": 3657,
                 "job": 1315
             },
             "flee_95_percent": 312,
@@ -27012,7 +28409,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球風靈之矛"
+                "card_prefix_name": "西風騎士的"
             },
             {
                 "item_id": 400874,
@@ -27288,7 +28685,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抗水屬性"
+                "card_prefix_name": "不毛之地"
             },
             {
                 "item_id": 7006,
@@ -27660,7 +29057,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球無極"
+                "card_prefix_name": "無限之"
             },
             {
                 "item_id": 5019,
@@ -28186,7 +29583,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "靈巧"
+                "card_prefix_name": "靈巧的"
             },
             {
                 "item_id": 400828,
@@ -28353,7 +29750,7 @@ export const monstersDisplayIndex = {
                 "str": 46,
                 "vit": 46
             },
-            "defense": 69,
+            "defense": 89,
             "exp": {
                 "base": 5990,
                 "job": 1758
@@ -28365,7 +29762,7 @@ export const monstersDisplayIndex = {
                 "max": 163,
                 "min": 143
             },
-            "magic_defense": 50
+            "magic_defense": 65
         },
         "special_status": [
             "偵測隱匿",
@@ -28442,7 +29839,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球溫斯"
+                "card_prefix_name": "溫暖之"
             },
             {
                 "item_id": 600068,
@@ -28685,7 +30082,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "送信者"
+                "card_prefix_name": "修行者的"
             },
             {
                 "item_id": 610067,
@@ -29180,7 +30577,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球女巫"
+                "card_prefix_name": "巫之"
             },
             {
                 "item_id": 5015,
@@ -29356,7 +30753,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 88,
             "exp": {
-                "base": "",
+                "base": 11329,
                 "job": ""
             },
             "flee_95_percent": 336,
@@ -29380,12 +30777,12 @@ export const monstersDisplayIndex = {
         ],
         "drops": [
             {
-                "item_id": 450348,
-                "name": "鐵製鎧甲",
-                "rate": "???",
-                "icon_url": "images/items/450348.gif",
-                "slotCount": 1,
-                "slot": "鎧甲",
+                "item_id": 509,
+                "name": "白色藥草",
+                "rate": 10,
+                "icon_url": "images/items/509.gif",
+                "slotCount": 0,
+                "slot": "-",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -29400,6 +30797,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 2217,
+                "name": "聖職之帽",
+                "rate": 0.05,
+                "icon_url": "images/items/2217.gif",
+                "slotCount": 1,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 4141,
                 "name": "闇神官卡片",
                 "rate": 0.01,
@@ -29407,7 +30814,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "致命"
+                "card_prefix_name": "致命的"
             },
             {
                 "item_id": 7478,
@@ -29426,6 +30833,36 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/401075.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 450348,
+                "name": "鐵製鎧甲",
+                "rate": "???",
+                "icon_url": "images/items/450348.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 480381,
+                "name": "斗篷",
+                "rate": "???",
+                "icon_url": "images/items/480381.gif",
+                "slotCount": 1,
+                "slot": "披肩",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 480382,
+                "name": "抗魔斗篷",
+                "rate": 0.01,
+                "icon_url": "images/items/480382.gif",
+                "slotCount": 0,
+                "slot": "披肩",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -29749,8 +31186,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 99,
             "exp": {
-                "base": 4494,
-                "job": 1247
+                "base": 5203,
+                "job": 954
             },
             "flee_95_percent": 312,
             "hit_100_percent": 315,
@@ -29844,7 +31281,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "費舍"
+                "card_prefix_name": "魔鬼之"
             },
             {
                 "item_id": 630044,
@@ -30073,7 +31510,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "鐵盾"
+                "card_prefix_name": "保護的"
             }
         ],
         "spawns": [
@@ -30442,7 +31879,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "幽靈"
+                "card_prefix_name": "昏黑的"
             },
             {
                 "item_id": 450317,
@@ -30895,7 +32332,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "命令"
+                "card_prefix_name": "正統的"
             }
         ],
         "spawns": [
@@ -31162,7 +32599,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 436013,
@@ -31427,7 +32864,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 5010,
@@ -31702,7 +33139,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 5088,
@@ -31967,7 +33404,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 5087,
@@ -32222,7 +33659,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 5089,
@@ -32463,7 +33900,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "輝煌"
+                "card_prefix_name": "光榮的"
             },
             {
                 "item_id": 7021,
@@ -32623,7 +34060,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 52,
             "exp": {
-                "base": 996,
+                "base": 651,
                 "job": 248
             },
             "flee_95_percent": 237,
@@ -32710,7 +34147,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "沉重"
+                "card_prefix_name": "重的"
             },
             {
                 "item_id": 400841,
@@ -32859,7 +34296,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 84,
             "exp": {
-                "base": 4124,
+                "base": 3367,
                 "job": 1220
             },
             "flee_95_percent": 306,
@@ -32958,7 +34395,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "神視者"
+                "card_prefix_name": "透視的"
             }
         ],
         "spawns": [
@@ -33206,7 +34643,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "火焰鐵盾"
+                "card_prefix_name": "不燃燒的"
             },
             {
                 "item_id": 450313,
@@ -33475,7 +34912,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "弗羅姆地獄"
+                "card_prefix_name": "激烈的"
             },
             {
                 "item_id": 5017,
@@ -33484,6 +34921,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/5017.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 15281,
+                "name": "卡利斯格騎士團鎧甲",
+                "rate": "???",
+                "icon_url": "images/items/15281.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -33785,7 +35232,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "詛咒"
+                "card_prefix_name": "咒罵的"
             },
             {
                 "item_id": 7031,
@@ -33971,7 +35418,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 90,
             "exp": {
-                "base": 7010,
+                "base": 7741,
                 "job": 1973
             },
             "flee_95_percent": 305,
@@ -34071,7 +35518,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球力量"
+                "card_prefix_name": "有力量的"
             },
             {
                 "item_id": 510131,
@@ -34366,7 +35813,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "沉默"
+                "card_prefix_name": "不怕"
             }
         ],
         "spawns": [
@@ -34660,7 +36107,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "冰"
+                "card_prefix_name": "冰的"
             },
             {
                 "item_id": 400823,
@@ -34877,7 +36324,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "風暴衝擊"
+                "card_prefix_name": "疾風的"
             },
             {
                 "item_id": 10003,
@@ -35164,7 +36611,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球幽靈"
+                "card_prefix_name": "鬼魂之"
             },
             {
                 "item_id": 5141,
@@ -35400,7 +36847,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吉尼斯"
+                "card_prefix_name": "魔神的"
             }
         ],
         "spawns": [
@@ -35564,6 +37011,16 @@ export const monstersDisplayIndex = {
         ],
         "drops": [
             {
+                "item_id": 601,
+                "name": "蒼蠅翅膀",
+                "rate": 5,
+                "icon_url": "images/items/601.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 1017,
                 "name": "鼠鬚",
                 "rate": 45,
@@ -35611,7 +37068,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球教士"
+                "card_prefix_name": "牧士之"
             },
             {
                 "item_id": 5009,
@@ -35915,7 +37372,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "綠色"
+                "card_prefix_name": "綠化之"
             }
         ],
         "spawns": [
@@ -36253,7 +37710,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球阻擋"
+                "card_prefix_name": "反射的"
             }
         ],
         "spawns": [
@@ -36839,7 +38296,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "石化"
+                "card_prefix_name": "加補的"
             },
             {
                 "item_id": 400935,
@@ -37115,7 +38572,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "泰斗"
+                "card_prefix_name": "巨人的"
             },
             {
                 "item_id": 6254,
@@ -37435,7 +38892,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "急速"
+                "card_prefix_name": "匆匆的"
             }
         ],
         "spawns": [
@@ -38221,6 +39678,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 500112,
+                "name": "圓柄馬刀",
+                "rate": "???",
+                "icon_url": "images/items/500112.gif",
+                "slotCount": 3,
+                "slot": "單手劍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 1002445,
                 "name": "火焰纏繞的原木",
                 "rate": "???",
@@ -38453,7 +39920,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抗聖屬性"
+                "card_prefix_name": "可惡的"
             },
             {
                 "item_id": 410460,
@@ -38708,7 +40175,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "天使"
+                "card_prefix_name": "天使的"
             },
             {
                 "item_id": 410459,
@@ -38933,7 +40400,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球伊夫利特"
+                "card_prefix_name": "惡魔之"
             },
             {
                 "item_id": 7110,
@@ -38966,22 +40433,22 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 590082,
-                "name": "流星錘",
-                "rate": "???",
-                "icon_url": "images/items/590082.gif",
-                "slotCount": 3,
-                "slot": "鈍器",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 530079,
                 "name": "破刃長戟",
                 "rate": "???",
                 "icon_url": "images/items/530079.gif",
                 "slotCount": 3,
                 "slot": "單手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 590082,
+                "name": "流星錘",
+                "rate": "???",
+                "icon_url": "images/items/590082.gif",
+                "slotCount": 3,
+                "slot": "鈍器",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -39211,7 +40678,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 99,
             "exp": {
-                "base": "",
+                "base": 14167,
                 "job": ""
             },
             "flee_95_percent": 327,
@@ -39290,7 +40757,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "龍騎士"
+                "card_prefix_name": "龍騎兵"
             },
             {
                 "item_id": 6260,
@@ -39571,7 +41038,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球龍騎士"
+                "card_prefix_name": "龍騎兵之"
             },
             {
                 "item_id": 590083,
@@ -39709,6 +41176,497 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1157": {
+        "id": 1157,
+        "name": {
+            "zh_tw": "法老王",
+            "en": "PHARAOH",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "暗"
+            },
+            "level": 127,
+            "race": "人形",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1157.gif",
+        "stats": {
+            "attack": {
+                "max": 2132,
+                "min": 1482
+            },
+            "base_stats": {
+                "agi": 102,
+                "dex": 173,
+                "int": 142,
+                "luk": 102,
+                "str": 98,
+                "vit": 96
+            },
+            "defense": 186,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 462,
+            "hit_100_percent": 407,
+            "hp": 128587500,
+            "magic_attack": {
+                "max": 2544,
+                "min": 1474
+            },
+            "magic_defense": 403
+        },
+        "special_status": [
+            "MVP",
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 1231,
+                "name": "華麗短劍",
+                "rate": 0.4,
+                "icon_url": "images/items/1231.gif",
+                "slotCount": 0,
+                "slot": "短劍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2327,
+                "name": "天衣 月舞",
+                "rate": 0.75,
+                "icon_url": "images/items/2327.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4148,
+                "name": "法老王卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4148.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": 0,
+                "card_prefix_name": "麒麟的"
+            },
+            {
+                "item_id": 5002,
+                "name": "首領冠冕",
+                "rate": 2.5,
+                "icon_url": "images/items/5002.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7113,
+                "name": "破碎的法老王象徵",
+                "rate": 29.1,
+                "icon_url": "images/items/7113.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7114,
+                "name": "杜唐卡門面具",
+                "rate": 12.5,
+                "icon_url": "images/items/7114.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "b_sp_d05",
+                "description": "人面獅身像地下5樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "b_sp_d05_z",
+                "description": "人面獅身像地下5樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "AC_CHARGEARROW",
+                "SkillNameZhTW": "衝鋒箭",
+                "SkillID": 148,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GUIDEDATTACK",
+                "SkillNameZhTW": "必中攻擊",
+                "SkillID": 172,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 6,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1458,
+                "Val2": 1464,
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 6,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1458,
+                "Val2": 1464,
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKBLESSING",
+                "SkillNameZhTW": "黑暗賜福",
+                "SkillID": 203,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_THUNDERSTORM",
+                "SkillNameZhTW": "雷爆術",
+                "SkillID": 21,
+                "SkillLv": 9,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "walk",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKSTRIKE",
+                "SkillNameZhTW": "暗靈召喚",
+                "SkillID": 340,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKSTRIKE",
+                "SkillNameZhTW": "暗靈召喚",
+                "SkillID": 340,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POWERUP",
+                "SkillNameZhTW": "力量提升",
+                "SkillID": 349,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "1158": {
         "id": 1158,
         "name": {
@@ -39829,7 +41787,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "詠唱之下"
+                "card_prefix_name": "投擲"
             },
             {
                 "item_id": 6096,
@@ -40055,7 +42013,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "全然"
+                "card_prefix_name": "完美的"
             }
         ],
         "spawns": [
@@ -40623,7 +42581,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "颶風"
+                "card_prefix_name": "颶風的"
             },
             {
                 "item_id": 420461,
@@ -40882,7 +42840,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "昏睡"
+                "card_prefix_name": "沈寂的"
             }
         ],
         "spawns": [
@@ -41044,7 +43002,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "無敵"
+                "card_prefix_name": "免除的"
             },
             {
                 "item_id": 7054,
@@ -41053,16 +43011,6 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/7054.gif",
                 "slotCount": 0,
                 "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 401080,
-                "name": "(服飾)公會會員招募帽(歸屬)",
-                "rate": "???",
-                "icon_url": "images/items/401080.gif",
-                "slotCount": 0,
-                "slot": "頭上",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -41077,12 +43025,32 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 401080,
+                "name": "(服飾)公會會員招募帽(歸屬)",
+                "rate": "???",
+                "icon_url": "images/items/401080.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 450310,
                 "name": "鋼鐵鎖子甲",
                 "rate": 0.01,
                 "icon_url": "images/items/450310.gif",
                 "slotCount": 1,
                 "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 500098,
+                "name": "日本刀",
+                "rate": "???",
+                "icon_url": "images/items/500098.gif",
+                "slotCount": 2,
+                "slot": "單手劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -41402,7 +43370,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "混沌"
+                "card_prefix_name": "大混亂的"
             },
             {
                 "item_id": 7477,
@@ -41646,7 +43614,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球傢伙"
+                "card_prefix_name": "大地之神的"
             },
             {
                 "item_id": 7043,
@@ -41997,7 +43965,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球痊癒術"
+                "card_prefix_name": "恢復的"
             },
             {
                 "item_id": 6249,
@@ -42172,8 +44140,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 22,
             "exp": {
-                "base": 344,
-                "job": 68
+                "base": 172,
+                "job": 34
             },
             "flee_95_percent": 211,
             "hit_100_percent": 225,
@@ -42257,7 +44225,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "暈眩"
+                "card_prefix_name": "口呆"
             },
             {
                 "item_id": 410406,
@@ -42490,7 +44458,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "堅毅"
+                "card_prefix_name": "骨瘦如柴的"
             },
             {
                 "item_id": 5009,
@@ -42655,7 +44623,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 61,
             "exp": {
-                "base": 3840,
+                "base": 3397,
                 "job": 1131
             },
             "flee_95_percent": 283,
@@ -42722,7 +44690,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "靈魂強化"
+                "card_prefix_name": "被施魔法的靈魂"
             },
             {
                 "item_id": 430011,
@@ -42908,7 +44876,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 22,
             "exp": {
-                "base": 474,
+                "base": 237,
                 "job": 115
             },
             "flee_95_percent": 237,
@@ -43005,7 +44973,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "貴族的"
+                "card_prefix_name": "賢者之"
             },
             {
                 "item_id": 400843,
@@ -43286,7 +45254,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "雙重霧"
+                "card_prefix_name": "雙倍力量"
             },
             {
                 "item_id": 420574,
@@ -43572,7 +45540,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "治癒術"
+                "card_prefix_name": "治癒的"
             },
             {
                 "item_id": 510131,
@@ -43855,7 +45823,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "毒液魔"
+                "card_prefix_name": "有毒的"
             }
         ],
         "spawns": [
@@ -44069,7 +46037,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "敏捷"
+                "card_prefix_name": "敏捷的"
             }
         ],
         "spawns": [
@@ -44347,7 +46315,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "嘲弄"
+                "card_prefix_name": "模仿的"
             },
             {
                 "item_id": 510182,
@@ -44611,7 +46579,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 95,
             "exp": {
-                "base": 5414,
+                "base": 5231,
                 "job": 1619
             },
             "flee_95_percent": 364,
@@ -44712,7 +46680,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "超高等級"
+                "card_prefix_name": "高等級的"
             },
             {
                 "item_id": 600047,
@@ -44988,7 +46956,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "擊退"
+                "card_prefix_name": "大口喝酒的"
             },
             {
                 "item_id": 5046,
@@ -45204,7 +47172,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "鏡子"
+                "card_prefix_name": "反射的"
             },
             {
                 "item_id": 5007,
@@ -45766,7 +47734,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球藍色方塊"
+                "card_prefix_name": "藍色立方體的"
             },
             {
                 "item_id": 540106,
@@ -46102,7 +48070,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 80,
             "exp": {
-                "base": "",
+                "base": 10199,
                 "job": ""
             },
             "flee_95_percent": 339,
@@ -46173,7 +48141,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球微笑使者"
+                "card_prefix_name": "嘲笑者的"
             },
             {
                 "item_id": 480381,
@@ -46459,7 +48427,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球抵抗特殊力量"
+                "card_prefix_name": "抵抗特殊力量的"
             }
         ],
         "spawns": [
@@ -46706,7 +48674,17 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭盔",
                 "enchantment_slots": 0,
-                "card_prefix_name": "智慧"
+                "card_prefix_name": "聰明才智的"
+            },
+            {
+                "item_id": 540106,
+                "name": "書",
+                "rate": "???",
+                "icon_url": "images/items/540106.gif",
+                "slotCount": 3,
+                "slot": "書籍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
             }
         ],
         "spawns": [
@@ -46965,7 +48943,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球睡眠"
+                "card_prefix_name": "睡眠的"
             },
             {
                 "item_id": 7016,
@@ -47146,6 +49124,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 2913,
+                "name": "大盜手銬",
+                "rate": "???",
+                "icon_url": "images/items/2913.gif",
+                "slotCount": 1,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 4275,
                 "name": "腐屍戰俘卡片",
                 "rate": 0.01,
@@ -47153,7 +49141,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "不死消除者的"
+                "card_prefix_name": "不死消滅者的"
             },
             {
                 "item_id": 7016,
@@ -47166,12 +49154,32 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 15040,
+                "name": "犯人服",
+                "rate": "???",
+                "icon_url": "images/items/15040.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 401082,
                 "name": "(服飾)古雅帽子(歸屬)",
                 "rate": "???",
                 "icon_url": "images/items/401082.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 500098,
+                "name": "日本刀",
+                "rate": "???",
+                "icon_url": "images/items/500098.gif",
+                "slotCount": 2,
+                "slot": "單手劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -47282,7 +49290,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 56,
             "exp": {
-                "base": "",
+                "base": 18063,
                 "job": ""
             },
             "flee_95_percent": 376,
@@ -47372,7 +49380,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吸魂術"
+                "card_prefix_name": "靈魂出竅的"
             },
             {
                 "item_id": 7005,
@@ -47608,7 +49616,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球射擊大師"
+                "card_prefix_name": "射擊熟練的"
             },
             {
                 "item_id": 7017,
@@ -47902,7 +49910,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球暈眩"
+                "card_prefix_name": "昏眩的"
             },
             {
                 "item_id": 7017,
@@ -47922,6 +49930,16 @@ export const monstersDisplayIndex = {
                 "slotCount": 1,
                 "slot": "單手劍",
                 "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 700113,
+                "name": "亞伯雷弓",
+                "rate": "???",
+                "icon_url": "images/items/700113.gif",
+                "slotCount": 2,
+                "slot": "弓",
+                "enchantment_slots": 2,
                 "card_prefix_name": ""
             }
         ],
@@ -48121,7 +50139,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "奪魂者"
+                "card_prefix_name": "靈魂增加的"
             },
             {
                 "item_id": 7017,
@@ -48295,6 +50313,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 2320,
+                "name": "西裝外套",
+                "rate": "???",
+                "icon_url": "images/items/2320.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 4234,
                 "name": "虎蜥人卡片",
                 "rate": 0.01,
@@ -48325,12 +50353,12 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 2320,
-                "name": "西裝外套",
+                "item_id": 12012,
+                "name": "水靈箭矢筒",
                 "rate": "???",
-                "icon_url": "images/items/2320.gif",
-                "slotCount": 1,
-                "slot": "鎧甲",
+                "icon_url": "images/items/12012.gif",
+                "slotCount": 0,
+                "slot": "-",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -48550,7 +50578,17 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "超高等級"
+                "card_prefix_name": "高等級的"
+            },
+            {
+                "item_id": 5509,
+                "name": "史汀帽子",
+                "rate": "???",
+                "icon_url": "images/items/5509.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
             },
             {
                 "item_id": 7004,
@@ -48573,22 +50611,22 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 401083,
-                "name": "(服飾)史汀帽子(歸屬)",
-                "rate": "???",
-                "icon_url": "images/items/401083.gif",
-                "slotCount": 0,
-                "slot": "頭上",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 32200,
                 "name": "某個魔法師的手套",
                 "rate": "???",
                 "icon_url": "images/items/32200.gif",
                 "slotCount": 1,
                 "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 401083,
+                "name": "(服飾)史汀帽子(歸屬)",
+                "rate": "???",
+                "icon_url": "images/items/401083.gif",
+                "slotCount": 0,
+                "slot": "頭上",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -48913,7 +50951,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "強制賦予"
+                "card_prefix_name": "壓迫感的"
             },
             {
                 "item_id": 7005,
@@ -49205,7 +51243,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "貪婪"
+                "card_prefix_name": "貪婪的"
             },
             {
                 "item_id": 7007,
@@ -49214,6 +51252,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/7007.gif",
                 "slotCount": 0,
                 "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 500112,
+                "name": "圓柄馬刀",
+                "rate": "???",
+                "icon_url": "images/items/500112.gif",
+                "slotCount": 3,
+                "slot": "單手劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -49428,7 +51476,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "中了精靈魔法的"
+                "card_prefix_name": "小精靈的"
             },
             {
                 "item_id": 7011,
@@ -49791,7 +51839,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "進擊"
+                "card_prefix_name": "解放的"
             },
             {
                 "item_id": 7023,
@@ -50157,7 +52205,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球傑勒比結晶"
+                "card_prefix_name": "傑勒比結晶的"
             },
             {
                 "item_id": 5035,
@@ -50330,19 +52378,19 @@ export const monstersDisplayIndex = {
                 "str": 70,
                 "vit": 60
             },
-            "defense": 101,
+            "defense": 270,
             "exp": {
                 "base": 47971,
                 "job": 2719
             },
             "flee_95_percent": 335,
             "hit_100_percent": 327,
-            "hp": 67818,
+            "hp": 79950,
             "magic_attack": {
                 "max": 121,
                 "min": 103
             },
-            "magic_defense": 28
+            "magic_defense": 48
         },
         "special_status": [
             "主動攻擊",
@@ -50406,16 +52454,6 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 949,
-                "name": "柔毛",
-                "rate": 5,
-                "icon_url": "images/items/949.gif",
-                "slotCount": 0,
-                "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 4216,
                 "name": "雪熊卡片",
                 "rate": 0.01,
@@ -50423,7 +52461,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球普立茲"
+                "card_prefix_name": "冰凍的"
             },
             {
                 "item_id": 5030,
@@ -50601,6 +52639,207 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1244": {
+        "id": 1244,
+        "name": {
+            "zh_tw": "聖誕南瓜先生",
+            "en": "JAKK_XMAS",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "火"
+            },
+            "level": 63,
+            "race": "無形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1244.gif",
+        "stats": {
+            "attack": {
+                "max": 324,
+                "min": 256
+            },
+            "base_stats": {
+                "agi": 43,
+                "dex": 61,
+                "int": 25,
+                "luk": 15,
+                "str": 58,
+                "vit": 42
+            },
+            "defense": 90,
+            "exp": {
+                "base": 526,
+                "job": 309
+            },
+            "flee_95_percent": 299,
+            "hit_100_percent": 309,
+            "hp": 1901,
+            "magic_attack": {
+                "max": 137,
+                "min": 113
+            },
+            "magic_defense": 25
+        },
+        "special_status": [],
+        "drops": [
+            {
+                "item_id": 1000235,
+                "name": "菁英獵人徽章",
+                "rate": "???",
+                "icon_url": "images/items/1000235.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 106103,
+                "name": "雷吉亞裝備自選箱",
+                "rate": "???",
+                "icon_url": "images/items/106103.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gef_d01_a",
+                "description": "吉芬地下密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_d01_b",
+                "description": "吉芬地下密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_d01_z",
+                "description": "吉芬地下密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
+    "1245": {
+        "id": 1245,
+        "name": {
+            "zh_tw": "聖誕哥布靈",
+            "en": "GOBLINE_XMAS",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "風"
+            },
+            "level": 48,
+            "race": "人形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1245.gif",
+        "stats": {
+            "attack": {
+                "max": 197,
+                "min": 159
+            },
+            "base_stats": {
+                "agi": 54,
+                "dex": 36,
+                "int": 20,
+                "luk": 10,
+                "str": 37,
+                "vit": 25
+            },
+            "defense": 56,
+            "exp": {
+                "base": 127,
+                "job": 77
+            },
+            "flee_95_percent": 257,
+            "hit_100_percent": 304,
+            "hp": 1107,
+            "magic_attack": {
+                "max": 113,
+                "min": 91
+            },
+            "magic_defense": 5
+        },
+        "special_status": [],
+        "drops": [
+            {
+                "item_id": 1000235,
+                "name": "菁英獵人徽章",
+                "rate": "???",
+                "icon_url": "images/items/1000235.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 106103,
+                "name": "雷吉亞裝備自選箱",
+                "rate": "???",
+                "icon_url": "images/items/106103.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
     "1246": {
         "id": 1246,
         "name": {
@@ -50635,7 +52874,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 96,
             "exp": {
-                "base": 21930,
+                "base": 19737,
                 "job": ""
             },
             "flee_95_percent": 270,
@@ -50958,6 +53197,111 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1247": {
+        "id": 1247,
+        "name": {
+            "zh_tw": "超級聖誕老公公",
+            "en": "ANTONIO",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "聖"
+            },
+            "level": 90,
+            "race": "人形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1247.gif",
+        "stats": {
+            "attack": {
+                "max": 27,
+                "min": 21
+            },
+            "base_stats": {
+                "agi": 1,
+                "dex": 100,
+                "int": 50,
+                "luk": 100,
+                "str": 1,
+                "vit": 1
+            },
+            "defense": 500,
+            "exp": {
+                "base": 1,
+                "job": 1
+            },
+            "flee_95_percent": 313,
+            "hit_100_percent": 231,
+            "hp": 100000,
+            "magic_attack": {
+                "max": 71,
+                "min": 65
+            },
+            "magic_defense": 200
+        },
+        "special_status": [
+            "mini"
+        ],
+        "drops": [
+            {
+                "item_id": 106103,
+                "name": "雷吉亞裝備自選箱",
+                "rate": "???",
+                "icon_url": "images/items/106103.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 106105,
+                "name": "雷吉亞裝備+4寶箱",
+                "rate": "???",
+                "icon_url": "images/items/106105.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 106106,
+                "name": "雷吉亞裝備+7寶箱",
+                "rate": "???",
+                "icon_url": "images/items/106106.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
     "1248": {
         "id": 1248,
         "name": {
@@ -50992,7 +53336,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 40,
             "exp": {
-                "base": 44281,
+                "base": 44280,
                 "job": ""
             },
             "flee_95_percent": 289,
@@ -51079,7 +53423,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "裝袋的"
+                "card_prefix_name": "袋狀物的"
             },
             {
                 "item_id": 1002451,
@@ -51193,7 +53537,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 100,
             "exp": {
-                "base": 42121,
+                "base": 42120,
                 "job": ""
             },
             "flee_95_percent": 287,
@@ -51289,7 +53633,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "方塊"
+                "card_prefix_name": "立方體的"
             },
             {
                 "item_id": 401035,
@@ -51575,7 +53919,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "乾涸天空的"
+                "card_prefix_name": "晴朗天空的"
             },
             {
                 "item_id": 580063,
@@ -51878,7 +54222,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "史泰紐爾斯"
+                "card_prefix_name": "知性的"
             },
             {
                 "item_id": 7053,
@@ -52110,7 +54454,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "動物奪魂者"
+                "card_prefix_name": "惡劣靈魂增加的"
             },
             {
                 "item_id": 7053,
@@ -52346,7 +54690,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球史東克茲"
+                "card_prefix_name": "石化的"
             },
             {
                 "item_id": 7054,
@@ -52595,7 +54939,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "延伸的"
+                "card_prefix_name": "伸直的"
             },
             {
                 "item_id": 7053,
@@ -52624,6 +54968,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/28032.gif",
                 "slotCount": 1,
                 "slot": "拳刃",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 630036,
+                "name": "騎士長矛",
+                "rate": "???",
+                "icon_url": "images/items/630036.gif",
+                "slotCount": 2,
+                "slot": "雙手矛",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -52821,7 +55175,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "剛強潛能"
+                "card_prefix_name": "嚴厲打擊的"
             },
             {
                 "item_id": 700098,
@@ -53339,7 +55693,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "翅膀"
+                "card_prefix_name": "翅膀的"
             },
             {
                 "item_id": 5037,
@@ -53571,7 +55925,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "燃燒"
+                "card_prefix_name": "燃燒的"
             },
             {
                 "item_id": 7054,
@@ -53793,7 +56147,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "雷擊"
+                "card_prefix_name": "雷擊的"
             },
             {
                 "item_id": 7005,
@@ -54092,6 +56446,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 1460,
+                "name": "德瑞尹長戟",
+                "rate": 0.02,
+                "icon_url": "images/items/1460.gif",
+                "slotCount": 2,
+                "slot": "雙手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 4199,
                 "name": "人魚士兵卡片",
                 "rate": 0.01,
@@ -54099,7 +56463,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球衝刺"
+                "card_prefix_name": "猛撞的"
             },
             {
                 "item_id": 400863,
@@ -54284,9 +56648,9 @@ export const monstersDisplayIndex = {
                 "str": 15,
                 "vit": 35
             },
-            "defense": 56,
+            "defense": 112,
             "exp": {
-                "base": 20971,
+                "base": 18874,
                 "job": ""
             },
             "flee_95_percent": 276,
@@ -54296,7 +56660,7 @@ export const monstersDisplayIndex = {
                 "max": 80,
                 "min": 64
             },
-            "magic_defense": 28
+            "magic_defense": 56
         },
         "special_status": [
             "可物理攻擊",
@@ -54352,7 +56716,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "機會"
+                "card_prefix_name": "機會的"
             },
             {
                 "item_id": 12001,
@@ -54392,16 +56756,6 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 700116,
-                "name": "十字弓",
-                "rate": "???",
-                "icon_url": "images/items/700116.gif",
-                "slotCount": 3,
-                "slot": "弓",
-                "enchantment_slots": "2-3",
                 "card_prefix_name": ""
             }
         ],
@@ -54759,7 +57113,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "水母"
+                "card_prefix_name": "恆星魚的"
             },
             {
                 "item_id": 7013,
@@ -55264,7 +57618,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "隕石之光"
+                "card_prefix_name": "隕石光的"
             }
         ],
         "spawns": [
@@ -55736,7 +58090,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球笨重"
+                "card_prefix_name": "毀滅的"
             },
             {
                 "item_id": 5162,
@@ -56194,7 +58548,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "粉碎"
+                "card_prefix_name": "打碎的"
             },
             {
                 "item_id": 7053,
@@ -56429,7 +58783,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球抵抗特殊力量"
+                "card_prefix_name": "抵抗著迷力量的"
             },
             {
                 "item_id": 7049,
@@ -56589,7 +58943,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球皇家禁衛隊"
+                "card_prefix_name": "皇家防禦的"
             },
             {
                 "item_id": 5085,
@@ -56598,6 +58952,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/5085.gif",
                 "slotCount": 0,
                 "slot": "頭中",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 5557,
+                "name": "狂暴野貓帽子",
+                "rate": "???",
+                "icon_url": "images/items/5557.gif",
+                "slotCount": 1,
+                "slot": "頭上",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -56619,16 +58983,6 @@ export const monstersDisplayIndex = {
                 "slotCount": 2,
                 "slot": "拳刃",
                 "enchantment_slots": "2-3",
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 5557,
-                "name": "狂暴野貓帽子",
-                "rate": "???",
-                "icon_url": "images/items/5557.gif",
-                "slotCount": 1,
-                "slot": "頭上",
-                "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
         ],
@@ -56936,7 +59290,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "陰森傢伙的"
+                "card_prefix_name": "陰森晚霞的"
             },
             {
                 "item_id": 7054,
@@ -57127,7 +59481,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 114,
             "exp": {
-                "base": 3690,
+                "base": 3337,
                 "job": 1063
             },
             "flee_95_percent": 270,
@@ -57202,7 +59556,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "魔力長矛"
+                "card_prefix_name": "瑪納長矛的"
             },
             {
                 "item_id": 7054,
@@ -57490,7 +59844,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抵抗暈眩"
+                "card_prefix_name": "抵抗著迷昏眩的"
             },
             {
                 "item_id": 7004,
@@ -57520,6 +59874,16 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭上",
                 "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 630044,
+                "name": "彎刃長矛",
+                "rate": "???",
+                "icon_url": "images/items/630044.gif",
+                "slotCount": 3,
+                "slot": "雙手矛",
+                "enchantment_slots": 2,
                 "card_prefix_name": ""
             }
         ],
@@ -57790,7 +60154,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "強力吸取"
+                "card_prefix_name": "力量耗盡的"
             },
             {
                 "item_id": 7053,
@@ -57959,7 +60323,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "致命火焰"
+                "card_prefix_name": "致命的燃燒的"
             },
             {
                 "item_id": 7053,
@@ -58181,7 +60545,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球魔法石頭"
+                "card_prefix_name": "魔法魔力礦石的"
             },
             {
                 "item_id": 5012,
@@ -58404,12 +60768,12 @@ export const monstersDisplayIndex = {
             },
             "defense": 159,
             "exp": {
-                "base": "",
+                "base": 136574,
                 "job": ""
             },
             "flee_95_percent": 414,
             "hit_100_percent": 380,
-            "hp": 26406,
+            "hp": 216786,
             "magic_attack": {
                 "max": 351,
                 "min": 261
@@ -58486,7 +60850,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球毒藥蓄力"
+                "card_prefix_name": "毒攻擊的"
             },
             {
                 "item_id": 7054,
@@ -58506,6 +60870,16 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "-",
                 "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610082,
+                "name": "卡塔勒拳刃",
+                "rate": "???",
+                "icon_url": "images/items/610082.gif",
+                "slotCount": 2,
+                "slot": "拳刃",
+                "enchantment_slots": "2-3",
                 "card_prefix_name": ""
             }
         ],
@@ -59130,7 +61504,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球雙重力量"
+                "card_prefix_name": "雙倍力量的"
             },
             {
                 "item_id": 5045,
@@ -59159,6 +61533,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/7071.gif",
                 "slotCount": 0,
                 "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 700084,
+                "name": "角弓",
+                "rate": "???",
+                "icon_url": "images/items/700084.gif",
+                "slotCount": 2,
+                "slot": "弓",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -59471,7 +61855,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "閃亮十字"
+                "card_prefix_name": "閃耀十字的"
             }
         ],
         "spawns": [
@@ -59657,7 +62041,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "致命哥布靈"
+                "card_prefix_name": "致命的哥布靈的"
             },
             {
                 "item_id": 5090,
@@ -59947,7 +62331,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭盔",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球魔咒大師"
+                "card_prefix_name": "著迷熟練的"
             },
             {
                 "item_id": 5017,
@@ -60194,7 +62578,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "致命闇●邪心獵人"
+                "card_prefix_name": "致命邪惡的"
             },
             {
                 "item_id": 7053,
@@ -60420,7 +62804,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "保有暈眩"
+                "card_prefix_name": "約束力昏眩的"
             },
             {
                 "item_id": 6254,
@@ -60731,7 +63115,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "光圈"
+                "card_prefix_name": "氣息的"
             },
             {
                 "item_id": 6264,
@@ -60987,7 +63371,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "心靈"
+                "card_prefix_name": "精神的"
             },
             {
                 "item_id": 7053,
@@ -61225,7 +63609,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球神雷斯"
+                "card_prefix_name": "造物者憤怒的"
             },
             {
                 "item_id": 5045,
@@ -61258,16 +63642,6 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 620048,
-                "name": "雙手斧",
-                "rate": "???",
-                "icon_url": "images/items/620048.gif",
-                "slotCount": 2,
-                "slot": "雙手斧",
-                "enchantment_slots": "2-3",
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 26148,
                 "name": "鴞裊.D.魔杖",
                 "rate": "???",
@@ -61275,6 +63649,16 @@ export const monstersDisplayIndex = {
                 "slotCount": 1,
                 "slot": "單手杖",
                 "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 620048,
+                "name": "雙手斧",
+                "rate": "???",
+                "icon_url": "images/items/620048.gif",
+                "slotCount": 2,
+                "slot": "雙手斧",
+                "enchantment_slots": "2-3",
                 "card_prefix_name": ""
             }
         ],
@@ -61542,7 +63926,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球魚香味"
+                "card_prefix_name": "散發魚類氣味的"
             },
             {
                 "item_id": 7053,
@@ -62130,7 +64514,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "天龍奪魂者"
+                "card_prefix_name": "龍靈魂增加的"
             },
             {
                 "item_id": 440025,
@@ -62393,6 +64777,613 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1389": {
+        "id": 1389,
+        "name": {
+            "zh_tw": "德古拉男爵",
+            "en": "DRACULA",
+            "ko_kr": "드라큘라(MVP)"
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "暗"
+            },
+            "level": 75,
+            "race": "惡魔",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1389.gif",
+        "stats": {
+            "attack": {
+                "max": 2454,
+                "min": 2454
+            },
+            "base_stats": {
+                "agi": 99,
+                "dex": 194,
+                "int": 92,
+                "luk": 82,
+                "str": 86,
+                "vit": 88
+            },
+            "defense": 252,
+            "exp": {
+                "base": 5155920,
+                "job": 598455
+            },
+            "flee_95_percent": 466,
+            "hit_100_percent": 390,
+            "hp": 52500000,
+            "magic_attack": {
+                "max": 2523,
+                "min": 1435
+            },
+            "magic_defense": 146
+        },
+        "special_status": [
+            "MVP",
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 607,
+                "name": "天地樹果實",
+                "rate": 23.5,
+                "icon_url": "images/items/607.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1557,
+                "name": "預言錄",
+                "rate": 0.02,
+                "icon_url": "images/items/1557.gif",
+                "slotCount": 0,
+                "slot": "書籍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2601,
+                "name": "力量戒指",
+                "rate": 0.02,
+                "icon_url": "images/items/2601.gif",
+                "slotCount": 0,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 480379,
+                "name": "伯爵斗篷",
+                "rate": 0.08,
+                "icon_url": "images/items/480379.gif",
+                "slotCount": 0,
+                "slot": "披肩",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 700090,
+                "name": "貝利斯塔強弩",
+                "rate": 0.03,
+                "icon_url": "images/items/700090.gif",
+                "slotCount": 0,
+                "slot": "弓",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "b_gef_d02",
+                "description": "吉芬地下密穴3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "b_gef_d02_z",
+                "description": "吉芬地下密穴3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "AS_GRIMTOOTH",
+                "SkillNameZhTW": "無影之牙",
+                "SkillID": 137,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 16,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 5,
+                "Val1": 1419,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 16,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 5,
+                "Val1": 1419,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLOODDRAIN",
+                "SkillNameZhTW": "吸血",
+                "SkillID": 199,
+                "SkillLv": 1,
+                "Rate": "30.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "30.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "walk",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MO_BODYRELOCATION",
+                "SkillNameZhTW": "弓身彈影",
+                "SkillID": 264,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 200,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SA_LANDPROTECTOR",
+                "SkillNameZhTW": "地元素領域",
+                "SkillID": 288,
+                "SkillLv": 3,
+                "Rate": "30.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "groundattacked",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_DECAGI",
+                "SkillNameZhTW": "緩速術",
+                "SkillID": 30,
+                "SkillLv": 48,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CHANGEUNDEAD",
+                "SkillNameZhTW": "不死屬性轉換",
+                "SkillID": 348,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_AGIUP",
+                "SkillNameZhTW": "速度提升",
+                "SkillID": 350,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_INVISIBLE",
+                "SkillNameZhTW": "隱形",
+                "SkillID": 353,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 200,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_INVISIBLE",
+                "SkillNameZhTW": "隱形",
+                "SkillID": 353,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 200,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_INVISIBLE",
+                "SkillNameZhTW": "隱形",
+                "SkillID": 353,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 200,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_HELLJUDGEMENT",
+                "SkillNameZhTW": "死亡天譴",
+                "SkillID": 662,
+                "SkillLv": 10,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 36,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_HELLJUDGEMENT",
+                "SkillNameZhTW": "死亡天譴",
+                "SkillID": 662,
+                "SkillLv": 10,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 36,
+                "Chat": ""
+            }
+        ]
+    },
     "1391": {
         "id": 1391,
         "name": {
@@ -62485,7 +65476,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "多汁的"
+                "card_prefix_name": "有趣的"
             },
             {
                 "item_id": 6263,
@@ -62795,7 +65786,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "致命雙魚宮"
+                "card_prefix_name": "致命雙魚宮的"
             },
             {
                 "item_id": 7053,
@@ -62978,7 +65969,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球綠色石頭"
+                "card_prefix_name": "地靈礦石的"
             },
             {
                 "item_id": 6265,
@@ -63259,7 +66250,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "西佛斯奪魂者"
+                "card_prefix_name": "海洋靈魂增加的"
             },
             {
                 "item_id": 7190,
@@ -63483,7 +66474,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "射擊"
+                "card_prefix_name": "射擊的"
             },
             {
                 "item_id": 7049,
@@ -63686,7 +66677,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球自然"
+                "card_prefix_name": "自然界的"
             },
             {
                 "item_id": 7188,
@@ -64093,7 +67084,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "出血防禦的"
+                "card_prefix_name": "使人目眩防禦的"
             },
             {
                 "item_id": 5116,
@@ -64257,7 +67248,7 @@ export const monstersDisplayIndex = {
             },
             "defense": 63,
             "exp": {
-                "base": 10306,
+                "base": 12058,
                 "job": 3101
             },
             "flee_95_percent": 387,
@@ -64292,7 +67283,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "剛強掩護"
+                "card_prefix_name": "硬遮蓋物的"
             },
             {
                 "item_id": 6265,
@@ -64611,7 +67602,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球保護"
+                "card_prefix_name": "保護的"
             },
             {
                 "item_id": 5053,
@@ -65331,7 +68322,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "凍僵術"
+                "card_prefix_name": "冰凍的"
             },
             {
                 "item_id": 7066,
@@ -65847,7 +68838,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "高風險"
+                "card_prefix_name": "高危險性的"
             },
             {
                 "item_id": 7300,
@@ -66232,6 +69223,99 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1588": {
+        "id": 1588,
+        "name": {
+            "zh_tw": "聖誕獸人戰士",
+            "en": "ORC_XMAS",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 44,
+            "race": "人形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1588.gif",
+        "stats": {
+            "attack": {
+                "max": 177,
+                "min": 143
+            },
+            "base_stats": {
+                "agi": 15,
+                "dex": 16,
+                "int": 15,
+                "luk": 10,
+                "str": 32,
+                "vit": 24
+            },
+            "defense": 52,
+            "exp": {
+                "base": 117,
+                "job": 72
+            },
+            "flee_95_percent": 233,
+            "hit_100_percent": 261,
+            "hp": 1047,
+            "magic_attack": {
+                "max": 102,
+                "min": 82
+            },
+            "magic_defense": 3
+        },
+        "special_status": [],
+        "drops": [
+            {
+                "item_id": 1000235,
+                "name": "菁英獵人徽章",
+                "rate": "???",
+                "icon_url": "images/items/1000235.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 106103,
+                "name": "雷吉亞裝備自選箱",
+                "rate": "???",
+                "icon_url": "images/items/106103.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
     "1686": {
         "id": 1686,
         "name": {
@@ -66325,7 +69409,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "超異高等級"
+                "card_prefix_name": "特佳的高水平"
             },
             {
                 "item_id": 7126,
@@ -66364,6 +69448,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/10004.gif",
                 "slotCount": 0,
                 "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 510143,
+                "name": "德克短劍",
+                "rate": "???",
+                "icon_url": "images/items/510143.gif",
+                "slotCount": 3,
+                "slot": "短劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             }
@@ -66644,7 +69738,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球甜心"
+                "card_prefix_name": "甜點的"
             },
             {
                 "item_id": 6264,
@@ -66975,6 +70069,182 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2210": {
+        "id": 2210,
+        "name": {
+            "zh_tw": "聖誕瘋兔",
+            "en": "XMAS_LUNATIC",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "無"
+            },
+            "level": 50,
+            "race": "無形",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/2210.gif",
+        "stats": {
+            "attack": {
+                "max": 1,
+                "min": 1
+            },
+            "base_stats": {
+                "agi": 1,
+                "dex": 1,
+                "int": 1,
+                "luk": 1,
+                "str": 1,
+                "vit": 1
+            },
+            "defense": 220,
+            "exp": {
+                "base": 2500,
+                "job": ""
+            },
+            "flee_95_percent": 1,
+            "hit_100_percent": "???",
+            "hp": 25000,
+            "magic_attack": {
+                "max": "???",
+                "min": "???"
+            },
+            "magic_defense": 80
+        },
+        "special_status": [],
+        "drops": [
+            {
+                "item_id": 1002556,
+                "name": "【M】字卡",
+                "rate": "???",
+                "icon_url": "images/items/1002556.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
+    "2380": {
+        "id": 2380,
+        "name": {
+            "zh_tw": "聖誕狸貓",
+            "en": "XMAS_SMOKEY_GIFT",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 50,
+            "race": "動物",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/2380.gif",
+        "stats": {
+            "attack": {
+                "max": 95,
+                "min": 67
+            },
+            "base_stats": {
+                "agi": 1,
+                "dex": 100,
+                "int": 5,
+                "luk": 100,
+                "str": 1,
+                "vit": 16
+            },
+            "defense": 220,
+            "exp": {
+                "base": 2500,
+                "job": 0
+            },
+            "flee_95_percent": 313,
+            "hit_100_percent": 231,
+            "hp": 20135,
+            "magic_attack": {
+                "max": 30,
+                "min": 22
+            },
+            "magic_defense": 80
+        },
+        "special_status": [],
+        "drops": [
+            {
+                "item_id": 7461,
+                "name": "【A】字卡",
+                "rate": "???",
+                "icon_url": "images/items/7461.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7601,
+                "name": "【S】字卡",
+                "rate": "???",
+                "icon_url": "images/items/7601.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "ztw_e03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_a",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_b",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
     "2398": {
         "id": 2398,
         "name": {
@@ -67009,8 +70279,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 2,
             "exp": {
-                "base": "",
-                "job": ""
+                "base": 24,
+                "job": 4
             },
             "flee_95_percent": 178,
             "hit_100_percent": 203,
@@ -67095,7 +70365,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "菜鳥"
+                "card_prefix_name": "新手"
             }
         ],
         "spawns": [
@@ -67707,7 +70977,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "不死消除者的"
+                "card_prefix_name": "不死消滅者的"
             },
             {
                 "item_id": 7016,
@@ -67931,7 +71201,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "恢復的"
+                "card_prefix_name": "回復的"
             }
         ],
         "spawns": [
@@ -68165,7 +71435,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球光芒"
+                "card_prefix_name": "閃爍之"
             },
             {
                 "item_id": 7182,
@@ -68466,7 +71736,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "智慧"
+                "card_prefix_name": "機智的"
             },
             {
                 "item_id": 10015,
@@ -68624,7 +71894,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "出血防禦的"
+                "card_prefix_name": "使人目眩防禦的"
             },
             {
                 "item_id": 5116,
@@ -68840,7 +72110,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "狼獾"
+                "card_prefix_name": "狼"
             },
             {
                 "item_id": 450349,
@@ -69076,7 +72346,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "智慧"
+                "card_prefix_name": "智慧的"
             }
         ],
         "spawns": [
@@ -69288,7 +72558,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "翅膀"
+                "card_prefix_name": "翅膀的"
             },
             {
                 "item_id": 5037,
@@ -69498,7 +72768,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "嘲弄"
+                "card_prefix_name": "模仿的"
             }
         ],
         "spawns": [
@@ -69692,12 +72962,12 @@ export const monstersDisplayIndex = {
             },
             "defense": 64,
             "exp": {
-                "base": "",
+                "base": 1123515,
                 "job": ""
             },
             "flee_95_percent": 470,
             "hit_100_percent": 445,
-            "hp": 96535,
+            "hp": 1220805,
             "magic_attack": {
                 "max": 272,
                 "min": 208
@@ -69764,7 +73034,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "強制賦予"
+                "card_prefix_name": "壓迫感的"
             },
             {
                 "item_id": 7005,
@@ -70069,7 +73339,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "火焰"
+                "card_prefix_name": "可燃性的"
             }
         ],
         "spawns": [
@@ -70292,7 +73562,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "迅速"
+                "card_prefix_name": "快的"
             },
             {
                 "item_id": 450347,
@@ -70493,7 +73763,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "迅速"
+                "card_prefix_name": "快的"
             },
             {
                 "item_id": 450347,
@@ -70715,7 +73985,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "迅速"
+                "card_prefix_name": "快的"
             },
             {
                 "item_id": 450347,
@@ -70934,7 +74204,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "骷髏"
+                "card_prefix_name": "頭蓋形的"
             }
         ],
         "spawns": [
@@ -71124,7 +74394,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "雙重霧"
+                "card_prefix_name": "雙倍力量"
             }
         ],
         "spawns": [
@@ -71300,7 +74570,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "超高等級"
+                "card_prefix_name": "高等級的"
             },
             {
                 "item_id": 7004,
@@ -71655,7 +74925,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球海曼"
+                "card_prefix_name": "英雄的"
             }
         ],
         "spawns": [
@@ -71810,7 +75080,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抵抗暈眩"
+                "card_prefix_name": "抵抗著迷昏眩的"
             },
             {
                 "item_id": 7004,
@@ -72136,7 +75406,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "貴族的"
+                "card_prefix_name": "賢者之"
             }
         ],
         "spawns": [
@@ -72346,7 +75616,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球孢子"
+                "card_prefix_name": "孢子之"
             },
             {
                 "item_id": 7033,
@@ -72613,7 +75883,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "必殺攻擊力"
+                "card_prefix_name": "危急的"
             },
             {
                 "item_id": 450310,
@@ -72921,7 +76191,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "必殺攻擊力"
+                "card_prefix_name": "危急的"
             },
             {
                 "item_id": 450310,
@@ -73206,7 +76476,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "靈魂強化"
+                "card_prefix_name": "被施魔法的靈魂"
             },
             {
                 "item_id": 450312,
@@ -73509,7 +76779,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "不可觸碰"
+                "card_prefix_name": "無敵的"
             },
             {
                 "item_id": 600048,
@@ -73718,7 +76988,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "堅毅"
+                "card_prefix_name": "骨瘦如柴的"
             },
             {
                 "item_id": 5009,
@@ -73942,7 +77212,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "混合"
+                "card_prefix_name": "混合成的"
             },
             {
                 "item_id": 500098,
@@ -74162,7 +77432,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球魚香味"
+                "card_prefix_name": "散發魚類氣味的"
             },
             {
                 "item_id": 7053,
@@ -74472,7 +77742,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "化學"
+                "card_prefix_name": "化學的"
             }
         ],
         "spawns": [
@@ -74682,7 +77952,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "暈眩"
+                "card_prefix_name": "口呆"
             },
             {
                 "item_id": 520037,
@@ -74909,7 +78179,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球痊癒術"
+                "card_prefix_name": "恢復的"
             },
             {
                 "item_id": 6249,
@@ -75119,7 +78389,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球傢伙"
+                "card_prefix_name": "大地之神的"
             },
             {
                 "item_id": 7043,
@@ -75434,7 +78704,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球冠軍"
+                "card_prefix_name": "冠軍的"
             }
         ],
         "spawns": [
@@ -75598,7 +78868,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球冠軍"
+                "card_prefix_name": "冠軍的"
             }
         ],
         "spawns": [
@@ -75742,7 +79012,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "熟練"
+                "card_prefix_name": "靈巧的"
             },
             {
                 "item_id": 530056,
@@ -75935,7 +79205,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "混沌"
+                "card_prefix_name": "大混亂的"
             },
             {
                 "item_id": 7477,
@@ -76139,7 +79409,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "無敵"
+                "card_prefix_name": "免除的"
             },
             {
                 "item_id": 7054,
@@ -76459,7 +79729,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "史泰紐爾斯"
+                "card_prefix_name": "知性的"
             },
             {
                 "item_id": 7053,
@@ -76696,7 +79966,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 12846,
@@ -76927,7 +80197,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 12846,
@@ -77137,7 +80407,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 12846,
@@ -77347,7 +80617,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 12846,
@@ -77594,7 +80864,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "解毒的"
+                "card_prefix_name": "解毒之"
             },
             {
                 "item_id": 510129,
@@ -77818,7 +81088,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "毒物"
+                "card_prefix_name": "中毒的"
             },
             {
                 "item_id": 7033,
@@ -78117,7 +81387,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "昏睡"
+                "card_prefix_name": "沈寂的"
             }
         ],
         "spawns": [
@@ -78275,7 +81545,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "動力"
+                "card_prefix_name": "沖的"
             },
             {
                 "item_id": 5015,
@@ -78485,7 +81755,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "詠唱之下"
+                "card_prefix_name": "投擲"
             }
         ],
         "spawns": [
@@ -78668,7 +81938,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "龍騎士"
+                "card_prefix_name": "龍騎兵"
             },
             {
                 "item_id": 6260,
@@ -78972,7 +82242,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "龍騎士"
+                "card_prefix_name": "龍騎兵"
             },
             {
                 "item_id": 6260,
@@ -79222,7 +82492,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球烏賊"
+                "card_prefix_name": "火星之"
             },
             {
                 "item_id": 470257,
@@ -79422,7 +82692,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球伊夫利特"
+                "card_prefix_name": "惡魔之"
             },
             {
                 "item_id": 7110,
@@ -79728,7 +82998,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "剛強掩護"
+                "card_prefix_name": "硬遮蓋物的"
             },
             {
                 "item_id": 6265,
@@ -80061,7 +83331,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "殘爆"
+                "card_prefix_name": "獸性的"
             },
             {
                 "item_id": 620039,
@@ -80360,7 +83630,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "天使"
+                "card_prefix_name": "天使的"
             }
         ],
         "spawns": [
@@ -80606,7 +83876,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抗聖屬性"
+                "card_prefix_name": "可惡的"
             }
         ],
         "spawns": [
@@ -80886,7 +84156,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "粉碎"
+                "card_prefix_name": "打碎的"
             },
             {
                 "item_id": 7053,
@@ -81122,7 +84392,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "方塊"
+                "card_prefix_name": "立方體的"
             }
         ],
         "spawns": [
@@ -81409,7 +84679,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "狂暴"
+                "card_prefix_name": "古代的"
             }
         ],
         "spawns": [
@@ -81738,7 +85008,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "狂暴"
+                "card_prefix_name": "古代的"
             }
         ],
         "spawns": [
@@ -82011,7 +85281,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "精力旺盛"
+                "card_prefix_name": "有活力的"
             },
             {
                 "item_id": 630044,
@@ -82231,7 +85501,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "泰斗"
+                "card_prefix_name": "巨人的"
             },
             {
                 "item_id": 6254,
@@ -82508,7 +85778,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "泰斗"
+                "card_prefix_name": "巨人的"
             },
             {
                 "item_id": 6254,
@@ -82807,7 +86077,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球藍色方塊"
+                "card_prefix_name": "藍色立方體的"
             }
         ],
         "spawns": [
@@ -83043,7 +86313,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "沉默"
+                "card_prefix_name": "靜寂的"
             }
         ],
         "spawns": [
@@ -83290,6 +86560,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 1460,
+                "name": "德瑞尹長戟",
+                "rate": 0.1,
+                "icon_url": "images/items/1460.gif",
+                "slotCount": 2,
+                "slot": "雙手矛",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 4199,
                 "name": "人魚士兵卡片",
                 "rate": 0.05,
@@ -83297,7 +86577,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球衝刺"
+                "card_prefix_name": "猛撞的"
             },
             {
                 "item_id": 630042,
@@ -83546,7 +86826,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "石化"
+                "card_prefix_name": "加補的"
             }
         ],
         "spawns": [
@@ -83841,7 +87121,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球教士"
+                "card_prefix_name": "牧士之"
             },
             {
                 "item_id": 5009,
@@ -84076,7 +87356,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球幽靈"
+                "card_prefix_name": "鬼魂之"
             },
             {
                 "item_id": 5141,
@@ -84327,7 +87607,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "沉默"
+                "card_prefix_name": "不怕"
             }
         ],
         "spawns": [
@@ -84611,7 +87891,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "溫蒂"
+                "card_prefix_name": "強風的"
             },
             {
                 "item_id": 530052,
@@ -84785,7 +88065,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "保有暈眩"
+                "card_prefix_name": "約束力昏眩的"
             },
             {
                 "item_id": 6254,
@@ -85102,7 +88382,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "詛咒"
+                "card_prefix_name": "咒罵的"
             },
             {
                 "item_id": 7031,
@@ -85338,7 +88618,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 500096,
@@ -85494,7 +88774,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 500096,
@@ -85620,7 +88900,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "西佛斯奪魂者"
+                "card_prefix_name": "海洋靈魂增加的"
             },
             {
                 "item_id": 7190,
@@ -86096,7 +89376,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "惡毒"
+                "card_prefix_name": "惡毒的"
             },
             {
                 "item_id": 510132,
@@ -86464,7 +89744,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "瑪特"
+                "card_prefix_name": "殉難者的"
             },
             {
                 "item_id": 510129,
@@ -86650,7 +89930,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "沉重"
+                "card_prefix_name": "重的"
             },
             {
                 "item_id": 630044,
@@ -86824,7 +90104,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "輝煌"
+                "card_prefix_name": "光榮的"
             },
             {
                 "item_id": 7021,
@@ -87040,7 +90320,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球甜心"
+                "card_prefix_name": "甜點的"
             },
             {
                 "item_id": 6264,
@@ -87214,7 +90494,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "魔力長矛"
+                "card_prefix_name": "瑪納長矛的"
             },
             {
                 "item_id": 7054,
@@ -87514,7 +90794,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "堅韌"
+                "card_prefix_name": "固體的"
             },
             {
                 "item_id": 460070,
@@ -87757,7 +91037,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 460069,
@@ -88004,7 +91284,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吶喊"
+                "card_prefix_name": "吵鬧的"
             },
             {
                 "item_id": 460069,
@@ -88301,7 +91581,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "毒蛇"
+                "card_prefix_name": "毒蛇的"
             }
         ],
         "spawns": [
@@ -88483,7 +91763,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "乾涸天空的"
+                "card_prefix_name": "晴朗天空的"
             }
         ],
         "spawns": [
@@ -88704,7 +91984,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "心靈"
+                "card_prefix_name": "精神的"
             },
             {
                 "item_id": 7053,
@@ -89007,7 +92287,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "閃爍"
+                "card_prefix_name": "閃的"
             },
             {
                 "item_id": 500084,
@@ -89259,7 +92539,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "體質"
+                "card_prefix_name": "生的"
             },
             {
                 "item_id": 590072,
@@ -89423,7 +92703,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "體質"
+                "card_prefix_name": "生的"
             },
             {
                 "item_id": 590072,
@@ -89608,7 +92888,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "致命"
+                "card_prefix_name": "致命的"
             },
             {
                 "item_id": 7478,
@@ -89989,7 +93269,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "艾柳達伊特"
+                "card_prefix_name": "博學之"
             }
         ],
         "spawns": [
@@ -90272,7 +93552,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "艾柳達伊特"
+                "card_prefix_name": "博學之"
             }
         ],
         "spawns": [
@@ -90511,7 +93791,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球溫斯"
+                "card_prefix_name": "溫暖之"
             }
         ],
         "spawns": [
@@ -90691,7 +93971,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球綠色石頭"
+                "card_prefix_name": "地靈礦石的"
             },
             {
                 "item_id": 6265,
@@ -91042,7 +94322,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "靈巧"
+                "card_prefix_name": "靈巧的"
             },
             {
                 "item_id": 550139,
@@ -91221,7 +94501,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "天龍奪魂者"
+                "card_prefix_name": "龍靈魂增加的"
             }
         ],
         "spawns": [
@@ -91567,7 +94847,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "抗水屬性"
+                "card_prefix_name": "不毛之地"
             },
             {
                 "item_id": 7006,
@@ -91779,7 +95059,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球風靈之矛"
+                "card_prefix_name": "西風騎士的"
             }
         ],
         "spawns": [
@@ -92028,7 +95308,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "暗黑"
+                "card_prefix_name": "預視的"
             }
         ],
         "spawns": [
@@ -92316,7 +95596,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球沙漠"
+                "card_prefix_name": "沙漠之"
             },
             {
                 "item_id": 450311,
@@ -92509,7 +95789,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球沙漠"
+                "card_prefix_name": "沙漠之"
             },
             {
                 "item_id": 450311,
@@ -92704,7 +95984,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "颶風"
+                "card_prefix_name": "颶風的"
             }
         ],
         "spawns": [
@@ -92903,7 +96183,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "吸魂術"
+                "card_prefix_name": "靈魂出竅的"
             },
             {
                 "item_id": 7005,
@@ -93471,7 +96751,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "永恆"
+                "card_prefix_name": "不朽的"
             },
             {
                 "item_id": 460071,
@@ -93693,7 +96973,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "機會"
+                "card_prefix_name": "機會的"
             },
             {
                 "item_id": 12001,
@@ -94061,7 +97341,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球泥人"
+                "card_prefix_name": "睡魔之"
             },
             {
                 "item_id": 470257,
@@ -94309,7 +97589,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "頭具",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球泥人"
+                "card_prefix_name": "睡魔之"
             },
             {
                 "item_id": 470257,
@@ -94525,7 +97805,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鞋子",
                 "enchantment_slots": 0,
-                "card_prefix_name": "光"
+                "card_prefix_name": "發光二極體的"
             },
             {
                 "item_id": 510144,
@@ -94992,7 +98272,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "殺蟲"
+                "card_prefix_name": "殺蟲劑的"
             },
             {
                 "item_id": 450346,
@@ -95259,7 +98539,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球巨屍"
+                "card_prefix_name": "巨人之"
             }
         ],
         "spawns": [
@@ -95522,7 +98802,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "催眠"
+                "card_prefix_name": "催眠的"
             },
             {
                 "item_id": 10017,
@@ -96522,7 +99802,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "颶風"
+                "card_prefix_name": "颶風的"
             }
         ],
         "spawns": [
@@ -96723,7 +100003,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "盾牌",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球戰神"
+                "card_prefix_name": "雅典娜之"
             }
         ],
         "spawns": [
@@ -97681,7 +100961,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "武器",
                 "enchantment_slots": 0,
-                "card_prefix_name": "靈巧"
+                "card_prefix_name": "靈巧的"
             },
             {
                 "item_id": 550139,
@@ -97881,7 +101161,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "解毒的"
+                "card_prefix_name": "解毒之"
             },
             {
                 "item_id": 510129,
@@ -98091,7 +101371,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "鎧甲",
                 "enchantment_slots": 0,
-                "card_prefix_name": "洛基"
+                "card_prefix_name": "幸運的"
             },
             {
                 "item_id": 12846,
@@ -98270,7 +101550,7 @@ export const monstersDisplayIndex = {
                 "slotCount": 0,
                 "slot": "飾品",
                 "enchantment_slots": 0,
-                "card_prefix_name": "寶球傑勒比結晶"
+                "card_prefix_name": "傑勒比結晶的"
             },
             {
                 "item_id": 5035,
