@@ -1,10 +1,14 @@
 <script setup>
-import {ref, reactive, computed} from "vue"
+import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
-import {monstersData} from "../../assets/data/monsters.js";
-import {RecycleScroller} from 'vue-virtual-scroller'
-import { VirtualScroll } from 'vue3-virtual-scroll'
+import {monstersData3} from "~/assets/data/monsters3.js";
+import {monstersDisplayIndex} from "~/assets/data/monsters_display_index.js";
+import {VirtualScroll} from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
+
+// ✅ 怪物資料
+const monsters1 = ref(monstersDisplayIndex);
+const monsters = ref(monstersData3);
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -14,10 +18,8 @@ const search = ref("")
 const minLevel = ref("")
 const maxLevel = ref("")
 
-// 選取標籤（屬性 / 種族 / 大小）
-const type = reactive({
-  selectedElement: ['all']
-})
+// 選取標籤（類型 / 屬性 / 種族 / 大小）
+const selectedType = ref(['all'])
 const selectedElement = ref(['all'])
 const selectedRace = ref(['all'])
 const selectedSize = ref(['all'])
@@ -25,6 +27,13 @@ const selectedSize = ref(['all'])
 onMounted(() => {
   initFlowbite()
 })
+
+const typeList = [
+  {id: "all", name: "ALL", icon: "/assets/element/neutral.png"},
+  {id: "common", name: "一般", icon: "/assets/element/neutral.png"},
+  {id: "mini", name: "MINI", icon: "/assets/element/neutral.png"},
+  {id: "MVP", name: "MVP", icon: "/assets/element/neutral.png"},
+]
 
 // ✅ icon/項目列表
 const elementList = [
@@ -62,54 +71,74 @@ const sizeList = [
   {id: "大型", name: "大型", icon: "/assets/size/large.png"},
 ]
 
-// ✅ 怪物資料
-const monsters = ref(monstersData);
 
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {
-  return monsters.value.filter(m => {
+
+  let monstersArray = Object.values(monsters1.value);
+
+  return monstersArray.filter(m => {
     // ✅ 名稱 / 地圖搜尋
     // 改良版：trim + toLowerCase + 防空值檢查
     const q = (search.value || "").trim().toLowerCase();
 
     const matchesName =
         q === "" ||
-        (m.monster_name_zh && m.monster_name_zh.toLowerCase().includes(q)) ||
-        (Array.isArray(m.spawn_locations) &&
-            m.spawn_locations.some(loc =>
-                (loc.map_name_zh && loc.map_name_zh.toLowerCase().includes(q)) ||
-                (loc.map_code && loc.map_code.toLowerCase().includes(q))
+        (m.name.zh_tw && m.name.zh_tw.includes(q)) ||
+        (Array.isArray(m.spawns) &&
+            m.spawns.some(loc =>
+                (loc.map_name && loc.map_name.toLowerCase().includes(q))
             ));
 
     // ✅ 等級範圍
     const matchesLevel =
-        (!minLevel.value || m.stats.level >= parseInt(minLevel.value)) &&
-        (!maxLevel.value || m.stats.level <= parseInt(maxLevel.value))
+        (!minLevel.value || m.basic_info.level >= parseInt(minLevel.value)) &&
+        (!maxLevel.value || m.basic_info.level <= parseInt(maxLevel.value))
+
+    // ✅ 類型篩選
+    const matchesType =
+        selectedType.value.length === 0 ||
+        selectedType.value.includes("all") ||
+        selectedType.value.some(t => {
+          if (m.special_status.includes(t)) {
+            return true;
+          } else {
+            if (selectedType.value.includes("common")) {
+              if (!m.special_status.includes('mini') && !m.special_status.includes('MVP')) {
+                return true;
+              }
+            }
+          }
+
+
+          return false;
+        })
+
 
     // ✅ 屬性篩選
     const matchesElement =
         selectedElement.value.length === 0 ||
         selectedElement.value.includes("all") ||
-        selectedElement.value.some(e => m.attributes.element.includes(e))
+        selectedElement.value.some(e => m.basic_info.element.type.includes(e))
 
     // ✅ 種族篩選
     const matchesRace =
         selectedRace.value.length === 0 ||
         selectedRace.value.includes("all") ||
-        selectedRace.value.some(r => m.attributes.race.includes(r))
+        selectedRace.value.some(r => m.basic_info.race.includes(r))
 
     // ✅ 大小篩選
     const matchesSize =
         selectedSize.value.length === 0 ||
         selectedSize.value.includes("all") ||
-        selectedSize.value.includes(m.attributes.size)
+        selectedSize.value.includes(m.basic_info.size + '型')
 
-    return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize
+    return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize && matchesType
   })
       // ✅ 排序 (依 sortAsc)
       .sort((a, b) => sortAsc.value
-          ? a.stats.level - b.stats.level  // 小 → 大
-          : b.stats.level - a.stats.level  // 大 → 小
+          ? a.basic_info.level - b.basic_info.level  // 小 → 大
+          : b.basic_info.level - a.basic_info.level  // 大 → 小
       )
 
 
@@ -120,6 +149,13 @@ watch(filteredMonsters, () => {
     initFlowbite()
   })
 })
+
+const getAttack = (min, max) => {
+  if (min === max) {
+    return min;
+  }
+  return min + '-' + max;
+}
 
 // ✅ 切換種族
 function toggleRace(id) {
@@ -178,6 +214,36 @@ function toggleSize(id) {
 }
 
 // ✅ 切換屬性
+function toggleType(id) {
+
+  // 如果點擊 ALL
+  // 如果有選 ALL，先清除
+  if (id === 'all') {
+    selectedType.value = ['all']
+    return
+  }
+
+  // 如果列表包含 ALL，先移除 ALL
+  if (selectedType.value.includes('all')) {
+    selectedType.value = []
+  }
+
+  // ✅ 如果已存在 → 取消選取
+  if (selectedType.value.includes(id)) {
+    selectedType.value = selectedType.value.filter(e => e !== id)
+  } else {
+    // 加入新選項
+    selectedType.value.push(id)
+  }
+
+  //如果空 → 設置為all
+  if (selectedType.value.length === 0) {
+    selectedType.value.push('all')
+  }
+
+}
+
+// ✅ 切換屬性
 function toggleElement(id) {
 
   // 如果點擊 ALL
@@ -212,6 +278,7 @@ function clearFilters() {
   search.value = ""
   minLevel.value = ""
   maxLevel.value = ""
+  selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']
   selectedSize.value = ['all']
@@ -219,6 +286,7 @@ function clearFilters() {
 
 }
 
+//數值
 function displayValue(value) {
   // 如果可以轉成數字，且不是 NaN，就做千分位格式化
   if (!isNaN(value)) {
@@ -229,27 +297,22 @@ function displayValue(value) {
   return value;
 }
 
+//選擇地圖
 function selectMap(value) {
   search.value = value
+  minLevel.value = ""
+  maxLevel.value = ""
+  selectedType.value = ['all']
+  selectedElement.value = ['all']
+  selectedRace.value = ['all']
+  selectedSize.value = ['all']
+
 }
-let pageNum = 0
-function onTouchEnd() {
-  return new Promise((resolve, reject) => {
-    getList({ page: pageNum, pageSize: 50 }).then((newList) => {
-      if (Math.random() > 0.3) {
-        list.value.push(...newList)
-        pageNum += 1;
-        resolve(true)
-      }
-      else {
-        reject(new Error('加载失败，点击重新拉取数据'))
-      }
-    })
-  })
+
+const getMonsterImg = (id) => {
+  // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
+  return `/images/monsters/${id}.gif`
 }
-// const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
-const getMasterImg = (id) => new URL(`/assets/images/monsters/${id}.gif`, import.meta.url).href;
-const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta.url).href;
 </script>
 
 <template>
@@ -304,19 +367,19 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
       </div>
     </div>
 
-    <!-- 屬性篩選 -->
+    <!-- 類型篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">屬性</h3>
+        <h3 class="text-yellow-400 font-bold mb-2">類型</h3>
       </div>
 
       <div class="flex flex-wrap gap-2">
         <button
-            v-for="e in elementList"
+            v-for="e in typeList"
             :key="e.id"
-            @click="toggleElement(e.id)"
+            @click="toggleType(e.id)"
             class="px-5 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
-            :class="selectedElement.includes(e.id)
+            :class="selectedType.includes(e.id)
               ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
               : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
         >
@@ -345,6 +408,28 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
           {{ r.name }}
         </button>
       </div>
+    </div>
+
+    <!-- 屬性篩選 -->
+    <div class="mb-4">
+      <div class="flex items-center gap-2">
+        <h3 class="text-yellow-400 font-bold mb-2">屬性</h3>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+            v-for="e in elementList"
+            :key="e.id"
+            @click="toggleElement(e.id)"
+            class="px-5 py-2 rounded-lg text-sm font-bold transition-all duration-200 transform"
+            :class="selectedElement.includes(e.id)
+              ? 'bg-[#FAD2A8] to-yellow-600 text-black shadow-xl'
+              : 'bg-[#6C5543] text-white hover:bg-[#8C5843]'"
+        >
+          {{ e.name }}
+        </button>
+      </div>
+
     </div>
 
     <!-- 大小 -->
@@ -378,37 +463,36 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
     <VirtualScroll
         :list="filteredMonsters"
         :item-height="200"
-        :bufferCount = "25"
-        :grid="4"
+        :bufferCount="25"
+        :grid="1"
         :rowKey="id"
+        class="md:hidden"
     >
       <template #default="{ item: m, index }">
-        <div
-            class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
+        <div class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
           <div class="flex justify-between">
             <!-- 圖片觸發 dropdown -->
             <img
-                :id="'dropdownHoverButton' + m.id"
-                :data-dropdown-toggle="'dropdownHover' + m.id"
+                :id="'dropdownHoverButtonO' + m.id"
+                :data-dropdown-toggle="'dropdownHoverO' + m.id"
                 data-dropdown-placement="right"
                 data-dropdown-trigger="hover"
-                src="assets/image/icon/map.png"
+                :src="`/images/icon/map.png`"
                 alt="map icon"
                 class="w-10 h-10 cursor-pointer"
             />
 
             <!-- Dropdown menu -->
             <div
-                :id="'dropdownHover' + m.id"
-                class="z-10 hidden bg-black rounded-xs shadow-sm w-44 "
+                :id="'dropdownHoverO' + m.id"
+                class="z-10 hidden bg-black rounded-xs shadow-sm"
             >
-              <ul class="py-2 text-sm text-gray-200 "
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawn_locations">
-                <li>
-                  <a @click="selectMap(map.map_code)"
-                     class=" px-2 py-1 hover:bg-gray-600 hover:text-white pointer cursor-pointer">
-                    {{ map.map_name_zh }}({{ map.map_code }})
+              <ul class="py-1 text-sm text-gray-200"
+                  :aria-labelledby="'dropdownHoverButtonO'+m.id" v-for="map in m.spawns">
+                <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">
+                  <a class=" px-2 py-1 w-full hover:text-white">
+                    {{ map.description }}({{ map.map_name }})
                   </a>
                 </li>
 
@@ -417,38 +501,34 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
 
 
             <div class="flex h-6">
-              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.attributes.race }}</p>
-              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">{{
-                  m.attributes.element
-                }}</p>
-              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.attributes.size }}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>
+              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">
+                {{ m.basic_info.element.type }}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>
             </div>
 
           </div>
 
-          <img :src="`/images/monsters/${m.image_url}.gif`" alt="" class="w-full h-12 object-contain mb-3 rounded">
-
-          <h2 class="font-bold text-lg text-yellow-800">{{ m.monster_name_zh }}</h2>
+          <img :src="getMonsterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">
+          <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
           <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
-          <h2 class="text-xs text-gray-500">{{ m.monster_name_en }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
 
-          <p class="text-sm flex justify-center"><strong>等級：</strong><span class="statsColor">{{
-              m.stats.level
-            }}</span>
-          </p>
+          <p class="text-sm flex justify-center"><strong>等級：</strong><span
+              class="statsColor">{{ displayValue(m.basic_info.level) }}</span></p>
           <p class="text-sm flex justify-center"><strong>血量：</strong><span
               class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
           <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.base_exp) }}</span></p>
+              class="statsColor">{{ displayValue(m.stats.exp.base) }}</span></p>
           <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
-              class="statsColor">{{ displayValue(m.stats.job_exp) }}</span></p>
-          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">{{
-              m.stats.attack_power
-            }}</span></p>
+              class="statsColor">{{ displayValue(m.stats.exp.job) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">
+            {{ getAttack(m.stats.attack.min, m.stats.attack.max) }}
+          </span></p>
           <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
-              class="statsColor">{{ m.stats.physical_defense_def }}</span></p>
+              class="statsColor">{{ m.stats.defense }}</span></p>
           <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
-              class="statsColor">{{ m.stats.magic_defense_mdef }}</span></p>
+              class="statsColor">{{ m.stats.magic_defense }}</span></p>
           <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
               class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
           <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
@@ -460,17 +540,113 @@ const getItemImg = (id) => new URL(`/assets/images/items/${id}.gif`, import.meta
           <ul class="text-sm">
             <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
               <div class="flex">
-                <img :src="`/images/items/${drop.item_image_url}.gif`" alt="" class="w-5 h-5">
-                <span>{{ drop.item_name_zh }}</span>
+                <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
+                <span>{{ drop.name }}</span>
               </div>
-              <span class="text-red-600 font-bold">{{ drop.rate_percent }}%</span>
+              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
             </li>
+
           </ul>
+
         </div>
+
+
       </template>
     </VirtualScroll>
 
+    <VirtualScroll
+        :list="filteredMonsters"
+        :item-height="200"
+        :bufferCount="25"
+        :grid="4"
+        :rowKey="id"
+        class="md:block"
+    >
+      <template #default="{ item: m, index }">
+        <div class="m-2 bg-[#f0e4d6] rounded p-4 text-black shadow-lg hover:shadow-xl transition-all">
 
+          <div class="flex justify-between">
+            <!-- 圖片觸發 dropdown -->
+            <img
+                :id="'dropdownHoverButton' + m.id"
+                :data-dropdown-toggle="'dropdownHover' + m.id"
+                data-dropdown-placement="right"
+                data-dropdown-trigger="hover"
+                :src="`/images/icon/map.png`"
+                alt="map icon"
+                class="w-10 h-10 cursor-pointer"
+            />
+
+            <!-- Dropdown menu -->
+            <div
+                :id="'dropdownHover' + m.id"
+                class="z-10 hidden bg-black rounded-xs shadow-sm"
+            >
+              <ul class="py-1 text-sm text-gray-200"
+                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawns">
+                <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">
+                  <a class=" px-2 py-1 w-full hover:text-white">
+                    {{ map.description }}({{ map.map_name }})
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+
+            <div class="flex h-6">
+              <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>
+              <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">
+                {{ m.basic_info.element.type }}</p>
+              <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>
+            </div>
+
+          </div>
+
+          <img :src="getMonsterImg(m.id)" alt="" class="w-full h-12 object-contain mb-3 rounded">
+          <h2 class="font-bold text-lg text-yellow-800">{{ m.name.zh_tw }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.id }}</h2>
+          <h2 class="text-xs text-gray-500">{{ m.name.en }}</h2>
+
+          <p class="text-sm flex justify-center"><strong>等級：</strong><span
+              class="statsColor">{{ displayValue(m.basic_info.level) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>血量：</strong><span
+              class="statsColor">{{ displayValue(m.stats.hp) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>經驗值：</strong><span
+              class="statsColor">{{ displayValue(m.stats.exp.base) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>職業經驗值：</strong><span
+              class="statsColor">{{ displayValue(m.stats.exp.job) }}</span></p>
+          <p class="text-sm flex justify-center"><strong>攻擊力：</strong><span class="statsColor">
+            {{ getAttack(m.stats.attack.min, m.stats.attack.max) }}
+          </span></p>
+          <p class="text-sm flex justify-center"><strong>物理防禦：</strong><span
+              class="statsColor">{{ m.stats.defense }}</span></p>
+          <p class="text-sm flex justify-center"><strong>魔法防禦：</strong><span
+              class="statsColor">{{ m.stats.magic_defense }}</span></p>
+          <p class="text-sm flex justify-center"><strong>100%命中：</strong><span
+              class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
+          <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
+              class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
+
+          <hr class="my-3 border-yellow-700">
+
+          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+          <ul class="text-sm">
+            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+              <div class="flex">
+                <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
+                <span>{{ drop.name }}</span>
+              </div>
+              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </template>
+    </VirtualScroll>
 
     <!-- 無結果提示 -->
     <div v-if="filteredMonsters.length === 0" class="text-center py-20">
