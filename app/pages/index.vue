@@ -7,8 +7,7 @@ import { VirtualScroll } from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
 // ✅ 怪物資料
-const monsters1 = ref(monstersDisplayIndex);
-const monsters = ref(monstersData3);
+const monsters1 = ref([]);
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小

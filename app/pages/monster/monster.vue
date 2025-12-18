@@ -1,14 +1,27 @@
 <script setup>
 import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
-import {monstersData3} from "~/assets/data/monsters3.js";
-import {monstersDisplayIndex} from "~/assets/data/monsters_display_index.js";
+
 import {VirtualScroll} from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
 // ✅ 怪物資料
-const monsters1 = ref(monstersDisplayIndex);
-const monsters = ref(monstersData3);
+const monsters1 = ref([]);
+// 2. 在網頁載入時 fetch 資料
+onMounted(async () => {
+  try {
+    // 路徑不需要寫 public，編譯後 public 會變成根目錄 /
+    const response = await fetch('/data/monsters_display_index.json');
+    if (!response.ok) throw new Error('資料載入失敗');
+
+    const data = await response.json();
+    monsters1.value = data;
+  } catch (error) {
+    console.error("讀取資料錯誤:", error);
+  } finally {
+    // isLoading.value = false;
+  }
+});
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小

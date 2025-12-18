@@ -1,16 +1,30 @@
 <script setup>
 import { ref, computed } from 'vue';
-import { itemsData } from "~/assets/data/items_database.js";
 
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import {VirtualScroll} from "vue3-virtual-scroll";
-const items = ref(itemsData); // 這裡使用模擬數據
+const items = ref([]); // 這裡使用模擬數據
 
 // --- 狀態 State ---
 const searchTerm = ref('');
 const selectedCategory = ref('ALL');
 const selectedSubcategory = ref('ALL');
 
+// 2. 在網頁載入時 fetch 資料
+onMounted(async () => {
+  try {
+    // 路徑不需要寫 public，編譯後 public 會變成根目錄 /
+    const response = await fetch('/data/items_database.json');
+    if (!response.ok) throw new Error('資料載入失敗');
+
+    const data = await response.json();
+    items.value = data;
+  } catch (error) {
+    console.error("讀取資料錯誤:", error);
+  } finally {
+    // isLoading.value = false;
+  }
+});
 
 const categories = ['ALL', '武器', '防具', '附魔', '服飾', '卡片', '消耗', '寵物', '其他'];
 
