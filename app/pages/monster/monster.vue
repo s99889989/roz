@@ -1,14 +1,12 @@
 <script setup>
 import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
-import {monstersData3} from "~/assets/data/monsters3.js";
 import {monstersDisplayIndex} from "~/assets/data/monsters_display_index.js";
 import {VirtualScroll} from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
 // ✅ 怪物資料
 const monsters1 = ref(monstersDisplayIndex);
-const monsters = ref(monstersData3);
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -156,122 +154,73 @@ const getAttack = (min, max) => {
   }
   return min + '-' + max;
 }
+//選擇模式
+const selectMode = ref(false);
+// 點擊切換選擇模式
+const toggleSelectMode = () => {
+  selectMode.value = !selectMode.value;
+};
+
+/**
+ * 核心通用切換邏輯 (支援單選/多選切換)
+ * @param {String} id - 點擊的項目 ID
+ * @param {Ref} selectedRef - 傳入對應的 Vue ref 陣列
+ */
+function handleToggle(id, selectedRef) {
+  // 取得當前陣列的副本，操作完再放回去，確保 Vue 響應式觸發
+  let currentSelection = [...selectedRef.value];
+
+  // --- 情況 A：單選模式 (selectMode.value = false) ---
+  if (!selectMode.value) {
+    if (id === 'all' || currentSelection.includes(id)) {
+      // 點擊 ALL 或 點擊已選中的項目 -> 回歸 ALL
+      selectedRef.value = ['all'];
+    } else {
+      // 點擊新項目 -> 直接取代
+      selectedRef.value = [id];
+    }
+    return;
+  }
+
+  // --- 情況 B：多選模式 (selectMode.value = true) ---
+  if (id === 'all') {
+    // 點擊 ALL -> 清空其他，只留 ALL
+    selectedRef.value = ['all'];
+    return;
+  }
+
+  // 如果原本是 ALL，現在點擊具體項目 -> 先移除 ALL
+  if (currentSelection.includes('all')) {
+    currentSelection = [];
+  }
+
+  // 執行切換 (存在就移除，不存在就加入)
+  if (currentSelection.includes(id)) {
+    currentSelection = currentSelection.filter(item => item !== id);
+  } else {
+    currentSelection.push(id);
+  }
+
+  // 如果操作完變空了，或是手動取消到沒東西 -> 自動回歸 ALL
+  if (currentSelection.length === 0) {
+    currentSelection = ['all'];
+  }
+
+  // 最後統一賦值
+  selectedRef.value = currentSelection;
+}
 
 // ✅ 切換種族
-function toggleRace(id) {
-// 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedRace.value = ['all']
-    return
-  }
-
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedRace.value.includes('all')) {
-    selectedRace.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedRace.value.includes(id)) {
-    selectedRace.value = selectedRace.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedRace.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedRace.value.length === 0) {
-    selectedRace.value.push('all')
-  }
-}
+const toggleRace = (id) => handleToggle(id, selectedRace);
 
 // ✅ 切換體型
-function toggleSize(id) {
-// 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedSize.value = ['all']
-    return
-  }
+const toggleSize = (id) => handleToggle(id, selectedSize);
 
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedSize.value.includes('all')) {
-    selectedSize.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedSize.value.includes(id)) {
-    selectedSize.value = selectedSize.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedSize.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedSize.value.length === 0) {
-    selectedSize.value.push('all')
-  }
-}
+// ✅ 切換類型
+const toggleType = (id) => handleToggle(id, selectedType);
 
 // ✅ 切換屬性
-function toggleType(id) {
-
-  // 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedType.value = ['all']
-    return
-  }
-
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedType.value.includes('all')) {
-    selectedType.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedType.value.includes(id)) {
-    selectedType.value = selectedType.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedType.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedType.value.length === 0) {
-    selectedType.value.push('all')
-  }
-
-}
-
-// ✅ 切換屬性
-function toggleElement(id) {
-
-  // 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedElement.value = ['all']
-    return
-  }
-
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedElement.value.includes('all')) {
-    selectedElement.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedElement.value.includes(id)) {
-    selectedElement.value = selectedElement.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedElement.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedElement.value.length === 0) {
-    selectedElement.value.push('all')
-  }
-
-}
+const toggleElement = (id) => handleToggle(id, selectedElement);//
 
 // 清除所有篩選
 function clearFilters() {
