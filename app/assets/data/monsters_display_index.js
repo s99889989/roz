@@ -9012,8 +9012,8 @@ export const monstersDisplayIndex = {
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 465,
-            "hit_100_percent": 423,
+            "flee_95_percent": 489,
+            "hit_100_percent": 447,
             "hp": 91182000,
             "magic_attack": {
                 "max": 2746,
@@ -12555,16 +12555,6 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 400830,
-                "name": "(服飾)跳躍的小雞(歸屬)",
-                "rate": "???",
-                "icon_url": "images/items/400830.gif",
-                "slotCount": 0,
-                "slot": "頭上",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 400831,
                 "name": "(服飾)蛋殼小雞玩偶(歸屬)",
                 "rate": "???",
@@ -14758,8 +14748,8 @@ export const monstersDisplayIndex = {
             },
             "defense": 60,
             "exp": {
-                "base": 800,
-                "job": 195
+                "base": 517,
+                "job": 103
             },
             "flee_95_percent": 213,
             "hit_100_percent": 235,
@@ -15350,11 +15340,6 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
-                "spawn_info": ""
-            },
-            {
                 "map_name": "ztw_e03_a",
                 "description": "薑餅廣場",
                 "spawn_info": ""
@@ -15366,6 +15351,11 @@ export const monstersDisplayIndex = {
             },
             {
                 "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
                 "description": "薑餅廣場",
                 "spawn_info": ""
             }
@@ -26739,6 +26729,305 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1102": {
+        "id": 1102,
+        "name": {
+            "zh_tw": "巫婆",
+            "en": "BATHORY",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "暗"
+            },
+            "level": 88,
+            "race": "人形",
+            "size": "中"
+        },
+        "image_url": "images/monsters/1102.gif",
+        "stats": {
+            "attack": {
+                "max": 455,
+                "min": 353
+            },
+            "base_stats": {
+                "agi": 38,
+                "dex": 67,
+                "int": 77,
+                "luk": 50,
+                "str": 66,
+                "vit": 40
+            },
+            "defense": 61,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 341,
+            "hit_100_percent": 336,
+            "hp": 5242,
+            "magic_attack": {
+                "max": 288,
+                "min": 230
+            },
+            "magic_defense": 89
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 637,
+                "name": "魔物掃把",
+                "rate": 0.1,
+                "icon_url": "images/items/637.gif",
+                "slotCount": 0,
+                "slot": "捕捉",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1000,
+                "name": "星星的角",
+                "rate": 0.15,
+                "icon_url": "images/items/1000.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1001,
+                "name": "星星的粉末",
+                "rate": 1,
+                "icon_url": "images/items/1001.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1006,
+                "name": "古魔法書",
+                "rate": 0.08,
+                "icon_url": "images/items/1006.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1061,
+                "name": "魔女之星沙",
+                "rate": 24.25,
+                "icon_url": "images/items/1061.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2252,
+                "name": "魔法帽",
+                "rate": 0.02,
+                "icon_url": "images/items/2252.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4119,
+                "name": "巫婆卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4119.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "邪惡的"
+            },
+            {
+                "item_id": 450315,
+                "name": "鋼鐵鎧甲",
+                "rate": "???",
+                "icon_url": "images/items/450315.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 510182,
+                "name": "長柄短劍",
+                "rate": "???",
+                "icon_url": "images/items/510182.gif",
+                "slotCount": 3,
+                "slot": "短劍",
+                "enchantment_slots": "2-3",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun04",
+                "description": "鐘塔地下4樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_a",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_b",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_z",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 30,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 30,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 30,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_STOP",
+                "SkillNameZhTW": "停止",
+                "SkillID": 342,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 30,
+                "Chat": ""
+            }
+        ]
+    },
     "1103": {
         "id": 1103,
         "name": {
@@ -27817,6 +28106,16 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
+                "item_id": 610069,
+                "name": "冰靈拳刃",
+                "rate": 0.02,
+                "icon_url": "images/items/610069.gif",
+                "slotCount": 0,
+                "slot": "拳刃",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
                 "item_id": 610082,
                 "name": "卡塔勒拳刃",
                 "rate": "???",
@@ -28719,6 +29018,16 @@ export const monstersDisplayIndex = {
             }
         ],
         "spawns": [
+            {
+                "map_name": "alde_dun01",
+                "description": "鐘塔地下1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "alde_dun03",
+                "description": "鐘塔地下3樓",
+                "spawn_info": ""
+            },
             {
                 "map_name": "gef_d01_a",
                 "description": "吉芬地下密穴2樓",
@@ -30777,32 +31086,12 @@ export const monstersDisplayIndex = {
         ],
         "drops": [
             {
-                "item_id": 509,
-                "name": "白色藥草",
-                "rate": 10,
-                "icon_url": "images/items/509.gif",
-                "slotCount": 0,
-                "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 1615,
                 "name": "骷髏魔杖",
                 "rate": 0.01,
                 "icon_url": "images/items/1615.gif",
                 "slotCount": 0,
                 "slot": "單手杖",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 2217,
-                "name": "聖職之帽",
-                "rate": 0.05,
-                "icon_url": "images/items/2217.gif",
-                "slotCount": 1,
-                "slot": "頭上",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -30852,16 +31141,6 @@ export const monstersDisplayIndex = {
                 "rate": "???",
                 "icon_url": "images/items/480381.gif",
                 "slotCount": 1,
-                "slot": "披肩",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
-                "item_id": 480382,
-                "name": "抗魔斗篷",
-                "rate": 0.01,
-                "icon_url": "images/items/480382.gif",
-                "slotCount": 0,
                 "slot": "披肩",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
@@ -34817,6 +35096,427 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1131": {
+        "id": 1131,
+        "name": {
+            "zh_tw": "裘卡",
+            "en": "JOKER",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "風"
+            },
+            "level": 90,
+            "race": "人形",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1131.gif",
+        "stats": {
+            "attack": {
+                "max": 555,
+                "min": 427
+            },
+            "base_stats": {
+                "agi": 99,
+                "dex": 92,
+                "int": 50,
+                "luk": 35,
+                "str": 84,
+                "vit": 30
+            },
+            "defense": 64,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 363,
+            "hit_100_percent": 396,
+            "hp": 6022,
+            "magic_attack": {
+                "max": 218,
+                "min": 182
+            },
+            "magic_defense": 76
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 508,
+                "name": "黃色藥草",
+                "rate": 5,
+                "icon_url": "images/items/508.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 616,
+                "name": "老舊卡冊",
+                "rate": 0.01,
+                "icon_url": "images/items/616.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 641,
+                "name": "黑暗合約書",
+                "rate": 0.1,
+                "icon_url": "images/items/641.gif",
+                "slotCount": 0,
+                "slot": "捕捉",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 695,
+                "name": "聖靈召喚等級5",
+                "rate": 0.5,
+                "icon_url": "images/items/695.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 10,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 984,
+                "name": "神之金屬",
+                "rate": 0.5,
+                "icon_url": "images/items/984.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4139,
+                "name": "裘卡卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4139.gif",
+                "slotCount": 0,
+                "slot": "飾品",
+                "enchantment_slots": "",
+                "card_prefix_name": "月光之"
+            },
+            {
+                "item_id": 610090,
+                "name": "風靈拳刃",
+                "rate": 0.01,
+                "icon_url": "images/items/610090.gif",
+                "slotCount": 0,
+                "slot": "拳刃",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun04",
+                "description": "鐘塔地下4樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "MG_SOULSTRIKE",
+                "SkillNameZhTW": "聖靈召喚",
+                "SkillID": 13,
+                "SkillLv": 9,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 12,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_FROSTDIVER",
+                "SkillNameZhTW": "冰凍術",
+                "SkillID": 15,
+                "SkillLv": 9,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 1000,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 10,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ATTRICHANGE",
+                "SkillNameZhTW": "屬性轉變",
+                "SkillID": 161,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 300000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 10,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_FIREBALL",
+                "SkillNameZhTW": "火球術",
+                "SkillID": 17,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 10,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WINDATTACK",
+                "SkillNameZhTW": "風屬性攻擊",
+                "SkillID": 187,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "1.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 60000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 60000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 12,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKTHUNDER",
+                "SkillNameZhTW": "暗雷鳴術",
+                "SkillID": 341,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION_ON",
+                "SkillNameZhTW": "表情 開啟",
+                "SkillID": 474,
+                "SkillLv": 1,
+                "Rate": "1.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 60000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 20,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION_ON",
+                "SkillNameZhTW": "表情 開啟",
+                "SkillID": 474,
+                "SkillLv": 1,
+                "Rate": "1.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 60000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 22,
+                "Val2": "0x83",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_HEAVENDRIVE",
+                "SkillNameZhTW": "崩裂術",
+                "SkillID": 91,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 1200,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_QUAGMIRE",
+                "SkillNameZhTW": "泥沼地",
+                "SkillID": 92,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 12,
+                "Chat": ""
+            }
+        ]
+    },
     "1132": {
         "id": 1132,
         "name": {
@@ -37010,16 +37710,6 @@ export const monstersDisplayIndex = {
             "可移動"
         ],
         "drops": [
-            {
-                "item_id": 601,
-                "name": "蒼蠅翅膀",
-                "rate": 5,
-                "icon_url": "images/items/601.gif",
-                "slotCount": 0,
-                "slot": "-",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
             {
                 "item_id": 1017,
                 "name": "鼠鬚",
@@ -41213,8 +41903,8 @@ export const monstersDisplayIndex = {
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 462,
-            "hit_100_percent": 407,
+            "flee_95_percent": 504,
+            "hit_100_percent": 449,
             "hp": 128587500,
             "magic_attack": {
                 "max": 2544,
@@ -45952,7 +46642,7 @@ export const monstersDisplayIndex = {
                 "job": ""
             },
             "flee_95_percent": 343,
-            "hit_100_percent": 358,
+            "hit_100_percent": 378,
             "hp": 83926,
             "magic_attack": {
                 "max": 135,
@@ -46329,6 +47019,16 @@ export const monstersDisplayIndex = {
             }
         ],
         "spawns": [
+            {
+                "map_name": "alde_dun04",
+                "description": "鐘塔地下4樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
             {
                 "map_name": "gef_d02_a",
                 "description": "吉芬地下密穴3樓",
@@ -47076,6 +47776,246 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1189": {
+        "id": 1189,
+        "name": {
+            "zh_tw": "獸人弓箭手",
+            "en": "ORC_ARCHER",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 78,
+            "race": "人形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1189.gif",
+        "stats": {
+            "attack": {
+                "max": 477,
+                "min": 361
+            },
+            "base_stats": {
+                "agi": 32,
+                "dex": 119,
+                "int": 30,
+                "luk": 15,
+                "str": 55,
+                "vit": 24
+            },
+            "defense": 67,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 372,
+            "hit_100_percent": 313,
+            "hp": 4835,
+            "magic_attack": {
+                "max": 164,
+                "min": 138
+            },
+            "magic_defense": 31
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 507,
+                "name": "紅色藥草",
+                "rate": 7,
+                "icon_url": "images/items/507.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 509,
+                "name": "白色藥草",
+                "rate": 4.5,
+                "icon_url": "images/items/509.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1063,
+                "name": "銳利錐子",
+                "rate": 23.28,
+                "icon_url": "images/items/1063.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1734,
+                "name": "獸人弓箭手之弓",
+                "rate": 0.01,
+                "icon_url": "images/items/1734.gif",
+                "slotCount": 0,
+                "slot": "弓",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1753,
+                "name": "鋼鐵箭矢",
+                "rate": 5,
+                "icon_url": "images/items/1753.gif",
+                "slotCount": 0,
+                "slot": "箭矢",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1755,
+                "name": "風靈箭矢",
+                "rate": 12.5,
+                "icon_url": "images/items/1755.gif",
+                "slotCount": 0,
+                "slot": "箭矢",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1756,
+                "name": "地靈箭矢",
+                "rate": 12.5,
+                "icon_url": "images/items/1756.gif",
+                "slotCount": 0,
+                "slot": "箭矢",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4256,
+                "name": "獸人弓箭手卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4256.gif",
+                "slotCount": 0,
+                "slot": "飾品",
+                "enchantment_slots": "",
+                "card_prefix_name": "預期的"
+            },
+            {
+                "item_id": 500111,
+                "name": "彎刀",
+                "rate": "???",
+                "icon_url": "images/items/500111.gif",
+                "slotCount": 3,
+                "slot": "單手劍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun02",
+                "description": "鐘塔地下2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "HT_ANKLESNARE",
+                "SkillNameZhTW": "定位陷阱",
+                "SkillID": 117,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 300000,
+                "Cancelable": "yes",
+                "Target": "around2",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 5,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AC_SHOWER",
+                "SkillNameZhTW": "箭雨",
+                "SkillID": 47,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 1000,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "attackpcge",
+                "ConditionValue": 2,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            }
+        ]
+    },
     "1190": {
         "id": 1190,
         "name": {
@@ -47769,6 +48709,21 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower3",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
+            {
                 "map_name": "gl_c02_a",
                 "description": "克雷斯特漢姆古城2樓",
                 "spawn_info": ""
@@ -47946,6 +48901,36 @@ export const monstersDisplayIndex = {
             {
                 "map_name": "sp_d05_z",
                 "description": "人面獅身像地下5樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_a",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_b",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_z",
+                "description": "鐘塔3樓",
                 "spawn_info": ""
             }
         ],
@@ -48293,6 +49278,279 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1193": {
+        "id": 1193,
+        "name": {
+            "zh_tw": "鐘怪",
+            "en": "ALARM",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "無"
+            },
+            "level": 88,
+            "race": "無形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1193.gif",
+        "stats": {
+            "attack": {
+                "max": 541,
+                "min": 413
+            },
+            "base_stats": {
+                "agi": 72,
+                "dex": 66,
+                "int": 25,
+                "luk": 25,
+                "str": 70,
+                "vit": 40
+            },
+            "defense": 106,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 332,
+            "hit_100_percent": 365,
+            "hp": 5562,
+            "magic_attack": {
+                "max": 176,
+                "min": 146
+            },
+            "magic_defense": 53
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 7.5,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 984,
+                "name": "神之金屬",
+                "rate": 0.53,
+                "icon_url": "images/items/984.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1095,
+                "name": "指針",
+                "rate": 26.68,
+                "icon_url": "images/items/1095.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2607,
+                "name": "髮夾",
+                "rate": 0.01,
+                "icon_url": "images/items/2607.gif",
+                "slotCount": 1,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4244,
+                "name": "鐘怪卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4244.gif",
+                "slotCount": 0,
+                "slot": "鞋子",
+                "enchantment_slots": "",
+                "card_prefix_name": "尋找者的"
+            },
+            {
+                "item_id": 7005,
+                "name": "骷髏頭",
+                "rate": 7.5,
+                "icon_url": "images/items/7005.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7026,
+                "name": "鐘塔之鑰",
+                "rate": 0.1,
+                "icon_url": "images/items/7026.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 550164,
+                "name": "言靈魔杖",
+                "rate": "???",
+                "icon_url": "images/items/550164.gif",
+                "slotCount": 2,
+                "slot": "手杖",
+                "enchantment_slots": "2-3",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower3",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_a",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_b",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_z",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_SPLASHATTACK",
+                "SkillNameZhTW": "濺射攻擊",
+                "SkillID": 174,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "attackpcge",
+                "ConditionValue": 2,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLINDATTACK",
+                "SkillNameZhTW": "致盲攻擊",
+                "SkillID": 177,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKBREATH",
+                "SkillNameZhTW": "黑暗呼吸",
+                "SkillID": 202,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 7,
+                "Chat": ""
+            }
+        ]
+    },
     "1194": {
         "id": 1194,
         "name": {
@@ -48431,6 +49689,11 @@ export const monstersDisplayIndex = {
             }
         ],
         "spawns": [
+            {
+                "map_name": "alde_dun01",
+                "description": "鐘塔地下1樓",
+                "spawn_info": ""
+            },
             {
                 "map_name": "gl_dun01",
                 "description": "地下洞穴1樓",
@@ -48689,6 +49952,26 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
+                "map_name": "c_tower1",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower3",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
+            {
                 "map_name": "gl_c01_a",
                 "description": "克雷斯特漢姆古城1樓",
                 "spawn_info": ""
@@ -48751,6 +50034,51 @@ export const monstersDisplayIndex = {
             {
                 "map_name": "gl_knt01",
                 "description": "騎士團1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_a",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_b",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_z",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_a",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_b",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_z",
+                "description": "鐘塔3樓",
                 "spawn_info": ""
             }
         ],
@@ -49383,12 +50711,12 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": "靈魂出竅的"
             },
             {
-                "item_id": 7005,
-                "name": "骷髏頭",
-                "rate": 15,
-                "icon_url": "images/items/7005.gif",
+                "item_id": 401076,
+                "name": "(服飾)十字架髮圈(歸屬)",
+                "rate": "???",
+                "icon_url": "images/items/401076.gif",
                 "slotCount": 0,
-                "slot": "-",
+                "slot": "頭上",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -49529,6 +50857,261 @@ export const monstersDisplayIndex = {
                 "Val4": "",
                 "Val5": "",
                 "Emotion": 9,
+                "Chat": ""
+            }
+        ]
+    },
+    "1199": {
+        "id": 1199,
+        "name": {
+            "zh_tw": "朽魔",
+            "en": "PUNK",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "風"
+            },
+            "level": 82,
+            "race": "植物",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/1199.gif",
+        "stats": {
+            "attack": {
+                "max": 501,
+                "min": 383
+            },
+            "base_stats": {
+                "agi": 39,
+                "dex": 95,
+                "int": 35,
+                "luk": 45,
+                "str": 67,
+                "vit": 30
+            },
+            "defense": 68,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 362,
+            "hit_100_percent": 330,
+            "hp": 3869,
+            "magic_attack": {
+                "max": 188,
+                "min": 154
+            },
+            "magic_defense": 55
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 715,
+                "name": "黃色魔力礦石",
+                "rate": 4,
+                "icon_url": "images/items/715.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1057,
+                "name": "蛾蝶蟲翅膀粉末",
+                "rate": 15,
+                "icon_url": "images/items/1057.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1061,
+                "name": "魔女之星沙",
+                "rate": 5,
+                "icon_url": "images/items/1061.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4313,
+                "name": "朽魔卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4313.gif",
+                "slotCount": 0,
+                "slot": "披肩",
+                "enchantment_slots": "",
+                "card_prefix_name": "陷於泥沼的"
+            },
+            {
+                "item_id": 7001,
+                "name": "黴菌粉末",
+                "rate": 26.68,
+                "icon_url": "images/items/7001.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 10004,
+                "name": "寵物奶嘴",
+                "rate": 0.5,
+                "icon_url": "images/items/10004.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 480414,
+                "name": "連帽披肩",
+                "rate": 0.08,
+                "icon_url": "images/items/480414.gif",
+                "slotCount": 1,
+                "slot": "披肩",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower1",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_a",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_b",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_z",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_PETRIFYATTACK",
+                "SkillNameZhTW": "麻痹攻擊",
+                "SkillID": 180,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 7,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WINDATTACK",
+                "SkillNameZhTW": "風屬性攻擊",
+                "SkillID": 187,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 7,
+                "Val2": "0x3095",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
                 "Chat": ""
             }
         ]
@@ -50530,7 +52113,7 @@ export const monstersDisplayIndex = {
                 "base": "",
                 "job": ""
             },
-            "flee_95_percent": 401,
+            "flee_95_percent": 360,
             "hit_100_percent": 357,
             "hp": 12000,
             "magic_attack": {
@@ -51268,6 +52851,11 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
+                "map_name": "alde_dun03",
+                "description": "鐘塔地下3樓",
+                "spawn_info": ""
+            },
+            {
                 "map_name": "gl_dun01",
                 "description": "地下洞穴1樓",
                 "spawn_info": ""
@@ -51340,6 +52928,521 @@ export const monstersDisplayIndex = {
                 "CastTime": 0,
                 "Delay": 5000,
                 "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1211": {
+        "id": 1211,
+        "name": {
+            "zh_tw": "伊特瓢蟲",
+            "en": "BRILIGHT",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "火"
+            },
+            "level": 75,
+            "race": "昆蟲",
+            "size": "小"
+        },
+        "image_url": "images/monsters/1211.gif",
+        "stats": {
+            "attack": {
+                "max": 527,
+                "min": 391
+            },
+            "base_stats": {
+                "agi": 19,
+                "dex": 67,
+                "int": 32,
+                "luk": 30,
+                "str": 51,
+                "vit": 38
+            },
+            "defense": 93,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 322,
+            "hit_100_percent": 300,
+            "hp": 2772,
+            "magic_attack": {
+                "max": 146,
+                "min": 126
+            },
+            "magic_defense": 25
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 509,
+                "name": "白色藥草",
+                "rate": 13,
+                "icon_url": "images/items/509.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 757,
+                "name": "鋁原石",
+                "rate": 1.1,
+                "icon_url": "images/items/757.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 6,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 992,
+                "name": "風靈礦石",
+                "rate": 1,
+                "icon_url": "images/items/992.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4213,
+                "name": "伊特瓢蟲卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4213.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "無言的"
+            },
+            {
+                "item_id": 7009,
+                "name": "彩色外皮",
+                "rate": 26.68,
+                "icon_url": "images/items/7009.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610083,
+                "name": "秘刃闇嘯",
+                "rate": "???",
+                "icon_url": "images/items/610083.gif",
+                "slotCount": 1,
+                "slot": "拳刃",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun02",
+                "description": "鐘塔地下2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_PIERCINGATT",
+                "SkillNameZhTW": "穿刺攻擊",
+                "SkillID": 158,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_FIREATTACK",
+                "SkillNameZhTW": "火屬性攻擊",
+                "SkillID": 186,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_KEEPING",
+                "SkillNameZhTW": "堅固防禦",
+                "SkillID": 201,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 20,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            }
+        ]
+    },
+    "1213": {
+        "id": 1213,
+        "name": {
+            "zh_tw": "獸人戰士長",
+            "en": "HIGH_ORC",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "火"
+            },
+            "level": 85,
+            "race": "人形",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1213.gif",
+        "stats": {
+            "attack": {
+                "max": 670,
+                "min": 498
+            },
+            "base_stats": {
+                "agi": 16,
+                "dex": 83,
+                "int": 31,
+                "luk": 20,
+                "str": 75,
+                "vit": 40
+            },
+            "defense": 101,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 344,
+            "hit_100_percent": 305,
+            "hp": 4193,
+            "magic_attack": {
+                "max": 177,
+                "min": 147
+            },
+            "magic_defense": 45
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 508,
+                "name": "黃色藥草",
+                "rate": 4.5,
+                "icon_url": "images/items/508.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 756,
+                "name": "神之金屬原石",
+                "rate": 0.98,
+                "icon_url": "images/items/756.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 6.5,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 931,
+                "name": "獸人戰士之證",
+                "rate": 37.5,
+                "icon_url": "images/items/931.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 999,
+                "name": "鋼鐵",
+                "rate": 0.45,
+                "icon_url": "images/items/999.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1304,
+                "name": "獸人斧",
+                "rate": 0.05,
+                "icon_url": "images/items/1304.gif",
+                "slotCount": 0,
+                "slot": "單手斧",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4322,
+                "name": "獸人戰士長卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4322.gif",
+                "slotCount": 0,
+                "slot": "盾牌",
+                "enchantment_slots": "",
+                "card_prefix_name": "反擊的"
+            },
+            {
+                "item_id": 7002,
+                "name": "獸人之牙",
+                "rate": 12.5,
+                "icon_url": "images/items/7002.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 560084,
+                "name": "鋼鐵拳套",
+                "rate": "???",
+                "icon_url": "images/items/560084.gif",
+                "slotCount": 3,
+                "slot": "拳套",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 450310,
+                "name": "鋼鐵鎖子甲",
+                "rate": "???",
+                "icon_url": "images/items/450310.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun02",
+                "description": "鐘塔地下2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_FIREATTACK",
+                "SkillNameZhTW": "火屬性攻擊",
+                "SkillID": 186,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SMOKING",
+                "SkillNameZhTW": "吸菸",
+                "SkillID": 195,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 36000000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 32,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 9,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "CR_SHIELDCHARGE",
+                "SkillNameZhTW": "盾擊",
+                "SkillID": 250,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
                 "Target": "target",
                 "ConditionType": "always",
                 "ConditionValue": 0,
@@ -51719,6 +53822,227 @@ export const monstersDisplayIndex = {
                 "Rate": "5.00%",
                 "State": "chase",
                 "CastTime": 600,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1216": {
+        "id": 1216,
+        "name": {
+            "zh_tw": "梅納海葵",
+            "en": "PENOMENA",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "毒"
+            },
+            "level": 86,
+            "race": "魚貝",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1216.gif",
+        "stats": {
+            "attack": {
+                "max": 739,
+                "min": 545
+            },
+            "base_stats": {
+                "agi": 38,
+                "dex": 107,
+                "int": 35,
+                "luk": 10,
+                "str": 76,
+                "vit": 35
+            },
+            "defense": 85,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 366,
+            "hit_100_percent": 326,
+            "hp": 4589,
+            "magic_attack": {
+                "max": 174,
+                "min": 148
+            },
+            "magic_defense": 32
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 525,
+                "name": "萬能藥",
+                "rate": 1,
+                "icon_url": "images/items/525.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 716,
+                "name": "紅色魔力礦石",
+                "rate": 2.75,
+                "icon_url": "images/items/716.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 719,
+                "name": "紫寶石",
+                "rate": 0.08,
+                "icon_url": "images/items/719.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 938,
+                "name": "粘稠液體",
+                "rate": 35,
+                "icon_url": "images/items/938.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 962,
+                "name": "觸鬚",
+                "rate": 40,
+                "icon_url": "images/items/962.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4314,
+                "name": "梅納海葵卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4314.gif",
+                "slotCount": 0,
+                "slot": "盾牌",
+                "enchantment_slots": "",
+                "card_prefix_name": "火焰防禦的"
+            },
+            {
+                "item_id": 7013,
+                "name": "珊瑚",
+                "rate": 24.25,
+                "icon_url": "images/items/7013.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610067,
+                "name": "火靈拳刃",
+                "rate": 0.01,
+                "icon_url": "images/items/610067.gif",
+                "slotCount": 0,
+                "slot": "拳刃",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 560079,
+                "name": "龍爪拳套",
+                "rate": "???",
+                "icon_url": "images/items/560079.gif",
+                "slotCount": 2,
+                "slot": "拳套",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun03",
+                "description": "鐘塔地下3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_COMBOATTACK",
+                "SkillNameZhTW": "多段攻擊",
+                "SkillID": 171,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POISONATTACK",
+                "SkillNameZhTW": "毒屬性攻擊",
+                "SkillID": 188,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLOODDRAIN",
+                "SkillNameZhTW": "吸血",
+                "SkillID": 199,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
                 "Delay": 5000,
                 "Cancelable": "yes",
                 "Target": "target",
@@ -52653,7 +54977,7 @@ export const monstersDisplayIndex = {
                 "level": 2,
                 "type": "火"
             },
-            "level": 63,
+            "level": 65,
             "race": "無形",
             "size": "中"
         },
@@ -52688,20 +55012,20 @@ export const monstersDisplayIndex = {
         "special_status": [],
         "drops": [
             {
-                "item_id": 1000235,
-                "name": "菁英獵人徽章",
+                "item_id": 106103,
+                "name": "雷吉亞裝備自選箱",
                 "rate": "???",
-                "icon_url": "images/items/1000235.gif",
+                "icon_url": "images/items/106103.gif",
                 "slotCount": 0,
                 "slot": "-",
                 "enchantment_slots": "",
                 "card_prefix_name": ""
             },
             {
-                "item_id": 106103,
-                "name": "雷吉亞裝備自選箱",
+                "item_id": 1000235,
+                "name": "菁英獵人徽章",
                 "rate": "???",
-                "icon_url": "images/items/106103.gif",
+                "icon_url": "images/items/1000235.gif",
                 "slotCount": 0,
                 "slot": "-",
                 "enchantment_slots": "",
@@ -52725,8 +55049,8 @@ export const monstersDisplayIndex = {
                 "spawn_info": ""
             },
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
+                "map_name": "gef_dun01",
+                "description": "吉芬地下密穴2樓",
                 "spawn_info": ""
             },
             {
@@ -52741,6 +55065,11 @@ export const monstersDisplayIndex = {
             },
             {
                 "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
                 "description": "薑餅廣場",
                 "spawn_info": ""
             }
@@ -52761,7 +55090,7 @@ export const monstersDisplayIndex = {
                 "level": 1,
                 "type": "風"
             },
-            "level": 48,
+            "level": 58,
             "race": "人形",
             "size": "中"
         },
@@ -52796,16 +55125,6 @@ export const monstersDisplayIndex = {
         "special_status": [],
         "drops": [
             {
-                "item_id": 1000235,
-                "name": "菁英獵人徽章",
-                "rate": "???",
-                "icon_url": "images/items/1000235.gif",
-                "slotCount": 0,
-                "slot": "-",
-                "enchantment_slots": "",
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 106103,
                 "name": "雷吉亞裝備自選箱",
                 "rate": "???",
@@ -52814,12 +55133,57 @@ export const monstersDisplayIndex = {
                 "slot": "-",
                 "enchantment_slots": "",
                 "card_prefix_name": ""
+            },
+            {
+                "item_id": 1000235,
+                "name": "菁英獵人徽章",
+                "rate": "???",
+                "icon_url": "images/items/1000235.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
             }
         ],
         "spawns": [
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
+                "map_name": "gef_f11_a",
+                "description": "吉芬區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_f11_b",
+                "description": "吉芬區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_f11_z",
+                "description": "吉芬區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_fild11",
+                "description": "吉芬區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "prt_f11_a",
+                "description": "普隆德拉區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "prt_f11_b",
+                "description": "普隆德拉區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "prt_f11_z",
+                "description": "普隆德拉區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "prt_fild11",
+                "description": "普隆德拉區域",
                 "spawn_info": ""
             },
             {
@@ -52834,6 +55198,11 @@ export const monstersDisplayIndex = {
             },
             {
                 "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
                 "description": "薑餅廣場",
                 "spawn_info": ""
             }
@@ -53280,11 +55649,6 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
-                "spawn_info": ""
-            },
-            {
                 "map_name": "ztw_e03_a",
                 "description": "薑餅廣場",
                 "spawn_info": ""
@@ -53296,6 +55660,11 @@ export const monstersDisplayIndex = {
             },
             {
                 "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
                 "description": "薑餅廣場",
                 "spawn_info": ""
             }
@@ -53792,6 +56161,1061 @@ export const monstersDisplayIndex = {
                 "Rate": "5.00%",
                 "State": "attack",
                 "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1251": {
+        "id": 1251,
+        "name": {
+            "zh_tw": "冰暴騎士",
+            "en": "KNIGHT_OF_WINDSTORM",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "風"
+            },
+            "level": 92,
+            "race": "無形",
+            "size": "大"
+        },
+        "image_url": "images/monsters/1251.gif",
+        "stats": {
+            "attack": {
+                "max": 4394,
+                "min": 3002
+            },
+            "base_stats": {
+                "agi": 165,
+                "dex": 205,
+                "int": 104,
+                "luk": 79,
+                "str": 126,
+                "vit": 132
+            },
+            "defense": 306,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 493,
+            "hit_100_percent": 472,
+            "hp": "???",
+            "magic_attack": {
+                "max": 2059,
+                "min": 1199
+            },
+            "magic_defense": 166
+        },
+        "special_status": [
+            "MVP",
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 603,
+                "name": "神秘藍箱",
+                "rate": 15,
+                "icon_url": "images/items/603.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 985,
+                "name": "鋁",
+                "rate": 22.8,
+                "icon_url": "images/items/985.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1468,
+                "name": "風靈之矛",
+                "rate": 0.75,
+                "icon_url": "images/items/1468.gif",
+                "slotCount": 0,
+                "slot": "單手矛",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2601,
+                "name": "力量戒指",
+                "rate": 1,
+                "icon_url": "images/items/2601.gif",
+                "slotCount": 0,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 5007,
+                "name": "領導者頭箍",
+                "rate": 0.01,
+                "icon_url": "images/items/5007.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 27269,
+                "name": "冰暴騎士卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/27269.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": "",
+                "card_prefix_name": "暴風雪的"
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "b_xma_d02",
+                "description": "玩具分類場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "b_xma_d02_z",
+                "description": "玩具分類場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_WINDATTACK",
+                "SkillNameZhTW": "風屬性攻擊",
+                "SkillID": 187,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WINDATTACK",
+                "SkillNameZhTW": "風屬性攻擊",
+                "SkillID": 187,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "onspawn",
+                "ConditionValue": 0,
+                "Val1": 1515,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 6,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1607,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 27,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 6,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1607,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 27,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_HALLUCINATION",
+                "SkillNameZhTW": "幻覺",
+                "SkillID": 207,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "CR_SHIELDCHARGE",
+                "SkillNameZhTW": "盾擊",
+                "SkillID": 250,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 21,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "walk",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 10000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 50,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POWERUP",
+                "SkillNameZhTW": "力量提升",
+                "SkillID": 349,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WIDEFREEZE",
+                "SkillNameZhTW": "廣範圍冰凍",
+                "SkillID": 664,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 1000,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 32,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WIDEFREEZE",
+                "SkillNameZhTW": "廣範圍冰凍",
+                "SkillID": 664,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 1000,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 80,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 32,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_STORMGUST",
+                "SkillNameZhTW": "暴風雪",
+                "SkillID": 89,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 21,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_STORMGUST",
+                "SkillNameZhTW": "暴風雪",
+                "SkillID": 89,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 21,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_STORMGUST",
+                "SkillNameZhTW": "暴風雪",
+                "SkillID": 89,
+                "SkillLv": 10,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 21,
+                "Chat": ""
+            }
+        ]
+    },
+    "1252": {
+        "id": 1252,
+        "name": {
+            "zh_tw": "卡崙",
+            "en": "GARM",
+            "ko_kr": "하티(MVP)"
+        },
+        "released": true,
+        "is_valid": true,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "水"
+            },
+            "level": 137,
+            "race": "動物",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1252.gif",
+        "stats": {
+            "attack": {
+                "max": 3389,
+                "min": 3389
+            },
+            "base_stats": {
+                "agi": 153,
+                "dex": 175,
+                "int": 116,
+                "luk": 72,
+                "str": 122,
+                "vit": 135
+            },
+            "defense": 173,
+            "exp": {
+                "base": 43665954,
+                "job": 5739183
+            },
+            "flee_95_percent": 506,
+            "hit_100_percent": 504,
+            "hp": "???",
+            "magic_attack": {
+                "max": 2467,
+                "min": 1427
+            },
+            "magic_defense": 103
+        },
+        "special_status": [
+            "MVP",
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 984,
+                "name": "神之金屬",
+                "rate": 14.5,
+                "icon_url": "images/items/984.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 985,
+                "name": "鋁",
+                "rate": 19.89,
+                "icon_url": "images/items/985.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1131,
+                "name": "水靈之刀",
+                "rate": 0.75,
+                "icon_url": "images/items/1131.gif",
+                "slotCount": 0,
+                "slot": "單手劍",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1815,
+                "name": "卡崙的指甲",
+                "rate": 2.5,
+                "icon_url": "images/items/1815.gif",
+                "slotCount": 1,
+                "slot": "拳套",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4324,
+                "name": "卡崙卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4324.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "凍結的"
+            },
+            {
+                "item_id": 7036,
+                "name": "卡崙之牙",
+                "rate": 27.5,
+                "icon_url": "images/items/7036.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610069,
+                "name": "冰靈拳刃",
+                "rate": 2.5,
+                "icon_url": "images/items/610069.gif",
+                "slotCount": 0,
+                "slot": "拳刃",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "b_xma_f01",
+                "description": "薑餅城區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "b_xma_f01_z",
+                "description": "薑餅城區域",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_GUIDEDATTACK",
+                "SkillNameZhTW": "必中攻擊",
+                "SkillID": 172,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 20000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WATERATTACK",
+                "SkillNameZhTW": "水屬性攻擊",
+                "SkillID": 184,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WATERATTACK",
+                "SkillNameZhTW": "水屬性攻擊",
+                "SkillID": 184,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "skillused",
+                "ConditionValue": 18,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1606,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 10000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 3,
+                "Val1": 1606,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "walk",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_HEAL",
+                "SkillNameZhTW": "治癒術",
+                "SkillID": 28,
+                "SkillLv": 11,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 10000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 50,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_DECAGI",
+                "SkillNameZhTW": "緩速術",
+                "SkillID": 30,
+                "SkillLv": 48,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 300000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WEAPONBRAKER",
+                "SkillNameZhTW": "破壞武器",
+                "SkillID": 343,
+                "SkillLv": 10,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_AGIUP",
+                "SkillNameZhTW": "速度提升",
+                "SkillID": 350,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "myhpltmaxrate",
+                "ConditionValue": 30,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CALLSLAVE",
+                "SkillNameZhTW": "召回隨從",
+                "SkillID": 352,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WIDEFREEZE",
+                "SkillNameZhTW": "廣範圍冰凍",
+                "SkillID": 664,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 1000,
+                "Delay": 20000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 36,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WIDEFREEZE",
+                "SkillNameZhTW": "廣範圍冰凍",
+                "SkillID": 664,
+                "SkillLv": 5,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 1000,
+                "Delay": 20000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 36,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_STORMGUST",
+                "SkillNameZhTW": "暴風雪",
+                "SkillID": 89,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_STORMGUST",
+                "SkillNameZhTW": "暴風雪",
+                "SkillID": 89,
+                "SkillLv": 10,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
                 "Delay": 5000,
                 "Cancelable": "no",
                 "Target": "target",
@@ -56446,16 +59870,6 @@ export const monstersDisplayIndex = {
                 "card_prefix_name": ""
             },
             {
-                "item_id": 1460,
-                "name": "德瑞尹長戟",
-                "rate": 0.02,
-                "icon_url": "images/items/1460.gif",
-                "slotCount": 2,
-                "slot": "雙手矛",
-                "enchantment_slots": 0,
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 4199,
                 "name": "人魚士兵卡片",
                 "rate": 0.01,
@@ -57799,6 +61213,676 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1269": {
+        "id": 1269,
+        "name": {
+            "zh_tw": "古鐘魔",
+            "en": "CLOCK",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "地"
+            },
+            "level": 81,
+            "race": "無形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1269.gif",
+        "stats": {
+            "attack": {
+                "max": 681,
+                "min": 503
+            },
+            "base_stats": {
+                "agi": 24,
+                "dex": 97,
+                "int": 41,
+                "luk": 15,
+                "str": 68,
+                "vit": 35
+            },
+            "defense": 91,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 353,
+            "hit_100_percent": 308,
+            "hp": 5556,
+            "magic_attack": {
+                "max": 191,
+                "min": 159
+            },
+            "magic_defense": 43
+        },
+        "special_status": [
+            "可物理攻擊",
+            "可移動",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 509,
+                "name": "白色藥草",
+                "rate": 9.5,
+                "icon_url": "images/items/509.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 568,
+                "name": "檸檬",
+                "rate": 1.6,
+                "icon_url": "images/items/568.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 985,
+                "name": "鋁",
+                "rate": 0.82,
+                "icon_url": "images/items/985.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1019,
+                "name": "瑪哪樹枝",
+                "rate": 4,
+                "icon_url": "images/items/1019.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1095,
+                "name": "指針",
+                "rate": 26.68,
+                "icon_url": "images/items/1095.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4299,
+                "name": "古鐘魔卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4299.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "監護人的"
+            },
+            {
+                "item_id": 7026,
+                "name": "鐘塔之鑰",
+                "rate": 0.15,
+                "icon_url": "images/items/7026.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7027,
+                "name": "鐘塔鑰匙",
+                "rate": 0.15,
+                "icon_url": "images/items/7027.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 450317,
+                "name": "盜賊之衣",
+                "rate": "???",
+                "icon_url": "images/items/450317.gif",
+                "slotCount": 1,
+                "slot": "鎧甲",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 9,
+                "Val2": "0x91",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION_ON",
+                "SkillNameZhTW": "表情 開啟",
+                "SkillID": 474,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "0x3885",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1270": {
+        "id": 1270,
+        "name": {
+            "zh_tw": "鐘塔守護者",
+            "en": "C_TOWER_MANAGER",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "無"
+            },
+            "level": 90,
+            "race": "無形",
+            "size": "大"
+        },
+        "image_url": "images/monsters/1270.gif",
+        "stats": {
+            "attack": {
+                "max": 683,
+                "min": 511
+            },
+            "base_stats": {
+                "agi": 28,
+                "dex": 88,
+                "int": 25,
+                "luk": 45,
+                "str": 80,
+                "vit": 40
+            },
+            "defense": 96,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 363,
+            "hit_100_percent": 327,
+            "hp": 6400,
+            "magic_attack": {
+                "max": 206,
+                "min": 164
+            },
+            "magic_defense": 60
+        },
+        "special_status": [
+            "可物理攻擊",
+            "可移動",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 520,
+                "name": "西納雷葉子",
+                "rate": 4.25,
+                "icon_url": "images/items/520.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 999,
+                "name": "鋼鐵",
+                "rate": 2.5,
+                "icon_url": "images/items/999.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1095,
+                "name": "指針",
+                "rate": 26.68,
+                "icon_url": "images/items/1095.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2109,
+                "name": "謊言紀錄本",
+                "rate": 0.01,
+                "icon_url": "images/items/2109.gif",
+                "slotCount": 0,
+                "slot": "盾牌",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4229,
+                "name": "鐘塔守護者卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4229.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": "",
+                "card_prefix_name": "牢繫的"
+            },
+            {
+                "item_id": 7026,
+                "name": "鐘塔之鑰",
+                "rate": 10,
+                "icon_url": "images/items/7026.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7027,
+                "name": "鐘塔鑰匙",
+                "rate": 10,
+                "icon_url": "images/items/7027.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7054,
+                "name": "布里刊",
+                "rate": 26.68,
+                "icon_url": "images/items/7054.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower1",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower3",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_a",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_b",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_z",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_a",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_b",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_z",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SLEEPATTACK",
+                "SkillNameZhTW": "睡眠攻擊",
+                "SkillID": 182,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SLEEPATTACK",
+                "SkillNameZhTW": "睡眠攻擊",
+                "SkillID": 182,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 9,
+                "Val2": "0x91",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SA_DISPELL",
+                "SkillNameZhTW": "魔法效果解除",
+                "SkillID": 289,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION_ON",
+                "SkillNameZhTW": "表情 開啟",
+                "SkillID": 474,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "0x3885",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "WZ_FIREPILLAR",
+                "SkillNameZhTW": "火柱攻擊",
+                "SkillID": 80,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "around2",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 9,
+                "Chat": ""
+            }
+        ]
+    },
     "1271": {
         "id": 1271,
         "name": {
@@ -57918,6 +62002,16 @@ export const monstersDisplayIndex = {
                 "icon_url": "images/items/400854.gif",
                 "slotCount": 0,
                 "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 500113,
+                "name": "擊刺長劍",
+                "rate": "???",
+                "icon_url": "images/items/500113.gif",
+                "slotCount": 3,
+                "slot": "單手劍",
                 "enchantment_slots": 0,
                 "card_prefix_name": ""
             },
@@ -61408,6 +65502,536 @@ export const monstersDisplayIndex = {
         "spawns": [],
         "skills": []
     },
+    "1291": {
+        "id": 1291,
+        "name": {
+            "zh_tw": "狂暴惡靈",
+            "en": "WRAITH_DEAD",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "不死"
+            },
+            "level": 121,
+            "race": "不死",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1291.gif",
+        "stats": {
+            "attack": {
+                "max": 1387,
+                "min": 985
+            },
+            "base_stats": {
+                "agi": 69,
+                "dex": 106,
+                "int": 45,
+                "luk": 45,
+                "str": 63,
+                "vit": 55
+            },
+            "defense": 88,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 412,
+            "hit_100_percent": 399,
+            "hp": 25990,
+            "magic_attack": {
+                "max": 374,
+                "min": 278
+            },
+            "magic_defense": 56
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 603,
+                "name": "神秘藍箱",
+                "rate": 0.02,
+                "icon_url": "images/items/603.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 716,
+                "name": "紅色魔力礦石",
+                "rate": 3.5,
+                "icon_url": "images/items/716.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 732,
+                "name": "3克拉鑽石",
+                "rate": 0.03,
+                "icon_url": "images/items/732.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1059,
+                "name": "透明之布",
+                "rate": 22.07,
+                "icon_url": "images/items/1059.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2206,
+                "name": "婚禮頭紗",
+                "rate": 0.05,
+                "icon_url": "images/items/2206.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4189,
+                "name": "狂暴惡靈卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4189.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "壞運氣的"
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun04",
+                "description": "怖立特離亞密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun04_2",
+                "description": "怖立特離亞密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "AS_GRIMTOOTH",
+                "SkillNameZhTW": "無影之牙",
+                "SkillID": 137,
+                "SkillLv": 5,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POISON",
+                "SkillNameZhTW": "施毒攻擊",
+                "SkillID": 176,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_DECAGI",
+                "SkillNameZhTW": "緩速術",
+                "SkillID": 30,
+                "SkillLv": 9,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 1000,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 29,
+                "Chat": ""
+            }
+        ]
+    },
+    "1293": {
+        "id": 1293,
+        "name": {
+            "zh_tw": "狂暴克瑞米",
+            "en": "CREMY_FEAR",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "風"
+            },
+            "level": 117,
+            "race": "昆蟲",
+            "size": "小"
+        },
+        "image_url": "images/monsters/1293.gif",
+        "stats": {
+            "attack": {
+                "max": 1091,
+                "min": 787
+            },
+            "base_stats": {
+                "agi": 36,
+                "dex": 79,
+                "int": 49,
+                "luk": 30,
+                "str": 65,
+                "vit": 33
+            },
+            "defense": 76,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 376,
+            "hit_100_percent": 359,
+            "hp": 25084,
+            "magic_attack": {
+                "max": 309,
+                "min": 243
+            },
+            "magic_defense": 37
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 518,
+                "name": "蜂蜜",
+                "rate": 2.75,
+                "icon_url": "images/items/518.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 522,
+                "name": "瑪絲黛拉果實",
+                "rate": 0.25,
+                "icon_url": "images/items/522.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 924,
+                "name": "蝴蝶翅膀粉末",
+                "rate": 22.75,
+                "icon_url": "images/items/924.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4298,
+                "name": "狂暴克瑞米卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4298.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "無秩序的"
+            },
+            {
+                "item_id": 12676,
+                "name": "城戰紫色藥水箱",
+                "rate": 0.1,
+                "icon_url": "images/items/12676.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun03",
+                "description": "巴基力雷恩密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun03_2",
+                "description": "巴基力雷恩密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_BLINDATTACK",
+                "SkillNameZhTW": "致盲攻擊",
+                "SkillID": 177,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 3,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1018,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "RG_INTIMIDATE",
+                "SkillNameZhTW": "脅持",
+                "SkillID": 219,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "1295": {
         "id": 1295,
         "name": {
@@ -61946,6 +66570,243 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1298": {
+        "id": 1298,
+        "name": {
+            "zh_tw": "腐屍首領",
+            "en": "ZOMBIE_MASTER",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "不死"
+            },
+            "level": 119,
+            "race": "不死",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/1298.gif",
+        "stats": {
+            "attack": {
+                "max": 1163,
+                "min": 833
+            },
+            "base_stats": {
+                "agi": 60,
+                "dex": 86,
+                "int": 49,
+                "luk": 48,
+                "str": 55,
+                "vit": 48
+            },
+            "defense": 78,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 391,
+            "hit_100_percent": 388,
+            "hp": 25510,
+            "magic_attack": {
+                "max": 365,
+                "min": 273
+            },
+            "magic_defense": 46
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 723,
+                "name": "紅寶石",
+                "rate": 1,
+                "icon_url": "images/items/723.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 727,
+                "name": "白寶石",
+                "rate": 0.5,
+                "icon_url": "images/items/727.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 938,
+                "name": "粘稠液體",
+                "rate": 7.5,
+                "icon_url": "images/items/938.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 958,
+                "name": "亡者牙齒",
+                "rate": 7.5,
+                "icon_url": "images/items/958.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4274,
+                "name": "腐屍首領卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4274.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": "",
+                "card_prefix_name": "不死系靈魂增加的"
+            },
+            {
+                "item_id": 7071,
+                "name": "破爛爛的衣服",
+                "rate": 22.07,
+                "icon_url": "images/items/7071.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7071,
+                "name": "破爛爛的衣服",
+                "rate": 0.01,
+                "icon_url": "images/items/7071.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 12676,
+                "name": "城戰紫色藥水箱",
+                "rate": 0.05,
+                "icon_url": "images/items/12676.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun04",
+                "description": "怖立特離亞密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun04_2",
+                "description": "怖立特離亞密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_POISON",
+                "SkillNameZhTW": "施毒攻擊",
+                "SkillID": 176,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1036,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "KN_BRANDISHSPEAR",
+                "SkillNameZhTW": "騎乘攻擊",
+                "SkillID": 57,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1000,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "1299": {
         "id": 1299,
         "name": {
@@ -62235,6 +67096,203 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "1300": {
+        "id": 1300,
+        "name": {
+            "zh_tw": "狂暴綠棉蟲",
+            "en": "CATERPILLAR",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 121,
+            "race": "昆蟲",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/1300.gif",
+        "stats": {
+            "attack": {
+                "max": 1388,
+                "min": 984
+            },
+            "base_stats": {
+                "agi": 37,
+                "dex": 54,
+                "int": 50,
+                "luk": 45,
+                "str": 58,
+                "vit": 51
+            },
+            "defense": 100,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 360,
+            "hit_100_percent": 367,
+            "hp": 25656,
+            "magic_attack": {
+                "max": 334,
+                "min": 258
+            },
+            "magic_defense": 42
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 603,
+                "name": "神秘藍箱",
+                "rate": 0.02,
+                "icon_url": "images/items/603.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 949,
+                "name": "柔毛",
+                "rate": 15,
+                "icon_url": "images/items/949.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 997,
+                "name": "土靈原石",
+                "rate": 0.25,
+                "icon_url": "images/items/997.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1000,
+                "name": "星星的角",
+                "rate": 0.5,
+                "icon_url": "images/items/1000.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4289,
+                "name": "狂暴綠綿蟲卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4289.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": "",
+                "card_prefix_name": "植物靈魂增加的"
+            },
+            {
+                "item_id": 7054,
+                "name": "布里刊",
+                "rate": 26.68,
+                "icon_url": "images/items/7054.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun03",
+                "description": "巴基力雷恩密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun03_2",
+                "description": "巴基力雷恩密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_POISON",
+                "SkillNameZhTW": "施毒攻擊",
+                "SkillID": 176,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_PETRIFYATTACK",
+                "SkillNameZhTW": "麻痹攻擊",
+                "SkillID": 180,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "1302": {
         "id": 1302,
         "name": {
@@ -62469,6 +67527,847 @@ export const monstersDisplayIndex = {
                 "Val4": "",
                 "Val5": "",
                 "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1303": {
+        "id": 1303,
+        "name": {
+            "zh_tw": "狂暴蜂兵",
+            "en": "GIANT_HONET",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "風"
+            },
+            "level": 120,
+            "race": "昆蟲",
+            "size": "小"
+        },
+        "image_url": "images/monsters/1303.gif",
+        "stats": {
+            "attack": {
+                "max": 1164,
+                "min": 838
+            },
+            "base_stats": {
+                "agi": 45,
+                "dex": 74,
+                "int": 32,
+                "luk": 34,
+                "str": 70,
+                "vit": 47
+            },
+            "defense": 80,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 375,
+            "hit_100_percent": 371,
+            "hp": 26521,
+            "magic_attack": {
+                "max": 324,
+                "min": 244
+            },
+            "magic_defense": 43
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 518,
+                "name": "蜂蜜",
+                "rate": 6,
+                "icon_url": "images/items/518.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 522,
+                "name": "瑪絲黛拉果實",
+                "rate": 0.06,
+                "icon_url": "images/items/522.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 526,
+                "name": "蜂膠",
+                "rate": 2.75,
+                "icon_url": "images/items/526.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 722,
+                "name": "珍珠",
+                "rate": 0.1,
+                "icon_url": "images/items/722.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4271,
+                "name": "狂暴蜂兵卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4271.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": "",
+                "card_prefix_name": "黃色魔力礦石"
+            },
+            {
+                "item_id": 12676,
+                "name": "城戰紫色藥水箱",
+                "rate": 0.05,
+                "icon_url": "images/items/12676.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun02",
+                "description": "露依納密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun02_2",
+                "description": "露依納密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_PIERCINGATT",
+                "SkillNameZhTW": "穿刺攻擊",
+                "SkillID": 158,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WINDATTACK",
+                "SkillNameZhTW": "風屬性攻擊",
+                "SkillID": 187,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 9,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1305": {
+        "id": 1305,
+        "name": {
+            "zh_tw": "狂暴蜈蚣",
+            "en": "ANCIENT_WORM",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "毒"
+            },
+            "level": 121,
+            "race": "昆蟲",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1305.gif",
+        "stats": {
+            "attack": {
+                "max": 1453,
+                "min": 1031
+            },
+            "base_stats": {
+                "agi": 56,
+                "dex": 84,
+                "int": 55,
+                "luk": 42,
+                "str": 70,
+                "vit": 56
+            },
+            "defense": 90,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 389,
+            "hit_100_percent": 385,
+            "hp": 24005,
+            "magic_attack": {
+                "max": 349,
+                "min": 269
+            },
+            "magic_defense": 41
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 12.5,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 938,
+                "name": "粘稠液體",
+                "rate": 17.5,
+                "icon_url": "images/items/938.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1042,
+                "name": "昆蟲後腳",
+                "rate": 22.07,
+                "icon_url": "images/items/1042.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1096,
+                "name": "圓形外皮",
+                "rate": 3.4,
+                "icon_url": "images/items/1096.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4249,
+                "name": "狂暴蜈蚣卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4249.gif",
+                "slotCount": 0,
+                "slot": "鞋子",
+                "enchantment_slots": "",
+                "card_prefix_name": "驅邪者的"
+            },
+            {
+                "item_id": 7054,
+                "name": "布里刊",
+                "rate": 12.5,
+                "icon_url": "images/items/7054.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 470230,
+                "name": "戰士長靴",
+                "rate": 0.05,
+                "icon_url": "images/items/470230.gif",
+                "slotCount": 1,
+                "slot": "鞋子",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun02",
+                "description": "露依納密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun02_2",
+                "description": "露依納密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "AS_VENOMDUST",
+                "SkillNameZhTW": "病毒散撥",
+                "SkillID": 140,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POISON",
+                "SkillNameZhTW": "施毒攻擊",
+                "SkillID": 176,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1099,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_STOP",
+                "SkillNameZhTW": "停止",
+                "SkillID": 342,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "1306": {
+        "id": 1306,
+        "name": {
+            "zh_tw": "狂暴大腳熊",
+            "en": "LEIB_OLMAI",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 118,
+            "race": "動物",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1306.gif",
+        "stats": {
+            "attack": {
+                "max": 1264,
+                "min": 906
+            },
+            "base_stats": {
+                "agi": 35,
+                "dex": 77,
+                "int": 35,
+                "luk": 27,
+                "str": 72,
+                "vit": 80
+            },
+            "defense": 127,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 374,
+            "hit_100_percent": 358,
+            "hp": 24001,
+            "magic_attack": {
+                "max": 290,
+                "min": 226
+            },
+            "magic_defense": 31
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 518,
+                "name": "蜂蜜",
+                "rate": 2.5,
+                "icon_url": "images/items/518.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 740,
+                "name": "瘋兔娃娃",
+                "rate": 0.6,
+                "icon_url": "images/items/740.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 948,
+                "name": "熊掌",
+                "rate": 22.75,
+                "icon_url": "images/items/948.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 969,
+                "name": "黃金",
+                "rate": 0.01,
+                "icon_url": "images/items/969.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2289,
+                "name": "糞便帽",
+                "rate": 0.04,
+                "icon_url": "images/items/2289.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4188,
+                "name": "狂暴大腳熊卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4188.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": "",
+                "card_prefix_name": "火靈礦石的"
+            },
+            {
+                "item_id": 7053,
+                "name": "賽依伐",
+                "rate": 4,
+                "icon_url": "images/items/7053.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun01",
+                "description": "青林湖密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun01_2",
+                "description": "青林湖密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 3,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1243,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SM_MAGNUM",
+                "SkillNameZhTW": "怒爆",
+                "SkillID": 7,
+                "SkillLv": 9,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SM_ENDURE",
+                "SkillNameZhTW": "霸體",
+                "SkillID": 8,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 10000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "longrangeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
                 "Chat": ""
             }
         ]
@@ -63006,6 +68905,327 @@ export const monstersDisplayIndex = {
                 "Val4": "",
                 "Val5": "",
                 "Emotion": 2,
+                "Chat": ""
+            }
+        ]
+    },
+    "1311": {
+        "id": 1311,
+        "name": {
+            "zh_tw": "狂暴野豬",
+            "en": "GULLINBURSTI",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "地"
+            },
+            "level": 120,
+            "race": "動物",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1311.gif",
+        "stats": {
+            "attack": {
+                "max": 1442,
+                "min": 1030
+            },
+            "base_stats": {
+                "agi": 54,
+                "dex": 76,
+                "int": 35,
+                "luk": 15,
+                "str": 88,
+                "vit": 82
+            },
+            "defense": 108,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 371,
+            "hit_100_percent": 377,
+            "hp": 25098,
+            "magic_attack": {
+                "max": 348,
+                "min": 258
+            },
+            "magic_defense": 43
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 514,
+                "name": "葡萄",
+                "rate": 1.45,
+                "icon_url": "images/items/514.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 605,
+                "name": "曼特療傷藥",
+                "rate": 0.08,
+                "icon_url": "images/items/605.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 702,
+                "name": "家畜血",
+                "rate": 0.03,
+                "icon_url": "images/items/702.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 0.8,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1028,
+                "name": "野豬毛",
+                "rate": 17.5,
+                "icon_url": "images/items/1028.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2276,
+                "name": "大眼睛眼鏡",
+                "rate": 0.01,
+                "icon_url": "images/items/2276.gif",
+                "slotCount": 0,
+                "slot": "頭中",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2627,
+                "name": "皮帶",
+                "rate": 0.01,
+                "icon_url": "images/items/2627.gif",
+                "slotCount": 1,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4164,
+                "name": "狂暴野豬卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4164.gif",
+                "slotCount": 0,
+                "slot": "鞋子",
+                "enchantment_slots": "",
+                "card_prefix_name": "漁夫的"
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun01",
+                "description": "青林湖密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun01_2",
+                "description": "青林湖密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 4,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1166,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "RG_STRIPSHIELD",
+                "SkillNameZhTW": "卸除盾牌",
+                "SkillID": 216,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SM_ENDURE",
+                "SkillNameZhTW": "霸體",
+                "SkillID": 8,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 10000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "longrangeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
                 "Chat": ""
             }
         ]
@@ -63663,6 +69883,11 @@ export const monstersDisplayIndex = {
             }
         ],
         "spawns": [
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
             {
                 "map_name": "gl_c01_a",
                 "description": "克雷斯特漢姆古城1樓",
@@ -64420,6 +70645,402 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [],
         "skills": []
+    },
+    "1377": {
+        "id": 1377,
+        "name": {
+            "zh_tw": "邪靈魔導士",
+            "en": "ELDER",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 4,
+                "type": "無"
+            },
+            "level": 92,
+            "race": "人形",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/1377.gif",
+        "stats": {
+            "attack": {
+                "max": 590,
+                "min": 446
+            },
+            "base_stats": {
+                "agi": 63,
+                "dex": 106,
+                "int": 99,
+                "luk": 61,
+                "str": 67,
+                "vit": 35
+            },
+            "defense": 72,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 388,
+            "hit_100_percent": 367,
+            "hp": 7341,
+            "magic_attack": {
+                "max": 1234,
+                "min": 752
+            },
+            "magic_defense": 41
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "憤怒狀態",
+            "被攻擊時改變目標",
+            "被近戰時改變目標"
+        ],
+        "drops": [
+            {
+                "item_id": 616,
+                "name": "老舊卡冊",
+                "rate": 0.01,
+                "icon_url": "images/items/616.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1564,
+                "name": "大百科全書",
+                "rate": 0.05,
+                "icon_url": "images/items/1564.gif",
+                "slotCount": 2,
+                "slot": "書",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4251,
+                "name": "邪靈魔導士卡片",
+                "rate": 0.01,
+                "icon_url": "images/items/4251.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": "",
+                "card_prefix_name": "襲擊的"
+            },
+            {
+                "item_id": 7027,
+                "name": "鐘塔鑰匙",
+                "rate": 15,
+                "icon_url": "images/items/7027.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7099,
+                "name": "老舊魔法圖",
+                "rate": 20,
+                "icon_url": "images/items/7099.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7117,
+                "name": "撕裂的魔法書",
+                "rate": 7.5,
+                "icon_url": "images/items/7117.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower1",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower3",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_a",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_b",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_z",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_a",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_b",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_z",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "MG_FROSTDIVER",
+                "SkillNameZhTW": "冰凍術",
+                "SkillID": 15,
+                "SkillLv": 9,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_FROSTDIVER",
+                "SkillNameZhTW": "冰凍術",
+                "SkillID": 15,
+                "SkillLv": 9,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "randomtarget",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_STONECURSE",
+                "SkillNameZhTW": "石化術",
+                "SkillID": 16,
+                "SkillLv": 10,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_STONECURSE",
+                "SkillNameZhTW": "石化術",
+                "SkillID": 16,
+                "SkillLv": 10,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "randomtarget",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_FIREBOLT",
+                "SkillNameZhTW": "火箭術",
+                "SkillID": 19,
+                "SkillLv": 7,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_FIREBOLT",
+                "SkillNameZhTW": "火箭術",
+                "SkillID": 19,
+                "SkillLv": 7,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "randomtarget",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 11,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_LIGHTNINGBOLT",
+                "SkillNameZhTW": "雷擊術",
+                "SkillID": 20,
+                "SkillLv": 7,
+                "Rate": "100.00%",
+                "State": "chase",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 12,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_LIGHTNINGBOLT",
+                "SkillNameZhTW": "雷擊術",
+                "SkillID": 20,
+                "SkillLv": 7,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "randomtarget",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 12,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SA_DISPELL",
+                "SkillNameZhTW": "魔法效果解除",
+                "SkillID": 289,
+                "SkillLv": 1,
+                "Rate": "0.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": 0,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
     },
     "1380": {
         "id": 1380,
@@ -69237,7 +75858,7 @@ export const monstersDisplayIndex = {
                 "level": 1,
                 "type": "地"
             },
-            "level": 44,
+            "level": 52,
             "race": "人形",
             "size": "中"
         },
@@ -69272,16 +75893,6 @@ export const monstersDisplayIndex = {
         "special_status": [],
         "drops": [
             {
-                "item_id": 1000235,
-                "name": "菁英獵人徽章",
-                "rate": "???",
-                "icon_url": "images/items/1000235.gif",
-                "slotCount": 0,
-                "slot": "-",
-                "enchantment_slots": "",
-                "card_prefix_name": ""
-            },
-            {
                 "item_id": 106103,
                 "name": "雷吉亞裝備自選箱",
                 "rate": "???",
@@ -69290,12 +75901,42 @@ export const monstersDisplayIndex = {
                 "slot": "-",
                 "enchantment_slots": "",
                 "card_prefix_name": ""
+            },
+            {
+                "item_id": 1000235,
+                "name": "菁英獵人徽章",
+                "rate": "???",
+                "icon_url": "images/items/1000235.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
             }
         ],
         "spawns": [
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
+                "map_name": "gef_f10_a",
+                "description": "獸人村",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_f10_b",
+                "description": "獸人村",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_f10_z",
+                "description": "獸人村",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_fild03",
+                "description": "吉芬區域",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gef_fild10",
+                "description": "獸人村",
                 "spawn_info": ""
             },
             {
@@ -69310,6 +75951,11 @@ export const monstersDisplayIndex = {
             },
             {
                 "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
                 "description": "薑餅廣場",
                 "spawn_info": ""
             }
@@ -70130,11 +76776,6 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
-                "spawn_info": ""
-            },
-            {
                 "map_name": "ztw_e03_a",
                 "description": "薑餅廣場",
                 "spawn_info": ""
@@ -70147,6 +76788,160 @@ export const monstersDisplayIndex = {
             {
                 "map_name": "ztw_e03_z",
                 "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            }
+        ],
+        "skills": []
+    },
+    "2288": {
+        "id": 2288,
+        "name": {
+            "zh_tw": "瘋狂寶箱",
+            "en": "GLD_TREASURE",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "聖"
+            },
+            "level": 99,
+            "race": "無形",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/2288.gif",
+        "stats": {
+            "attack": {
+                "max": 141,
+                "min": 141
+            },
+            "base_stats": {
+                "agi": 1,
+                "dex": 1199,
+                "int": 1,
+                "luk": 1,
+                "str": 1,
+                "vit": 1
+            },
+            "defense": 100,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 1468,
+            "hit_100_percent": 300,
+            "hp": 5,
+            "magic_attack": {
+                "max": 141,
+                "min": 141
+            },
+            "magic_defense": 0
+        },
+        "special_status": [
+            "mini",
+            "其他攻擊減傷",
+            "物理攻擊減傷",
+            "遠距離攻擊減傷",
+            "魔法攻擊減傷"
+        ],
+        "drops": [
+            {
+                "item_id": 7444,
+                "name": "寶物箱子",
+                "rate": 0.5,
+                "icon_url": "images/items/7444.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 11547,
+                "name": "城戰紫色藥水",
+                "rate": 20,
+                "icon_url": "images/items/11547.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 11548,
+                "name": "城戰白色藥水",
+                "rate": 10,
+                "icon_url": "images/items/11548.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 11549,
+                "name": "城戰藍色藥水",
+                "rate": 10,
+                "icon_url": "images/items/11549.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 12680,
+                "name": "城戰藍色藥水箱",
+                "rate": 0.5,
+                "icon_url": "images/items/12680.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun01",
+                "description": "青林湖密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun01_2",
+                "description": "青林湖密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun02",
+                "description": "露依納密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun02_2",
+                "description": "露依納密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun03",
+                "description": "巴基力雷恩密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun03_2",
+                "description": "巴基力雷恩密穴2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun04",
+                "description": "怖立特離亞密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun04_2",
+                "description": "怖立特離亞密穴2樓",
                 "spawn_info": ""
             }
         ],
@@ -70223,11 +77018,6 @@ export const monstersDisplayIndex = {
         ],
         "spawns": [
             {
-                "map_name": "ztw_e03",
-                "description": "薑餅廣場",
-                "spawn_info": ""
-            },
-            {
                 "map_name": "ztw_e03_a",
                 "description": "薑餅廣場",
                 "spawn_info": ""
@@ -70239,6 +77029,11 @@ export const monstersDisplayIndex = {
             },
             {
                 "map_name": "ztw_e03_z",
+                "description": "薑餅廣場",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "ztw_evt03",
                 "description": "薑餅廣場",
                 "spawn_info": ""
             }
@@ -71063,6 +77858,285 @@ export const monstersDisplayIndex = {
                 "Rate": "5.00%",
                 "State": "attack",
                 "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "2605": {
+        "id": 2605,
+        "name": {
+            "zh_tw": "菁英腐屍首領",
+            "en": "C3_ZOMBIE_MASTER",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "不死"
+            },
+            "level": 119,
+            "race": "不死",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/2605.gif",
+        "stats": {
+            "attack": {
+                "max": 1360,
+                "min": 964
+            },
+            "base_stats": {
+                "agi": 60,
+                "dex": 86,
+                "int": 49,
+                "luk": 48,
+                "str": 55,
+                "vit": 48
+            },
+            "defense": 78,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 391,
+            "hit_100_percent": 388,
+            "hp": 127550,
+            "magic_attack": {
+                "max": 365,
+                "min": 273
+            },
+            "magic_defense": 46
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 723,
+                "name": "紅寶石",
+                "rate": 5,
+                "icon_url": "images/items/723.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 727,
+                "name": "白寶石",
+                "rate": 2.5,
+                "icon_url": "images/items/727.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 938,
+                "name": "粘稠液體",
+                "rate": 37.5,
+                "icon_url": "images/items/938.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 958,
+                "name": "亡者牙齒",
+                "rate": 37.5,
+                "icon_url": "images/items/958.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4274,
+                "name": "腐屍首領卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4274.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": "",
+                "card_prefix_name": "不死系靈魂增加的"
+            },
+            {
+                "item_id": 7071,
+                "name": "破爛爛的衣服",
+                "rate": 100,
+                "icon_url": "images/items/7071.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7071,
+                "name": "破爛爛的衣服",
+                "rate": 0.05,
+                "icon_url": "images/items/7071.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 12676,
+                "name": "城戰紫色藥水箱",
+                "rate": 0.25,
+                "icon_url": "images/items/12676.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun04",
+                "description": "怖立特離亞密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun04_2",
+                "description": "怖立特離亞密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_POISON",
+                "SkillNameZhTW": "施毒攻擊",
+                "SkillID": 176,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1298,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_UNDEADATTACK",
+                "SkillNameZhTW": "不死屬性攻擊",
+                "SkillID": 347,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "angry",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_UNDEADATTACK",
+                "SkillNameZhTW": "不死屬性攻擊",
+                "SkillID": 347,
+                "SkillLv": 3,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "KN_BRANDISHSPEAR",
+                "SkillNameZhTW": "騎乘攻擊",
+                "SkillID": 57,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1000,
                 "Delay": 5000,
                 "Cancelable": "no",
                 "Target": "target",
@@ -79092,6 +86166,222 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2682": {
+        "id": 2682,
+        "name": {
+            "zh_tw": "雄壯飛行魔書",
+            "en": "C2_RIDEWORD",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "無"
+            },
+            "level": 74,
+            "race": "無形",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/2682.gif",
+        "stats": {
+            "attack": {
+                "max": 698,
+                "min": 512
+            },
+            "base_stats": {
+                "agi": 53,
+                "dex": 125,
+                "int": 44,
+                "luk": 5,
+                "str": 67,
+                "vit": 32
+            },
+            "defense": 61,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 370,
+            "hit_100_percent": 328,
+            "hp": 32220,
+            "magic_attack": {
+                "max": 147,
+                "min": 133
+            },
+            "magic_defense": 38
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 1006,
+                "name": "古魔法書",
+                "rate": 0.5,
+                "icon_url": "images/items/1006.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1097,
+                "name": "破舊書頁",
+                "rate": 100,
+                "icon_url": "images/items/1097.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1553,
+                "name": "水靈之書",
+                "rate": 0.1,
+                "icon_url": "images/items/1553.gif",
+                "slotCount": 0,
+                "slot": "書籍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1554,
+                "name": "地靈之書",
+                "rate": 0.1,
+                "icon_url": "images/items/1554.gif",
+                "slotCount": 0,
+                "slot": "書籍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1555,
+                "name": "火靈之書",
+                "rate": 0.05,
+                "icon_url": "images/items/1555.gif",
+                "slotCount": 0,
+                "slot": "書籍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1556,
+                "name": "風靈之書",
+                "rate": 0.05,
+                "icon_url": "images/items/1556.gif",
+                "slotCount": 0,
+                "slot": "書籍",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4185,
+                "name": "飛行魔書卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4185.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": 0,
+                "card_prefix_name": "聰明才智的"
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower1",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_a",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_b",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d01_z",
+                "description": "鐘塔1樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_PIERCINGATT",
+                "SkillNameZhTW": "穿刺攻擊",
+                "SkillID": 158,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLINDATTACK",
+                "SkillNameZhTW": "致盲攻擊",
+                "SkillID": 177,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLOODDRAIN",
+                "SkillNameZhTW": "吸血",
+                "SkillID": 199,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            }
+        ]
+    },
     "2687": {
         "id": 2687,
         "name": {
@@ -82391,6 +89681,217 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2717": {
+        "id": 2717,
+        "name": {
+            "zh_tw": "憤怒梅納海葵",
+            "en": "C4_PENOMENA",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "毒"
+            },
+            "level": 86,
+            "race": "魚貝",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/2717.gif",
+        "stats": {
+            "attack": {
+                "max": 853,
+                "min": 621
+            },
+            "base_stats": {
+                "agi": 49,
+                "dex": 107,
+                "int": 35,
+                "luk": 10,
+                "str": 76,
+                "vit": 35
+            },
+            "defense": 85,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 366,
+            "hit_100_percent": 337,
+            "hp": 22945,
+            "magic_attack": {
+                "max": 174,
+                "min": 148
+            },
+            "magic_defense": 32
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 525,
+                "name": "萬能藥",
+                "rate": 5,
+                "icon_url": "images/items/525.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 716,
+                "name": "紅色魔力礦石",
+                "rate": 13.75,
+                "icon_url": "images/items/716.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 719,
+                "name": "紫寶石",
+                "rate": 0.4,
+                "icon_url": "images/items/719.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 938,
+                "name": "粘稠液體",
+                "rate": 100,
+                "icon_url": "images/items/938.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 962,
+                "name": "觸鬚",
+                "rate": 100,
+                "icon_url": "images/items/962.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4314,
+                "name": "梅納海葵卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4314.gif",
+                "slotCount": 0,
+                "slot": "盾牌",
+                "enchantment_slots": "",
+                "card_prefix_name": "火焰防禦的"
+            },
+            {
+                "item_id": 7013,
+                "name": "珊瑚",
+                "rate": 100,
+                "icon_url": "images/items/7013.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 610067,
+                "name": "火靈拳刃",
+                "rate": 0.05,
+                "icon_url": "images/items/610067.gif",
+                "slotCount": 0,
+                "slot": "拳刃",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun03",
+                "description": "鐘塔地下3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_COMBOATTACK",
+                "SkillNameZhTW": "多段攻擊",
+                "SkillID": 171,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_POISONATTACK",
+                "SkillNameZhTW": "毒屬性攻擊",
+                "SkillID": 188,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLOODDRAIN",
+                "SkillNameZhTW": "吸血",
+                "SkillID": 199,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "2718": {
         "id": 2718,
         "name": {
@@ -83214,6 +90715,324 @@ export const monstersDisplayIndex = {
                 "Val4": "",
                 "Val5": "",
                 "Emotion": 30,
+                "Chat": ""
+            }
+        ]
+    },
+    "2721": {
+        "id": 2721,
+        "name": {
+            "zh_tw": "菁英鴞裊首領",
+            "en": "C3_OWL_DUKE",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "無"
+            },
+            "level": 92,
+            "race": "惡魔",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/2721.gif",
+        "stats": {
+            "attack": {
+                "max": 1044,
+                "min": 744
+            },
+            "base_stats": {
+                "agi": 51,
+                "dex": 106,
+                "int": 88,
+                "luk": 50,
+                "str": 54,
+                "vit": 45
+            },
+            "defense": 80,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 384,
+            "hit_100_percent": 353,
+            "hp": 36905,
+            "magic_attack": {
+                "max": 570,
+                "min": 390
+            },
+            "magic_defense": 45
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 693,
+                "name": "雷擊術等級5",
+                "rate": 2.5,
+                "icon_url": "images/items/693.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 747,
+                "name": "水晶鏡子",
+                "rate": 0.05,
+                "icon_url": "images/items/747.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4237,
+                "name": "鴞裊首領卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4237.gif",
+                "slotCount": 0,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": "造物者憤怒的"
+            },
+            {
+                "item_id": 5045,
+                "name": "魔術師帽",
+                "rate": 0.05,
+                "icon_url": "images/items/5045.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7063,
+                "name": "柔軟的羽毛",
+                "rate": 37.5,
+                "icon_url": "images/items/7063.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7071,
+                "name": "破爛爛的衣服",
+                "rate": 100,
+                "icon_url": "images/items/7071.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower4",
+                "description": "鐘塔4樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 30000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1320,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 32,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_LIGHTNINGBOLT",
+                "SkillNameZhTW": "雷擊術",
+                "SkillID": 20,
+                "SkillLv": 3,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "MG_LIGHTNINGBOLT",
+                "SkillNameZhTW": "雷擊術",
+                "SkillID": 20,
+                "SkillLv": 3,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "PR_LEXDIVINA",
+                "SkillNameZhTW": "沉默之術",
+                "SkillID": 76,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1000,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "PR_LEXDIVINA",
+                "SkillNameZhTW": "沉默之術",
+                "SkillID": 76,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 1000,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 2,
                 "Chat": ""
             }
         ]
@@ -88818,6 +96637,317 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2780": {
+        "id": 2780,
+        "name": {
+            "zh_tw": "雄壯狂暴大腳熊",
+            "en": "C2_LEIB_OLMAI",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 118,
+            "race": "動物",
+            "size": "大"
+        },
+        "image_url": "images/monsters/2780.gif",
+        "stats": {
+            "attack": {
+                "max": 1479,
+                "min": 1049
+            },
+            "base_stats": {
+                "agi": 35,
+                "dex": 77,
+                "int": 35,
+                "luk": 27,
+                "str": 72,
+                "vit": 80
+            },
+            "defense": 127,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 374,
+            "hit_100_percent": 358,
+            "hp": 240010,
+            "magic_attack": {
+                "max": 290,
+                "min": 226
+            },
+            "magic_defense": 31
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 518,
+                "name": "蜂蜜",
+                "rate": 12.5,
+                "icon_url": "images/items/518.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 740,
+                "name": "瘋兔娃娃",
+                "rate": 3,
+                "icon_url": "images/items/740.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 948,
+                "name": "熊掌",
+                "rate": 100,
+                "icon_url": "images/items/948.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 969,
+                "name": "黃金",
+                "rate": 0.01,
+                "icon_url": "images/items/969.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2289,
+                "name": "糞便帽",
+                "rate": 0.2,
+                "icon_url": "images/items/2289.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4188,
+                "name": "狂暴大腳熊卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4188.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": "",
+                "card_prefix_name": "火靈礦石的"
+            },
+            {
+                "item_id": 7053,
+                "name": "賽依伐",
+                "rate": 20,
+                "icon_url": "images/items/7053.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun01",
+                "description": "青林湖密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun01_2",
+                "description": "青林湖密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 3,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 3,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 2000,
+                "Delay": 60000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1243,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SM_MAGNUM",
+                "SkillNameZhTW": "怒爆",
+                "SkillID": 7,
+                "SkillLv": 9,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "SM_ENDURE",
+                "SkillNameZhTW": "霸體",
+                "SkillID": 8,
+                "SkillLv": 1,
+                "Rate": "50.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 10000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "longrangeattacked",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            }
+        ]
+    },
     "2787": {
         "id": 2787,
         "name": {
@@ -90200,6 +98330,280 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2805": {
+        "id": 2805,
+        "name": {
+            "zh_tw": "雄壯獸人戰士長",
+            "en": "C2_HIGH_ORC",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "火"
+            },
+            "level": 85,
+            "race": "人形",
+            "size": "大"
+        },
+        "image_url": "/images/monsters/2805.gif",
+        "stats": {
+            "attack": {
+                "max": 772,
+                "min": 566
+            },
+            "base_stats": {
+                "agi": 16,
+                "dex": 83,
+                "int": 31,
+                "luk": 20,
+                "str": 75,
+                "vit": 40
+            },
+            "defense": 101,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 344,
+            "hit_100_percent": 305,
+            "hp": 41930,
+            "magic_attack": {
+                "max": 177,
+                "min": 147
+            },
+            "magic_defense": 45
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 508,
+                "name": "黃色藥草",
+                "rate": 22.5,
+                "icon_url": "images/items/508.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 756,
+                "name": "神之金屬原石",
+                "rate": 4.9,
+                "icon_url": "images/items/756.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 32.5,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 931,
+                "name": "獸人戰士之證",
+                "rate": 100,
+                "icon_url": "images/items/931.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 999,
+                "name": "鋼鐵",
+                "rate": 2.25,
+                "icon_url": "images/items/999.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1304,
+                "name": "獸人斧",
+                "rate": 0.25,
+                "icon_url": "images/items/1304.gif",
+                "slotCount": 0,
+                "slot": "單手斧",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4322,
+                "name": "獸人戰士長卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4322.gif",
+                "slotCount": 0,
+                "slot": "盾牌",
+                "enchantment_slots": "",
+                "card_prefix_name": "反擊的"
+            },
+            {
+                "item_id": 7002,
+                "name": "獸人之牙",
+                "rate": 62.5,
+                "icon_url": "images/items/7002.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun02",
+                "description": "鐘塔地下2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_FIREATTACK",
+                "SkillNameZhTW": "火屬性攻擊",
+                "SkillID": 186,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SMOKING",
+                "SkillNameZhTW": "吸菸",
+                "SkillID": 195,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 36000000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 32,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 9,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 6,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "CR_SHIELDCHARGE",
+                "SkillNameZhTW": "盾擊",
+                "SkillID": 250,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "2808": {
         "id": 2808,
         "name": {
@@ -91448,6 +99852,308 @@ export const monstersDisplayIndex = {
                 "Target": "self",
                 "ConditionType": "myhpltmaxrate",
                 "ConditionValue": 50,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "2821": {
+        "id": 2821,
+        "name": {
+            "zh_tw": "菁英狂暴蜂兵",
+            "en": "C3_GIANT_HONET",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "風"
+            },
+            "level": 120,
+            "race": "昆蟲",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/2821.gif",
+        "stats": {
+            "attack": {
+                "max": 1358,
+                "min": 968
+            },
+            "base_stats": {
+                "agi": 45,
+                "dex": 74,
+                "int": 32,
+                "luk": 34,
+                "str": 70,
+                "vit": 47
+            },
+            "defense": 80,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 375,
+            "hit_100_percent": 371,
+            "hp": 132605,
+            "magic_attack": {
+                "max": 324,
+                "min": 244
+            },
+            "magic_defense": 43
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 518,
+                "name": "蜂蜜",
+                "rate": 30,
+                "icon_url": "images/items/518.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 522,
+                "name": "瑪絲黛拉果實",
+                "rate": 0.3,
+                "icon_url": "images/items/522.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 526,
+                "name": "蜂膠",
+                "rate": 13.75,
+                "icon_url": "images/items/526.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 722,
+                "name": "珍珠",
+                "rate": 0.5,
+                "icon_url": "images/items/722.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4271,
+                "name": "狂暴蜂兵卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4271.gif",
+                "slotCount": 0,
+                "slot": "頭盔",
+                "enchantment_slots": "",
+                "card_prefix_name": "黃色魔力礦石"
+            },
+            {
+                "item_id": 12676,
+                "name": "城戰紫色藥水箱",
+                "rate": 0.25,
+                "icon_url": "images/items/12676.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun02",
+                "description": "露依納密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun02_2",
+                "description": "露依納密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_PIERCINGATT",
+                "SkillNameZhTW": "穿刺攻擊",
+                "SkillID": 158,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_WINDATTACK",
+                "SkillNameZhTW": "風屬性攻擊",
+                "SkillID": 187,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 30000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1303,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 9,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
                 "Val1": "",
                 "Val2": "",
                 "Val3": "",
@@ -97685,6 +106391,269 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2871": {
+        "id": 2871,
+        "name": {
+            "zh_tw": "憤怒古鐘魔",
+            "en": "C4_CLOCK",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "地"
+            },
+            "level": 81,
+            "race": "無形",
+            "size": "中"
+        },
+        "image_url": "images/monsters/2871.gif",
+        "stats": {
+            "attack": {
+                "max": 785,
+                "min": 573
+            },
+            "base_stats": {
+                "agi": 31,
+                "dex": 97,
+                "int": 41,
+                "luk": 15,
+                "str": 68,
+                "vit": 35
+            },
+            "defense": 91,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 353,
+            "hit_100_percent": 315,
+            "hp": 27780,
+            "magic_attack": {
+                "max": 191,
+                "min": 159
+            },
+            "magic_defense": 43
+        },
+        "special_status": [
+            "可物理攻擊",
+            "可移動",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 509,
+                "name": "白色藥草",
+                "rate": 47.5,
+                "icon_url": "images/items/509.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 568,
+                "name": "檸檬",
+                "rate": 8,
+                "icon_url": "images/items/568.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 985,
+                "name": "鋁",
+                "rate": 4.1,
+                "icon_url": "images/items/985.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1019,
+                "name": "瑪哪樹枝",
+                "rate": 20,
+                "icon_url": "images/items/1019.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1095,
+                "name": "指針",
+                "rate": 100,
+                "icon_url": "images/items/1095.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4299,
+                "name": "古鐘魔卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4299.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "監護人的"
+            },
+            {
+                "item_id": 7026,
+                "name": "鐘塔之鑰",
+                "rate": 0.75,
+                "icon_url": "images/items/7026.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7027,
+                "name": "鐘塔鑰匙",
+                "rate": 0.75,
+                "icon_url": "images/items/7027.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower2",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_a",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_b",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d02_z",
+                "description": "鐘塔2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_STUNATTACK",
+                "SkillNameZhTW": "昏迷攻擊",
+                "SkillID": 179,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 1500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 4,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 4,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 9,
+                "Val2": "0x91",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION_ON",
+                "SkillNameZhTW": "表情 開啟",
+                "SkillID": 474,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 30000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 6,
+                "Val2": "0x3885",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
     "2872": {
         "id": 2872,
         "name": {
@@ -97836,6 +106805,203 @@ export const monstersDisplayIndex = {
                 "CastTime": 0,
                 "Delay": 5000,
                 "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "2876": {
+        "id": 2876,
+        "name": {
+            "zh_tw": "憤怒狂暴綠棉蟲",
+            "en": "C4_CATERPILLAR",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "地"
+            },
+            "level": 121,
+            "race": "昆蟲",
+            "size": "小"
+        },
+        "image_url": "/images/monsters/2876.gif",
+        "stats": {
+            "attack": {
+                "max": 1629,
+                "min": 1145
+            },
+            "base_stats": {
+                "agi": 48,
+                "dex": 54,
+                "int": 50,
+                "luk": 45,
+                "str": 58,
+                "vit": 51
+            },
+            "defense": 100,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 360,
+            "hit_100_percent": 378,
+            "hp": 128280,
+            "magic_attack": {
+                "max": 334,
+                "min": 258
+            },
+            "magic_defense": 42
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 603,
+                "name": "神秘藍箱",
+                "rate": 0.1,
+                "icon_url": "images/items/603.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 949,
+                "name": "柔毛",
+                "rate": 75,
+                "icon_url": "images/items/949.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 997,
+                "name": "土靈原石",
+                "rate": 1.25,
+                "icon_url": "images/items/997.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1000,
+                "name": "星星的角",
+                "rate": 2.5,
+                "icon_url": "images/items/1000.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4289,
+                "name": "狂暴綠綿蟲卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4289.gif",
+                "slotCount": 0,
+                "slot": "武器",
+                "enchantment_slots": "",
+                "card_prefix_name": "植物靈魂增加的"
+            },
+            {
+                "item_id": 7054,
+                "name": "布里刊",
+                "rate": 100,
+                "icon_url": "images/items/7054.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "gld_dun03",
+                "description": "巴基力雷恩密穴1樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "gld_dun03_2",
+                "description": "巴基力雷恩密穴2樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_POISON",
+                "SkillNameZhTW": "施毒攻擊",
+                "SkillID": 176,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_PETRIFYATTACK",
+                "SkillNameZhTW": "麻痹攻擊",
+                "SkillID": 180,
+                "SkillLv": 5,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
                 "Target": "target",
                 "ConditionType": "always",
                 "ConditionValue": "",
@@ -98678,6 +107844,270 @@ export const monstersDisplayIndex = {
             }
         ]
     },
+    "2885": {
+        "id": 2885,
+        "name": {
+            "zh_tw": "憤怒巫婆",
+            "en": "C4_BATHORY",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 1,
+                "type": "暗"
+            },
+            "level": 88,
+            "race": "人形",
+            "size": "中"
+        },
+        "image_url": "images/monsters/2885.gif",
+        "stats": {
+            "attack": {
+                "max": 515,
+                "min": 393
+            },
+            "base_stats": {
+                "agi": 49,
+                "dex": 67,
+                "int": 77,
+                "luk": 50,
+                "str": 66,
+                "vit": 40
+            },
+            "defense": 61,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 341,
+            "hit_100_percent": 347,
+            "hp": 26210,
+            "magic_attack": {
+                "max": 288,
+                "min": 230
+            },
+            "magic_defense": 89
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 637,
+                "name": "魔物掃把",
+                "rate": 0.5,
+                "icon_url": "images/items/637.gif",
+                "slotCount": 0,
+                "slot": "捕捉",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1000,
+                "name": "星星的角",
+                "rate": 0.75,
+                "icon_url": "images/items/1000.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1001,
+                "name": "星星的粉末",
+                "rate": 5,
+                "icon_url": "images/items/1001.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1006,
+                "name": "古魔法書",
+                "rate": 0.4,
+                "icon_url": "images/items/1006.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1061,
+                "name": "魔女之星沙",
+                "rate": 100,
+                "icon_url": "images/items/1061.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2252,
+                "name": "魔法帽",
+                "rate": 0.1,
+                "icon_url": "images/items/2252.gif",
+                "slotCount": 0,
+                "slot": "頭上",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4119,
+                "name": "巫婆卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4119.gif",
+                "slotCount": 0,
+                "slot": "鎧甲",
+                "enchantment_slots": "",
+                "card_prefix_name": "邪惡的"
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun04",
+                "description": "鐘塔地下4樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_SILENCEATTACK",
+                "SkillNameZhTW": "沉默攻擊",
+                "SkillID": 178,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 700,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_CURSEATTACK",
+                "SkillNameZhTW": "詛咒攻擊",
+                "SkillID": 181,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 30,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 30,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_ENERGYDRAIN",
+                "SkillNameZhTW": "吸能",
+                "SkillID": 200,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 30,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_STOP",
+                "SkillNameZhTW": "停止",
+                "SkillID": 342,
+                "SkillLv": 1,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 500,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 30,
+                "Chat": ""
+            }
+        ]
+    },
     "2890": {
         "id": 2890,
         "name": {
@@ -99429,6 +108859,258 @@ export const monstersDisplayIndex = {
                 "Target": "self",
                 "ConditionType": "myhpltmaxrate",
                 "ConditionValue": 50,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "2894": {
+        "id": 2894,
+        "name": {
+            "zh_tw": "菁英捲甲蟲",
+            "en": "C3_ARCLOUSE",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 2,
+                "type": "地"
+            },
+            "level": 107,
+            "race": "昆蟲",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/2894.gif",
+        "stats": {
+            "attack": {
+                "max": 671,
+                "min": 503
+            },
+            "base_stats": {
+                "agi": 73,
+                "dex": 168,
+                "int": 35,
+                "luk": 15,
+                "str": 60,
+                "vit": 45
+            },
+            "defense": 101,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 450,
+            "hit_100_percent": 383,
+            "hp": 50100,
+            "magic_attack": {
+                "max": 194,
+                "min": 170
+            },
+            "magic_defense": 36
+        },
+        "special_status": [
+            "主動攻擊",
+            "偵測隱匿",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(閒置)"
+        ],
+        "drops": [
+            {
+                "item_id": 716,
+                "name": "紅色魔力礦石",
+                "rate": 7.5,
+                "icon_url": "images/items/716.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 11.25,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 62.5,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 938,
+                "name": "粘稠液體",
+                "rate": 75,
+                "icon_url": "images/items/938.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 943,
+                "name": "堅硬外皮",
+                "rate": 20,
+                "icon_url": "images/items/943.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 997,
+                "name": "土靈原石",
+                "rate": 0.5,
+                "icon_url": "images/items/997.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1096,
+                "name": "圓形外皮",
+                "rate": 87.5,
+                "icon_url": "images/items/1096.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4240,
+                "name": "捲甲蟲卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4240.gif",
+                "slotCount": 0,
+                "slot": "盾牌",
+                "enchantment_slots": 0,
+                "card_prefix_name": "抵抗特殊力量的"
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "alde_dun01",
+                "description": "鐘塔地下1樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_GROUNDATTACK",
+                "SkillNameZhTW": "地屬性攻擊",
+                "SkillID": 185,
+                "SkillLv": 3,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_SUMMONSLAVE",
+                "SkillNameZhTW": "召喚隨從",
+                "SkillID": 196,
+                "SkillLv": 2,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 700,
+                "Delay": 30000,
+                "Cancelable": "no",
+                "Target": "self",
+                "ConditionType": "slavele",
+                "ConditionValue": 0,
+                "Val1": 1194,
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 7,
+                "Val2": "0x3095",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "AL_TELEPORT",
+                "SkillNameZhTW": "瞬間移動",
+                "SkillID": 26,
+                "SkillLv": 1,
+                "Rate": "100.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 0,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "rudeattacked",
+                "ConditionValue": "",
                 "Val1": "",
                 "Val2": "",
                 "Val3": "",
@@ -100261,6 +109943,264 @@ export const monstersDisplayIndex = {
                 "Val4": "",
                 "Val5": "",
                 "Emotion": "",
+                "Chat": ""
+            }
+        ]
+    },
+    "2910": {
+        "id": 2910,
+        "name": {
+            "zh_tw": "狡猾鐘怪",
+            "en": "C5_ALARM",
+            "ko_kr": ""
+        },
+        "released": true,
+        "is_valid": false,
+        "basic_info": {
+            "element": {
+                "level": 3,
+                "type": "無"
+            },
+            "level": 88,
+            "race": "無形",
+            "size": "中"
+        },
+        "image_url": "/images/monsters/2910.gif",
+        "stats": {
+            "attack": {
+                "max": 617,
+                "min": 463
+            },
+            "base_stats": {
+                "agi": 72,
+                "dex": 66,
+                "int": 25,
+                "luk": 25,
+                "str": 70,
+                "vit": 40
+            },
+            "defense": 106,
+            "exp": {
+                "base": "",
+                "job": ""
+            },
+            "flee_95_percent": 332,
+            "hit_100_percent": 365,
+            "hp": 27810,
+            "magic_attack": {
+                "max": 176,
+                "min": 146
+            },
+            "magic_defense": 53
+        },
+        "special_status": [
+            "主動攻擊",
+            "可物理攻擊",
+            "可移動",
+            "被攻擊時改變目標",
+            "被近戰時改變目標",
+            "詠唱感知(追擊)",
+            "詠唱感知(閒置)",
+            "變更追擊目標"
+        ],
+        "drops": [
+            {
+                "item_id": 912,
+                "name": "剎勒空結晶",
+                "rate": 37.5,
+                "icon_url": "images/items/912.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 984,
+                "name": "神之金屬",
+                "rate": 2.65,
+                "icon_url": "images/items/984.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 1095,
+                "name": "指針",
+                "rate": 100,
+                "icon_url": "images/items/1095.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 2607,
+                "name": "髮夾",
+                "rate": 0.05,
+                "icon_url": "images/items/2607.gif",
+                "slotCount": 1,
+                "slot": "飾品",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 4244,
+                "name": "鐘怪卡片",
+                "rate": 0.05,
+                "icon_url": "images/items/4244.gif",
+                "slotCount": 0,
+                "slot": "鞋子",
+                "enchantment_slots": "",
+                "card_prefix_name": "尋找者的"
+            },
+            {
+                "item_id": 7005,
+                "name": "骷髏頭",
+                "rate": 37.5,
+                "icon_url": "images/items/7005.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": 0,
+                "card_prefix_name": ""
+            },
+            {
+                "item_id": 7026,
+                "name": "鐘塔之鑰",
+                "rate": 0.5,
+                "icon_url": "images/items/7026.gif",
+                "slotCount": 0,
+                "slot": "-",
+                "enchantment_slots": "",
+                "card_prefix_name": ""
+            }
+        ],
+        "spawns": [
+            {
+                "map_name": "c_tower3",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_a",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_b",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            },
+            {
+                "map_name": "tow_d03_z",
+                "description": "鐘塔3樓",
+                "spawn_info": ""
+            }
+        ],
+        "skills": [
+            {
+                "SkillNameComment": "NPC_SPLASHATTACK",
+                "SkillNameZhTW": "濺射攻擊",
+                "SkillID": 174,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "attackpcge",
+                "ConditionValue": 2,
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 6,
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_BLINDATTACK",
+                "SkillNameZhTW": "致盲攻擊",
+                "SkillID": 177,
+                "SkillLv": 3,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "2.00%",
+                "State": "chase",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 19,
+                "Val2": "0x81",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_EMOTION",
+                "SkillNameZhTW": "表情",
+                "SkillID": 197,
+                "SkillLv": 1,
+                "Rate": "20.00%",
+                "State": "idle",
+                "CastTime": 0,
+                "Delay": 5000,
+                "Cancelable": "yes",
+                "Target": "self",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": 6,
+                "Val2": "0x3695",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": "",
+                "Chat": ""
+            },
+            {
+                "SkillNameComment": "NPC_DARKBREATH",
+                "SkillNameZhTW": "黑暗呼吸",
+                "SkillID": 202,
+                "SkillLv": 2,
+                "Rate": "5.00%",
+                "State": "attack",
+                "CastTime": 800,
+                "Delay": 5000,
+                "Cancelable": "no",
+                "Target": "target",
+                "ConditionType": "always",
+                "ConditionValue": "",
+                "Val1": "",
+                "Val2": "",
+                "Val3": "",
+                "Val4": "",
+                "Val5": "",
+                "Emotion": 7,
                 "Chat": ""
             }
         ]

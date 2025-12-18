@@ -209,7 +209,7 @@ const getMonsterImg = (id) => {
       <VirtualScroll
           :list="filteredItemsArray"
           :item-height="200"
-          :bufferCount = "70"
+          :bufferCount = "256"
           :grid="4"
           :rowKey="id"
       >

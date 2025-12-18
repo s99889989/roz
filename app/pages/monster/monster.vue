@@ -17,6 +17,12 @@ const sortAsc = ref(false) // true = 小→大, false = 大→小
 const search = ref("")
 const minLevel = ref("")
 const maxLevel = ref("")
+const minHP = ref("")
+const maxHP = ref("")
+const minHit = ref("")
+const maxHit = ref("")
+const minFlee = ref("")
+const maxFlee = ref("")
 
 // 選取標籤（類型 / 屬性 / 種族 / 大小）
 const selectedType = ref(['all'])
@@ -59,7 +65,7 @@ const raceList = [
   {id: "魚貝", name: "魚貝", icon: "/assets/race/fish.png"},
   {id: "惡魔", name: "惡魔", icon: "/assets/race/demon.png"},
   {id: "天使", name: "天使", icon: "/assets/race/angel.png"},
-  {id: "龍族", name: "龍族", icon: "/assets/race/dragon.png"},
+  {id: "龍", name: "龍族", icon: "/assets/race/dragon.png"},
   {id: "不死", name: "不死", icon: "/assets/race/undead.png"},
   {id: "人形", name: "人形", icon: "/assets/race/undead.png"}
 ]
@@ -86,6 +92,8 @@ const filteredMonsters = computed(() => {
     const matchesName =
         q === "" ||
         (m.name.zh_tw && m.name.zh_tw.includes(q)) ||
+        // 只有在 itemSearch 為 true 時，才會檢查掉落物
+        (itemSearch.value && m.drops && m.drops.some(it => it.name.includes(q))) ||
         (Array.isArray(m.spawns) &&
             m.spawns.some(loc =>
                 (loc.map_name && loc.map_name.toLowerCase().includes(q))
@@ -95,6 +103,21 @@ const filteredMonsters = computed(() => {
     const matchesLevel =
         (!minLevel.value || m.basic_info.level >= parseInt(minLevel.value)) &&
         (!maxLevel.value || m.basic_info.level <= parseInt(maxLevel.value))
+
+    // ✅ 血量範圍
+    const matchesHP =
+        (!minHP.value || m.stats.hp >= parseInt(minHP.value)) &&
+        (!maxHP.value || m.stats.hp <= parseInt(maxHP.value))
+
+    // ✅ 命中範圍
+    const matchesHit =
+        (!minHit.value || m.stats.hit_100_percent >= parseInt(minHit.value)) &&
+        (!maxHit.value || m.stats.hit_100_percent <= parseInt(maxHit.value))
+
+    // ✅ 迴避範圍
+    const matchesFlee =
+        (!minFlee.value || m.stats.flee_95_percent >= parseInt(minFlee.value)) &&
+        (!maxFlee.value || m.stats.flee_95_percent <= parseInt(maxFlee.value))
 
     // ✅ 類型篩選
     const matchesType =
@@ -134,7 +157,7 @@ const filteredMonsters = computed(() => {
         selectedSize.value.includes("all") ||
         selectedSize.value.includes(m.basic_info.size+'型')
 
-    return matchesName && matchesLevel && matchesElement && matchesRace && matchesSize && matchesType
+    return matchesName && matchesLevel && matchesHP && matchesHit && matchesFlee && matchesElement && matchesRace && matchesSize && matchesType
   })
       // ✅ 排序 (依 sortAsc)
       .sort((a, b) => sortAsc.value
@@ -158,121 +181,65 @@ const getAttack = (min, max) => {
   return min+'-'+max;
 }
 
-// ✅ 切換種族
-function toggleRace(id) {
-// 如果點擊 ALL
-  // 如果有選 ALL，先清除
+/**
+ * 核心通用切換邏輯 (支援單選/多選切換)
+ * @param {String} id - 點擊的項目 ID
+ * @param {Ref} selectedRef - 傳入對應的 Vue ref 陣列
+ */
+function handleToggle(id, selectedRef) {
+  // 取得當前陣列的副本，操作完再放回去，確保 Vue 響應式觸發
+  let currentSelection = [...selectedRef.value];
+
+  // --- 情況 A：單選模式 (selectMode.value = false) ---
+  if (!selectMode.value) {
+    if (id === 'all' || currentSelection.includes(id)) {
+      // 點擊 ALL 或 點擊已選中的項目 -> 回歸 ALL
+      selectedRef.value = ['all'];
+    } else {
+      // 點擊新項目 -> 直接取代
+      selectedRef.value = [id];
+    }
+    return;
+  }
+
+  // --- 情況 B：多選模式 (selectMode.value = true) ---
   if (id === 'all') {
-    selectedRace.value = ['all']
-    return
+    // 點擊 ALL -> 清空其他，只留 ALL
+    selectedRef.value = ['all'];
+    return;
   }
 
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedRace.value.includes('all')) {
-    selectedRace.value = []
+  // 如果原本是 ALL，現在點擊具體項目 -> 先移除 ALL
+  if (currentSelection.includes('all')) {
+    currentSelection = [];
   }
 
-  // ✅ 如果已存在 → 取消選取
-  if (selectedRace.value.includes(id)) {
-    selectedRace.value = selectedRace.value.filter(e => e !== id)
+  // 執行切換 (存在就移除，不存在就加入)
+  if (currentSelection.includes(id)) {
+    currentSelection = currentSelection.filter(item => item !== id);
   } else {
-    // 加入新選項
-    selectedRace.value.push(id)
+    currentSelection.push(id);
   }
 
-  //如果空 → 設置為all
-  if (selectedRace.value.length === 0) {
-    selectedRace.value.push('all')
+  // 如果操作完變空了，或是手動取消到沒東西 -> 自動回歸 ALL
+  if (currentSelection.length === 0) {
+    currentSelection = ['all'];
   }
+
+  // 最後統一賦值
+  selectedRef.value = currentSelection;
 }
+// ✅ 切換種族
+const toggleRace = (id) => handleToggle(id, selectedRace);
 
 // ✅ 切換體型
-function toggleSize(id) {
-// 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedSize.value = ['all']
-    return
-  }
+const toggleSize = (id) => handleToggle(id, selectedSize);
 
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedSize.value.includes('all')) {
-    selectedSize.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedSize.value.includes(id)) {
-    selectedSize.value = selectedSize.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedSize.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedSize.value.length === 0) {
-    selectedSize.value.push('all')
-  }
-}
+// ✅ 切換類型
+const toggleType = (id) => handleToggle(id, selectedType);
 
 // ✅ 切換屬性
-function toggleType(id) {
-
-  // 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedType.value = ['all']
-    return
-  }
-
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedType.value.includes('all')) {
-    selectedType.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedType.value.includes(id)) {
-    selectedType.value = selectedType.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedType.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedType.value.length === 0) {
-    selectedType.value.push('all')
-  }
-
-}
-
-// ✅ 切換屬性
-function toggleElement(id) {
-
-  // 如果點擊 ALL
-  // 如果有選 ALL，先清除
-  if (id === 'all') {
-    selectedElement.value = ['all']
-    return
-  }
-
-  // 如果列表包含 ALL，先移除 ALL
-  if (selectedElement.value.includes('all')) {
-    selectedElement.value = []
-  }
-
-  // ✅ 如果已存在 → 取消選取
-  if (selectedElement.value.includes(id)) {
-    selectedElement.value = selectedElement.value.filter(e => e !== id)
-  } else {
-    // 加入新選項
-    selectedElement.value.push(id)
-  }
-
-  //如果空 → 設置為all
-  if (selectedElement.value.length === 0) {
-    selectedElement.value.push('all')
-  }
-
-}
+const toggleElement = (id) => handleToggle(id, selectedElement);//
 
 // 清除所有篩選
 function clearFilters() {
@@ -313,24 +280,55 @@ const getMonsterImg = (id) => {
   // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
   return `/images/monsters/${id}.gif`
 }
+
+// 控制進階搜尋開關的狀態，預設為關閉 (false)
+const isAdvanced = ref(false);
+// 點擊切換進階搜尋
+const toggleAdvanced = () => {
+  isAdvanced.value = !isAdvanced.value;
+};
+//物品搜尋
+const itemSearch = ref(false);
+// 點擊切換物品搜尋
+const toggleItemSearch = () => {
+  itemSearch.value = !itemSearch.value;
+};
+//選擇模式
+const selectMode = ref(false);
+// 點擊切換選擇模式
+const toggleSelectMode = () => {
+  selectMode.value = !selectMode.value;
+};
 </script>
 
 <template>
   <!--   bg-[#3a2c1f]-->
   <div class="p-4 text-white min-h-screen">
 
-    <div class="mb-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-yellow-400">搜尋</h1>
+    <div class="mb-4 flex justify-start items-center">
+      <h1 class="text-2xl font-bold text-yellow-400 me-4">搜尋</h1>
+      <span class="text-xl font-bold text-[#b89a74] me-2">搜尋物品</span>
 
+      <div
+          @click="toggleItemSearch"
+          class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+          :class="{ 'bg-gray-100': itemSearch }"
+      >
+        <div
+            class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+            :class="itemSearch ? 'translate-x-7' : 'translate-x-1'"
+        ></div>
+      </div>
     </div>
 
     <!-- 搜尋區 -->
     <div class="mb-4 grid gap-2">
+
       <div class="flex mb-2 flex-wrap gap-2">
         <input
             v-model="search"
             type="text"
-            placeholder="輸入怪物名稱..."
+            placeholder="輸入怪物或地圖名稱..."
             class="bg-[#2b1e12] w-1/2 border border-yellow-600 rounded px-3 py-2 text-white placeholder-gray-400"
         />
 
@@ -342,35 +340,26 @@ const getMonsterImg = (id) => {
         </button>
       </div>
 
+    </div>
 
-      <div class="flex items-center gap-2">
-        <span class="text-xl text-yellow-400 font-bold">等級：</span>
-        <input
-            v-model="minLevel"
-            type="number"
-            class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white"
-            placeholder="MIN"
-        >
-        <span>-</span>
-        <input
-            v-model="maxLevel"
-            type="number"
-            class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white"
-            placeholder="MAX"
-        >
-        <button
-            @click="sortAsc = !sortAsc"
-            class="bg-[#2b1e12] hover:bg-red-700 px-4 py-2 rounded text-sm font-bold"
-        >
-          切換排序
-        </button>
+    <div class="mb-4 flex justify-start items-center">
+      <span class="text-xl font-bold text-[#b89a74] me-2">分類多選</span>
+      <div
+          @click="toggleSelectMode"
+          class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+          :class="{ 'bg-gray-100': selectMode }"
+      >
+        <div
+            class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+            :class="selectMode ? 'translate-x-7' : 'translate-x-1'"
+        ></div>
       </div>
     </div>
 
     <!-- 類型篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">類型</h3>
+        <h3 class="text-xl text-yellow-400 font-bold mb-2">類型</h3>
       </div>
 
       <div class="flex flex-wrap gap-2">
@@ -392,7 +381,7 @@ const getMonsterImg = (id) => {
     <!-- 種族篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">種族</h3>
+        <h3 class="text-xl text-yellow-400 font-bold mb-2">種族</h3>
       </div>
 
       <div class="flex flex-wrap gap-2">
@@ -413,7 +402,7 @@ const getMonsterImg = (id) => {
     <!-- 屬性篩選 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">屬性</h3>
+        <h3 class="text-xl text-yellow-400 font-bold mb-2">屬性</h3>
       </div>
 
       <div class="flex flex-wrap gap-2">
@@ -435,7 +424,7 @@ const getMonsterImg = (id) => {
     <!-- 大小 -->
     <div class="mb-4">
       <div class="flex items-center gap-2">
-        <h3 class="text-yellow-400 font-bold mb-2">大小</h3>
+        <h3 class="text-xl text-yellow-400 font-bold mb-2">大小</h3>
       </div>
 
       <div class="flex flex-wrap gap-2">
@@ -451,6 +440,103 @@ const getMonsterImg = (id) => {
           {{ s.name }}
         </button>
       </div>
+    </div>
+
+    <div class="mb-4">
+
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-xl font-bold text-[#b89a74]">進階搜尋</span>
+
+        <div
+            @click="toggleAdvanced"
+            class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+            :class="{ 'bg-gray-100': isAdvanced }"
+        >
+          <div
+              class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+              :class="isAdvanced ? 'translate-x-7' : 'translate-x-1'"
+          ></div>
+        </div>
+      </div>
+
+      <div v-show="isAdvanced" class="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-8 lg:w-fit">
+
+        <div class="flex items-center gap-2 justify-start">
+          <span class="text-xl text-yellow-400 font-bold whitespace-nowrap">等級：</span>
+          <input
+              v-model="minLevel"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MIN"
+          >
+          <span class="text-yellow-600">-</span>
+          <input
+              v-model="maxLevel"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MAX"
+          >
+          <button
+              @click="sortAsc = !sortAsc"
+              class="ml-2 bg-[#2b1e12] hover:bg-red-700 px-3 py-1 rounded text-xs font-bold text-white border border-red-900 transition-colors whitespace-nowrap"
+          >
+            切換排序
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 justify-start">
+          <span class="text-xl text-yellow-400 font-bold whitespace-nowrap">血量：</span>
+          <input
+              v-model="minHP"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MIN"
+          >
+          <span class="text-yellow-600">-</span>
+          <input
+              v-model="maxHP"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MAX"
+          >
+        </div>
+
+        <div class="flex items-center gap-2 justify-start">
+          <span class="text-xl text-yellow-400 font-bold whitespace-nowrap">迴避：</span>
+          <input
+              v-model="minFlee"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MIN"
+          >
+          <span class="text-yellow-600">-</span>
+          <input
+              v-model="maxFlee"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MAX"
+          >
+        </div>
+
+        <div class="flex items-center gap-2 justify-start">
+          <span class="text-xl text-yellow-400 font-bold whitespace-nowrap">命中：</span>
+          <input
+              v-model="minHit"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MIN"
+          >
+          <span class="text-yellow-600">-</span>
+          <input
+              v-model="maxHit"
+              type="number"
+              class="w-20 bg-[#2b1e12] border border-yellow-600 rounded px-2 py-1 text-white focus:border-yellow-400 outline-none"
+              placeholder="MAX"
+          >
+        </div>
+
+      </div>
+
     </div>
 
     <!-- 結果統計 -->

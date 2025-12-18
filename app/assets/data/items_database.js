@@ -457,6 +457,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1139.gif"
             },
             {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 7,
+                "image_url": "images/monsters/1189.gif"
+            },
+            {
                 "monster_id": 1246,
                 "monster_name": "甜餅人",
                 "rate": 8.5,
@@ -655,6 +661,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1126.gif"
             },
             {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 5,
+                "image_url": "images/monsters/1131.gif"
+            },
+            {
                 "monster_id": 1138,
                 "monster_name": "魔鍋蛋",
                 "rate": 2,
@@ -677,6 +689,12 @@ export const itemsData = {
                 "monster_name": "妖道",
                 "rate": 6.25,
                 "image_url": "images/monsters/1188.gif"
+            },
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 4.5,
+                "image_url": "images/monsters/1213.gif"
             },
             {
                 "monster_id": 1266,
@@ -737,6 +755,12 @@ export const itemsData = {
                 "monster_name": "狡猾魔鍋蛋",
                 "rate": 10,
                 "image_url": "images/monsters/2768.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 22.5,
+                "image_url": "images/monsters/2805.gif"
             },
             {
                 "monster_id": 2809,
@@ -853,12 +877,6 @@ export const itemsData = {
                 "image_url": "images/monsters/1096.gif"
             },
             {
-                "monster_id": 1117,
-                "monster_name": "闇神官",
-                "rate": 10,
-                "image_url": "images/monsters/1117.gif"
-            },
-            {
                 "monster_id": 1155,
                 "monster_name": "畢帝特地龍",
                 "rate": 5,
@@ -869,6 +887,12 @@ export const itemsData = {
                 "monster_name": "畢帝特飛龍",
                 "rate": 5,
                 "image_url": "images/monsters/1156.gif"
+            },
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 4.5,
+                "image_url": "images/monsters/1189.gif"
             },
             {
                 "monster_id": 1201,
@@ -883,6 +907,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1202.gif"
             },
             {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": 13,
+                "image_url": "images/monsters/1211.gif"
+            },
+            {
                 "monster_id": 1243,
                 "monster_name": "雪熊",
                 "rate": 4,
@@ -893,6 +923,12 @@ export const itemsData = {
                 "monster_name": "卡拉特小丑",
                 "rate": 7.25,
                 "image_url": "images/monsters/1267.gif"
+            },
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 9.5,
+                "image_url": "images/monsters/1269.gif"
             },
             {
                 "monster_id": 1302,
@@ -947,6 +983,12 @@ export const itemsData = {
                 "monster_name": "狡猾闇神官",
                 "rate": 50,
                 "image_url": "images/monsters/2838.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 47.5,
+                "image_url": "images/monsters/2871.gif"
             },
             {
                 "monster_id": 2877,
@@ -1651,6 +1693,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1258.gif"
             },
             {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 1.45,
+                "image_url": "images/monsters/1311.gif"
+            },
+            {
                 "monster_id": 2673,
                 "monster_name": "菁英野豬",
                 "rate": 7.5,
@@ -1999,10 +2047,40 @@ export const itemsData = {
                 "image_url": "images/monsters/1176.gif"
             },
             {
+                "monster_id": 1293,
+                "monster_name": "狂暴克瑞米",
+                "rate": 2.75,
+                "image_url": "images/monsters/1293.gif"
+            },
+            {
+                "monster_id": 1303,
+                "monster_name": "狂暴蜂兵",
+                "rate": 6,
+                "image_url": "images/monsters/1303.gif"
+            },
+            {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 2.5,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 12.5,
+                "image_url": "images/monsters/2780.gif"
+            },
+            {
                 "monster_id": 2798,
                 "monster_name": "狡猾蜂兵",
                 "rate": 5,
                 "image_url": "images/monsters/2798.gif"
+            },
+            {
+                "monster_id": 2821,
+                "monster_name": "菁英狂暴蜂兵",
+                "rate": 30,
+                "image_url": "images/monsters/2821.gif"
             },
             {
                 "monster_id": 2863,
@@ -2124,6 +2202,12 @@ export const itemsData = {
             "sell_price": 10
         },
         "dropped_by": [
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 4.25,
+                "image_url": "images/monsters/1270.gif"
+            },
             {
                 "monster_id": 1687,
                 "monster_name": "綠變色龍",
@@ -2257,10 +2341,28 @@ export const itemsData = {
                 "image_url": "images/monsters/1079.gif"
             },
             {
+                "monster_id": 1293,
+                "monster_name": "狂暴克瑞米",
+                "rate": 0.25,
+                "image_url": "images/monsters/1293.gif"
+            },
+            {
                 "monster_id": 1302,
                 "monster_name": "迷幻之王",
                 "rate": 0.6,
                 "image_url": "images/monsters/1302.gif"
+            },
+            {
+                "monster_id": 1303,
+                "monster_name": "狂暴蜂兵",
+                "rate": 0.06,
+                "image_url": "images/monsters/1303.gif"
+            },
+            {
+                "monster_id": 2821,
+                "monster_name": "菁英狂暴蜂兵",
+                "rate": 0.3,
+                "image_url": "images/monsters/2821.gif"
             }
         ]
     },
@@ -2364,6 +2466,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1180.gif"
             },
             {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 1,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
                 "monster_id": 1313,
                 "monster_name": "流氓",
                 "rate": 2.25,
@@ -2374,6 +2482,12 @@ export const itemsData = {
                 "monster_name": "海豹寶寶",
                 "rate": 1,
                 "image_url": "images/monsters/1317.gif"
+            },
+            {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 5,
+                "image_url": "images/monsters/2717.gif"
             },
             {
                 "monster_id": 2739,
@@ -2460,10 +2574,22 @@ export const itemsData = {
                 "image_url": "images/monsters/1206.gif"
             },
             {
+                "monster_id": 1303,
+                "monster_name": "狂暴蜂兵",
+                "rate": 2.75,
+                "image_url": "images/monsters/1303.gif"
+            },
+            {
                 "monster_id": 2673,
                 "monster_name": "菁英野豬",
                 "rate": 0.05,
                 "image_url": "images/monsters/2673.gif"
+            },
+            {
+                "monster_id": 2821,
+                "monster_name": "菁英狂暴蜂兵",
+                "rate": 13.75,
+                "image_url": "images/monsters/2821.gif"
             },
             {
                 "monster_id": 2899,
@@ -3684,6 +3810,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1264.gif"
             },
             {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 1.6,
+                "image_url": "images/monsters/1269.gif"
+            },
+            {
                 "monster_id": 1283,
                 "monster_name": "凱美拉",
                 "rate": 5,
@@ -3706,6 +3838,12 @@ export const itemsData = {
                 "monster_name": "憤怒人魚士兵",
                 "rate": 10,
                 "image_url": "images/monsters/2757.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 8,
+                "image_url": "images/monsters/2871.gif"
             }
         ]
     },
@@ -4524,12 +4662,6 @@ export const itemsData = {
                 "image_url": "images/monsters/1144.gif"
             },
             {
-                "monster_id": 1145,
-                "monster_name": "土撥鼠",
-                "rate": 5,
-                "image_url": "images/monsters/1145.gif"
-            },
-            {
                 "monster_id": 1151,
                 "monster_name": "麥斯特",
                 "rate": 5,
@@ -5225,6 +5357,24 @@ export const itemsData = {
                 "image_url": "images/monsters/1249.gif"
             },
             {
+                "monster_id": 1251,
+                "monster_name": "冰暴騎士",
+                "rate": 15,
+                "image_url": "images/monsters/1251.gif"
+            },
+            {
+                "monster_id": 1291,
+                "monster_name": "狂暴惡靈",
+                "rate": 0.02,
+                "image_url": "images/monsters/1291.gif"
+            },
+            {
+                "monster_id": 1300,
+                "monster_name": "狂暴綠棉蟲",
+                "rate": 0.02,
+                "image_url": "images/monsters/1300.gif"
+            },
+            {
                 "monster_id": 1325,
                 "monster_name": "寶物箱子",
                 "rate": 50,
@@ -5259,6 +5409,12 @@ export const itemsData = {
                 "monster_name": "狡猾邪惡箱",
                 "rate": 1.15,
                 "image_url": "images/monsters/2753.gif"
+            },
+            {
+                "monster_id": 2876,
+                "monster_name": "憤怒狂暴綠棉蟲",
+                "rate": 0.1,
+                "image_url": "images/monsters/2876.gif"
             }
         ]
     },
@@ -5391,6 +5547,12 @@ export const itemsData = {
                 "monster_name": "單眼蟲",
                 "rate": 0.5,
                 "image_url": "images/monsters/1256.gif"
+            },
+            {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 0.08,
+                "image_url": "images/monsters/1311.gif"
             }
         ]
     },
@@ -5981,6 +6143,12 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 0.01,
+                "image_url": "images/monsters/1131.gif"
+            },
+            {
                 "monster_id": 1208,
                 "monster_name": "邪骸浪人",
                 "rate": 0.01,
@@ -6003,6 +6171,12 @@ export const itemsData = {
                 "monster_name": "寶物箱子",
                 "rate": 2.5,
                 "image_url": "images/monsters/1363.gif"
+            },
+            {
+                "monster_id": 1377,
+                "monster_name": "邪靈魔導士",
+                "rate": 0.01,
+                "image_url": "images/monsters/1377.gif"
             },
             {
                 "monster_id": 1511,
@@ -7089,10 +7263,22 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 0.1,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
                 "monster_id": 1275,
                 "monster_name": "愛麗絲女僕",
                 "rate": 0.2,
                 "image_url": "images/monsters/1275.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 0.5,
+                "image_url": "images/monsters/2885.gif"
             }
         ]
     },
@@ -7285,7 +7471,14 @@ export const itemsData = {
             "buy_price": 100,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 0.1,
+                "image_url": "images/monsters/1131.gif"
+            }
+        ]
     },
     "642": {
         "id": 642,
@@ -7776,6 +7969,47 @@ export const itemsData = {
             }
         ]
     },
+    "678": {
+        "id": 678,
+        "name": {
+            "zh_tw": "毒藥瓶",
+            "kr": "데들리포이즌병"
+        },
+        "description": {
+            "official": "連瓶身都是骸骨形狀的可怕毒藥。喝下後大概就會立刻身亡吧。\\n_\\n重量 : 10",
+            "official_clean": "連瓶身都是骸骨形狀的可怕毒藥。喝下後大概就會立刻身亡吧。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/678.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 10,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "686": {
         "id": 686,
         "name": {
@@ -8109,6 +8343,12 @@ export const itemsData = {
                 "monster_name": "鴞裊首領",
                 "rate": 0.5,
                 "image_url": "images/monsters/1320.gif"
+            },
+            {
+                "monster_id": 2721,
+                "monster_name": "菁英鴞裊首領",
+                "rate": 2.5,
+                "image_url": "images/monsters/2721.gif"
             }
         ]
     },
@@ -8205,6 +8445,12 @@ export const itemsData = {
                 "monster_name": "幽靈波利",
                 "rate": 0.5,
                 "image_url": "images/monsters/1120.gif"
+            },
+            {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 0.5,
+                "image_url": "images/monsters/1131.gif"
             }
         ]
     },
@@ -8427,6 +8673,12 @@ export const itemsData = {
                 "monster_name": "單眼蟲",
                 "rate": 0.05,
                 "image_url": "images/monsters/1256.gif"
+            },
+            {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 0.03,
+                "image_url": "images/monsters/1311.gif"
             },
             {
                 "monster_id": 2673,
@@ -9232,6 +9484,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1119.gif"
             },
             {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 4,
+                "image_url": "images/monsters/1199.gif"
+            },
+            {
                 "monster_id": 1380,
                 "monster_name": "爆鑽傘蜥",
                 "rate": 19.4,
@@ -9334,10 +9592,22 @@ export const itemsData = {
                 "image_url": "images/monsters/1198.gif"
             },
             {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 2.75,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
                 "monster_id": 1256,
                 "monster_name": "單眼蟲",
                 "rate": 1.25,
                 "image_url": "images/monsters/1256.gif"
+            },
+            {
+                "monster_id": 1291,
+                "monster_name": "狂暴惡靈",
+                "rate": 3.5,
+                "image_url": "images/monsters/1291.gif"
             },
             {
                 "monster_id": 1380,
@@ -9352,6 +9622,12 @@ export const itemsData = {
                 "image_url": "images/monsters/2604.gif"
             },
             {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 13.75,
+                "image_url": "images/monsters/2717.gif"
+            },
+            {
                 "monster_id": 2846,
                 "monster_name": "憤怒爆鑽傘蜥",
                 "rate": 87.5,
@@ -9362,6 +9638,12 @@ export const itemsData = {
                 "monster_name": "憤怒暗黑祭司",
                 "rate": 11.25,
                 "image_url": "images/monsters/2861.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 7.5,
+                "image_url": "images/monsters/2894.gif"
             }
         ]
     },
@@ -9504,6 +9786,18 @@ export const itemsData = {
                 "monster_name": "艾吉歐蜈蚣",
                 "rate": 0.05,
                 "image_url": "images/monsters/1099.gif"
+            },
+            {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 0.08,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 0.4,
+                "image_url": "images/monsters/2717.gif"
             },
             {
                 "monster_id": 2891,
@@ -9764,6 +10058,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1249.gif"
             },
             {
+                "monster_id": 1303,
+                "monster_name": "狂暴蜂兵",
+                "rate": 0.1,
+                "image_url": "images/monsters/1303.gif"
+            },
+            {
                 "monster_id": 1323,
                 "monster_name": "海獺",
                 "rate": 0.75,
@@ -9786,6 +10086,12 @@ export const itemsData = {
                 "monster_name": "迅捷米杜沙",
                 "rate": 6.25,
                 "image_url": "images/monsters/2759.gif"
+            },
+            {
+                "monster_id": 2821,
+                "monster_name": "菁英狂暴蜂兵",
+                "rate": 0.5,
+                "image_url": "images/monsters/2821.gif"
             }
         ]
     },
@@ -9828,7 +10134,20 @@ export const itemsData = {
             "buy_price": 4500,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 1,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 5,
+                "image_url": "images/monsters/2605.gif"
+            }
+        ]
     },
     "724": {
         "id": 724,
@@ -10073,6 +10392,18 @@ export const itemsData = {
                 "monster_name": "雪熊",
                 "rate": 0.15,
                 "image_url": "images/monsters/1243.gif"
+            },
+            {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 0.5,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 2.5,
+                "image_url": "images/monsters/2605.gif"
             },
             {
                 "monster_id": 2606,
@@ -10360,6 +10691,12 @@ export const itemsData = {
                 "monster_name": "蛇女伊絲",
                 "rate": 0.1,
                 "image_url": "images/monsters/1029.gif"
+            },
+            {
+                "monster_id": 1291,
+                "monster_name": "狂暴惡靈",
+                "rate": 0.03,
+                "image_url": "images/monsters/1291.gif"
             },
             {
                 "monster_id": 1324,
@@ -10747,7 +11084,20 @@ export const itemsData = {
             "buy_price": 1000,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 0.6,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 3,
+                "image_url": "images/monsters/2780.gif"
+            }
+        ]
     },
     "741": {
         "id": 741,
@@ -11115,6 +11465,12 @@ export const itemsData = {
                 "monster_name": "鴞裊首領",
                 "rate": 0.01,
                 "image_url": "images/monsters/1320.gif"
+            },
+            {
+                "monster_id": 2721,
+                "monster_name": "菁英鴞裊首領",
+                "rate": 0.05,
+                "image_url": "images/monsters/2721.gif"
             }
         ]
     },
@@ -11661,6 +12017,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1180.gif"
             },
             {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 0.98,
+                "image_url": "images/monsters/1213.gif"
+            },
+            {
                 "monster_id": 1248,
                 "monster_name": "玩具士兵",
                 "rate": 0.44,
@@ -11803,6 +12165,12 @@ export const itemsData = {
                 "monster_name": "憤怒赤蒼蠅",
                 "rate": 3.25,
                 "image_url": "images/monsters/2797.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 4.9,
+                "image_url": "images/monsters/2805.gif"
             },
             {
                 "monster_id": 2813,
@@ -12061,6 +12429,12 @@ export const itemsData = {
                 "monster_name": "邪惡箱",
                 "rate": 1.35,
                 "image_url": "images/monsters/1191.gif"
+            },
+            {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": 1.1,
+                "image_url": "images/monsters/1211.gif"
             },
             {
                 "monster_id": 1243,
@@ -13635,6 +14009,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1130.gif"
             },
             {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 10,
+                "image_url": "images/monsters/1131.gif"
+            },
+            {
                 "monster_id": 1138,
                 "monster_name": "魔鍋蛋",
                 "rate": 0.05,
@@ -13653,6 +14033,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1164.gif"
             },
             {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 7.5,
+                "image_url": "images/monsters/1193.gif"
+            },
+            {
                 "monster_id": 1194,
                 "monster_name": "捲甲蟲",
                 "rate": 2.25,
@@ -13663,6 +14049,18 @@ export const itemsData = {
                 "monster_name": "捲甲蟲",
                 "rate": 12.5,
                 "image_url": "images/monsters/1194.gif"
+            },
+            {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": 6,
+                "image_url": "images/monsters/1211.gif"
+            },
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 6.5,
+                "image_url": "images/monsters/1213.gif"
             },
             {
                 "monster_id": 1243,
@@ -13705,6 +14103,18 @@ export const itemsData = {
                 "monster_name": "邪惡摩艾",
                 "rate": 0.5,
                 "image_url": "images/monsters/1274.gif"
+            },
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 12.5,
+                "image_url": "images/monsters/1305.gif"
+            },
+            {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 0.8,
+                "image_url": "images/monsters/1311.gif"
             },
             {
                 "monster_id": 1313,
@@ -13755,6 +14165,12 @@ export const itemsData = {
                 "image_url": "images/monsters/2797.gif"
             },
             {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 32.5,
+                "image_url": "images/monsters/2805.gif"
+            },
+            {
                 "monster_id": 2812,
                 "monster_name": "憤怒巨石怪",
                 "rate": 5.5,
@@ -13785,10 +14201,28 @@ export const itemsData = {
                 "image_url": "images/monsters/2892.gif"
             },
             {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 11.25,
+                "image_url": "images/monsters/2894.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 62.5,
+                "image_url": "images/monsters/2894.gif"
+            },
+            {
                 "monster_id": 2907,
                 "monster_name": "雄壯鱷魚人",
                 "rate": 25,
                 "image_url": "images/monsters/2907.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 37.5,
+                "image_url": "images/monsters/2910.gif"
             },
             {
                 "monster_id": 20379,
@@ -14649,6 +15083,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1018.gif"
             },
             {
+                "monster_id": 1293,
+                "monster_name": "狂暴克瑞米",
+                "rate": 22.75,
+                "image_url": "images/monsters/1293.gif"
+            },
+            {
                 "monster_id": 2863,
                 "monster_name": "迅捷克瑞米",
                 "rate": 100,
@@ -15045,10 +15485,22 @@ export const itemsData = {
                 "image_url": "images/monsters/1023.gif"
             },
             {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 37.5,
+                "image_url": "images/monsters/1213.gif"
+            },
+            {
                 "monster_id": 2722,
                 "monster_name": "憤怒獸人戰士",
                 "rate": 100,
                 "image_url": "images/monsters/2722.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 100,
+                "image_url": "images/monsters/2805.gif"
             }
         ]
     },
@@ -15669,6 +16121,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1194.gif"
             },
             {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 35,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
                 "monster_id": 1242,
                 "monster_name": "冰波利",
                 "rate": 7.5,
@@ -15681,6 +16139,18 @@ export const itemsData = {
                 "image_url": "images/monsters/1266.gif"
             },
             {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 7.5,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 17.5,
+                "image_url": "images/monsters/1305.gif"
+            },
+            {
                 "monster_id": 2398,
                 "monster_name": "寶貝波利",
                 "rate": 10,
@@ -15691,6 +16161,12 @@ export const itemsData = {
                 "monster_name": "變異幽浮水母",
                 "rate": 1.7,
                 "image_url": "images/monsters/2404.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 37.5,
+                "image_url": "images/monsters/2605.gif"
             },
             {
                 "monster_id": 2606,
@@ -15735,6 +16211,12 @@ export const itemsData = {
                 "image_url": "images/monsters/2707.gif"
             },
             {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 100,
+                "image_url": "images/monsters/2717.gif"
+            },
+            {
                 "monster_id": 2723,
                 "monster_name": "狡猾獸人腐屍",
                 "rate": 75,
@@ -15757,6 +16239,12 @@ export const itemsData = {
                 "monster_name": "狡猾兵蟻",
                 "rate": 30,
                 "image_url": "images/monsters/2857.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 75,
+                "image_url": "images/monsters/2894.gif"
             },
             {
                 "monster_id": 2902,
@@ -16177,6 +16665,12 @@ export const itemsData = {
                 "monster_name": "雄壯卡那多斯",
                 "rate": 25,
                 "image_url": "images/monsters/2864.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 20,
+                "image_url": "images/monsters/2894.gif"
             }
         ]
     },
@@ -16437,6 +16931,18 @@ export const itemsData = {
                 "image_url": "images/monsters/1243.gif"
             },
             {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 22.75,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 100,
+                "image_url": "images/monsters/2780.gif"
+            },
+            {
                 "monster_id": 2884,
                 "monster_name": "菁英大腳熊",
                 "rate": 100,
@@ -16539,6 +17045,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1175.gif"
             },
             {
+                "monster_id": 1300,
+                "monster_name": "狂暴綠棉蟲",
+                "rate": 15,
+                "image_url": "images/monsters/1300.gif"
+            },
+            {
                 "monster_id": 2638,
                 "monster_name": "菁英白鼠",
                 "rate": 20,
@@ -16579,6 +17091,12 @@ export const itemsData = {
                 "monster_name": "菁英綠棉蟲",
                 "rate": 50,
                 "image_url": "images/monsters/2836.gif"
+            },
+            {
+                "monster_id": 2876,
+                "monster_name": "憤怒狂暴綠棉蟲",
+                "rate": 75,
+                "image_url": "images/monsters/2876.gif"
             }
         ]
     },
@@ -17187,6 +17705,18 @@ export const itemsData = {
                 "image_url": "images/monsters/1164.gif"
             },
             {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 7.5,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 37.5,
+                "image_url": "images/monsters/2605.gif"
+            },
+            {
                 "monster_id": 2606,
                 "monster_name": "憤怒腐屍",
                 "rate": 2.5,
@@ -17419,6 +17949,18 @@ export const itemsData = {
                 "monster_name": "烏賊",
                 "rate": 15,
                 "image_url": "images/monsters/1144.gif"
+            },
+            {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 40,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 100,
+                "image_url": "images/monsters/2717.gif"
             }
         ]
     },
@@ -17737,6 +18279,18 @@ export const itemsData = {
                 "monster_name": "土人",
                 "rate": 0.01,
                 "image_url": "images/monsters/1110.gif"
+            },
+            {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 0.01,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 0.01,
+                "image_url": "images/monsters/2780.gif"
             },
             {
                 "monster_id": 2851,
@@ -18456,6 +19010,18 @@ export const itemsData = {
                 "image_url": "images/monsters/1109.gif"
             },
             {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 0.5,
+                "image_url": "images/monsters/1131.gif"
+            },
+            {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 0.53,
+                "image_url": "images/monsters/1193.gif"
+            },
+            {
                 "monster_id": 1201,
                 "monster_name": "瑞比歐",
                 "rate": 0.5,
@@ -18484,6 +19050,12 @@ export const itemsData = {
                 "monster_name": "藍鼠",
                 "rate": 0.48,
                 "image_url": "images/monsters/1209.gif"
+            },
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 14.5,
+                "image_url": "images/monsters/1252.gif"
             },
             {
                 "monster_id": 1283,
@@ -18520,6 +19092,12 @@ export const itemsData = {
                 "monster_name": "憤怒虎蜥人",
                 "rate": 3.35,
                 "image_url": "images/monsters/2899.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 2.65,
+                "image_url": "images/monsters/2910.gif"
             }
         ]
     },
@@ -18666,10 +19244,28 @@ export const itemsData = {
                 "image_url": "images/monsters/1219.gif"
             },
             {
+                "monster_id": 1251,
+                "monster_name": "冰暴騎士",
+                "rate": 22.8,
+                "image_url": "images/monsters/1251.gif"
+            },
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 19.89,
+                "image_url": "images/monsters/1252.gif"
+            },
+            {
                 "monster_id": 1255,
                 "monster_name": "奈利蟲",
                 "rate": 0.19,
                 "image_url": "images/monsters/1255.gif"
+            },
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 0.82,
+                "image_url": "images/monsters/1269.gif"
             },
             {
                 "monster_id": 1272,
@@ -18718,6 +19314,12 @@ export const itemsData = {
                 "monster_name": "雄壯幽靈劍士",
                 "rate": 2.65,
                 "image_url": "images/monsters/2691.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 4.1,
+                "image_url": "images/monsters/2871.gif"
             },
             {
                 "monster_id": 20371,
@@ -19111,6 +19713,12 @@ export const itemsData = {
                 "monster_name": "瓢蟲",
                 "rate": 0.35,
                 "image_url": "images/monsters/1174.gif"
+            },
+            {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": 1,
+                "image_url": "images/monsters/1211.gif"
             },
             {
                 "monster_id": 1254,
@@ -19569,6 +20177,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1278.gif"
             },
             {
+                "monster_id": 1300,
+                "monster_name": "狂暴綠棉蟲",
+                "rate": 0.25,
+                "image_url": "images/monsters/1300.gif"
+            },
+            {
                 "monster_id": 2640,
                 "monster_name": "狡猾史汀",
                 "rate": 0.65,
@@ -19585,6 +20199,18 @@ export const itemsData = {
                 "monster_name": "憤怒泥人",
                 "rate": 0.9,
                 "image_url": "images/monsters/2674.gif"
+            },
+            {
+                "monster_id": 2876,
+                "monster_name": "憤怒狂暴綠棉蟲",
+                "rate": 1.25,
+                "image_url": "images/monsters/2876.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 0.5,
+                "image_url": "images/monsters/2894.gif"
             },
             {
                 "monster_id": 20370,
@@ -19785,10 +20411,22 @@ export const itemsData = {
                 "image_url": "images/monsters/1169.gif"
             },
             {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 0.45,
+                "image_url": "images/monsters/1213.gif"
+            },
+            {
                 "monster_id": 1257,
                 "monster_name": "邪惡使者",
                 "rate": 1.5,
                 "image_url": "images/monsters/1257.gif"
+            },
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 2.5,
+                "image_url": "images/monsters/1270.gif"
             },
             {
                 "monster_id": 1280,
@@ -19831,6 +20469,12 @@ export const itemsData = {
                 "monster_name": "憤怒赤蒼蠅",
                 "rate": 2.5,
                 "image_url": "images/monsters/2797.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 2.25,
+                "image_url": "images/monsters/2805.gif"
             },
             {
                 "monster_id": 2812,
@@ -19881,6 +20525,12 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 0.15,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
                 "monster_id": 1260,
                 "monster_name": "鏡妖",
                 "rate": 0.4,
@@ -19891,6 +20541,12 @@ export const itemsData = {
                 "monster_name": "鐘乳巨石怪",
                 "rate": 1.25,
                 "image_url": "images/monsters/1278.gif"
+            },
+            {
+                "monster_id": 1300,
+                "monster_name": "狂暴綠棉蟲",
+                "rate": 0.5,
+                "image_url": "images/monsters/1300.gif"
             },
             {
                 "monster_id": 1310,
@@ -19909,6 +20565,18 @@ export const itemsData = {
                 "monster_name": "憤怒狂暴米諾斯",
                 "rate": 6.25,
                 "image_url": "images/monsters/2767.gif"
+            },
+            {
+                "monster_id": 2876,
+                "monster_name": "憤怒狂暴綠棉蟲",
+                "rate": 2.5,
+                "image_url": "images/monsters/2876.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 0.75,
+                "image_url": "images/monsters/2885.gif"
             }
         ]
     },
@@ -19965,6 +20633,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1074.gif"
             },
             {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 1,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
                 "monster_id": 1114,
                 "monster_name": "獵蠅",
                 "rate": 0.05,
@@ -20011,6 +20685,12 @@ export const itemsData = {
                 "monster_name": "憤怒獵蠅",
                 "rate": 0.25,
                 "image_url": "images/monsters/2842.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 5,
+                "image_url": "images/monsters/2885.gif"
             }
         ]
     },
@@ -20451,6 +21131,12 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 0.08,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
                 "monster_id": 1177,
                 "monster_name": "茲諾克",
                 "rate": 0.03,
@@ -20461,6 +21147,18 @@ export const itemsData = {
                 "monster_name": "飛行魔書",
                 "rate": 0.1,
                 "image_url": "images/monsters/1195.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 0.5,
+                "image_url": "images/monsters/2682.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 0.4,
+                "image_url": "images/monsters/2885.gif"
             }
         ]
     },
@@ -21339,6 +22037,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1151.gif"
             },
             {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 4,
+                "image_url": "images/monsters/1269.gif"
+            },
+            {
                 "monster_id": 1277,
                 "monster_name": "將軍魔碑",
                 "rate": 10,
@@ -21361,6 +22065,12 @@ export const itemsData = {
                 "monster_name": "迅捷將軍魔碑",
                 "rate": 50,
                 "image_url": "images/monsters/2809.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 20,
+                "image_url": "images/monsters/2871.gif"
             }
         ]
     },
@@ -21835,6 +22545,12 @@ export const itemsData = {
                 "monster_name": "野豬",
                 "rate": 45,
                 "image_url": "images/monsters/1166.gif"
+            },
+            {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 17.5,
+                "image_url": "images/monsters/1311.gif"
             },
             {
                 "monster_id": 2673,
@@ -22535,6 +23251,12 @@ export const itemsData = {
                 "monster_name": "艾斯蜘蛛",
                 "rate": 2.5,
                 "image_url": "images/monsters/1100.gif"
+            },
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 22.07,
+                "image_url": "images/monsters/1305.gif"
             },
             {
                 "monster_id": 2890,
@@ -23287,6 +24009,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1114.gif"
             },
             {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 15,
+                "image_url": "images/monsters/1199.gif"
+            },
+            {
                 "monster_id": 2842,
                 "monster_name": "憤怒獵蠅",
                 "rate": 100,
@@ -23407,6 +24135,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1192.gif"
             },
             {
+                "monster_id": 1291,
+                "monster_name": "狂暴惡靈",
+                "rate": 22.07,
+                "image_url": "images/monsters/1291.gif"
+            },
+            {
                 "monster_id": 2618,
                 "monster_name": "雄壯白幽靈",
                 "rate": 100,
@@ -23507,7 +24241,26 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 24.25,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 5,
+                "image_url": "images/monsters/1199.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 100,
+                "image_url": "images/monsters/2885.gif"
+            }
+        ]
     },
     "1062": {
         "id": 1062,
@@ -23554,6 +24307,54 @@ export const itemsData = {
                 "monster_name": "南瓜先生",
                 "rate": 45,
                 "image_url": "images/monsters/1130.gif"
+            }
+        ]
+    },
+    "1063": {
+        "id": 1063,
+        "name": {
+            "zh_tw": "銳利錐子",
+            "kr": "날카로운송곳니"
+        },
+        "description": {
+            "official": "相當銳利的錐子。賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "相當銳利的錐子。賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1063.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 23.28,
+                "image_url": "images/monsters/1189.gif"
             }
         ]
     },
@@ -24033,6 +24834,78 @@ export const itemsData = {
             }
         ]
     },
+    "1095": {
+        "id": 1095,
+        "name": {
+            "zh_tw": "指針",
+            "kr": "시계바늘"
+        },
+        "description": {
+            "official": "標示世界時間的指針。賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "標示世界時間的指針。賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1095.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 26.68,
+                "image_url": "images/monsters/1193.gif"
+            },
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 26.68,
+                "image_url": "images/monsters/1269.gif"
+            },
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 26.68,
+                "image_url": "images/monsters/1270.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 100,
+                "image_url": "images/monsters/2871.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 100,
+                "image_url": "images/monsters/2910.gif"
+            }
+        ]
+    },
     "1096": {
         "id": 1096,
         "name": {
@@ -24078,6 +24951,18 @@ export const itemsData = {
                 "monster_name": "捲甲蟲",
                 "rate": 17.5,
                 "image_url": "images/monsters/1194.gif"
+            },
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 3.4,
+                "image_url": "images/monsters/1305.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 87.5,
+                "image_url": "images/monsters/2894.gif"
             }
         ]
     },
@@ -24132,6 +25017,12 @@ export const itemsData = {
                 "monster_name": "賢者蟲",
                 "rate": 5,
                 "image_url": "images/monsters/1281.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 100,
+                "image_url": "images/monsters/2682.gif"
             }
         ]
     },
@@ -24711,6 +25602,54 @@ export const itemsData = {
             "sell_price": 10
         },
         "dropped_by": []
+    },
+    "1131": {
+        "id": 1131,
+        "name": {
+            "zh_tw": "水靈之刀",
+            "kr": "아이스팔시온"
+        },
+        "description": {
+            "official": "具備水靈之力，且刀刃為藍色的長刀。\\n普通攻擊時，以低機率對敵人施放冰箭術Lv3。\\n物理攻擊時，以一定機率使敵人冰凍。\\n物理攻擊時，以低機率使自己冰凍。\\n習得冰箭術Lv3。\\n系列 : 單手劍 攻擊 : 100\\n重量 : 60 屬性 : 水\\n武器等級 : 4\\n需求等級 : 40\\n裝備 : 劍士系列/商人系列/盜賊系列",
+            "official_clean": "具備水靈之力，且刀刃為藍色的長刀。\\n普通攻擊時，以低機率對敵人施放冰箭術Lv3。\\n物理攻擊時，以一定機率使敵人冰凍。\\n物理攻擊時，以低機率使自己冰凍。\\n習得冰箭術Lv3。"
+        },
+        "category": "武器",
+        "slot": "單手劍",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 2,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 100,
+        "defense": 0,
+        "weapon_level": 4,
+        "required_level": 40,
+        "equip_jobs": "劍士系列/商人系列/盜賊系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1131.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 60,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 0.75,
+                "image_url": "images/monsters/1252.gif"
+            }
+        ]
     },
     "1133": {
         "id": 1133,
@@ -26051,7 +26990,20 @@ export const itemsData = {
             "buy_price": 20,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 0.05,
+                "image_url": "images/monsters/1213.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 0.25,
+                "image_url": "images/monsters/2805.gif"
+            }
+        ]
     },
     "1305": {
         "id": 1305,
@@ -26195,6 +27147,47 @@ export const itemsData = {
                 "image_url": "images/monsters/2722.gif"
             }
         ]
+    },
+    "1329": {
+        "id": 1329,
+        "name": {
+            "zh_tw": "下級公會員切削之斧",
+            "kr": "클리버"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，強酸攻擊、金錢攻擊技能使用時，對敵人以一定機率觸發[致命傷口]Lv1。\\n系列 : 單手斧 攻擊 : 110\\n重量 : 100\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列、商人系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，強酸攻擊、金錢攻擊技能使用時，對敵人以一定機率觸發[致命傷口]Lv1。"
+        },
+        "category": "武器",
+        "slot": "單手斧",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 6,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列、商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1329.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 100,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
     },
     "1351": {
         "id": 1351,
@@ -26969,12 +27962,6 @@ export const itemsData = {
         },
         "dropped_by": [
             {
-                "monster_id": 1264,
-                "monster_name": "人魚士兵",
-                "rate": 0.02,
-                "image_url": "images/monsters/1264.gif"
-            },
-            {
                 "monster_id": 2757,
                 "monster_name": "憤怒人魚士兵",
                 "rate": 0.1,
@@ -27068,6 +28055,54 @@ export const itemsData = {
                 "monster_name": "巴風特",
                 "rate": 2,
                 "image_url": "images/monsters/1039.gif"
+            }
+        ]
+    },
+    "1468": {
+        "id": 1468,
+        "name": {
+            "zh_tw": "風靈之矛",
+            "kr": "제퓨로스"
+        },
+        "description": {
+            "official": "彎曲的槍刃會讓人聯想到閃電，可同時發動斬擊與刺擊的矛。\\n普通攻擊時，以一定機率對敵人施放雷爆術Lv3。\\n物理攻擊時，以一定機率使敵人沉默。\\n系列 : 單手矛 攻擊 : 170\\n重量 : 200 屬性 : 風\\n武器等級 : 4\\n需求等級 : 48\\n裝備 : 劍士系列",
+            "official_clean": "彎曲的槍刃會讓人聯想到閃電，可同時發動斬擊與刺擊的矛。\\n普通攻擊時，以一定機率對敵人施放雷爆術Lv3。\\n物理攻擊時，以一定機率使敵人沉默。"
+        },
+        "category": "武器",
+        "slot": "單手矛",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 57,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 170,
+        "defense": 0,
+        "weapon_level": 4,
+        "required_level": 48,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1468.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 200,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1251,
+                "monster_name": "冰暴騎士",
+                "rate": 0.75,
+                "image_url": "images/monsters/1251.gif"
             }
         ]
     },
@@ -27807,6 +28842,12 @@ export const itemsData = {
                 "monster_name": "飛行魔書",
                 "rate": 0.02,
                 "image_url": "images/monsters/1195.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 0.1,
+                "image_url": "images/monsters/2682.gif"
             }
         ]
     },
@@ -27855,6 +28896,12 @@ export const itemsData = {
                 "monster_name": "飛行魔書",
                 "rate": 0.02,
                 "image_url": "images/monsters/1195.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 0.1,
+                "image_url": "images/monsters/2682.gif"
             }
         ]
     },
@@ -27903,6 +28950,12 @@ export const itemsData = {
                 "monster_name": "飛行魔書",
                 "rate": 0.01,
                 "image_url": "images/monsters/1195.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 0.05,
+                "image_url": "images/monsters/2682.gif"
             }
         ]
     },
@@ -27951,6 +29004,12 @@ export const itemsData = {
                 "monster_name": "飛行魔書",
                 "rate": 0.01,
                 "image_url": "images/monsters/1195.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 0.05,
+                "image_url": "images/monsters/2682.gif"
             }
         ]
     },
@@ -28011,6 +29070,54 @@ export const itemsData = {
                 "monster_name": "憤怒暗黑祭司",
                 "rate": 0.15,
                 "image_url": "images/monsters/2861.gif"
+            }
+        ]
+    },
+    "1564": {
+        "id": 1564,
+        "name": {
+            "zh_tw": "大百科全書",
+            "kr": "대백과사전"
+        },
+        "description": {
+            "official": "以書背堅硬而聞名的普隆德拉某出版社著作大百科全書。書背硬到被敲打的人都會懷疑，裏頭是不是鑲了3克拉鑽石。\\nINT+3，DEX+2，CRI+20。\\n依照基礎LUK，額外增加CRI。\\nMATK+100。\\n系列 : 書 攻擊 : 110\\n重量 : 200\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 祭司系列、賢者系列",
+            "official_clean": "以書背堅硬而聞名的普隆德拉某出版社著作大百科全書。書背硬到被敲打的人都會懷疑，裏頭是不是鑲了3克拉鑽石。\\nINT+3，DEX+2，CRI+20。\\n依照基礎LUK，額外增加CRI。\\nMATK+100。"
+        },
+        "category": "武器",
+        "slot": "書",
+        "slotCount": 2,
+        "enchantment_slots": "",
+        "ClassNum": 15,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "祭司系列、賢者系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1564.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 200,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1377,
+                "monster_name": "邪靈魔導士",
+                "rate": 0.05,
+                "image_url": "images/monsters/1377.gif"
             }
         ]
     },
@@ -28371,6 +29478,54 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "1734": {
+        "id": 1734,
+        "name": {
+            "zh_tw": "獸人弓箭手之弓",
+            "kr": "오크아쳐의활"
+        },
+        "description": {
+            "official": "獸人弓箭手使用的弓。看起來很龐大與強大。\\n擊敗怪物時，以一定機率掉落鋼鐵箭矢。\\n裝備鋼鐵箭矢時，可使遠距離武器物理傷害提高50%\\n系列 : 弓 攻擊 : 120\\n重量 : 160\\n武器等級 : 3\\n需求等級 : 65\\n裝備 : 弓箭手系列/流氓可裝備",
+            "official_clean": "獸人弓箭手使用的弓。看起來很龐大與強大。\\n擊敗怪物時，以一定機率掉落鋼鐵箭矢。\\n裝備鋼鐵箭矢時，可使遠距離武器物理傷害提高50%"
+        },
+        "category": "武器",
+        "slot": "弓",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 11,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 120,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 65,
+        "equip_jobs": "弓箭手系列/流氓可裝備",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1734.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 160,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 0.01,
+                "image_url": "images/monsters/1189.gif"
+            }
+        ]
+    },
     "1742": {
         "id": 1742,
         "name": {
@@ -28594,7 +29749,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 5,
+                "image_url": "images/monsters/1189.gif"
+            }
+        ]
     },
     "1754": {
         "id": 1754,
@@ -28683,7 +29845,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 12.5,
+                "image_url": "images/monsters/1189.gif"
+            }
+        ]
     },
     "1756": {
         "id": 1756,
@@ -28724,7 +29893,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 12.5,
+                "image_url": "images/monsters/1189.gif"
+            }
+        ]
     },
     "1757": {
         "id": 1757,
@@ -29633,6 +30809,54 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "1815": {
+        "id": 1815,
+        "name": {
+            "zh_tw": "卡崙的指甲",
+            "kr": "가름의발톱"
+        },
+        "description": {
+            "official": "使用卡崙的指甲製成的拳套。一直都沾有血跡。\\nMHP-2%。\\n物理攻擊時，以低機率讓使敵人出血。\\n系列 : 拳套 攻擊 : 152\\n重量 : 55 屬性 : 暗\\n武器等級 : 4\\n需求等級 : 70\\n裝備 : 武僧系列、祭司系列",
+            "official_clean": "使用卡崙的指甲製成的拳套。一直都沾有血跡。\\nMHP-2%。\\n物理攻擊時，以低機率讓使敵人出血。"
+        },
+        "category": "武器",
+        "slot": "拳套",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 12,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 152,
+        "defense": 0,
+        "weapon_level": 4,
+        "required_level": 70,
+        "equip_jobs": "武僧系列、祭司系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1815.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 55,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 2.5,
+                "image_url": "images/monsters/1252.gif"
+            }
+        ]
+    },
     "1849": {
         "id": 1849,
         "name": {
@@ -29671,6 +30895,88 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "1856": {
+        "id": 1856,
+        "name": {
+            "zh_tw": "華麗演出拳套",
+            "kr": "섬광의손톱"
+        },
+        "description": {
+            "official": "小丑攜帶的華麗道具之一，七彩奪目的配色隱藏著危險殺機。\\nSTR+2、六合拳傷害+10%。\\n精煉度每+1，六合拳傷害再+1%。\\n精煉度每+2，攻擊速度增加（攻擊後延遲減少）1%。\\n精煉+7時，連環全身掌傷害+15%。\\n精煉+9時，猛龍誇強傷害+15%。\\n系列 : 拳套 攻擊 : 90\\n重量 : 40\\n武器等級 : 3\\n需求等級 : 60\\n裝備 : 武僧系列、祭司系列",
+            "official_clean": "小丑攜帶的華麗道具之一，七彩奪目的配色隱藏著危險殺機。\\nSTR+2、六合拳傷害+10%。\\n精煉度每+1，六合拳傷害再+1%。\\n精煉度每+2，攻擊速度增加（攻擊後延遲減少）1%。\\n精煉+7時，連環全身掌傷害+15%。\\n精煉+9時，猛龍誇強傷害+15%。"
+        },
+        "category": "武器",
+        "slot": "拳套",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 82,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 90,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 60,
+        "equip_jobs": "武僧系列、祭司系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1856.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 40,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1859": {
+        "id": 1859,
+        "name": {
+            "zh_tw": "下級公會員昇龍拳套",
+            "kr": "피스트"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+25%。\\n忽視玩家的物理防禦力5%\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，[阿修羅霸凰拳]的固定詠唱-30%、[爆氣]使用時，20秒內ATK+30，每精煉+1，ATK額外增加。\\n系列 : 拳套 攻擊 : 40\\n重量 : 30\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 武僧系列、祭司系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+25%。\\n忽視玩家的物理防禦力5%\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，[阿修羅霸凰拳]的固定詠唱-30%、[爆氣]使用時，20秒內ATK+30，每精煉+1，ATK額外增加。"
+        },
+        "category": "武器",
+        "slot": "拳套",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 81,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 40,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "武僧系列、祭司系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1859.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -30001,6 +31307,95 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "2052": {
+        "id": 2052,
+        "name": {
+            "zh_tw": "下級公會員毀滅魔杖",
+            "kr": "위자드리스태프"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家造成的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n精煉每+1時，對玩家造成的魔法傷害再+1%。\\n精煉每+1時，隕石術、暴風雪傷害+3%、MHP-2%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外忽視玩家的魔法防禦力10%。\\n精煉+9以上時，對玩家造成的魔法傷害再+5%。\\nMATK + 180\\n系列 : 雙手法杖 攻擊 : 70\\n重量 : 80\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家造成的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n精煉每+1時，對玩家造成的魔法傷害再+1%。\\n精煉每+1時，隕石術、暴風雪傷害+3%、MHP-2%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外忽視玩家的魔法防禦力10%。\\n精煉+9以上時，對玩家造成的魔法傷害再+5%。\\nMATK + 180"
+        },
+        "category": "武器",
+        "slot": "雙手法杖",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 97,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 70,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/2052.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 80,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "2109": {
+        "id": 2109,
+        "name": {
+            "zh_tw": "謊言紀錄本",
+            "kr": "메모라이즈북"
+        },
+        "description": {
+            "official": "魔法師使用的魔法書，那種程度的體積與厚度充分能當作盾牌使用。\\nINT + 1\\nMDEF + 2\\n系列 : 盾牌  防禦 : 25\\n重量 : 100\\n要求等級 : 1\\n裝備 : 魔法師系列",
+            "official_clean": "魔法師使用的魔法書，那種程度的體積與厚度充分能當作盾牌使用。\\nINT + 1\\nMDEF + 2"
+        },
+        "category": "防具",
+        "slot": "盾牌",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 5,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 25,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "魔法師系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/2109.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 100,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 0.01,
+                "image_url": "images/monsters/1270.gif"
+            }
+        ]
+    },
     "2116": {
         "id": 2116,
         "name": {
@@ -30264,6 +31659,12 @@ export const itemsData = {
                 "monster_name": "獸人女戰士",
                 "rate": 0.01,
                 "image_url": "images/monsters/1273.gif"
+            },
+            {
+                "monster_id": 1291,
+                "monster_name": "狂暴惡靈",
+                "rate": 0.05,
+                "image_url": "images/monsters/1291.gif"
             },
             {
                 "monster_id": 2725,
@@ -30756,12 +32157,6 @@ export const itemsData = {
             "sell_price": 0
         },
         "dropped_by": [
-            {
-                "monster_id": 1117,
-                "monster_name": "闇神官",
-                "rate": 0.05,
-                "image_url": "images/monsters/1117.gif"
-            },
             {
                 "monster_id": 2838,
                 "monster_name": "狡猾闇神官",
@@ -31954,6 +33349,60 @@ export const itemsData = {
             }
         ]
     },
+    "2252": {
+        "id": 2252,
+        "name": {
+            "zh_tw": "魔法帽",
+            "kr": "위저드햇"
+        },
+        "description": {
+            "official": "裝備時，裝備者的精神力會達到最大值，提升使用魔法的次數，是一種神祕的帽子，但活動性…讓人根本就不想談論…\\nMSP + 100\\n系列 : 頭盔 防禦 : 7\\n位置 : 頭上 重量 : 30\\n要求等級 : 1\\n裝備 : 魔法師系列",
+            "official_clean": "裝備時，裝備者的精神力會達到最大值，提升使用魔法的次數，是一種神祕的帽子，但活動性…讓人根本就不想談論…\\nMSP + 100"
+        },
+        "category": "防具",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 36,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 7,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "魔法師系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/2252.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 0.02,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 0.1,
+                "image_url": "images/monsters/2885.gif"
+            }
+        ]
+    },
     "2253": {
         "id": 2253,
         "name": {
@@ -33097,6 +34546,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1166.gif"
             },
             {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 0.01,
+                "image_url": "images/monsters/1311.gif"
+            },
+            {
                 "monster_id": 2673,
                 "monster_name": "菁英野豬",
                 "rate": 0.05,
@@ -33667,6 +35122,18 @@ export const itemsData = {
                 "monster_name": "大腳熊",
                 "rate": 0.03,
                 "image_url": "images/monsters/1060.gif"
+            },
+            {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 0.04,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 0.2,
+                "image_url": "images/monsters/2780.gif"
             },
             {
                 "monster_id": 2884,
@@ -35136,6 +36603,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1190.gif"
             },
             {
+                "monster_id": 1251,
+                "monster_name": "冰暴騎士",
+                "rate": 1,
+                "image_url": "images/monsters/1251.gif"
+            },
+            {
                 "monster_id": 1313,
                 "monster_name": "流氓",
                 "rate": 0.01,
@@ -35422,6 +36895,18 @@ export const itemsData = {
                 "monster_name": "龍蠅",
                 "rate": "???",
                 "image_url": "images/monsters/1091.gif"
+            },
+            {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 0.01,
+                "image_url": "images/monsters/1193.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 0.05,
+                "image_url": "images/monsters/2910.gif"
             }
         ]
     },
@@ -35979,7 +37464,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 0.01,
+                "image_url": "images/monsters/1311.gif"
+            }
+        ]
     },
     "2628": {
         "id": 2628,
@@ -41966,6 +43458,60 @@ export const itemsData = {
             }
         ]
     },
+    "4119": {
+        "id": 4119,
+        "name": {
+            "zh_tw": "巫婆卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "鎧甲的屬性為暗屬性。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "鎧甲的屬性為暗屬性。"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "邪惡的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4119.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": 0.01,
+                "image_url": "images/monsters/1102.gif"
+            },
+            {
+                "monster_id": 2885,
+                "monster_name": "憤怒巫婆",
+                "rate": 0.05,
+                "image_url": "images/monsters/2885.gif"
+            }
+        ]
+    },
     "4120": {
         "id": 4120,
         "name": {
@@ -42620,6 +44166,54 @@ export const itemsData = {
             }
         ]
     },
+    "4139": {
+        "id": 4139,
+        "name": {
+            "zh_tw": "裘卡卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "可裝備[偷竊]1Lv\\n系列 : 卡片\\n裝備 : 飾品\\n重量 : 1",
+            "official_clean": "可裝備[偷竊]1Lv"
+        },
+        "category": "卡片",
+        "slot": "飾品",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "月光之",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "飾品",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4139.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 0.01,
+                "image_url": "images/monsters/1131.gif"
+            }
+        ]
+    },
     "4140": {
         "id": 4140,
         "name": {
@@ -43208,6 +44802,54 @@ export const itemsData = {
             }
         ]
     },
+    "4164": {
+        "id": 4164,
+        "name": {
+            "zh_tw": "狂暴野豬卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每次擊敗魚貝系怪物時，所得到的經驗值+10%，從魚貝系怪物受到的傷害+20%。\\n系列 : 卡片\\n裝備 : 鞋子\\n重量 : 1",
+            "official_clean": "每次擊敗魚貝系怪物時，所得到的經驗值+10%，從魚貝系怪物受到的傷害+20%。"
+        },
+        "category": "卡片",
+        "slot": "鞋子",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "漁夫的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鞋子",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4164.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1311,
+                "monster_name": "狂暴野豬",
+                "rate": 0.01,
+                "image_url": "images/monsters/1311.gif"
+            }
+        ]
+    },
     "4167": {
         "id": 4167,
         "name": {
@@ -43744,6 +45386,12 @@ export const itemsData = {
                 "monster_name": "飛行魔書",
                 "rate": 0.01,
                 "image_url": "images/monsters/1195.gif"
+            },
+            {
+                "monster_id": 2682,
+                "monster_name": "雄壯飛行魔書",
+                "rate": 0.05,
+                "image_url": "images/monsters/2682.gif"
             }
         ]
     },
@@ -43846,6 +45494,108 @@ export const itemsData = {
                 "monster_name": "幽靈弓箭手",
                 "rate": 0.01,
                 "image_url": "images/monsters/1276.gif"
+            }
+        ]
+    },
+    "4188": {
+        "id": 4188,
+        "name": {
+            "zh_tw": "狂暴大腳熊卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每次擊敗動物型怪物時，有一定機率獲得「火靈礦石」道具。\\n對火屬性攻擊的抗性+10%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+            "official_clean": "每次擊敗動物型怪物時，有一定機率獲得「火靈礦石」道具。\\n對火屬性攻擊的抗性+10%。"
+        },
+        "category": "卡片",
+        "slot": "頭盔",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "火靈礦石的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "頭盔",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4188.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 0.01,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 0.05,
+                "image_url": "images/monsters/2780.gif"
+            }
+        ]
+    },
+    "4189": {
+        "id": 4189,
+        "name": {
+            "zh_tw": "狂暴惡靈卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，有機率讓敵人陷入詛咒。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，有機率讓敵人陷入詛咒。"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "壞運氣的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4189.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1291,
+                "monster_name": "狂暴惡靈",
+                "rate": 0.01,
+                "image_url": "images/monsters/1291.gif"
             }
         ]
     },
@@ -44557,6 +46307,54 @@ export const itemsData = {
             }
         ]
     },
+    "4213": {
+        "id": 4213,
+        "name": {
+            "zh_tw": "伊特瓢蟲卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，以一定機率對敵人施加沉默效果。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，以一定機率對敵人施加沉默效果。"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "無言的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4213.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": 0.01,
+                "image_url": "images/monsters/1211.gif"
+            }
+        ]
+    },
     "4216": {
         "id": 4216,
         "name": {
@@ -44857,6 +46655,54 @@ export const itemsData = {
             }
         ]
     },
+    "4229": {
+        "id": 4229,
+        "name": {
+            "zh_tw": "鐘塔守護者卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "INT + 1，變動詠唱-5%。鐘怪、古鐘魔、朽魔卡片一起裝備時，MDEF+ 3、DEF+ 3\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+            "official_clean": "INT + 1，變動詠唱-5%。鐘怪、古鐘魔、朽魔卡片一起裝備時，MDEF+ 3、DEF+ 3"
+        },
+        "category": "卡片",
+        "slot": "頭盔",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "牢繫的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "頭盔",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4229.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 0.01,
+                "image_url": "images/monsters/1270.gif"
+            }
+        ]
+    },
     "4234": {
         "id": 4234,
         "name": {
@@ -45052,6 +46898,12 @@ export const itemsData = {
                 "monster_name": "鴞裊首領",
                 "rate": 0.01,
                 "image_url": "images/monsters/1320.gif"
+            },
+            {
+                "monster_id": 2721,
+                "monster_name": "菁英鴞裊首領",
+                "rate": 0.05,
+                "image_url": "images/monsters/2721.gif"
             }
         ]
     },
@@ -45148,6 +47000,66 @@ export const itemsData = {
                 "monster_name": "捲甲蟲",
                 "rate": 0.01,
                 "image_url": "images/monsters/1194.gif"
+            },
+            {
+                "monster_id": 2894,
+                "monster_name": "菁英捲甲蟲",
+                "rate": 0.05,
+                "image_url": "images/monsters/2894.gif"
+            }
+        ]
+    },
+    "4244": {
+        "id": 4244,
+        "name": {
+            "zh_tw": "鐘怪卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，以一定機率對自身施放火狩Lv1。\\nMHP+300，VIT+1。\\n系列 : 卡片\\n裝備 : 鞋子\\n重量 : 1",
+            "official_clean": "受到物理傷害時，以一定機率對自身施放火狩Lv1。\\nMHP+300，VIT+1。"
+        },
+        "category": "卡片",
+        "slot": "鞋子",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "尋找者的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鞋子",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4244.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 0.01,
+                "image_url": "images/monsters/1193.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 0.05,
+                "image_url": "images/monsters/2910.gif"
             }
         ]
     },
@@ -45244,6 +47156,102 @@ export const itemsData = {
                 "monster_name": "狂暴木乃伊",
                 "rate": 0.01,
                 "image_url": "images/monsters/1297.gif"
+            }
+        ]
+    },
+    "4249": {
+        "id": 4249,
+        "name": {
+            "zh_tw": "狂暴蜈蚣卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每次擊敗惡魔型怪物時，所得到的經驗值+10%，從惡魔型怪物受到的傷害+20%。\\n系列 : 卡片\\n裝備 : 鞋子\\n重量 : 1",
+            "official_clean": "每次擊敗惡魔型怪物時，所得到的經驗值+10%，從惡魔型怪物受到的傷害+20%。"
+        },
+        "category": "卡片",
+        "slot": "鞋子",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "驅邪者的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鞋子",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4249.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 0.01,
+                "image_url": "images/monsters/1305.gif"
+            }
+        ]
+    },
+    "4251": {
+        "id": 4251,
+        "name": {
+            "zh_tw": "邪靈魔導士卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "對攻城監護人魔物造成的物理攻擊力提高40%。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "對攻城監護人魔物造成的物理攻擊力提高40%。"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "襲擊的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4251.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1377,
+                "monster_name": "邪靈魔導士",
+                "rate": 0.01,
+                "image_url": "images/monsters/1377.gif"
             }
         ]
     },
@@ -45400,6 +47408,54 @@ export const itemsData = {
                 "monster_name": "雄壯獸人女戰士",
                 "rate": 0.05,
                 "image_url": "images/monsters/2725.gif"
+            }
+        ]
+    },
+    "4256": {
+        "id": 4256,
+        "name": {
+            "zh_tw": "獸人弓箭手卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每次擊敗人類型怪物時，以一定機率獲得「昏眩的箱子」道具。\\n系列 : 卡片\\n裝備 : 飾品\\n重量 : 1",
+            "official_clean": "每次擊敗人類型怪物時，以一定機率獲得「昏眩的箱子」道具。"
+        },
+        "category": "卡片",
+        "slot": "飾品",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "預期的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "飾品",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4256.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": 0.01,
+                "image_url": "images/monsters/1189.gif"
             }
         ]
     },
@@ -45751,6 +47807,60 @@ export const itemsData = {
             }
         ]
     },
+    "4271": {
+        "id": 4271,
+        "name": {
+            "zh_tw": "狂暴蜂兵卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每次擊敗昆蟲型怪物時，有一定機率獲得「風靈礦石」道具。\\n對風屬性攻擊的抗性+10%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+            "official_clean": "每次擊敗昆蟲型怪物時，有一定機率獲得「風靈礦石」道具。\\n對風屬性攻擊的抗性+10%。"
+        },
+        "category": "卡片",
+        "slot": "頭盔",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "黃色魔力礦石",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "頭盔",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4271.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1303,
+                "monster_name": "狂暴蜂兵",
+                "rate": 0.01,
+                "image_url": "images/monsters/1303.gif"
+            },
+            {
+                "monster_id": 2821,
+                "monster_name": "菁英狂暴蜂兵",
+                "rate": 0.05,
+                "image_url": "images/monsters/2821.gif"
+            }
+        ]
+    },
     "4273": {
         "id": 4273,
         "name": {
@@ -45796,6 +47906,60 @@ export const itemsData = {
                 "monster_name": "貝殼魔靈",
                 "rate": 0.01,
                 "image_url": "images/monsters/1074.gif"
+            }
+        ]
+    },
+    "4274": {
+        "id": 4274,
+        "name": {
+            "zh_tw": "腐屍首領卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每當使用近距離物理攻擊擊殺不死型怪物時，SP恢復5。\\n若卸除裝備時，SP-5。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "每當使用近距離物理攻擊擊殺不死型怪物時，SP恢復5。\\n若卸除裝備時，SP-5。"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "不死系靈魂增加的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4274.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 0.01,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 0.05,
+                "image_url": "images/monsters/2605.gif"
             }
         ]
     },
@@ -46098,6 +48262,60 @@ export const itemsData = {
             }
         ]
     },
+    "4289": {
+        "id": 4289,
+        "name": {
+            "zh_tw": "狂暴綠綿蟲卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "每當使用近距離物理攻擊擊殺植物型怪物時，SP恢復5。\\n若卸除裝備時，SP-5。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "每當使用近距離物理攻擊擊殺植物型怪物時，SP恢復5。\\n若卸除裝備時，SP-5。"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "植物靈魂增加的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4289.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1300,
+                "monster_name": "狂暴綠棉蟲",
+                "rate": 0.01,
+                "image_url": "images/monsters/1300.gif"
+            },
+            {
+                "monster_id": 2876,
+                "monster_name": "憤怒狂暴綠棉蟲",
+                "rate": 0.05,
+                "image_url": "images/monsters/2876.gif"
+            }
+        ]
+    },
     "4293": {
         "id": 4293,
         "name": {
@@ -46245,6 +48463,108 @@ export const itemsData = {
                 "monster_name": "玩具士兵",
                 "rate": 0.01,
                 "image_url": "images/monsters/1248.gif"
+            }
+        ]
+    },
+    "4298": {
+        "id": 4298,
+        "name": {
+            "zh_tw": "狂暴克瑞米卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，有一定機率對敵人施加混亂效果。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，有一定機率對敵人施加混亂效果。"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "無秩序的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4298.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1293,
+                "monster_name": "狂暴克瑞米",
+                "rate": 0.01,
+                "image_url": "images/monsters/1293.gif"
+            }
+        ]
+    },
+    "4299": {
+        "id": 4299,
+        "name": {
+            "zh_tw": "古鐘魔卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，以一定機率對自身施放自動防禦Lv3。(當習得自動防禦Lv10時，將改為施放自動防禦Lv10。)\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，以一定機率對自身施放自動防禦Lv3。(當習得自動防禦Lv10時，將改為施放自動防禦Lv10。)"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "監護人的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4299.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 0.01,
+                "image_url": "images/monsters/1269.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 0.05,
+                "image_url": "images/monsters/2871.gif"
             }
         ]
     },
@@ -46650,6 +48970,108 @@ export const itemsData = {
             }
         ]
     },
+    "4313": {
+        "id": 4313,
+        "name": {
+            "zh_tw": "朽魔卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，以一定機率對自身施放泥沼地Lv1。(習得泥沼地Lv5時，將改為施放泥沼地Lv5。)\\n系列 : 卡片\\n裝備 : 披肩\\n重量 : 1",
+            "official_clean": "受到物理傷害時，以一定機率對自身施放泥沼地Lv1。(習得泥沼地Lv5時，將改為施放泥沼地Lv5。)"
+        },
+        "category": "卡片",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "陷於泥沼的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "披肩",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4313.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 0.01,
+                "image_url": "images/monsters/1199.gif"
+            }
+        ]
+    },
+    "4314": {
+        "id": 4314,
+        "name": {
+            "zh_tw": "梅納海葵卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "無形魔物的傷害減少30%。\\n系列 : 卡片\\n裝備 : 盾牌\\n重量 : 1",
+            "official_clean": "無形魔物的傷害減少30%。"
+        },
+        "category": "卡片",
+        "slot": "盾牌",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "火焰防禦的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "盾牌",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4314.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 0.01,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 0.05,
+                "image_url": "images/monsters/2717.gif"
+            }
+        ]
+    },
     "4315": {
         "id": 4315,
         "name": {
@@ -46746,6 +49168,60 @@ export const itemsData = {
             }
         ]
     },
+    "4322": {
+        "id": 4322,
+        "name": {
+            "zh_tw": "獸人戰士長卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "反射近距離物理攻擊的5%。DEF + 1\\n系列 : 卡片\\n裝備 : 盾牌\\n重量 : 1",
+            "official_clean": "反射近距離物理攻擊的5%。DEF + 1"
+        },
+        "category": "卡片",
+        "slot": "盾牌",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "反擊的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "盾牌",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4322.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 0.01,
+                "image_url": "images/monsters/1213.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 0.05,
+                "image_url": "images/monsters/2805.gif"
+            }
+        ]
+    },
     "4323": {
         "id": 4323,
         "name": {
@@ -46791,6 +49267,54 @@ export const itemsData = {
                 "monster_name": "卡崙寶寶",
                 "rate": 0.01,
                 "image_url": "images/monsters/1515.gif"
+            }
+        ]
+    },
+    "4324": {
+        "id": 4324,
+        "name": {
+            "zh_tw": "卡崙卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到物理傷害時，以高機率使敵人冰凍。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到物理傷害時，以高機率使敵人冰凍。"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "凍結的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/4324.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 0.01,
+                "image_url": "images/monsters/1252.gif"
             }
         ]
     },
@@ -51915,6 +54439,12 @@ export const itemsData = {
                 "monster_name": "獸人酋長",
                 "rate": 2,
                 "image_url": "images/monsters/1190.gif"
+            },
+            {
+                "monster_id": 1251,
+                "monster_name": "冰暴騎士",
+                "rate": 0.01,
+                "image_url": "images/monsters/1251.gif"
             }
         ]
     },
@@ -52948,6 +55478,12 @@ export const itemsData = {
                 "monster_name": "鴞裊首領",
                 "rate": 0.01,
                 "image_url": "images/monsters/1320.gif"
+            },
+            {
+                "monster_id": 2721,
+                "monster_name": "菁英鴞裊首領",
+                "rate": 0.05,
+                "image_url": "images/monsters/2721.gif"
             }
         ]
     },
@@ -54303,8 +56839,8 @@ export const itemsData = {
             "kr": "대형오크히어로투구"
         },
         "description": {
-            "official": "真正獸人英雄的頭盔。但因為太大了，稍有不慎大概會弄傷脖子。\\nSTR+2\\n攻擊時，以一定機率發動無視體型攻擊3級。\\n系列 : 頭盔 防禦 : 5\\n位置 : 頭上、中 重量 : 90\\n要求等級 : 1\\n裝備 : 全職業",
-            "official_clean": "真正獸人英雄的頭盔。但因為太大了，稍有不慎大概會弄傷脖子。\\nSTR+2\\n攻擊時，以一定機率發動無視體型攻擊3級。"
+            "official": "真正獸人英雄的頭盔。但因為太大了，稍有不慎大概會弄傷脖子。\\nSTR+2\\n攻擊時，以一定機率發動忽視體型攻擊3級。\\n系列 : 頭盔 防禦 : 5\\n位置 : 頭上、中 重量 : 90\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "真正獸人英雄的頭盔。但因為太大了，稍有不慎大概會弄傷脖子。\\nSTR+2\\n攻擊時，以一定機率發動忽視體型攻擊3級。"
         },
         "category": "防具",
         "slot": "頭上、中",
@@ -54329,7 +56865,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-07-02",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 90,
             "buy_price": 20,
@@ -57127,6 +59663,108 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "7001": {
+        "id": 7001,
+        "name": {
+            "zh_tw": "黴菌粉末",
+            "kr": "곰팡이가루"
+        },
+        "description": {
+            "official": "黴菌的柔和粉末。賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "黴菌的柔和粉末。賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 26.68,
+                "image_url": "images/monsters/1199.gif"
+            }
+        ]
+    },
+    "7002": {
+        "id": 7002,
+        "name": {
+            "zh_tw": "獸人之牙",
+            "kr": "오우거의이빨"
+        },
+        "description": {
+            "official": "獸人族偉大戰士的牙齒。賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "獸人族偉大戰士的牙齒。賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7002.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": 12.5,
+                "image_url": "images/monsters/1213.gif"
+            },
+            {
+                "monster_id": 2805,
+                "monster_name": "雄壯獸人戰士長",
+                "rate": 62.5,
+                "image_url": "images/monsters/2805.gif"
+            }
+        ]
+    },
     "7003": {
         "id": 7003,
         "name": {
@@ -57306,10 +59944,10 @@ export const itemsData = {
         },
         "dropped_by": [
             {
-                "monster_id": 1198,
-                "monster_name": "暗黑祭司",
-                "rate": 15,
-                "image_url": "images/monsters/1198.gif"
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 7.5,
+                "image_url": "images/monsters/1193.gif"
             },
             {
                 "monster_id": 1208,
@@ -57334,6 +59972,12 @@ export const itemsData = {
                 "monster_name": "憤怒暗黑祭司",
                 "rate": 75,
                 "image_url": "images/monsters/2861.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 37.5,
+                "image_url": "images/monsters/2910.gif"
             },
             {
                 "monster_id": 20379,
@@ -57448,6 +60092,54 @@ export const itemsData = {
                 "monster_name": "藍鼠",
                 "rate": 23.28,
                 "image_url": "images/monsters/1209.gif"
+            }
+        ]
+    },
+    "7009": {
+        "id": 7009,
+        "name": {
+            "zh_tw": "彩色外皮",
+            "kr": "화려한껍질"
+        },
+        "description": {
+            "official": "以華麗的顏色與外觀為傲的外皮。賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "以華麗的顏色與外觀為傲的外皮。賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7009.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": 26.68,
+                "image_url": "images/monsters/1211.gif"
             }
         ]
     },
@@ -57581,10 +60273,22 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 24.25,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
                 "monster_id": 1266,
                 "monster_name": "海星",
                 "rate": 0.2,
                 "image_url": "images/monsters/1266.gif"
+            },
+            {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 100,
+                "image_url": "images/monsters/2717.gif"
             }
         ]
     },
@@ -58000,6 +60704,144 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "7026": {
+        "id": 7026,
+        "name": {
+            "zh_tw": "鐘塔之鑰",
+            "kr": "시계탑열쇠"
+        },
+        "description": {
+            "official": "可開啟某個鐘塔之門的鑰匙。\\n_\\n重量 : 3",
+            "official_clean": "可開啟某個鐘塔之門的鑰匙。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7026.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 3,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": 0.1,
+                "image_url": "images/monsters/1193.gif"
+            },
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 0.15,
+                "image_url": "images/monsters/1269.gif"
+            },
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 10,
+                "image_url": "images/monsters/1270.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 0.75,
+                "image_url": "images/monsters/2871.gif"
+            },
+            {
+                "monster_id": 2910,
+                "monster_name": "狡猾鐘怪",
+                "rate": 0.5,
+                "image_url": "images/monsters/2910.gif"
+            }
+        ]
+    },
+    "7027": {
+        "id": 7027,
+        "name": {
+            "zh_tw": "鐘塔鑰匙",
+            "kr": "탑지하열쇠"
+        },
+        "description": {
+            "official": "可開啟鐘塔之門地下室的鑰匙。\\n_\\n重量 : 3",
+            "official_clean": "可開啟鐘塔之門地下室的鑰匙。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7027.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 3,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": 0.15,
+                "image_url": "images/monsters/1269.gif"
+            },
+            {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 10,
+                "image_url": "images/monsters/1270.gif"
+            },
+            {
+                "monster_id": 1377,
+                "monster_name": "邪靈魔導士",
+                "rate": 15,
+                "image_url": "images/monsters/1377.gif"
+            },
+            {
+                "monster_id": 2871,
+                "monster_name": "憤怒古鐘魔",
+                "rate": 0.75,
+                "image_url": "images/monsters/2871.gif"
+            }
+        ]
+    },
     "7031": {
         "id": 7031,
         "name": {
@@ -58220,6 +61062,54 @@ export const itemsData = {
             "sell_price": 10
         },
         "dropped_by": []
+    },
+    "7036": {
+        "id": 7036,
+        "name": {
+            "zh_tw": "卡崙之牙",
+            "kr": "가름의이빨"
+        },
+        "description": {
+            "official": "卡崙的尖銳牙齒。\\n_\\n重量 : 1",
+            "official_clean": "卡崙的尖銳牙齒。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7036.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 27.5,
+                "image_url": "images/monsters/1252.gif"
+            }
+        ]
     },
     "7041": {
         "id": 7041,
@@ -58526,6 +61416,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1280.gif"
             },
             {
+                "monster_id": 1306,
+                "monster_name": "狂暴大腳熊",
+                "rate": 4,
+                "image_url": "images/monsters/1306.gif"
+            },
+            {
                 "monster_id": 1308,
                 "monster_name": "狂暴哥布靈",
                 "rate": 22.07,
@@ -58578,6 +61474,12 @@ export const itemsData = {
                 "monster_name": "雄壯獸人女戰士",
                 "rate": 100,
                 "image_url": "images/monsters/2725.gif"
+            },
+            {
+                "monster_id": 2780,
+                "monster_name": "雄壯狂暴大腳熊",
+                "rate": 20,
+                "image_url": "images/monsters/2780.gif"
             },
             {
                 "monster_id": 2829,
@@ -58670,6 +61572,12 @@ export const itemsData = {
                 "image_url": "images/monsters/1268.gif"
             },
             {
+                "monster_id": 1270,
+                "monster_name": "鐘塔守護者",
+                "rate": 26.68,
+                "image_url": "images/monsters/1270.gif"
+            },
+            {
                 "monster_id": 1276,
                 "monster_name": "幽靈弓箭手",
                 "rate": 23.28,
@@ -58700,10 +61608,22 @@ export const itemsData = {
                 "image_url": "images/monsters/1299.gif"
             },
             {
+                "monster_id": 1300,
+                "monster_name": "狂暴綠棉蟲",
+                "rate": 26.68,
+                "image_url": "images/monsters/1300.gif"
+            },
+            {
                 "monster_id": 1302,
                 "monster_name": "迷幻之王",
                 "rate": 26.68,
                 "image_url": "images/monsters/1302.gif"
+            },
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 12.5,
+                "image_url": "images/monsters/1305.gif"
             },
             {
                 "monster_id": 1308,
@@ -58728,6 +61648,12 @@ export const itemsData = {
                 "monster_name": "迅捷將軍魔碑",
                 "rate": 50,
                 "image_url": "images/monsters/2809.gif"
+            },
+            {
+                "monster_id": 2876,
+                "monster_name": "憤怒狂暴綠棉蟲",
+                "rate": 100,
+                "image_url": "images/monsters/2876.gif"
             },
             {
                 "monster_id": 2877,
@@ -58882,6 +61808,12 @@ export const itemsData = {
                 "monster_name": "鴞裊首領",
                 "rate": 7.5,
                 "image_url": "images/monsters/1320.gif"
+            },
+            {
+                "monster_id": 2721,
+                "monster_name": "菁英鴞裊首領",
+                "rate": 37.5,
+                "image_url": "images/monsters/2721.gif"
             }
         ]
     },
@@ -59034,10 +61966,40 @@ export const itemsData = {
                 "image_url": "images/monsters/1295.gif"
             },
             {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 22.07,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 0.01,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
                 "monster_id": 1320,
                 "monster_name": "鴞裊首領",
                 "rate": 22.07,
                 "image_url": "images/monsters/1320.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 100,
+                "image_url": "images/monsters/2605.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 0.05,
+                "image_url": "images/monsters/2605.gif"
+            },
+            {
+                "monster_id": 2721,
+                "monster_name": "菁英鴞裊首領",
+                "rate": 100,
+                "image_url": "images/monsters/2721.gif"
             }
         ]
     },
@@ -59902,6 +62864,54 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "7099": {
+        "id": 7099,
+        "name": {
+            "zh_tw": "老舊魔法圖",
+            "kr": "낡은마법진"
+        },
+        "description": {
+            "official": "因為太老舊了，完全不清楚用途的魔法陣。據說魔法學會以高價收購。\\n_\\n重量 : 1",
+            "official_clean": "因為太老舊了，完全不清楚用途的魔法陣。據說魔法學會以高價收購。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7099.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1377,
+                "monster_name": "邪靈魔導士",
+                "rate": 20,
+                "image_url": "images/monsters/1377.gif"
+            }
+        ]
+    },
     "7100": {
         "id": 7100,
         "name": {
@@ -60103,6 +63113,54 @@ export const itemsData = {
                 "monster_name": "法老王",
                 "rate": 12.5,
                 "image_url": "images/monsters/1157.gif"
+            }
+        ]
+    },
+    "7117": {
+        "id": 7117,
+        "name": {
+            "zh_tw": "撕裂的魔法書",
+            "kr": "찢어진마법서"
+        },
+        "description": {
+            "official": "被稱為魔法師生命的魔法書被撕破的部分。不清楚主人是誰，內容已經嚴重毀損。\\n_\\n重量 : 1",
+            "official_clean": "被稱為魔法師生命的魔法書被撕破的部分。不清楚主人是誰，內容已經嚴重毀損。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/7117.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1377,
+                "monster_name": "邪靈魔導士",
+                "rate": 7.5,
+                "image_url": "images/monsters/1377.gif"
             }
         ]
     },
@@ -62952,7 +66010,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 0
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 2288,
+                "monster_name": "瘋狂寶箱",
+                "rate": 0.5,
+                "image_url": "images/monsters/2288.gif"
+            }
+        ]
     },
     "7452": {
         "id": 7452,
@@ -65315,6 +68380,12 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 0.5,
+                "image_url": "images/monsters/1199.gif"
+            },
+            {
                 "monster_id": 1686,
                 "monster_name": "獸人嬰兒",
                 "rate": 0.5,
@@ -66186,8 +69257,8 @@ export const itemsData = {
             "kr": "라플레치노"
         },
         "description": {
-            "official": "僅限PvP、村莊、攻城戰地區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\nHP恢復約500，SP恢復約60左右。\\n_\\n重量 : 8",
-            "official_clean": "僅限PvP、村莊、攻城戰地區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\nHP恢復約500，SP恢復約60左右。"
+            "official": "僅限PvP、村莊、WOE-FE戰區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\nHP恢復約500，SP恢復約60左右。\\n_\\n重量 : 8",
+            "official_clean": "僅限PvP、村莊、WOE-FE戰區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\nHP恢復約500，SP恢復約60左右。"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -66212,13 +69283,20 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 8,
             "buy_price": 0,
             "sell_price": 0
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 2288,
+                "monster_name": "瘋狂寶箱",
+                "rate": 20,
+                "image_url": "images/monsters/2288.gif"
+            }
+        ]
     },
     "11548": {
         "id": 11548,
@@ -66227,8 +69305,8 @@ export const itemsData = {
             "kr": "하얀라플레수액"
         },
         "description": {
-            "official": "僅限PvP、村莊、攻城戰地區可使用。\\n只有有機農白色藥草裡最嫩的葉子才能製作出的清爽風味白色藥水。\\n能讓HP恢復約10%。\\n_\\n重量 : 8",
-            "official_clean": "僅限PvP、村莊、攻城戰地區可使用。\\n只有有機農白色藥草裡最嫩的葉子才能製作出的清爽風味白色藥水。\\n能讓HP恢復約10%。"
+            "official": "僅限PvP、村莊、WOE-FE戰區可使用。\\n只有有機農白色藥草裡最嫩的葉子才能製作出的清爽風味白色藥水。\\n能讓HP恢復約10%。\\n_\\n重量 : 8",
+            "official_clean": "僅限PvP、村莊、WOE-FE戰區可使用。\\n只有有機農白色藥草裡最嫩的葉子才能製作出的清爽風味白色藥水。\\n能讓HP恢復約10%。"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -66253,13 +69331,20 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 8,
             "buy_price": 0,
             "sell_price": 0
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 2288,
+                "monster_name": "瘋狂寶箱",
+                "rate": 10,
+                "image_url": "images/monsters/2288.gif"
+            }
+        ]
     },
     "11549": {
         "id": 11549,
@@ -66268,8 +69353,8 @@ export const itemsData = {
             "kr": "핀귀베리쥬스"
         },
         "description": {
-            "official": "僅限PvP、村莊、攻城戰地區可使用。\\n只有有機農藍色藥草裡最嫩的葉子才能製作出的清爽風味藍色藥水。\\n能讓SP恢復約10%。\\n_\\n重量 : 8",
-            "official_clean": "僅限PvP、村莊、攻城戰地區可使用。\\n只有有機農藍色藥草裡最嫩的葉子才能製作出的清爽風味藍色藥水。\\n能讓SP恢復約10%。"
+            "official": "僅限PvP、村莊、WOE-FE戰區可使用。\\n只有有機農藍色藥草裡最嫩的葉子才能製作出的清爽風味藍色藥水。\\n能讓SP恢復約10%。\\n_\\n重量 : 8",
+            "official_clean": "僅限PvP、村莊、WOE-FE戰區可使用。\\n只有有機農藍色藥草裡最嫩的葉子才能製作出的清爽風味藍色藥水。\\n能讓SP恢復約10%。"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -66294,13 +69379,20 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 8,
             "buy_price": 0,
             "sell_price": 0
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 2288,
+                "monster_name": "瘋狂寶箱",
+                "rate": 10,
+                "image_url": "images/monsters/2288.gif"
+            }
+        ]
     },
     "11551": {
         "id": 11551,
@@ -67890,6 +70982,47 @@ export const itemsData = {
             "weight": 20,
             "buy_price": 1000,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "12034": {
+        "id": 12034,
+        "name": {
+            "zh_tw": "昏眩的箱子",
+            "kr": "헐떡이는상자"
+        },
+        "description": {
+            "official": "30秒內有30%的機率陷入沈默。恢復約9%的SP。\\n_\\n重量 : 20",
+            "official_clean": "30秒內有30%的機率陷入沈默。恢復約9%的SP。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/12034.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 20,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -71575,8 +74708,8 @@ export const itemsData = {
             "kr": "응급처치상자"
         },
         "description": {
-            "official": "裝有城戰紫色藥水50個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
-            "official_clean": "裝有城戰紫色藥水50個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
+            "official": "裝有城戰紫色藥水50個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
+            "official_clean": "裝有城戰紫色藥水50個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -71601,7 +74734,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 20,
             "buy_price": 0,
@@ -71609,10 +74742,40 @@ export const itemsData = {
         },
         "dropped_by": [
             {
+                "monster_id": 1293,
+                "monster_name": "狂暴克瑞米",
+                "rate": 0.1,
+                "image_url": "images/monsters/1293.gif"
+            },
+            {
+                "monster_id": 1298,
+                "monster_name": "腐屍首領",
+                "rate": 0.05,
+                "image_url": "images/monsters/1298.gif"
+            },
+            {
+                "monster_id": 1303,
+                "monster_name": "狂暴蜂兵",
+                "rate": 0.05,
+                "image_url": "images/monsters/1303.gif"
+            },
+            {
                 "monster_id": 1324,
                 "monster_name": "寶物箱子",
                 "rate": 4,
                 "image_url": "images/monsters/1324.gif"
+            },
+            {
+                "monster_id": 2605,
+                "monster_name": "菁英腐屍首領",
+                "rate": 0.25,
+                "image_url": "images/monsters/2605.gif"
+            },
+            {
+                "monster_id": 2821,
+                "monster_name": "菁英狂暴蜂兵",
+                "rate": 0.25,
+                "image_url": "images/monsters/2821.gif"
             }
         ]
     },
@@ -71623,8 +74786,8 @@ export const itemsData = {
             "kr": "응급처치상자"
         },
         "description": {
-            "official": "裝有城戰白色藥水30個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
-            "official_clean": "裝有城戰白色藥水30個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
+            "official": "裝有城戰白色藥水30個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
+            "official_clean": "裝有城戰白色藥水30個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -71649,7 +74812,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 20,
             "buy_price": 0,
@@ -71671,8 +74834,8 @@ export const itemsData = {
             "kr": "응급처치상자"
         },
         "description": {
-            "official": "裝有城戰藍色藥水10個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
-            "official_clean": "裝有城戰藍色藥水10個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
+            "official": "裝有城戰藍色藥水10個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
+            "official_clean": "裝有城戰藍色藥水10個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -71697,7 +74860,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 20,
             "buy_price": 0,
@@ -71709,6 +74872,12 @@ export const itemsData = {
                 "monster_name": "寶物箱子",
                 "rate": 4,
                 "image_url": "images/monsters/1324.gif"
+            },
+            {
+                "monster_id": 2288,
+                "monster_name": "瘋狂寶箱",
+                "rate": 0.5,
+                "image_url": "images/monsters/2288.gif"
             }
         ]
     },
@@ -71719,8 +74888,8 @@ export const itemsData = {
             "kr": "응급처치상자"
         },
         "description": {
-            "official": "裝有城戰紫色藥水200個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
-            "official_clean": "裝有城戰紫色藥水200個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
+            "official": "裝有城戰紫色藥水200個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
+            "official_clean": "裝有城戰紫色藥水200個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -71745,7 +74914,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 20,
             "buy_price": 0,
@@ -72261,6 +75430,47 @@ export const itemsData = {
             }
         ]
     },
+    "13490": {
+        "id": 13490,
+        "name": {
+            "zh_tw": "下級公會員水紋之劍",
+            "kr": "프람베르그"
+        },
+        "description": {
+            "official": "※WOE-FE戰區追加屬性\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，犧牲執行成功時，30秒內施法者最多+MHP1000，武器精煉每+1時，最多額外+MHP50。\\n系列 : 劍 攻擊 : 110\\n重量 : 70\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 十字軍系列",
+            "official_clean": "※WOE-FE戰區追加屬性\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，犧牲執行成功時，30秒內施法者最多+MHP1000，武器精煉每+1時，最多額外+MHP50。"
+        },
+        "category": "武器",
+        "slot": "劍",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 104,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "十字軍系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/13490.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 70,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "13607": {
         "id": 13607,
         "name": {
@@ -72555,6 +75765,129 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "15216": {
+        "id": 15216,
+        "name": {
+            "zh_tw": "下級公會員外袍",
+            "kr": "오딘의축복"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的外袍。\\n「※WOE-FE戰區追加屬性」\\nMHP+700、MSP+50、MDEF+5、玩家抗性+2%\\n和下級公會員鞋子、圍巾一起裝備時，當精煉度總和為21以上，MHP+700、玩家抗性+6%。\\n系列 : 鎧甲  防禦 : 25\\n重量 : 50\\n需求等級 : 70\\n裝備 : 初學者系列、魔法師系列、服事系列",
+            "official_clean": "初學者也可以輕易穿戴而製作的外袍。\\n「※WOE-FE戰區追加屬性」\\nMHP+700、MSP+50、MDEF+5、玩家抗性+2%\\n和下級公會員鞋子、圍巾一起裝備時，當精煉度總和為21以上，MHP+700、玩家抗性+6%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 25,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/15216.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "15217": {
+        "id": 15217,
+        "name": {
+            "zh_tw": "下級公會員外套",
+            "kr": "클레르슈츠"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的外套。\\n「※WOE-FE戰區追加屬性」\\nMHP+800、MDEF+5、玩家抗性+3%。\\n和下級公會員長靴、斗篷一起裝備時，當精煉度總和為21以上，MHP+800、玩家抗性+7%。\\n系列 : 鎧甲  防禦 : 30\\n重量 : 150\\n需求等級 : 70\\n裝備 : 劍士系列、商人系列、盜賊系列、弓箭手系列",
+            "official_clean": "初學者也可以輕易穿戴而製作的外套。\\n「※WOE-FE戰區追加屬性」\\nMHP+800、MDEF+5、玩家抗性+3%。\\n和下級公會員長靴、斗篷一起裝備時，當精煉度總和為21以上，MHP+800、玩家抗性+7%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 30,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列、商人系列、盜賊系列、弓箭手系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/15217.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 150,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "15218": {
+        "id": 15218,
+        "name": {
+            "zh_tw": "下級公會員鋼鐵鎧甲",
+            "kr": "칠흑의갑옷"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的鋼鐵鎧甲。\\n「※WOE-FE戰區追加屬性」\\nMHP+900、玩家抗性+4%。\\n和下級公會員重靴、斗篷一起裝備時，當精煉度總和為21以上，MHP+900、玩家抗性+8%。\\n系列 : 鎧甲  防禦 : 50\\n重量 : 250\\n需求等級 : 70\\n裝備 : 劍士系列、商人系列",
+            "official_clean": "初學者也可以輕易穿戴而製作的鋼鐵鎧甲。\\n「※WOE-FE戰區追加屬性」\\nMHP+900、玩家抗性+4%。\\n和下級公會員重靴、斗篷一起裝備時，當精煉度總和為21以上，MHP+900、玩家抗性+8%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 50,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列、商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/15218.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 250,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "15220": {
         "id": 15220,
         "name": {
@@ -72726,6 +76059,47 @@ export const itemsData = {
             }
         ]
     },
+    "15282": {
+        "id": 15282,
+        "name": {
+            "zh_tw": "兔子花紋襯衫",
+            "kr": "Witchs_White_Shirt"
+        },
+        "description": {
+            "official": "某個魔女非常愛惜的兔子花紋襯衫，是他珍藏已久的貼身衣物~<3。\\nMHP+150、MSP+75。\\n精煉每+1，MATK+2。\\n精煉+7以上時，MHP+75、MSP額外+25。\\n精煉+9以上時，MHP+75、MSP額外+25。\\n系列 : 鎧甲  防禦 : 10\\n重量 : 50\\n需求等級 : 60\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "某個魔女非常愛惜的兔子花紋襯衫，是他珍藏已久的貼身衣物~<3。\\nMHP+150、MSP+75。\\n精煉每+1，MATK+2。\\n精煉+7以上時，MHP+75、MSP額外+25。\\n精煉+9以上時，MHP+75、MSP額外+25。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/15282.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "15390": {
         "id": 15390,
         "name": {
@@ -72846,6 +76220,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "16085": {
+        "id": 16085,
+        "name": {
+            "zh_tw": "下級公會員日星錘",
+            "kr": "모닝스타"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，以一定機率施予昏迷，攻擊速度增加（攻擊後延遲-10%），依照[鈍器使用熟練度]的增加，昏迷機率額外增加。\\n系列 : 鈍器 攻擊 : 110\\n重量 : 90\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 初學者系列、劍士系列、商人系列、服事系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，以一定機率施予昏迷，攻擊速度增加（攻擊後延遲-10%），依照[鈍器使用熟練度]的增加，昏迷機率額外增加。"
+        },
+        "category": "武器",
+        "slot": "鈍器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 8,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、劍士系列、商人系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/16085.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 90,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -73505,6 +76920,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "18175": {
+        "id": 18175,
+        "name": {
+            "zh_tw": "下級公會員獵人之弓",
+            "kr": "헌터보우"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%。\\n精煉+10以上，使用心神凝聚時，10秒內二連矢傷害+20%、HIT+20。\\n依照精煉度HIT和二連矢傷害額外增加。\\n系列 : 弓 攻擊 : 90\\n重量 : 50\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 盜賊、弓箭手系列、流氓系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%。\\n精煉+10以上，使用心神凝聚時，10秒內二連矢傷害+20%、HIT+20。\\n依照精煉度HIT和二連矢傷害額外增加。"
+        },
+        "category": "武器",
+        "slot": "弓",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 76,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 90,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "盜賊、弓箭手系列、流氓系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/18175.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "18730": {
         "id": 18730,
         "name": {
@@ -73803,6 +77259,293 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "19332": {
+        "id": 19332,
+        "name": {
+            "zh_tw": "卡利斯格騎士團頭盔",
+            "kr": "칼리츠버그기사투구"
+        },
+        "description": {
+            "official": "榮譽騎士使用過的頭盔\\nCRI + 3。\\n精煉+7以上時，暴擊傷害+5%。\\n精煉+9以上時，暴擊傷害額外再+5%。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭上 重量 : 70\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "榮譽騎士使用過的頭盔\\nCRI + 3。\\n精煉+7以上時，暴擊傷害+5%。\\n精煉+9以上時，暴擊傷害額外再+5%。"
+        },
+        "category": "防具",
+        "slot": "頭上",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 1442,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19332.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 70,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19333": {
+        "id": 19333,
+        "name": {
+            "zh_tw": "鍾塔守護者耳機",
+            "kr": "시계탑관리자의인컴"
+        },
+        "description": {
+            "official": "鍾塔守護者使用的通訊設備。\\nMATK+20。\\n與「鐘塔守護者卡片」同時裝備時，變動詠唱-15%、移動速度增加。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭中 重量 : 10\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "鍾塔守護者使用的通訊設備。\\nMATK+20。\\n與「鐘塔守護者卡片」同時裝備時，變動詠唱-15%、移動速度增加。"
+        },
+        "category": "防具",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1266,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19333.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 10,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19334": {
+        "id": 19334,
+        "name": {
+            "zh_tw": "懷錶髮飾",
+            "kr": "회중시계머리장식"
+        },
+        "description": {
+            "official": "以懷錶爲主題的髮飾。\\nATK+20。\\n與「古鐘魔卡片」同時裝備時，DEF+20、MSP+100。\\n與「鐘怪卡片」同時裝備時，MHP+1000。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭中 重量 : 10\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "以懷錶爲主題的髮飾。\\nATK+20。\\n與「古鐘魔卡片」同時裝備時，DEF+20、MSP+100。\\n與「鐘怪卡片」同時裝備時，MHP+1000。"
+        },
+        "category": "防具",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1404,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19334.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 10,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19356": {
+        "id": 19356,
+        "name": {
+            "zh_tw": "愛麗絲假髮",
+            "kr": "Alice_Wig"
+        },
+        "description": {
+            "official": "依照愛麗絲女僕髮型風格製作的假髮。\\n嘗試打造出愛麗絲女僕端莊、優雅的髮型，付出了非常大的努力。\\n精煉每+2，治癒量+3%。\\n精煉+7時，MHP+150、MSP+50\\n精煉+9時，變動詠唱-5%。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭上 重量 : 70\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "依照愛麗絲女僕髮型風格製作的假髮。\\n嘗試打造出愛麗絲女僕端莊、優雅的髮型，付出了非常大的努力。\\n精煉每+2，治癒量+3%。\\n精煉+7時，MHP+150、MSP+50\\n精煉+9時，變動詠唱-5%。"
+        },
+        "category": "防具",
+        "slot": "頭上",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 1673,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19356.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 70,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19357": {
+        "id": 19357,
+        "name": {
+            "zh_tw": "艾爾帕蘭時鐘帽",
+            "kr": "크로크카스캐트"
+        },
+        "description": {
+            "official": "艾爾帕蘭時鐘修理工人穿戴過的帽子，其中的時鐘裝飾非常有魅力。\\n精煉每+2，對無型魔物的物理傷害增加1%。\\n精煉+7時，HIT+15。\\n精煉+9時，MHP+250。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭上 重量 : 70\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "艾爾帕蘭時鐘修理工人穿戴過的帽子，其中的時鐘裝飾非常有魅力。\\n精煉每+2，對無型魔物的物理傷害增加1%。\\n精煉+7時，HIT+15。\\n精煉+9時，MHP+250。"
+        },
+        "category": "防具",
+        "slot": "頭上",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 1555,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19357.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 70,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19358": {
+        "id": 19358,
+        "name": {
+            "zh_tw": "神秘女巫帽",
+            "kr": "검은마녀의모자"
+        },
+        "description": {
+            "official": "如果戴著帽子，彷彿被某位黑魔女的神祕魔力所操控。\\n精煉每+2，MATK+1%。\\n精煉+7時，MHP50、MSP100\\n精煉+9時，變動詠唱-5%。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭上 重量 : 70\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "如果戴著帽子，彷彿被某位黑魔女的神祕魔力所操控。\\n精煉每+2，MATK+1%。\\n精煉+7時，MHP50、MSP100\\n精煉+9時，變動詠唱-5%。"
+        },
+        "category": "防具",
+        "slot": "頭上",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 1006,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19358.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 70,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19361": {
+        "id": 19361,
+        "name": {
+            "zh_tw": "藏鏡人帽",
+            "kr": "배회하는자의삿갓"
+        },
+        "description": {
+            "official": "壓得低一點的話，會看不到眼睛看不見的陰沉顏色草帽。\\n精煉每+2時，AGI+1、LUK+1\\n精煉+7時，攻擊速度增加（攻擊後延遲-5%。）\\n精煉+9時，CRI+5、攻擊速度額外增加（攻擊後延遲額外-5%）\\n系列 : 頭盔 防禦 : 2\\n位置 : 頭上、中 重量 : 50\\n需求等級 : 60\\n裝備 : 全職業",
+            "official_clean": "壓得低一點的話，會看不到眼睛看不見的陰沉顏色草帽。\\n精煉每+2時，AGI+1、LUK+1\\n精煉+7時，攻擊速度增加（攻擊後延遲-5%。）\\n精煉+9時，CRI+5、攻擊速度額外增加（攻擊後延遲額外-5%）"
+        },
+        "category": "防具",
+        "slot": "頭上、中",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 558,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 2,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/19361.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -74872,6 +78615,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "19607": {
+        "id": 19607,
+        "name": {
+            "zh_tw": "(服飾)愛的小雞帽子",
+            "kr": "사랑의병아리모자"
+        },
+        "description": {
+            "official": "用愛的力量來變色的小雞。\\n需要細心的照顧。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "用愛的力量來變色的小雞。\\n需要細心的照顧。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 500,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19607.gif",
+        "icon_url": "/images/items/19607.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "19608": {
         "id": 19608,
         "name": {
@@ -75361,6 +79145,88 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19678": {
+        "id": 19678,
+        "name": {
+            "zh_tw": "(服飾)鈴鐺髮帶",
+            "kr": "방울리본"
+        },
+        "description": {
+            "official": "尾端有小鈴鐺的可愛髮夾，鈴鐺叮噹叮噹地響。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "尾端有小鈴鐺的可愛髮夾，鈴鐺叮噹叮噹地響。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 388,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19678.gif",
+        "icon_url": "/images/items/19678.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "19682": {
+        "id": 19682,
+        "name": {
+            "zh_tw": "(服飾)聖誕波利帽子",
+            "kr": "산타포링모자"
+        },
+        "description": {
+            "official": "波利戴著聖誕帽在頭上繃繃跳跳的樣子很可愛。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "波利戴著聖誕帽在頭上繃繃跳跳的樣子很可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 387,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19682.gif",
+        "icon_url": "/images/items/19682.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -76140,6 +80006,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19756": {
+        "id": 19756,
+        "name": {
+            "zh_tw": "(服飾)聖母的慈愛",
+            "kr": "트라이앵글룬캡"
+        },
+        "description": {
+            "official": "滿溢著聖母慈愛的帽子，即使犧牲自我也要給予祝福。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上、頭中 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "滿溢著聖母慈愛的帽子，即使犧牲自我也要給予祝福。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上、頭中",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 610,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19756.gif",
+        "icon_url": "/images/items/19756.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -77455,6 +81362,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "19861": {
+        "id": 19861,
+        "name": {
+            "zh_tw": "(服飾)愛心髮夾",
+            "kr": "하트머리핀"
+        },
+        "description": {
+            "official": "用表示愛情的心形標誌組合而成的可愛髮夾，讓佩戴者看起來有小巧玲瓏的魅力。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "用表示愛情的心形標誌組合而成的可愛髮夾，讓佩戴者看起來有小巧玲瓏的魅力。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 126,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19861.gif",
+        "icon_url": "/images/items/19861.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "19865": {
         "id": 19865,
         "name": {
@@ -77534,6 +81482,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19875": {
+        "id": 19875,
+        "name": {
+            "zh_tw": "(服飾)愛心兔兔帽T",
+            "kr": "토끼보닛"
+        },
+        "description": {
+            "official": "有名的玩偶監製人嘔心瀝血所製作的兔兔玩偶帽。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上、頭中、頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "有名的玩偶監製人嘔心瀝血所製作的兔兔玩偶帽。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上、頭中、頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 549,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19875.gif",
+        "icon_url": "/images/items/19875.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -78234,6 +82223,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "19955": {
+        "id": 19955,
+        "name": {
+            "zh_tw": "(服飾)閃閃發光聖誕樹",
+            "kr": "미니트리"
+        },
+        "description": {
+            "official": "在頭上閃閃發光的小型聖誕樹。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "在頭上閃閃發光的小型聖誕樹。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 727,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19955.gif",
+        "icon_url": "/images/items/19955.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "19959": {
         "id": 19959,
         "name": {
@@ -78313,6 +82343,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "19992": {
+        "id": 19992,
+        "name": {
+            "zh_tw": "(服飾)冷空氣",
+            "kr": "냉기입김"
+        },
+        "description": {
+            "official": "天氣實在太冷了，從嘴巴吐出來的氣息都能看到白霧了呢。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "天氣實在太冷了，從嘴巴吐出來的氣息都能看到白霧了呢。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 885,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/19992.gif",
+        "icon_url": "/images/items/19992.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -80653,6 +84724,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "20231": {
+        "id": 20231,
+        "name": {
+            "zh_tw": "(服飾)雪人帽",
+            "kr": "눈사람모자"
+        },
+        "description": {
+            "official": "能夠感受到冬季氣氛的雪人帽子。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "能夠感受到冬季氣氛的雪人帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 616,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20231.gif",
+        "icon_url": "/images/items/20231.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "20239": {
         "id": 20239,
         "name": {
@@ -81347,6 +85459,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "20324": {
+        "id": 20324,
+        "name": {
+            "zh_tw": "(服飾)和平鴿帽子",
+            "kr": "비둘기모자"
+        },
+        "description": {
+            "official": "從魔術帽裡變出來的和平鴿子,\\n和平鴿的出現希望為世界帶來和平。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "從魔術帽裡變出來的和平鴿子,\\n和平鴿的出現希望為世界帶來和平。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1362,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20324.gif",
+        "icon_url": "/images/items/20324.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -82088,6 +86241,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "20504": {
+        "id": 20504,
+        "name": {
+            "zh_tw": "(服飾)粉紅邱比特翅膀",
+            "kr": "분홍큐피트날개"
+        },
+        "description": {
+            "official": "專司男女戀愛的調皮天使粉紅翅膀。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "專司男女戀愛的調皮天使粉紅翅膀。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 14,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20504.gif",
+        "icon_url": "/images/items/20504.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "20510": {
         "id": 20510,
         "name": {
@@ -82662,6 +86856,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "20585": {
+        "id": 20585,
+        "name": {
+            "zh_tw": "(服飾)棕熊背包",
+            "kr": "Ru_Bear_Bag"
+        },
+        "description": {
+            "official": "能感受到強烈氣魄的棕熊玩偶背包。\\n讓人有種栩栩如生的錯覺。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 披肩  防禦: 0\\n重量: 0\\n要求等級: 1\\n裝備: 全職業",
+            "official_clean": "能感受到強烈氣魄的棕熊玩偶背包。\\n讓人有種栩栩如生的錯覺。"
+        },
+        "category": "服飾裝備",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 63,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/20585.gif",
+        "icon_url": "/images/items/20585.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "20591": {
         "id": 20591,
         "name": {
@@ -83031,6 +87266,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "20864": {
+        "id": 20864,
+        "name": {
+            "zh_tw": "下級公會員斗篷",
+            "kr": "시즈망토"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的斗篷。\\n「※WOE-FE戰區追加屬性」\\nMHP+250、玩家抗性+2%、MDEF+1。\\n系列 : 披肩  防禦 : 16\\n重量 : 30\\n需求等級 : 70\\n裝備 : 初學者以外的全職業",
+            "official_clean": "初學者也可以輕易穿戴而製作的斗篷。\\n「※WOE-FE戰區追加屬性」\\nMHP+250、玩家抗性+2%、MDEF+1。"
+        },
+        "category": "防具",
+        "slot": "披肩",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 16,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "初學者以外的全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/20864.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "20865": {
+        "id": 20865,
+        "name": {
+            "zh_tw": "下級公會員圍巾",
+            "kr": "시즈머플러"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的圍巾。\\n「※WOE-FE戰區追加屬性」\\nMHP+150、玩家抗性+1%、MDEF+1。\\n系列 : 披肩  防禦 : 7\\n重量 : 15\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "初學者也可以輕易穿戴而製作的圍巾。\\n「※WOE-FE戰區追加屬性」\\nMHP+150、玩家抗性+1%、MDEF+1。"
+        },
+        "category": "防具",
+        "slot": "披肩",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 7,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/20865.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 15,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "20867": {
         "id": 20867,
         "name": {
@@ -83318,6 +87635,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "21044": {
+        "id": 21044,
+        "name": {
+            "zh_tw": "下級公會員十字巨劍",
+            "kr": "크레이모어"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家的物理防禦力10%\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外再忽視玩家的物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時一定機率於7秒內額外忽視玩家的物理防禦力10%，依照武器的精煉再+1%。\\n系列 : 雙手劍 攻擊 : 175\\n重量 : 130\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家的物理防禦力10%\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外再忽視玩家的物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時一定機率於7秒內額外忽視玩家的物理防禦力10%，依照武器的精煉再+1%。"
+        },
+        "category": "武器",
+        "slot": "雙手劍",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 3,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 175,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/21044.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 130,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "21200": {
         "id": 21200,
         "name": {
@@ -83356,6 +87714,129 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "22146": {
+        "id": 22146,
+        "name": {
+            "zh_tw": "下級公會員鞋子",
+            "kr": "시즈슈즈"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的鞋子。\\n「※WOE-FE戰區追加屬性」\\nMHP+250、玩家抗性+1%、MDEF+5。\\n系列 : 鞋子  防禦 : 7\\n重量 : 20\\n需求等級 : 70\\n裝備 : 初學者系列、魔法師系列、服事系列",
+            "official_clean": "初學者也可以輕易穿戴而製作的鞋子。\\n「※WOE-FE戰區追加屬性」\\nMHP+250、玩家抗性+1%、MDEF+5。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 7,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/22146.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 20,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "22147": {
+        "id": 22147,
+        "name": {
+            "zh_tw": "下級公會員長靴",
+            "kr": "시즈부츠"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的長靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+400、玩家抗性+2%、MDEF3。\\n系列 : 鞋子  防禦 : 10\\n重量 : 50\\n需求等級 : 70\\n裝備 : 劍士系列、商人系列、盜賊系列、弓箭手系列",
+            "official_clean": "初學者也可以輕易穿戴而製作的長靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+400、玩家抗性+2%、MDEF3。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列、商人系列、盜賊系列、弓箭手系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/22147.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "22148": {
+        "id": 22148,
+        "name": {
+            "zh_tw": "下級公會員重靴",
+            "kr": "시즈그리브"
+        },
+        "description": {
+            "official": "初學者也可以輕易穿戴而製作的重靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+500、玩家抗性3%、MDEF+1。\\n系列 : 鞋子  防禦 : 15\\n重量 : 80\\n需求等級 : 70\\n裝備 : 劍士系列、商人系列",
+            "official_clean": "初學者也可以輕易穿戴而製作的重靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+500、玩家抗性3%、MDEF+1。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 15,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列、商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/22148.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 80,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -83479,6 +87960,47 @@ export const itemsData = {
             "weight": 25,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "22188": {
+        "id": 22188,
+        "name": {
+            "zh_tw": "安全鞋",
+            "kr": "안전화"
+        },
+        "description": {
+            "official": "在腳背上貼上鐵，在任何衝擊下都能防止腳被壓碎的輕便又結實的鞋子。\\n無法破壞。\\n系列 : 鞋子  防禦 : 60\\n重量 : 35\\n需求等級 : 60\\n裝備 : 劍士系列",
+            "official_clean": "在腳背上貼上鐵，在任何衝擊下都能防止腳被壓碎的輕便又結實的鞋子。\\n無法破壞。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 60,
+        "weapon_level": 0,
+        "required_level": 60,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/22188.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 35,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -89674,6 +94196,252 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "25505": {
+        "id": 25505,
+        "name": {
+            "zh_tw": "王牌外卡",
+            "kr": "Jokers_Wild"
+        },
+        "description": {
+            "official": "在遊戲上密藏水道使用的狂暴喵卡片。\\n賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "在遊戲上密藏水道使用的狂暴喵卡片。\\n賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25505.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "25506": {
+        "id": 25506,
+        "name": {
+            "zh_tw": "可愛的掃把",
+            "kr": "Cute_Broom"
+        },
+        "description": {
+            "official": "帶有可愛裝飾的少女風格的掃把。\\n賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "帶有可愛裝飾的少女風格的掃把。\\n賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25506.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "25507": {
+        "id": 25507,
+        "name": {
+            "zh_tw": "絢麗的珊瑚",
+            "kr": "Showy_Coral_Reef"
+        },
+        "description": {
+            "official": "海洋上生長的草。顯眼的華麗顏色很帥氣。\\n賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "海洋上生長的草。顯眼的華麗顏色很帥氣。\\n賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25507.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "25508": {
+        "id": 25508,
+        "name": {
+            "zh_tw": "獸人將軍徽章",
+            "kr": "Token_of_OrcGeneral"
+        },
+        "description": {
+            "official": "用藍色繪製的獸人信物。在獸人裡象徵著更高的身份。\\n賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "用藍色繪製的獸人信物。在獸人裡象徵著更高的身份。\\n賣給收藏品商人。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25508.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "25509": {
+        "id": 25509,
+        "name": {
+            "zh_tw": "亮晶晶圓殼",
+            "kr": "Shining_Round_Shell"
+        },
+        "description": {
+            "official": "閃閃發亮發光的外殼。以圓形型態持續晾曬。\\n賣給收藏品商人。\\n_\\n重量 : 1",
+            "official_clean": "閃閃發亮發光的外殼。以圓形型態持續晾曬。\\n賣給收藏品商人。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25509.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "25630": {
+        "id": 25630,
+        "name": {
+            "zh_tw": "公會基地鑄幣",
+            "kr": "공성전코인"
+        },
+        "description": {
+            "official": "在公會基地副本上可以獲得的貴重鑄幣。帶給基地內NPC的話可以兌換道具。\\n<NAVI>[區公所]<INFO>prt_in,207,167,0,100,0,0</INFO></NAVI>\\n_\\n重量 : 0",
+            "official_clean": "在公會基地副本上可以獲得的貴重鑄幣。帶給基地內NPC的話可以兌換道具。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/25630.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "25736": {
         "id": 25736,
         "name": {
@@ -89851,6 +94619,47 @@ export const itemsData = {
             }
         ]
     },
+    "26019": {
+        "id": 26019,
+        "name": {
+            "zh_tw": "下級公會員長矛",
+            "kr": "랜스"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，使用連刺攻擊時，對敵人以一定機率施予昏迷，依照精煉度提高昏迷機率。\\n使用聖十字攻擊時，一定機率對敵人施予沉默效果，依照精煉度提高沉默機率。\\n系列 : 雙手槍 攻擊 : 220\\n重量 : 130\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，使用連刺攻擊時，對敵人以一定機率施予昏迷，依照精煉度提高昏迷機率。\\n使用聖十字攻擊時，一定機率對敵人施予沉默效果，依照精煉度提高沉默機率。"
+        },
+        "category": "武器",
+        "slot": "雙手槍",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 52,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 220,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/26019.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 130,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "26138": {
         "id": 26138,
         "name": {
@@ -89988,6 +94797,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "26146": {
+        "id": 26146,
+        "name": {
+            "zh_tw": "下級公會員治癒之杖",
+            "kr": "최면술사지팡이"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n治癒量10%。\\n技能後延遲減少5%。\\n無法破壞。\\n精煉每+1時，治癒量+1%、加速術、天使之賜福SP消耗量－2%。\\n精煉+7以上時，治癒量額外+5%。\\n精煉+9以上時，治癒量額外+10%，\\n精煉+10以上，使用治癒術以一定機率20秒內治癒量+25%，精煉每+1時，可額外+1%。\\nMATK + 125\\n系列 : 單手法杖 攻擊 : 70\\n重量 : 50\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n治癒量10%。\\n技能後延遲減少5%。\\n無法破壞。\\n精煉每+1時，治癒量+1%、加速術、天使之賜福SP消耗量－2%。\\n精煉+7以上時，治癒量額外+5%。\\n精煉+9以上時，治癒量額外+10%，\\n精煉+10以上，使用治癒術以一定機率20秒內治癒量+25%，精煉每+1時，可額外+1%。\\nMATK + 125"
+        },
+        "category": "武器",
+        "slot": "單手法杖",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 10,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 70,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/26146.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "26147": {
+        "id": 26147,
+        "name": {
+            "zh_tw": "下級公會員言靈魔杖",
+            "kr": "아크완드"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n無法破壞。\\n精煉每+1時，對玩家的魔法傷害再+1%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外忽視玩家的魔法防禦力5%。\\n精煉+9以上時，對玩家的魔法傷害再+5%\\n精煉+10以上，地元素領域的變動詠唱-30%，使用水元素領域、風元素領域、火元素領域時，所有魔法於10秒內減少礦石消耗1個。\\nMATK + 115\\n系列 : 單手法杖 攻擊 : 60\\n重量 : 50\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n無法破壞。\\n精煉每+1時，對玩家的魔法傷害再+1%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外忽視玩家的魔法防禦力5%。\\n精煉+9以上時，對玩家的魔法傷害再+5%\\n精煉+10以上，地元素領域的變動詠唱-30%，使用水元素領域、風元素領域、火元素領域時，所有魔法於10秒內減少礦石消耗1個。\\nMATK + 115"
+        },
+        "category": "武器",
+        "slot": "單手法杖",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 69,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 60,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/26147.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "26148": {
         "id": 26148,
         "name": {
@@ -90074,6 +94965,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "26210": {
+        "id": 26210,
+        "name": {
+            "zh_tw": "下級公會員細刃鞭子",
+            "kr": "라리어트"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內纏箭投擲傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和纏箭投擲的傷害額外增加。\\n系列 : 鞭子 攻擊 : 70\\n重量 : 40\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 舞孃系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內纏箭投擲傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和纏箭投擲的傷害額外增加。"
+        },
+        "category": "武器",
+        "slot": "鞭子",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 14,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 70,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "舞孃系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/26210.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 40,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -90460,6 +95392,259 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "27269": {
+        "id": 27269,
+        "name": {
+            "zh_tw": "冰暴騎士卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "一般物理攻擊時，以一定機率對敵人施放暴風雪1Lv。\\n物理攻擊時，以一定機率使敵人冰凍。\\n暴風雪擊中敵人時，以一定機率使敵人石化、中毒、黑暗、混亂。(武器精煉度提升時，觸發機率提升)\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "一般物理攻擊時，以一定機率對敵人施放暴風雪1Lv。\\n物理攻擊時，以一定機率使敵人冰凍。\\n暴風雪擊中敵人時，以一定機率使敵人石化、中毒、黑暗、混亂。(武器精煉度提升時，觸發機率提升)"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "暴風雪的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/27269.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1251,
+                "monster_name": "冰暴騎士",
+                "rate": 0.01,
+                "image_url": "images/monsters/1251.gif"
+            }
+        ]
+    },
+    "27270": {
+        "id": 27270,
+        "name": {
+            "zh_tw": "超異小丑卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "盾牌精煉每+1時，MDEF+10。和裘卡卡片一起裝備時物理、魔法攻擊時，以一定機率7秒內變身為裘卡。變身期間ATK+70、MATK+70、每1秒失去HP 77、SP 7。\\n系列 : 卡片\\n裝備 : 盾牌\\n重量 : 1",
+            "official_clean": "盾牌精煉每+1時，MDEF+10。和裘卡卡片一起裝備時物理、魔法攻擊時，以一定機率7秒內變身為裘卡。變身期間ATK+70、MATK+70、每1秒失去HP 77、SP 7。"
+        },
+        "category": "卡片",
+        "slot": "盾牌",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "惡魔小丑的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "盾牌",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/27270.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "27271": {
+        "id": 27271,
+        "name": {
+            "zh_tw": "伊莉莎白卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "盾牌精煉每+1時，MATK+4和巫婆卡片一起裝備時，鎧甲精煉度每+1，INT+1。\\n系列 : 卡片\\n裝備 : 盾牌\\n重量 : 1",
+            "official_clean": "盾牌精煉每+1時，MATK+4和巫婆卡片一起裝備時，鎧甲精煉度每+1，INT+1。"
+        },
+        "category": "卡片",
+        "slot": "盾牌",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "陰毒的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "盾牌",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/27271.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "27272": {
+        "id": 27272,
+        "name": {
+            "zh_tw": "珍妮佛卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "受到的遠距離物理傷害-5%。鎧甲精煉每+1時，受遠距離物理傷害額外-1%。\\n和梅納海葵卡片一起裝備時，防盾精煉每+2時，ASPD+1。\\n系列 : 卡片\\n裝備 : 鎧甲\\n重量 : 1",
+            "official_clean": "受到的遠距離物理傷害-5%。鎧甲精煉每+1時，受遠距離物理傷害額外-1%。\\n和梅納海葵卡片一起裝備時，防盾精煉每+2時，ASPD+1。"
+        },
+        "category": "卡片",
+        "slot": "鎧甲",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "毒死的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鎧甲",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/27272.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "27273": {
+        "id": 27273,
+        "name": {
+            "zh_tw": "獸人將軍卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "武器為鈍器時，精煉每+1，CRI+1，\\n精煉+10時，必殺攻擊傷害+10%。\\n武器為拳套時，精煉每+1，攻擊速度增加（攻擊後延遲-1%），\\n精煉+10時，ASPD+2。\\n和獸人戰士長卡片一起裝備時，\\nASPD+2、ATK+25。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+            "official_clean": "武器為鈍器時，精煉每+1，CRI+1，\\n精煉+10時，必殺攻擊傷害+10%。\\n武器為拳套時，精煉每+1，攻擊速度增加（攻擊後延遲-1%），\\n精煉+10時，ASPD+2。\\n和獸人戰士長卡片一起裝備時，\\nASPD+2、ATK+25。"
+        },
+        "category": "卡片",
+        "slot": "武器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "動物殺手的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "武器",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/27273.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "27274": {
+        "id": 27274,
+        "name": {
+            "zh_tw": "吉克勞斯甲蟲卡片",
+            "kr": "이름없는카드"
+        },
+        "description": {
+            "official": "ASPD + 2。和捲甲蟲卡片一起裝備時\\n盾牌精煉度每提高1點，FLEE + 2。\\n系列 : 卡片\\n裝備 : 鞋子\\n重量 : 1",
+            "official_clean": "ASPD + 2。和捲甲蟲卡片一起裝備時\\n盾牌精煉度每提高1點，FLEE + 2。"
+        },
+        "category": "卡片",
+        "slot": "鞋子",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "瘋蟲的",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "鞋子",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/27274.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "27275": {
         "id": 27275,
         "name": {
@@ -90597,6 +95782,47 @@ export const itemsData = {
             }
         ]
     },
+    "28036": {
+        "id": 28036,
+        "name": {
+            "zh_tw": "下級公會員秘刃闇嘯",
+            "kr": "자마다르"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，再額外忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，一定機率於7秒內必殺攻擊傷害+20%、依照武器的精煉度再+2%。\\n系列 : 拳刃 攻擊 : 125\\n重量 : 60\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 刺客系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，再額外忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，一定機率於7秒內必殺攻擊傷害+20%、依照武器的精煉度再+2%。"
+        },
+        "category": "武器",
+        "slot": "拳刃",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 16,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 125,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "刺客系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/28036.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 60,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "28129": {
         "id": 28129,
         "name": {
@@ -90635,6 +95861,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "28133": {
+        "id": 28133,
+        "name": {
+            "zh_tw": "下級公會員雙手斧",
+            "kr": "투핸드액스"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n無法破壞。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外忽視玩家物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%、一般物理攻擊時，以一定機率觸發[致命傷口]，提高攻擊速度(攻擊後延遲降低10%)。\\n精煉+10以上，使用凶砍時，20秒內物理攻擊，以低機率破壞敵人的武器，依照精煉度提高破壞機率。\\n系列 : 雙手斧 攻擊 : 175\\n重量 : 150\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 鐵匠系列、鍊金術師系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n無法破壞。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外忽視玩家物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%、一般物理攻擊時，以一定機率觸發[致命傷口]，提高攻擊速度(攻擊後延遲降低10%)。\\n精煉+10以上，使用凶砍時，20秒內物理攻擊，以低機率破壞敵人的武器，依照精煉度提高破壞機率。"
+        },
+        "category": "武器",
+        "slot": "雙手斧",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 7,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 175,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "鐵匠系列、鍊金術師系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/28133.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 150,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -91093,6 +96360,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "28751": {
+        "id": 28751,
+        "name": {
+            "zh_tw": "下級公會員長柄短劍",
+            "kr": "그라디우스"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用隱匿時，20秒內潛擊攻擊力+50%、HIT+30。\\n系列 : 短劍 攻擊 : 90\\n重量 : 30\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 初學者系列、劍士系列、弓箭手系列、盜賊系列、魔法師系列、商人系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用隱匿時，20秒內潛擊攻擊力+50%、HIT+30。"
+        },
+        "category": "武器",
+        "slot": "短劍",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 33,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 90,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、劍士系列、弓箭手系列、盜賊系列、魔法師系列、商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/28751.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -95688,6 +100996,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "31168": {
+        "id": 31168,
+        "name": {
+            "zh_tw": "(服飾)羊毛保暖耳罩(藍)",
+            "kr": "무통라이프_파랑"
+        },
+        "description": {
+            "official": "用羊毛和羊角製成的柔軟保暖藍色耳罩。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭中 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "用羊毛和羊角製成的柔軟保暖藍色耳罩。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1573,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31168.gif",
+        "icon_url": "/images/items/31168.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "31176": {
         "id": 31176,
         "name": {
@@ -96259,6 +101608,211 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "31227": {
+        "id": 31227,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(紅)",
+            "kr": "Long_Twin_RD"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1622,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31227.gif",
+        "icon_url": "/images/items/31227.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "31228": {
+        "id": 31228,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(黃)",
+            "kr": "Long_Twin_YL"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1623,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31228.gif",
+        "icon_url": "/images/items/31228.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "31229": {
+        "id": 31229,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(綠)",
+            "kr": "Long_Twin_GN"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1624,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31229.gif",
+        "icon_url": "/images/items/31229.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "31230": {
+        "id": 31230,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(黑)",
+            "kr": "Long_Twin_BL"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1625,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31230.gif",
+        "icon_url": "/images/items/31230.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "31231": {
+        "id": 31231,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(白)",
+            "kr": "Long_Twin_WH"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1626,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31231.gif",
+        "icon_url": "/images/items/31231.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -96952,6 +102506,47 @@ export const itemsData = {
         "can_auction": true,
         "can_guild_storage": true,
         "lastupdated": "2025-12-12",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "31390": {
+        "id": 31390,
+        "name": {
+            "zh_tw": "(服飾)冰雪祈願帽",
+            "kr": "Let_It_Snow"
+        },
+        "description": {
+            "official": "在冬天時為了祈求降雪而特別製作的帽子，下雪的樣子會讓人聯想到暴風雪技能。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+            "official_clean": "在冬天時為了祈求降雪而特別製作的帽子，下雪的樣子會讓人聯想到暴風雪技能。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1690,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31390.gif",
+        "icon_url": "/images/items/31390.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 0,
             "buy_price": "",
@@ -98189,6 +103784,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "31588": {
+        "id": 31588,
+        "name": {
+            "zh_tw": "(服飾)雪花飄飄頭飾",
+            "kr": "SnowFlake_Tiara"
+        },
+        "description": {
+            "official": "彷彿飄在頭上的雪花，還會發出美麗的光芒。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "彷彿飄在頭上的雪花，還會發出美麗的光芒。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1799,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31588.gif",
+        "icon_url": "/images/items/31588.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "31602": {
         "id": 31602,
         "name": {
@@ -99378,6 +105014,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "31850": {
+        "id": 31850,
+        "name": {
+            "zh_tw": "(服飾)聖母的贊禮",
+            "kr": "Gift_Of_Panagia"
+        },
+        "description": {
+            "official": "被神聖的姑娘祝福的服飾帽子。\\n治癒能力有了飛躍性的提升效果。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+            "official_clean": "被神聖的姑娘祝福的服飾帽子。\\n治癒能力有了飛躍性的提升效果。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1948,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/31850.gif",
+        "icon_url": "/images/items/31850.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "31853": {
         "id": 31853,
         "name": {
@@ -100403,6 +106080,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "32015": {
+        "id": 32015,
+        "name": {
+            "zh_tw": "下級公會員步兵長矛",
+            "kr": "파이크"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，挑釁成功時，10秒內連刺攻擊傷害+20%、使用連刺攻擊時，對敵人以一定機率施予昏迷、黑暗，依照長槍使用熟練度等級刺攻擊的傷害、昏迷、黑暗機率額外增加。\\n系列 : 單手長槍 攻擊 : 110\\n重量 : 90\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，挑釁成功時，10秒內連刺攻擊傷害+20%、使用連刺攻擊時，對敵人以一定機率施予昏迷、黑暗，依照長槍使用熟練度等級刺攻擊的傷害、昏迷、黑暗機率額外增加。"
+        },
+        "category": "單手長槍",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 4,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/32015.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 90,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "32103": {
+        "id": 32103,
+        "name": {
+            "zh_tw": "下級公會員吉他",
+            "kr": "베이스기타"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內樂器攻擊傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和樂器攻擊傷害額外增加。\\n系列 : 樂器 攻擊 : 70\\n重量 : 40\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 吟遊詩人系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內樂器攻擊傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和樂器攻擊傷害額外增加。"
+        },
+        "category": "武器",
+        "slot": "樂器",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 13,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 70,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "吟遊詩人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/32103.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 40,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "32200": {
         "id": 32200,
         "name": {
@@ -100697,6 +106456,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "100110": {
+        "id": 100110,
+        "name": {
+            "zh_tw": "豐厚的公會鑄幣袋子",
+            "kr": "Woe_Coin_Pack2_Z"
+        },
+        "description": {
+            "official": "裝滿很多公會基地鑄幣，似乎快要爆開的袋子。\\n使用的話會出現隨機數量的公會基地鑄幣。\\n「注意－開啟箱子時，超過重量或限制持有數量的話，道具可能會損失！」\\n_\\n重量 : 20",
+            "official_clean": "裝滿很多公會基地鑄幣，似乎快要爆開的袋子。\\n使用的話會出現隨機數量的公會基地鑄幣。\\n「注意－開啟箱子時，超過重量或限制持有數量的話，道具可能會損失！」"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/100110.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 20,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "100115": {
+        "id": 100115,
+        "name": {
+            "zh_tw": "老練公會員附魔箱",
+            "kr": "상인전직상자"
+        },
+        "description": {
+            "official": "裝有可賦予中級公會員道具附魔的箱子。\\n開啟前無法得知裝有什麼。\\n_\\n重量 : 10",
+            "official_clean": "裝有可賦予中級公會員道具附魔的箱子。\\n開啟前無法得知裝有什麼。"
+        },
+        "category": "消耗/恢復",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/100115.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 10,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "100174": {
         "id": 100174,
         "name": {
@@ -100950,8 +106791,8 @@ export const itemsData = {
             "kr": "응급처치상자"
         },
         "description": {
-            "official": "大容量城戰紫色藥水50個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
-            "official_clean": "大容量城戰紫色藥水50個的箱子\\n（*注意*在不是攻城戰地區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
+            "official": "大容量城戰紫色藥水50個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）\\n_\\n重量 : 20",
+            "official_clean": "大容量城戰紫色藥水50個的箱子\\n（*注意*在不是WOE-FE戰區、PVP地區、村落等等的地方喝下也沒有任何效果。）"
         },
         "category": "其他",
         "slot": "-",
@@ -100976,7 +106817,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 20,
             "buy_price": 0,
@@ -105746,12 +111587,6 @@ export const itemsData = {
                 "image_url": "images/monsters/1244.gif"
             },
             {
-                "monster_id": 1588,
-                "monster_name": "聖誕獸人戰士",
-                "rate": "???",
-                "image_url": "images/monsters/1588.gif"
-            },
-            {
                 "monster_id": 1245,
                 "monster_name": "聖誕哥布靈",
                 "rate": "???",
@@ -105762,6 +111597,12 @@ export const itemsData = {
                 "monster_name": "超級聖誕老公公",
                 "rate": "???",
                 "image_url": "images/monsters/1247.gif"
+            },
+            {
+                "monster_id": 1588,
+                "monster_name": "聖誕獸人戰士",
+                "rate": "???",
+                "image_url": "images/monsters/1588.gif"
             }
         ]
     },
@@ -105860,6 +111701,334 @@ export const itemsData = {
                 "image_url": "images/monsters/1247.gif"
             }
         ]
+    },
+    "106110": {
+        "id": 106110,
+        "name": {
+            "zh_tw": "[卡崙]討伐獎勵箱(一般)",
+            "kr": "ZTW_CE_Maya_N_B"
+        },
+        "description": {
+            "official": "擊退卡崙之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥卡崙娃娃 1個\\n卡崙討伐獎勵箱(一般) 2個\\n鐵匠的祝福 1個\\n鐵匠的祝福粉末 2個\\n鐵匠的祝福粉末 3個\\n天地樹祝福 1個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[卡崙]氣息碎片 1個\\n[卡崙]氣息碎片 2個\\n[卡崙]氣息碎片 3個\\n重量：0",
+            "official_clean": "擊退卡崙之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥卡崙娃娃 1個\\n卡崙討伐獎勵箱(一般) 2個\\n鐵匠的祝福 1個\\n鐵匠的祝福粉末 2個\\n鐵匠的祝福粉末 3個\\n天地樹祝福 1個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[卡崙]氣息碎片 1個\\n[卡崙]氣息碎片 2個\\n[卡崙]氣息碎片 3個"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106110.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106111": {
+        "id": 106111,
+        "name": {
+            "zh_tw": "[冰暴騎士]討伐獎勵箱(一般)",
+            "kr": "ZTW_CE_Maya_N_B"
+        },
+        "description": {
+            "official": "擊退冰暴騎士之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥冰暴騎士娃娃 1個\\n冰暴騎士討伐獎勵箱(一般) 2個\\n鐵匠的祝福 1個\\n鐵匠的祝福粉末 2個\\n鐵匠的祝福粉末 3個\\n天地樹祝福 1個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[冰暴騎士]氣息碎片 1個\\n[冰暴騎士]氣息碎片 2個\\n[冰暴騎士]氣息碎片 3個\\n重量：0",
+            "official_clean": "擊退冰暴騎士之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥冰暴騎士娃娃 1個\\n冰暴騎士討伐獎勵箱(一般) 2個\\n鐵匠的祝福 1個\\n鐵匠的祝福粉末 2個\\n鐵匠的祝福粉末 3個\\n天地樹祝福 1個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[冰暴騎士]氣息碎片 1個\\n[冰暴騎士]氣息碎片 2個\\n[冰暴騎士]氣息碎片 3個"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106111.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106112": {
+        "id": 106112,
+        "name": {
+            "zh_tw": "[卡崙]討伐獎勵箱(高級)",
+            "kr": "ZTW_CE_Maya_H_B"
+        },
+        "description": {
+            "official": "擊退卡崙之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥卡崙娃娃 1個\\n卡崙討伐獎勵箱(一般) 3個\\n鐵匠的祝福 2個\\n鐵匠的祝福粉末 3個\\n鐵匠的祝福粉末 4個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[卡崙]氣息碎片 2個\\n[卡崙]氣息碎片 3個\\n重量：0",
+            "official_clean": "擊退卡崙之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥卡崙娃娃 1個\\n卡崙討伐獎勵箱(一般) 3個\\n鐵匠的祝福 2個\\n鐵匠的祝福粉末 3個\\n鐵匠的祝福粉末 4個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[卡崙]氣息碎片 2個\\n[卡崙]氣息碎片 3個"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106112.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106114": {
+        "id": 106114,
+        "name": {
+            "zh_tw": "[冰暴騎士]討伐獎勵箱(高級)",
+            "kr": "ZTW_CE_Maya_H_B"
+        },
+        "description": {
+            "official": "擊退冰暴騎士之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥冰暴騎士娃娃 1個\\n冰暴騎士討伐獎勵箱(一般) 3個\\n鐵匠的祝福 2個\\n鐵匠的祝福粉末 3個\\n鐵匠的祝福粉末 4個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[冰暴騎士]氣息碎片 2個\\n[冰暴騎士]氣息碎片 3個\\n重量：0",
+            "official_clean": "擊退冰暴騎士之勇者所獲得的證明，開啟時隨機獲得以下內容其一。\\n戰鬥冰暴騎士娃娃 1個\\n冰暴騎士討伐獎勵箱(一般) 3個\\n鐵匠的祝福 2個\\n鐵匠的祝福粉末 3個\\n鐵匠的祝福粉末 4個\\n天地樹祝福 2個\\n天地樹祝福 3個\\n[冰暴騎士]氣息碎片 2個\\n[冰暴騎士]氣息碎片 3個"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106114.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106128": {
+        "id": 106128,
+        "name": {
+            "zh_tw": "白雪禮包A",
+            "kr": "예술축제선물상자"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)魅力雪花碎片\\n(服飾)雪人帽\\n(服飾)棕熊背包\\n重量 : 0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)魅力雪花碎片\\n(服飾)雪人帽\\n(服飾)棕熊背包"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106128.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106129": {
+        "id": 106129,
+        "name": {
+            "zh_tw": "馬尾禮包A",
+            "kr": "선물상자_3"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)俏麗雙髮尾(黃)\\n(服飾)俏麗雙髮尾(綠)\\n(服飾)俏麗雙髮尾(白)\\n重量 : 0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)俏麗雙髮尾(黃)\\n(服飾)俏麗雙髮尾(綠)\\n(服飾)俏麗雙髮尾(白)"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106129.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106130": {
+        "id": 106130,
+        "name": {
+            "zh_tw": "蝴蝶結禮包A",
+            "kr": "응급처치상자"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)聖母的慈愛\\n(服飾)聖母的贊禮\\n(服飾)閃閃發光聖誕樹\\n\\n重量 : 0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)聖母的慈愛\\n(服飾)聖母的贊禮\\n(服飾)閃閃發光聖誕樹"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106130.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "106131": {
+        "id": 106131,
+        "name": {
+            "zh_tw": "愛心禮包A",
+            "kr": "Re_Costama_Box_2023_1"
+        },
+        "description": {
+            "official": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)愛心兔兔帽T\\n(服飾)愛心髮夾\\n(服飾)愛的小雞帽子\\n重量 : 0",
+            "official_clean": "開啟並隨機獲得以下道具一種\\n2025紀念代幣x1\\n2025紀念代幣x2\\n2025紀念代幣x3\\n(服飾)愛心兔兔帽T\\n(服飾)愛心髮夾\\n(服飾)愛的小雞帽子"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/106131.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
     },
     "200264": {
         "id": 200264,
@@ -108236,6 +114405,1892 @@ export const itemsData = {
             "weight": 1,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "310026": {
+        "id": 310026,
+        "name": {
+            "zh_tw": "力量：暴風雪1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n暴風雪傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n暴風雪傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310026.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310027": {
+        "id": 310027,
+        "name": {
+            "zh_tw": "力量：隕石術1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n隕石術傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n隕石術傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310027.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310028": {
+        "id": 310028,
+        "name": {
+            "zh_tw": "力量：怒雷強擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n怒雷強擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n怒雷強擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310028.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310029": {
+        "id": 310029,
+        "name": {
+            "zh_tw": "力量：十字驅魔攻擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n十字驅魔攻擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n十字驅魔攻擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310029.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310030": {
+        "id": 310030,
+        "name": {
+            "zh_tw": "力量：黑暗瞬間1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n黑暗瞬間傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n黑暗瞬間傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310030.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310031": {
+        "id": 310031,
+        "name": {
+            "zh_tw": "力量：螺旋擊刺1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n螺旋擊刺傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n螺旋擊刺傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310031.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310032": {
+        "id": 310032,
+        "name": {
+            "zh_tw": "力量：強酸火煙瓶投擲1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n強酸火煙瓶投擲傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n強酸火煙瓶投擲傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310032.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310033": {
+        "id": 310033,
+        "name": {
+            "zh_tw": "力量：連刺攻擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n連刺攻擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n連刺攻擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310033.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310034": {
+        "id": 310034,
+        "name": {
+            "zh_tw": "力量：怪物互擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n怪物互擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n怪物互擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310034.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310035": {
+        "id": 310035,
+        "name": {
+            "zh_tw": "力量：水球術1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n水球術傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n水球術傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310035.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310036": {
+        "id": 310036,
+        "name": {
+            "zh_tw": "力量：音速投擲1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n音速投擲傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n音速投擲傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310036.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310037": {
+        "id": 310037,
+        "name": {
+            "zh_tw": "力量：連續盾擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n連續盾擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n連續盾擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310037.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310038": {
+        "id": 310038,
+        "name": {
+            "zh_tw": "力量：迴旋盾擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n迴旋盾擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n迴旋盾擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310038.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310039": {
+        "id": 310039,
+        "name": {
+            "zh_tw": "力量：聖十字攻擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n聖十字攻擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n聖十字攻擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310039.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310040": {
+        "id": 310040,
+        "name": {
+            "zh_tw": "力量：獵鷹突擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n獵鷹突擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n獵鷹突擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310040.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310041": {
+        "id": 310041,
+        "name": {
+            "zh_tw": "力量：閃電衝擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n閃電衝擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n閃電衝擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310041.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310042": {
+        "id": 310042,
+        "name": {
+            "zh_tw": "力量：阿修羅霸凰拳1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n阿修羅霸凰拳傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n阿修羅霸凰拳傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310042.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310043": {
+        "id": 310043,
+        "name": {
+            "zh_tw": "力量：浸透勁1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n浸透勁傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n浸透勁傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310043.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310044": {
+        "id": 310044,
+        "name": {
+            "zh_tw": "力量：奧義箭亂舞1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n奧義箭亂舞傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n奧義箭亂舞傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310044.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310045": {
+        "id": 310045,
+        "name": {
+            "zh_tw": "力量：二連矢1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n二連矢傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n二連矢傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310045.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310047": {
+        "id": 310047,
+        "name": {
+            "zh_tw": "力量：銳利射擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n銳利射擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n銳利射擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310047.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310048": {
+        "id": 310048,
+        "name": {
+            "zh_tw": "力量：念力連擊1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n念力連擊傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n念力連擊傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310048.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310049": {
+        "id": 310049,
+        "name": {
+            "zh_tw": "力量：重力原野1Lv",
+            "kr": "마나의파편홍련"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n重力原野傷害+7%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n重力原野傷害+7%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310049.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310050": {
+        "id": 310050,
+        "name": {
+            "zh_tw": "抵抗：暴風雪1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受暴風雪的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受暴風雪的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310050.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310051": {
+        "id": 310051,
+        "name": {
+            "zh_tw": "抵抗：隕石術1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受隕石術的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受隕石術的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310051.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310052": {
+        "id": 310052,
+        "name": {
+            "zh_tw": "抵抗：怒雷強擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受怒雷強擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受怒雷強擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310052.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310053": {
+        "id": 310053,
+        "name": {
+            "zh_tw": "抵抗：十字驅魔攻擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受十字驅魔攻擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受十字驅魔攻擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310053.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310054": {
+        "id": 310054,
+        "name": {
+            "zh_tw": "抵抗：黑暗瞬間1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受黑暗瞬間的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受黑暗瞬間的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310054.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310055": {
+        "id": 310055,
+        "name": {
+            "zh_tw": "抵抗：螺旋擊刺1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受螺旋擊刺的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受螺旋擊刺的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310055.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310056": {
+        "id": 310056,
+        "name": {
+            "zh_tw": "抵抗：強酸火煙瓶投擲1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受強酸火煙瓶投擲的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受強酸火煙瓶投擲的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310056.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310057": {
+        "id": 310057,
+        "name": {
+            "zh_tw": "抵抗：連刺攻擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受連刺攻擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受連刺攻擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310057.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310058": {
+        "id": 310058,
+        "name": {
+            "zh_tw": "抵抗：怪物互擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受怪物互擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受怪物互擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310058.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310059": {
+        "id": 310059,
+        "name": {
+            "zh_tw": "抵抗：水球術1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受水球術的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受水球術的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310059.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310060": {
+        "id": 310060,
+        "name": {
+            "zh_tw": "抵抗：音速投擲1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受音速投擲的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受音速投擲的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310060.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310061": {
+        "id": 310061,
+        "name": {
+            "zh_tw": "抵抗：連續盾擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受連續盾擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受連續盾擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310061.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310062": {
+        "id": 310062,
+        "name": {
+            "zh_tw": "抵抗：迴旋盾擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受迴旋盾擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受迴旋盾擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310062.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310063": {
+        "id": 310063,
+        "name": {
+            "zh_tw": "抵抗：聖十字攻擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受聖十字攻擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受聖十字攻擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310063.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310064": {
+        "id": 310064,
+        "name": {
+            "zh_tw": "抵抗：獵鷹突擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受獵鷹突擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受獵鷹突擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310064.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310065": {
+        "id": 310065,
+        "name": {
+            "zh_tw": "抵抗：閃電衝擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受閃電衝擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受閃電衝擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310065.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310066": {
+        "id": 310066,
+        "name": {
+            "zh_tw": "抵抗：阿修羅霸凰拳1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受阿修羅霸凰拳的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受阿修羅霸凰拳的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310066.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310067": {
+        "id": 310067,
+        "name": {
+            "zh_tw": "抵抗：浸透勁1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受浸透勁的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受浸透勁的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310067.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310068": {
+        "id": 310068,
+        "name": {
+            "zh_tw": "抵抗：奧義箭亂舞1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受奧義箭亂舞的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受奧義箭亂舞的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310068.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310069": {
+        "id": 310069,
+        "name": {
+            "zh_tw": "抵抗：二連矢1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受二連矢的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受二連矢的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310069.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310071": {
+        "id": 310071,
+        "name": {
+            "zh_tw": "抵抗：銳利射擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受銳利射擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受銳利射擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310071.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310072": {
+        "id": 310072,
+        "name": {
+            "zh_tw": "抵抗：念力連擊1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受念力連擊的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受念力連擊的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310072.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "310073": {
+        "id": 310073,
+        "name": {
+            "zh_tw": "抵抗：重力原野1Lv",
+            "kr": "Sea_Sapphire"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區專用屬性」\\n受重力原野的傷害-15%。",
+            "official_clean": "「※WOE-FE戰區專用屬性」\\n受重力原野的傷害-15%。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/310073.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -112351,12 +120406,6 @@ export const itemsData = {
                 "monster_name": "小雞",
                 "rate": "???",
                 "image_url": "images/monsters/1049.gif"
-            },
-            {
-                "monster_id": 1050,
-                "monster_name": "蛋殼小雞",
-                "rate": "???",
-                "image_url": "images/monsters/1050.gif"
             }
         ]
     },
@@ -118713,7 +126762,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 0
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1198,
+                "monster_name": "暗黑祭司",
+                "rate": "???",
+                "image_url": "images/monsters/1198.gif"
+            }
+        ]
     },
     "401077": {
         "id": 401077,
@@ -120957,6 +129013,416 @@ export const itemsData = {
         "can_auction": true,
         "can_guild_storage": true,
         "lastupdated": "2025-12-12",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401150": {
+        "id": 401150,
+        "name": {
+            "zh_tw": "(服飾)聖母的贊禮(歸屬)",
+            "kr": "Gift_Of_Panagia"
+        },
+        "description": {
+            "official": "被神聖的姑娘祝福的服飾帽子。\\n治癒能力有了飛躍性的提升效果。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+            "official_clean": "被神聖的姑娘祝福的服飾帽子。\\n治癒能力有了飛躍性的提升效果。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1948,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401150.gif",
+        "icon_url": "/images/items/401150.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401151": {
+        "id": 401151,
+        "name": {
+            "zh_tw": "(服飾)閃閃發光聖誕樹(歸屬)",
+            "kr": "미니트리"
+        },
+        "description": {
+            "official": "在頭上閃閃發光的小型聖誕樹。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "在頭上閃閃發光的小型聖誕樹。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 727,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401151.gif",
+        "icon_url": "/images/items/401151.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401152": {
+        "id": 401152,
+        "name": {
+            "zh_tw": "(服飾)雪人帽(歸屬)",
+            "kr": "눈사람모자"
+        },
+        "description": {
+            "official": "能夠感受到冬季氣氛的雪人帽子。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "能夠感受到冬季氣氛的雪人帽子。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 616,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401152.gif",
+        "icon_url": "/images/items/401152.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401153": {
+        "id": 401153,
+        "name": {
+            "zh_tw": "(服飾)愛心髮夾(歸屬)",
+            "kr": "하트머리핀"
+        },
+        "description": {
+            "official": "用表示愛情的心形標誌組合而成的可愛髮夾，讓佩戴者看起來有小巧玲瓏的魅力。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "用表示愛情的心形標誌組合而成的可愛髮夾，讓佩戴者看起來有小巧玲瓏的魅力。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 126,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401153.gif",
+        "icon_url": "/images/items/401153.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401154": {
+        "id": 401154,
+        "name": {
+            "zh_tw": "(服飾)愛的小雞帽子(歸屬)",
+            "kr": "사랑의병아리모자"
+        },
+        "description": {
+            "official": "用愛的力量來變色的小雞。\\n需要細心的照顧。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "用愛的力量來變色的小雞。\\n需要細心的照顧。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 500,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401154.gif",
+        "icon_url": "/images/items/401154.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401155": {
+        "id": 401155,
+        "name": {
+            "zh_tw": "(服飾)鈴鐺髮帶(歸屬)",
+            "kr": "방울리본"
+        },
+        "description": {
+            "official": "尾端有小鈴鐺的可愛髮夾，鈴鐺叮噹叮噹地響。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "尾端有小鈴鐺的可愛髮夾，鈴鐺叮噹叮噹地響。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 388,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401155.gif",
+        "icon_url": "/images/items/401155.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401156": {
+        "id": 401156,
+        "name": {
+            "zh_tw": "(服飾)冰雪祈願帽(歸屬)",
+            "kr": "Let_It_Snow"
+        },
+        "description": {
+            "official": "在冬天時為了祈求降雪而特別製作的帽子，下雪的樣子會讓人聯想到暴風雪技能。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+            "official_clean": "在冬天時為了祈求降雪而特別製作的帽子，下雪的樣子會讓人聯想到暴風雪技能。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1690,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401156.gif",
+        "icon_url": "/images/items/401156.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401157": {
+        "id": 401157,
+        "name": {
+            "zh_tw": "(服飾)聖誕波利帽子(歸屬)",
+            "kr": "산타포링모자"
+        },
+        "description": {
+            "official": "波利戴著聖誕帽在頭上繃繃跳跳的樣子很可愛。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "波利戴著聖誕帽在頭上繃繃跳跳的樣子很可愛。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 387,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401157.gif",
+        "icon_url": "/images/items/401157.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401158": {
+        "id": 401158,
+        "name": {
+            "zh_tw": "(服飾)雪花飄飄頭飾(歸屬)",
+            "kr": "SnowFlake_Tiara"
+        },
+        "description": {
+            "official": "彷彿飄在頭上的雪花，還會發出美麗的光芒。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "彷彿飄在頭上的雪花，還會發出美麗的光芒。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1799,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401158.gif",
+        "icon_url": "/images/items/401158.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "401159": {
+        "id": 401159,
+        "name": {
+            "zh_tw": "(服飾)和平鴿帽子(歸屬)",
+            "kr": "비둘기모자"
+        },
+        "description": {
+            "official": "從魔術帽裡變出來的和平鴿子,\\n和平鴿的出現希望為世界帶來和平。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "從魔術帽裡變出來的和平鴿子,\\n和平鴿的出現希望為世界帶來和平。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1362,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/401159.gif",
+        "icon_url": "/images/items/401159.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 0,
             "buy_price": "",
@@ -125988,6 +134454,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "410557": {
+        "id": 410557,
+        "name": {
+            "zh_tw": "(服飾)羊毛保暖耳罩(藍)(歸屬)",
+            "kr": "무통라이프_파랑"
+        },
+        "description": {
+            "official": "用羊毛和羊角製成的柔軟保暖藍色耳罩。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭中 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "用羊毛和羊角製成的柔軟保暖藍色耳罩。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭中",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1573,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/410557.gif",
+        "icon_url": "/images/items/410557.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "420010": {
         "id": 420010,
         "name": {
@@ -126518,6 +135025,88 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "420103": {
+        "id": 420103,
+        "name": {
+            "zh_tw": "(服飾)魅力雪花碎片",
+            "kr": "챰오브미스틱프로즌"
+        },
+        "description": {
+            "official": "蘊含水精靈力量的符咒。\\n含在嘴中有清涼感。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "蘊含水精靈力量的符咒。\\n含在嘴中有清涼感。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1262,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420103.gif",
+        "icon_url": "/images/items/420103.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420111": {
+        "id": 420111,
+        "name": {
+            "zh_tw": "(服飾)俏麗搖滾短髮",
+            "kr": "C_Rocking_Short"
+        },
+        "description": {
+            "official": "反戴可以感受與平時截然不同髮型的假髮。\\n層次短髮給人帥氣的搖滾感。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "反戴可以感受與平時截然不同髮型的假髮。\\n層次短髮給人帥氣的搖滾感。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 2225,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420111.gif",
+        "icon_url": "/images/items/420111.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -133813,6 +142402,334 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "420704": {
+        "id": 420704,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(黃)(歸屬)",
+            "kr": "Long_Twin_YL"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1623,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420704.gif",
+        "icon_url": "/images/items/420704.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420705": {
+        "id": 420705,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(綠)(歸屬)",
+            "kr": "Long_Twin_GN"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1624,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420705.gif",
+        "icon_url": "/images/items/420705.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420706": {
+        "id": 420706,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(白)(歸屬)",
+            "kr": "Long_Twin_WH"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1626,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420706.gif",
+        "icon_url": "/images/items/420706.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420707": {
+        "id": 420707,
+        "name": {
+            "zh_tw": "(服飾)魅力雪花碎片(歸屬)",
+            "kr": "챰오브미스틱프로즌"
+        },
+        "description": {
+            "official": "蘊含水精靈力量的符咒。\\n含在嘴中有清涼感。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "蘊含水精靈力量的符咒。\\n含在嘴中有清涼感。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1262,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420707.gif",
+        "icon_url": "/images/items/420707.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420708": {
+        "id": 420708,
+        "name": {
+            "zh_tw": "(服飾)冷空氣(歸屬)",
+            "kr": "냉기입김"
+        },
+        "description": {
+            "official": "天氣實在太冷了，從嘴巴吐出來的氣息都能看到白霧了呢。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "天氣實在太冷了，從嘴巴吐出來的氣息都能看到白霧了呢。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 885,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420708.gif",
+        "icon_url": "/images/items/420708.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420709": {
+        "id": 420709,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(黑)(歸屬)",
+            "kr": "Long_Twin_BL"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1625,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420709.gif",
+        "icon_url": "/images/items/420709.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420710": {
+        "id": 420710,
+        "name": {
+            "zh_tw": "(服飾)俏麗雙髮尾(紅)(歸屬)",
+            "kr": "Long_Twin_RD"
+        },
+        "description": {
+            "official": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "黏在頭髮上時總能感受到不同造型的裝飾頭髮。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 1622,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420710.gif",
+        "icon_url": "/images/items/420710.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "420711": {
+        "id": 420711,
+        "name": {
+            "zh_tw": "(服飾)俏麗搖滾短髮(歸屬)",
+            "kr": "C_Rocking_Short"
+        },
+        "description": {
+            "official": "反戴可以感受與平時截然不同髮型的假髮。\\n層次短髮給人帥氣的搖滾感。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "反戴可以感受與平時截然不同髮型的假髮。\\n層次短髮給人帥氣的搖滾感。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 2225,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/420711.gif",
+        "icon_url": "/images/items/420711.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "430011": {
         "id": 430011,
         "name": {
@@ -134282,6 +143199,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "430023": {
+        "id": 430023,
+        "name": {
+            "zh_tw": "(服飾)聖母的慈愛(歸屬)",
+            "kr": "트라이앵글룬캡"
+        },
+        "description": {
+            "official": "滿溢著聖母慈愛的帽子，即使犧牲自我也要給予祝福。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上、頭中 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "滿溢著聖母慈愛的帽子，即使犧牲自我也要給予祝福。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上、頭中",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 610,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/430023.gif",
+        "icon_url": "/images/items/430023.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -135295,6 +144253,170 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "440033": {
+        "id": 440033,
+        "name": {
+            "zh_tw": "(服飾)愛心兔兔帽T(歸屬)",
+            "kr": "토끼보닛"
+        },
+        "description": {
+            "official": "有名的玩偶監製人嘔心瀝血所製作的兔兔玩偶帽。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上、頭中、頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "有名的玩偶監製人嘔心瀝血所製作的兔兔玩偶帽。"
+        },
+        "category": "服飾裝備",
+        "slot": "頭上、頭中、頭下",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 549,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/440033.gif",
+        "icon_url": "/images/items/440033.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "450012": {
+        "id": 450012,
+        "name": {
+            "zh_tw": "中級公會員外袍",
+            "kr": "Siege_Robe_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的外袍。\\n「※WOE-FE戰區追加屬性」\\nMHP+1050，MSP+150，MDEF + 5，玩家抗性+3%。\\n精煉+7以上時，MATK + 5%。\\n和中級公會員鞋子、圍巾一起裝備，精煉度總和為21以上時，MHP+1600，玩家抗性+7%。\\n系列 : 鎧甲  防禦 : 25\\n重量 : 50\\n需求等級 : 70\\n裝備 : 初學者系列、魔法師系列、服事系列",
+            "official_clean": "為了努力的公會員所設計的外袍。\\n「※WOE-FE戰區追加屬性」\\nMHP+1050，MSP+150，MDEF + 5，玩家抗性+3%。\\n精煉+7以上時，MATK + 5%。\\n和中級公會員鞋子、圍巾一起裝備，精煉度總和為21以上時，MHP+1600，玩家抗性+7%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 25,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/450012.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "450013": {
+        "id": 450013,
+        "name": {
+            "zh_tw": "中級公會員外套",
+            "kr": "Siege_Suits_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的外套。\\n「※WOE-FE戰區追加屬性」\\nMHP+1150，MSP+100，MDEF+5，玩家抗性+4%。\\n精煉+7以上時，ATK+5%。\\n和中級公會員長靴，斗篷一起裝備，精煉度總和為21以上時，MHP+1800，玩家抗性+8%。\\n系列 : 鎧甲  防禦 : 30\\n重量 : 150\\n需求等級 : 70\\n裝備 : 劍士系列，商人系列，盜賊系列，弓箭手系列",
+            "official_clean": "為了努力的公會員所設計的外套。\\n「※WOE-FE戰區追加屬性」\\nMHP+1150，MSP+100，MDEF+5，玩家抗性+4%。\\n精煉+7以上時，ATK+5%。\\n和中級公會員長靴，斗篷一起裝備，精煉度總和為21以上時，MHP+1800，玩家抗性+8%。"
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 30,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列，商人系列，盜賊系列，弓箭手系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/450013.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 150,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "450014": {
+        "id": 450014,
+        "name": {
+            "zh_tw": "中級公會員鎧甲",
+            "kr": "Siege_Plate_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的鎧甲。\\n「※WOE-FE戰區追加屬性」\\nMHP+1250，MSP+50，玩家抗性 + 5%。\\n精煉+7以上時，玩家抗性再+2%。\\n和中級公會員重靴，斗篷一起裝備，精煉度總和為21以上時，MHP+2000，玩家抗性+9%.\\n系列 : 鎧甲  防禦 : 50\\n重量 : 250\\n需求等級 : 70\\n裝備 : 劍士系列，商人系列",
+            "official_clean": "為了努力的公會員所設計的鎧甲。\\n「※WOE-FE戰區追加屬性」\\nMHP+1250，MSP+50，玩家抗性 + 5%。\\n精煉+7以上時，玩家抗性再+2%。\\n和中級公會員重靴，斗篷一起裝備，精煉度總和為21以上時，MHP+2000，玩家抗性+9%."
+        },
+        "category": "防具",
+        "slot": "鎧甲",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 50,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列，商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/450014.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 250,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "450310": {
         "id": 450310,
         "name": {
@@ -135382,6 +144504,12 @@ export const itemsData = {
                 "monster_name": "雄壯幽靈劍士",
                 "rate": 0.05,
                 "image_url": "images/monsters/2691.gif"
+            },
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": "???",
+                "image_url": "images/monsters/1213.gif"
             }
         ]
     },
@@ -135652,7 +144780,14 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": "???",
+                "image_url": "images/monsters/1102.gif"
+            }
+        ]
     },
     "450317": {
         "id": 450317,
@@ -135711,6 +144846,12 @@ export const itemsData = {
                 "monster_name": "憤怒狂暴野貓",
                 "rate": 0.05,
                 "image_url": "images/monsters/2616.gif"
+            },
+            {
+                "monster_id": 1269,
+                "monster_name": "古鐘魔",
+                "rate": "???",
+                "image_url": "images/monsters/1269.gif"
             }
         ]
     },
@@ -137154,6 +146295,129 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "470011": {
+        "id": 470011,
+        "name": {
+            "zh_tw": "中級公會員鞋子",
+            "kr": "Siege_Shoes_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的鞋子。\\n「※WOE-FE戰區追加屬性」\\nMHP+350，玩家抗性+1%，MDEF+7。\\n精煉+7以上時，MHP+10%，玩家抗性再+1%。\\n系列 : 鞋子  防禦 : 7\\n重量 : 20\\n需求等級 : 70\\n裝備 : 初學者系列、魔法師系列、服事系列",
+            "official_clean": "為了努力的公會員所設計的鞋子。\\n「※WOE-FE戰區追加屬性」\\nMHP+350，玩家抗性+1%，MDEF+7。\\n精煉+7以上時，MHP+10%，玩家抗性再+1%。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 7,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/470011.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 20,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "470012": {
+        "id": 470012,
+        "name": {
+            "zh_tw": "中級公會員長靴",
+            "kr": "Siege_Boots_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的長靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+550，玩家抗性+2%，MDEF+4。\\n精煉+7以上時，MHP+10%，玩家抗性再+1%。\\n系列 : 鞋子  防禦 : 10\\n重量 : 50\\n需求等級 : 70\\n裝備 : 劍士系列，商人系列，盜賊系列，弓箭手系列",
+            "official_clean": "為了努力的公會員所設計的長靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+550，玩家抗性+2%，MDEF+4。\\n精煉+7以上時，MHP+10%，玩家抗性再+1%。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 10,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列，商人系列，盜賊系列，弓箭手系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/470012.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "470013": {
+        "id": 470013,
+        "name": {
+            "zh_tw": "中級公會員重靴",
+            "kr": "Siege_Greave_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的重靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+750，玩家抗性+3%，MDEF+2。\\n精煉+7以上時，MHP+10%，玩家抗性再+1%。\\n系列 : 鞋子  防禦 : 15\\n重量 : 80\\n需求等級 : 70\\n裝備 : 劍士系列，商人系列",
+            "official_clean": "為了努力的公會員所設計的重靴。\\n「※WOE-FE戰區追加屬性」\\nMHP+750，玩家抗性+3%，MDEF+2。\\n精煉+7以上時，MHP+10%，玩家抗性再+1%。"
+        },
+        "category": "防具",
+        "slot": "鞋子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 15,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "劍士系列，商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/470013.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 80,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "470229": {
         "id": 470229,
         "name": {
@@ -137259,6 +146523,12 @@ export const itemsData = {
                 "monster_name": "綠餅人",
                 "rate": "???",
                 "image_url": "images/monsters/1265.gif"
+            },
+            {
+                "monster_id": 1305,
+                "monster_name": "狂暴蜈蚣",
+                "rate": 0.05,
+                "image_url": "images/monsters/1305.gif"
             },
             {
                 "monster_id": 2891,
@@ -137480,6 +146750,88 @@ export const itemsData = {
                 "image_url": "images/monsters/2869.gif"
             }
         ]
+    },
+    "480007": {
+        "id": 480007,
+        "name": {
+            "zh_tw": "中級公會員圍巾",
+            "kr": "Siege_Muffler_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的圍巾。\\n「※WOE-FE戰區追加屬性」\\nMHP + 250，玩家抗性+3%，MDEF+2。\\n精煉+7以上時，ATK+35、MATK+35。\\n系列 : 披肩  防禦 : 7\\n重量 : 15\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "為了努力的公會員所設計的圍巾。\\n「※WOE-FE戰區追加屬性」\\nMHP + 250，玩家抗性+3%，MDEF+2。\\n精煉+7以上時，ATK+35、MATK+35。"
+        },
+        "category": "防具",
+        "slot": "披肩",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 7,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/480007.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 15,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "480008": {
+        "id": 480008,
+        "name": {
+            "zh_tw": "中級公會員斗篷",
+            "kr": "Siege_Manteau_2Tier"
+        },
+        "description": {
+            "official": "為了努力的公會員所設計的斗篷。\\n「※WOE-FE戰區追加屬性」\\nMHP+350，玩家抗性+3%，MDEF+2。\\n精煉+7以上時，玩家抗性再+2%。\\n系列 : 披肩  防禦 : 16\\n重量 : 30\\n需求等級 : 70\\n裝備 : 全職業",
+            "official_clean": "為了努力的公會員所設計的斗篷。\\n「※WOE-FE戰區追加屬性」\\nMHP+350，玩家抗性+3%，MDEF+2。\\n精煉+7以上時，玩家抗性再+2%。"
+        },
+        "category": "防具",
+        "slot": "披肩",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 16,
+        "weapon_level": 0,
+        "required_level": 70,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/480008.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
     },
     "480117": {
         "id": 480117,
@@ -138264,12 +147616,6 @@ export const itemsData = {
         },
         "dropped_by": [
             {
-                "monster_id": 1117,
-                "monster_name": "闇神官",
-                "rate": 0.01,
-                "image_url": "images/monsters/1117.gif"
-            },
-            {
                 "monster_id": 1302,
                 "monster_name": "迷幻之王",
                 "rate": 0.02,
@@ -138451,6 +147797,12 @@ export const itemsData = {
                 "monster_name": "松鼠",
                 "rate": 0.1,
                 "image_url": "images/monsters/1104.gif"
+            },
+            {
+                "monster_id": 1199,
+                "monster_name": "朽魔",
+                "rate": 0.08,
+                "image_url": "images/monsters/1199.gif"
             },
             {
                 "monster_id": 1246,
@@ -141007,6 +150359,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "480700": {
+        "id": 480700,
+        "name": {
+            "zh_tw": "(服飾)棕熊背包(歸屬)",
+            "kr": "Ru_Bear_Bag"
+        },
+        "description": {
+            "official": "能感受到強烈氣魄的棕熊玩偶背包。\\n讓人有種栩栩如生的錯覺。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 披肩  防禦: 0\\n重量: 0\\n要求等級: 1\\n裝備: 全職業",
+            "official_clean": "能感受到強烈氣魄的棕熊玩偶背包。\\n讓人有種栩栩如生的錯覺。"
+        },
+        "category": "服飾裝備",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 63,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480700.gif",
+        "icon_url": "/images/items/480700.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "480701": {
+        "id": 480701,
+        "name": {
+            "zh_tw": "(服飾)粉紅邱比特翅膀(歸屬)",
+            "kr": "분홍큐피트날개"
+        },
+        "description": {
+            "official": "專司男女戀愛的調皮天使粉紅翅膀。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+            "official_clean": "專司男女戀愛的調皮天使粉紅翅膀。"
+        },
+        "category": "服飾裝備",
+        "slot": "披肩",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 14,
+        "costume": true,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 1,
+        "equip_jobs": "全職業",
+        "wearing_image_url": "/images/wearing/480701.gif",
+        "icon_url": "/images/items/480701.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "490759": {
         "id": 490759,
         "name": {
@@ -141045,6 +150479,47 @@ export const itemsData = {
             "weight": 0,
             "buy_price": 0,
             "sell_price": 10
+        },
+        "dropped_by": []
+    },
+    "500006": {
+        "id": 500006,
+        "name": {
+            "zh_tw": "中級公會員水紋之劍",
+            "kr": "Woe_Onehand_Sword2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，犧牲執行成功時，30秒內施法者最多+MHP1000，武器精煉每+1時，最多額外+MHP50。\\n系列 : 劍 攻擊 : 130\\n重量 : 70\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 十字軍系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，犧牲執行成功時，30秒內施法者最多+MHP1000，武器精煉每+1時，最多額外+MHP50。"
+        },
+        "category": "武器",
+        "slot": "劍",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 104,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 130,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "十字軍系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/500006.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 70,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -141715,6 +151190,12 @@ export const itemsData = {
                 "monster_name": "啤酒企鵝",
                 "rate": 1,
                 "image_url": "images/monsters/1391.gif"
+            },
+            {
+                "monster_id": 1189,
+                "monster_name": "獸人弓箭手",
+                "rate": "???",
+                "image_url": "images/monsters/1189.gif"
             }
         ]
     },
@@ -141841,6 +151322,12 @@ export const itemsData = {
                 "monster_name": "白鼠",
                 "rate": 1,
                 "image_url": "images/monsters/1175.gif"
+            },
+            {
+                "monster_id": 1271,
+                "monster_name": "鱷魚人",
+                "rate": "???",
+                "image_url": "images/monsters/1271.gif"
             }
         ]
     },
@@ -141977,6 +151464,47 @@ export const itemsData = {
             "weight": 90,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "510005": {
+        "id": 510005,
+        "name": {
+            "zh_tw": "中級公會員長柄短劍",
+            "kr": "Woe_Knife2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用隱匿時，20秒內潛擊攻擊力+50%、HIT+30。\\n系列 : 短劍 攻擊 : 110\\n重量 : 30\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 初學者系列、劍士系列、弓箭手系列、盜賊系列、魔法師系列、商人系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用隱匿時，20秒內潛擊攻擊力+50%、HIT+30。"
+        },
+        "category": "武器",
+        "slot": "短劍",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 33,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、劍士系列、弓箭手系列、盜賊系列、魔法師系列、商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/510005.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -142692,6 +152220,12 @@ export const itemsData = {
                 "monster_name": "單眼蟲",
                 "rate": 1,
                 "image_url": "images/monsters/1256.gif"
+            },
+            {
+                "monster_id": 1102,
+                "monster_name": "巫婆",
+                "rate": "???",
+                "image_url": "images/monsters/1102.gif"
             }
         ]
     },
@@ -142733,6 +152267,47 @@ export const itemsData = {
             "weight": 70,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "520001": {
+        "id": 520001,
+        "name": {
+            "zh_tw": "中級公會員切削之斧",
+            "kr": "Woe_One_Hand_Axe2_Z"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，強酸攻擊、金錢攻擊技能使用時，對敵人有一定機率觸發[致命傷口]Lv1。\\n系列 : 單手斧 攻擊 : 130\\n重量 : 100\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列、商人系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，強酸攻擊、金錢攻擊技能使用時，對敵人有一定機率觸發[致命傷口]Lv1。"
+        },
+        "category": "武器",
+        "slot": "單手斧",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 6,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 130,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列、商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/520001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 100,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -142830,6 +152405,47 @@ export const itemsData = {
                 "image_url": "images/monsters/2671.gif"
             }
         ]
+    },
+    "530001": {
+        "id": 530001,
+        "name": {
+            "zh_tw": "中級公會員步兵長矛",
+            "kr": "Woe_Onehand_Spear2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，挑釁成功時，10秒內連刺攻擊傷害+20%、使用連刺攻擊時，對敵人以一定機率施予昏迷、黑暗，依照長槍使用熟練度等級刺攻擊的傷害、昏迷、黑暗機率額外增加。\\n系列 : 單手長槍 攻擊 : 130\\n重量 : 90\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，挑釁成功時，10秒內連刺攻擊傷害+20%、使用連刺攻擊時，對敵人以一定機率施予昏迷、黑暗，依照長槍使用熟練度等級刺攻擊的傷害、昏迷、黑暗機率額外增加。"
+        },
+        "category": "單手長槍",
+        "slot": "-",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 4,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 130,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/530001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 90,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
     },
     "530052": {
         "id": 530052,
@@ -143580,6 +153196,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "550004": {
+        "id": 550004,
+        "name": {
+            "zh_tw": "中級公會員治癒之杖",
+            "kr": "Woe_Healstaff2_Z"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n治癒量+10%。\\n技能後延遲減少5%。\\n精煉每+1時，治癒量+1%、加速術、天使之賜福SP消耗量-2%。\\n精煉+7以上時，治癒量再+5%。\\n精煉+9以上時，治癒量再+10%，\\n精煉+10以上，使用治癒術時，以一定機率10秒內治癒量+25%，精煉每+1時，可額外+1%。\\nMATK + 145\\n系列 : 單手法杖 攻擊 : 70\\n重量 : 50\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n治癒量+10%。\\n技能後延遲減少5%。\\n精煉每+1時，治癒量+1%、加速術、天使之賜福SP消耗量-2%。\\n精煉+7以上時，治癒量再+5%。\\n精煉+9以上時，治癒量再+10%，\\n精煉+10以上，使用治癒術時，以一定機率10秒內治癒量+25%，精煉每+1時，可額外+1%。\\nMATK + 145"
+        },
+        "category": "武器",
+        "slot": "單手法杖",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 10,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 70,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/550004.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "550005": {
+        "id": 550005,
+        "name": {
+            "zh_tw": "中級公會員言靈魔杖",
+            "kr": "Woe_Wand2_Z"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n精煉每+1時，對玩家的魔法傷害再+1%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外再忽視玩家的魔法防禦力5%。\\n精煉+9以上時，對玩家的魔法傷害再+5%\\n精煉+10時，地元素領域的變動詠唱-30%，水元素領域、風元素領域、火元素領域使用時，所有魔法10秒內不會消耗1個礦石。\\nMATK + 140\\n系列 : 單手法杖 攻擊 : 60\\n重量 : 50\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n精煉每+1時，對玩家的魔法傷害再+1%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外再忽視玩家的魔法防禦力5%。\\n精煉+9以上時，對玩家的魔法傷害再+5%\\n精煉+10時，地元素領域的變動詠唱-30%，水元素領域、風元素領域、火元素領域使用時，所有魔法10秒內不會消耗1個礦石。\\nMATK + 140"
+        },
+        "category": "武器",
+        "slot": "單手法杖",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 69,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 60,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/550005.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "550124": {
         "id": 550124,
         "name": {
@@ -143969,6 +153667,12 @@ export const itemsData = {
                 "monster_name": "爆鑽傘蜥",
                 "rate": "???",
                 "image_url": "images/monsters/1380.gif"
+            },
+            {
+                "monster_id": 1193,
+                "monster_name": "鐘怪",
+                "rate": "???",
+                "image_url": "images/monsters/1193.gif"
             }
         ]
     },
@@ -144058,6 +153762,47 @@ export const itemsData = {
             "weight": 40,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "560003": {
+        "id": 560003,
+        "name": {
+            "zh_tw": "中級公會員昇龍拳套]",
+            "kr": "Woe_Pist2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+25%。\\n忽視玩家的物理防禦力5%\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，[阿修羅霸凰拳]的固定詠唱-30%、[爆氣]使用時，20秒內ATK+30，每精煉+1，ATK額外增加。\\n系列 : 拳套 攻擊 : 80\\n重量 : 30\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 武僧系列、祭司系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+25%。\\n忽視玩家的物理防禦力5%\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，[阿修羅霸凰拳]的固定詠唱-30%、[爆氣]使用時，20秒內ATK+30，每精煉+1，ATK額外增加。"
+        },
+        "category": "武器",
+        "slot": "拳套",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 81,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 80,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "武僧系列、祭司系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/560003.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 30,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -144489,7 +154234,62 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": "???",
+                "image_url": "images/monsters/1216.gif"
+            }
+        ]
+    },
+    "560084": {
+        "id": 560084,
+        "name": {
+            "zh_tw": "鋼鐵拳套",
+            "kr": "너클더스터"
+        },
+        "description": {
+            "official": "保護從手腕到手指的拳頭保護帶。\\n系列 : 拳套 攻擊 : 50\\n重量 : 45\\n武器等級 : 2\\n需求等級 : 12\\n裝備 : 武僧系列、祭司系列",
+            "official_clean": "保護從手腕到手指的拳頭保護帶。"
+        },
+        "category": "武器",
+        "slot": "拳套",
+        "slotCount": 3,
+        "enchantment_slots": "",
+        "ClassNum": 79,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 50,
+        "defense": 0,
+        "weapon_level": 2,
+        "required_level": 12,
+        "equip_jobs": "武僧系列、祭司系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/560084.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 45,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1213,
+                "monster_name": "獸人戰士長",
+                "rate": "???",
+                "image_url": "images/monsters/1213.gif"
+            }
+        ]
     },
     "560087": {
         "id": 560087,
@@ -144529,6 +154329,47 @@ export const itemsData = {
             "weight": 45,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "570003": {
+        "id": 570003,
+        "name": {
+            "zh_tw": "中級公會員吉他",
+            "kr": "Woe_Instrument2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內樂器攻擊傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和樂器攻擊傷害額外增加。\\n系列 : 樂器 攻擊 : 90\\n重量 : 40\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 吟遊詩人系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內樂器攻擊傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和樂器攻擊傷害額外增加。"
+        },
+        "category": "武器",
+        "slot": "樂器",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 13,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 90,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "吟遊詩人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/570003.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 40,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -145007,6 +154848,47 @@ export const itemsData = {
             "weight": 50,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "580003": {
+        "id": 580003,
+        "name": {
+            "zh_tw": "中級公會員細刃鞭子",
+            "kr": "Woe_Whip2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內纏箭投擲傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和纏箭投擲的傷害額外增加。\\n系列 : 鞭子 攻擊 : 90\\n重量 : 40\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 舞孃系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+15%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%。\\n精煉+10以上，使用臨機應變技時，60秒內纏箭投擲傷害+30%、HIT+20、變動詠唱-30%。\\n依照精煉度不同，HIT和纏箭投擲的傷害額外增加。"
+        },
+        "category": "武器",
+        "slot": "鞭子",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 14,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 90,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "舞孃系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/580003.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 40,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -145498,6 +155380,47 @@ export const itemsData = {
             "weight": 100,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "590004": {
+        "id": 590004,
+        "name": {
+            "zh_tw": "中級公會員日星錘",
+            "kr": "Woe_Club_2_Z"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，有一定機率施予昏迷，攻擊速度增加（攻擊後延遲-10%），並依照[鈍器使用熟練度]的增加，昏迷機率額外增加。\\n系列 : 鈍器 攻擊 : 130\\n重量 : 90\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 初學者系列、劍士系列、商人系列、服事系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，有一定機率施予昏迷，攻擊速度增加（攻擊後延遲-10%），並依照[鈍器使用熟練度]的增加，昏迷機率額外增加。"
+        },
+        "category": "武器",
+        "slot": "鈍器",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 8,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 130,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "初學者系列、劍士系列、商人系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/590004.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 90,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -146201,6 +156124,88 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "590113": {
+        "id": 590113,
+        "name": {
+            "zh_tw": "日星錘",
+            "kr": "모닝스타"
+        },
+        "description": {
+            "official": "看起來非常兇暴,是種大型的鈍器。\\n無法破壞\\n系列 : 鈍器 攻擊 : 110\\n重量 : 150\\n武器等級 : 3\\n要求等級 : 27\\n裝備 : 劍士系列/服事系列/商人系列",
+            "official_clean": "看起來非常兇暴,是種大型的鈍器。\\n無法破壞"
+        },
+        "category": "武器",
+        "slot": "鈍器",
+        "slotCount": 2,
+        "enchantment_slots": "",
+        "ClassNum": 8,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 27,
+        "equip_jobs": "劍士系列/服事系列/商人系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/590113.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 150,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "600005": {
+        "id": 600005,
+        "name": {
+            "zh_tw": "中級公會員十字巨劍",
+            "kr": "Woe_Twohand_Sword2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家的物理防禦力10%\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外忽視玩家的物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時有一定機率於7秒內額外忽視玩家的物理防禦力10%，依照武器的精煉度再+1%。\\n系列 : 雙手劍 攻擊 : 195\\n重量 : 130\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家的物理防禦力10%\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外忽視玩家的物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時有一定機率於7秒內額外忽視玩家的物理防禦力10%，依照武器的精煉度再+1%。"
+        },
+        "category": "武器",
+        "slot": "雙手劍",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 3,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 195,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/600005.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 130,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "600047": {
         "id": 600047,
         "name": {
@@ -146735,6 +156740,47 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "610004": {
+        "id": 610004,
+        "name": {
+            "zh_tw": "中級公會員秘刃闇嘯",
+            "kr": "Woe_Katar2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，一定機率於7秒內必殺攻擊傷害+20%、依照武器的精煉度再+2%。\\n系列 : 拳刃 攻擊 : 145\\n重量 : 60\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 刺客系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力5%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，一般物理攻擊時，一定機率於7秒內必殺攻擊傷害+20%、依照武器的精煉度再+2%。"
+        },
+        "category": "武器",
+        "slot": "拳刃",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 16,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 145,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "刺客系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/610004.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 60,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "610061": {
         "id": 610061,
         "name": {
@@ -146963,6 +157009,72 @@ export const itemsData = {
                 "monster_name": "虎王",
                 "rate": 2.5,
                 "image_url": "images/monsters/1115.gif"
+            },
+            {
+                "monster_id": 1216,
+                "monster_name": "梅納海葵",
+                "rate": 0.01,
+                "image_url": "images/monsters/1216.gif"
+            },
+            {
+                "monster_id": 2717,
+                "monster_name": "憤怒梅納海葵",
+                "rate": 0.05,
+                "image_url": "images/monsters/2717.gif"
+            }
+        ]
+    },
+    "610069": {
+        "id": 610069,
+        "name": {
+            "zh_tw": "冰靈拳刃",
+            "kr": "물의카타르"
+        },
+        "description": {
+            "official": "使用冰冷鋒利的冰柱製成的拳刃。\\n物理攻擊時，以一定機率使敵人冰凍。\\n系列 : 拳刃 攻擊 : 105\\n重量 : 120 屬性 : 水\\n武器等級 : 3\\n需求等級 : 55\\n裝備 : 刺客系列",
+            "official_clean": "使用冰冷鋒利的冰柱製成的拳刃。\\n物理攻擊時，以一定機率使敵人冰凍。"
+        },
+        "category": "武器",
+        "slot": "拳刃",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 16,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 105,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 55,
+        "equip_jobs": "刺客系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/610069.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 120,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1108,
+                "monster_name": "狄奧斯",
+                "rate": 0.02,
+                "image_url": "images/monsters/1108.gif"
+            },
+            {
+                "monster_id": 1252,
+                "monster_name": "卡崙",
+                "rate": 2.5,
+                "image_url": "images/monsters/1252.gif"
             }
         ]
     },
@@ -147071,7 +157183,62 @@ export const itemsData = {
             "buy_price": 0,
             "sell_price": 10
         },
-        "dropped_by": []
+        "dropped_by": [
+            {
+                "monster_id": 1211,
+                "monster_name": "伊特瓢蟲",
+                "rate": "???",
+                "image_url": "images/monsters/1211.gif"
+            }
+        ]
+    },
+    "610090": {
+        "id": 610090,
+        "name": {
+            "zh_tw": "風靈拳刃",
+            "kr": "바람의카타르"
+        },
+        "description": {
+            "official": "寒風刺骨的風靈拳刃。偶爾以低機率讓敵人呈現睡眠狀態。\\n系列 : 拳刃 攻擊 : 105\\n重量 : 120 屬性 : 風\\n武器等級 : 3\\n需求等級 : 55\\n裝備 : 刺客專用",
+            "official_clean": "寒風刺骨的風靈拳刃。偶爾以低機率讓敵人呈現睡眠狀態。"
+        },
+        "category": "武器",
+        "slot": "拳刃",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 16,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 105,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 55,
+        "equip_jobs": "刺客專用",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/610090.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 120,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": [
+            {
+                "monster_id": 1131,
+                "monster_name": "裘卡",
+                "rate": 0.01,
+                "image_url": "images/monsters/1131.gif"
+            }
+        ]
     },
     "610092": {
         "id": 610092,
@@ -147111,6 +157278,47 @@ export const itemsData = {
             "weight": 80,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "620001": {
+        "id": 620001,
+        "name": {
+            "zh_tw": "中級公會員雙手斧",
+            "kr": "Woe_Twohand_Axe2_Z"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外忽視玩家的物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%、一般物理攻擊時，以一定機率觸發[致命傷口]，提高攻擊速度(攻擊後延遲降低10%)。\\n精煉+10以上，使用凶砍時，20秒內物理攻擊，以低機率破壞敵人的武器，依照精煉度提高破壞機率。\\n系列 : 雙手斧 攻擊 : 195\\n重量 : 150\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 鐵匠系列，鍊金術師系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，額外忽視玩家的物理防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%、一般物理攻擊時，以一定機率觸發[致命傷口]，提高攻擊速度(攻擊後延遲降低10%)。\\n精煉+10以上，使用凶砍時，20秒內物理攻擊，以低機率破壞敵人的武器，依照精煉度提高破壞機率。"
+        },
+        "category": "武器",
+        "slot": "雙手斧",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 7,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 195,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "鐵匠系列，鍊金術師系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/620001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 150,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -147503,6 +157711,47 @@ export const itemsData = {
             "weight": 200,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "630001": {
+        "id": 630001,
+        "name": {
+            "zh_tw": "中級公會員長矛",
+            "kr": "Woe_T_Lance2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，使用連刺攻擊時，對敵人以一定機率施予昏迷，依照精煉度提高昏迷機率。\\n使用聖十字攻擊時，一定機率對敵人施予沉默效果，依照精煉度提高沉默機率。\\n系列 : 雙手長槍 攻擊 : 240\\n重量 : 130\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 劍士系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+25%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%，\\n精煉+10以上，使用連刺攻擊時，對敵人以一定機率施予昏迷，依照精煉度提高昏迷機率。\\n使用聖十字攻擊時，一定機率對敵人施予沉默效果，依照精煉度提高沉默機率。"
+        },
+        "category": "雙手長槍",
+        "slot": "-",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 52,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 240,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "劍士系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/630001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 130,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -148135,6 +158384,88 @@ export const itemsData = {
             "weight": 100,
             "buy_price": 0,
             "sell_price": 0
+        },
+        "dropped_by": []
+    },
+    "640001": {
+        "id": 640001,
+        "name": {
+            "zh_tw": "中級公會員毀滅魔杖",
+            "kr": "Woe_T_Staff2_Z"
+        },
+        "description": {
+            "official": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家造成的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n精煉每+1時，對玩家造成的魔法傷害再+1%。\\n精煉每+1時，隕石術、暴風雪傷害+3%、MHP-2%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外忽視玩家的魔法防禦力10%。\\n精煉+9以上時，對玩家造成的魔法傷害再+5%。\\nMATK + 200\\n系列 : 雙手法杖 攻擊 : 70\\n重量 : 80\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 魔法師系列、服事系列",
+            "official_clean": "無法破壞。\\n「※WOE-FE戰區追加屬性」\\n對玩家造成的魔法傷害+15%。\\n忽視玩家的魔法防禦力10%。\\n精煉每+1時，對玩家造成的魔法傷害再+1%。\\n精煉每+1時，隕石術、暴風雪傷害+3%、MHP-2%。\\n精煉每+2時，MATK+5。\\n精煉+7以上時，額外忽視玩家的魔法防禦力10%。\\n精煉+9以上時，對玩家造成的魔法傷害再+5%。\\nMATK + 200"
+        },
+        "category": "武器",
+        "slot": "雙手法杖",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 97,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 70,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "魔法師系列、服事系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/640001.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 80,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "700005": {
+        "id": 700005,
+        "name": {
+            "zh_tw": "中級公會員獵人之弓",
+            "kr": "Woe_Bow2_Z"
+        },
+        "description": {
+            "official": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%。\\n精煉+10以上，使用心神凝聚時，10秒內二連矢傷害+20%、HIT+20。\\n依照精煉度HIT和二連矢傷害額外增加。\\n系列 : 弓 攻擊 : 110\\n重量 : 50\\n武器等級 : 3\\n需求等級 : 70\\n裝備 : 盜賊，弓箭手系列，流氓系列",
+            "official_clean": "「※WOE-FE戰區追加屬性」\\n對玩家造成的物理傷害+20%。\\n忽視玩家物理防禦力10%。\\n精煉每+1時，對玩家造成的物理傷害再+1%。\\n精煉+7以上時，忽視玩家的防禦力5%。\\n精煉+9以上時，對玩家造成的物理傷害再+15%。\\n精煉+10以上，使用心神凝聚時，10秒內二連矢傷害+20%、HIT+20。\\n依照精煉度HIT和二連矢傷害額外增加。"
+        },
+        "category": "武器",
+        "slot": "弓",
+        "slotCount": 1,
+        "enchantment_slots": "",
+        "ClassNum": 76,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 110,
+        "defense": 0,
+        "weapon_level": 3,
+        "required_level": 70,
+        "equip_jobs": "盜賊，弓箭手系列，流氓系列",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/700005.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 50,
+            "buy_price": "",
+            "sell_price": ""
         },
         "dropped_by": []
     },
@@ -148850,6 +159181,1933 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "1000030": {
+        "id": 1000030,
+        "name": {
+            "zh_tw": "公會勳章",
+            "kr": "Woe_badge_Z"
+        },
+        "description": {
+            "official": "在公會基地副本上可獲得的貴重信物。道具兌換和附魔上使用。\\n<NAVI>[區公所]<INFO>prt_in,207,167,0,100,0,0</INFO></NAVI>\\n_\\n重量 : 5",
+            "official_clean": "在公會基地副本上可獲得的貴重信物。道具兌換和附魔上使用。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000030.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 5,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000031": {
+        "id": 1000031,
+        "name": {
+            "zh_tw": "增幅：暴風雪1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予暴風雪的力量。\\n[附魔效能]\\n暴風雪傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予暴風雪的力量。\\n[附魔效能]\\n暴風雪傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000031.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000032": {
+        "id": 1000032,
+        "name": {
+            "zh_tw": "增幅：隕石術1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予隕石術的力量。\\n[附魔效能]\\n隕石術傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予隕石術的力量。\\n[附魔效能]\\n隕石術傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000032.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000033": {
+        "id": 1000033,
+        "name": {
+            "zh_tw": "增幅：怒雷強擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予怒雷強擊的力量。\\n[附魔效能]\\n怒雷強擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予怒雷強擊的力量。\\n[附魔效能]\\n怒雷強擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000033.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000034": {
+        "id": 1000034,
+        "name": {
+            "zh_tw": "增幅：十字驅魔攻擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予十字驅魔攻擊的力量。\\n[附魔效能]\\n十字驅魔攻擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予十字驅魔攻擊的力量。\\n[附魔效能]\\n十字驅魔攻擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000034.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000035": {
+        "id": 1000035,
+        "name": {
+            "zh_tw": "增幅：黑暗瞬間1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予黑暗瞬間的力量。\\n[附魔效能]\\n黑暗瞬間傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予黑暗瞬間的力量。\\n[附魔效能]\\n黑暗瞬間傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000035.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000036": {
+        "id": 1000036,
+        "name": {
+            "zh_tw": "增幅：螺旋擊刺1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可以賦予強力螺旋擊刺的力量。\\n[附魔效能]\\n螺旋擊刺傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可以賦予強力螺旋擊刺的力量。\\n[附魔效能]\\n螺旋擊刺傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000036.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000037": {
+        "id": 1000037,
+        "name": {
+            "zh_tw": "增幅：強酸火煙瓶投擲1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予強酸火煙瓶投擲的力量。\\n[附魔效能]\\n強酸火煙瓶投擲傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予強酸火煙瓶投擲的力量。\\n[附魔效能]\\n強酸火煙瓶投擲傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000037.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000038": {
+        "id": 1000038,
+        "name": {
+            "zh_tw": "增幅：連刺攻擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予連刺攻擊的力量。\\n[附魔效能]\\n連刺攻擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予連刺攻擊的力量。\\n[附魔效能]\\n連刺攻擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000038.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000039": {
+        "id": 1000039,
+        "name": {
+            "zh_tw": "增幅：怪物互擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予怪物互擊的力量。\\n[附魔效能]\\n怪物互擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予怪物互擊的力量。\\n[附魔效能]\\n怪物互擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000039.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000040": {
+        "id": 1000040,
+        "name": {
+            "zh_tw": "增幅：水球術1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予水球術的力量。\\n[附魔效能]\\n水球術傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予水球術的力量。\\n[附魔效能]\\n水球術傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000040.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000041": {
+        "id": 1000041,
+        "name": {
+            "zh_tw": "增幅：音速投擲1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予音速投擲的力量。\\n[附魔效能]\\n音速投擲傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予音速投擲的力量。\\n[附魔效能]\\n音速投擲傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000041.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000042": {
+        "id": 1000042,
+        "name": {
+            "zh_tw": "增幅：連續盾擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予連續盾擊的力量。\\n[附魔效能]\\n連續盾擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予連續盾擊的力量。\\n[附魔效能]\\n連續盾擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000042.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000043": {
+        "id": 1000043,
+        "name": {
+            "zh_tw": "增幅：迴旋盾擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予迴旋盾擊的力量。\\n[附魔效能]\\n迴旋盾擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予迴旋盾擊的力量。\\n[附魔效能]\\n迴旋盾擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000043.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000044": {
+        "id": 1000044,
+        "name": {
+            "zh_tw": "增幅：聖十字攻擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予聖十字攻擊的力量。\\n[附魔效能]\\n聖十字攻擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予聖十字攻擊的力量。\\n[附魔效能]\\n聖十字攻擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000044.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000045": {
+        "id": 1000045,
+        "name": {
+            "zh_tw": "增幅：獵鷹突擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予獵鷹突擊的力量。\\n[附魔效能]\\n獵鷹突擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予獵鷹突擊的力量。\\n[附魔效能]\\n獵鷹突擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000045.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000046": {
+        "id": 1000046,
+        "name": {
+            "zh_tw": "增幅：閃電衝擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予閃電衝擊的力量。\\n[附魔效能]\\n閃電衝擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予閃電衝擊的力量。\\n[附魔效能]\\n閃電衝擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000046.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000047": {
+        "id": 1000047,
+        "name": {
+            "zh_tw": "增幅：阿修羅霸凰拳1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予阿修羅霸凰拳的力量。\\n[附魔效能]\\n阿修羅霸凰拳傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予阿修羅霸凰拳的力量。\\n[附魔效能]\\n阿修羅霸凰拳傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000047.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000048": {
+        "id": 1000048,
+        "name": {
+            "zh_tw": "增幅：浸透勁1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予浸透勁的力量。\\n[附魔效能]\\n浸透勁傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予浸透勁的力量。\\n[附魔效能]\\n浸透勁傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000048.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000049": {
+        "id": 1000049,
+        "name": {
+            "zh_tw": "增幅：奧義箭亂舞1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予奧義箭亂舞的力量。\\n[附魔效能]\\n奧義箭亂舞傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予奧義箭亂舞的力量。\\n[附魔效能]\\n奧義箭亂舞傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000049.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000050": {
+        "id": 1000050,
+        "name": {
+            "zh_tw": "增幅：二連矢1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予二連矢的力量。\\n[附魔效能]\\n二連矢傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予二連矢的力量。\\n[附魔效能]\\n二連矢傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000050.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000052": {
+        "id": 1000052,
+        "name": {
+            "zh_tw": "增幅：銳利射擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予銳利射擊的力量。\\n[附魔效能]\\n銳利射擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予銳利射擊的力量。\\n[附魔效能]\\n銳利射擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000052.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000053": {
+        "id": 1000053,
+        "name": {
+            "zh_tw": "增幅：念力連擊1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予念力連擊的力量。\\n[附魔效能]\\n念力連擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予念力連擊的力量。\\n[附魔效能]\\n念力連擊傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000053.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000054": {
+        "id": 1000054,
+        "name": {
+            "zh_tw": "增幅：重力原野1Lv",
+            "kr": "release_of_magic"
+        },
+        "description": {
+            "official": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予重力原野的力量。\\n[附魔效能]\\n重力原野傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員武器上特別力量的寶石。\\n力量：可賦予重力原野的力量。\\n[附魔效能]\\n重力原野傷害+7%。\\n[可附魔裝備]\\n中級公會員切削之斧\\n中級公會員日星錘\\n中級公會員步兵長矛\\n中級公會員水紋之劍\\n中級公會員秘刃闇嘯\\n中級公會員十字巨劍\\n中級公會員昇龍拳套\\n中級公會員治癒之杖\\n中級公會員雙手斧\\n中級公會員長矛\\n中級公會員毀滅魔杖\\n中級公會員獵人之弓\\n中級公會員吉他\\n中級公會員細刃鞭子\\n中級公會員長柄短劍\\n中級公會員言靈魔杖"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000054.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000055": {
+        "id": 1000055,
+        "name": {
+            "zh_tw": "抗性：暴風雪1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予暴風雪的力量。\\n[附魔效能]\\n受暴風雪的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予暴風雪的力量。\\n[附魔效能]\\n受暴風雪的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000055.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000056": {
+        "id": 1000056,
+        "name": {
+            "zh_tw": "抗性：隕石術1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予隕石術的力量。\\n[附魔效能]\\n受隕石術的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予隕石術的力量。\\n[附魔效能]\\n受隕石術的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000056.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000057": {
+        "id": 1000057,
+        "name": {
+            "zh_tw": "抗性：怒雷強擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予怒雷強擊的力量。\\n[附魔效能]\\n受怒雷強擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予怒雷強擊的力量。\\n[附魔效能]\\n受怒雷強擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000057.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000058": {
+        "id": 1000058,
+        "name": {
+            "zh_tw": "抗性：十字驅魔攻擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予十字驅魔攻擊的力量。\\n[附魔效能]\\n受十字驅魔攻擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予十字驅魔攻擊的力量。\\n[附魔效能]\\n受十字驅魔攻擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000058.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000059": {
+        "id": 1000059,
+        "name": {
+            "zh_tw": "抗性：黑暗瞬間1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予黑暗瞬間的力量。\\n[附魔效能]\\n受黑暗瞬間的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予黑暗瞬間的力量。\\n[附魔效能]\\n受黑暗瞬間的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000059.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000060": {
+        "id": 1000060,
+        "name": {
+            "zh_tw": "抗性：螺旋擊刺1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予螺旋擊刺的力量。\\n[附魔效能]\\n受螺旋擊刺的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予螺旋擊刺的力量。\\n[附魔效能]\\n受螺旋擊刺的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000060.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000061": {
+        "id": 1000061,
+        "name": {
+            "zh_tw": "抗性：強酸火煙瓶投擲1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予強酸火煙瓶投擲的力量。\\n[附魔效能]\\n受強酸火煙瓶投擲的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予強酸火煙瓶投擲的力量。\\n[附魔效能]\\n受強酸火煙瓶投擲的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000061.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000062": {
+        "id": 1000062,
+        "name": {
+            "zh_tw": "抗性：連刺攻擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予連刺攻擊的力量。\\n[附魔效能]\\n受連刺攻擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予連刺攻擊的力量。\\n[附魔效能]\\n受連刺攻擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000062.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000063": {
+        "id": 1000063,
+        "name": {
+            "zh_tw": "抗性：怪物互擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予怪物互擊的力量。\\n[附魔效能]\\n受怪物互擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予怪物互擊的力量。\\n[附魔效能]\\n受怪物互擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000063.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000064": {
+        "id": 1000064,
+        "name": {
+            "zh_tw": "抗性：水球術1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予水球術的力量。\\n[附魔效能]\\n受水球術的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予水球術的力量。\\n[附魔效能]\\n受水球術的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000064.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000065": {
+        "id": 1000065,
+        "name": {
+            "zh_tw": "抗性：音速投擲1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予音速投擲的力量。\\n[附魔效能]\\n受音速投擲的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予音速投擲的力量。\\n[附魔效能]\\n受音速投擲的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000065.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000066": {
+        "id": 1000066,
+        "name": {
+            "zh_tw": "抗性：連續盾擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予連續盾擊的力量。\\n[附魔效能]\\n受連續盾擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予連續盾擊的力量。\\n[附魔效能]\\n受連續盾擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000066.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000067": {
+        "id": 1000067,
+        "name": {
+            "zh_tw": "抗性：迴旋盾擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予迴旋盾擊的力量。\\n[附魔效能]\\n受迴旋盾擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予迴旋盾擊的力量。\\n[附魔效能]\\n受迴旋盾擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000067.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000068": {
+        "id": 1000068,
+        "name": {
+            "zh_tw": "抗性：聖十字攻擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予聖十字攻擊的力量。\\n[附魔效能]\\n受聖十字攻擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予聖十字攻擊的力量。\\n[附魔效能]\\n受聖十字攻擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000068.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000069": {
+        "id": 1000069,
+        "name": {
+            "zh_tw": "抗性：獵鷹突擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予獵鷹突擊的力量。\\n[附魔效能]\\n受獵鷹突擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予獵鷹突擊的力量。\\n[附魔效能]\\n受獵鷹突擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000069.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000070": {
+        "id": 1000070,
+        "name": {
+            "zh_tw": "抗性：閃電衝擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予閃電衝擊的力量。\\n[附魔效能]\\n受閃電衝擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予閃電衝擊的力量。\\n[附魔效能]\\n受閃電衝擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000070.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000071": {
+        "id": 1000071,
+        "name": {
+            "zh_tw": "抗性：阿修羅霸凰拳1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予阿修羅霸凰拳的力量。\\n[附魔效能]\\n受阿修羅霸凰拳的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予阿修羅霸凰拳的力量。\\n[附魔效能]\\n受阿修羅霸凰拳的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000071.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000072": {
+        "id": 1000072,
+        "name": {
+            "zh_tw": "抗性：浸透勁1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予浸透勁的力量。\\n[附魔效能]\\n受浸透勁的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予浸透勁的力量。\\n[附魔效能]\\n受浸透勁的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000072.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000073": {
+        "id": 1000073,
+        "name": {
+            "zh_tw": "抗性：奧義箭亂舞1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予奧義箭亂舞的力量。\\n[附魔效能]\\n受奧義箭亂舞的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予奧義箭亂舞的力量。\\n[附魔效能]\\n受奧義箭亂舞的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000073.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000074": {
+        "id": 1000074,
+        "name": {
+            "zh_tw": "抗性：二連矢1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予二連矢的力量。\\n[附魔效能]\\n受二連矢的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予二連矢的力量。\\n[附魔效能]\\n受二連矢的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000074.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000076": {
+        "id": 1000076,
+        "name": {
+            "zh_tw": "抗性：銳利射擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予銳利射擊的力量。\\n[附魔效能]\\n受銳利射擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予銳利射擊的力量。\\n[附魔效能]\\n受銳利射擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000076.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000077": {
+        "id": 1000077,
+        "name": {
+            "zh_tw": "抗性：念力連擊1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予念力連擊的力量。\\n[附魔效能]\\n受念力連擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予念力連擊的力量。\\n[附魔效能]\\n受念力連擊的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000077.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1000078": {
+        "id": 1000078,
+        "name": {
+            "zh_tw": "抗性：重力原野1Lv",
+            "kr": "castfixed_delay50"
+        },
+        "description": {
+            "official": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予重力原野的力量。\\n[附魔效能]\\n受重力原野的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲\\n_\\n重量 : 1",
+            "official_clean": "可以賦予中級公會員盔甲特別力量的寶石。\\n抵抗：可賦予重力原野的力量。\\n[附魔效能]\\n受重力原野的傷害-15%。\\n[可附魔裝備]\\n中級公會員外袍\\n中級公會員外套\\n中級公會員鎧甲"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1000078.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 1,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "1000235": {
         "id": 1000235,
         "name": {
@@ -148897,16 +161155,16 @@ export const itemsData = {
                 "image_url": "images/monsters/1244.gif"
             },
             {
-                "monster_id": 1588,
-                "monster_name": "聖誕獸人戰士",
-                "rate": "???",
-                "image_url": "images/monsters/1588.gif"
-            },
-            {
                 "monster_id": 1245,
                 "monster_name": "聖誕哥布靈",
                 "rate": "???",
                 "image_url": "images/monsters/1245.gif"
+            },
+            {
+                "monster_id": 1588,
+                "monster_name": "聖誕獸人戰士",
+                "rate": "???",
+                "image_url": "images/monsters/1588.gif"
             }
         ]
     },
@@ -153832,6 +166090,170 @@ export const itemsData = {
         },
         "dropped_by": []
     },
+    "1002569": {
+        "id": 1002569,
+        "name": {
+            "zh_tw": "[卡崙]氣息碎片",
+            "kr": "ZTW_CE_Maya_E_P"
+        },
+        "description": {
+            "official": "殘存卡崙氣息的碎片，找到米德加爾特-接待員[露西]詢問，或許會有些頭緒。\\n<NAVI>[露西]<INFO>prt_in,45,102,0,100,0,0</INFO></NAVI>\\n重量：0",
+            "official_clean": "殘存卡崙氣息的碎片，找到米德加爾特-接待員[露西]詢問，或許會有些頭緒。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002569.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1002570": {
+        "id": 1002570,
+        "name": {
+            "zh_tw": "[冰暴騎士]氣息碎片",
+            "kr": "ZTW_CE_Maya_E_P"
+        },
+        "description": {
+            "official": "殘存冰暴騎士氣息的碎片，找到米德加爾特-接待員[露西]詢問，或許會有些頭緒。\\n<NAVI>[露西]<INFO>prt_in,45,102,0,100,0,0</INFO></NAVI>\\n重量：0",
+            "official_clean": "殘存冰暴騎士氣息的碎片，找到米德加爾特-接待員[露西]詢問，或許會有些頭緒。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002570.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1002571": {
+        "id": 1002571,
+        "name": {
+            "zh_tw": "戰鬥卡崙娃娃",
+            "kr": "ZTW_Bd_GARM"
+        },
+        "description": {
+            "official": "散發兇暴氣息的卡崙娃娃。「戰鬥娃娃裁判」似乎知道些什麼。\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n\\n重量：0",
+            "official_clean": "散發兇暴氣息的卡崙娃娃。「戰鬥娃娃裁判」似乎知道些什麼。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002571.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
+    "1002572": {
+        "id": 1002572,
+        "name": {
+            "zh_tw": "戰鬥冰暴騎士娃娃",
+            "kr": "ZTW_Bd_K_WINDSTORM"
+        },
+        "description": {
+            "official": "散發兇暴氣息的冰暴騎士娃娃。「戰鬥娃娃裁判」似乎知道些什麼。\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n\\n重量：0",
+            "official_clean": "散發兇暴氣息的冰暴騎士娃娃。「戰鬥娃娃裁判」似乎知道些什麼。"
+        },
+        "category": "其他",
+        "slot": "-",
+        "slotCount": 0,
+        "enchantment_slots": "",
+        "ClassNum": 0,
+        "costume": false,
+        "card_prefix_name": "",
+        "attack": 0,
+        "defense": 0,
+        "weapon_level": 0,
+        "required_level": 0,
+        "equip_jobs": "",
+        "wearing_image_url": "",
+        "icon_url": "/images/items/1002572.gif",
+        "script": "",
+        "can_drop": true,
+        "can_trade": true,
+        "can_storage": true,
+        "can_cart": true,
+        "can_sell_to_npc": true,
+        "can_mail": true,
+        "can_auction": true,
+        "can_guild_storage": true,
+        "lastupdated": "2025-12-18",
+        "attributes": {
+            "weight": 0,
+            "buy_price": "",
+            "sell_price": ""
+        },
+        "dropped_by": []
+    },
     "1100001": {
         "id": 1100001,
         "name": {
@@ -153839,8 +166261,8 @@ export const itemsData = {
             "kr": "Woe_Violet_Potion2"
         },
         "description": {
-            "official": "僅限PvP、村莊、攻城戰地區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\n比原本的容量多出50%而感到驕傲。\\nHP恢復約750，SP恢復約100左右。\\n_\\n重量: 10",
-            "official_clean": "僅限PvP、村莊、攻城戰地區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\n比原本的容量多出50%而感到驕傲。\\nHP恢復約750，SP恢復約100左右。"
+            "official": "僅限PvP、村莊、WOE-FE戰區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\n比原本的容量多出50%而感到驕傲。\\nHP恢復約750，SP恢復約100左右。\\n_\\n重量: 10",
+            "official_clean": "僅限PvP、村莊、WOE-FE戰區可使用。\\n紅色藥水和藍色藥水中間的味道很多，妙勒尼廢棄礦場的野豬...那野猪感覺很熟悉的那種藥水。\\n比原本的容量多出50%而感到驕傲。\\nHP恢復約750，SP恢復約100左右。"
         },
         "category": "消耗/恢復",
         "slot": "-",
@@ -153865,7 +166287,7 @@ export const itemsData = {
         "can_mail": true,
         "can_auction": true,
         "can_guild_storage": true,
-        "lastupdated": "2025-09-04",
+        "lastupdated": "2025-12-18",
         "attributes": {
             "weight": 10,
             "buy_price": 0,
