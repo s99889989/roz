@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定義行程規劃工具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f1f5f9; color: #1e293b; font-family: sans-serif; }
+        .input-num { width: 60px; text-align: center; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px; }
+        .input-text { border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px; width: 100%; }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; padding: 0; }
+            .container { max-width: 100% !important; box-shadow: none !important; border: none !important; }
+            input { border: none !important; background: transparent !important; pointer-events: none; }
+            table { border-collapse: collapse; }
+            th, td { border: 1px solid #000 !important; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+<div class="max-w-5xl mx-auto bg-white shadow-xl rounded-xl border border-slate-200 container">
+    <div class="p-6 bg-slate-800 text-white rounded-t-xl">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold tracking-tight flex items-center gap-2">
+                📅 行程自動規劃管理
+            </h1>
+            <div class="flex gap-2">
+                <button onclick="addLocation()" class="no-print bg-green-600 hover:bg-green-500 px-4 py-2 rounded font-bold text-sm transition-all">
+                    ➕ 新增地點
+                </button>
+                <button onclick="window.print()" class="no-print bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded font-bold text-sm transition-all">
+                    🖨️ 列印/轉PDF
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-6 no-print">
+            <div class="flex items-center gap-3">
+                <label class="text-slate-300 whitespace-nowrap">出發時間：</label>
+                <input type="time" id="startTime" value="16:30" oninput="calculate()" class="bg-slate-700 border-none rounded px-3 py-1 text-white text-lg outline-none ring-2 ring-slate-600 focus:ring-blue-500">
+            </div>
+            <p class="text-slate-400 text-sm italic">* 點擊「新增地點」按鈕可擴充行程內容</p>
+        </div>
+    </div>
+
+    <div class="overflow-x-auto p-4">
+        <table class="w-full">
+            <thead>
+            <tr class="text-slate-500 text-sm border-b-2 border-slate-200">
+                <th class="py-3 text-center w-28">抵達時間</th>
+                <th class="py-3 text-left px-4">行程目的地</th>
+                <th class="py-3 text-center w-32">路程 (分)</th>
+                <th class="py-3 text-center w-32">停留 (分)</th>
+                <th class="py-3 text-center w-16 no-print">操作</th>
+            </tr>
+            </thead>
+            <tbody id="schedule-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="empty-state" class="hidden py-10 text-center text-slate-400">
+        目前沒有任何行程，請點擊上方「新增地點」。
+    </div>
+</div>
+
+<script>
+    // 預設地點資料
+    let schedule = [
+        { name: "教會", travel: 0, stay: 30 },
+        { name: "醫院", travel: 6, stay: 15 },
+        { name: "張豪傑", travel: 4, stay: 5 },
+        { name: "陳松春", travel: 13, stay: 30 },
+        { name: "施又維", travel: 10, stay: 30 },
+        { name: "林時君", travel: 1, stay: 30 },
+        { name: "駱雲華", travel: 1, stay: 30 },
+        { name: "吳婉君", travel: 5, stay: 30 },
+        { name: "教會", travel: 7, stay: 0 },
+    ];
+
+    function calculate() {
+        const startTimeVal = document.getElementById('startTime').value;
+        const [h, m] = startTimeVal.split(':').map(Number);
+        let current = new Date();
+        current.setHours(h, m, 0);
+
+        const tbody = document.getElementById('schedule-body');
+        const emptyState = document.getElementById('empty-state');
+
+        if (schedule.length === 0) {
+            tbody.innerHTML = '';
+            emptyState.classList.remove('hidden');
+            return;
+        } else {
+            emptyState.classList.add('hidden');
+        }
+
+        tbody.innerHTML = '';
+
+        schedule.forEach((item, i) => {
+            // 時間累加：從第二站開始計算 (抵達時間 = 上一站離開時間 + 這一站路程)
+            if (i > 0) {
+                const prevStay = schedule[i-1].stay || 0;
+                const thisTravel = item.travel || 0;
+                current.setMinutes(current.getMinutes() + prevStay + thisTravel);
+            }
+
+            const timeStr = current.getHours().toString().padStart(2, '0') + ":" +
+                current.getMinutes().toString().padStart(2, '0');
+
+            const row = document.createElement('tr');
+            row.className = "border-b border-slate-100 hover:bg-slate-50 transition-colors";
+            row.innerHTML = `
+                    <td class="py-4 text-center font-bold text-xl text-blue-600">
+                        ${timeStr}
+                    </td>
+                    <td class="px-4 py-4">
+                        <input type="text" value="${item.name}" oninput="updateData(${i}, 'name', this.value)" class="input-text font-bold text-slate-800 text-lg no-print">
+                        <span class="hidden print:inline font-bold text-lg">${item.name}</span>
+                    </td>
+                    <td class="py-4 text-center">
+                        ${i === 0 ? '<span class="text-slate-300">-</span>' : `
+                            <input type="number" value="${item.travel}" oninput="updateData(${i}, 'travel', this.value)" class="input-num no-print">
+                            <span class="hidden print:inline">${item.travel} 分</span>
+                        `}
+                    </td>
+                    <td class="py-4 text-center">
+                        <input type="number" value="${item.stay}" oninput="updateData(${i}, 'stay', this.value)" class="input-num no-print">
+                        <span class="hidden print:inline">${item.stay} 分</span>
+                    </td>
+                    <td class="py-4 text-center no-print">
+                        <button onclick="removeLocation(${i})" class="text-red-400 hover:text-red-600">🗑️</button>
+                    </td>
+                `;
+            tbody.appendChild(row);
+        });
+    }
+
+    // 更新資料並重新計算
+    function updateData(index, field, value) {
+        if (field === 'name') {
+            schedule[index].name = value;
+        } else {
+            schedule[index][field] = parseInt(value) || 0;
+            calculate(); // 分鐘數改變才需要重新推算時間
+        }
+    }
+
+    // 新增地點
+    function addLocation() {
+        schedule.push({ name: "新地點", travel: 10, stay: 30 });
+        calculate();
+    }
+
+    // 移除地點
+    function removeLocation(index) {
+        if (confirm('確定要刪除此行程點嗎？')) {
+            schedule.splice(index, 1);
+            calculate();
+        }
+    }
+
+    // 初始執行
+    calculate();
+</script>
+</body>
+</html>

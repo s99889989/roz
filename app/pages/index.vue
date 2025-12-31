@@ -1,13 +1,27 @@
 <script setup>
 import {ref, computed} from "vue"
 import {initFlowbite} from "flowbite";
-import {monstersData3} from "~/assets/data/monsters3.js";
-import {monstersDisplayIndex} from "~/assets/data/monsters_display_index.js";
-import { VirtualScroll } from 'vue3-virtual-scroll'
+
+import {VirtualScroll} from 'vue3-virtual-scroll'
 import 'vue3-virtual-scroll/dist/style.css'
 
 // ✅ 怪物資料
 const monsters1 = ref([]);
+// 2. 在網頁載入時 fetch 資料
+onMounted(async () => {
+  try {
+    // 路徑不需要寫 public，編譯後 public 會變成根目錄 /
+    const response = await fetch('/data/monsters_display_index.json');
+    if (!response.ok) throw new Error('資料載入失敗');
+
+    const data = await response.json();
+    monsters1.value = data;
+  } catch (error) {
+    console.error("讀取資料錯誤:", error);
+  } finally {
+    // isLoading.value = false;
+  }
+});
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -77,7 +91,6 @@ const sizeList = [
 ]
 
 
-
 // ✅ 過濾結果
 const filteredMonsters = computed(() => {
 
@@ -123,11 +136,11 @@ const filteredMonsters = computed(() => {
         selectedType.value.length === 0 ||
         selectedType.value.includes("all") ||
         selectedType.value.some(t => {
-          if(m.special_status.includes(t)){
+          if (m.special_status.includes(t)) {
             return true;
-          }else {
-            if(selectedType.value.includes("common")){
-              if(!m.special_status.includes('mini') && !m.special_status.includes('MVP')){
+          } else {
+            if (selectedType.value.includes("common")) {
+              if (!m.special_status.includes('mini') && !m.special_status.includes('MVP')) {
                 return true;
               }
             }
@@ -154,7 +167,7 @@ const filteredMonsters = computed(() => {
     const matchesSize =
         selectedSize.value.length === 0 ||
         selectedSize.value.includes("all") ||
-        selectedSize.value.includes(m.basic_info.size+'型')
+        selectedSize.value.includes(m.basic_info.size + '型')
 
     return matchesName && matchesLevel && matchesHP && matchesHit && matchesFlee && matchesElement && matchesRace && matchesSize && matchesType
   })
@@ -174,10 +187,10 @@ watch(filteredMonsters, () => {
 })
 
 const getAttack = (min, max) => {
-  if(min === max){
+  if (min === max) {
     return min;
   }
-  return min+'-'+max;
+  return min + '-' + max;
 }
 
 /**
@@ -246,6 +259,12 @@ function clearFilters() {
   search.value = ""
   minLevel.value = ""
   maxLevel.value = ""
+  minHP.value = ""
+  maxHP.value = ""
+  minHit.value = ""
+  maxHit.value = ""
+  minFlee.value = ""
+  maxFlee.value = ""
   selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']
@@ -270,6 +289,12 @@ function selectMap(value) {
   search.value = value
   minLevel.value = ""
   maxLevel.value = ""
+  minHP.value = ""
+  maxHP.value = ""
+  minHit.value = ""
+  maxHit.value = ""
+  minFlee.value = ""
+  maxFlee.value = ""
   selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行程時間表 - 最終確認版</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #ffffff; font-family: sans-serif; }
+        /* 垂直軸線 */
+        .timeline-track { width: 3px; background: #e2e8f0; position: absolute; left: 24px; top: 10px; bottom: 10px; z-index: 0; }
+        /* 目的地圓點 */
+        .node-dest { width: 20px; height: 20px; background: #2563eb; border: 4px solid #fff; border-radius: 50%; z-index: 10; margin-left: 15px; box-shadow: 0 0 0 2px #2563eb; }
+        /* 路程區塊 */
+        .travel-box { background: #f8fafc; border-radius: 12px; margin-left: 60px; padding: 12px 20px; border: 1px dashed #cbd5e1; display: inline-flex; align-items: center; gap: 12px; margin-top: 10px; margin-bottom: 10px; }
+    </style>
+</head>
+<body class="p-8 md:p-16">
+
+<div class="max-w-xl mx-auto">
+    <div class="mb-6 border-slate-900 pb-6 flex justify-between items-end">
+<!--        <div>-->
+<!--            <h1 class="text-3xl font-black text-slate-900 tracking-tight">行程時間規劃表</h1>-->
+<!--            <p id="display-start-time" class="text-slate-500 font-bold mt-2 text-lg"></p>-->
+<!--        </div>-->
+<!--        <button onclick="window.print()" class="no-print bg-slate-800 text-white px-4 py-2 rounded font-bold text-sm">🖨️ 列印此表</button>-->
+    </div>
+
+    <div id="timeline" class="relative">
+    </div>
+</div>
+
+<script>
+    /**
+     * 💡 您可以直接在這裡修改資料：
+     * name: 地點名稱
+     * travel: 到達該地需要的路程 (分鐘)
+     * stay: 在該地停留的時間 (分鐘)
+     */
+    const startTimeStr = "17:00"; // 設定出發時間
+    const steps = [
+        { name: "教會", travel: 0, stay: 5 },
+        { name: "醫院", travel: 6, stay: 15 },
+        { name: "張豪傑", travel: 4, stay: 25 },
+        { name: "林時君", travel: 3, stay: 30 },
+        { name: "施又維", travel: 1, stay: 30 },
+        { name: "駱雲華", travel: 1, stay: 30 },
+        { name: "吳婉君", travel: 5, stay: 30 },
+        { name: "教會", travel: 7, stay: 0 }
+    ];
+
+    function render() {
+        const container = document.getElementById('timeline');
+        // document.getElementById('display-start-time').innerText = `預計出發：${startTimeStr}`;
+
+        const [h, m] = startTimeStr.split(':').map(Number);
+        let currentTime = new Date();
+        currentTime.setHours(h, m, 0);
+
+        container.innerHTML = '<div class="timeline-track"></div>';
+
+        steps.forEach((step, i) => {
+            // 1. 如果有路程，渲染顯眼的路程區塊
+            if (i > 0) {
+                // 更新抵達時間 (上一站離開 + 這一站路程)
+                const prevStay = steps[i-1].stay || 0;
+                currentTime.setMinutes(currentTime.getMinutes() + prevStay + step.travel);
+
+                const travelDiv = document.createElement('div');
+                travelDiv.innerHTML = `
+                        <div class="travel-box">
+                            <span class="text-2xl">🚗</span>
+                            <div>
+                                <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest">移動路程</div>
+                                <div class="font-bold text-slate-600">${step.travel} 分鐘</div>
+                            </div>
+                        </div>
+                    `;
+                container.appendChild(travelDiv);
+            }
+
+            // 2. 渲染目的地資訊
+            const arriveTime = formatTime(currentTime);
+            const leaveTimeObj = new Date(currentTime);
+            leaveTimeObj.setMinutes(leaveTimeObj.getMinutes() + (step.stay || 0));
+            const leaveTime = formatTime(leaveTimeObj);
+
+            const destDiv = document.createElement('div');
+            destDiv.className = "relative flex items-center my-2";
+            destDiv.innerHTML = `
+                    <div class="node-dest"></div>
+                    <div class="ml-10 flex-1 py-4 px-6 bg-white border-2 border-slate-100 rounded-2xl shadow-sm">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-2xl font-black text-slate-800">${step.name}</h3>
+                                <div class="inline-block bg-blue-600 text-white px-3 py-1 rounded-lg font-bold text-lg mt-2">
+                                    抵達 ${arriveTime}
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-xs font-bold text-slate-400 uppercase">預計停留</p>
+                                <p class="text-xl font-black text-slate-700">${step.stay} min</p>
+                                <p class="text-sm font-bold text-slate-400 mt-1">
+                                    ${step.stay > 0 ? leaveTime + ' 離開' : '行程結束'}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            container.appendChild(destDiv);
+        });
+    }
+
+    function formatTime(d) {
+        return d.getHours().toString().padStart(2, '0') + ":" + d.getMinutes().toString().padStart(2, '0');
+    }
+
+    render();
+</script>
+
+<style>
+    @media print {
+        .no-print { display: none; }
+        body { padding: 0; }
+        .node-dest { background: #000 !important; box-shadow: none; border: 2px solid #000; }
+        .timeline-track { background: #ccc !important; }
+        .travel-box { border: 1px solid #ccc !important; }
+    }
+</style>
+</body>
+</html>

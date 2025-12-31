@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭成員簽到表</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #ffffff; color: #1e293b; font-family: sans-serif; }
+        .print-table { width: 100%; border-collapse: collapse; }
+        .print-table th { background-color: #f8fafc; color: #475569; border: 1px solid #e2e8f0; }
+        .print-table td { border: 1px solid #e2e8f0; padding: 14px 16px; }
+
+        /* 勾選框樣式 */
+        .check-box {
+            width: 28px;
+            height: 28px;
+            border: 2px solid #94a3b8;
+            border-radius: 4px;
+            margin: 0 auto;
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { padding: 0; }
+            .print-table td, .print-table th { border: 1px solid #000 !important; color: #000; }
+            .check-box { border: 2px solid #000 !important; }
+            .container { max-width: 100% !important; width: 100% !important; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+<div class="max-w-4xl mx-auto container">
+    <div class="flex justify-between items-end mb-6 border-b-4 border-slate-900 pb-4">
+        <div>
+            <h1 class="text-3xl font-bold text-slate-900">家庭成員簽到名單</h1>
+            <p id="print-date" class="text-slate-500 mt-1"></p>
+        </div>
+    </div>
+
+    <div id="stats-header" class="flex gap-10 mb-6 font-bold text-lg text-slate-700">
+    </div>
+
+    <table class="print-table">
+        <thead>
+        <tr>
+            <th class="w-20 py-3">勾選確認</th>
+            <th class="py-3 text-left px-6">家庭成員姓名</th>
+            <th class="w-24 py-3">人數</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <div class="mt-10 border-t border-slate-200 pt-4 text-sm text-slate-400 no-print text-center">
+        * 每一行代表一個家庭，請在左側方框內勾選。
+    </div>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1X4jydqNu-Kjx4zJqOzyEOV3R6hhw0jI&hl=zh-TW&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+
+<script>
+    const rawData = `王韋勝
+黃清文 徐玲 瑪德諾·米斯卡
+陽志明 林佩鴛 陽語謙 陽語慎 陽語恩 陽念祖 陽念先
+林鄉 鄭春妹 林書辰 林語熙
+侯信裕 李若薇 侯宇安 侯宇誠
+陳松春 李芳妹 陳蕾晶 陳柏岑
+侯武雄
+洪喜雀 吳宣澔
+施又維 周明瑜 施皓玥 施東旭
+林麗玲 張宇亨 楊麗馨
+吳國卿 張豪傑 吳雅惠 張辰愷 張辰宇
+蔡文芳 李美蓉 蔡羽甯 蔡維
+廖惠平
+林金章 羅桂妹 王永駿 林倩雯 王宸軒 王宸熙 王凝熙 黎外‧里雅子 黎外‧谷孟
+林子齊
+駱雲華
+覃茜
+姜金玲
+林金菊
+簡瑞鳳
+林時君 李權恆 李侑恩
+唐淑娟
+陳建年 黃玉霞 周代軒
+林佩蓉 陳培力 陳培民 陳培安
+呂舒婷 蔡依玹
+吳婉君
+林皇旭`;
+
+    const tableBody = document.getElementById('table-body');
+
+    const lines = rawData.trim().split('\n');
+    let totalPeople = 0;
+
+    lines.forEach((line) => {
+        const members = line.trim().split(/\s+/);
+        const count = members.length;
+        totalPeople += count;
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+                <td class="text-center">
+                    <div class="check-box"></div>
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex flex-wrap gap-x-6 gap-y-2">
+                        ${members.map(name => `<span class="text-xl font-semibold text-slate-800">${name}</span>`).join('')}
+                    </div>
+                </td>
+                <td class="text-center text-xl font-bold text-slate-600">
+                    ${count}
+                </td>
+            `;
+        tableBody.appendChild(row);
+    });
+
+    document.getElementById('stats-header').innerHTML = `
+            <span>總戶數：${lines.length}</span>
+            <span class="text-blue-600">總人數：${totalPeople}</span>
+        `;
+</script>
+</body>
+</html>

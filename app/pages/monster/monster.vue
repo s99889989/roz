@@ -259,6 +259,12 @@ function clearFilters() {
   search.value = ""
   minLevel.value = ""
   maxLevel.value = ""
+  minHP.value = ""
+  maxHP.value = ""
+  minHit.value = ""
+  maxHit.value = ""
+  minFlee.value = ""
+  maxFlee.value = ""
   selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']
@@ -283,6 +289,12 @@ function selectMap(value) {
   search.value = value
   minLevel.value = ""
   maxLevel.value = ""
+  minHP.value = ""
+  maxHP.value = ""
+  minHit.value = ""
+  maxHit.value = ""
+  minFlee.value = ""
+  maxFlee.value = ""
   selectedType.value = ['all']
   selectedElement.value = ['all']
   selectedRace.value = ['all']

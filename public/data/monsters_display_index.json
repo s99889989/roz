@@ -4556,7 +4556,7 @@
       "defense": 62,
       "exp": {
         "base": 1959,
-        "job": 391
+        "job": 362
       },
       "flee_95_percent": 241,
       "hit_100_percent": 269,
@@ -5732,6 +5732,16 @@
         "slotCount": 3,
         "slot": "短劍",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 500116,
+        "name": "騎兵之劍",
+        "rate": "???",
+        "icon_url": "images/items/500116.gif",
+        "slotCount": 3,
+        "slot": "單手劍",
+        "enchantment_slots": 2,
         "card_prefix_name": ""
       }
     ],
@@ -7397,8 +7407,8 @@
       },
       "defense": 46,
       "exp": {
-        "base": 3704,
-        "job": 1089
+        "base": 3594,
+        "job": 718
       },
       "flee_95_percent": 338,
       "hit_100_percent": 338,
@@ -7879,8 +7889,8 @@
       },
       "defense": 78,
       "exp": {
-        "base": 56730,
-        "job": 14274
+        "base": 19556,
+        "job": 3911
       },
       "flee_95_percent": 264,
       "hit_100_percent": 275,
@@ -15046,8 +15056,8 @@
       },
       "defense": 116,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 38627,
+        "job": 7726
       },
       "flee_95_percent": 321,
       "hit_100_percent": 304,
@@ -19226,8 +19236,8 @@
       },
       "defense": 100,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 521,
+        "job": 104
       },
       "flee_95_percent": 172,
       "hit_100_percent": 202,
@@ -26125,7 +26135,7 @@
       "defense": 58,
       "exp": {
         "base": 2620,
-        "job": 481
+        "job": 484
       },
       "flee_95_percent": 257,
       "hit_100_percent": 276,
@@ -26415,7 +26425,7 @@
       },
       "flee_95_percent": 325,
       "hit_100_percent": 355,
-      "hp": 59817,
+      "hp": 65315,
       "magic_attack": {
         "max": 117,
         "min": 97
@@ -26768,12 +26778,12 @@
       },
       "flee_95_percent": 341,
       "hit_100_percent": 336,
-      "hp": 5242,
+      "hp": 106304,
       "magic_attack": {
         "max": 288,
         "min": 230
       },
-      "magic_defense": 89
+      "magic_defense": 150
     },
     "special_status": [
       "主動攻擊",
@@ -28290,8 +28300,8 @@
       },
       "defense": 72,
       "exp": {
-        "base": 11680,
-        "job": 3582
+        "base": 54972,
+        "job": 10994
       },
       "flee_95_percent": 383,
       "hit_100_percent": 343,
@@ -28632,7 +28642,7 @@
       "defense": 85,
       "exp": {
         "base": 3657,
-        "job": 1315
+        "job": 731
       },
       "flee_95_percent": 312,
       "hit_100_percent": 329,
@@ -31063,7 +31073,7 @@
       "defense": 88,
       "exp": {
         "base": 11329,
-        "job": ""
+        "job": 2492
       },
       "flee_95_percent": 336,
       "hit_100_percent": 313,
@@ -31153,6 +31163,16 @@
         "slotCount": 1,
         "slot": "書籍",
         "enchantment_slots": 3,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2217,
+        "name": "聖職之帽",
+        "rate": "???",
+        "icon_url": "images/items/2217.gif",
+        "slotCount": 1,
+        "slot": "頭上",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -31466,7 +31486,7 @@
       "defense": 99,
       "exp": {
         "base": 5203,
-        "job": 954
+        "job": 961
       },
       "flee_95_percent": 312,
       "hit_100_percent": 315,
@@ -32797,8 +32817,8 @@
       },
       "defense": 56,
       "exp": {
-        "base": 2592,
-        "job": 729
+        "base": 2271,
+        "job": 419
       },
       "flee_95_percent": 266,
       "hit_100_percent": 313,
@@ -33074,8 +33094,8 @@
       },
       "defense": 52,
       "exp": {
-        "base": 2146,
-        "job": 594
+        "base": 1853,
+        "job": 342
       },
       "flee_95_percent": 283,
       "hit_100_percent": 270,
@@ -33339,8 +33359,8 @@
       },
       "defense": 47,
       "exp": {
-        "base": 2146,
-        "job": 594
+        "base": 1959,
+        "job": 362
       },
       "flee_95_percent": 242,
       "hit_100_percent": 270,
@@ -33614,8 +33634,8 @@
       },
       "defense": 70,
       "exp": {
-        "base": 2832,
-        "job": 762
+        "base": 2665,
+        "job": 492
       },
       "flee_95_percent": 265,
       "hit_100_percent": 287,
@@ -34576,7 +34596,7 @@
       "defense": 84,
       "exp": {
         "base": 3367,
-        "job": 1220
+        "job": 673
       },
       "flee_95_percent": 306,
       "hit_100_percent": 303,
@@ -34841,8 +34861,8 @@
       },
       "defense": 90,
       "exp": {
-        "base": 18863,
-        "job": ""
+        "base": 19761,
+        "job": 3952
       },
       "flee_95_percent": 299,
       "hit_100_percent": 309,
@@ -35128,14 +35148,14 @@
         "str": 84,
         "vit": 30
       },
-      "defense": 64,
+      "defense": 300,
       "exp": {
         "base": "",
         "job": ""
       },
       "flee_95_percent": 363,
       "hit_100_percent": 396,
-      "hp": 6022,
+      "hp": 115648,
       "magic_attack": {
         "max": 218,
         "min": 182
@@ -40268,7 +40288,7 @@
         "job": ""
       },
       "flee_95_percent": 312,
-      "hit_100_percent": 337,
+      "hit_100_percent": 372,
       "hp": 137592,
       "magic_attack": {
         "max": 85,
@@ -41046,7 +41066,7 @@
       },
       "flee_95_percent": 369,
       "hit_100_percent": 355,
-      "hp": "???",
+      "hp": 133635,
       "magic_attack": {
         "max": 151,
         "min": 127
@@ -44335,6 +44355,16 @@
         "slot": "拳刃",
         "enchantment_slots": "2-3",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 550140,
+        "name": "下級公會員治癒之杖",
+        "rate": "???",
+        "icon_url": "images/items/550140.gif",
+        "slotCount": 2,
+        "slot": "法杖",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -45059,7 +45089,7 @@
       },
       "defense": 90,
       "exp": {
-        "base": "",
+        "base": 63000,
         "job": ""
       },
       "flee_95_percent": 365,
@@ -46935,8 +46965,8 @@
       },
       "defense": 20,
       "exp": {
-        "base": 818,
-        "job": 203
+        "base": 1098,
+        "job": 219
       },
       "flee_95_percent": 274,
       "hit_100_percent": 298,
@@ -47280,7 +47310,7 @@
       "defense": 95,
       "exp": {
         "base": 5231,
-        "job": 1619
+        "job": 1046
       },
       "flee_95_percent": 364,
       "hit_100_percent": 320,
@@ -47810,12 +47840,12 @@
       },
       "defense": 67,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 56901,
+        "job": 11380
       },
       "flee_95_percent": 372,
       "hit_100_percent": 313,
-      "hp": 4835,
+      "hp": 94836,
       "magic_attack": {
         "max": 164,
         "min": 138
@@ -48615,8 +48645,8 @@
       },
       "defense": 63,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 1127,
+        "job": 225
       },
       "flee_95_percent": 335,
       "hit_100_percent": 376,
@@ -49056,7 +49086,7 @@
       "defense": 80,
       "exp": {
         "base": 10199,
-        "job": ""
+        "job": 2244
       },
       "flee_95_percent": 339,
       "hit_100_percent": 304,
@@ -49312,12 +49342,12 @@
       },
       "defense": 106,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 32896,
+        "job": 6580
       },
       "flee_95_percent": 332,
       "hit_100_percent": 365,
-      "hp": 5562,
+      "hp": 50000,
       "magic_attack": {
         "max": 176,
         "min": 146
@@ -49413,6 +49443,16 @@
         "slotCount": 2,
         "slot": "手杖",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 450313,
+        "name": "緊身便衣",
+        "rate": "???",
+        "icon_url": "images/items/450313.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -49585,8 +49625,8 @@
       },
       "defense": 101,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 32895,
+        "job": 6579
       },
       "flee_95_percent": 450,
       "hit_100_percent": 383,
@@ -50900,7 +50940,7 @@
       },
       "flee_95_percent": 362,
       "hit_100_percent": 330,
-      "hp": 3869,
+      "hp": 28683,
       "magic_attack": {
         "max": 188,
         "min": 154
@@ -50983,6 +51023,16 @@
         "icon_url": "images/items/480414.gif",
         "slotCount": 1,
         "slot": "披肩",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 560078,
+        "name": "昇龍拳套",
+        "rate": "???",
+        "icon_url": "images/items/560078.gif",
+        "slotCount": 1,
+        "slot": "拳套",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -52847,6 +52897,16 @@
         "slot": "單手劍",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 600049,
+        "name": "亞爾特劍",
+        "rate": "???",
+        "icon_url": "images/items/600049.gif",
+        "slotCount": 3,
+        "slot": "雙手劍",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -52973,14 +53033,14 @@
         "str": 51,
         "vit": 38
       },
-      "defense": 93,
+      "defense": 350,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 53232,
+        "job": 10646
       },
       "flee_95_percent": 322,
       "hit_100_percent": 300,
-      "hp": 2772,
+      "hp": 88720,
       "magic_attack": {
         "max": 146,
         "min": 126
@@ -53196,12 +53256,12 @@
       },
       "defense": 101,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 62377,
+        "job": 12475
       },
       "flee_95_percent": 344,
       "hit_100_percent": 305,
-      "hp": 4193,
+      "hp": 103962,
       "magic_attack": {
         "max": 177,
         "min": 147
@@ -53872,11 +53932,11 @@
       "defense": 85,
       "exp": {
         "base": "",
-        "job": ""
+        "job": 11922
       },
       "flee_95_percent": 366,
       "hit_100_percent": 326,
-      "hp": 4589,
+      "hp": 99350,
       "magic_attack": {
         "max": 174,
         "min": 148
@@ -53981,6 +54041,16 @@
         "icon_url": "images/items/560079.gif",
         "slotCount": 2,
         "slot": "拳套",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 470230,
+        "name": "戰士長靴",
+        "rate": "???",
+        "icon_url": "images/items/470230.gif",
+        "slotCount": 1,
+        "slot": "鞋子",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -55110,8 +55180,8 @@
       },
       "defense": 56,
       "exp": {
-        "base": 127,
-        "job": 77
+        "base": 4150,
+        "job": 768
       },
       "flee_95_percent": 257,
       "hit_100_percent": 304,
@@ -55244,7 +55314,7 @@
       "defense": 96,
       "exp": {
         "base": 19737,
-        "job": ""
+        "job": 3676
       },
       "flee_95_percent": 270,
       "hit_100_percent": 291,
@@ -55706,7 +55776,7 @@
       "defense": 40,
       "exp": {
         "base": 44280,
-        "job": ""
+        "job": 8180
       },
       "flee_95_percent": 289,
       "hit_100_percent": 294,
@@ -55907,7 +55977,7 @@
       "defense": 100,
       "exp": {
         "base": 42120,
-        "job": ""
+        "job": 7781
       },
       "flee_95_percent": 287,
       "hit_100_percent": 302,
@@ -56215,7 +56285,7 @@
       },
       "flee_95_percent": 493,
       "hit_100_percent": 472,
-      "hp": "???",
+      "hp": 87009000,
       "magic_attack": {
         "max": 2059,
         "min": 1199
@@ -56723,7 +56793,7 @@
         "level": 4,
         "type": "水"
       },
-      "level": 137,
+      "level": 98,
       "race": "動物",
       "size": "大"
     },
@@ -56748,7 +56818,7 @@
       },
       "flee_95_percent": 506,
       "hit_100_percent": 504,
-      "hp": "???",
+      "hp": 93749250,
       "magic_attack": {
         "max": 2467,
         "min": 1427
@@ -60065,7 +60135,7 @@
       "defense": 112,
       "exp": {
         "base": 18874,
-        "job": ""
+        "job": 3487
       },
       "flee_95_percent": 276,
       "hit_100_percent": 296,
@@ -61252,7 +61322,7 @@
       },
       "flee_95_percent": 353,
       "hit_100_percent": 308,
-      "hp": 5556,
+      "hp": 36490,
       "magic_attack": {
         "max": 191,
         "min": 159
@@ -61530,7 +61600,7 @@
       },
       "flee_95_percent": 363,
       "hit_100_percent": 327,
-      "hp": 6400,
+      "hp": 57825,
       "magic_attack": {
         "max": 206,
         "min": 164
@@ -62571,8 +62641,8 @@
       },
       "defense": 99,
       "exp": {
-        "base": 2390,
-        "job": 634
+        "base": 2336,
+        "job": 431
       },
       "flee_95_percent": 282,
       "hit_100_percent": 266,
@@ -65534,19 +65604,19 @@
         "str": 63,
         "vit": 55
       },
-      "defense": 88,
+      "defense": 176,
       "exp": {
         "base": "",
-        "job": ""
+        "job": 92236
       },
       "flee_95_percent": 412,
       "hit_100_percent": 399,
-      "hp": 25990,
+      "hp": 448331,
       "magic_attack": {
         "max": 374,
         "min": 278
       },
-      "magic_defense": 56
+      "magic_defense": 112
     },
     "special_status": [
       "主動攻擊",
@@ -65618,6 +65688,16 @@
         "slot": "鎧甲",
         "enchantment_slots": "",
         "card_prefix_name": "壞運氣的"
+      },
+      {
+        "item_id": 25630,
+        "name": "公會基地鑄幣",
+        "rate": "???",
+        "icon_url": "images/items/25630.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -66602,19 +66682,19 @@
         "str": 55,
         "vit": 48
       },
-      "defense": 78,
+      "defense": 156,
       "exp": {
         "base": "",
-        "job": ""
+        "job": 62569
       },
       "flee_95_percent": 391,
       "hit_100_percent": 388,
-      "hp": 25510,
+      "hp": 298538,
       "magic_attack": {
         "max": 365,
         "min": 273
       },
-      "magic_defense": 46
+      "magic_defense": 92
     },
     "special_status": [
       "主動攻擊",
@@ -66705,6 +66785,16 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 25630,
+        "name": "公會基地鑄幣",
+        "rate": "???",
+        "icon_url": "images/items/25630.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -67563,19 +67653,19 @@
         "str": 70,
         "vit": 47
       },
-      "defense": 80,
+      "defense": 160,
       "exp": {
         "base": "",
         "job": ""
       },
       "flee_95_percent": 375,
       "hit_100_percent": 371,
-      "hp": 26521,
+      "hp": 332910,
       "magic_attack": {
         "max": 324,
         "min": 244
       },
-      "magic_defense": 43
+      "magic_defense": 86
     },
     "special_status": [
       "主動攻擊",
@@ -67844,19 +67934,19 @@
         "str": 70,
         "vit": 56
       },
-      "defense": 90,
+      "defense": 180,
       "exp": {
         "base": "",
         "job": ""
       },
       "flee_95_percent": 389,
       "hit_100_percent": 385,
-      "hp": 24005,
+      "hp": 383122,
       "magic_attack": {
         "max": 349,
         "min": 269
       },
-      "magic_defense": 41
+      "magic_defense": 82
     },
     "special_status": [
       "主動攻擊",
@@ -67870,16 +67960,6 @@
       "變更追擊目標"
     ],
     "drops": [
-      {
-        "item_id": 912,
-        "name": "剎勒空結晶",
-        "rate": 12.5,
-        "icon_url": "images/items/912.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
       {
         "item_id": 938,
         "name": "粘稠液體",
@@ -68093,19 +68173,19 @@
         "str": 72,
         "vit": 80
       },
-      "defense": 127,
+      "defense": 254,
       "exp": {
         "base": "",
         "job": ""
       },
       "flee_95_percent": 374,
       "hit_100_percent": 358,
-      "hp": 24001,
+      "hp": 286958,
       "magic_attack": {
         "max": 290,
         "min": 226
       },
-      "magic_defense": 31
+      "magic_defense": 62
     },
     "special_status": [
       "主動攻擊",
@@ -68941,19 +69021,19 @@
         "str": 88,
         "vit": 82
       },
-      "defense": 108,
+      "defense": 216,
       "exp": {
         "base": "",
         "job": ""
       },
       "flee_95_percent": 371,
       "hit_100_percent": 377,
-      "hp": 25098,
+      "hp": 318996,
       "magic_attack": {
         "max": 348,
         "min": 258
       },
-      "magic_defense": 43
+      "magic_defense": 86
     },
     "special_status": [
       "主動攻擊",
@@ -70685,7 +70765,7 @@
       },
       "flee_95_percent": 388,
       "hit_100_percent": 367,
-      "hp": 7341,
+      "hp": 71576,
       "magic_attack": {
         "max": 1234,
         "min": 752
@@ -75878,8 +75958,8 @@
       },
       "defense": 52,
       "exp": {
-        "base": 117,
-        "job": 72
+        "base": 4500,
+        "job": 832
       },
       "flee_95_percent": 233,
       "hit_100_percent": 261,
@@ -75996,8 +76076,8 @@
       },
       "defense": 58,
       "exp": {
-        "base": 2154,
-        "job": 567
+        "base": 1659,
+        "job": 307
       },
       "flee_95_percent": 263,
       "hit_100_percent": 259,
@@ -76837,7 +76917,7 @@
       },
       "flee_95_percent": 1468,
       "hit_100_percent": 300,
-      "hp": 5,
+      "hp": 20,
       "magic_attack": {
         "max": 141,
         "min": 141
@@ -76900,6 +76980,26 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1000030,
+        "name": "公會勳章",
+        "rate": "???",
+        "icon_url": "images/items/1000030.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 100110,
+        "name": "豐厚的公會鑄幣袋子",
+        "rate": "???",
+        "icon_url": "images/items/100110.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -77688,7 +77788,7 @@
       },
       "flee_95_percent": 344,
       "hit_100_percent": 330,
-      "hp": 80450,
+      "hp": 307130,
       "magic_attack": {
         "max": 172,
         "min": 136
@@ -77908,7 +78008,7 @@
       "defense": 78,
       "exp": {
         "base": "",
-        "job": ""
+        "job": 938521
       },
       "flee_95_percent": 391,
       "hit_100_percent": 388,
@@ -89716,11 +89816,11 @@
       "defense": 85,
       "exp": {
         "base": "",
-        "job": ""
+        "job": 119221
       },
       "flee_95_percent": 366,
       "hit_100_percent": 337,
-      "hp": 22945,
+      "hp": 993500,
       "magic_attack": {
         "max": 174,
         "min": 148
@@ -98364,8 +98464,8 @@
       },
       "defense": 101,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 623772,
+        "job": 124774
       },
       "flee_95_percent": 344,
       "hit_100_percent": 305,
@@ -101533,8 +101633,8 @@
       },
       "defense": 88,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 169921,
+        "job": 33976
       },
       "flee_95_percent": 336,
       "hit_100_percent": 313,
@@ -105613,8 +105713,8 @@
       },
       "defense": 112,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 283110,
+        "job": 56610
       },
       "flee_95_percent": 276,
       "hit_100_percent": 296,
@@ -106430,7 +106530,7 @@
       },
       "flee_95_percent": 353,
       "hit_100_percent": 315,
-      "hp": 27780,
+      "hp": 364900,
       "magic_attack": {
         "max": 191,
         "min": 159
@@ -107609,8 +107709,8 @@
       },
       "defense": 60,
       "exp": {
-        "base": 12000,
-        "job": 2925
+        "base": 7755,
+        "job": 1545
       },
       "flee_95_percent": 213,
       "hit_100_percent": 235,
@@ -108622,7 +108722,7 @@
       },
       "flee_95_percent": 301,
       "hit_100_percent": 326,
-      "hp": 112540,
+      "hp": 11253,
       "magic_attack": {
         "max": 170,
         "min": 140
