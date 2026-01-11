@@ -22,51 +22,7 @@
 </head>
 <body class="p-4 md:p-8">
 
-<div class="max-w-5xl mx-auto bg-white shadow-xl rounded-xl border border-slate-200 container">
-    <div class="p-6 bg-slate-800 text-white rounded-t-xl">
-        <div class="flex justify-between items-center mb-6">
-            <h1 class="text-2xl font-bold tracking-tight flex items-center gap-2">
-                📅 行程自動規劃管理
-            </h1>
-            <div class="flex gap-2">
-                <button onclick="addLocation()" class="no-print bg-green-600 hover:bg-green-500 px-4 py-2 rounded font-bold text-sm transition-all">
-                    ➕ 新增地點
-                </button>
-                <button onclick="window.print()" class="no-print bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded font-bold text-sm transition-all">
-                    🖨️ 列印/轉PDF
-                </button>
-            </div>
-        </div>
-
-        <div class="flex flex-wrap items-center gap-6 no-print">
-            <div class="flex items-center gap-3">
-                <label class="text-slate-300 whitespace-nowrap">出發時間：</label>
-                <input type="time" id="startTime" value="16:30" oninput="calculate()" class="bg-slate-700 border-none rounded px-3 py-1 text-white text-lg outline-none ring-2 ring-slate-600 focus:ring-blue-500">
-            </div>
-            <p class="text-slate-400 text-sm italic">* 點擊「新增地點」按鈕可擴充行程內容</p>
-        </div>
-    </div>
-
-    <div class="overflow-x-auto p-4">
-        <table class="w-full">
-            <thead>
-            <tr class="text-slate-500 text-sm border-b-2 border-slate-200">
-                <th class="py-3 text-center w-28">抵達時間</th>
-                <th class="py-3 text-left px-4">行程目的地</th>
-                <th class="py-3 text-center w-32">路程 (分)</th>
-                <th class="py-3 text-center w-32">停留 (分)</th>
-                <th class="py-3 text-center w-16 no-print">操作</th>
-            </tr>
-            </thead>
-            <tbody id="schedule-body">
-            </tbody>
-        </table>
-    </div>
-
-    <div id="empty-state" class="hidden py-10 text-center text-slate-400">
-        目前沒有任何行程，請點擊上方「新增地點」。
-    </div>
-</div>
+<div class="content"><div class="title weapon-category-title">武器種類</div><div class="column-table"><div class="column"><div class="cell label"><img src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/heraldic-flag.png" class="label-img weapon"><img src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/kitsune.png" class="label-img size"></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/bare-handed.png" alt="RO 武器體型修正表中「空手」武器的圖示"><div data-v-8cc571a6="" class="img-text">空手</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/dagger.png" alt="RO 武器體型修正表中「短劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">短劍</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/sword.png" alt="RO 武器體型修正表中「單手劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">單手劍</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/two-hand-sword.png" alt="RO 武器體型修正表中「雙手劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">雙手劍</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/spear.png" alt="RO 武器體型修正表中「矛(單手/雙手)」武器的圖示"><div data-v-8cc571a6="" class="img-text">矛</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/spear-peco-peco.png" alt="RO 武器體型修正表中「矛(騎乘狀態)」武器的圖示"><div data-v-8cc571a6="" class="img-text">矛(騎乘狀態)</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/axe.png" alt="RO 武器體型修正表中「斧(單手/雙手)」武器的圖示"><div data-v-8cc571a6="" class="img-text">斧</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/mace.png" alt="RO 武器體型修正表中「鈍器」武器的圖示"><div data-v-8cc571a6="" class="img-text">鈍器</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/rod.png" alt="RO 武器體型修正表中「手杖」武器的圖示"><div data-v-8cc571a6="" class="img-text">手杖</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/bow.png" alt="RO 武器體型修正表中「弓」武器的圖示"><div data-v-8cc571a6="" class="img-text">弓</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/katar.png" alt="RO 武器體型修正表中「拳刃」武器的圖示"><div data-v-8cc571a6="" class="img-text">拳刃</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/book.png" alt="RO 武器體型修正表中「書」武器的圖示"><div data-v-8cc571a6="" class="img-text">書</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/knuckle.png" alt="RO 武器體型修正表中「拳套」武器的圖示"><div data-v-8cc571a6="" class="img-text">拳套</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/instrument.png" alt="RO 武器體型修正表中「樂器」武器的圖示"><div data-v-8cc571a6="" class="img-text">樂器</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/whip.png" alt="RO 武器體型修正表中「鞭子」武器的圖示"><div data-v-8cc571a6="" class="img-text">鞭子</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/human-shuriken.png" alt="RO 武器體型修正表中「風魔手裏劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">風魔手裏劍</div></div><!----></div></div></div><div class="column"><div class="cell label"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/ui/size-small.png" alt="RO 武器體型表中小型體型的圖示"><div data-v-8cc571a6="" class="img-text">小型</div></div><!----></div></div><div class="column-block"><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell red">50%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div></div></div><div class="column"><div class="cell label"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/ui/size-medium.png" alt="RO 武器體型表中中型體型的圖示"><div data-v-8cc571a6="" class="img-text">中型</div></div><!----></div></div><div class="column-block"><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div></div></div><div class="column"><div class="cell label"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/ui/size-large.png" alt="RO 武器體型表中大型體型的圖示"><div data-v-8cc571a6="" class="img-text">大型</div></div><!----></div></div><div class="column-block"><div class="cell green">100%</div><div class="cell red">50%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell red">50%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell green">100%</div></div></div></div></div>
 
 <script>
     // 預設地點資料

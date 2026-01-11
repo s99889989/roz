@@ -179,20 +179,29 @@ function hideTooltip() {
   background: #3a2c1f;
   border-radius: 12px;
   padding: 30px;
-  margin: auto;
+  /* 修改：移除 margin: auto，改為靠左 */
+  margin: 0;
   max-width: 1000px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   color: #fff8e1;
   font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+
+  /* 新增：確保內部區塊也靠左排列 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .main-title {
   color: #c9a063;
-  text-align: center;
+  /* 修改：從 center 改為 left */
+  text-align: left;
   font-size: 2.2rem;
   border-bottom: 3px double #c9a063;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  /* 新增：讓標題寬度隨文字內容延伸，或設為 100% */
+  width: 100%;
 }
 
 .map-container {

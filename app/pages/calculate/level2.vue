@@ -1,7 +1,7 @@
 <script setup>
-import {computed, onMounted, ref, watch} from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 
-// 🧮 經驗表
+// 🧮 經驗表 (BaseLv 1-80) - 保持不變
 const expTable = [
   { lv: 1, exp: 0 }, { lv: 2, exp: 2443 }, { lv: 3, exp: 2760 }, { lv: 4, exp: 3118 }, { lv: 5, exp: 3523 },
   { lv: 6, exp: 3980 }, { lv: 7, exp: 4497 }, { lv: 8, exp: 5081 }, { lv: 9, exp: 5741 }, { lv: 10, exp: 6487 },
@@ -22,10 +22,6 @@ const expTable = [
   { lv: 75, exp: 315337337 }, { lv: 76, exp: 356331190 }, { lv: 77, exp: 402654244 }, { lv: 78, exp: 454999295 },
   { lv: 79, exp: 514149203 }, { lv: 80, exp: 580888599 },
 ];
-
-const windowWidth = ref(window.innerWidth);
-window.addEventListener("resize", () => (windowWidth.value = window.innerWidth));
-const columns = computed(() => (windowWidth.value >= 850 ? 4 : 2));
 
 // 角色列表與當前選中角色
 const characters = ref([]);
@@ -128,47 +124,6 @@ function calculate() {
 }
 
 function formatNumber(n) { return Math.round(n).toLocaleString(); }
-
-
-
-
-// 經驗差計算
-function calcExpBetween(startLv, startExpPercent, endLv, endExpPercent) {
-  if (startLv === endLv) {
-    // 同一等級，只需算百分比差
-    return expTable[startLv].exp * ((endExpPercent - startExpPercent) / 100);
-  }
-
-  // 起始等級尚未滿的經驗量
-  const startRemaining = expTable[startLv].exp * ((100 - startExpPercent) / 100);
-
-  // 結尾等級的經驗量
-  const endPortion = expTable[endLv].exp * (endExpPercent / 100);
-
-  // 中間完整等級的經驗
-  let middle = 0;
-  for (let lv = startLv + 1; lv < endLv; lv++) {
-    middle += expTable[lv].exp;
-  }
-
-  return startRemaining + middle + endPortion;
-}
-
-const calcStartLv = ref(1);
-const calcStartExp = ref(0);
-const calcEndLv = ref(1);
-const calcEndExp = ref(0);
-const calcResult = ref(null);
-
-function calcDiff() {
-  calcResult.value = calcExpBetween(
-      calcStartLv.value,
-      calcStartExp.value,
-      calcEndLv.value,
-      calcEndExp.value
-  );
-}
-
 </script>
 
 <template>
@@ -240,65 +195,6 @@ function calcDiff() {
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <h1 class="title">📈 等級經驗差計算機</h1>
-
-
-    <div class="section">
-
-
-      <label>起始等級：</label>
-      <input type="number" v-model="calcStartLv" min="1" max="80">
-      <label>起始經驗(%)：</label>
-      <input type="number" v-model="calcStartExp" min="0" max="100" step="0.1">
-
-      <label>結束等級：</label>
-      <input type="number" v-model="calcEndLv" min="1" max="80">
-      <label>結束經驗(%)：</label>
-      <input type="number" v-model="calcEndExp" min="0" max="100" step="0.1">
-
-      <button class="calc-btn" @click="calcDiff">計算</button>
-
-      <p v-if="calcResult !== null" class="font-xl">
-        📘 共需經驗值：{{ formatNumber(calcResult) }}
-      </p>
-    </div>
-
-
-
-
-  </div>
-  <div class="container">
-    <h1 class="title">📘 BaseLv 經驗表</h1>
-
-    <!-- 經驗表 -->
-    <div class="section exp-table">
-      <table class="exp-table-inner">
-        <thead>
-        <tr>
-          <template v-for="j in columns" :key="j">
-            <th>BaseLv.</th>
-            <th>需求經驗</th>
-          </template>
-        </tr>
-        </thead>
-        <tbody>
-        <tr v-for="i in Math.ceil(expTable.length / columns)" :key="i">
-          <template v-for="j in columns">
-            <td v-if="expTable[(i - 1) * columns + j - 1]">
-              {{ expTable[(i - 1) * columns + j - 1].lv }}
-            </td>
-            <td v-if="expTable[(i - 1) * columns + j - 1]">
-              {{ formatNumber(expTable[(i - 1) * columns + j - 1].exp) }}
-            </td>
-          </template>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-
-  </div>
 </template>
 
 <style scoped>
@@ -333,28 +229,4 @@ input, select { background: #3a2c1f; color: #fff; border: 1px solid #666; paddin
 .result-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
 .result-card { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; border-bottom: 3px solid #ffd700; }
 .val { color: #b8faff; }
-
-
-
-
-.exp-table-inner {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.05);
-}
-.exp-table-inner th,
-.exp-table-inner td {
-  border: 1px solid #7a5220;
-  padding: 5px 8px;
-}
-.exp-table-inner th {
-  background: rgba(255, 215, 0, 0.2);
-  color: #ffd700;
-}
-.exp-table-inner td {
-  color: #b8faff;
-}
-
 </style>
