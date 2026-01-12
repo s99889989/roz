@@ -209,7 +209,7 @@ function calcDiff() {
             </select>
           </div>
           <div class="input-group">
-            <label>{{ record.expType === 'percent' ? '進度' : '數值' }}</label>
+            <label>{{ record.expType === 'percent' ? '經驗%' : '經驗' }}</label>
             <input type="number" v-model="record.expValue" class="val-input" />
           </div>
           <button class="del-btn" @click="currentChar.records.splice(index, 1)">❌</button>
@@ -228,13 +228,13 @@ function calcDiff() {
 
       <div class="section result" v-if="currentChar.results.length">
         <div class="summary">
-          🚀 {{ currentChar.name }} 平均時薪：<span class="highlight">{{ formatNumber(currentChar.perHourExp) }}</span> Exp/hr
+          🚀 {{ currentChar.name }} 平均經驗：<span class="highlight">{{ formatNumber(currentChar.perHourExp) }}</span> Exp/hr
         </div>
         <div class="result-grid">
           <div v-for="(res, i) in currentChar.results" :key="i" class="result-card">
-            <h3>➡️ Lv.{{ res.targetLevel }}</h3>
+            <h3>➡️ 升級到 Lv.{{ res.targetLevel }}</h3>
             <p>需再獲得：<span class="val">{{ formatNumber(res.needExp) }}</span></p>
-            <p>預估時間：<br><span class="highlight">{{ res.days }}天 {{ res.hours }}時 {{ res.minutes }}分</span></p>
+            <p>預估時間：<br><span class="highlight">{{ res.days }}天 {{ res.hours }}小時 {{ res.minutes }}分鐘</span></p>
           </div>
         </div>
       </div>
@@ -265,10 +265,8 @@ function calcDiff() {
       </p>
     </div>
 
-
-
-
   </div>
+
   <div class="container">
     <h1 class="title">📘 BaseLv 經驗表</h1>
 
