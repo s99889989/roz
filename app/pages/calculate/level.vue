@@ -149,6 +149,12 @@ function calculate() {
   }
 }
 
+
+// 格式化為「萬」單位的函式
+function formatToWan(n) {
+  return Math.round(n / 10000).toLocaleString();
+}
+
 function formatNumber(n) { return Math.round(n).toLocaleString(); }
 
 
@@ -250,7 +256,8 @@ function calcDiff() {
 
       <div class="section result" v-if="currentChar.results.length">
         <div class="summary">
-          🚀 {{ currentChar.name }} 平均經驗：<span class="highlight">{{ formatNumber(currentChar.perHourExp) }}</span> Exp/hr
+          🚀 {{ currentChar.name }} 平均經驗：
+          <span class="highlight">{{ formatToWan(currentChar.perHourExp) }} 萬</span> Exp/hr
         </div>
         <div class="result-grid">
           <div v-for="(res, i) in currentChar.results" :key="i" class="result-card">
