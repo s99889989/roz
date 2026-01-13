@@ -152,7 +152,8 @@ function calculate() {
 
 // 格式化為「萬」單位的函式
 function formatToWan(n) {
-  return Math.round(n / 10000).toLocaleString();
+  // 先除以 10,000，再無條件捨去小數點後數字，最後加上千分位符號
+  return Math.floor(n / 10000).toLocaleString();
 }
 
 function formatNumber(n) { return Math.round(n).toLocaleString(); }
