@@ -116,7 +116,7 @@ const perMinute = computed(() => Math.round(total.value * (60 / 8)))
 
       <div class="slider">
         <label>SP自然恢復速度增加：{{ sprec }}%</label>
-        <input type="range" v-model.number="sprec" min="0" max="100" />
+        <input type="range" v-model.number="sprec" min="0" max="140" />
         <span class="hint">再 {{sprec_need}}% SP恢復力 可使自然回復 +1</span>
       </div>
     </div>
