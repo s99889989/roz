@@ -1,5 +1,5 @@
 <script setup>
-import {ref, computed} from "vue"
+import {ref, computed, watch} from "vue"
 import {initFlowbite} from "flowbite";
 
 import {VirtualScroll} from 'vue3-virtual-scroll'
@@ -313,12 +313,49 @@ const isAdvanced = ref(false);
 const toggleAdvanced = () => {
   isAdvanced.value = !isAdvanced.value;
 };
+
+// 封裝一個輔助函式來處理從 localStorage 讀取 Boolean 值
+const getStorage = (key, defaultValue) => {
+  const saved = localStorage.getItem(key);
+  // 如果沒有儲存過，回傳預設值；如果有，則將字串轉回 Boolean
+  return saved !== null ? JSON.parse(saved) : defaultValue;
+};
+
 //物品搜尋
 const itemSearch = ref(false);
 // 點擊切換物品搜尋
 const toggleItemSearch = () => {
   itemSearch.value = !itemSearch.value;
 };
+
+//屬性相剋
+const elementShow = ref(true);
+// 點擊切換屬性相剋顯示
+const toggleElementSearch = () => {
+  elementShow.value = !elementShow.value;
+};
+
+//掉落物品
+const dropShow = ref(true);
+// 點擊切換掉落物品顯示
+const toggleDropSearch = () => {
+  dropShow.value = !dropShow.value;
+};
+// 2. 在掛載時從 localStorage 恢復狀態
+onMounted(() => {
+  const savedItem = localStorage.getItem('itemSearch');
+  const savedElement = localStorage.getItem('elementShow');
+  const savedDrop = localStorage.getItem('dropShow');
+
+  if (savedItem !== null) itemSearch.value = JSON.parse(savedItem);
+  if (savedElement !== null) elementShow.value = JSON.parse(savedElement);
+  if (savedDrop !== null) dropShow.value = JSON.parse(savedDrop);
+});
+// 使用 watch 監聽變化並存入 localStorage
+watch(itemSearch, (newVal) => localStorage.setItem('itemSearch', JSON.stringify(newVal)));
+watch(elementShow, (newVal) => localStorage.setItem('elementShow', JSON.stringify(newVal)));
+watch(dropShow, (newVal) => localStorage.setItem('dropShow', JSON.stringify(newVal)));
+
 //選擇模式
 const selectMode = ref(false);
 // 點擊切換選擇模式
@@ -398,19 +435,49 @@ const getElementEffect = (targetType, targetLv) => {
   <!--   bg-[#3a2c1f]-->
   <div class="p-4 text-white min-h-screen">
 
-    <div class="mb-4 flex justify-start items-center">
-      <h1 class="text-2xl font-bold text-yellow-400 me-4">搜尋</h1>
-      <span class="text-xl font-bold text-[#b89a74] me-2">搜尋物品</span>
+    <div class="mb-4 flex flex-wrap items-center gap-4">
+      <h1 class="text-2xl font-bold text-yellow-400">搜尋</h1>
 
-      <div
-          @click="toggleItemSearch"
-          class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
-          :class="{ 'bg-gray-100': itemSearch }"
-      >
+      <div class="flex items-center">
+        <span class="text-xl font-bold text-[#b89a74] me-2">搜尋物品</span>
         <div
-            class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
-            :class="itemSearch ? 'translate-x-7' : 'translate-x-1'"
-        ></div>
+            @click="toggleItemSearch"
+            class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+            :class="{ 'bg-gray-100': itemSearch }"
+        >
+          <div
+              class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+              :class="itemSearch ? 'translate-x-7' : 'translate-x-1'"
+          ></div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <span class="text-xl font-bold text-[#b89a74] me-2">顯示屬性相剋</span>
+        <div
+            @click="toggleElementSearch"
+            class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+            :class="{ 'bg-gray-100': elementShow }"
+        >
+          <div
+              class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+              :class="elementShow ? 'translate-x-7' : 'translate-x-1'"
+          ></div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <span class="text-xl font-bold text-[#b89a74] me-2">顯示掉落物品</span>
+        <div
+            @click="toggleDropSearch"
+            class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+            :class="{ 'bg-gray-100': dropShow }"
+        >
+          <div
+              class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+              :class="dropShow ? 'translate-x-7' : 'translate-x-1'"
+          ></div>
+        </div>
       </div>
     </div>
 
@@ -713,45 +780,50 @@ const getElementEffect = (targetType, targetLv) => {
           <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
               class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
 
-          <hr class="my-3 border-yellow-700">
+          <div v-show="elementShow">
+            <hr class="my-3 border-yellow-700">
 
-          <div class="mb-4">
-            <h3 class="font-bold text-yellow-700 mb-2">屬性相剋倍率</h3>
-            <div class="grid grid-cols-5 gap-1 text-[10px] text-center">
-              <div
-                  v-for="effect in getElementEffect(m.basic_info.element.type, m.basic_info.element.level)"
-                  :key="effect.name"
-                  class="flex flex-col border border-yellow-600 rounded p-1 transition-all"
-                  :class="{
+            <div class="mb-4">
+              <h3 class="font-bold text-yellow-700 mb-2">屬性相剋倍率</h3>
+              <div class="grid grid-cols-5 gap-1 text-[10px] text-center">
+                <div
+                    v-for="effect in getElementEffect(m.basic_info.element.type, m.basic_info.element.level)"
+                    :key="effect.name"
+                    class="flex flex-col border border-yellow-600 rounded p-1 transition-all"
+                    :class="{
         'bg-green-100 border-green-400': effect.value > 100,
         'bg-red-100 border-red-400': effect.value < 100,
         'bg-white': effect.value === 100,
         'bg-gray-800': effect.value === 0
       }"
-              >
-                <span :class="effect.value === 0 ? 'text-black' : 'text-black'">{{ effect.name }}</span>
-                <span class="font-bold" :class="{
+                >
+                  <span :class="effect.value === 0 ? 'text-black' : 'text-black'">{{ effect.name }}</span>
+                  <span class="font-bold" :class="{
         'text-green-700': effect.value > 100,
         'text-red-600': effect.value < 100 && effect.value > 0,
         'text-black': effect.value === 100
       }">{{ effect.value }}%</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <hr class="my-3 border-yellow-700">
+          <div v-show="dropShow">
+            <hr class="my-3 border-yellow-700">
 
-          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
-          <ul class="text-sm">
-            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-              <div class="flex">
-                <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
-                <span>{{ drop.name }}</span>
-              </div>
-              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
-            </li>
+            <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+            <ul class="text-sm">
+              <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+                <div class="flex">
+                  <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
+                  <span>{{ drop.name }}</span>
+                </div>
+                <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+              </li>
 
-          </ul>
+            </ul>
+          </div>
+
 
         </div>
 
@@ -833,45 +905,51 @@ const getElementEffect = (targetType, targetLv) => {
           <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
               class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
 
-          <hr class="my-3 border-yellow-700">
+          <div v-show="elementShow">
+            <hr class="my-3 border-yellow-700">
 
-          <div class="mb-4">
-            <h3 class="font-bold text-yellow-700 mb-2">屬性相剋倍率</h3>
-            <div class="grid grid-cols-5 gap-1 text-[10px] text-center">
-              <div
-                  v-for="effect in getElementEffect(m.basic_info.element.type, m.basic_info.element.level)"
-                  :key="effect.name"
-                  class="flex flex-col border border-yellow-600 rounded p-1 transition-all"
-                  :class="{
+            <div class="mb-4" v-show="elementShow">
+              <h3 class="font-bold text-yellow-700 mb-2">屬性相剋倍率</h3>
+              <div class="grid grid-cols-5 gap-1 text-[10px] text-center">
+                <div
+                    v-for="effect in getElementEffect(m.basic_info.element.type, m.basic_info.element.level)"
+                    :key="effect.name"
+                    class="flex flex-col border border-yellow-600 rounded p-1 transition-all"
+                    :class="{
         'bg-green-100 border-green-400': effect.value > 100,
         'bg-red-100 border-red-400': effect.value < 100,
         'bg-white': effect.value === 100,
         'bg-gray-800': effect.value === 0
       }"
-              >
-                <span :class="effect.value === 0 ? 'text-black' : 'text-black'">{{ effect.name }}</span>
-                <span class="font-bold" :class="{
+                >
+                  <span :class="effect.value === 0 ? 'text-black' : 'text-black'">{{ effect.name }}</span>
+                  <span class="font-bold" :class="{
         'text-green-700': effect.value > 100,
         'text-red-600': effect.value < 100 && effect.value > 0,
         'text-black': effect.value === 100
       }">{{ effect.value }}%</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <hr class="my-3 border-yellow-700">
 
-          <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
-          <ul class="text-sm">
-            <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-              <div class="flex">
-                <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
-                <span>{{ drop.name }}</span>
-              </div>
-              <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
-            </li>
+          <div v-show="dropShow">
+            <hr class="my-3 border-yellow-700">
 
-          </ul>
+            <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
+            <ul class="text-sm">
+              <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
+                <div class="flex">
+                  <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
+                  <span>{{ drop.name }}</span>
+                </div>
+                <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+              </li>
+
+            </ul>
+          </div>
+
 
         </div>
 
