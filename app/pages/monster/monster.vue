@@ -325,6 +325,73 @@ const selectMode = ref(false);
 const toggleSelectMode = () => {
   selectMode.value = !selectMode.value;
 };
+
+const elementTypes = ['無', '水', '地', '火', '風', '毒', '聖', '暗', '念', '不死'];
+
+// 依照圖片數據填入各等級矩陣 (此處以 Lv1 為例，請依序補齊其他等級)
+const elementMatrix = {
+  1: [
+    [100, 100, 100, 100, 100, 100, 100, 100, 90, 100], // 無
+    [100, 25, 100, 150, 90, 150, 100, 100, 100, 100], // 水
+    [100, 100, 25, 90, 150, 150, 100, 100, 100, 100], // 地
+    [100, 90, 150, 25, 100, 150, 100, 100, 100, 125], // 火
+    [100, 150, 90, 100, 25, 150, 100, 100, 100, 100], // 風
+    [100, 125, 125, 125, 125, 0, 75, 75, 75, 75],     // 毒
+    [100, 100, 100, 100, 100, 75, 0, 125, 100, 125],  // 聖
+    [100, 100, 100, 100, 100, 75, 125, 0, 100, 0],    // 暗
+    [90, 100, 100, 100, 100, 75, 90, 90, 125, 100],   // 念
+    [100, 100, 100, 90, 100, 75, 125, 0, 100, 0]      // 不死
+  ],
+  2: [
+    [100, 100, 100, 100, 100, 100, 100, 100, 70, 100],
+    [100, 0, 100, 175, 80, 150, 100, 100, 100, 100],
+    [100, 100, 0, 80, 175, 150, 100, 100, 100, 100],
+    [100, 80, 175, 0, 100, 150, 100, 100, 100, 150],
+    [100, 175, 80, 100, 0, 150, 100, 100, 100, 100],
+    [100, 150, 150, 150, 150, 0, 75, 75, 75, 50],
+    [100, 100, 100, 100, 100, 75, 0, 150, 100, 150],
+    [100, 100, 100, 100, 100, 75, 150, 0, 100, 0],
+    [70, 100, 100, 100, 100, 75, 80, 80, 150, 125],
+    [100, 100, 100, 80, 100, 50, 150, 0, 125, 0],
+  ],
+  3: [
+    [100, 100, 100, 100, 100, 100, 100, 100, 50, 100],
+    [100, 0, 100, 200, 70, 125, 100, 100, 100, 100],
+    [100, 100, 0, 70, 200, 125, 100, 100, 100, 100],
+    [100, 70, 200, 0, 100, 125, 100, 100, 100, 175],
+    [100, 200, 70, 100, 0, 125, 100, 100, 100, 100],
+    [100, 125, 125, 125, 125, 0, 50, 50, 50, 25],
+    [100, 100, 100, 100, 100, 50, 0, 175, 100, 175],
+    [100, 100, 100, 100, 100, 50, 175, 0, 100, 0],
+    [50, 100, 100, 100, 100, 50, 70, 70, 175, 150],
+    [100, 100, 100, 70, 100, 25, 175, 0, 150, 0],
+  ],
+  4: [
+    [100, 100, 100, 100, 100, 100, 100, 100, 0, 100],
+    [100, 0, 100, 200, 60, 125, 100, 100, 100, 100],
+    [100, 100, 0, 60, 200, 125, 100, 100, 100, 100],
+    [100, 60, 200, 0, 100, 125, 100, 100, 100, 200],
+    [100, 200, 60, 100, 0, 125, 100, 100, 100, 100],
+    [100, 125, 125, 125, 125, 0, 50, 50, 50, 0],
+    [100, 100, 100, 100, 100, 50, 0, 200, 100, 200],
+    [100, 100, 100, 100, 100, 50, 200, 0, 100, 0],
+    [0, 100, 100, 100, 100, 50, 60, 60, 200, 175],
+    [100, 100, 100, 60, 100, 0, 200, 0, 175, 0],
+  ],
+};
+
+// 計算函數：傳入魔物屬性與等級，回傳各屬性對其之傷害
+const getElementEffect = (targetType, targetLv) => {
+  const colIndex = elementTypes.indexOf(targetType);
+  if (colIndex === -1) return [];
+
+  const matrix = elementMatrix[targetLv] || elementMatrix[1];
+  return elementTypes.map((attackerType, rowIndex) => ({
+    name: attackerType,
+    value: matrix[rowIndex][colIndex]
+  }));
+};
+
 </script>
 
 <template>
@@ -648,6 +715,32 @@ const toggleSelectMode = () => {
 
           <hr class="my-3 border-yellow-700">
 
+          <div class="mb-4">
+            <h3 class="font-bold text-yellow-700 mb-2">屬性相剋倍率</h3>
+            <div class="grid grid-cols-5 gap-1 text-[10px] text-center">
+              <div
+                  v-for="effect in getElementEffect(m.basic_info.element.type, m.basic_info.element.level)"
+                  :key="effect.name"
+                  class="flex flex-col border border-yellow-600 rounded p-1 transition-all"
+                  :class="{
+        'bg-green-100 border-green-400': effect.value > 100,
+        'bg-red-100 border-red-400': effect.value < 100,
+        'bg-white': effect.value === 100,
+        'bg-gray-800': effect.value === 0
+      }"
+              >
+                <span :class="effect.value === 0 ? 'text-black' : 'text-black'">{{ effect.name }}</span>
+                <span class="font-bold" :class="{
+        'text-green-700': effect.value > 100,
+        'text-red-600': effect.value < 100 && effect.value > 0,
+        'text-black': effect.value === 100
+      }">{{ effect.value }}%</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-3 border-yellow-700">
+
           <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
           <ul class="text-sm">
             <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
@@ -709,7 +802,7 @@ const toggleSelectMode = () => {
             <div class="flex h-6">
               <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>
               <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">
-                {{ m.basic_info.element.type }}</p>
+                {{ m.basic_info.element.type }}{{ m.basic_info.element.level}}</p>
               <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>
             </div>
 
@@ -739,6 +832,32 @@ const toggleSelectMode = () => {
               class="statsColor">{{ m.stats.hit_100_percent }}</span></p>
           <p class="text-sm flex justify-center"><strong>95%迴避：</strong><span
               class="statsColor">{{ m.stats.flee_95_percent }}</span></p>
+
+          <hr class="my-3 border-yellow-700">
+
+          <div class="mb-4">
+            <h3 class="font-bold text-yellow-700 mb-2">屬性相剋倍率</h3>
+            <div class="grid grid-cols-5 gap-1 text-[10px] text-center">
+              <div
+                  v-for="effect in getElementEffect(m.basic_info.element.type, m.basic_info.element.level)"
+                  :key="effect.name"
+                  class="flex flex-col border border-yellow-600 rounded p-1 transition-all"
+                  :class="{
+        'bg-green-100 border-green-400': effect.value > 100,
+        'bg-red-100 border-red-400': effect.value < 100,
+        'bg-white': effect.value === 100,
+        'bg-gray-800': effect.value === 0
+      }"
+              >
+                <span :class="effect.value === 0 ? 'text-black' : 'text-black'">{{ effect.name }}</span>
+                <span class="font-bold" :class="{
+        'text-green-700': effect.value > 100,
+        'text-red-600': effect.value < 100 && effect.value > 0,
+        'text-black': effect.value === 100
+      }">{{ effect.value }}%</span>
+              </div>
+            </div>
+          </div>
 
           <hr class="my-3 border-yellow-700">
 
