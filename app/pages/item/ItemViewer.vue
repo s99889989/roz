@@ -43,7 +43,7 @@ const subcategories = computed(() => {
   }
 
   if(selectedCategory.value === '服飾' && selectedCategory.value !== 'ALL') {
-    return ['ALL', '頭上', '頭中', '頭下', '頭上、中', '頭中、下', '頭上、中、下', '披肩', '飾品(右邊)'];
+    return ['ALL', '頭上', '頭中', '頭下', '頭上、中', '頭中、下', '頭上、中、下', '披肩', '飾品(右邊)', '飾品(左)'];
   }
 
   if(selectedCategory.value === '卡片' && selectedCategory.value !== 'ALL') {
