@@ -130,7 +130,7 @@ function calculate() {
   let currentAccumulated = endTotal;
   for (let i = 1; i <= char.predictLevels; i++) {
     const targetLv = validRecords[validRecords.length - 1].level + i;
-    if (targetLv > 80) break;
+    if (targetLv > 90) break;
 
     let targetTotal = 0;
     for (let j = 1; j <= targetLv; j++) {
@@ -279,12 +279,12 @@ function calcDiff() {
 
 
       <label>起始等級：</label>
-      <input type="number" v-model="calcStartLv" min="1" max="80">
+      <input type="number" v-model="calcStartLv" min="1" max="90">
       <label>起始經驗(%)：</label>
       <input type="number" v-model="calcStartExp" min="0" max="100" step="0.1">
 
       <label>結束等級：</label>
-      <input type="number" v-model="calcEndLv" min="1" max="80">
+      <input type="number" v-model="calcEndLv" min="1" max="90">
       <label>結束經驗(%)：</label>
       <input type="number" v-model="calcEndExp" min="0" max="100" step="0.1">
 
