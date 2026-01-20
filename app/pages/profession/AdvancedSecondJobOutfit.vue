@@ -133,11 +133,12 @@ const copyGuide = (text: string) => {
 <template>
   <div class="outfit-page">
     <div class="announcement-card">
-      <h1 class="page-title">進階服飾開放通知</h1>
+      <h1 class="page-title">進階服飾</h1>
       <div class="info-content">
         <p>※ 當達成 <span class="highlight">二轉、JOB Lv50</span> 時，可回到各職業公會領取「服飾變更券(二轉)×1」。(僅限1次)</p>
         <p>※ 將「服飾變更券(二轉)」提供給 <span class="highlight">NPC造型師(prt_in 244 168)</span>，即可更換服飾。</p>
         <p>※ 「進階服飾」可隨時更換為「初始服飾」，不需消耗任何材料。</p>
+        <a href="https://roz.gnjoy.com.tw/Notice/Notice_Info?id=218070">資料來源</a>
       </div>
     </div>
 
