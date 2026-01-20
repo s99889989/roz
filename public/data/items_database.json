@@ -26247,7 +26247,14 @@
       "buy_price": 0,
       "sell_price": 10
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1095,
+        "monster_name": "白蟻",
+        "rate": "???",
+        "image_url": "images/monsters/1095.gif"
+      }
+    ]
   },
   "1157": {
     "id": 1157,
@@ -32433,7 +32440,7 @@
       "kr": "토끼머리띠"
     },
     "description": {
-      "official": "髮圈上有模仿兔耳朵製成的裝飾，雖然很難維持重心，但出乎意外也相當具有活動性。\\nLUK + 2\\n系列 : 頭盔 防禦 : 3\\n位置 : 上端 重量 : 10\\n要求等級 : 1\\n裝備 : 全職業",
+      "official": "髮圈上有模仿兔耳朵製成的裝飾，雖然很難維持重心，但出乎意外也相當具有活動性。\\nLUK + 2\\n系列 : 頭盔 防禦 : 3\\n位置 : 頭上 重量 : 10\\n要求等級 : 1\\n裝備 : 全職業",
       "official_clean": "髮圈上有模仿兔耳朵製成的裝飾，雖然很難維持重心，但出乎意外也相當具有活動性。\\nLUK + 2"
     },
     "category": "防具",
@@ -32459,7 +32466,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-07-02",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 10,
       "buy_price": 0,
@@ -32474,7 +32481,7 @@
       "kr": "꽃머리띠"
     },
     "description": {
-      "official": "模仿花瓣製成的髮圈，呈現一股柔和感，被稱為是服務他人的女僕的基本配備。\\n系列 : 頭盔 防禦 : 4\\n位置 : 上端 重量 : 10\\n要求等級 : 1\\n裝備 : 全職業",
+      "official": "模仿花瓣製成的髮圈，呈現一股柔和感，被稱為是服務他人的女僕的基本配備。\\n系列 : 頭盔 防禦 : 4\\n位置 : 頭上 重量 : 10\\n要求等級 : 1\\n裝備 : 全職業",
       "official_clean": "模仿花瓣製成的髮圈，呈現一股柔和感，被稱為是服務他人的女僕的基本配備。"
     },
     "category": "防具",
@@ -32500,7 +32507,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-07-02",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 10,
       "buy_price": 0,
@@ -36195,6 +36202,18 @@
         "monster_name": "深淵騎士",
         "rate": 0.01,
         "image_url": "images/monsters/1219.gif"
+      },
+      {
+        "monster_id": 1316,
+        "monster_name": "岩石龜",
+        "rate": "???",
+        "image_url": "images/monsters/1316.gif"
+      },
+      {
+        "monster_id": 2647,
+        "monster_name": "雄壯岩石龜",
+        "rate": "???",
+        "image_url": "images/monsters/2647.gif"
       }
     ]
   },
@@ -36351,6 +36370,12 @@
         "monster_name": "法老王",
         "rate": 0.75,
         "image_url": "images/monsters/1157.gif"
+      },
+      {
+        "monster_id": 1315,
+        "monster_name": "風靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1315.gif"
       }
     ]
   },
@@ -36978,7 +37003,7 @@
       "kr": "라이더휘장"
     },
     "description": {
-      "official": "喜歡快速奔馳的人們使用的標誌。光是貼在身上就讓人很想要奔跑。\\nAGI+2\\n系列 : 披肩 防禦 : 13\\n重量 : 50\\n需求等級 : 55\\n裝備 : 二轉職業",
+      "official": "喜歡快速奔馳的人們使用的標誌。光是貼在身上就讓人很想要奔跑。\\nAGI+2\\n系列 : 披肩 防禦 : 13\\n重量 : 50\\n需求等級 : 55\\n裝備 : 初學者以外的全職業",
       "official_clean": "喜歡快速奔馳的人們使用的標誌。光是貼在身上就讓人很想要奔跑。\\nAGI+2"
     },
     "category": "防具",
@@ -36992,7 +37017,7 @@
     "defense": 13,
     "weapon_level": 0,
     "required_level": 55,
-    "equip_jobs": "二轉職業",
+    "equip_jobs": "初學者以外的全職業",
     "wearing_image_url": "",
     "icon_url": "/images/items/2529.gif",
     "script": "",
@@ -37004,7 +37029,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 50,
       "buy_price": "",
@@ -38166,12 +38191,6 @@
       "sell_price": ""
     },
     "dropped_by": [
-      {
-        "monster_id": 1505,
-        "monster_name": "銀月魔女",
-        "rate": 0.03,
-        "image_url": "images/monsters/1505.gif"
-      },
       {
         "monster_id": 2774,
         "monster_name": "迅捷銀月魔女",
@@ -56255,7 +56274,7 @@
       "kr": "천사의투구"
     },
     "description": {
-      "official": "具備高度防禦力的頭盔，黏上匯集天使翅膀羽毛製成的翅膀後製成的驚人頭盔。  製作者不詳。\\nAGI+1\\nLUK+1\\nMDEF+3\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭上 重量 : 160\\n需求等級 : 74\\n裝備 : 二轉職業",
+      "official": "具備高度防禦力的頭盔，黏上匯集天使翅膀羽毛製成的翅膀後製成的驚人頭盔。  製作者不詳。\\nAGI+1\\nLUK+1\\nMDEF+3\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭上 重量 : 160\\n需求等級 : 74\\n裝備 : 2轉以上可裝備",
       "official_clean": "具備高度防禦力的頭盔，黏上匯集天使翅膀羽毛製成的翅膀後製成的驚人頭盔。  製作者不詳。\\nAGI+1\\nLUK+1\\nMDEF+3"
     },
     "category": "防具",
@@ -56269,7 +56288,7 @@
     "defense": 10,
     "weapon_level": 0,
     "required_level": 74,
-    "equip_jobs": "二轉職業",
+    "equip_jobs": "2轉以上可裝備",
     "wearing_image_url": "",
     "icon_url": "/images/items/5025.gif",
     "script": "",
@@ -56281,7 +56300,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 160,
       "buy_price": "",
@@ -57475,7 +57494,7 @@
       "kr": "자세교정모자"
     },
     "description": {
-      "official": "這是熟悉文靜與端正走路姿勢的一種修練課程，頭上放著一本書，書上擺著一顆蘋果，行走時必須保持平穩的狀態，避免蘋果和書掉落。\\n對不夠小心謹慎的人來說應該是不錯的修練。\\nDEX + 2\\n系列 : 頭盔 防禦 : 5\\n位置 : 上端 重量 : 70\\n要求等級 : 1\\n裝備 : 初學者以外的全職業",
+      "official": "這是熟悉文靜與端正走路姿勢的一種修練課程，頭上放著一本書，書上擺著一顆蘋果，行走時必須保持平穩的狀態，避免蘋果和書掉落。\\n對不夠小心謹慎的人來說應該是不錯的修練。\\nDEX + 2\\n系列 : 頭盔 防禦 : 5\\n位置 : 頭上 重量 : 70\\n要求等級 : 1\\n裝備 : 初學者以外的全職業",
       "official_clean": "這是熟悉文靜與端正走路姿勢的一種修練課程，頭上放著一本書，書上擺著一顆蘋果，行走時必須保持平穩的狀態，避免蘋果和書掉落。\\n對不夠小心謹慎的人來說應該是不錯的修練。\\nDEX + 2"
     },
     "category": "防具",
@@ -57501,7 +57520,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-07-31",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 70,
       "buy_price": 20,
@@ -58599,7 +58618,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1322,
+        "monster_name": "彈簧兔",
+        "rate": "???",
+        "image_url": "images/monsters/1322.gif"
+      }
+    ]
   },
   "5475": {
     "id": 5475,
@@ -63035,7 +63061,7 @@
     "attributes": {
       "weight": 1,
       "buy_price": 772,
-      "sell_price": 10
+      "sell_price": 300
     },
     "dropped_by": [
       {
@@ -63719,6 +63745,12 @@
         "monster_name": "雄壯岩石龜",
         "rate": 21.25,
         "image_url": "images/monsters/2647.gif"
+      },
+      {
+        "monster_id": 1314,
+        "monster_name": "果樹龜",
+        "rate": "???",
+        "image_url": "images/monsters/1314.gif"
       }
     ]
   },
@@ -80078,7 +80110,7 @@
     },
     "category": "服飾裝備",
     "slot": "頭上",
-    "slotCount": 1,
+    "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 694,
     "costume": true,
@@ -80099,7 +80131,7 @@
     "can_mail": true,
     "can_auction": false,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -80146,7 +80178,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1314,
+        "monster_name": "果樹龜",
+        "rate": "???",
+        "image_url": "images/monsters/1314.gif"
+      }
+    ]
   },
   "18730": {
     "id": 18730,
@@ -80898,7 +80937,20 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1319,
+        "monster_name": "水靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1319.gif"
+      },
+      {
+        "monster_id": 2831,
+        "monster_name": "菁英水靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/2831.gif"
+      }
+    ]
   },
   "19429": {
     "id": 19429,
@@ -101331,7 +101383,20 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1315,
+        "monster_name": "風靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1315.gif"
+      },
+      {
+        "monster_id": 2889,
+        "monster_name": "菁英風靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/2889.gif"
+      }
+    ]
   },
   "29014": {
     "id": 29014,
@@ -107563,7 +107628,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 2717,
+        "monster_name": "憤怒梅納海葵",
+        "rate": "???",
+        "image_url": "images/monsters/2717.gif"
+      }
+    ]
   },
   "31299": {
     "id": 31299,
@@ -112326,7 +112398,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1504,
+        "monster_name": "無顱武士",
+        "rate": "???",
+        "image_url": "images/monsters/1504.gif"
+      }
+    ]
   },
   "100075": {
     "id": 100075,
@@ -113736,8 +113815,8 @@
       "kr": "초록상자"
     },
     "description": {
-      "official": "開啟後隨機獲得以下其中一樣道具 :\\n\\n力量寶石(中端) 1個\\n智慧寶石(中端) 1個\\n敏捷寶石(中端) 1個\\n靈巧寶石(中端) 1個\\n體力寶石(中端) 1個\\n運氣寶石(中端) 1個\\nLUK轉換石(頭中) 1個\\nSTR轉換石(頭中) 1個\\nAGI轉換石(頭中) 1個\\nINT轉換石(頭中) 1個\\nVIT轉換石(頭中) 1個\\nDEX轉換石(頭中) 1個",
-      "official_clean": "開啟後隨機獲得以下其中一樣道具 :\\n力量寶石(中端) 1個\\n智慧寶石(中端) 1個\\n敏捷寶石(中端) 1個\\n靈巧寶石(中端) 1個\\n體力寶石(中端) 1個\\n運氣寶石(中端) 1個\\nLUK轉換石(頭中) 1個\\nSTR轉換石(頭中) 1個\\nAGI轉換石(頭中) 1個\\nINT轉換石(頭中) 1個\\nVIT轉換石(頭中) 1個\\nDEX轉換石(頭中) 1個"
+      "official": "開啟後隨機獲得以下其中一樣道具 :\\n\\n力量寶石(頭中) 1個\\n智慧寶石(頭中) 1個\\n敏捷寶石(頭中) 1個\\n靈巧寶石(頭中) 1個\\n體力寶石(頭中) 1個\\n運氣寶石(頭中) 1個\\nLUK轉換石(頭中) 1個\\nSTR轉換石(頭中) 1個\\nAGI轉換石(頭中) 1個\\nINT轉換石(頭中) 1個\\nVIT轉換石(頭中) 1個\\nDEX轉換石(頭中) 1個",
+      "official_clean": "開啟後隨機獲得以下其中一樣道具 :\\n力量寶石(頭中) 1個\\n智慧寶石(頭中) 1個\\n敏捷寶石(頭中) 1個\\n靈巧寶石(頭中) 1個\\n體力寶石(頭中) 1個\\n運氣寶石(頭中) 1個\\nLUK轉換石(頭中) 1個\\nSTR轉換石(頭中) 1個\\nAGI轉換石(頭中) 1個\\nINT轉換石(頭中) 1個\\nVIT轉換石(頭中) 1個\\nDEX轉換石(頭中) 1個"
     },
     "category": "其他",
     "slot": "-",
@@ -113762,7 +113841,7 @@
     "can_mail": true,
     "can_auction": false,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": 0,
@@ -126444,8 +126523,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「暴風雪」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「暴風雪」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「暴風雪」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「暴風雪」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126470,7 +126549,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126485,8 +126564,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「隕石術」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「隕石術」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「隕石術」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「隕石術」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126511,7 +126590,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126526,8 +126605,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怒雷強擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怒雷強擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怒雷強擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怒雷強擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126552,7 +126631,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126567,8 +126646,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「十字驅魔攻擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「十字驅魔攻擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「十字驅魔攻擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「十字驅魔攻擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126593,7 +126672,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126608,8 +126687,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「黑暗瞬間」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「黑暗瞬間」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「黑暗瞬間」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「黑暗瞬間」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126634,7 +126713,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126649,8 +126728,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「螺旋擊刺」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「螺旋擊刺」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「螺旋擊刺」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「螺旋擊刺」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126675,7 +126754,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126690,8 +126769,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「強酸火煙瓶投擲」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「強酸火煙瓶投擲」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「強酸火煙瓶投擲」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「強酸火煙瓶投擲」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126716,7 +126795,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126731,8 +126810,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連刺攻擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連刺攻擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連刺攻擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連刺攻擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126757,7 +126836,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126772,8 +126851,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怪物互擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怪物互擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怪物互擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「怪物互擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126798,7 +126877,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126813,8 +126892,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「水球術」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「水球術」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「水球術」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「水球術」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126839,7 +126918,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126854,8 +126933,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「音速投擲」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「音速投擲」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「音速投擲」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「音速投擲」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126880,7 +126959,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126895,8 +126974,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連續盾擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連續盾擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連續盾擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「連續盾擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126921,7 +127000,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126936,8 +127015,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「迴旋盾擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「迴旋盾擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「迴旋盾擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「迴旋盾擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -126962,7 +127041,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -126977,8 +127056,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「聖十字攻擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「聖十字攻擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「聖十字攻擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「聖十字攻擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127003,7 +127082,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127018,8 +127097,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「獵鷹突擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「獵鷹突擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「獵鷹突擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「獵鷹突擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127044,7 +127123,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127059,8 +127138,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「閃電衝擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「閃電衝擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「閃電衝擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「閃電衝擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127085,7 +127164,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127100,8 +127179,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「阿修羅霸凰拳」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「阿修羅霸凰拳」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「阿修羅霸凰拳」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「阿修羅霸凰拳」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127126,7 +127205,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127141,8 +127220,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「浸透勁」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「浸透勁」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「浸透勁」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「浸透勁」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127167,7 +127246,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127182,8 +127261,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「奧義箭亂舞」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「奧義箭亂舞」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「奧義箭亂舞」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「奧義箭亂舞」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127208,7 +127287,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127223,8 +127302,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「二連矢」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「二連矢」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「二連矢」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「二連矢」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127249,7 +127328,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127264,8 +127343,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「銳利射擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「銳利射擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「銳利射擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「銳利射擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127290,7 +127369,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127305,8 +127384,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「念力連擊」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「念力連擊」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「念力連擊」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「念力連擊」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127331,7 +127410,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127346,8 +127425,8 @@
       "kr": "Sea_Sapphire"
     },
     "description": {
-      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「重力原野」的傷害-15%。",
-      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「重力原野」的傷害-15%。"
+      "official": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「重力原野」的傷害-20%。",
+      "official_clean": "「※隱世地圖、MVP-PK棲息地、公會密穴專用屬性」\\n受到「重力原野」的傷害-20%。"
     },
     "category": "其他",
     "slot": "-",
@@ -127372,7 +127451,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -135190,7 +135269,14 @@
       "buy_price": 0,
       "sell_price": 0
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1194,
+        "monster_name": "捲甲蟲",
+        "rate": "???",
+        "image_url": "images/monsters/1194.gif"
+      }
+    ]
   },
   "401078": {
     "id": 401078,
@@ -138423,7 +138509,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1195,
+        "monster_name": "飛行魔書",
+        "rate": "???",
+        "image_url": "images/monsters/1195.gif"
+      }
+    ]
   },
   "401187": {
     "id": 401187,
@@ -138464,7 +138557,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1320,
+        "monster_name": "鴞裊首領",
+        "rate": "???",
+        "image_url": "images/monsters/1320.gif"
+      }
+    ]
   },
   "401188": {
     "id": 401188,
@@ -138505,7 +138605,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1213,
+        "monster_name": "獸人戰士長",
+        "rate": "???",
+        "image_url": "images/monsters/1213.gif"
+      }
+    ]
   },
   "401189": {
     "id": 401189,
@@ -138546,7 +138653,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1102,
+        "monster_name": "巫婆",
+        "rate": "???",
+        "image_url": "images/monsters/1102.gif"
+      }
+    ]
   },
   "401190": {
     "id": 401190,
@@ -138560,7 +138674,7 @@
     },
     "category": "服飾裝備",
     "slot": "頭上",
-    "slotCount": 1,
+    "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 694,
     "costume": true,
@@ -138581,7 +138695,7 @@
     "can_mail": true,
     "can_auction": false,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-20",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -138628,7 +138742,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1315,
+        "monster_name": "風靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1315.gif"
+      }
+    ]
   },
   "401192": {
     "id": 401192,
@@ -138669,7 +138790,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1509,
+        "monster_name": "南瓜魂",
+        "rate": "???",
+        "image_url": "images/monsters/1509.gif"
+      }
+    ]
   },
   "401193": {
     "id": 401193,
@@ -138710,7 +138838,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1316,
+        "monster_name": "岩石龜",
+        "rate": "???",
+        "image_url": "images/monsters/1316.gif"
+      }
+    ]
   },
   "410030": {
     "id": 410030,
@@ -140549,7 +140684,14 @@
       "buy_price": 0,
       "sell_price": 10
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1191,
+        "monster_name": "邪惡箱",
+        "rate": "???",
+        "image_url": "images/monsters/1191.gif"
+      }
+    ]
   },
   "410406": {
     "id": 410406,
@@ -144636,7 +144778,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1505,
+        "monster_name": "銀月魔女",
+        "rate": "???",
+        "image_url": "images/monsters/1505.gif"
+      }
+    ]
   },
   "420010": {
     "id": 420010,
@@ -153527,7 +153676,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1216,
+        "monster_name": "梅納海葵",
+        "rate": "???",
+        "image_url": "images/monsters/1216.gif"
+      }
+    ]
   },
   "420724": {
     "id": 420724,
@@ -153568,7 +153724,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1506,
+        "monster_name": "假面鬼",
+        "rate": "???",
+        "image_url": "images/monsters/1506.gif"
+      }
+    ]
   },
   "420725": {
     "id": 420725,
@@ -153609,7 +153772,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1321,
+        "monster_name": "刺尾蜻蜓",
+        "rate": "???",
+        "image_url": "images/monsters/1321.gif"
+      }
+    ]
   },
   "430011": {
     "id": 430011,
@@ -154865,7 +155035,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1193,
+        "monster_name": "鐘怪",
+        "rate": "???",
+        "image_url": "images/monsters/1193.gif"
+      }
+    ]
   },
   "440000": {
     "id": 440000,
@@ -155214,7 +155391,14 @@
       "buy_price": 0,
       "sell_price": 0
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1179,
+        "monster_name": "白幽靈",
+        "rate": "???",
+        "image_url": "images/monsters/1179.gif"
+      }
+    ]
   },
   "440031": {
     "id": 440031,
@@ -158729,6 +158913,12 @@
         "monster_name": "無顱武士",
         "rate": 0.07,
         "image_url": "images/monsters/1504.gif"
+      },
+      {
+        "monster_id": 1321,
+        "monster_name": "刺尾蜻蜓",
+        "rate": "???",
+        "image_url": "images/monsters/1321.gif"
       }
     ]
   },
@@ -161936,14 +162126,7 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": [
-      {
-        "monster_id": 1505,
-        "monster_name": "銀月魔女",
-        "rate": "???",
-        "image_url": "images/monsters/1505.gif"
-      }
-    ]
+    "dropped_by": []
   },
   "480713": {
     "id": 480713,
@@ -162025,7 +162208,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1269,
+        "monster_name": "古鐘魔",
+        "rate": "???",
+        "image_url": "images/monsters/1269.gif"
+      }
+    ]
   },
   "490759": {
     "id": 490759,
@@ -163818,6 +164008,12 @@
         "monster_name": "單眼蟲",
         "rate": 1,
         "image_url": "images/monsters/1256.gif"
+      },
+      {
+        "monster_id": 1314,
+        "monster_name": "果樹龜",
+        "rate": "???",
+        "image_url": "images/monsters/1314.gif"
       }
     ]
   },
@@ -164600,6 +164796,12 @@
         "monster_name": "卡崙寶寶",
         "rate": "???",
         "image_url": "images/monsters/1515.gif"
+      },
+      {
+        "monster_id": 1509,
+        "monster_name": "南瓜魂",
+        "rate": "???",
+        "image_url": "images/monsters/1509.gif"
       }
     ]
   },
@@ -165757,6 +165959,12 @@
         "monster_name": "憤怒伍坦戰士",
         "rate": 0.05,
         "image_url": "images/monsters/2611.gif"
+      },
+      {
+        "monster_id": 1321,
+        "monster_name": "刺尾蜻蜓",
+        "rate": "???",
+        "image_url": "images/monsters/1321.gif"
       }
     ]
   },
@@ -167129,6 +167337,12 @@
         "monster_name": "狂暴野貓",
         "rate": "???",
         "image_url": "images/monsters/1261.gif"
+      },
+      {
+        "monster_id": 1314,
+        "monster_name": "果樹龜",
+        "rate": "???",
+        "image_url": "images/monsters/1314.gif"
       }
     ]
   },
@@ -168586,6 +168800,12 @@
         "monster_name": "雄壯土撥鼠",
         "rate": 0.25,
         "image_url": "images/monsters/2760.gif"
+      },
+      {
+        "monster_id": 1315,
+        "monster_name": "風靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1315.gif"
       }
     ]
   },
@@ -168998,6 +169218,12 @@
         "monster_name": "綠變色龍",
         "rate": 0.1,
         "image_url": "images/monsters/1687.gif"
+      },
+      {
+        "monster_id": 1316,
+        "monster_name": "岩石龜",
+        "rate": "???",
+        "image_url": "images/monsters/1316.gif"
       }
     ]
   },

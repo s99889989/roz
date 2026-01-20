@@ -817,6 +817,7 @@ const getElementEffect = (targetType, targetLv) => {
                 <div class="flex">
                   <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
                   <span>{{ drop.name }}</span>
+                  <span v-show="drop.slotCount > 0">[{{ drop.slotCount }}]</span>
                 </div>
                 <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
               </li>
@@ -943,6 +944,7 @@ const getElementEffect = (targetType, targetLv) => {
                 <div class="flex">
                   <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
                   <span>{{ drop.name }}</span>
+                  <span v-show="drop.slotCount > 0">[{{ drop.slotCount }}]</span>
                 </div>
                 <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
               </li>

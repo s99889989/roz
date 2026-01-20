@@ -45,6 +45,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -260,6 +261,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -610,6 +612,7 @@
       },
       "magic_defense": 1
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -798,8 +801,8 @@
       },
       "defense": 26,
       "exp": {
-        "base": 480,
-        "job": 118
+        "base": 241,
+        "job": 49
       },
       "flee_95_percent": 214,
       "hit_100_percent": 243,
@@ -810,6 +813,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -1236,6 +1240,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -1566,6 +1571,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿"
     ],
@@ -1819,6 +1825,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -2064,6 +2071,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -2319,6 +2327,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -2543,6 +2552,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -2716,6 +2726,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -2942,6 +2953,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -3228,6 +3240,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -3496,8 +3509,8 @@
       },
       "defense": 47,
       "exp": {
-        "base": 2180,
-        "job": 531
+        "base": 1968,
+        "job": 393
       },
       "flee_95_percent": 256,
       "hit_100_percent": 280,
@@ -3508,6 +3521,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -3779,6 +3793,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -4091,6 +4106,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -4334,6 +4350,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -4567,6 +4584,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -4911,6 +4929,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -5110,6 +5129,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -5349,6 +5369,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -5635,6 +5656,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -5982,6 +6004,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -6258,6 +6281,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -6674,6 +6698,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -6945,6 +6970,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -7221,6 +7247,7 @@
       },
       "magic_defense": 17
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -7439,6 +7466,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -7921,6 +7949,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -8134,6 +8163,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -8423,6 +8453,7 @@
       },
       "magic_defense": 164
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -9051,6 +9082,7 @@
       },
       "magic_defense": 58
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -9676,8 +9708,8 @@
       },
       "defense": 190,
       "exp": {
-        "base": 5792,
-        "job": 1695
+        "base": 7159,
+        "job": 1431
       },
       "flee_95_percent": 284,
       "hit_100_percent": 307,
@@ -9688,6 +9720,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -9930,6 +9963,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -10307,6 +10341,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -10580,6 +10615,7 @@
       },
       "magic_defense": 26
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -10856,6 +10892,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -11174,6 +11211,7 @@
       },
       "magic_defense": 103
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -11791,6 +11829,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -11982,6 +12021,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿"
     ],
@@ -12285,6 +12325,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -12499,6 +12540,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -12713,6 +12755,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -13009,6 +13052,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -13219,6 +13263,7 @@
       },
       "magic_defense": 7
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -13477,6 +13522,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -13701,6 +13747,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -13926,6 +13973,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -14229,6 +14277,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -14535,6 +14584,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -14790,6 +14840,7 @@
       },
       "magic_defense": 7
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -15088,6 +15139,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -15355,6 +15407,7 @@
       },
       "magic_defense": 80
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -15438,6 +15491,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -15674,6 +15728,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -15883,6 +15938,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -16317,6 +16373,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -16579,6 +16636,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -16851,6 +16909,7 @@
       },
       "magic_defense": 32
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -17229,6 +17288,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -17546,6 +17606,7 @@
       },
       "magic_defense": 23
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -17816,6 +17877,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -18060,6 +18122,7 @@
       },
       "magic_defense": 11
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -18248,6 +18311,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -18437,6 +18501,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -18627,6 +18692,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -18980,6 +19046,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -19268,6 +19335,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -19531,6 +19599,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -19939,6 +20008,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -20212,6 +20282,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -20490,6 +20561,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -20783,6 +20855,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -21141,6 +21214,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "物理攻擊減傷",
@@ -21364,6 +21438,7 @@
       },
       "magic_defense": 81
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "協助同族",
@@ -21851,6 +21926,7 @@
       },
       "magic_defense": 70
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -22394,6 +22470,7 @@
       },
       "magic_defense": 26
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -22756,6 +22833,7 @@
       },
       "magic_defense": 6
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -22984,6 +23062,7 @@
       },
       "magic_defense": 37
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -23258,6 +23337,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -23589,6 +23669,7 @@
       },
       "magic_defense": 51
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -23910,6 +23991,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -24153,6 +24235,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -24368,8 +24451,8 @@
       },
       "defense": 55,
       "exp": {
-        "base": 1048,
-        "job": 262
+        "base": 638,
+        "job": 128
       },
       "flee_95_percent": 233,
       "hit_100_percent": 258,
@@ -24380,6 +24463,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -24482,6 +24566,16 @@
         "rate": "???",
         "icon_url": "images/items/600049.gif",
         "slotCount": 3,
+        "slot": "雙手劍",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1154,
+        "name": "亞爾特劍",
+        "rate": "???",
+        "icon_url": "images/items/1154.gif",
+        "slotCount": 2,
         "slot": "雙手劍",
         "enchantment_slots": 0,
         "card_prefix_name": ""
@@ -24630,6 +24724,7 @@
       },
       "magic_defense": 285
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -25066,8 +25161,8 @@
       },
       "defense": 68,
       "exp": {
-        "base": 722,
-        "job": 183
+        "base": 464,
+        "job": 93
       },
       "flee_95_percent": 220,
       "hit_100_percent": 237,
@@ -25078,6 +25173,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -25294,6 +25390,7 @@
       },
       "magic_defense": 88
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -25867,6 +25964,7 @@
       },
       "magic_defense": 41
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -26166,6 +26264,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -26452,6 +26551,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -26805,6 +26905,7 @@
       },
       "magic_defense": 150
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -26904,6 +27005,16 @@
         "slotCount": 3,
         "slot": "短劍",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401189,
+        "name": "(服飾)智慧金頭腦(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401189.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -27104,6 +27215,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -27322,8 +27434,8 @@
       },
       "defense": 37,
       "exp": {
-        "base": 1352,
-        "job": 347
+        "base": 938,
+        "job": 187
       },
       "flee_95_percent": 252,
       "hit_100_percent": 256,
@@ -27334,6 +27446,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -27573,8 +27686,8 @@
       },
       "defense": 52,
       "exp": {
-        "base": 946,
-        "job": 233
+        "base": 539,
+        "job": 108
       },
       "flee_95_percent": 232,
       "hit_100_percent": 253,
@@ -27585,6 +27698,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -27835,6 +27949,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -28059,6 +28174,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -28332,6 +28448,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -28673,6 +28790,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -28937,6 +29055,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -29356,6 +29475,7 @@
       },
       "magic_defense": 135
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -29848,6 +29968,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -30103,6 +30224,7 @@
       },
       "magic_defense": 65
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -30351,6 +30473,7 @@
       },
       "magic_defense": 70
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -30852,6 +30975,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -31104,6 +31228,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -31517,6 +31642,7 @@
       },
       "magic_defense": 29
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -31762,6 +31888,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -32118,6 +32245,7 @@
       },
       "magic_defense": 72
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -32576,6 +32704,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -32849,6 +32978,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -33126,6 +33256,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -33391,6 +33522,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -33666,6 +33798,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -33931,6 +34064,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -34156,6 +34290,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -34391,6 +34526,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -34627,6 +34763,7 @@
       },
       "magic_defense": 35
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -34893,6 +35030,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -35182,6 +35320,7 @@
       },
       "magic_defense": 76
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -35603,6 +35742,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -35907,6 +36047,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -36170,6 +36311,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -36464,8 +36606,8 @@
       },
       "defense": 99,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 79803,
+        "job": 15961
       },
       "flee_95_percent": 366,
       "hit_100_percent": 390,
@@ -36476,6 +36618,7 @@
       },
       "magic_defense": 64
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -36774,6 +36917,7 @@
       },
       "magic_defense": 19
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -37024,6 +37168,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -37283,6 +37428,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -37503,6 +37649,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -37745,6 +37892,7 @@
       },
       "magic_defense": 1439
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -38023,8 +38171,8 @@
       },
       "defense": 63,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 1202,
+        "job": 241
       },
       "flee_95_percent": 278,
       "hit_100_percent": 280,
@@ -38035,6 +38183,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -38360,6 +38509,7 @@
       },
       "magic_defense": 50
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -38966,6 +39116,7 @@
       },
       "magic_defense": 66
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -39235,6 +39386,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -39552,6 +39704,7 @@
       },
       "magic_defense": 81
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -40316,6 +40469,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -40583,6 +40737,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -40858,6 +41013,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -41093,6 +41249,7 @@
       },
       "magic_defense": 52
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -41420,6 +41577,7 @@
       },
       "magic_defense": 49
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -41691,6 +41849,7 @@
       },
       "magic_defense": 42
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -41952,6 +42111,7 @@
       },
       "magic_defense": 403
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -42443,6 +42603,7 @@
       },
       "magic_defense": 11
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -42663,6 +42824,7 @@
       },
       "magic_defense": 127
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -43227,6 +43389,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -43487,6 +43650,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -43685,6 +43849,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -44033,6 +44198,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -44287,6 +44453,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -44631,6 +44798,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -44892,6 +45060,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -45121,6 +45290,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -45364,7 +45534,7 @@
       "defense": 61,
       "exp": {
         "base": 3397,
-        "job": 1131
+        "job": 679
       },
       "flee_95_percent": 283,
       "hit_100_percent": 293,
@@ -45375,6 +45545,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -45628,6 +45799,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -45920,6 +46092,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -46195,6 +46368,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -46489,6 +46663,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -46700,6 +46875,7 @@
       },
       "magic_defense": 22
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -46997,6 +47173,7 @@
       },
       "magic_defense": 40
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -47065,6 +47242,16 @@
         "slotCount": 3,
         "slot": "短劍",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 440030,
+        "name": "(服飾)白幽靈面具(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/440030.gif",
+        "slotCount": 0,
+        "slot": "頭上/中/下",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -47341,6 +47528,7 @@
       },
       "magic_defense": 40
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -47639,6 +47827,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -47872,6 +48061,7 @@
       },
       "magic_defense": 31
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -48112,6 +48302,7 @@
       },
       "magic_defense": 92
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -48665,8 +48856,8 @@
       },
       "defense": 63,
       "exp": {
-        "base": 1127,
-        "job": 225
+        "base": 1024,
+        "job": 204
       },
       "flee_95_percent": 335,
       "hit_100_percent": 376,
@@ -48677,6 +48868,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -48753,6 +48945,16 @@
         "icon_url": "images/items/540112.gif",
         "slotCount": 2,
         "slot": "書籍",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 410405,
+        "name": "(服飾)太陽眼鏡(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/410405.gif",
+        "slotCount": 0,
+        "slot": "頭中",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -49117,6 +49319,7 @@
       },
       "magic_defense": 40
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -49362,8 +49565,8 @@
       },
       "defense": 106,
       "exp": {
-        "base": 32896,
-        "job": 6580
+        "base": 29905,
+        "job": 5981
       },
       "flee_95_percent": 332,
       "hit_100_percent": 365,
@@ -49374,6 +49577,7 @@
       },
       "magic_defense": 53
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -49473,6 +49677,16 @@
         "slotCount": 2,
         "slot": "手杖",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 436025,
+        "name": "(服飾)鐘怪假面(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/436025.gif",
+        "slotCount": 0,
+        "slot": "頭中/下",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -49645,8 +49859,8 @@
       },
       "defense": 101,
       "exp": {
-        "base": 32895,
-        "job": 6579
+        "base": 9863,
+        "job": 1973
       },
       "flee_95_percent": 450,
       "hit_100_percent": 383,
@@ -49657,6 +49871,7 @@
       },
       "magic_defense": 36
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -49746,12 +49961,27 @@
         "slot": "盾牌",
         "enchantment_slots": 0,
         "card_prefix_name": "抵抗特殊力量的"
+      },
+      {
+        "item_id": 401077,
+        "name": "(服飾)鏟子頭飾(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401077.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
       {
         "map_name": "alde_dun01",
         "description": "鐘塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun02",
+        "description": "鐘塔地下2樓",
         "spawn_info": ""
       },
       {
@@ -49918,6 +50148,7 @@
       },
       "magic_defense": 38
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -50007,6 +50238,16 @@
         "slotCount": 3,
         "slot": "書籍",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401186,
+        "name": "(服飾)飛行魔書帽(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401186.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -50254,6 +50495,7 @@
       },
       "magic_defense": 41
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -50442,6 +50684,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -50690,6 +50933,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -50967,6 +51211,7 @@
       },
       "magic_defense": 55
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -51232,6 +51477,7 @@
       },
       "magic_defense": 99
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -51495,6 +51741,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -51735,6 +51982,7 @@
       },
       "magic_defense": 50
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -51924,6 +52172,7 @@
       },
       "magic_defense": 11
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -52180,8 +52429,8 @@
       },
       "defense": 146,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 7579,
+        "job": 1515
       },
       "flee_95_percent": 360,
       "hit_100_percent": 357,
@@ -52192,6 +52441,7 @@
       },
       "magic_defense": 34
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -52534,6 +52784,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -52819,6 +53070,7 @@
       },
       "magic_defense": 42
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -53067,6 +53319,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -53288,6 +53541,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -53396,6 +53650,16 @@
         "icon_url": "images/items/560084.gif",
         "slotCount": 3,
         "slot": "拳套",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401188,
+        "name": "(服飾)獸人頭盔(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401188.gif",
+        "slotCount": 0,
+        "slot": "頭上",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -53582,6 +53846,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -53951,7 +54216,7 @@
       },
       "defense": 85,
       "exp": {
-        "base": "",
+        "base": 59610,
         "job": 11922
       },
       "flee_95_percent": 366,
@@ -53963,6 +54228,7 @@
       },
       "magic_defense": 32
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -54072,6 +54338,16 @@
         "slotCount": 0,
         "slot": "拳刃",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 420723,
+        "name": "(服飾)嘴刁清涼汽水(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420723.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -54194,6 +54470,7 @@
       },
       "magic_defense": 50
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -54545,6 +54822,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -54806,6 +55084,7 @@
       },
       "magic_defense": 48
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -55099,6 +55378,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -55212,6 +55492,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -55345,6 +55626,7 @@
       },
       "magic_defense": 72
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -55702,6 +55984,7 @@
       },
       "magic_defense": 200
     },
+    "release_date": "",
     "special_status": [
       "mini"
     ],
@@ -55807,6 +56090,7 @@
       },
       "magic_defense": 36
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -56008,6 +56292,7 @@
       },
       "magic_defense": 22
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -56312,6 +56597,7 @@
       },
       "magic_defense": 166
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -56834,6 +57120,7 @@
       },
       "magic_defense": 103
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -57345,6 +57632,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -57635,6 +57923,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -57877,6 +58166,7 @@
       },
       "magic_defense": 37
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -58113,6 +58403,7 @@
       },
       "magic_defense": 33
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -58442,6 +58733,7 @@
       },
       "magic_defense": 31
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -58632,6 +58924,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -58854,6 +59147,7 @@
       },
       "magic_defense": 27
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -59171,6 +59465,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -59407,6 +59702,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -59609,6 +59905,7 @@
       },
       "magic_defense": 51
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -59916,6 +60213,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -60184,6 +60482,7 @@
       },
       "magic_defense": 56
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -60561,6 +60860,7 @@
       },
       "magic_defense": 7
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -60728,6 +61028,7 @@
       },
       "magic_defense": 67
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -61081,6 +61382,7 @@
       },
       "magic_defense": 50
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -61355,8 +61657,8 @@
       },
       "defense": 91,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 21894,
+        "job": 4378
       },
       "flee_95_percent": 353,
       "hit_100_percent": 308,
@@ -61367,6 +61669,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -61461,6 +61764,16 @@
         "slotCount": 4,
         "slot": "拳套",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 480714,
+        "name": "(服飾)念動齒輪(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/480714.gif",
+        "slotCount": 0,
+        "slot": "披肩",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -61645,6 +61958,7 @@
       },
       "magic_defense": 60
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -62037,6 +62351,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -62232,6 +62547,7 @@
       },
       "magic_defense": 168
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -62701,6 +63017,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -62952,6 +63269,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -63121,6 +63439,7 @@
       },
       "magic_defense": 73
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -63466,6 +63785,7 @@
       },
       "magic_defense": 40
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -63694,7 +64014,7 @@
       "defense": 114,
       "exp": {
         "base": 3337,
-        "job": 1063
+        "job": 667
       },
       "flee_95_percent": 270,
       "hit_100_percent": 300,
@@ -63705,6 +64025,7 @@
       },
       "magic_defense": 36
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -64002,6 +64323,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -64296,6 +64618,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -64471,6 +64794,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -64703,6 +65027,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -64992,6 +65317,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -65355,6 +65681,7 @@
       },
       "magic_defense": 60
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -65454,6 +65781,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -65510,6 +65838,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -65609,6 +65938,7 @@
       },
       "magic_defense": 50
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "其他攻擊減傷",
@@ -65666,6 +65996,7 @@
       },
       "magic_defense": 112
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -65935,6 +66266,7 @@
       },
       "magic_defense": 74
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -66206,6 +66538,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -66538,6 +66871,7 @@
       },
       "magic_defense": 51
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -66744,6 +67078,7 @@
       },
       "magic_defense": 92
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -66991,6 +67326,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -67280,6 +67616,7 @@
       },
       "magic_defense": 84
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -67477,6 +67814,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -67715,6 +68053,7 @@
       },
       "magic_defense": 86
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -67996,6 +68335,7 @@
       },
       "magic_defense": 82
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -68235,6 +68575,7 @@
       },
       "magic_defense": 62
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -68546,6 +68887,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -68762,6 +69104,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -69083,6 +69426,7 @@
       },
       "magic_defense": 86
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -69404,6 +69748,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -69655,13 +70000,14 @@
       },
       "flee_95_percent": 318,
       "hit_100_percent": 323,
-      "hp": 6575,
+      "hp": 131422,
       "magic_attack": {
         "max": 203,
         "min": 169
       },
       "magic_defense": 50
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -69736,6 +70082,46 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 18668,
+        "name": "懶洋洋的烏龜",
+        "rate": "???",
+        "icon_url": "images/items/18668.gif",
+        "slotCount": 1,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7067,
+        "name": "石頭一角",
+        "rate": "???",
+        "icon_url": "images/items/7067.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 590070,
+        "name": "尖刃鐵錘",
+        "rate": "???",
+        "icon_url": "images/items/590070.gif",
+        "slotCount": 1,
+        "slot": "鈍器",
+        "enchantment_slots": 3,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 510182,
+        "name": "長柄短劍",
+        "rate": "???",
+        "icon_url": "images/items/510182.gif",
+        "slotCount": 3,
+        "slot": "短劍",
+        "enchantment_slots": "2-3",
         "card_prefix_name": ""
       }
     ],
@@ -70110,18 +70496,19 @@
       },
       "defense": 169,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 130266,
+        "job": 28948
       },
       "flee_95_percent": 419,
       "hit_100_percent": 395,
-      "hp": 8977,
+      "hp": 219300,
       "magic_attack": {
         "max": 208,
         "min": 166
       },
       "magic_defense": 49
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -70133,6 +70520,16 @@
       "變更追擊目標"
     ],
     "drops": [
+      {
+        "item_id": 401191,
+        "name": "(服飾)刺刺龜殼帽(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401191.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
       {
         "item_id": 603,
         "name": "神秘藍箱",
@@ -70180,6 +70577,36 @@
         "icon_url": "images/items/7072.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 610066,
+        "name": "拳刃",
+        "rate": "???",
+        "icon_url": "images/items/610066.gif",
+        "slotCount": 3,
+        "slot": "拳刃",
+        "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2327,
+        "name": "天衣 月舞",
+        "rate": "???",
+        "icon_url": "images/items/2327.gif",
+        "slotCount": 0,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 28949,
+        "name": "寶石鋼盾",
+        "rate": "???",
+        "icon_url": "images/items/28949.gif",
+        "slotCount": 1,
+        "slot": "盾牌",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -70457,13 +70884,14 @@
       },
       "flee_95_percent": 324,
       "hit_100_percent": 340,
-      "hp": 8768,
+      "hp": 170798,
       "magic_attack": {
         "max": 159,
         "min": 135
       },
       "magic_defense": 58
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -70527,6 +70955,36 @@
         "icon_url": "images/items/7070.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2318,
+        "name": "秘衣 美德",
+        "rate": "???",
+        "icon_url": "images/items/2318.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 620033,
+        "name": "毀滅之斧",
+        "rate": "???",
+        "icon_url": "images/items/620033.gif",
+        "slotCount": 2,
+        "slot": "雙手斧",
+        "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401193,
+        "name": "(服飾)懶洋洋烏龜(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401193.gif",
+        "slotCount": 0,
+        "slot": "頭上",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -70749,6 +71207,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -70992,18 +71451,19 @@
       },
       "defense": 199,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 111782,
+        "job": 24841
       },
       "flee_95_percent": 385,
       "hit_100_percent": 354,
-      "hp": 8180,
+      "hp": 188184,
       "magic_attack": {
         "max": 231,
         "min": 183
       },
       "magic_defense": 50
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -71281,18 +71741,19 @@
       },
       "defense": 127,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 117678,
+        "job": 23535
       },
       "flee_95_percent": 341,
       "hit_100_percent": 346,
-      "hp": 9990,
+      "hp": 196131,
       "magic_attack": {
         "max": 334,
         "min": 244
       },
       "magic_defense": 38
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -71371,6 +71832,16 @@
         "icon_url": "images/items/7070.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 19376,
+        "name": "冰凍玫瑰",
+        "rate": "???",
+        "icon_url": "images/items/19376.gif",
+        "slotCount": 0,
+        "slot": "頭下",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -71633,6 +72104,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -71723,6 +72195,16 @@
         "slotCount": 2,
         "slot": "雙手斧",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401187,
+        "name": "(服飾)鴞裊首領帽(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401187.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -71921,13 +72403,14 @@
       },
       "flee_95_percent": 324,
       "hit_100_percent": 355,
-      "hp": 4680,
+      "hp": 112165,
       "magic_attack": {
         "max": 172,
         "min": 150
       },
       "magic_defense": 25
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -71998,6 +72481,36 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 480381,
+        "name": "斗篷",
+        "rate": "???",
+        "icon_url": "images/items/480381.gif",
+        "slotCount": 1,
+        "slot": "披肩",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 420725,
+        "name": "(服飾)嘴叼鉛筆(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420725.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 560062,
+        "name": "鷹爪拳套",
+        "rate": "???",
+        "icon_url": "images/items/560062.gif",
+        "slotCount": 2,
+        "slot": "拳套",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -72128,13 +72641,14 @@
       },
       "flee_95_percent": 317,
       "hit_100_percent": 355,
-      "hp": 6684,
+      "hp": 130834,
       "magic_attack": {
         "max": 170,
         "min": 146
       },
       "magic_defense": 42
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -72219,6 +72733,16 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 5457,
+        "name": "玉兔頭飾",
+        "rate": "???",
+        "icon_url": "images/items/5457.gif",
+        "slotCount": 1,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -72398,6 +72922,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -72680,6 +73205,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -72802,6 +73328,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -72904,6 +73431,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -73006,6 +73534,7 @@
       },
       "magic_defense": 41
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -73412,6 +73941,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -73768,6 +74298,7 @@
       },
       "magic_defense": 146
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -74375,6 +74906,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -74676,6 +75208,7 @@
       },
       "magic_defense": 34
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -74877,6 +75410,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -75159,6 +75693,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -75382,6 +75917,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -75575,6 +76111,7 @@
       },
       "magic_defense": 26
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -75789,6 +76326,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -75992,6 +76530,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -76205,6 +76744,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -76481,18 +77021,19 @@
       },
       "defense": 116,
       "exp": {
-        "base": 17062,
-        "job": 5279
+        "base": 91980,
+        "job": 18396
       },
       "flee_95_percent": 360,
       "hit_100_percent": 368,
-      "hp": 29200,
+      "hp": 153300,
       "magic_attack": {
         "max": 271,
         "min": 219
       },
       "magic_defense": 45
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -76726,13 +77267,14 @@
       },
       "flee_95_percent": 379,
       "hit_100_percent": 337,
-      "hp": 35620,
+      "hp": 192348,
       "magic_attack": {
         "max": 379,
         "min": 273
       },
       "magic_defense": 38
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -76790,6 +77332,16 @@
         "slotCount": 1,
         "slot": "披肩",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 32201,
+        "name": "無顱武士的手套",
+        "rate": "???",
+        "icon_url": "images/items/32201.gif",
+        "slotCount": 1,
+        "slot": "飾品",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -76924,13 +77476,14 @@
       },
       "flee_95_percent": 400,
       "hit_100_percent": 374,
-      "hp": 33068,
+      "hp": 180220,
       "magic_attack": {
         "max": 552,
         "min": 384
       },
       "magic_defense": 44
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -76949,16 +77502,6 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 2718,
-        "name": "瘋兔別針",
-        "rate": 0.03,
-        "icon_url": "images/items/2718.gif",
-        "slotCount": 1,
-        "slot": "飾品",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -77022,12 +77565,12 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 480712,
-        "name": "(服飾)銀月魔女之新月(歸屬)",
+        "item_id": 410572,
+        "name": "(服飾)蝙蝠耳朵(歸屬)",
         "rate": "???",
-        "icon_url": "images/items/480712.gif",
+        "icon_url": "images/items/410572.gif",
         "slotCount": 0,
-        "slot": "披肩",
+        "slot": "頭中",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -77301,18 +77844,19 @@
       },
       "defense": 85,
       "exp": {
-        "base": 17138,
-        "job": 5045
+        "base": 89656,
+        "job": 17931
       },
       "flee_95_percent": 368,
       "hit_100_percent": 365,
-      "hp": 29015,
+      "hp": 149427,
       "magic_attack": {
         "max": 285,
         "min": 235
       },
       "magic_defense": 58
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -77391,6 +77935,16 @@
         "slotCount": 0,
         "slot": "披肩",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 420724,
+        "name": "(服飾)假面鬼披肩(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420724.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -77521,13 +78075,14 @@
       },
       "flee_95_percent": 395,
       "hit_100_percent": 380,
-      "hp": 33623,
+      "hp": 184926,
       "magic_attack": {
         "max": 539,
         "min": 359
       },
       "magic_defense": 41
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -77719,18 +78274,19 @@
       },
       "defense": 96,
       "exp": {
-        "base": 15250,
-        "job": 4053
+        "base": 69246,
+        "job": 13849
       },
       "flee_95_percent": 375,
       "hit_100_percent": 366,
-      "hp": 23082,
+      "hp": 115410,
       "magic_attack": {
         "max": 277,
         "min": 217
       },
       "magic_defense": 55
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -77923,13 +78479,14 @@
       },
       "flee_95_percent": 372,
       "hit_100_percent": 350,
-      "hp": 25404,
+      "hp": 128290,
       "magic_attack": {
         "max": 285,
         "min": 237
       },
       "magic_defense": 53
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -78007,6 +78564,26 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 540106,
+        "name": "書",
+        "rate": "???",
+        "icon_url": "images/items/540106.gif",
+        "slotCount": 3,
+        "slot": "書籍",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401192,
+        "name": "(服飾)南瓜魂連帽披肩(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401192.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -78221,18 +78798,19 @@
       },
       "defense": 101,
       "exp": {
-        "base": 15962,
-        "job": 4929
+        "base": 79213,
+        "job": 15842
       },
       "flee_95_percent": 375,
       "hit_100_percent": 381,
-      "hp": 25887,
+      "hp": 132023,
       "magic_attack": {
         "max": 296,
         "min": 246
       },
       "magic_defense": 68
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -78504,6 +79082,7 @@
       },
       "magic_defense": 123
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -79251,6 +79830,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -79454,6 +80034,7 @@
       },
       "magic_defense": 91
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -79734,6 +80315,7 @@
       },
       "magic_defense": 143
     },
+    "release_date": "",
     "special_status": [
       "MVP",
       "主動攻擊",
@@ -80235,6 +80817,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -80353,6 +80936,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -80643,8 +81227,8 @@
       },
       "defense": 96,
       "exp": {
-        "base": 3872,
-        "job": 1063
+        "base": 4119,
+        "job": 823
       },
       "flee_95_percent": 280,
       "hit_100_percent": 300,
@@ -80655,6 +81239,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -80817,6 +81402,7 @@
       },
       "magic_defense": 66
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -81106,6 +81692,7 @@
       },
       "magic_defense": 80
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -81189,6 +81776,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "其他攻擊減傷",
@@ -81358,6 +81946,7 @@
       },
       "magic_defense": 80
     },
+    "release_date": "",
     "special_status": [],
     "drops": [
       {
@@ -81451,6 +82040,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -81598,6 +82188,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -81724,6 +82315,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -81840,6 +82432,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -81981,6 +82574,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "其他攻擊減傷",
       "可物理攻擊",
@@ -82060,6 +82654,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -82284,6 +82879,7 @@
       },
       "magic_defense": 46
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -82552,6 +83148,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -82787,6 +83384,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -83100,6 +83698,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -83285,6 +83884,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -83463,6 +84063,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -83691,6 +84292,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -83932,6 +84534,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -84138,6 +84741,7 @@
       },
       "magic_defense": 40
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -84402,6 +85006,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -84693,6 +85298,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -84925,6 +85531,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -85126,6 +85733,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -85348,6 +85956,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -85549,6 +86158,7 @@
       },
       "magic_defense": 17
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -85748,6 +86358,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -85959,6 +86570,7 @@
       },
       "magic_defense": 34
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -86266,6 +86878,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -86454,6 +87067,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -86749,6 +87363,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -86971,6 +87586,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -87247,13 +87863,14 @@
       },
       "flee_95_percent": 324,
       "hit_100_percent": 340,
-      "hp": 87680,
+      "hp": 1707980,
       "magic_attack": {
         "max": 159,
         "min": 135
       },
       "magic_defense": 58
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -87318,6 +87935,16 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2318,
+        "name": "秘衣 美德",
+        "rate": "???",
+        "icon_url": "images/items/2318.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -87539,6 +88166,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -87847,6 +88475,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -88122,8 +88751,8 @@
       },
       "defense": 61,
       "exp": {
-        "base": 57600,
-        "job": 16965
+        "base": 50955,
+        "job": 10185
       },
       "flee_95_percent": 283,
       "hit_100_percent": 293,
@@ -88134,6 +88763,7 @@
       },
       "magic_defense": 21
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -88419,6 +89049,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -88624,6 +89255,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -88848,6 +89480,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -89078,6 +89711,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -89371,6 +90005,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -89592,6 +90227,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -89818,6 +90454,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -90045,6 +90682,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -90354,6 +90992,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -90518,6 +91157,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -90661,6 +91301,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -90851,6 +91492,7 @@
       },
       "magic_defense": 38
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -91067,6 +91709,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -91291,6 +91934,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -91579,6 +92223,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -91811,6 +92456,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -92042,6 +92688,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -92252,6 +92899,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -92462,6 +93110,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -92719,6 +93368,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -92940,6 +93590,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -93233,6 +93884,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -93411,6 +94063,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -93610,6 +94263,7 @@
       },
       "magic_defense": 11
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -93800,6 +94454,7 @@
       },
       "magic_defense": 49
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -94104,6 +94759,7 @@
       },
       "magic_defense": 49
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -94366,6 +95022,7 @@
       },
       "magic_defense": 32
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -94455,6 +95112,16 @@
         "slotCount": 0,
         "slot": "拳刃",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 31261,
+        "name": "(服飾)嘴刁清涼汽水",
+        "rate": "???",
+        "icon_url": "images/items/31261.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -94577,6 +95244,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "協助同族",
       "可物理攻擊",
@@ -94795,6 +95463,7 @@
       },
       "magic_defense": 35
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -95115,6 +95784,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -95404,6 +96074,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -95722,6 +96393,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -96041,6 +96713,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -96267,6 +96940,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -96555,6 +97229,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -96754,8 +97429,8 @@
       },
       "defense": 100,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 524690,
+        "job": 104937
       },
       "flee_95_percent": 287,
       "hit_100_percent": 307,
@@ -96766,6 +97441,7 @@
       },
       "magic_defense": 22
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -97050,6 +97726,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -97379,6 +98056,7 @@
       },
       "magic_defense": 3
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -97666,6 +98344,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -97892,6 +98571,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -98169,6 +98849,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -98488,6 +99169,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -98714,6 +99396,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -98956,6 +99639,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -99224,6 +99908,7 @@
       },
       "magic_defense": 66
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -99526,6 +100211,7 @@
       },
       "magic_defense": 1439
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -99746,6 +100432,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -99988,6 +100675,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -100286,6 +100974,7 @@
       },
       "magic_defense": 2
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -100454,6 +101143,7 @@
       },
       "magic_defense": 25
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -100775,6 +101465,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -101003,6 +101694,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -101159,6 +101851,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -101322,6 +102015,7 @@
       },
       "magic_defense": 53
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -101605,6 +102299,7 @@
       },
       "magic_defense": 44
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -102009,6 +102704,7 @@
       },
       "magic_defense": 31
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -102309,6 +103005,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "協助同族",
@@ -102497,6 +103194,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -102743,6 +103441,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -103115,6 +103814,7 @@
       },
       "magic_defense": 1
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -103300,6 +104000,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -103486,6 +104187,7 @@
       },
       "magic_defense": 24
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -103691,6 +104393,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -103965,6 +104668,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -104150,6 +104854,7 @@
       },
       "magic_defense": 36
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊"
@@ -104439,6 +105144,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -104687,6 +105393,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -104934,6 +105641,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -105223,6 +105931,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -105514,6 +106223,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -105707,6 +106417,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -105937,6 +106648,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -106224,6 +106936,7 @@
       },
       "magic_defense": 38
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -106302,6 +107015,16 @@
         "icon_url": "images/items/7070.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 19376,
+        "name": "冰凍玫瑰",
+        "rate": "???",
+        "icon_url": "images/items/19376.gif",
+        "slotCount": 0,
+        "slot": "頭下",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -106545,6 +107268,7 @@
       },
       "magic_defense": 5
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動"
@@ -106806,6 +107530,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -106970,6 +107695,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -107170,6 +107896,7 @@
       },
       "magic_defense": 45
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -107523,6 +108250,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -107806,6 +108534,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -108047,6 +108776,7 @@
       },
       "magic_defense": 50
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -108265,6 +108995,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -108579,6 +109310,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -108785,6 +109517,7 @@
       },
       "magic_defense": 18
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -109101,6 +109834,7 @@
       },
       "magic_defense": 15
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -109318,13 +110052,14 @@
       },
       "flee_95_percent": 324,
       "hit_100_percent": 355,
-      "hp": 23400,
+      "hp": 1121650,
       "magic_attack": {
         "max": 172,
         "min": 150
       },
       "magic_defense": 25
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -109562,8 +110297,8 @@
       },
       "defense": 85,
       "exp": {
-        "base": 66390,
-        "job": 19724
+        "base": 54855,
+        "job": 10965
       },
       "flee_95_percent": 312,
       "hit_100_percent": 345,
@@ -109574,6 +110309,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -109818,6 +110554,7 @@
       },
       "magic_defense": 58
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -110033,6 +110770,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -110324,6 +111062,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -110517,6 +111256,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "協助同族",
@@ -110695,6 +111435,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -110900,6 +111641,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -111188,6 +111930,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -111472,6 +112215,7 @@
       },
       "magic_defense": 28
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -111714,6 +112458,7 @@
       },
       "magic_defense": 56
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -112072,6 +112817,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -112320,6 +113066,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -112526,6 +113273,7 @@
       },
       "magic_defense": 43
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -112789,6 +113537,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -112953,6 +113702,7 @@
       },
       "magic_defense": 42
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -113139,6 +113889,7 @@
       },
       "magic_defense": 67
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -113472,6 +114223,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -113699,6 +114451,7 @@
       },
       "magic_defense": 7
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -113968,6 +114721,7 @@
       },
       "magic_defense": 89
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -114232,6 +114986,7 @@
       },
       "magic_defense": 49
     },
+    "release_date": "2026-01-16",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -114290,6 +115045,16 @@
         "icon_url": "images/items/7072.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 28949,
+        "name": "寶石鋼盾",
+        "rate": "???",
+        "icon_url": "images/items/28949.gif",
+        "slotCount": 1,
+        "slot": "盾牌",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -114596,6 +115361,7 @@
       },
       "magic_defense": 8
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -114827,6 +115593,7 @@
       },
       "magic_defense": 32
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -115071,6 +115838,7 @@
       },
       "magic_defense": 32
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -115357,6 +116125,7 @@
       },
       "magic_defense": 36
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -115609,6 +116378,7 @@
       },
       "magic_defense": 11
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -115842,6 +116612,7 @@
       },
       "magic_defense": 16
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -116042,6 +116813,7 @@
       },
       "magic_defense": 0
     },
+    "release_date": "",
     "special_status": [
       "偵測隱匿",
       "可物理攻擊",
@@ -116249,6 +117021,7 @@
       },
       "magic_defense": 30
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -116435,6 +117208,7 @@
       },
       "magic_defense": 53
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -116693,6 +117467,7 @@
       },
       "magic_defense": 20
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -117021,6 +117796,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -117145,6 +117921,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "mini",
       "主動攻擊",
@@ -117269,6 +118046,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -117469,6 +118247,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -117669,6 +118448,7 @@
       },
       "magic_defense": 12
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -117858,6 +118638,7 @@
       },
       "magic_defense": 10
     },
+    "release_date": "",
     "special_status": [
       "可物理攻擊",
       "可移動",
@@ -118079,6 +118860,7 @@
       },
       "magic_defense": 101
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -118429,6 +119211,7 @@
       },
       "magic_defense": 101
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -118765,6 +119548,7 @@
       },
       "magic_defense": 100
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -119083,6 +119867,7 @@
       },
       "magic_defense": 70
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "可物理攻擊",
@@ -119334,6 +120119,7 @@
       },
       "magic_defense": 102
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
@@ -119442,6 +120228,7 @@
       },
       "magic_defense": 102
     },
+    "release_date": "",
     "special_status": [
       "主動攻擊",
       "偵測隱匿",
