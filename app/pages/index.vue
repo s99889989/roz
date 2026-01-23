@@ -335,27 +335,50 @@ const toggleElementSearch = () => {
   elementShow.value = !elementShow.value;
 };
 
+
+
 //掉落物品
 const dropShow = ref(true);
 // 點擊切換掉落物品顯示
 const toggleDropSearch = () => {
   dropShow.value = !dropShow.value;
 };
+
+//地圖顯示分流
+const mapSplitShow = ref(true);
+// 點擊切換地圖顯示分流
+const toggleMapSplit = () => {
+  mapSplitShow.value = !mapSplitShow.value;
+};
+//是否顯示該地圖名稱
+const displayMap = (name) => {
+  // 如果開啟全顯示，直接回傳 true
+  if (mapSplitShow.value) return true;
+
+  // 使用 some 檢查是否包含任何不顯示的關鍵字
+  const hiddenSuffixes = ['_a', '_b', '_z'];
+  const shouldHide = hiddenSuffixes.some(suffix => name.includes(suffix));
+
+  return !shouldHide;
+};
+
 // 2. 在掛載時從 localStorage 恢復狀態
 onMounted(() => {
   const savedItem = localStorage.getItem('itemSearch');
   const savedElement = localStorage.getItem('elementShow');
   const savedDrop = localStorage.getItem('dropShow');
+  const savedMap = localStorage.getItem('displayMapShow');
 
   if (savedItem !== null) itemSearch.value = JSON.parse(savedItem);
   if (savedElement !== null) elementShow.value = JSON.parse(savedElement);
   if (savedDrop !== null) dropShow.value = JSON.parse(savedDrop);
+  if (savedMap !== null) mapSplitShow.value = JSON.parse(savedMap);
 });
 // 使用 watch 監聽變化並存入 localStorage
 watch(itemSearch, (newVal) => localStorage.setItem('itemSearch', JSON.stringify(newVal)));
 watch(elementShow, (newVal) => localStorage.setItem('elementShow', JSON.stringify(newVal)));
 watch(dropShow, (newVal) => localStorage.setItem('dropShow', JSON.stringify(newVal)));
-
+watch(mapSplitShow, (newVal) => localStorage.setItem('displayMapShow', JSON.stringify(newVal)));
 //選擇模式
 const selectMode = ref(false);
 // 點擊切換選擇模式
@@ -479,6 +502,21 @@ const getElementEffect = (targetType, targetLv) => {
           ></div>
         </div>
       </div>
+
+      <div class="flex items-center">
+        <span class="text-xl font-bold text-[#b89a74] me-2">地圖顯示分流</span>
+        <div
+            @click="toggleMapSplit"
+            class="relative w-14 h-7 flex items-center bg-white border-2 border-gray-300 rounded-lg cursor-pointer transition-colors duration-200"
+            :class="{ 'bg-gray-100': mapSplitShow }"
+        >
+          <div
+              class="w-5 h-5 bg-[#4a5246] rounded-md shadow-sm transform transition-transform duration-300"
+              :class="mapSplitShow ? 'translate-x-7' : 'translate-x-1'"
+          ></div>
+        </div>
+      </div>
+
     </div>
 
     <!-- 搜尋區 -->
@@ -860,15 +898,20 @@ const getElementEffect = (targetType, targetLv) => {
                 :id="'dropdownHover' + m.id"
                 class="z-10 hidden bg-black rounded-xs shadow-sm"
             >
-              <ul class="py-1 text-sm text-gray-200"
-                  :aria-labelledby="'dropdownHoverButton'+m.id" v-for="map in m.spawns">
-                <li @click="selectMap(map.map_name)" class=" hover:bg-gray-600 pointer cursor-pointer">
-                  <a class=" px-2 py-1 w-full hover:text-white">
-                    {{ map.description }}({{ map.map_name }})
-                  </a>
-                </li>
-
+              <ul class="py-1 text-sm text-gray-200" :aria-labelledby="'dropdownHoverButton' + m.id">
+                <template v-for="map in m.spawns" :key="map.map_name">
+                  <li
+                      v-if="displayMap(map.map_name)"
+                      @click="selectMap(map.map_name)"
+                      class="hover:bg-gray-600 cursor-pointer"
+                  >
+                    <a class="px-2 py-1 block w-full hover:text-white">
+                      {{ map.description }}({{ map.map_name }})
+                    </a>
+                  </li>
+                </template>
               </ul>
+
             </div>
 
 
