@@ -109,16 +109,21 @@ function getEquipClass(item) {
 }
 
 function getRequiredLevel(item) {
-  return item.required_level || 1;
+  return item.required_level || 0;
 }
 
 /**
  * 獲取物品的基礎防禦力 (若為裝備)
  */
 function getItemDefense(item) {
-  return item.attributes?.def || 0;
+  return item.defense || 0;
 }
-
+/**
+ * 獲取物品的基礎防禦力 (若為裝備)
+ */
+function getItemAttack(item) {
+  return item.attack || 0;
+}
 /**
  * 清除所有篩選條件
  */
@@ -269,9 +274,9 @@ const getMonsterImg = (id) => {
             <tbody>
             <tr class="">
               <td class="td1">需求等級</td>
-              <td class="td2">{{ getRequiredLevel(it) }}</td>
+              <td class="td2">{{ it.required_level }}</td>
               <td class="td3">重量</td>
-              <td class="td4">{{ it.attributes?.weight || 0 }}</td>
+              <td class="td4">{{ it.attributes.weight}}</td>
             </tr>
             <tr>
               <td class="td1">買價</td>
@@ -280,23 +285,23 @@ const getMonsterImg = (id) => {
               <td class="td4">{{ formatPrice(it.attributes?.sell_price) }}</td>
             </tr>
             <tr>
-              <td class="td1">洞數</td>
-              <td class="td2">{{ it.slotCount || 0 }}</td>
-              <td class="td3">洞數</td>
-              <td class="td4">{{ it.enchantment_slots || 0 }}</td>
+              <td v-if="it.slotCount !== 0" class="td1">洞數</td>
+              <td v-if="it.slotCount !== 0" class="td2">{{ it.slotCount || 0 }}</td>
+              <td v-if="it.weapon_level !== 0" class="td3">等級</td>
+              <td v-if="it.weapon_level !== 0" class="td4">{{ it.weapon_level || 0 }}</td>
             </tr>
             <tr>
-              <td class="td1">防禦力</td>
-              <td class="td2">{{ getItemDefense(it) }}</td>
-              <td class="td3">防禦力</td>
-              <td class="td4">{{ getItemDefense(it) }}</td>
+              <td v-if="getItemDefense(it) !== 0" class="td1">防禦力</td>
+              <td v-if="getItemDefense(it) !== 0" class="td2">{{ getItemDefense(it) }}</td>
+              <td v-if="getItemAttack(it) !== 0" class="td3">攻擊力</td>
+              <td v-if="getItemAttack(it) !== 0" class="td4">{{ getItemAttack(it) }}</td>
             </tr>
             </tbody>
           </table>
 
-            <p class="pt-2" style="font-size: 1em; margin-bottom: 10px;">
+            <p v-if="it.equip_jobs === ''" class="pt-2" style="font-size: 1em; margin-bottom: 10px;">
               <strong style="color: #b0a59a;">可裝備職業：</strong>
-              <span style="color: #90ee90;">{{ getEquipClass(it) }}</span>
+              <span style="color: #90ee90;">{{ it.equip_jobs }}</span>
             </p>
 
           <hr style="border-color: #5b4b3f; margin: 10px 0;">
