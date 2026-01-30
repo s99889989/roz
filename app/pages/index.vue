@@ -7,6 +7,7 @@ import 'vue3-virtual-scroll/dist/style.css'
 
 // ✅ 怪物資料
 const monsters1 = ref([]);
+const items = ref([]);
 // 2. 在網頁載入時 fetch 資料
 onMounted(async () => {
   try {
@@ -21,7 +22,65 @@ onMounted(async () => {
   } finally {
     // isLoading.value = false;
   }
+  try {
+    // 路徑不需要寫 public，編譯後 public 會變成根目錄 /
+    const response = await fetch('/data/items_database.json');
+    if (!response.ok) throw new Error('資料載入失敗');
+
+    const data = await response.json();
+    items.value = data;
+  } catch (error) {
+    console.error("讀取資料錯誤:", error);
+  } finally {
+    // isLoading.value = false;
+  }
 });
+// 紀錄每個魔物卡片目前顯示的物品詳情
+// key 是 monster.id, value 是 item 物件
+const selectedItemDetail = ref({});
+
+const toggleItemDetail = (monsterId, itemId) => {
+  // 如果點擊的是同一個，就切換關閉
+  if (selectedItemDetail.value[monsterId]?.id === itemId) {
+    selectedItemDetail.value[monsterId] = null;
+    return;
+  }
+
+  // 從 items 資料庫中找出該物品 (注意 items.value 可能是物件或陣列)
+  const itemData = items.value[itemId];
+  if (itemData) {
+    selectedItemDetail.value[monsterId] = itemData;
+  }
+};
+
+const formatText = (text) => {
+  if (!text) return '';
+  // 將字面上的 \n 或 \\n 替換成真正的換行字元
+  return text.replace(/\\n/g, '\n');
+};
+
+const isModalOpen = ref(false);
+const selectedFullItem = ref({});
+
+// 打開彈窗
+const showFullDetail = (item) => {
+  selectedFullItem.value = item;
+  isModalOpen.value = true;
+  // 禁止背景捲動
+  document.body.style.overflow = 'hidden';
+};
+
+// 關閉彈窗
+const closeModal = () => {
+  isModalOpen.value = false;
+  document.body.style.overflow = 'auto';
+};
+
+// 格式化換行：修復 \n 顯示為文字的問題
+const formatDescription = (text) => {
+  if (!text) return '';
+  return text.replace(/\\n/g, '\n');
+};
 
 //排序切換
 const sortAsc = ref(false) // true = 小→大, false = 大→小
@@ -336,7 +395,6 @@ const toggleElementSearch = () => {
 };
 
 
-
 //掉落物品
 const dropShow = ref(true);
 // 點擊切換掉落物品顯示
@@ -361,6 +419,11 @@ const displayMap = (name) => {
 
   return !shouldHide;
 };
+
+//裝備職業
+function getEquipClass(item) {
+  return item.equip_jobs || '無限制';
+}
 
 // 2. 在掛載時從 localStorage 恢復狀態
 onMounted(() => {
@@ -451,6 +514,11 @@ const getElementEffect = (targetType, targetLv) => {
     value: matrix[rowIndex][colIndex]
   }));
 };
+
+const getItemImg = (id) => {
+
+  return `/images/items/${id}.gif`
+}
 
 </script>
 
@@ -851,16 +919,56 @@ const getElementEffect = (targetType, targetLv) => {
 
             <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
             <ul class="text-sm">
-              <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-                <div class="flex">
-                  <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
-                  <span>{{ drop.name }}</span>
-                  <span v-show="drop.slotCount > 0">[{{ drop.slotCount }}]</span>
-                </div>
-                <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
-              </li>
+              <template v-for="drop in m.drops" :key="drop.item_id">
 
+                <li
+                    @click="toggleItemDetail(m.id, drop.item_id)"
+                    class="flex justify-between hover:bg-yellow-200 cursor-pointer p-1 rounded transition-colors mb-1"
+                    :class="{ 'bg-yellow-400/40': selectedItemDetail[m.id]?.id === drop.item_id }"
+                >
+                  <div class="flex items-center">
+                    <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5 mr-1">
+                    <span :class="{ 'text-blue-700 font-bold': selectedItemDetail[m.id]?.id === drop.item_id }">
+          {{ drop.name }}
+        </span>
+                    <span v-show="drop.slotCount > 0">[{{ drop.slotCount }}]</span>
+                  </div>
+                  <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+                </li>
+
+                <Transition name="expand">
+                  <div v-if="selectedItemDetail[m.id]?.id === drop.item_id" class="expand-wrapper">
+                    <div class="expand-content">
+                      <div class="my-2 p-3 bg-[#fdfbf7] border border-yellow-600 rounded text-left shadow-inner">
+
+
+                        <div class="grid grid-cols-3 text-[11px] text-gray-700">
+                          <p>類型：{{ selectedItemDetail[m.id].category.split('/')[0] }}</p>
+                          <p>重量：{{ selectedItemDetail[m.id].attributes?.weight }}</p>
+                          <p>規格：{{ selectedItemDetail[m.id].slot }}</p>
+                        </div>
+
+                        <div class="text-xs text-blue-700 leading-relaxed whitespace-pre-line mb-3">
+                          {{ formatDescription(selectedItemDetail[m.id].description.official_clean) }}
+                        </div>
+
+                        <div class="border-t border-dashed border-yellow-700/30 pt-2 text-center">
+                          <button
+                              @click.stop="showFullDetail(selectedItemDetail[m.id])"
+                              class="text-xs text-red-700 font-bold hover:underline cursor-pointer"
+                          >
+                            查看物品詳情
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Transition>
+
+
+              </template>
             </ul>
+
           </div>
 
 
@@ -918,7 +1026,7 @@ const getElementEffect = (targetType, targetLv) => {
             <div class="flex h-6">
               <p style="border-radius: 2px" class="bg-[#DCD692] text-xs pt-1 ps-2 pe-2 me-1">{{ m.basic_info.race }}</p>
               <p style="border-radius: 2px" class="bg-[#C5DCBC] text-xs pt-1 ps-2 pe-2 me-1">
-                {{ m.basic_info.element.type }}{{ m.basic_info.element.level}}</p>
+                {{ m.basic_info.element.type }}{{ m.basic_info.element.level }}</p>
               <p style="border-radius: 2px" class="bg-[#DCD6B8] text-xs pt-1 ps-2 pe-2">{{ m.basic_info.size }}</p>
             </div>
 
@@ -983,16 +1091,56 @@ const getElementEffect = (targetType, targetLv) => {
 
             <h3 class="font-bold text-yellow-700 mb-2">掉落物品</h3>
             <ul class="text-sm">
-              <li v-for="drop in m.drops" :key="drop.item" class="flex justify-between">
-                <div class="flex">
-                  <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5">
-                  <span>{{ drop.name }}</span>
-                  <span v-show="drop.slotCount > 0">[{{ drop.slotCount }}]</span>
-                </div>
-                <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
-              </li>
+              <template v-for="drop in m.drops" :key="drop.item_id">
 
+                <li
+                    @click="toggleItemDetail(m.id, drop.item_id)"
+                    class="flex justify-between hover:bg-yellow-200 cursor-pointer p-1 rounded transition-colors mb-1"
+                    :class="{ 'bg-yellow-400/40': selectedItemDetail[m.id]?.id === drop.item_id }"
+                >
+                  <div class="flex items-center">
+                    <img :src="`/${drop.icon_url}`" alt="" class="w-5 h-5 mr-1">
+                    <span :class="{ 'text-blue-700 font-bold': selectedItemDetail[m.id]?.id === drop.item_id }">
+          {{ drop.name }}
+        </span>
+                    <span v-show="drop.slotCount > 0">[{{ drop.slotCount }}]</span>
+                  </div>
+                  <span class="text-red-600 font-bold">{{ drop.rate }}%</span>
+                </li>
+
+                <Transition name="expand">
+                  <div v-if="selectedItemDetail[m.id]?.id === drop.item_id" class="expand-wrapper">
+                    <div class="expand-content">
+                      <div class="my-2 p-3 bg-[#fdfbf7] border border-yellow-600 rounded text-left shadow-inner">
+
+
+                        <div class="grid grid-cols-3 text-[11px] text-gray-700">
+                          <p>類型：{{ selectedItemDetail[m.id].category.split('/')[0] }}</p>
+                          <p>重量：{{ selectedItemDetail[m.id].attributes?.weight }}</p>
+                          <p>規格：{{ selectedItemDetail[m.id].slot }}</p>
+                        </div>
+
+                        <div class="text-xs text-blue-700 leading-relaxed whitespace-pre-line mb-3">
+                          {{ formatDescription(selectedItemDetail[m.id].description.official_clean) }}
+                        </div>
+
+                        <div class="border-t border-dashed border-yellow-700/30 pt-2 text-center">
+                          <button
+                              @click.stop="showFullDetail(selectedItemDetail[m.id])"
+                              class="text-xs text-red-700 font-bold hover:underline cursor-pointer"
+                          >
+                            查看物品詳情
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Transition>
+
+
+              </template>
             </ul>
+
           </div>
 
 
@@ -1014,6 +1162,85 @@ const getElementEffect = (targetType, targetLv) => {
     </div>
 
   </div>
+
+  <Transition name="fade">
+    <div v-if="isModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+         @click.self="closeModal">
+
+      <div
+          class="relative w-full max-w-md bg-[#4a4540] rounded-lg border border-[#6b6359] overflow-hidden shadow-2xl animate-scale-up">
+
+        <div class="flex justify-between items-center bg-[#3a3530] px-4 py-2 border-b border-[#6b6359]">
+        <span class="bg-[#5a5550] px-3 py-1 rounded text-sm text-gray-200 shadow-inner">
+          {{ selectedFullItem.category || '消耗' }}
+        </span>
+          <button @click="closeModal"
+                  class="bg-[#5a5550] hover:bg-red-900 text-gray-300 w-8 h-8 rounded flex items-center justify-center transition-colors">
+            ✕
+          </button>
+        </div>
+
+        <div class="p-6 text-center">
+          <img :src="getItemImg(selectedFullItem.id)" class="w-16 h-16 mx-auto mb-4 drop-shadow-md">
+
+          <h2 class="text-[#b8d9f5] text-2xl font-bold mb-1">{{ selectedFullItem.name?.zh_tw }}</h2>
+          <p class="text-gray-400 text-sm mb-6">ID: {{ selectedFullItem.id }}</p>
+
+          <div class="bg-[#3a3530]/50 p-4 rounded-lg mb-6">
+            <p class="text-[#7fff7f] text-base leading-relaxed whitespace-pre-line">
+              {{ formatDescription(selectedFullItem.description?.official) }}
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-y-2 gap-x-8 text-left text-gray-300 text-sm border-t border-[#6b6359] pt-4">
+            <div class="flex justify-between border-b border-[#5a5550] pb-1">
+              <span class="text-gray-500">需求等級</span> <span>{{
+                selectedFullItem.attributes?.required_level || 1
+              }}</span>
+            </div>
+            <div class="flex justify-between border-b border-[#5a5550] pb-1">
+              <span class="text-gray-500">重量</span> <span>{{ selectedFullItem.attributes?.weight || 0 }}</span>
+            </div>
+            <div class="flex justify-between border-b border-[#5a5550] pb-1">
+              <span class="text-gray-500">買價</span> <span>{{
+                selectedFullItem.buy_price?.toLocaleString() || 'N/A'
+              }}</span>
+            </div>
+            <div class="flex justify-between border-b border-[#5a5550] pb-1">
+              <span class="text-gray-500">賣價</span> <span>{{
+                selectedFullItem.sell_price?.toLocaleString() || 'N/A'
+              }}</span>
+            </div>
+            <div class="flex justify-between border-b border-[#5a5550] pb-1">
+              <span class="text-gray-500">洞數</span> <span>{{ selectedFullItem.slot || 0 }}</span>
+            </div>
+            <div class="flex justify-between border-b border-[#5a5550] pb-1">
+              <span class="text-gray-500">防禦力</span> <span>{{ selectedFullItem.attributes?.def || 0 }}</span>
+            </div>
+          </div>
+
+          <div class="mt-4 text-left">
+            <p class="text-gray-300 text-lg">
+              可裝備職業：<span class="text-[#7fff7f]">{{ getEquipClass(selectedFullItem) }}</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#3a3530] p-4 border-t border-[#6b6359]">
+          <p class="text-gray-500 text-xs mb-2 italic">此物品掉落來源：</p>
+          <div class="flex flex-wrap gap-4">
+            <div v-for="source in selectedFullItem.dropped_by" :key="source.monster_id"
+                 class="flex items-center text-sm text-gray-300">
+              <img :src="getMonsterImg(source.monster_id)" class="w-5 h-5">
+              {{ source.monster_name }} <span class="text-red-500 ml-1">{{ source.rate }}%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </Transition>
+
 </template>
 
 <style scoped>
@@ -1038,6 +1265,98 @@ input[type="number"]:focus {
 .statsColor {
   font-weight: bold;
   color: #d2851d;
+}
+
+/* 動畫容器：控制高度變化 */
+.expand-wrapper {
+  display: grid;
+  grid-template-rows: 1fr; /* 打開狀態 */
+  transition: grid-template-rows 0.2s ease-in-out, opacity 0.1s ease;
+  overflow: hidden;
+}
+
+/* 內層容器：確保內容不會在動畫中被擠壓 */
+.expand-content {
+  min-height: 0;
+}
+
+/* Vue Transition 狀態 */
+.expand-enter-from,
+.expand-leave-to {
+  grid-template-rows: 0fr; /* 關閉狀態 */
+  opacity: 0;
+}
+
+.expand-enter-to,
+.expand-leave-from {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+/* 調整一下列表點擊時的過渡感覺 */
+li {
+  transition: background-color 0.3s ease;
+}
+
+/* 魔物卡片外層 */
+.monster-card {
+  height: 100%; /* 填滿父容器高度 */
+  display: flex;
+  flex-direction: column;
+}
+
+.monster-info-content {
+  flex-grow: 1; /* 自動撐開中間區域，將掉落物推到底部 */
+}
+
+/* 緩慢打開關閉的動畫 */
+.expand-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.5s ease-in-out, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.expand-enter-from, .expand-leave-to {
+  grid-template-rows: 0fr;
+  opacity: 0;
+}
+
+/* 確保換行生效的關鍵 CSS */
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+/* 遮罩淡入淡出 */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* 彈窗縮放緩慢打開 */
+.animate-scale-up {
+  animation: scaleUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 為了讓高度一致的魔物卡片 */
+.monster-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 </style>
