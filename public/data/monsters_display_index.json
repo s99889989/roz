@@ -10636,16 +10636,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 748,
-        "name": "永恆玫瑰",
-        "rate": 0.15,
-        "icon_url": "images/items/748.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 950,
         "name": "人魚之心",
         "rate": 45,
@@ -12623,6 +12613,16 @@
         "icon_url": "images/items/10012.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 400830,
+        "name": "(服飾)跳躍的小雞(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/400830.gif",
+        "slotCount": 0,
+        "slot": "頭上",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       },
@@ -24569,16 +24569,6 @@
         "slot": "雙手劍",
         "enchantment_slots": 0,
         "card_prefix_name": ""
-      },
-      {
-        "item_id": 1154,
-        "name": "亞爾特劍",
-        "rate": "???",
-        "icon_url": "images/items/1154.gif",
-        "slotCount": 2,
-        "slot": "雙手劍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -26988,6 +26978,16 @@
         "card_prefix_name": "邪惡的"
       },
       {
+        "item_id": 401189,
+        "name": "(服飾)智慧金頭腦(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401189.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 450315,
         "name": "鋼鐵鎧甲",
         "rate": "???",
@@ -27005,16 +27005,6 @@
         "slotCount": 3,
         "slot": "短劍",
         "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 401189,
-        "name": "(服飾)智慧金頭腦(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/401189.gif",
-        "slotCount": 0,
-        "slot": "頭上",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -31679,16 +31669,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 748,
-        "name": "永恆玫瑰",
-        "rate": 0.01,
-        "icon_url": "images/items/748.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 905,
         "name": "植物梗",
         "rate": 10,
@@ -35730,7 +35710,7 @@
       },
       "defense": 125,
       "exp": {
-        "base": "",
+        "base": 19992,
         "job": ""
       },
       "flee_95_percent": 403,
@@ -35822,6 +35802,16 @@
         "slotCount": 0,
         "slot": "頭上",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 590070,
+        "name": "尖刃鐵錘",
+        "rate": "???",
+        "icon_url": "images/items/590070.gif",
+        "slotCount": 1,
+        "slot": "鈍器",
+        "enchantment_slots": 3,
         "card_prefix_name": ""
       }
     ],
@@ -41237,7 +41227,7 @@
       },
       "defense": 139,
       "exp": {
-        "base": "",
+        "base": 80181,
         "job": ""
       },
       "flee_95_percent": 369,
@@ -43837,7 +43827,7 @@
       },
       "defense": 89,
       "exp": {
-        "base": "",
+        "base": 17340,
         "job": ""
       },
       "flee_95_percent": 370,
@@ -47235,16 +47225,6 @@
         "card_prefix_name": "模仿的"
       },
       {
-        "item_id": 510182,
-        "name": "長柄短劍",
-        "rate": "???",
-        "icon_url": "images/items/510182.gif",
-        "slotCount": 3,
-        "slot": "短劍",
-        "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 440030,
         "name": "(服飾)白幽靈面具(歸屬)",
         "rate": "???",
@@ -47252,6 +47232,16 @@
         "slotCount": 0,
         "slot": "頭上/中/下",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 510182,
+        "name": "長柄短劍",
+        "rate": "???",
+        "icon_url": "images/items/510182.gif",
+        "slotCount": 3,
+        "slot": "短劍",
+        "enchantment_slots": "2-3",
         "card_prefix_name": ""
       }
     ],
@@ -48336,13 +48326,13 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 2601,
+        "item_id": 2621,
         "name": "力量戒指",
         "rate": 2,
-        "icon_url": "images/items/2601.gif",
-        "slotCount": 0,
+        "icon_url": "images/items/2621.gif",
+        "slotCount": 1,
         "slot": "飾品",
-        "enchantment_slots": 0,
+        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -48919,6 +48909,16 @@
         "card_prefix_name": "藍色立方體的"
       },
       {
+        "item_id": 410405,
+        "name": "(服飾)太陽眼鏡(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/410405.gif",
+        "slotCount": 0,
+        "slot": "頭中",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 540106,
         "name": "書",
         "rate": "???",
@@ -48945,16 +48945,6 @@
         "icon_url": "images/items/540112.gif",
         "slotCount": 2,
         "slot": "書籍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 410405,
-        "name": "(服飾)太陽眼鏡(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/410405.gif",
-        "slotCount": 0,
-        "slot": "頭中",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -49660,6 +49650,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 436025,
+        "name": "(服飾)鐘怪假面(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/436025.gif",
+        "slotCount": 0,
+        "slot": "頭中/下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 450313,
         "name": "緊身便衣",
         "rate": "???",
@@ -49677,16 +49677,6 @@
         "slotCount": 2,
         "slot": "手杖",
         "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 436025,
-        "name": "(服飾)鐘怪假面(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/436025.gif",
-        "slotCount": 0,
-        "slot": "頭中/下",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -49980,11 +49970,6 @@
         "spawn_info": ""
       },
       {
-        "map_name": "alde_dun02",
-        "description": "鐘塔地下2樓",
-        "spawn_info": ""
-      },
-      {
         "map_name": "gl_dun01",
         "description": "地下洞穴1樓",
         "spawn_info": ""
@@ -50136,7 +50121,7 @@
       },
       "defense": 61,
       "exp": {
-        "base": "",
+        "base": 6337,
         "job": ""
       },
       "flee_95_percent": 370,
@@ -50231,16 +50216,6 @@
         "card_prefix_name": "聰明才智的"
       },
       {
-        "item_id": 540106,
-        "name": "書",
-        "rate": "???",
-        "icon_url": "images/items/540106.gif",
-        "slotCount": 3,
-        "slot": "書籍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 401186,
         "name": "(服飾)飛行魔書帽(歸屬)",
         "rate": "???",
@@ -50248,6 +50223,16 @@
         "slotCount": 0,
         "slot": "頭上",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 540106,
+        "name": "書",
+        "rate": "???",
+        "icon_url": "images/items/540106.gif",
+        "slotCount": 3,
+        "slot": "書籍",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -52532,6 +52517,16 @@
         "slot": "頭上",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 450315,
+        "name": "鋼鐵鎧甲",
+        "rate": "???",
+        "icon_url": "images/items/450315.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -53634,6 +53629,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 401188,
+        "name": "(服飾)獸人頭盔(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401188.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 450310,
         "name": "鋼鐵鎖子甲",
         "rate": "???",
@@ -53650,16 +53655,6 @@
         "icon_url": "images/items/560084.gif",
         "slotCount": 3,
         "slot": "拳套",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 401188,
-        "name": "(服飾)獸人頭盔(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/401188.gif",
-        "slotCount": 0,
-        "slot": "頭上",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -54311,6 +54306,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 420723,
+        "name": "(服飾)嘴刁清涼汽水(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420723.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 470230,
         "name": "戰士長靴",
         "rate": "???",
@@ -54338,16 +54343,6 @@
         "slotCount": 0,
         "slot": "拳刃",
         "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 420723,
-        "name": "(服飾)嘴刁清涼汽水(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/420723.gif",
-        "slotCount": 0,
-        "slot": "頭下",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -54458,7 +54453,7 @@
       },
       "defense": 102,
       "exp": {
-        "base": "",
+        "base": 80520,
         "job": ""
       },
       "flee_95_percent": 440,
@@ -54810,7 +54805,7 @@
       },
       "defense": 35,
       "exp": {
-        "base": 1226,
+        "base": 1113,
         "job": 329
       },
       "flee_95_percent": 245,
@@ -55072,7 +55067,7 @@
       },
       "defense": 270,
       "exp": {
-        "base": 47971,
+        "base": 47970,
         "job": 2719
       },
       "flee_95_percent": 335,
@@ -56641,13 +56636,13 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 2601,
+        "item_id": 2621,
         "name": "力量戒指",
         "rate": 1,
-        "icon_url": "images/items/2601.gif",
-        "slotCount": 0,
+        "icon_url": "images/items/2621.gif",
+        "slotCount": 1,
         "slot": "飾品",
-        "enchantment_slots": 0,
+        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -61757,16 +61752,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 560054,
-        "name": "虎爪拳套",
-        "rate": "???",
-        "icon_url": "images/items/560054.gif",
-        "slotCount": 4,
-        "slot": "拳套",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 480714,
         "name": "(服飾)念動齒輪(歸屬)",
         "rate": "???",
@@ -61774,6 +61759,16 @@
         "slotCount": 0,
         "slot": "披肩",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 560054,
+        "name": "虎爪拳套",
+        "rate": "???",
+        "icon_url": "images/items/560054.gif",
+        "slotCount": 4,
+        "slot": "拳套",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -63773,7 +63768,7 @@
       },
       "defense": 63,
       "exp": {
-        "base": "",
+        "base": 11829,
         "job": ""
       },
       "flee_95_percent": 396,
@@ -63841,6 +63836,16 @@
         "icon_url": "images/items/450310.gif",
         "slotCount": 1,
         "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 560053,
+        "name": "賀勒拳套",
+        "rate": "???",
+        "icon_url": "images/items/560053.gif",
+        "slotCount": 3,
+        "slot": "拳套",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -69791,13 +69796,13 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 2601,
+        "item_id": 2621,
         "name": "力量戒指",
         "rate": 0.01,
-        "icon_url": "images/items/2601.gif",
-        "slotCount": 0,
+        "icon_url": "images/items/2621.gif",
+        "slotCount": 1,
         "slot": "飾品",
-        "enchantment_slots": 0,
+        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -70085,16 +70090,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 18668,
-        "name": "懶洋洋的烏龜",
-        "rate": "???",
-        "icon_url": "images/items/18668.gif",
-        "slotCount": 1,
-        "slot": "頭上",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 7067,
         "name": "石頭一角",
         "rate": "???",
@@ -70105,13 +70100,13 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 590070,
-        "name": "尖刃鐵錘",
+        "item_id": 18668,
+        "name": "懶洋洋的烏龜",
         "rate": "???",
-        "icon_url": "images/items/590070.gif",
+        "icon_url": "images/items/18668.gif",
         "slotCount": 1,
-        "slot": "鈍器",
-        "enchantment_slots": 3,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -70122,6 +70117,16 @@
         "slotCount": 3,
         "slot": "短劍",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 590070,
+        "name": "尖刃鐵錘",
+        "rate": "???",
+        "icon_url": "images/items/590070.gif",
+        "slotCount": 1,
+        "slot": "鈍器",
+        "enchantment_slots": 3,
         "card_prefix_name": ""
       }
     ],
@@ -70521,16 +70526,6 @@
     ],
     "drops": [
       {
-        "item_id": 401191,
-        "name": "(服飾)刺刺龜殼帽(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/401191.gif",
-        "slotCount": 0,
-        "slot": "頭上",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 603,
         "name": "神秘藍箱",
         "rate": 0.01,
@@ -70548,6 +70543,16 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2327,
+        "name": "天衣 月舞",
+        "rate": "???",
+        "icon_url": "images/items/2327.gif",
+        "slotCount": 0,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       },
       {
@@ -70581,26 +70586,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 610066,
-        "name": "拳刃",
-        "rate": "???",
-        "icon_url": "images/items/610066.gif",
-        "slotCount": 3,
-        "slot": "拳刃",
-        "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 2327,
-        "name": "天衣 月舞",
-        "rate": "???",
-        "icon_url": "images/items/2327.gif",
-        "slotCount": 0,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 28949,
         "name": "寶石鋼盾",
         "rate": "???",
@@ -70608,6 +70593,26 @@
         "slotCount": 1,
         "slot": "盾牌",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401191,
+        "name": "(服飾)刺刺龜殼帽(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401191.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 610066,
+        "name": "拳刃",
+        "rate": "???",
+        "icon_url": "images/items/610066.gif",
+        "slotCount": 3,
+        "slot": "拳刃",
+        "enchantment_slots": "2-3",
         "card_prefix_name": ""
       }
     ],
@@ -70929,6 +70934,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 2318,
+        "name": "秘衣 美德",
+        "rate": "???",
+        "icon_url": "images/items/2318.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 4220,
         "name": "岩石龜卡片",
         "rate": 0.01,
@@ -70959,13 +70974,13 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 2318,
-        "name": "秘衣 美德",
+        "item_id": 401193,
+        "name": "(服飾)懶洋洋烏龜(歸屬)",
         "rate": "???",
-        "icon_url": "images/items/2318.gif",
-        "slotCount": 1,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
+        "icon_url": "images/items/401193.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -70976,16 +70991,6 @@
         "slotCount": 2,
         "slot": "雙手斧",
         "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 401193,
-        "name": "(服飾)懶洋洋烏龜(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/401193.gif",
-        "slotCount": 0,
-        "slot": "頭上",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -71806,6 +71811,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 2319,
+        "name": "秘衣 惡德",
+        "rate": "???",
+        "icon_url": "images/items/2319.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 4319,
         "name": "水靈龜卡片",
         "rate": 0.01,
@@ -72188,16 +72203,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 620048,
-        "name": "雙手斧",
-        "rate": "???",
-        "icon_url": "images/items/620048.gif",
-        "slotCount": 2,
-        "slot": "雙手斧",
-        "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 401187,
         "name": "(服飾)鴞裊首領帽(歸屬)",
         "rate": "???",
@@ -72205,6 +72210,16 @@
         "slotCount": 0,
         "slot": "頭上",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 620048,
+        "name": "雙手斧",
+        "rate": "???",
+        "icon_url": "images/items/620048.gif",
+        "slotCount": 2,
+        "slot": "雙手斧",
+        "enchantment_slots": "2-3",
         "card_prefix_name": ""
       }
     ],
@@ -72484,16 +72499,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 480381,
-        "name": "斗篷",
-        "rate": "???",
-        "icon_url": "images/items/480381.gif",
-        "slotCount": 1,
-        "slot": "披肩",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 420725,
         "name": "(服飾)嘴叼鉛筆(歸屬)",
         "rate": "???",
@@ -72501,6 +72506,16 @@
         "slotCount": 0,
         "slot": "頭下",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 480381,
+        "name": "斗篷",
+        "rate": "???",
+        "icon_url": "images/items/480381.gif",
+        "slotCount": 1,
+        "slot": "披肩",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       },
       {
@@ -72656,16 +72671,6 @@
     ],
     "drops": [
       {
-        "item_id": 508,
-        "name": "黃色藥草",
-        "rate": 4,
-        "icon_url": "images/items/508.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 509,
         "name": "白色藥草",
         "rate": 4,
@@ -72716,6 +72721,16 @@
         "card_prefix_name": "散發肉質氣味的"
       },
       {
+        "item_id": 5457,
+        "name": "玉兔頭飾",
+        "rate": "???",
+        "icon_url": "images/items/5457.gif",
+        "slotCount": 1,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 7053,
         "name": "賽依伐",
         "rate": 12.5,
@@ -72733,16 +72748,6 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 5457,
-        "name": "玉兔頭飾",
-        "rate": "???",
-        "icon_url": "images/items/5457.gif",
-        "slotCount": 1,
-        "slot": "頭上",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -73487,6 +73492,497 @@
     ],
     "spawns": [],
     "skills": []
+  },
+  "1373": {
+    "id": 1373,
+    "name": {
+      "zh_tw": "死靈騎士",
+      "en": "LORD_OF_DEATH",
+      "ko_kr": "죽은자의 주인(MVP)"
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 3,
+        "type": "暗"
+      },
+      "level": 94,
+      "race": "惡魔",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/1373.gif",
+    "stats": {
+      "attack": {
+        "max": 5351,
+        "min": 5351
+      },
+      "base_stats": {
+        "agi": 99,
+        "dex": 170,
+        "int": 129,
+        "luk": 90,
+        "str": 140,
+        "vit": 30
+      },
+      "defense": 336,
+      "exp": {
+        "base": 9861426,
+        "job": 1318431
+      },
+      "flee_95_percent": 464,
+      "hit_100_percent": 411,
+      "hp": 2838250,
+      "magic_attack": {
+        "max": 2774,
+        "min": 1596
+      },
+      "magic_defense": 73
+    },
+    "release_date": "2026-01-27",
+    "special_status": [
+      "MVP",
+      "主動攻擊",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標",
+      "被近戰時改變目標",
+      "詠唱感知(追擊)",
+      "詠唱感知(閒置)",
+      "變更追擊目標"
+    ],
+    "drops": [
+      {
+        "item_id": 1230,
+        "name": "破甲短錐",
+        "rate": 0.05,
+        "icon_url": "images/items/1230.gif",
+        "slotCount": 0,
+        "slot": "短劍",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1306,
+        "name": "血腥戰斧",
+        "rate": 0.01,
+        "icon_url": "images/items/1306.gif",
+        "slotCount": 1,
+        "slot": "雙手斧",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1417,
+        "name": "鐮戟",
+        "rate": 0.03,
+        "icon_url": "images/items/1417.gif",
+        "slotCount": 1,
+        "slot": "單手矛",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1529,
+        "name": "高爾夫球桿",
+        "rate": 0.01,
+        "icon_url": "images/items/1529.gif",
+        "slotCount": 0,
+        "slot": "鈍器",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2621,
+        "name": "力量戒指",
+        "rate": 0.01,
+        "icon_url": "images/items/2621.gif",
+        "slotCount": 1,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4276,
+        "name": "死靈騎士卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4276.gif",
+        "slotCount": 0,
+        "slot": "武器",
+        "enchantment_slots": "",
+        "card_prefix_name": "重要關頭的"
+      },
+      {
+        "item_id": 7108,
+        "name": "盾牌的碎片",
+        "rate": 26.68,
+        "icon_url": "images/items/7108.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7109,
+        "name": "閃亮的槍錐",
+        "rate": 0.05,
+        "icon_url": "images/items/7109.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "b_nif",
+        "description": "亡者國都尼芙菲姆",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_nif_z",
+        "description": "亡者國都尼芙菲姆",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_STUNATTACK",
+        "SkillNameZhTW": "昏迷攻擊",
+        "SkillID": 179,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 0,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SUMMONSLAVE",
+        "SkillNameZhTW": "召喚隨從",
+        "SkillID": 196,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 700,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "slavele",
+        "ConditionValue": 3,
+        "Val1": 1490,
+        "Val2": 1490,
+        "Val3": 1509,
+        "Val4": 1508,
+        "Val5": 1179,
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SUMMONSLAVE",
+        "SkillNameZhTW": "召喚隨從",
+        "SkillID": 196,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 700,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "slavele",
+        "ConditionValue": 3,
+        "Val1": 1490,
+        "Val2": 1490,
+        "Val3": 1509,
+        "Val4": 1508,
+        "Val5": 1179,
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_TELEPORT",
+        "SkillNameZhTW": "瞬間移動",
+        "SkillID": 26,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 0,
+        "Delay": 0,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "rudeattacked",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_DECAGI",
+        "SkillNameZhTW": "緩速術",
+        "SkillID": 30,
+        "SkillLv": 48,
+        "Rate": "20.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 60000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_GRANDDARKNESS",
+        "SkillNameZhTW": "暗十字審判",
+        "SkillID": 339,
+        "SkillLv": 10,
+        "Rate": "10.00%",
+        "State": "attack",
+        "CastTime": 700,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DARKSTRIKE",
+        "SkillNameZhTW": "暗靈召喚",
+        "SkillID": 340,
+        "SkillLv": 10,
+        "Rate": "20.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DARKSTRIKE",
+        "SkillNameZhTW": "暗靈召喚",
+        "SkillID": 340,
+        "SkillLv": 10,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "skillused",
+        "ConditionValue": 18,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_CHANGEUNDEAD",
+        "SkillNameZhTW": "不死屬性轉換",
+        "SkillID": 348,
+        "SkillLv": 1,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_POWERUP",
+        "SkillNameZhTW": "力量提升",
+        "SkillID": 349,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_AGIUP",
+        "SkillNameZhTW": "速度提升",
+        "SkillID": 350,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 120000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_CALLSLAVE",
+        "SkillNameZhTW": "召回隨從",
+        "SkillID": 352,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_CALLSLAVE",
+        "SkillNameZhTW": "召回隨從",
+        "SkillID": 352,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "KN_BRANDISHSPEAR",
+        "SkillNameZhTW": "騎乘攻擊",
+        "SkillID": 57,
+        "SkillLv": 10,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_HELLJUDGEMENT",
+        "SkillNameZhTW": "死亡天譴",
+        "SkillID": 662,
+        "SkillLv": 10,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 1000,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 36,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_HELLJUDGEMENT",
+        "SkillNameZhTW": "死亡天譴",
+        "SkillID": 662,
+        "SkillLv": 10,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 1000,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 36,
+        "Chat": ""
+      }
+    ]
   },
   "1377": {
     "id": 1377,
@@ -74332,13 +74828,13 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 2601,
+        "item_id": 2621,
         "name": "力量戒指",
         "rate": 0.02,
-        "icon_url": "images/items/2601.gif",
-        "slotCount": 0,
+        "icon_url": "images/items/2621.gif",
+        "slotCount": 1,
         "slot": "飾品",
-        "enchantment_slots": 0,
+        "enchantment_slots": "",
         "card_prefix_name": ""
       },
       {
@@ -77325,16 +77821,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 480381,
-        "name": "斗篷",
-        "rate": 0.07,
-        "icon_url": "images/items/480381.gif",
-        "slotCount": 1,
-        "slot": "披肩",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 32201,
         "name": "無顱武士的手套",
         "rate": "???",
@@ -77342,6 +77828,16 @@
         "slotCount": 1,
         "slot": "飾品",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 480381,
+        "name": "斗篷",
+        "rate": 0.07,
+        "icon_url": "images/items/480381.gif",
+        "slotCount": 1,
+        "slot": "披肩",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -77918,6 +78414,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 420724,
+        "name": "(服飾)假面鬼披肩(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420724.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 480378,
         "name": "披肩",
         "rate": 0.01,
@@ -77935,16 +78441,6 @@
         "slotCount": 0,
         "slot": "披肩",
         "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 420724,
-        "name": "(服飾)假面鬼披肩(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/420724.gif",
-        "slotCount": 0,
-        "slot": "頭下",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -78567,16 +79063,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 540106,
-        "name": "書",
-        "rate": "???",
-        "icon_url": "images/items/540106.gif",
-        "slotCount": 3,
-        "slot": "書籍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 401192,
         "name": "(服飾)南瓜魂連帽披肩(歸屬)",
         "rate": "???",
@@ -78584,6 +79070,16 @@
         "slotCount": 0,
         "slot": "頭上",
         "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 540106,
+        "name": "書",
+        "rate": "???",
+        "icon_url": "images/items/540106.gif",
+        "slotCount": 3,
+        "slot": "書籍",
+        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -79818,7 +80314,7 @@
       },
       "defense": 62,
       "exp": {
-        "base": 55490,
+        "base": 56490,
         "job": 52094
       },
       "flee_95_percent": 385,
@@ -87908,6 +88404,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 2318,
+        "name": "秘衣 美德",
+        "rate": "???",
+        "icon_url": "images/items/2318.gif",
+        "slotCount": 1,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 4220,
         "name": "岩石龜卡片",
         "rate": 0.05,
@@ -87935,16 +88441,6 @@
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 2318,
-        "name": "秘衣 美德",
-        "rate": "???",
-        "icon_url": "images/items/2318.gif",
-        "slotCount": 1,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -91922,7 +92418,7 @@
       },
       "defense": 178,
       "exp": {
-        "base": "",
+        "base": 260100,
         "job": ""
       },
       "flee_95_percent": 370,
@@ -95105,6 +95601,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 420723,
+        "name": "(服飾)嘴刁清涼汽水(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420723.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 610067,
         "name": "火靈拳刃",
         "rate": 0.05,
@@ -95112,16 +95618,6 @@
         "slotCount": 0,
         "slot": "拳刃",
         "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 31261,
-        "name": "(服飾)嘴刁清涼汽水",
-        "rate": "???",
-        "icon_url": "images/items/31261.gif",
-        "slotCount": 0,
-        "slot": "頭下",
-        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -113261,8 +113757,8 @@
       },
       "defense": 91,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 328410,
+        "job": 65670
       },
       "flee_95_percent": 353,
       "hit_100_percent": 315,

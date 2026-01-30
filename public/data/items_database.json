@@ -727,12 +727,6 @@
         "image_url": "images/monsters/1316.gif"
       },
       {
-        "monster_id": 1322,
-        "monster_name": "彈簧兔",
-        "rate": 4,
-        "image_url": "images/monsters/1322.gif"
-      },
-      {
         "monster_id": 1391,
         "monster_name": "啤酒企鵝",
         "rate": 17.5,
@@ -2996,8 +2990,8 @@
       "kr": "바나나쥬스"
     },
     "description": {
-      "official": "把香蕉的果汁裝入瓶中。因爲吃起來很方便，所以比直接吃的時候恢復得更好。\\n_\\n重量 : 4",
-      "official_clean": "把香蕉的果汁裝入瓶中。因爲吃起來很方便，所以比直接吃的時候恢復得更好。"
+      "official": "把香蕉的果汁裝入瓶中。因為吃起來很方便，所以比直接吃的時候恢復得更好。\\n_\\n重量 : 4",
+      "official_clean": "把香蕉的果汁裝入瓶中。因為吃起來很方便，所以比直接吃的時候恢復得更好。"
     },
     "category": "消耗/恢復",
     "slot": "-",
@@ -3022,7 +3016,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 4,
       "buy_price": 20,
@@ -3044,8 +3038,8 @@
       "kr": "포도쥬스"
     },
     "description": {
-      "official": "把葡萄的果汁裝入瓶中。因爲吃起來很方便，所以比直接吃的時候恢復得更好。\\n_\\n重量 : 4",
-      "official_clean": "把葡萄的果汁裝入瓶中。因爲吃起來很方便，所以比直接吃的時候恢復得更好。"
+      "official": "把葡萄的果汁裝入瓶中。因為吃起來很方便，所以比直接吃的時候恢復得更好。\\n_\\n重量 : 4",
+      "official_clean": "把葡萄的果汁裝入瓶中。因為吃起來很方便，所以比直接吃的時候恢復得更好。"
     },
     "category": "消耗/恢復",
     "slot": "-",
@@ -3070,7 +3064,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 4,
       "buy_price": 250,
@@ -11706,18 +11700,6 @@
       "sell_price": 20625
     },
     "dropped_by": [
-      {
-        "monster_id": 1044,
-        "monster_name": "人魚",
-        "rate": 0.15,
-        "image_url": "images/monsters/1044.gif"
-      },
-      {
-        "monster_id": 1118,
-        "monster_name": "噬人花",
-        "rate": 0.01,
-        "image_url": "images/monsters/1118.gif"
-      },
       {
         "monster_id": 1261,
         "monster_name": "狂暴野貓",
@@ -26247,14 +26229,7 @@
       "buy_price": 0,
       "sell_price": 10
     },
-    "dropped_by": [
-      {
-        "monster_id": 1095,
-        "monster_name": "白蟻",
-        "rate": "???",
-        "image_url": "images/monsters/1095.gif"
-      }
-    ]
+    "dropped_by": []
   },
   "1157": {
     "id": 1157,
@@ -27037,6 +27012,54 @@
       }
     ]
   },
+  "1230": {
+    "id": 1230,
+    "name": {
+      "zh_tw": "破甲短錐",
+      "kr": "송곳"
+    },
+    "description": {
+      "official": "尖銳的程度讓人相當訝異，加上刀身很細，似乎可鑽進任何一種防具的縫隙中。\\n如果對方的防禦力高，越高就越能發揮強大的攻擊力。\\n依據敵人的DEF增加傷害(傷害提高1%)。\\n系列 : 短劍 攻擊 : 80\\n重量 : 60\\n武器等級 : 4\\n需求等級 : 36\\n裝備 : 劍士系列/魔法師系列/弓箭手系列/商人系列/盜賊系列",
+      "official_clean": "尖銳的程度讓人相當訝異，加上刀身很細，似乎可鑽進任何一種防具的縫隙中。\\n如果對方的防禦力高，越高就越能發揮強大的攻擊力。\\n依據敵人的DEF增加傷害(傷害提高1%)。"
+    },
+    "category": "武器",
+    "slot": "短劍",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 80,
+    "defense": 0,
+    "weapon_level": 4,
+    "required_level": 36,
+    "equip_jobs": "劍士系列/魔法師系列/弓箭手系列/商人系列/盜賊系列",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1230.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 60,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": [
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.05,
+        "image_url": "images/monsters/1373.gif"
+      }
+    ]
+  },
   "1231": {
     "id": 1231,
     "name": {
@@ -27518,6 +27541,12 @@
         "monster_name": "凱美拉",
         "rate": 0.01,
         "image_url": "images/monsters/1283.gif"
+      },
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.01,
+        "image_url": "images/monsters/1373.gif"
       }
     ]
   },
@@ -28174,6 +28203,12 @@
         "monster_name": "血腥騎士",
         "rate": 0.01,
         "image_url": "images/monsters/1268.gif"
+      },
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.03,
+        "image_url": "images/monsters/1373.gif"
       }
     ]
   },
@@ -29182,6 +29217,54 @@
       "sell_price": 0
     },
     "dropped_by": []
+  },
+  "1529": {
+    "id": 1529,
+    "name": {
+      "zh_tw": "高爾夫球桿",
+      "kr": "아이언드라이버"
+    },
+    "description": {
+      "official": "據說是某種運動競賽中使用的鈍器，末端呈現圓形，高硬度的碳鋼提升了殺傷力。\\n無法破壞。\\n系列 : 鈍器 攻擊 : 155\\n重量 : 300\\n武器等級 : 3\\n需求等級 : 78\\n裝備 : 祭司/武僧可裝備",
+      "official_clean": "據說是某種運動競賽中使用的鈍器，末端呈現圓形，高硬度的碳鋼提升了殺傷力。\\n無法破壞。"
+    },
+    "category": "武器",
+    "slot": "鈍器",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 67,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 155,
+    "defense": 0,
+    "weapon_level": 3,
+    "required_level": 78,
+    "equip_jobs": "祭司/武僧可裝備",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1529.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 300,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": [
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.01,
+        "image_url": "images/monsters/1373.gif"
+      }
+    ]
   },
   "1545": {
     "id": 1545,
@@ -36264,6 +36347,12 @@
         "image_url": "images/monsters/1198.gif"
       },
       {
+        "monster_id": 1319,
+        "monster_name": "水靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1319.gif"
+      },
+      {
         "monster_id": 2861,
         "monster_name": "憤怒暗黑祭司",
         "rate": 0.15,
@@ -37143,30 +37232,6 @@
         "monster_name": "麥斯特",
         "rate": 0.01,
         "image_url": "images/monsters/1151.gif"
-      },
-      {
-        "monster_id": 1190,
-        "monster_name": "獸人酋長",
-        "rate": 2,
-        "image_url": "images/monsters/1190.gif"
-      },
-      {
-        "monster_id": 1251,
-        "monster_name": "冰暴騎士",
-        "rate": 1,
-        "image_url": "images/monsters/1251.gif"
-      },
-      {
-        "monster_id": 1313,
-        "monster_name": "流氓",
-        "rate": 0.01,
-        "image_url": "images/monsters/1313.gif"
-      },
-      {
-        "monster_id": 1389,
-        "monster_name": "德古拉男爵",
-        "rate": 0.02,
-        "image_url": "images/monsters/1389.gif"
       }
     ]
   },
@@ -38018,6 +38083,78 @@
         "monster_name": "憤怒蝙蝠弓箭手",
         "rate": 0.05,
         "image_url": "images/monsters/2827.gif"
+      }
+    ]
+  },
+  "2621": {
+    "id": 2621,
+    "name": {
+      "zh_tw": "力量戒指",
+      "kr": "링"
+    },
+    "description": {
+      "official": "古代戒指\\nSTR + 1\\n系列 : 飾品  防禦 : 0\\n重量 : 20\\n需求等級 : 90\\n裝備 : 初學者以外的全職業",
+      "official_clean": "古代戒指\\nSTR + 1"
+    },
+    "category": "防具",
+    "slot": "飾品",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 90,
+    "equip_jobs": "初學者以外的全職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/2621.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 20,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": [
+      {
+        "monster_id": 1190,
+        "monster_name": "獸人酋長",
+        "rate": 2,
+        "image_url": "images/monsters/1190.gif"
+      },
+      {
+        "monster_id": 1251,
+        "monster_name": "冰暴騎士",
+        "rate": 1,
+        "image_url": "images/monsters/1251.gif"
+      },
+      {
+        "monster_id": 1313,
+        "monster_name": "流氓",
+        "rate": 0.01,
+        "image_url": "images/monsters/1313.gif"
+      },
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.01,
+        "image_url": "images/monsters/1373.gif"
+      },
+      {
+        "monster_id": 1389,
+        "monster_name": "德古拉男爵",
+        "rate": 0.02,
+        "image_url": "images/monsters/1389.gif"
       }
     ]
   },
@@ -49088,6 +49225,54 @@
       }
     ]
   },
+  "4276": {
+    "id": 4276,
+    "name": {
+      "zh_tw": "死靈騎士卡片",
+      "kr": "이름없는카드"
+    },
+    "description": {
+      "official": "以一定機率對敵人施予頻死之術(COMA)\\n近身物理攻擊時，以一定的機率施加昏迷、詛咒、沉默、中毒、出血效果。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+      "official_clean": "以一定機率對敵人施予頻死之術(COMA)\\n近身物理攻擊時，以一定的機率施加昏迷、詛咒、沉默、中毒、出血效果。"
+    },
+    "category": "卡片",
+    "slot": "武器",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "重要關頭的",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "武器",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/4276.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": [
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.01,
+        "image_url": "images/monsters/1373.gif"
+      }
+    ]
+  },
   "4277": {
     "id": 4277,
     "name": {
@@ -50138,8 +50323,8 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "命中率+10，迴避率+3。\\n[服事系列角色裝備時，對惡魔型與不死型怪物的CRI+9。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
-      "official_clean": "命中率+10，迴避率+3。\\n[服事系列角色裝備時，對惡魔型與不死型怪物的CRI+9。"
+      "official": "命中率+10，迴避率+3。\\n服事系列角色裝備時，對惡魔型與不死型怪物的CRI+9。\\n系列 : 卡片\\n裝備 : 武器\\n重量 : 1",
+      "official_clean": "命中率+10，迴避率+3。\\n服事系列角色裝備時，對惡魔型與不死型怪物的CRI+9。"
     },
     "category": "卡片",
     "slot": "武器",
@@ -50164,7 +50349,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-07-17",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 1,
       "buy_price": 20,
@@ -50444,8 +50629,8 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "有一定機率讓魔物變成其他魔物。\\n系列 : 卡片\\n裝備 : 飾品\\n重量 : 1",
-      "official_clean": "有一定機率讓魔物變成其他魔物。"
+      "official": "有一定機率讓魔物變成其他魔物。\\n和奈吉鳥、拉鏈熊、麥斯特和小花豹卡片一起裝備時，\\n每次攻擊時，SP恢復2。\\n使用金錢攻擊時，傷害增加20%\\nLUK + 10\\n套組裝備者如果是商人系列的角色，\\n1人對象指定攻擊魔法以20%機率反射。\\n系列 : 卡片\\n裝備 : 飾品\\n重量 : 1",
+      "official_clean": "有一定機率讓魔物變成其他魔物。\\n和奈吉鳥、拉鏈熊、麥斯特和小花豹卡片一起裝備時，\\n每次攻擊時，SP恢復2。\\n使用金錢攻擊時，傷害增加20%\\nLUK + 10\\n套組裝備者如果是商人系列的角色，\\n1人對象指定攻擊魔法以20%機率反射。"
     },
     "category": "卡片",
     "slot": "飾品",
@@ -50470,7 +50655,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 1,
       "buy_price": "",
@@ -57535,8 +57720,8 @@
       "kr": "털모자"
     },
     "description": {
-      "official": "以保暖頭部爲目的而製作的毛帽。比起保暖好像也有人以帥氣爲目的來使用。\\nLUK+1\\n系列 : 頭盔 防禦 : 3\\n位置 : 頭上 重量 : 35\\n要求等級 : 1\\n裝備 : 全職業",
-      "official_clean": "以保暖頭部爲目的而製作的毛帽。比起保暖好像也有人以帥氣爲目的來使用。\\nLUK+1"
+      "official": "以保暖頭部為目的而製作的毛帽。比起保暖好像也有人以帥氣為目的來使用。\\nLUK+1\\n系列 : 頭盔 防禦 : 3\\n位置 : 頭上 重量 : 35\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "以保暖頭部為目的而製作的毛帽。比起保暖好像也有人以帥氣為目的來使用。\\nLUK+1"
     },
     "category": "防具",
     "slot": "頭上",
@@ -57561,7 +57746,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 35,
       "buy_price": 20,
@@ -58802,6 +58987,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "5981": {
+    "id": 5981,
+    "name": {
+      "zh_tw": "(服飾)撒旦惡魔翅膀",
+      "kr": "사타닉체인"
+    },
+    "description": {
+      "official": "將飛翔的惡魔之翼形象化之頭飾, 裝備後感覺身心都會被惡魔操控著。\\n系列 : 服飾裝備 防禦 : 0\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "將飛翔的惡魔之翼形象化之頭飾, 裝備後感覺身心都會被惡魔操控著。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 382,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/5981.gif",
+    "icon_url": "/images/items/5981.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -63729,6 +63955,12 @@
     },
     "dropped_by": [
       {
+        "monster_id": 1314,
+        "monster_name": "果樹龜",
+        "rate": "???",
+        "image_url": "images/monsters/1314.gif"
+      },
+      {
         "monster_id": 1316,
         "monster_name": "岩石龜",
         "rate": 4.25,
@@ -63745,12 +63977,6 @@
         "monster_name": "雄壯岩石龜",
         "rate": 21.25,
         "image_url": "images/monsters/2647.gif"
-      },
-      {
-        "monster_id": 1314,
-        "monster_name": "果樹龜",
-        "rate": "???",
-        "image_url": "images/monsters/1314.gif"
       }
     ]
   },
@@ -65026,6 +65252,102 @@
         "monster_name": "迅捷森林妖姬",
         "rate": 75,
         "image_url": "images/monsters/2843.gif"
+      }
+    ]
+  },
+  "7108": {
+    "id": 7108,
+    "name": {
+      "zh_tw": "盾牌的碎片",
+      "kr": "깨진방패조각"
+    },
+    "description": {
+      "official": "盾牌的碎片。相當堅固。\\n_\\n重量 : 1",
+      "official_clean": "盾牌的碎片。相當堅固。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/7108.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": [
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 26.68,
+        "image_url": "images/monsters/1373.gif"
+      }
+    ]
+  },
+  "7109": {
+    "id": 7109,
+    "name": {
+      "zh_tw": "閃亮的槍錐",
+      "kr": "빛나는창날"
+    },
+    "description": {
+      "official": "散發冰冷藍光的槍錐碎片。\\n_\\n重量 : 1",
+      "official_clean": "散發冰冷藍光的槍錐碎片。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/7109.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": [
+      {
+        "monster_id": 1373,
+        "monster_name": "死靈騎士",
+        "rate": 0.05,
+        "image_url": "images/monsters/1373.gif"
       }
     ]
   },
@@ -69892,8 +70214,8 @@
       "kr": "프레임하트"
     },
     "description": {
-      "official": "爲了長久保存肉體而製作木乃伊時，摘除心臟的一塊。\\n_\\n重量 : 0",
-      "official_clean": "爲了長久保存肉體而製作木乃伊時，摘除心臟的一塊。"
+      "official": "為了長久保存肉體而製作木乃伊時，摘除心臟的一塊。\\n_\\n重量 : 0",
+      "official_clean": "為了長久保存肉體而製作木乃伊時，摘除心臟的一塊。"
     },
     "category": "其他",
     "slot": "-",
@@ -69918,7 +70240,7 @@
     "can_mail": true,
     "can_auction": false,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 0,
       "buy_price": 0,
@@ -76172,8 +76494,8 @@
       "kr": "어질요리10"
     },
     "description": {
-      "official": "這是被稱爲蘇克拉特沙漠4大珍味的沙漠蠍子燉菜。聽說是利用沙子的熱來煮熟的。\\nAGI+10，持續20分鐘。\\n重量 : 5",
-      "official_clean": "這是被稱爲蘇克拉特沙漠4大珍味的沙漠蠍子燉菜。聽說是利用沙子的熱來煮熟的。\\nAGI+10，持續20分鐘。"
+      "official": "這是被稱為蘇克拉特沙漠4大珍味的沙漠蠍子燉菜。聽說是利用沙子的熱來煮熟的。\\nAGI+10，持續20分鐘。\\n重量 : 5",
+      "official_clean": "這是被稱為蘇克拉特沙漠4大珍味的沙漠蠍子燉菜。聽說是利用沙子的熱來煮熟的。\\nAGI+10，持續20分鐘。"
     },
     "category": "消耗/恢復",
     "slot": "-",
@@ -76198,7 +76520,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 5,
       "buy_price": 100000,
@@ -76582,8 +76904,8 @@
       "kr": "럭요리10"
     },
     "description": {
-      "official": "斐揚特產九尾狐的尾巴料理。在盧恩米德加爾特上，作爲幸運料理廣爲人知。\\nLUK+10，持續20分鐘。\\n重量 : 5",
-      "official_clean": "斐揚特產九尾狐的尾巴料理。在盧恩米德加爾特上，作爲幸運料理廣爲人知。\\nLUK+10，持續20分鐘。"
+      "official": "斐揚特產九尾狐的尾巴料理。在盧恩米德加爾特上，作為幸運料理廣為人知。\\nLUK+10，持續20分鐘。\\n重量 : 5",
+      "official_clean": "斐揚特產九尾狐的尾巴料理。在盧恩米德加爾特上，作為幸運料理廣為人知。\\nLUK+10，持續20分鐘。"
     },
     "category": "消耗/恢復",
     "slot": "-",
@@ -76608,7 +76930,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 5,
       "buy_price": 100000,
@@ -78355,8 +78677,8 @@
       "kr": "망고슈"
     },
     "description": {
-      "official": "以實用性爲目的製作的多功能短劍\\n系列 : 短劍 攻擊 : 43\\n重量 : 0\\n武器等級 : 1\\n要求等級 : 1\\n裝備 : 初學者系列／劍士系列／魔法師系列／弓箭手系列／商人系列／盜賊系列",
-      "official_clean": "以實用性爲目的製作的多功能短劍"
+      "official": "以實用性為目的製作的多功能短劍\\n系列 : 短劍 攻擊 : 43\\n重量 : 0\\n武器等級 : 1\\n要求等級 : 1\\n裝備 : 初學者系列／劍士系列／魔法師系列／弓箭手系列／商人系列／盜賊系列",
+      "official_clean": "以實用性為目的製作的多功能短劍"
     },
     "category": "武器",
     "slot": "短劍",
@@ -78381,7 +78703,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-06-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 0,
       "buy_price": 0,
@@ -80618,8 +80940,8 @@
       "kr": "회중시계머리장식"
     },
     "description": {
-      "official": "以懷錶爲主題的髮飾。\\nATK+20。\\n與「古鐘魔卡片」同時裝備時，DEF+20、MSP+100。\\n與「鐘怪卡片」同時裝備時，MHP+1000。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭中 重量 : 10\\n需求等級 : 60\\n裝備 : 全職業",
-      "official_clean": "以懷錶爲主題的髮飾。\\nATK+20。\\n與「古鐘魔卡片」同時裝備時，DEF+20、MSP+100。\\n與「鐘怪卡片」同時裝備時，MHP+1000。"
+      "official": "以懷錶為主題的髮飾。\\nATK+20。\\n與「古鐘魔卡片」同時裝備時，DEF+20、MSP+100。\\n與「鐘怪卡片」同時裝備時，MHP+1000。\\n系列 : 頭盔 防禦 : 10\\n位置 : 頭中 重量 : 10\\n需求等級 : 60\\n裝備 : 全職業",
+      "official_clean": "以懷錶為主題的髮飾。\\nATK+20。\\n與「古鐘魔卡片」同時裝備時，DEF+20、MSP+100。\\n與「鐘怪卡片」同時裝備時，MHP+1000。"
     },
     "category": "防具",
     "slot": "頭中",
@@ -80644,7 +80966,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-12-18",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 10,
       "buy_price": "",
@@ -80823,8 +81145,8 @@
       "kr": "루드마스크"
     },
     "description": {
-      "official": "以南瓜魂的臉爲主題製作的面具。明朗的表情讓人不禁露出微笑。\\n暗屬性攻擊抗性+2%\\n系列 : 頭盔 防禦 : 2\\n位置 : 頭中/下 重量 : 10\\n需求等級 : 60\\n裝備 : 所有職業",
-      "official_clean": "以南瓜魂的臉爲主題製作的面具。明朗的表情讓人不禁露出微笑。\\n暗屬性攻擊抗性+2%"
+      "official": "以南瓜魂的臉為主題製作的面具。明朗的表情讓人不禁露出微笑。\\n暗屬性攻擊抗性+2%\\n系列 : 頭盔 防禦 : 2\\n位置 : 頭中/下 重量 : 10\\n需求等級 : 60\\n裝備 : 所有職業",
+      "official_clean": "以南瓜魂的臉為主題製作的面具。明朗的表情讓人不禁露出微笑。\\n暗屬性攻擊抗性+2%"
     },
     "category": "防具",
     "slot": "頭中/下",
@@ -80849,7 +81171,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 10,
       "buy_price": "",
@@ -83163,6 +83485,47 @@
       "weight": 0,
       "buy_price": 10,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "19718": {
+    "id": 19718,
+    "name": {
+      "zh_tw": "(服飾)哥德式髮圈",
+      "kr": "고딕헤드드레스"
+    },
+    "description": {
+      "official": "哥德式蕾絲非常出色的髮箍。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "哥德式蕾絲非常出色的髮箍。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 978,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/19718.gif",
+    "icon_url": "/images/items/19718.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -85872,6 +86235,47 @@
     },
     "dropped_by": []
   },
+  "19935": {
+    "id": 19935,
+    "name": {
+      "zh_tw": "(服飾)疾風狩獵帽",
+      "kr": "돌풍의헌팅캡"
+    },
+    "description": {
+      "official": "風神力量封印其中的狩獵帽。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "風神力量封印其中的狩獵帽。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1076,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/19935.gif",
+    "icon_url": "/images/items/19935.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "19939": {
     "id": 19939,
     "name": {
@@ -86361,6 +86765,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "20011": {
+    "id": 20011,
+    "name": {
+      "zh_tw": "(服飾)疾風迅雷",
+      "kr": "질풍신뢰"
+    },
+    "description": {
+      "official": "為了速度感特別設計輕巧的頭具。\\n尖尖的外型有如雷霆。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業\\n",
+      "official_clean": "為了速度感特別設計輕巧的頭具。\\n尖尖的外型有如雷霆。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1199,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20011.gif",
+    "icon_url": "/images/items/20011.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -89767,6 +90212,47 @@
     },
     "dropped_by": []
   },
+  "20340": {
+    "id": 20340,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(黑)",
+      "kr": "스트레이트포니_검정"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1371,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20340.gif",
+    "icon_url": "/images/items/20340.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "20350": {
     "id": 20350,
     "name": {
@@ -89887,6 +90373,293 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "20357": {
+    "id": 20357,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(黃)",
+      "kr": "스트레이트포니_노랑"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1389,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20357.gif",
+    "icon_url": "/images/items/20357.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20358": {
+    "id": 20358,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(綠)",
+      "kr": "스트레이트포니_녹색"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1390,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20358.gif",
+    "icon_url": "/images/items/20358.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20359": {
+    "id": 20359,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(紫)",
+      "kr": "스트레이트포니_보라"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1391,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20359.gif",
+    "icon_url": "/images/items/20359.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20360": {
+    "id": 20360,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(紅)",
+      "kr": "스트레이트포니_빨강"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1392,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20360.gif",
+    "icon_url": "/images/items/20360.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20361": {
+    "id": 20361,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(橘)",
+      "kr": "스트레이트포니_연갈색"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1393,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20361.gif",
+    "icon_url": "/images/items/20361.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20362": {
+    "id": 20362,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(藍)",
+      "kr": "스트레이트포니_파랑"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1394,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20362.gif",
+    "icon_url": "/images/items/20362.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20363": {
+    "id": 20363,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(白)",
+      "kr": "스트레이트포니_흰색"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1395,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20363.gif",
+    "icon_url": "/images/items/20363.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -91527,6 +92300,88 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "20762": {
+    "id": 20762,
+    "name": {
+      "zh_tw": "(服飾)撒旦之翼",
+      "kr": "대악마날개"
+    },
+    "description": {
+      "official": "魔界裡某個惡名昭彰大惡魔翅膀的模型。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 披肩\\n重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "魔界裡某個惡名昭彰大惡魔翅膀的模型。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 10,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20762.gif",
+    "icon_url": "/images/items/20762.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20764": {
+    "id": 20764,
+    "name": {
+      "zh_tw": "(服飾)墮天使之翼",
+      "kr": "타락천사의날개"
+    },
+    "description": {
+      "official": "墮天使的黑色巨型翅膀。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 披肩\\n重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "墮天使的黑色巨型翅膀。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 3,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/20764.gif",
+    "icon_url": "/images/items/20764.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -106892,6 +107747,47 @@
     },
     "dropped_by": []
   },
+  "31188": {
+    "id": 31188,
+    "name": {
+      "zh_tw": "(服飾)單色哥德式花帽",
+      "kr": "Mono_Gothic_Bonnet"
+    },
+    "description": {
+      "official": "有豐富荷葉邊的服飾軟帽，\\n優雅的紫玫瑰和軟帽內側的格子花紋是亮點。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+      "official_clean": "有豐富荷葉邊的服飾軟帽，\\n優雅的紫玫瑰和軟帽內側的格子花紋是亮點。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1584,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/31188.gif",
+    "icon_url": "/images/items/31188.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "31203": {
     "id": 31203,
     "name": {
@@ -107628,14 +108524,7 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": [
-      {
-        "monster_id": 2717,
-        "monster_name": "憤怒梅納海葵",
-        "rate": "???",
-        "image_url": "images/monsters/2717.gif"
-      }
-    ]
+    "dropped_by": []
   },
   "31299": {
     "id": 31299,
@@ -107716,6 +108605,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "31313": {
+    "id": 31313,
+    "name": {
+      "zh_tw": "(服飾)墮落天使翅膀耳飾",
+      "kr": "C_FallenAngelWingEar"
+    },
+    "description": {
+      "official": "融入墮天使翅膀製成的服飾。\\n尚未查明使用天使翅膀製成的謠言出處。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置: 頭中  重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "融入墮天使翅膀製成的服飾。\\n尚未查明使用天使翅膀製成的謠言出處。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭中",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1662,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/31313.gif",
+    "icon_url": "/images/items/31313.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -110671,6 +111601,47 @@
     },
     "dropped_by": []
   },
+  "31737": {
+    "id": 31737,
+    "name": {
+      "zh_tw": "(服飾)露西法翅膀",
+      "kr": "Wings_Of_Lucifer"
+    },
+    "description": {
+      "official": "引起神明憤怒而被驅逐的露西法的翅膀。\\n名字的含義是「帶來光芒的人」。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 披肩\\n重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "引起神明憤怒而被驅逐的露西法的翅膀。\\n名字的含義是「帶來光芒的人」。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 55,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/31737.gif",
+    "icon_url": "/images/items/31737.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "31775": {
     "id": 31775,
     "name": {
@@ -111160,6 +112131,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "31848": {
+    "id": 31848,
+    "name": {
+      "zh_tw": "(服飾)玫瑰哥德式髮圈",
+      "kr": "C_Rose_Gothic_Bonnet"
+    },
+    "description": {
+      "official": "有豐富荷葉邊的服飾軟帽，\\n熱情的紅玫瑰和軟帽內側的格子花紋是亮點。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+      "official_clean": "有豐富荷葉邊的服飾軟帽，\\n熱情的紅玫瑰和軟帽內側的格子花紋是亮點。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1946,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/31848.gif",
+    "icon_url": "/images/items/31848.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -119170,6 +120182,252 @@
     "can_auction": false,
     "can_guild_storage": true,
     "lastupdated": "2026-01-13",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106293": {
+    "id": 106293,
+    "name": {
+      "zh_tw": "[死靈騎士]討伐獎勵箱(一般)",
+      "kr": "ZTW_CE_Maya_N_B"
+    },
+    "description": {
+      "official": "擊殺死靈騎士的勇士證明。使用時可隨機獲得以下其中一項道具。\\n戰鬥死靈騎士娃娃1個\\n(服飾)死靈騎士之盾(歸屬)\\n鐵匠的祝福1個\\n鐵匠的祝福粉末2個\\n鐵匠的祝福粉末3個\\n天地樹祝福1個\\n天地樹祝福2個\\n天地樹祝福3個\\n[死靈騎士]氣息碎片1個\\n[死靈騎士]氣息碎片2個\\n[死靈騎士]氣息碎片3個\\n重量 : 0",
+      "official_clean": "擊殺死靈騎士的勇士證明。使用時可隨機獲得以下其中一項道具。\\n戰鬥死靈騎士娃娃1個\\n(服飾)死靈騎士之盾(歸屬)\\n鐵匠的祝福1個\\n鐵匠的祝福粉末2個\\n鐵匠的祝福粉末3個\\n天地樹祝福1個\\n天地樹祝福2個\\n天地樹祝福3個\\n[死靈騎士]氣息碎片1個\\n[死靈騎士]氣息碎片2個\\n[死靈騎士]氣息碎片3個"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106293.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106294": {
+    "id": 106294,
+    "name": {
+      "zh_tw": "[死靈騎士]討伐獎勵箱(高級)",
+      "kr": "ZTW_CE_Maya_H_B"
+    },
+    "description": {
+      "official": "擊殺死靈騎士的勇士證明。使用時可隨機獲得以下其中一項道具。\\n戰鬥死靈騎士娃娃1個\\n(服飾)死靈騎士之盾(歸屬)\\n鐵匠的祝福2個\\n鐵匠的祝福粉末3個\\n鐵匠的祝福粉末4個\\n天地樹祝福2個\\n天地樹祝福3個\\n[死靈騎士]氣息碎片2個\\n[死靈騎士]氣息碎片3個\\n重量 : 0",
+      "official_clean": "擊殺死靈騎士的勇士證明。使用時可隨機獲得以下其中一項道具。\\n戰鬥死靈騎士娃娃1個\\n(服飾)死靈騎士之盾(歸屬)\\n鐵匠的祝福2個\\n鐵匠的祝福粉末3個\\n鐵匠的祝福粉末4個\\n天地樹祝福2個\\n天地樹祝福3個\\n[死靈騎士]氣息碎片2個\\n[死靈騎士]氣息碎片3個"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106294.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106310": {
+    "id": 106310,
+    "name": {
+      "zh_tw": "666禮包",
+      "kr": "캐시상자_검정"
+    },
+    "description": {
+      "official": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)單色哥德式花帽\\n(服飾)哥德式髮圈\\n(服飾)撒旦之翼\\n重量 : 0",
+      "official_clean": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)單色哥德式花帽\\n(服飾)哥德式髮圈\\n(服飾)撒旦之翼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106310.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106311": {
+    "id": 106311,
+    "name": {
+      "zh_tw": "大耳魔女禮包",
+      "kr": "Evt_20th_Return"
+    },
+    "description": {
+      "official": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)美美直馬尾接髮(紫)\\n(服飾)美美直馬尾接髮(綠)\\n(服飾)紅色大耳魔女帽\\n重量 : 0",
+      "official_clean": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)美美直馬尾接髮(紫)\\n(服飾)美美直馬尾接髮(綠)\\n(服飾)紅色大耳魔女帽"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106311.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106312": {
+    "id": 106312,
+    "name": {
+      "zh_tw": "馬尾接髮禮包",
+      "kr": "선물상자_1"
+    },
+    "description": {
+      "official": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)美美直馬尾接髮(藍)\\n(服飾)美美直馬尾接髮(紅)\\n(服飾)美美直馬尾接髮(白)\\n重量 : 0",
+      "official_clean": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)美美直馬尾接髮(藍)\\n(服飾)美美直馬尾接髮(紅)\\n(服飾)美美直馬尾接髮(白)"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106312.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106313": {
+    "id": 106313,
+    "name": {
+      "zh_tw": "疾風禮包",
+      "kr": "불량학생선물상자"
+    },
+    "description": {
+      "official": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)疾風之力\\n(服飾)疾風狩獵帽\\n(服飾)疾風迅雷\\n重量 : 0",
+      "official_clean": "開啟並隨機獲得以下道具一種\\n2026紀念幣×1\\n2026紀念幣×2\\n2026紀念幣×3\\n(服飾)疾風之力\\n(服飾)疾風狩獵帽\\n(服飾)疾風迅雷"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106313.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 0,
       "buy_price": "",
@@ -127705,6 +128963,47 @@
     },
     "dropped_by": []
   },
+  "400204": {
+    "id": 400204,
+    "name": {
+      "zh_tw": "(服飾)紅色大耳魔女帽",
+      "kr": "Purple_Cat_Ears_Beret"
+    },
+    "description": {
+      "official": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 2153,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/400204.gif",
+    "icon_url": "/images/items/400204.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "400206": {
     "id": 400206,
     "name": {
@@ -127907,6 +129206,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "400370": {
+    "id": 400370,
+    "name": {
+      "zh_tw": "(服飾)紫色大耳魔女帽",
+      "kr": "C_PU_EarWitchHat"
+    },
+    "description": {
+      "official": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 2323,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/400370.gif",
+    "icon_url": "/images/items/400370.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -128865,6 +130205,12 @@
         "monster_name": "小雞",
         "rate": "???",
         "image_url": "images/monsters/1049.gif"
+      },
+      {
+        "monster_id": 1050,
+        "monster_name": "蛋殼小雞",
+        "rate": "???",
+        "image_url": "images/monsters/1050.gif"
       }
     ]
   },
@@ -138847,6 +140193,416 @@
       }
     ]
   },
+  "401200": {
+    "id": 401200,
+    "name": {
+      "zh_tw": "(服飾)單色哥德式花帽(歸屬)",
+      "kr": "Mono_Gothic_Bonnet"
+    },
+    "description": {
+      "official": "有豐富荷葉邊的服飾軟帽，\\n優雅的紫玫瑰和軟帽內側的格子花紋是亮點。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+      "official_clean": "有豐富荷葉邊的服飾軟帽，\\n優雅的紫玫瑰和軟帽內側的格子花紋是亮點。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1584,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401200.gif",
+    "icon_url": "/images/items/401200.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401201": {
+    "id": 401201,
+    "name": {
+      "zh_tw": "(服飾)紅色大耳魔女帽(歸屬)",
+      "kr": "Purple_Cat_Ears_Beret"
+    },
+    "description": {
+      "official": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 2153,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401201.gif",
+    "icon_url": "/images/items/401201.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401202": {
+    "id": 401202,
+    "name": {
+      "zh_tw": "(服飾)哥德式髮圈(歸屬)",
+      "kr": "고딕헤드드레스"
+    },
+    "description": {
+      "official": "哥德式蕾絲非常出色的髮箍。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "哥德式蕾絲非常出色的髮箍。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 978,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401202.gif",
+    "icon_url": "/images/items/401202.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401203": {
+    "id": 401203,
+    "name": {
+      "zh_tw": "(服飾)疾風狩獵帽(歸屬)",
+      "kr": "돌풍의헌팅캡"
+    },
+    "description": {
+      "official": "風神力量封印其中的狩獵帽。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "風神力量封印其中的狩獵帽。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1076,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401203.gif",
+    "icon_url": "/images/items/401203.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401204": {
+    "id": 401204,
+    "name": {
+      "zh_tw": "(服飾)疾風迅雷(歸屬)",
+      "kr": "질풍신뢰"
+    },
+    "description": {
+      "official": "為了速度感特別設計輕巧的頭具。\\n尖尖的外型有如雷霆。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業\\n",
+      "official_clean": "為了速度感特別設計輕巧的頭具。\\n尖尖的外型有如雷霆。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1199,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401204.gif",
+    "icon_url": "/images/items/401204.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401208": {
+    "id": 401208,
+    "name": {
+      "zh_tw": "(服飾)撒旦惡魔翅膀(歸屬)",
+      "kr": "사타닉체인"
+    },
+    "description": {
+      "official": "將飛翔的惡魔之翼形象化之頭飾, 裝備後感覺身心都會被惡魔操控著。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "將飛翔的惡魔之翼形象化之頭飾, 裝備後感覺身心都會被惡魔操控著。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 382,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401208.gif",
+    "icon_url": "/images/items/401208.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401209": {
+    "id": 401209,
+    "name": {
+      "zh_tw": "(服飾)玫瑰哥德式髮圈(歸屬)",
+      "kr": "C_Rose_Gothic_Bonnet"
+    },
+    "description": {
+      "official": "有豐富荷葉邊的服飾軟帽，\\n熱情的紅玫瑰和軟帽內側的格子花紋是亮點。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列: 服飾裝備 防禦: 0\\n位置: 頭上  重量: 0\\n要求等級: 1\\n裝備: 全職業",
+      "official_clean": "有豐富荷葉邊的服飾軟帽，\\n熱情的紅玫瑰和軟帽內側的格子花紋是亮點。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1946,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401209.gif",
+    "icon_url": "/images/items/401209.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401210": {
+    "id": 401210,
+    "name": {
+      "zh_tw": "(服飾)紫色大耳魔女帽(歸屬)",
+      "kr": "C_PU_EarWitchHat"
+    },
+    "description": {
+      "official": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "喜歡可愛東西的魔女，用模仿心愛貓耳朵的裝飾製作了帽子。\\n在製作過程中似乎注入了生命之魂。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 2323,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401210.gif",
+    "icon_url": "/images/items/401210.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401211": {
+    "id": 401211,
+    "name": {
+      "zh_tw": "(服飾)疾風迅雷(紅)",
+      "kr": "Flash_of_Lightning"
+    },
+    "description": {
+      "official": "追求敏捷，設計輕巧的帽子。戴上的人舞劍時，就會像疾風迅雷取得勝利。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "追求敏捷，設計輕巧的帽子。戴上的人舞劍時，就會像疾風迅雷取得勝利。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 2415,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401211.gif",
+    "icon_url": "/images/items/401211.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "401212": {
+    "id": 401212,
+    "name": {
+      "zh_tw": "(服飾)疾風迅雷(紅)(歸屬)",
+      "kr": "Flash_of_Lightning"
+    },
+    "description": {
+      "official": "追求敏捷，設計輕巧的帽子。戴上的人舞劍時，就會像疾風迅雷取得勝利。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭上 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "追求敏捷，設計輕巧的帽子。戴上的人舞劍時，就會像疾風迅雷取得勝利。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭上",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 2415,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/401212.gif",
+    "icon_url": "/images/items/401212.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "410030": {
     "id": 410030,
     "name": {
@@ -144787,6 +146543,47 @@
       }
     ]
   },
+  "410575": {
+    "id": 410575,
+    "name": {
+      "zh_tw": "(服飾)墮落天使翅膀耳飾(歸屬)",
+      "kr": "C_FallenAngelWingEar"
+    },
+    "description": {
+      "official": "融入墮天使翅膀製成的服飾。\\n尚未查明使用天使翅膀製成的謠言出處。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置: 頭中  重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "融入墮天使翅膀製成的服飾。\\n尚未查明使用天使翅膀製成的謠言出處。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭中",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1662,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/410575.gif",
+    "icon_url": "/images/items/410575.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "420010": {
     "id": 420010,
     "name": {
@@ -146342,6 +148139,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "420320": {
+    "id": 420320,
+    "name": {
+      "zh_tw": "(服飾)疾風之力",
+      "kr": "챰오브러프윈드"
+    },
+    "description": {
+      "official": "形似閃電的嘴叼石，叼著時全身充盈著疾風閃電之力。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "形似閃電的嘴叼石，叼著時全身充盈著疾風閃電之力。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1263,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420320.gif",
+    "icon_url": "/images/items/420320.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -153682,6 +155520,12 @@
         "monster_name": "梅納海葵",
         "rate": "???",
         "image_url": "images/monsters/1216.gif"
+      },
+      {
+        "monster_id": 2717,
+        "monster_name": "憤怒梅納海葵",
+        "rate": "???",
+        "image_url": "images/monsters/2717.gif"
       }
     ]
   },
@@ -153780,6 +155624,375 @@
         "image_url": "images/monsters/1321.gif"
       }
     ]
+  },
+  "420734": {
+    "id": 420734,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(紫)(歸屬)",
+      "kr": "스트레이트포니_보라"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1391,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420734.gif",
+    "icon_url": "/images/items/420734.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420735": {
+    "id": 420735,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(綠)(歸屬)",
+      "kr": "스트레이트포니_녹색"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1390,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420735.gif",
+    "icon_url": "/images/items/420735.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420736": {
+    "id": 420736,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(黑)(歸屬)",
+      "kr": "스트레이트포니_검정"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1371,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420736.gif",
+    "icon_url": "/images/items/420736.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420737": {
+    "id": 420737,
+    "name": {
+      "zh_tw": "(服飾)疾風之力(歸屬)",
+      "kr": "챰오브러프윈드"
+    },
+    "description": {
+      "official": "形似閃電的嘴叼石，叼著時全身充盈著疾風閃電之力。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "形似閃電的嘴叼石，叼著時全身充盈著疾風閃電之力。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1263,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420737.gif",
+    "icon_url": "/images/items/420737.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420738": {
+    "id": 420738,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(白)(歸屬)",
+      "kr": "스트레이트포니_흰색"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1395,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420738.gif",
+    "icon_url": "/images/items/420738.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420739": {
+    "id": 420739,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(紅)(歸屬)",
+      "kr": "스트레이트포니_빨강"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1392,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420739.gif",
+    "icon_url": "/images/items/420739.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420740": {
+    "id": 420740,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(藍)(歸屬)",
+      "kr": "스트레이트포니_파랑"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1394,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420740.gif",
+    "icon_url": "/images/items/420740.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420741": {
+    "id": 420741,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(橘)(歸屬)",
+      "kr": "스트레이트포니_연갈색"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1393,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420741.gif",
+    "icon_url": "/images/items/420741.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "420742": {
+    "id": 420742,
+    "name": {
+      "zh_tw": "(服飾)美美直馬尾接髮(黃)(歸屬)",
+      "kr": "스트레이트포니_노랑"
+    },
+    "description": {
+      "official": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 頭下 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "接到頭髮上時可享受不同髮型的裝飾頭髮。\\n從髮頂附近梳下來的馬尾。"
+    },
+    "category": "服飾裝備",
+    "slot": "頭下",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 1389,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/420742.gif",
+    "icon_url": "/images/items/420742.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
   },
   "430011": {
     "id": 430011,
@@ -156062,6 +158275,12 @@
         "monster_name": "巫婆",
         "rate": "???",
         "image_url": "images/monsters/1102.gif"
+      },
+      {
+        "monster_id": 1207,
+        "monster_name": "史汀",
+        "rate": "???",
+        "image_url": "images/monsters/1207.gif"
       }
     ]
   },
@@ -158525,6 +160744,47 @@
     },
     "dropped_by": []
   },
+  "480290": {
+    "id": 480290,
+    "name": {
+      "zh_tw": "(服飾)死靈騎士之盾",
+      "kr": "C_Lord_Of_Death_Shield"
+    },
+    "description": {
+      "official": "依照死靈騎士之盾外型而製作的服飾。\\n感覺非常地重。\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "依照死靈騎士之盾外型而製作的服飾。\\n感覺非常地重。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 166,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/480290.gif",
+    "icon_url": "/images/items/480290.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "480311": {
     "id": 480311,
     "name": {
@@ -158909,16 +161169,16 @@
         "image_url": "images/monsters/1260.gif"
       },
       {
-        "monster_id": 1504,
-        "monster_name": "無顱武士",
-        "rate": 0.07,
-        "image_url": "images/monsters/1504.gif"
-      },
-      {
         "monster_id": 1321,
         "monster_name": "刺尾蜻蜓",
         "rate": "???",
         "image_url": "images/monsters/1321.gif"
+      },
+      {
+        "monster_id": 1504,
+        "monster_name": "無顱武士",
+        "rate": 0.07,
+        "image_url": "images/monsters/1504.gif"
       }
     ]
   },
@@ -162217,6 +164477,170 @@
       }
     ]
   },
+  "480719": {
+    "id": 480719,
+    "name": {
+      "zh_tw": "(服飾)死靈騎士之盾(歸屬)",
+      "kr": "C_Lord_Of_Death_Shield"
+    },
+    "description": {
+      "official": "依照死靈騎士之盾外型而製作的服飾。\\n感覺非常地重。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備 防禦 : 0\\n位置 : 披肩 重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "依照死靈騎士之盾外型而製作的服飾。\\n感覺非常地重。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 166,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/480719.gif",
+    "icon_url": "/images/items/480719.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "480722": {
+    "id": 480722,
+    "name": {
+      "zh_tw": "(服飾)撒旦之翼(歸屬)",
+      "kr": "대악마날개"
+    },
+    "description": {
+      "official": "魔界裡某個惡名昭彰大惡魔翅膀的模型。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 披肩\\n重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "魔界裡某個惡名昭彰大惡魔翅膀的模型。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 10,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/480722.gif",
+    "icon_url": "/images/items/480722.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "480723": {
+    "id": 480723,
+    "name": {
+      "zh_tw": "(服飾)墮天使之翼(歸屬)",
+      "kr": "타락천사의날개"
+    },
+    "description": {
+      "official": "墮天使的黑色巨型翅膀。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 披肩\\n重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "墮天使的黑色巨型翅膀。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 3,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/480723.gif",
+    "icon_url": "/images/items/480723.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "480724": {
+    "id": 480724,
+    "name": {
+      "zh_tw": "(服飾)露西法翅膀(歸屬)",
+      "kr": "Wings_Of_Lucifer"
+    },
+    "description": {
+      "official": "引起神明憤怒而被驅逐的露西法的翅膀。\\n名字的含義是「帶來光芒的人」。\\n<NAVI>[服飾附魔師]<INFO>prontera,268,273,0,100,0,0</INFO></NAVI>\\n<NAVI>[服飾歸屬處理師]<INFO>prontera,265,278,0,100,0,0</INFO></NAVI>\\n系列 : 服飾裝備\\n位置 : 披肩\\n重量 : 0\\n要求等級 : 1\\n裝備 : 全職業",
+      "official_clean": "引起神明憤怒而被驅逐的露西法的翅膀。\\n名字的含義是「帶來光芒的人」。"
+    },
+    "category": "服飾裝備",
+    "slot": "披肩",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 55,
+    "costume": true,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 1,
+    "equip_jobs": "全職業",
+    "wearing_image_url": "/images/wearing/480724.gif",
+    "icon_url": "/images/items/480724.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "490759": {
     "id": 490759,
     "name": {
@@ -164699,8 +167123,8 @@
       "kr": "타블렛"
     },
     "description": {
-      "official": "因爲是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。\\n系列 : 書籍 攻擊 : 125\\n重量 : 80\\n武器等級 : 3\\n需求等級 : 27\\n裝備 : 祭司 / 賢者專用",
-      "official_clean": "因爲是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。"
+      "official": "因為是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。\\n系列 : 書籍 攻擊 : 125\\n重量 : 80\\n武器等級 : 3\\n需求等級 : 27\\n裝備 : 祭司 / 賢者專用",
+      "official_clean": "因為是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。"
     },
     "category": "武器",
     "slot": "書籍",
@@ -164725,7 +167149,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-07-31",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 80,
       "buy_price": 0,
@@ -164792,16 +167216,16 @@
         "image_url": "images/monsters/1195.gif"
       },
       {
-        "monster_id": 1515,
-        "monster_name": "卡崙寶寶",
-        "rate": "???",
-        "image_url": "images/monsters/1515.gif"
-      },
-      {
         "monster_id": 1509,
         "monster_name": "南瓜魂",
         "rate": "???",
         "image_url": "images/monsters/1509.gif"
+      },
+      {
+        "monster_id": 1515,
+        "monster_name": "卡崙寶寶",
+        "rate": "???",
+        "image_url": "images/monsters/1515.gif"
       }
     ]
   },
@@ -164860,8 +167284,8 @@
       "kr": "타블렛"
     },
     "description": {
-      "official": "因爲是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。\\n系列 : 書籍 攻擊 : 125\\n重量 : 80\\n武器等級 : 3\\n需求等級 : 27\\n裝備 : 祭司 / 賢者專用",
-      "official_clean": "因爲是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。"
+      "official": "因為是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。\\n系列 : 書籍 攻擊 : 125\\n重量 : 80\\n武器等級 : 3\\n需求等級 : 27\\n裝備 : 祭司 / 賢者專用",
+      "official_clean": "因為是蘊含著智慧之語的石板，重量當然很重，相對被打到的話，應該很難醒過來。"
     },
     "category": "武器",
     "slot": "書籍",
@@ -164886,7 +167310,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-07-31",
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 80,
       "buy_price": 0,
@@ -165652,6 +168076,12 @@
         "monster_name": "獸人腐屍",
         "rate": "???",
         "image_url": "images/monsters/1153.gif"
+      },
+      {
+        "monster_id": 1276,
+        "monster_name": "幽靈弓箭手",
+        "rate": "???",
+        "image_url": "images/monsters/1276.gif"
       }
     ]
   },
@@ -165949,6 +168379,12 @@
     },
     "dropped_by": [
       {
+        "monster_id": 1321,
+        "monster_name": "刺尾蜻蜓",
+        "rate": "???",
+        "image_url": "images/monsters/1321.gif"
+      },
+      {
         "monster_id": 1499,
         "monster_name": "伍坦戰士",
         "rate": 0.01,
@@ -165959,12 +168395,6 @@
         "monster_name": "憤怒伍坦戰士",
         "rate": 0.05,
         "image_url": "images/monsters/2611.gif"
-      },
-      {
-        "monster_id": 1321,
-        "monster_name": "刺尾蜻蜓",
-        "rate": "???",
-        "image_url": "images/monsters/1321.gif"
       }
     ]
   },
@@ -167331,6 +169761,12 @@
         "monster_name": "艾斯蜘蛛",
         "rate": "???",
         "image_url": "images/monsters/1100.gif"
+      },
+      {
+        "monster_id": 1132,
+        "monster_name": "卡利斯格",
+        "rate": "???",
+        "image_url": "images/monsters/1132.gif"
       },
       {
         "monster_id": 1261,
@@ -168796,16 +171232,16 @@
         "image_url": "images/monsters/1281.gif"
       },
       {
-        "monster_id": 2760,
-        "monster_name": "雄壯土撥鼠",
-        "rate": 0.25,
-        "image_url": "images/monsters/2760.gif"
-      },
-      {
         "monster_id": 1315,
         "monster_name": "風靈龜",
         "rate": "???",
         "image_url": "images/monsters/1315.gif"
+      },
+      {
+        "monster_id": 2760,
+        "monster_name": "雄壯土撥鼠",
+        "rate": 0.25,
+        "image_url": "images/monsters/2760.gif"
       }
     ]
   },
@@ -169214,16 +171650,16 @@
         "image_url": "images/monsters/1152.gif"
       },
       {
-        "monster_id": 1687,
-        "monster_name": "綠變色龍",
-        "rate": 0.1,
-        "image_url": "images/monsters/1687.gif"
-      },
-      {
         "monster_id": 1316,
         "monster_name": "岩石龜",
         "rate": "???",
         "image_url": "images/monsters/1316.gif"
+      },
+      {
+        "monster_id": 1687,
+        "monster_name": "綠變色龍",
+        "rate": 0.1,
+        "image_url": "images/monsters/1687.gif"
       }
     ]
   },
@@ -178761,6 +181197,744 @@
     "can_auction": false,
     "can_guild_storage": true,
     "lastupdated": "2026-01-13",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002643": {
+    "id": 1002643,
+    "name": {
+      "zh_tw": "戰鬥森林妖姬娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的森林妖姬娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的森林妖姬娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002643.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002644": {
+    "id": 1002644,
+    "name": {
+      "zh_tw": "戰鬥奈吉鳥娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的奈吉鳥娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的奈吉鳥娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002644.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002645": {
+    "id": 1002645,
+    "name": {
+      "zh_tw": "戰鬥畢帝特地龍娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的畢帝特地龍娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的畢帝特地龍娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002645.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002646": {
+    "id": 1002646,
+    "name": {
+      "zh_tw": "戰鬥帕莎納娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的帕莎納娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的帕莎納娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002646.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002647": {
+    "id": 1002647,
+    "name": {
+      "zh_tw": "戰鬥邪惡箱娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的邪惡箱娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的邪惡箱娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002647.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002648": {
+    "id": 1002648,
+    "name": {
+      "zh_tw": "戰鬥小惡魔娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的小惡魔娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的小惡魔娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002648.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002649": {
+    "id": 1002649,
+    "name": {
+      "zh_tw": "戰鬥傀儡娃娃娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的傀儡娃娃娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的傀儡娃娃娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002649.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002650": {
+    "id": 1002650,
+    "name": {
+      "zh_tw": "戰鬥邪惡禮盒娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的邪惡禮盒娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的邪惡禮盒娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002650.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002651": {
+    "id": 1002651,
+    "name": {
+      "zh_tw": "戰鬥鴞裊首領娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的鴞裊首領娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的鴞裊首領娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002651.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002652": {
+    "id": 1002652,
+    "name": {
+      "zh_tw": "戰鬥愛麗絲女僕娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的愛麗絲女僕娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的愛麗絲女僕娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002652.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002653": {
+    "id": 1002653,
+    "name": {
+      "zh_tw": "戰鬥虎蜥人娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的虎蜥人娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的虎蜥人娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002653.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002654": {
+    "id": 1002654,
+    "name": {
+      "zh_tw": "戰鬥深淵騎士娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的深淵騎士娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的深淵騎士娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002654.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002655": {
+    "id": 1002655,
+    "name": {
+      "zh_tw": "戰鬥火魔巫師娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的火魔巫師娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的火魔巫師娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002655.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002657": {
+    "id": 1002657,
+    "name": {
+      "zh_tw": "戰鬥鐘怪娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的鐘怪娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的鐘怪娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002657.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002658": {
+    "id": 1002658,
+    "name": {
+      "zh_tw": "戰鬥狂暴綠綿蟲娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的狂暴綠綿蟲娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的狂暴綠綿蟲娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002658.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002661": {
+    "id": 1002661,
+    "name": {
+      "zh_tw": "戰鬥死靈騎士娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的死靈騎士娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的死靈騎士娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002661.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002664": {
+    "id": 1002664,
+    "name": {
+      "zh_tw": "[死靈騎士]氣息碎片",
+      "kr": "ZTW_CE_Maya_E_P"
+    },
+    "description": {
+      "official": "殘存死靈騎士氣息的碎片，找到米德加爾特-接待員[露西]詢問，或許會有些頭緒。\\n<NAVI>[露西]<INFO>prt_in,45,102,0,100,0,0</INFO></NAVI>\\n\\n重量：0",
+      "official_clean": "殘存死靈騎士氣息的碎片，找到米德加爾特-接待員[露西]詢問，或許會有些頭緒。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002664.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "1002675": {
+    "id": 1002675,
+    "name": {
+      "zh_tw": "戰鬥狂暴野豬娃娃",
+      "kr": "ZTW_Bd_CMN_Doll"
+    },
+    "description": {
+      "official": "纏繞著暴戾氣息的狂暴野豬娃娃，「戰鬥娃娃裁判」好像知道些什麼\\n<NAVI>[戰鬥娃娃裁判]<INFO>prontera,260,268,0,100,0,0</INFO></NAVI>\\n重量：0",
+      "official_clean": "纏繞著暴戾氣息的狂暴野豬娃娃，「戰鬥娃娃裁判」好像知道些什麼"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/1002675.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-01-27",
     "attributes": {
       "weight": 0,
       "buy_price": "",
