@@ -265,9 +265,8 @@ const getMonsterImg = (id) => {
 
 
 
-          <p style="font-size: 0.9em; margin-bottom: 15px; overflow: hidden; color: #c9c1b6; line-height: 1.5;">
-            <strong style="color: #90ee90;" v-html="formattedDescription(it.description.official_clean)"></strong>
-
+          <p class="text-left" style="font-size: 0.9em; margin-bottom: 15px; overflow: hidden; color: #c9c1b6; line-height: 1.5;">
+            <strong style="color: #ff9b9b;" v-html="formattedDescription(it.description.official_clean)"></strong>
           </p>
 
           <table style="width: 100%; font-size: 0.9em;">

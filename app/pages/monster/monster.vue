@@ -1184,7 +1184,7 @@ const getItemImg = (id) => {
           <p class="text-gray-400 text-sm mb-6">ID: {{ selectedFullItem.id }}</p>
 
           <div class="bg-[#3a3530]/50 p-4 rounded-lg mb-6">
-            <p class="text-[#7fff7f] text-base leading-relaxed whitespace-pre-line">
+            <p class="text-[#7fff7f] text-base leading-relaxed whitespace-pre-line text-left">
               {{ formatDescription(selectedFullItem.description?.official) }}
             </p>
           </div>
