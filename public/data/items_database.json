@@ -1025,6 +1025,12 @@
         "monster_name": "國王波利",
         "rate": 30,
         "image_url": "images/monsters/3810.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": 4,
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -10590,6 +10596,12 @@
         "monster_name": "憤怒腐屍",
         "rate": 3.5,
         "image_url": "images/monsters/2606.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": 0.15,
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -12831,6 +12843,12 @@
         "monster_name": "汙染幽靈劍士",
         "rate": 0.35,
         "image_url": "images/monsters/20367.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": 0.45,
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -14445,6 +14463,12 @@
         "monster_name": "火魔巫師",
         "rate": 22.8,
         "image_url": "images/monsters/20380.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": 3.75,
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -17169,6 +17193,12 @@
         "monster_name": "菁英大腳熊",
         "rate": 100,
         "image_url": "images/monsters/2884.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": 25,
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -30307,14 +30337,7 @@
       "buy_price": 0,
       "sell_price": 10
     },
-    "dropped_by": [
-      {
-        "monster_id": 1206,
-        "monster_name": "虎蜥人",
-        "rate": 10,
-        "image_url": "images/monsters/1206.gif"
-      }
-    ]
+    "dropped_by": []
   },
   "1755": {
     "id": 1755,
@@ -31447,7 +31470,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20175,
+        "monster_name": "超異小丑",
+        "rate": "???",
+        "image_url": "images/monsters/20175.gif"
+      }
+    ]
   },
   "1859": {
     "id": 1859,
@@ -45104,11 +45134,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "免疫暈眩。\\nVIT + 3\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "免疫暈眩。\\nVIT + 3\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "免疫暈眩。\\nVIT + 3"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": 0,
     "ClassNum": 0,
@@ -45118,7 +45148,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4143.gif",
     "script": "",
@@ -45130,7 +45160,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-09-18",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": 0,
@@ -45200,11 +45230,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "使用技能時，SP消耗量減少30%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "使用技能時，SP消耗量減少30%。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "使用技能時，SP消耗量減少30%。"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": 0,
     "ClassNum": 0,
@@ -45214,7 +45244,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4148.gif",
     "script": "",
@@ -45226,7 +45256,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-12-04",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": 0,
@@ -45734,11 +45764,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "MAXHP-10%、MAXSP-10%、變動詠唱-10%。\\n裝備黑暗之王卡片時，變動詠唱再-10%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "MAXHP-10%、MAXSP-10%、變動詠唱-10%。\\n裝備黑暗之王卡片時，變動詠唱再-10%。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "MAXHP-10%、MAXSP-10%、變動詠唱-10%。\\n裝備黑暗之王卡片時，變動詠唱再-10%。"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": 0,
     "ClassNum": 0,
@@ -45748,7 +45778,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4169.gif",
     "script": "",
@@ -45760,7 +45790,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-11-06",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": 0,
@@ -46244,11 +46274,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "INT+ 1。服事系列角色裝備時，INT+ 1、 MDEF+ 1\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "INT+ 1。服事系列角色裝備時，INT+ 1、 MDEF+ 1\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "INT+ 1。服事系列角色裝備時，INT+ 1、 MDEF+ 1"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": 0,
     "ClassNum": 0,
@@ -46258,7 +46288,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4185.gif",
     "script": "",
@@ -46270,7 +46300,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-10-30",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": 0,
@@ -46400,11 +46430,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "每次擊敗動物型怪物時，有一定機率獲得「火靈礦石」道具。\\n對火屬性攻擊的抗性+10%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "每次擊敗動物型怪物時，有一定機率獲得「火靈礦石」道具。\\n對火屬性攻擊的抗性+10%。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "每次擊敗動物型怪物時，有一定機率獲得「火靈礦石」道具。\\n對火屬性攻擊的抗性+10%。"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 0,
@@ -46414,7 +46444,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4188.gif",
     "script": "",
@@ -46426,7 +46456,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-12-18",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": "",
@@ -47452,6 +47482,12 @@
         "monster_name": "雪熊",
         "rate": 0.01,
         "image_url": "images/monsters/1243.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": 0.01,
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -47816,11 +47852,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "INT + 1，變動詠唱-5%。鐘怪、古鐘魔、朽魔卡片一起裝備時，MDEF+ 3、DEF+ 3\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "INT + 1，變動詠唱-5%。鐘怪、古鐘魔、朽魔卡片一起裝備時，MDEF+ 3、DEF+ 3\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "INT + 1，變動詠唱-5%。鐘怪、古鐘魔、朽魔卡片一起裝備時，MDEF+ 3、DEF+ 3"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 0,
@@ -47830,7 +47866,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4229.gif",
     "script": "",
@@ -47842,7 +47878,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-12-18",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": "",
@@ -49022,11 +49058,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "每次擊敗昆蟲型怪物時，有一定機率獲得「風靈礦石」道具。\\n對風屬性攻擊的抗性+10%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "每次擊敗昆蟲型怪物時，有一定機率獲得「風靈礦石」道具。\\n對風屬性攻擊的抗性+10%。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "每次擊敗昆蟲型怪物時，有一定機率獲得「風靈礦石」道具。\\n對風屬性攻擊的抗性+10%。"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 0,
@@ -49036,7 +49072,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4271.gif",
     "script": "",
@@ -49048,7 +49084,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-12-18",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": "",
@@ -49328,11 +49364,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "精煉5以下時，MDEF + 5\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "精煉5以下時，MDEF + 5\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "精煉5以下時，MDEF + 5"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 0,
@@ -49342,7 +49378,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4278.gif",
     "script": "",
@@ -49354,7 +49390,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": "",
@@ -49519,11 +49555,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "INT+ 2精煉度為9以上時，可使MAXSP+ 150\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "INT+ 2精煉度為9以上時，可使MAXSP+ 150\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "INT+ 2精煉度為9以上時，可使MAXSP+ 150"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": 0,
     "ClassNum": 0,
@@ -49533,7 +49569,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4288.gif",
     "script": "",
@@ -49545,7 +49581,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2025-10-30",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": 0,
@@ -50275,11 +50311,11 @@
       "kr": "이름없는카드"
     },
     "description": {
-      "official": "受到暗屬性、不死屬性的傷害-15%。\\n系列 : 卡片\\n裝備 : 頭盔\\n重量 : 1",
+      "official": "受到暗屬性、不死屬性的傷害-15%。\\n系列 : 卡片\\n裝備 : 頭具\\n重量 : 1",
       "official_clean": "受到暗屬性、不死屬性的傷害-15%。"
     },
     "category": "卡片",
-    "slot": "頭盔",
+    "slot": "頭具",
     "slotCount": 0,
     "enchantment_slots": "",
     "ClassNum": 0,
@@ -50289,7 +50325,7 @@
     "defense": 0,
     "weapon_level": 0,
     "required_level": 0,
-    "equip_jobs": "頭盔",
+    "equip_jobs": "頭具",
     "wearing_image_url": "",
     "icon_url": "/images/items/4311.gif",
     "script": "",
@@ -50301,7 +50337,7 @@
     "can_mail": true,
     "can_auction": true,
     "can_guild_storage": true,
-    "lastupdated": "2026-01-13",
+    "lastupdated": "2026-02-04",
     "attributes": {
       "weight": 1,
       "buy_price": "",
@@ -56208,6 +56244,47 @@
       }
     ]
   },
+  "5014": {
+    "id": 5014,
+    "name": {
+      "zh_tw": "劍士頭盔",
+      "kr": "핀헬름"
+    },
+    "description": {
+      "official": "守護劍士的魚鰭狀頭盔，並不是裝備後就能在水中呼吸，千萬要小心。\\n系列 : 頭盔 防禦 : 5\\n位置 : 頭中 重量 : 30\\n需求等級 : 65\\n裝備 : 劍士系列",
+      "official_clean": "守護劍士的魚鰭狀頭盔，並不是裝備後就能在水中呼吸，千萬要小心。"
+    },
+    "category": "防具",
+    "slot": "頭中",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 100,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 5,
+    "weapon_level": 0,
+    "required_level": 65,
+    "equip_jobs": "劍士系列",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/5014.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 30,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "5015": {
     "id": 5015,
     "name": {
@@ -56618,6 +56695,12 @@
       {
         "monster_id": 1243,
         "monster_name": "雪熊",
+        "rate": 0.01,
+        "image_url": "images/monsters/1243.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
         "rate": 0.01,
         "image_url": "images/monsters/1243.gif"
       }
@@ -58851,7 +58934,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1508,
+        "monster_name": "萬聖魔",
+        "rate": "???",
+        "image_url": "images/monsters/1508.gif"
+      }
+    ]
   },
   "5509": {
     "id": 5509,
@@ -79470,6 +79560,170 @@
     },
     "dropped_by": []
   },
+  "15223": {
+    "id": 15223,
+    "name": {
+      "zh_tw": "殲滅隊鎧甲",
+      "kr": "버코너워비늘갑옷"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的鎧甲。\\nSTR+1、AGI+1。\\nMHP+700、MSP+50，\\nMDEF+5、DEF+40。\\n精煉+5以上時，DEF+15、MHP+100。\\n和殲滅隊斗篷、殲滅隊重靴、殲滅隊戒指一起裝備時，ATK+25。\\n精煉總和為+25以上時\\n攻擊速度增加（攻擊後延遲-5%），\\n暴擊傷害+2%，\\n固定詠唱-10%。\\n系列 : 鎧甲  防禦 : 66\\n重量 : 60\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的鎧甲。\\nSTR+1、AGI+1。\\nMHP+700、MSP+50，\\nMDEF+5、DEF+40。\\n精煉+5以上時，DEF+15、MHP+100。\\n和殲滅隊斗篷、殲滅隊重靴、殲滅隊戒指一起裝備時，ATK+25。\\n精煉總和為+25以上時\\n攻擊速度增加（攻擊後延遲-5%），\\n暴擊傷害+2%，\\n固定詠唱-10%。"
+    },
+    "category": "防具",
+    "slot": "鎧甲",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 66,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/15223.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 60,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "15224": {
+    "id": 15224,
+    "name": {
+      "zh_tw": "殲滅隊風衣",
+      "kr": "스나이핑슈츠"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的風衣。\\nDEX+1、AGI+1。\\nMHP+500、MSP+60、MDEF+5、DEF+40。\\n精煉+5以上時，DEF+15、MSP+20。\\n和殲滅隊偵查斗篷、殲滅隊長靴、殲滅隊手套一起裝備時，ATK+25。\\n精煉總和為+25以上時\\n攻擊速度增加（攻擊後延遲-7%），\\n遠距離物理傷害+2%，\\n固定詠唱-10%。\\n系列 : 鎧甲  防禦 : 63\\n重量 : 60\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的風衣。\\nDEX+1、AGI+1。\\nMHP+500、MSP+60、MDEF+5、DEF+40。\\n精煉+5以上時，DEF+15、MSP+20。\\n和殲滅隊偵查斗篷、殲滅隊長靴、殲滅隊手套一起裝備時，ATK+25。\\n精煉總和為+25以上時\\n攻擊速度增加（攻擊後延遲-7%），\\n遠距離物理傷害+2%，\\n固定詠唱-10%。"
+    },
+    "category": "防具",
+    "slot": "鎧甲",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 63,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/15224.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 60,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "15225": {
+    "id": 15225,
+    "name": {
+      "zh_tw": "殲滅隊外袍",
+      "kr": "자애의로브"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的外袍。\\nINT+1、DEX+1。\\nMHP500、MSP70，\\nMDEF+5、DEF+40。\\n精煉+5以上時，DEF+10、MSP+20。\\n和殲滅隊圍巾、殲滅隊鞋子、殲滅隊魔法戒指一起裝備時，MATK+25。\\n精煉總和為+25以上時\\nMATK+2%、變動詠唱-7%，\\n固定詠唱-10%。\\n系列 : 鎧甲  防禦 : 61\\n重量 : 55\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的外袍。\\nINT+1、DEX+1。\\nMHP500、MSP70，\\nMDEF+5、DEF+40。\\n精煉+5以上時，DEF+10、MSP+20。\\n和殲滅隊圍巾、殲滅隊鞋子、殲滅隊魔法戒指一起裝備時，MATK+25。\\n精煉總和為+25以上時\\nMATK+2%、變動詠唱-7%，\\n固定詠唱-10%。"
+    },
+    "category": "防具",
+    "slot": "鎧甲",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 61,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/15225.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 55,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "15226": {
+    "id": 15226,
+    "name": {
+      "zh_tw": "殲滅隊制服",
+      "kr": "쉐퍼드클로스"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的制服。\\nINT+1、VIT+1。\\nMHP600、MSP60，\\nMDEF+5、DEF+40。\\n精煉+5以上時，DEF+10、MHP100。\\n和殲滅隊披肩、殲滅隊魔法鞋、殲滅隊項鍊一起裝備時，MATK+25。\\n精煉總和為+25以上時\\n治癒術恢復量+2%，\\n變動詠唱-7%，\\n固定詠唱-10%。\\n系列 : 鎧甲  防禦 : 59\\n重量 : 50\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的制服。\\nINT+1、VIT+1。\\nMHP600、MSP60，\\nMDEF+5、DEF+40。\\n精煉+5以上時，DEF+10、MHP100。\\n和殲滅隊披肩、殲滅隊魔法鞋、殲滅隊項鍊一起裝備時，MATK+25。\\n精煉總和為+25以上時\\n治癒術恢復量+2%，\\n變動詠唱-7%，\\n固定詠唱-10%。"
+    },
+    "category": "防具",
+    "slot": "鎧甲",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 59,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/15226.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 50,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "15281": {
     "id": 15281,
     "name": {
@@ -92631,6 +92885,170 @@
     },
     "dropped_by": []
   },
+  "20870": {
+    "id": 20870,
+    "name": {
+      "zh_tw": "殲滅隊斗篷",
+      "kr": "열풍의상의"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的斗篷。\\n攻擊速度增加。（攻擊後延遲-5%。）\\nFLEE+15。\\n精煉+5以上時，AGI+1。\\n系列 : 披肩  防禦 : 16\\n重量 : 40\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的斗篷。\\n攻擊速度增加。（攻擊後延遲-5%。）\\nFLEE+15。\\n精煉+5以上時，AGI+1。"
+    },
+    "category": "防具",
+    "slot": "披肩",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 16,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/20870.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 40,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20871": {
+    "id": 20871,
+    "name": {
+      "zh_tw": "殲滅隊偵查斗篷",
+      "kr": "홍련의스톨"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的偵查斗篷。\\n攻擊速度增加（攻擊後延遲-3%），\\nFLEE+20。\\n精煉+5以上時，攻擊速度額外增加（攻擊後延遲-2%）\\n系列 : 披肩  防禦 : 15\\n重量 : 40\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的偵查斗篷。\\n攻擊速度增加（攻擊後延遲-3%），\\nFLEE+20。\\n精煉+5以上時，攻擊速度額外增加（攻擊後延遲-2%）"
+    },
+    "category": "防具",
+    "slot": "披肩",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 15,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/20871.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 40,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20872": {
+    "id": 20872,
+    "name": {
+      "zh_tw": "殲滅隊圍巾",
+      "kr": "플로워망토"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的圍巾。\\n變動詠唱-3%、FLEE+16。\\n精煉+5以上時，變動詠唱再-4%。\\n系列 : 披肩  防禦 : 14\\n重量 : 35\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的圍巾。\\n變動詠唱-3%、FLEE+16。\\n精煉+5以上時，變動詠唱再-4%。"
+    },
+    "category": "防具",
+    "slot": "披肩",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 14,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/20872.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 35,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "20873": {
+    "id": 20873,
+    "name": {
+      "zh_tw": "殲滅隊披肩",
+      "kr": "Medical_Cape"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的披肩。\\n變動詠唱-5%、FLEE+12。\\n精煉+5以上時，無屬性抗性+3%。\\n系列 : 披肩  防禦 : 13\\n重量 : 30\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的披肩。\\n變動詠唱-5%、FLEE+12。\\n精煉+5以上時，無屬性抗性+3%。"
+    },
+    "category": "防具",
+    "slot": "披肩",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 13,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/20873.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 30,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "20945": {
     "id": 20945,
     "name": {
@@ -93161,6 +93579,170 @@
       "weight": 25,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "22153": {
+    "id": 22153,
+    "name": {
+      "zh_tw": "殲滅隊重靴",
+      "kr": "안전화"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的重靴。\\nHP恢復量18%，\\nSp恢復力+5%。\\n精煉+5以上時，STR+2。\\n系列 : 鞋子  防禦 : 20\\n重量 : 40\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的重靴。\\nHP恢復量18%，\\nSp恢復力+5%。\\n精煉+5以上時，STR+2。"
+    },
+    "category": "防具",
+    "slot": "鞋子",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 20,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/22153.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 40,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "22154": {
+    "id": 22154,
+    "name": {
+      "zh_tw": "殲滅隊長靴",
+      "kr": "군용부츠"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的長靴。\\nHP恢復量+15%，\\nSp恢復力+7%。\\n精煉+5以上時，DEX+2。\\n系列 : 鞋子  防禦 : 18\\n重量 : 40\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的長靴。\\nHP恢復量+15%，\\nSp恢復力+7%。\\n精煉+5以上時，DEX+2。"
+    },
+    "category": "防具",
+    "slot": "鞋子",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 18,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/22154.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 40,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "22155": {
+    "id": 22155,
+    "name": {
+      "zh_tw": "殲滅隊鞋子",
+      "kr": "프레이야의장화"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的鞋子。\\nHP恢復量+12%，\\nSp恢復力+10%。\\n精煉+5以上時，INT+2。\\n系列 : 鞋子  防禦 : 16\\n重量 : 35\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的鞋子。\\nHP恢復量+12%，\\nSp恢復力+10%。\\n精煉+5以上時，INT+2。"
+    },
+    "category": "防具",
+    "slot": "鞋子",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 16,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/22155.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 35,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "22156": {
+    "id": 22156,
+    "name": {
+      "zh_tw": "殲滅隊魔法鞋子",
+      "kr": "류미엘슈즈"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的魔法鞋子。\\nHP恢復量+15%，\\nSp恢復力+7%。\\n精煉+5以上時，治癒量+2%。\\n系列 : 鞋子  防禦 : 15\\n重量 : 30\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的魔法鞋子。\\nHP恢復量+15%，\\nSp恢復力+7%。\\n精煉+5以上時，治癒量+2%。"
+    },
+    "category": "防具",
+    "slot": "鞋子",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 15,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/22156.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 30,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -99978,6 +100560,47 @@
     },
     "dropped_by": []
   },
+  "25476": {
+    "id": 25476,
+    "name": {
+      "zh_tw": "紅色魔力結晶體",
+      "kr": "저주받은파편"
+    },
+    "description": {
+      "official": "由生物體掉落出凝聚高度魔力且散發紅光的結晶體。\\n_\\n重量 : 0",
+      "official_clean": "由生物體掉落出凝聚高度魔力且散發紅光的結晶體。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/25476.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "25505": {
     "id": 25505,
     "name": {
@@ -100017,7 +100640,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20175,
+        "monster_name": "超異小丑",
+        "rate": "???",
+        "image_url": "images/monsters/20175.gif"
+      }
+    ]
   },
   "25506": {
     "id": 25506,
@@ -100058,7 +100688,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20176,
+        "monster_name": "伊莉莎白",
+        "rate": "???",
+        "image_url": "images/monsters/20176.gif"
+      }
+    ]
   },
   "25507": {
     "id": 25507,
@@ -100099,7 +100736,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20177,
+        "monster_name": "珍妮佛",
+        "rate": "???",
+        "image_url": "images/monsters/20177.gif"
+      }
+    ]
   },
   "25508": {
     "id": 25508,
@@ -100140,7 +100784,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20178,
+        "monster_name": "獸人將軍",
+        "rate": "???",
+        "image_url": "images/monsters/20178.gif"
+      }
+    ]
   },
   "25509": {
     "id": 25509,
@@ -100181,7 +100832,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20179,
+        "monster_name": "吉克勞斯甲蟲",
+        "rate": "???",
+        "image_url": "images/monsters/20179.gif"
+      }
+    ]
   },
   "25630": {
     "id": 25630,
@@ -101274,7 +101932,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20175,
+        "monster_name": "超異小丑",
+        "rate": "???",
+        "image_url": "images/monsters/20175.gif"
+      }
+    ]
   },
   "27271": {
     "id": 27271,
@@ -101315,7 +101980,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20176,
+        "monster_name": "伊莉莎白",
+        "rate": "???",
+        "image_url": "images/monsters/20176.gif"
+      }
+    ]
   },
   "27272": {
     "id": 27272,
@@ -101356,7 +102028,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20177,
+        "monster_name": "珍妮佛",
+        "rate": "???",
+        "image_url": "images/monsters/20177.gif"
+      }
+    ]
   },
   "27273": {
     "id": 27273,
@@ -101397,7 +102076,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20178,
+        "monster_name": "獸人將軍",
+        "rate": "???",
+        "image_url": "images/monsters/20178.gif"
+      }
+    ]
   },
   "27274": {
     "id": 27274,
@@ -101438,7 +102124,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 20179,
+        "monster_name": "吉克勞斯甲蟲",
+        "rate": "???",
+        "image_url": "images/monsters/20179.gif"
+      }
+    ]
   },
   "27275": {
     "id": 27275,
@@ -101820,6 +102513,170 @@
       "weight": 10,
       "buy_price": 0,
       "sell_price": 0
+    },
+    "dropped_by": []
+  },
+  "28542": {
+    "id": 28542,
+    "name": {
+      "zh_tw": "殲滅隊戒指",
+      "kr": "빨강반지"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的戒指。\\nSTR+3、AGI+1。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的戒指。\\nSTR+3、AGI+1。"
+    },
+    "category": "防具",
+    "slot": "飾品",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/28542.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 10,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "28543": {
+    "id": 28543,
+    "name": {
+      "zh_tw": "殲滅隊手套",
+      "kr": "매부리의장갑"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的手套。\\nDEX+3、AGI+1。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的手套。\\nDEX+3、AGI+1。"
+    },
+    "category": "防具",
+    "slot": "飾品",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/28543.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 10,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "28544": {
+    "id": 28544,
+    "name": {
+      "zh_tw": "殲滅隊魔法戒指",
+      "kr": "콜드링"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的魔法戒指。\\nINT+3、DEX+1。\\n系列 : 飾品  防禦 : 0\\n重量 : 10\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的魔法戒指。\\nINT+3、DEX+1。"
+    },
+    "category": "防具",
+    "slot": "飾品",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/28544.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 10,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "28545": {
+    "id": 28545,
+    "name": {
+      "zh_tw": "殲滅隊項鍊",
+      "kr": "달과별의네클리스"
+    },
+    "description": {
+      "official": "作為殲滅獎勵授予的項鍊。\\nINT+3、VIT+1。\\n系列 : 飾品  防禦 : 0\\n重量 : 0\\n需求等級 : 80\\n裝備 : 所有職業",
+      "official_clean": "作為殲滅獎勵授予的項鍊。\\nINT+3、VIT+1。"
+    },
+    "category": "防具",
+    "slot": "飾品",
+    "slotCount": 1,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 80,
+    "equip_jobs": "所有職業",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/28545.gif",
+    "script": "",
+    "can_drop": true,
+    "can_trade": true,
+    "can_storage": true,
+    "can_cart": true,
+    "can_sell_to_npc": true,
+    "can_mail": true,
+    "can_auction": true,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -113877,6 +114734,170 @@
     },
     "dropped_by": []
   },
+  "101350": {
+    "id": 101350,
+    "name": {
+      "zh_tw": "卡普拉倉庫鈴[活動專用]",
+      "kr": "차임벨은색"
+    },
+    "description": {
+      "official": "可輕鬆使用卡普拉倉庫的鈴鐺。\\n不論身在何處，只要搖動此鈴鐺，卡普拉職員便會為你開啟倉庫。\\n重量：0",
+      "official_clean": "可輕鬆使用卡普拉倉庫的鈴鐺。\\n不論身在何處，只要搖動此鈴鐺，卡普拉職員便會為你開啟倉庫。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/101350.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": false,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "102010": {
+    "id": 102010,
+    "name": {
+      "zh_tw": "道具商人呼叫鈴[活動專用]",
+      "kr": "차임벨금색"
+    },
+    "description": {
+      "official": "只要搖動鈴鐺，不論身在何處，浪跡商人都會出現與你進行物品買賣。\\n只要有這個就不用特地回城鎮了！\\n重量：0",
+      "official_clean": "只要搖動鈴鐺，不論身在何處，浪跡商人都會出現與你進行物品買賣。\\n只要有這個就不用特地回城鎮了！"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/102010.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": false,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "102011": {
+    "id": 102011,
+    "name": {
+      "zh_tw": "卡普拉倉庫鈴箱子(30天)[活動專用]",
+      "kr": "다이아보물상자"
+    },
+    "description": {
+      "official": "裝有1個可使用30天的卡普拉倉庫鈴的箱子。\\n_\\n不論身在何處，只要搖動此鈴鐺，卡普拉職員便會為你開啟倉庫。\\n重量：1",
+      "official_clean": "裝有1個可使用30天的卡普拉倉庫鈴的箱子。\\n_\\n不論身在何處，只要搖動此鈴鐺，卡普拉職員便會為你開啟倉庫。"
+    },
+    "category": "消耗/恢復",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/102011.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "102012": {
+    "id": 102012,
+    "name": {
+      "zh_tw": "道具商人呼叫鈴箱子(30天)[活動專用]",
+      "kr": "금보물상자"
+    },
+    "description": {
+      "official": "裝有1個可使用30天的道具商人呼叫鈴的箱子。\\n_\\n只要擁有這個，就能在任何地方召喚道具商人，購買實用的消耗品，或販售自己持有的道具。\\n重量：1",
+      "official_clean": "裝有1個可使用30天的道具商人呼叫鈴的箱子。\\n_\\n只要擁有這個，就能在任何地方召喚道具商人，購買實用的消耗品，或販售自己持有的道具。"
+    },
+    "category": "消耗/恢復",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/102012.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "102203": {
     "id": 102203,
     "name": {
@@ -113997,6 +115018,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "102518": {
+    "id": 102518,
+    "name": {
+      "zh_tw": "卡普拉倉庫鈴7天箱子[活動專用]",
+      "kr": "다이아보물상자"
+    },
+    "description": {
+      "official": "裝有1個可使用7天的卡普拉倉庫鈴的箱子。\\n_\\n不論身在何處，只要搖動此鈴鐺，卡普拉職員便會為你開啟倉庫。\\n重量：1",
+      "official_clean": "裝有1個可使用7天的卡普拉倉庫鈴的箱子。\\n_\\n不論身在何處，只要搖動此鈴鐺，卡普拉職員便會為你開啟倉庫。"
+    },
+    "category": "消耗/恢復",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/102518.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -114202,6 +115264,88 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "103307": {
+    "id": 103307,
+    "name": {
+      "zh_tw": "角色欄位上限開放卡片",
+      "kr": "CharSlot_Open_Card"
+    },
+    "description": {
+      "official": "使用此道具可新增1個角色欄位。\\n重量：0",
+      "official_clean": "使用此道具可新增1個角色欄位。"
+    },
+    "category": "卡片",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/103307.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "103320": {
+    "id": 103320,
+    "name": {
+      "zh_tw": "角色欄位上限開放卡片[活動專用]",
+      "kr": "CharSlot_Open_Card"
+    },
+    "description": {
+      "official": "使用此道具可新增1個角色欄位。\\n重量：0",
+      "official_clean": "使用此道具可新增1個角色欄位。"
+    },
+    "category": "卡片",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/103320.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -120435,6 +121579,170 @@
     },
     "dropped_by": []
   },
+  "106337": {
+    "id": 106337,
+    "name": {
+      "zh_tw": "道具商人呼叫鈴箱子(7天)[活動專用]",
+      "kr": "금보물상자"
+    },
+    "description": {
+      "official": "裝有1個可使用7天的道具商人呼叫鈴的箱子\\n_\\n只要擁有這個，就能在任何地方召喚道具商人，購買實用的消耗品，或販售自己持有的道具。\\n重量：1",
+      "official_clean": "裝有1個可使用7天的道具商人呼叫鈴的箱子\\n_\\n只要擁有這個，就能在任何地方召喚道具商人，購買實用的消耗品，或販售自己持有的道具。"
+    },
+    "category": "消耗/恢復",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106337.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 1,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106338": {
+    "id": 106338,
+    "name": {
+      "zh_tw": "華麗金屬釣竿箱子(1小時)[活動專用]",
+      "kr": "ZTW_Emperium_Rob_Box"
+    },
+    "description": {
+      "official": "以擁有耀眼光芒的華麗金屬製成的釣竿，但隨著時間流逝，其光彩會逐漸黯淡。\\n重量：0",
+      "official_clean": "以擁有耀眼光芒的華麗金屬製成的釣竿，但隨著時間流逝，其光彩會逐漸黯淡。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106338.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106339": {
+    "id": 106339,
+    "name": {
+      "zh_tw": "華麗金屬釣竿箱子(6小時)[活動專用]",
+      "kr": "ZTW_Emperium_Rob_Box"
+    },
+    "description": {
+      "official": "以擁有耀眼光芒的華麗金屬製成的釣竿，但隨著時間流逝，其光彩會逐漸黯淡。\\n重量：0",
+      "official_clean": "以擁有耀眼光芒的華麗金屬製成的釣竿，但隨著時間流逝，其光彩會逐漸黯淡。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106339.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
+  "106340": {
+    "id": 106340,
+    "name": {
+      "zh_tw": "[活動專用]華麗金屬釣竿箱子(12小時)",
+      "kr": "ZTW_Emperium_Rob_Box"
+    },
+    "description": {
+      "official": "以擁有耀眼光芒的華麗金屬製成的釣竿，但隨著時間流逝，其光彩會逐漸黯淡。\\n重量：0",
+      "official_clean": "以擁有耀眼光芒的華麗金屬製成的釣竿，但隨著時間流逝，其光彩會逐漸黯淡。"
+    },
+    "category": "其他",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/106340.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
+    },
+    "dropped_by": []
+  },
   "200264": {
     "id": 200264,
     "name": {
@@ -120637,6 +121945,47 @@
       "weight": 0,
       "buy_price": 0,
       "sell_price": 10
+    },
+    "dropped_by": []
+  },
+  "200463": {
+    "id": 200463,
+    "name": {
+      "zh_tw": "角色欄位上限開放卡片箱",
+      "kr": "예술축제선물상자"
+    },
+    "description": {
+      "official": "裝有角色欄位上限開放卡片1張的箱子。\\n\\n使用角色欄位上限開放卡片，可新增1個角色欄位。\\n重量：0",
+      "official_clean": "裝有角色欄位上限開放卡片1張的箱子。\\n使用角色欄位上限開放卡片，可新增1個角色欄位。"
+    },
+    "category": "卡片",
+    "slot": "-",
+    "slotCount": 0,
+    "enchantment_slots": "",
+    "ClassNum": 0,
+    "costume": false,
+    "card_prefix_name": "",
+    "attack": 0,
+    "defense": 0,
+    "weapon_level": 0,
+    "required_level": 0,
+    "equip_jobs": "",
+    "wearing_image_url": "",
+    "icon_url": "/images/items/200463.gif",
+    "script": "",
+    "can_drop": false,
+    "can_trade": false,
+    "can_storage": true,
+    "can_cart": false,
+    "can_sell_to_npc": false,
+    "can_mail": true,
+    "can_auction": false,
+    "can_guild_storage": true,
+    "lastupdated": "2026-02-04",
+    "attributes": {
+      "weight": 0,
+      "buy_price": "",
+      "sell_price": ""
     },
     "dropped_by": []
   },
@@ -136944,7 +138293,14 @@
       "buy_price": 0,
       "sell_price": 0
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1206,
+        "monster_name": "虎蜥人",
+        "rate": "???",
+        "image_url": "images/monsters/1206.gif"
+      }
+    ]
   },
   "401085": {
     "id": 401085,
@@ -140047,7 +141403,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1319,
+        "monster_name": "水靈龜",
+        "rate": "???",
+        "image_url": "images/monsters/1319.gif"
+      }
+    ]
   },
   "401191": {
     "id": 401191,
@@ -169845,6 +171208,12 @@
         "monster_name": "工蟻",
         "rate": "???",
         "image_url": "images/monsters/1160.gif"
+      },
+      {
+        "monster_id": 1280,
+        "monster_name": "噴射哥布靈",
+        "rate": "???",
+        "image_url": "images/monsters/1280.gif"
       }
     ]
   },
@@ -172159,6 +173528,12 @@
         "monster_name": "邪惡使者",
         "rate": "???",
         "image_url": "images/monsters/1257.gif"
+      },
+      {
+        "monster_id": 25239,
+        "monster_name": "憤怒雪熊",
+        "rate": "???",
+        "image_url": "images/monsters/1243.gif"
       }
     ]
   },
@@ -181653,7 +183028,14 @@
       "buy_price": "",
       "sell_price": ""
     },
-    "dropped_by": []
+    "dropped_by": [
+      {
+        "monster_id": 1206,
+        "monster_name": "虎蜥人",
+        "rate": "???",
+        "image_url": "images/monsters/1206.gif"
+      }
+    ]
   },
   "1002654": {
     "id": 1002654,

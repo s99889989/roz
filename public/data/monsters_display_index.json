@@ -10603,8 +10603,8 @@
       },
       "defense": 48,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 1277,
+        "job": 234
       },
       "flee_95_percent": 271,
       "hit_100_percent": 305,
@@ -16624,8 +16624,8 @@
       },
       "defense": 42,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 883,
+        "job": 161
       },
       "flee_95_percent": 250,
       "hit_100_percent": 278,
@@ -21975,7 +21975,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4143.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "中性的"
       },
@@ -37627,8 +37627,8 @@
       },
       "defense": 38,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 892,
+        "job": 162
       },
       "flee_95_percent": 253,
       "hit_100_percent": 266,
@@ -37870,8 +37870,8 @@
       },
       "defense": 116,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 8636,
+        "job": 102
       },
       "flee_95_percent": 281,
       "hit_100_percent": 309,
@@ -42140,7 +42140,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4148.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "麒麟的"
       },
@@ -50211,7 +50211,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4185.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "聰明才智的"
       },
@@ -52190,16 +52190,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 1754,
-        "name": "水靈箭矢",
-        "rate": 10,
-        "icon_url": "images/items/1754.gif",
-        "slotCount": 0,
-        "slot": "箭矢",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 2320,
         "name": "西裝外套",
         "rate": "???",
@@ -52257,6 +52247,26 @@
         "slotCount": 2,
         "slot": "短劍",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 401084,
+        "name": "(服飾)隊伍招聘!廣告牌(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401084.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002653,
+        "name": "戰鬥虎蜥人娃娃",
+        "rate": "???",
+        "icon_url": "images/items/1002653.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -61072,7 +61082,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4288.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "超高等級"
       },
@@ -62006,7 +62016,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4229.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "牢繫的"
       },
@@ -64873,6 +64883,16 @@
         "icon_url": "images/items/7053.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 590071,
+        "name": "鏈錘",
+        "rate": "???",
+        "icon_url": "images/items/590071.gif",
+        "slotCount": 3,
+        "slot": "鈍器",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -67868,7 +67888,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4169.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "著迷熟練的"
       },
@@ -68117,7 +68137,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4271.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "黃色魔力礦石"
       },
@@ -68648,7 +68668,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4188.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "火靈礦石的"
       },
@@ -70075,7 +70095,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4311.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "曼特邪惡力量的"
       },
@@ -71859,6 +71879,16 @@
         "slot": "頭下",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 401190,
+        "name": "(服飾)趴趴果樹龜(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/401190.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -72413,8 +72443,8 @@
       },
       "defense": 63,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 67299,
+        "job": 13459
       },
       "flee_95_percent": 324,
       "hit_100_percent": 355,
@@ -72651,8 +72681,8 @@
       },
       "defense": 108,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 78500,
+        "job": 15700
       },
       "flee_95_percent": 317,
       "hit_100_percent": 355,
@@ -73532,7 +73562,7 @@
       },
       "flee_95_percent": 464,
       "hit_100_percent": 411,
-      "hp": 2838250,
+      "hp": 112838250,
       "magic_attack": {
         "max": 2774,
         "min": 1596
@@ -77576,7 +77606,7 @@
         "rate": 0.01,
         "icon_url": "images/items/4278.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "抵抗著迷力量的"
       },
@@ -78839,6 +78869,16 @@
         "icon_url": "images/items/7220.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 5475,
+        "name": "萬聖魔面具",
+        "rate": "???",
+        "icon_url": "images/items/5475.gif",
+        "slotCount": 0,
+        "slot": "頭中/下",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -92066,7 +92106,7 @@
         "rate": 0.05,
         "icon_url": "images/items/4185.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "聰明才智的"
       }
@@ -100695,8 +100735,8 @@
       },
       "defense": 116,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 129546,
+        "job": 23744
       },
       "flee_95_percent": 281,
       "hit_100_percent": 309,
@@ -103268,7 +103308,7 @@
         "rate": 0.05,
         "icon_url": "images/items/4188.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "火靈礦石的"
       },
@@ -106486,7 +106526,7 @@
         "rate": 0.05,
         "icon_url": "images/items/4271.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": "",
         "card_prefix_name": "黃色魔力礦石"
       },
@@ -110543,8 +110583,8 @@
       },
       "defense": 63,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 1059959,
+        "job": 211979
       },
       "flee_95_percent": 324,
       "hit_100_percent": 355,
@@ -112699,8 +112739,8 @@
       },
       "defense": 42,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 13265,
+        "job": 2425
       },
       "flee_95_percent": 250,
       "hit_100_percent": 278,
@@ -114434,7 +114474,7 @@
         "rate": 0.05,
         "icon_url": "images/items/4288.gif",
         "slotCount": 0,
-        "slot": "頭盔",
+        "slot": "頭具",
         "enchantment_slots": 0,
         "card_prefix_name": "超高等級"
       },
@@ -115845,7 +115885,7 @@
       },
       "defense": 58,
       "exp": {
-        "base": 37290,
+        "base": 39300,
         "job": 10442
       },
       "flee_95_percent": 257,
@@ -120782,6 +120822,560 @@
       {
         "map_name": "gl_step",
         "description": "樓梯迷宮",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "25239": {
+    "id": 25239,
+    "name": {
+      "zh_tw": "憤怒雪熊",
+      "en": "C4_SASQUATCH",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 3,
+        "type": "無"
+      },
+      "level": 88,
+      "race": "動物",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/1243.gif",
+    "stats": {
+      "attack": {
+        "max": 321,
+        "min": 321
+      },
+      "base_stats": {
+        "agi": 35,
+        "dex": 71,
+        "int": 10,
+        "luk": 20,
+        "str": 70,
+        "vit": 60
+      },
+      "defense": 270,
+      "exp": {
+        "base": 719550,
+        "job": "???"
+      },
+      "flee_95_percent": 335,
+      "hit_100_percent": 327,
+      "hp": 879450,
+      "magic_attack": {
+        "max": 121,
+        "min": 103
+      },
+      "magic_defense": 48
+    },
+    "release_date": "2026-02-05",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 509,
+        "name": "白色藥草",
+        "rate": 4,
+        "icon_url": "images/items/509.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 727,
+        "name": "白寶石",
+        "rate": 0.15,
+        "icon_url": "images/items/727.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 757,
+        "name": "鋁原石",
+        "rate": 0.45,
+        "icon_url": "images/items/757.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 912,
+        "name": "剎勒空結晶",
+        "rate": 3.75,
+        "icon_url": "images/items/912.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 948,
+        "name": "熊掌",
+        "rate": 25,
+        "icon_url": "images/items/948.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4216,
+        "name": "雪熊卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4216.gif",
+        "slotCount": 0,
+        "slot": "鎧甲",
+        "enchantment_slots": 0,
+        "card_prefix_name": "冰凍的"
+      },
+      {
+        "item_id": 5030,
+        "name": "熊貓帽",
+        "rate": 0.01,
+        "icon_url": "images/items/5030.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 630036,
+        "name": "騎士長矛",
+        "rate": "???",
+        "icon_url": "images/items/630036.gif",
+        "slotCount": 2,
+        "slot": "雙手矛",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "xma_f01_a",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_b",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_z",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "20175": {
+    "id": 20175,
+    "name": {
+      "zh_tw": "超異小丑",
+      "en": "EXTRA_JOKER",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 4,
+        "type": "風"
+      },
+      "level": 126,
+      "race": "人形",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/20175.gif",
+    "stats": {
+      "attack": {
+        "max": 321,
+        "min": 321
+      },
+      "base_stats": {
+        "agi": 35,
+        "dex": 71,
+        "int": 10,
+        "luk": 20,
+        "str": 70,
+        "vit": 60
+      },
+      "defense": "???",
+      "exp": {
+        "base": "???",
+        "job": "???"
+      },
+      "flee_95_percent": "???",
+      "hit_100_percent": "???",
+      "hp": "???",
+      "magic_attack": {
+        "max": 121,
+        "min": 103
+      },
+      "magic_defense": "???"
+    },
+    "release_date": "2026-02-06",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 27270,
+        "name": "超異小丑卡片",
+        "rate": "???",
+        "icon_url": "images/items/27270.gif",
+        "slotCount": 0,
+        "slot": "盾牌",
+        "enchantment_slots": "",
+        "card_prefix_name": "惡魔小丑的"
+      },
+      {
+        "item_id": 1856,
+        "name": "華麗演出拳套",
+        "rate": "???",
+        "icon_url": "images/items/1856.gif",
+        "slotCount": 1,
+        "slot": "拳套",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 25505,
+        "name": "王牌外卡",
+        "rate": "???",
+        "icon_url": "images/items/25505.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun04",
+        "description": "鐘塔地下4樓",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "20176": {
+    "id": 20176,
+    "name": {
+      "zh_tw": "伊莉莎白",
+      "en": "ERZSEBET",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 1,
+        "type": "暗"
+      },
+      "level": 126,
+      "race": "人形",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/20176.gif",
+    "stats": {
+      "attack": {
+        "max": 321,
+        "min": 321
+      },
+      "base_stats": {
+        "agi": 35,
+        "dex": 71,
+        "int": 10,
+        "luk": 20,
+        "str": 70,
+        "vit": 60
+      },
+      "defense": "???",
+      "exp": {
+        "base": "???",
+        "job": "???"
+      },
+      "flee_95_percent": "???",
+      "hit_100_percent": "???",
+      "hp": "???",
+      "magic_attack": {
+        "max": 121,
+        "min": 103
+      },
+      "magic_defense": "???"
+    },
+    "release_date": "2026-02-06",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 27271,
+        "name": "伊莉莎白卡片",
+        "rate": "???",
+        "icon_url": "images/items/27271.gif",
+        "slotCount": 0,
+        "slot": "盾牌",
+        "enchantment_slots": "",
+        "card_prefix_name": "陰毒的"
+      },
+      {
+        "item_id": 25506,
+        "name": "可愛的掃把",
+        "rate": "???",
+        "icon_url": "images/items/25506.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun04",
+        "description": "鐘塔地下4樓",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "20177": {
+    "id": 20177,
+    "name": {
+      "zh_tw": "珍妮佛",
+      "en": "JENIFFER",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 1,
+        "type": "毒"
+      },
+      "level": 126,
+      "race": "魚貝",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/20177.gif",
+    "stats": {
+      "attack": {
+        "max": 321,
+        "min": 321
+      },
+      "base_stats": {
+        "agi": 35,
+        "dex": 71,
+        "int": 10,
+        "luk": 20,
+        "str": 70,
+        "vit": 60
+      },
+      "defense": "???",
+      "exp": {
+        "base": "???",
+        "job": "???"
+      },
+      "flee_95_percent": "???",
+      "hit_100_percent": "???",
+      "hp": "???",
+      "magic_attack": {
+        "max": 121,
+        "min": 103
+      },
+      "magic_defense": "???"
+    },
+    "release_date": "2026-02-06",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 27272,
+        "name": "珍妮佛卡片",
+        "rate": "???",
+        "icon_url": "images/items/27272.gif",
+        "slotCount": 0,
+        "slot": "鎧甲",
+        "enchantment_slots": "",
+        "card_prefix_name": "毒死的"
+      },
+      {
+        "item_id": 25507,
+        "name": "絢麗的珊瑚",
+        "rate": "???",
+        "icon_url": "images/items/25507.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun04",
+        "description": "鐘塔地下4樓",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "20178": {
+    "id": 20178,
+    "name": {
+      "zh_tw": "獸人將軍",
+      "en": "GENERAL_ORC",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "火"
+      },
+      "level": 125,
+      "race": "人形",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/20178.gif",
+    "stats": {
+      "attack": {
+        "max": 321,
+        "min": 321
+      },
+      "base_stats": {
+        "agi": 35,
+        "dex": 71,
+        "int": 10,
+        "luk": 20,
+        "str": 70,
+        "vit": 60
+      },
+      "defense": "???",
+      "exp": {
+        "base": "???",
+        "job": "???"
+      },
+      "flee_95_percent": "???",
+      "hit_100_percent": "???",
+      "hp": "???",
+      "magic_attack": {
+        "max": 121,
+        "min": 103
+      },
+      "magic_defense": "???"
+    },
+    "release_date": "2026-02-06",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 27273,
+        "name": "獸人將軍卡片",
+        "rate": "???",
+        "icon_url": "images/items/27273.gif",
+        "slotCount": 0,
+        "slot": "武器",
+        "enchantment_slots": "",
+        "card_prefix_name": "動物殺手的"
+      },
+      {
+        "item_id": 25508,
+        "name": "獸人將軍徽章",
+        "rate": "???",
+        "icon_url": "images/items/25508.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun02",
+        "description": "鐘塔地下2樓",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "20179": {
+    "id": 20179,
+    "name": {
+      "zh_tw": "吉克勞斯甲蟲",
+      "en": "SIEGLOUSE",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "地"
+      },
+      "level": 126,
+      "race": "昆蟲",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/20179.gif",
+    "stats": {
+      "attack": {
+        "max": 321,
+        "min": 321
+      },
+      "base_stats": {
+        "agi": 35,
+        "dex": 71,
+        "int": 10,
+        "luk": 20,
+        "str": 70,
+        "vit": 60
+      },
+      "defense": "???",
+      "exp": {
+        "base": "???",
+        "job": "???"
+      },
+      "flee_95_percent": "???",
+      "hit_100_percent": "???",
+      "hp": "???",
+      "magic_attack": {
+        "max": 121,
+        "min": 103
+      },
+      "magic_defense": "???"
+    },
+    "release_date": "2026-02-06",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 27274,
+        "name": "吉克勞斯甲蟲卡片",
+        "rate": "???",
+        "icon_url": "images/items/27274.gif",
+        "slotCount": 0,
+        "slot": "鞋子",
+        "enchantment_slots": "",
+        "card_prefix_name": "瘋蟲的"
+      },
+      {
+        "item_id": 25509,
+        "name": "亮晶晶圓殼",
+        "rate": "???",
+        "icon_url": "images/items/25509.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun01",
+        "description": "鐘塔地下1樓",
         "spawn_info": ""
       }
     ],
