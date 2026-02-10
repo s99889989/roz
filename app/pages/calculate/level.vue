@@ -1,8 +1,8 @@
 <script setup>
 import {computed, onMounted, ref, watch} from "vue";
 
-// 🧮 經驗表
-const expTable2 = [
+// 🧮 經驗表(上限80)
+const expTable80 = [
   { lv: 1, exp: 0 }, { lv: 2, exp: 2443 }, { lv: 3, exp: 2760 }, { lv: 4, exp: 3118 }, { lv: 5, exp: 3523 },
   { lv: 6, exp: 3980 }, { lv: 7, exp: 4497 }, { lv: 8, exp: 5081 }, { lv: 9, exp: 5741 }, { lv: 10, exp: 6487 },
   { lv: 11, exp: 7330 }, { lv: 12, exp: 8282 }, { lv: 13, exp: 9358 }, { lv: 14, exp: 10574 }, { lv: 15, exp: 11948 },
@@ -23,8 +23,8 @@ const expTable2 = [
   { lv: 79, exp: 514149203 }, { lv: 80, exp: 580888599 },
 ];
 
-// 🧮 經驗表 (根據第二張圖修改，支援 1-90 級)
-const expTable = [
+// 🧮 經驗表 (上限90)
+const expTable90 = [
   { lv: 1, exp: 0 }, { lv: 2, exp: 2443 }, { lv: 3, exp: 2736 }, { lv: 4, exp: 3064 }, { lv: 5, exp: 3431 },
   { lv: 6, exp: 3842 }, { lv: 7, exp: 4303 }, { lv: 8, exp: 4819 }, { lv: 9, exp: 5397 }, { lv: 10, exp: 6044 },
   { lv: 11, exp: 6769 }, { lv: 12, exp: 7581 }, { lv: 13, exp: 8490 }, { lv: 14, exp: 9508 }, { lv: 15, exp: 10648 },
@@ -43,6 +43,30 @@ const expTable = [
   { lv: 76, exp: 249431833 }, { lv: 77, exp: 281857970 }, { lv: 78, exp: 318499506 }, { lv: 79, exp: 359904442 }, { lv: 80, exp: 406692019 },
   { lv: 81, exp: 455495061 }, { lv: 82, exp: 510154468 }, { lv: 83, exp: 571373004 }, { lv: 84, exp: 639937764 }, { lv: 85, exp: 716730295 },
   { lv: 86, exp: 802737930 }, { lv: 87, exp: 899066481 }, { lv: 88, exp: 1006954458 }, { lv: 89, exp: 1127788992 }, { lv: 90, exp: 1263123671 },
+];
+
+// 🧮 經驗表 (上限99)
+const expTable = [
+  { lv: 1, exp: 0 }, { lv: 2, exp: 2443 }, { lv: 3, exp: 2711 }, { lv: 4, exp: 3009 }, { lv: 5, exp: 3339 },
+  { lv: 6, exp: 3706 }, { lv: 7, exp: 4113 }, { lv: 8, exp: 4565 }, { lv: 9, exp: 5067 }, { lv: 10, exp: 5624 },
+  { lv: 11, exp: 6242 }, { lv: 12, exp: 6928 }, { lv: 13, exp: 7690 }, { lv: 14, exp: 8535 }, { lv: 15, exp: 9473 },
+  { lv: 16, exp: 10515 }, { lv: 17, exp: 11671 }, { lv: 18, exp: 12954 }, { lv: 19, exp: 14378 }, { lv: 20, exp: 15959 },
+  { lv: 21, exp: 17714 }, { lv: 22, exp: 19662 }, { lv: 23, exp: 21824 }, { lv: 24, exp: 24224 }, { lv: 25, exp: 26888 },
+  { lv: 26, exp: 29845 }, { lv: 27, exp: 33127 }, { lv: 28, exp: 36770 }, { lv: 29, exp: 40814 }, { lv: 30, exp: 45303 },
+  { lv: 31, exp: 50286 }, { lv: 32, exp: 55817 }, { lv: 33, exp: 61956 }, { lv: 34, exp: 68771 }, { lv: 35, exp: 76335 },
+  { lv: 36, exp: 84731 }, { lv: 37, exp: 94051 }, { lv: 38, exp: 104396 }, { lv: 39, exp: 115879 }, { lv: 40, exp: 128625 },
+  { lv: 41, exp: 142773 }, { lv: 42, exp: 158478 }, { lv: 43, exp: 175910 }, { lv: 44, exp: 195260 }, { lv: 45, exp: 216738 },
+  { lv: 46, exp: 240579 }, { lv: 47, exp: 267042 }, { lv: 48, exp: 296416 }, { lv: 49, exp: 329021 }, { lv: 50, exp: 365213 },
+  { lv: 51, exp: 434603 }, { lv: 52, exp: 1037509 }, { lv: 53, exp: 1525139 }, { lv: 54, exp: 2241953 }, { lv: 55, exp: 3295672 },
+  { lv: 56, exp: 4844639 }, { lv: 57, exp: 7121618 }, { lv: 58, exp: 10468780 }, { lv: 59, exp: 15389107 }, { lv: 60, exp: 22621987 },
+  { lv: 61, exp: 25789065 }, { lv: 62, exp: 29399534 }, { lv: 63, exp: 33515469 }, { lv: 64, exp: 38207635 }, { lv: 65, exp: 43556704 },
+  { lv: 66, exp: 49654642 }, { lv: 67, exp: 56606292 }, { lv: 68, exp: 64531173 }, { lv: 69, exp: 73565537 }, { lv: 70, exp: 83864712 },
+  { lv: 71, exp: 94767124 }, { lv: 72, exp: 107086850 }, { lv: 73, exp: 121008141 }, { lv: 74, exp: 136739199 }, { lv: 75, exp: 154515294 },
+  { lv: 76, exp: 174602283 }, { lv: 77, exp: 197300579 }, { lv: 78, exp: 222949654 }, { lv: 79, exp: 251933109 }, { lv: 80, exp: 284684413 },
+  { lv: 81, exp: 318846542 }, { lv: 82, exp: 357108127 }, { lv: 83, exp: 399961102 }, { lv: 84, exp: 447956434 }, { lv: 85, exp: 501711206 },
+  { lv: 86, exp: 561916551 }, { lv: 87, exp: 629346536 }, { lv: 88, exp: 704868120 }, { lv: 89, exp: 789452294 }, { lv: 90, exp: 884186569 },
+  { lv: 91, exp: 1061023882 }, { lv: 92, exp: 1273228658 }, { lv: 93, exp: 1527874389 }, { lv: 94, exp: 1833449266 }, { lv: 95, exp: 2200139119 },
+  { lv: 96, exp: 2640166942 }, { lv: 97, exp: 3168200330 }, { lv: 98, exp: 3801840396 }, { lv: 99, exp: 4562208475 }
 ];
 
 const windowWidth = ref(window.innerWidth);
@@ -130,7 +154,7 @@ function calculate() {
   let currentAccumulated = endTotal;
   for (let i = 1; i <= char.predictLevels; i++) {
     const targetLv = validRecords[validRecords.length - 1].level + i;
-    if (targetLv > 90) break;
+    if (targetLv > 99) break;
 
     let targetTotal = 0;
     for (let j = 1; j <= targetLv; j++) {
