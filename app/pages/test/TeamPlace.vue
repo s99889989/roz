@@ -3,7 +3,7 @@
     <div class="max-w-[1600px] mx-auto mb-8 border-b border-[#5e4b37] pb-4 flex justify-between items-center">
       <div>
         <h1 class="text-3xl font-bold text-[#f1d483]">副本多隊伍排班系統</h1>
-<!--        <p class="text-[#a6937c] text-sm mt-1">※ 資料將自動儲存於此瀏覽器中</p>-->
+        <p class="text-[#a6937c] text-sm mt-1">※ 資料將自動儲存於此瀏覽器中</p>
       </div>
       <div class="flex gap-4">
         <button @click="resetAll" class="bg-[#5e4b37] hover:bg-[#8b3a3a] text-white px-6 py-2 rounded shadow-md transition font-bold">
@@ -15,7 +15,7 @@
     <div class="max-w-[1600px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-8">
       <div class="xl:col-span-3 space-y-6">
         <h2 class="text-[#f1d483] font-bold text-xl flex items-center">
-          <span class="mr-2">📜</span> 角色列表
+          <span class="mr-2">📜</span> 角色名冊
         </h2>
 
         <div class="space-y-4 overflow-y-auto max-h-[80vh] pr-2 custom-scrollbar">
@@ -75,9 +75,9 @@
           <div v-for="(squad, sIdx) in squads" :key="sIdx" class="bg-[#f5f1e6] rounded shadow-xl border-t-8 flex flex-col"
                :class="getSquadColor(sIdx).border">
 
-            <div class="p-4 border-b border-[#dcd2bb]">
+            <div class="p-4 border-b border-[#dcd2bb] flex justify-between items-center">
               <h3 class="font-black text-xl text-[#2c1e14]">隊伍 {{ String.fromCharCode(64 + sIdx + 1) }}</h3>
-              <div class="text-[#8d7a64] text-xs">成員人數：{{ squad.length }}</div>
+              <span class="bg-white/50 px-2 py-0.5 rounded text-[10px] font-bold text-[#8d7a64]">ONLINE</span>
             </div>
 
             <div class="p-3 flex-1 min-h-[450px] space-y-3">
@@ -95,7 +95,7 @@
 
                 <div class="flex-1 text-center px-4">
                   <span class="text-[#2c1e14] font-black text-xl block truncate leading-tight">{{ member.name }}</span>
-                  <span class="text-[#8d7a64] text-[14px] font-mono font-bold">Lv.{{ member.level }}</span>
+                  <span class="text-[#8d7a64] text-[10px] font-mono font-bold">Lv.{{ member.level }}</span>
                 </div>
 
                 <div class="w-8 shrink-0 flex justify-end">
@@ -106,14 +106,16 @@
               </div>
 
               <div v-if="squad.length === 0" class="h-32 flex items-center justify-center text-[#c2b9a3] italic border-2 border-dashed border-[#dcd2bb] rounded-xl mt-4">
-                尚未配置
+                尚未配置隊員
               </div>
             </div>
 
             <div class="p-4 bg-[#ede4cf] border-t border-[#dcd2bb] rounded-b-lg">
-              <div class="flex justify-between text-[#4a3728] font-bold text-sm">
-                <span>平均等級</span>
-                <span>{{ getAvgLevel(squad) }}</span>
+              <div class="flex justify-between items-center text-[#4a3728] font-bold">
+                <span class="text-sm">當前角色數量</span>
+                <span class="text-xl font-mono px-3 py-0.5 bg-white/40 rounded-lg shadow-sm">
+                  {{ squad.length }} <span class="text-xs">人</span>
+                </span>
               </div>
             </div>
           </div>
@@ -179,9 +181,7 @@ const charGroups = ref([
   ]
 ]);
 
-// --- 儲存邏輯開始 ---
-
-// 儲存目前所有角色的分配狀態
+// 儲存邏輯
 const saveToLocal = () => {
   const assignmentData = charGroups.value.flat().map(c => ({
     name: c.name,
@@ -190,7 +190,6 @@ const saveToLocal = () => {
   localStorage.setItem('squad_assignments', JSON.stringify(assignmentData));
 };
 
-// 從 localStorage 讀取並還原
 const loadFromLocal = () => {
   const saved = localStorage.getItem('squad_assignments');
   if (saved) {
@@ -204,17 +203,8 @@ const loadFromLocal = () => {
   }
 };
 
-// 監聽所有角色狀態，一旦變動就儲存
-watch(charGroups, () => {
-  saveToLocal();
-}, { deep: true });
-
-// 元件掛載時讀取
-onMounted(() => {
-  loadFromLocal();
-});
-
-// --- 儲存邏輯結束 ---
+watch(charGroups, () => { saveToLocal(); }, { deep: true });
+onMounted(() => { loadFromLocal(); });
 
 const allChars = computed(() => charGroups.value.flat());
 const squads = computed(() => [1, 2, 3, 4].map(id => allChars.value.filter(c => c.assignedTo === id)));
@@ -227,11 +217,7 @@ const getButtonClass = (sIdx, groupId) => {
 
 const addToSquad = (char, sIdx) => { if (!isAccountInSquad(char.groupId, sIdx)) char.assignedTo = sIdx + 1; };
 const removeFromSquad = (char) => char.assignedTo = null;
-const getAvgLevel = (squad) => squad.length ? (squad.reduce((a, b) => a + b.level, 0) / squad.length).toFixed(1) : 0;
-const resetAll = () => {
-  allChars.value.forEach(c => c.assignedTo = null);
-  // 重置時 localStorage 也會透過 watch 自動更新
-};
+const resetAll = () => { allChars.value.forEach(c => c.assignedTo = null); };
 </script>
 
 <style scoped>
