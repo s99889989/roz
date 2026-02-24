@@ -1,0 +1,212 @@
+[
+  {
+    "name": "凜夜",
+    "role": [
+      {"name": "凜夜", "job": "祭師", "level": "0", "guild": "下午茶"},
+      {"name": "炭烤魔法鴨", "job": "巫師", "level": "", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "骨質疏鬆的阿嬤",
+    "role": [
+      {"name": "骨質疏鬆的阿嬤", "job": "武僧", "level": "", "guild": "貓咖"}
+    ]
+  },
+  {
+    "name": "天導鬼謀",
+    "role": [
+      {"name": "天導鬼謀", "job": "", "level": "", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "急速蔦",
+    "role": [
+      {"name": "急速蔦", "job": "巫師", "level": "", "guild": "下午茶"},
+      {"name": "聖光蔦", "job": "祭師", "level": "", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "洋蔥騎士",
+    "role": [
+      {"name": "洋蔥騎士", "job": "騎士", "level": "70", "guild": "下午茶"},
+      {"name": "洋蔥奶霸", "job": "祭師", "level": "76", "guild": "下午茶"},
+      {"name": "洋蔥奶霸", "job": "鐵匠", "level": "72", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "藍髮少女誤我一生",
+    "role": [
+      {"name": "藍髮少女誤我一生", "job": "", "level": "", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "語無芯",
+    "role": [
+      {"name": "語無芯", "job": "刺客", "level": "", "guild": "下午茶"},
+      {"name": "幕夏戀情", "job": "祭師", "level": "", "guild": ""}
+    ]
+  },
+  {
+    "name": "哞哞茶",
+    "role": [
+      {"name": "哞哞茶", "job": "獵人", "level": "87", "guild": "鯊魚"}
+    ]
+  },
+  {
+    "name": "雲襄",
+    "role": [
+      {"name": "雲襄", "job": "刺客", "level": "", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "月心",
+    "role": [
+      {"name": "月心", "job": "舞孃", "level": "60", "guild": ""},
+      {"name": "月君", "job": "祭師", "level": "88", "guild": ""},
+      {"name": "玄月", "job": "巫師", "level": "77", "guild": ""}
+    ]
+  },
+  {
+    "name": "心理醫師",
+    "role": [
+      {"name": "心理醫師˙", "job": "刺客", "level": "90", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "心魔",
+    "role": [
+      {"name": "瑀芯妹妹OuO~*", "job": "祭師", "level": "", "guild": ""},
+      {"name": "心魔OuO~_", "job": "流氓", "level": "83", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "茗澤羽",
+    "role": [
+      {"name": "知道我綠色的可怕", "job": "練金", "level": "80", "guild": "下午茶"},
+      {"name": "萬噸巨魄", "job": "十字軍", "level": "80", "guild": "下午茶"},
+	  {"name": "Milo Yunshuo", "job": "巫師", "level": "80", "guild": "龍耀"},
+	  {"name": "夜禮", "job": "祭師", "level": "65", "guild": ""}
+    ]
+  },
+  {
+    "name": "茗澤羽2",
+    "role": [
+	  {"name": "夜禮", "job": "祭師", "level": "65", "guild": ""}
+    ]
+  },
+  {
+    "name": "茗澤羽3",
+    "role": [
+	   {"name": "傳頌之霧", "job": "祭師", "level": "80", "guild": "龍耀"}
+    ]
+  },
+  {
+    "name": "茗澤羽4",
+    "role": [
+	   {"name": "塞勒涅‧阿嫣", "job": "練金", "level": "65", "guild": ""}
+    ]
+  },
+  {
+    "name": "星眸",
+    "role": [
+      {"name": "", "job": "", "level": "", "guild": ""}
+    ]
+  },
+  {
+    "name": "白水木",
+    "role": [
+      {"name": "白水木", "job": "騎士", "level": "80", "guild": "下午茶"},
+      {"name": "捲葉榕", "job": "十字軍", "level": "81", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "獨孤皇天",
+    "role": [
+      {"name": "獨孤皇天", "job": "武僧", "level": "", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "代替月亮懲罰你",
+    "role": [
+      {"name": "代替月亮懲罰你", "job": "十字軍", "level": "", "guild": ""}
+    ]
+  },
+  {
+    "name": "搖頭土地公",
+    "role": [
+      {"name": "搖頭土地公", "job": "詩人", "level": "75", "guild": "下午茶"},
+      {"name": "都是錢", "job": "鐵匠", "level": "73", "guild": ""},
+      {"name": "颺梟", "job": "刺客", "level": "79", "guild": ""},
+      {"name": "搖頭土地婆", "job": "巫師", "level": "80", "guild": ""},
+      {"name": "颺昍", "job": "祭師", "level": "82", "guild": ""},
+      {"name": "搖滾土地公", "job": "巫師", "level": "71", "guild": ""}
+    ]
+  },
+  {
+    "name": "神奇海螺",
+    "role": [
+      {"name": "神奇海螺", "job": "", "level": "", "guild": ""},
+      {"name": "隔壁大叔", "job": "武僧", "level": "60", "guild": ""}
+    ]
+  },
+
+  {
+    "name": "小悶悶",
+    "role": [
+      {"name": "~悶悶~", "job": "巫師", "level": "80", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "雷克洛德",
+    "role": [
+      {"name": "雷克洛德", "job": "祭師", "level": "85", "guild": "下午茶"},
+      {"name": "赫菲洛斯", "job": "鐵匠", "level": "71", "guild": "下午茶"},
+      {"name": "暗夜騎士", "job": "騎士", "level": "79", "guild": "下午茶"},
+      {"name": "艾倫米爾", "job": "詩人", "level": "70", "guild": "下午茶"},
+      {"name": "暗影凱爾", "job": "祭師", "level": "70", "guild": "下午茶"},
+      {"name": "亞德里安", "job": "賢者", "level": "73", "guild": ""},
+
+      {"name": "別打臉", "job": "巫師", "level": "74", "guild": ""},
+      {"name": "脀塒", "job": "刺客", "level": "71", "guild": ""},
+      {"name": "湯兟儿", "job": "練金", "level": "70", "guild": ""},
+      {"name": "鰣胔鮶", "job": "十字軍", "level": "80", "guild": ""},
+      {"name": "垠莤蓍儿", "job": "詩人", "level": "70", "guild": ""},
+
+      {"name": "Ice~", "job": "祭師", "level": "83", "guild": "下午茶"},
+      {"name": "PopCo", "job": "練金", "level": "65", "guild": ""},
+      {"name": "Ice~*", "job": "賢者", "level": "75", "guild": ""},
+      {"name": "Icd~*.", "job": "舞孃", "level": "60", "guild": ""},
+      {"name": "Mai~", "job": "騎士", "level": "70", "guild": ""}
+    ]
+  },
+  {
+    "name": "納義",
+    "role": [
+      {"name": "納義", "job": "祭師", "level": "66", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "豚豚鼠",
+    "role": [
+      {"name": "豚豚鼠Alpha型", "job": "練金", "level": "70", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "M=V/a",
+    "role": [
+      {"name": "M=V/a", "job": "刺客", "level": "85", "guild": "鯊鯊"}
+    ]
+  },
+  {
+    "name": "三日月澪",
+    "role": [
+      {"name": "三日月澪", "job": "鐵匠", "level": "75", "guild": "下午茶"}
+    ]
+  },
+  {
+    "name": "",
+    "role": [
+      {"name": "", "job": "", "level": "", "guild": ""}
+    ]
+  }
+]

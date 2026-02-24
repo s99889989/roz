@@ -116,7 +116,7 @@
                 <div class="flex-1 text-center px-4">
                   <span class="text-[#2c1e14] font-black text-lg block truncate leading-tight">{{ member.name }}</span>
                   <span v-if="member.level" class="text-[#8d7a64] text-[10px] font-mono font-bold">Lv.{{ member.level }}</span>
-                  <span v-if="member.guild" class="text-[#5b8fa4] text-[9px] block">{{ member.guild }}</span>
+<!--                  <span v-if="member.guild" class="text-[#5b8fa4] text-[9px] block">{{ member.guild }}</span>-->
                 </div>
                 <div class="w-8 shrink-0 flex justify-end">
                   <button @click="removeFromSquad(member)" class="text-[#d1cfcf] hover:text-[#8b3a3a] transition p-1">
@@ -151,7 +151,8 @@ import { ref, computed, onMounted, watch } from 'vue';
 const jobFileMap = {
   '祭師': '祭師', '鐵匠': '鐵匠', '騎士': '騎士', '詩人': '詩人',
   '刺客': '刺客', '賢者': '賢者', '巫師': '巫師', '練金': '練金',
-  '十字軍': '十字軍', '舞孃': '舞孃', '武僧': '祭師', '獵人': '詩人'
+  '十字軍': '十字軍', '舞孃': '舞孃', '武僧': '祭師', '獵人': '詩人',
+  '流氓': '流氓'
 };
 
 const getJobImg = (job) => {
@@ -173,7 +174,7 @@ const getSquadColor = (sIdx) => squadThemes[sIdx];
 const fetchRoles = async () => {
   try {
     // 指向你 public 資料夾下的路徑
-    const response = await fetch('/data/roles2.json');
+    const response = await fetch('/data/roles.json');
     const data = await response.json();
 
     // 處理資料：補上 assignedTo 狀態
@@ -213,11 +214,11 @@ const saveToLocal = () => {
     name: c.name,
     assignedTo: c.assignedTo
   }));
-  localStorage.setItem('squad_assignments_v5', JSON.stringify(assignmentData));
+  localStorage.setItem('squad_assignments_v4', JSON.stringify(assignmentData));
 };
 
 const loadFromLocal = () => {
-  const saved = localStorage.getItem('squad_assignments_v5');
+  const saved = localStorage.getItem('squad_assignments_v4');
   if (saved && charGroups.value.length > 0) {
     const savedData = JSON.parse(saved);
     charGroups.value.forEach(group => {

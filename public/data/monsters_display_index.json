@@ -279,16 +279,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 1.5,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 601,
         "name": "蒼蠅翅膀",
         "rate": 5,
@@ -1331,16 +1321,6 @@
         "item_id": 590072,
         "name": "木錘",
         "rate": 2,
-        "icon_url": "images/items/590072.gif",
-        "slotCount": 4,
-        "slot": "鈍器",
-        "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 590072,
-        "name": "木錘",
-        "rate": 0.8,
         "icon_url": "images/items/590072.gif",
         "slotCount": 4,
         "slot": "鈍器",
@@ -12832,16 +12812,6 @@
         "slot": "鎧甲",
         "enchantment_slots": 0,
         "card_prefix_name": ""
-      },
-      {
-        "item_id": 450347,
-        "name": "皮製外套",
-        "rate": 0.4,
-        "icon_url": "images/items/450347.gif",
-        "slotCount": 1,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -16897,8 +16867,8 @@
       },
       "defense": 20,
       "exp": {
-        "base": 880,
-        "job": 232
+        "base": 807,
+        "job": 147
       },
       "flee_95_percent": 239,
       "hit_100_percent": 243,
@@ -17594,8 +17564,8 @@
       },
       "defense": 33,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 691,
+        "job": 126
       },
       "flee_95_percent": 250,
       "hit_100_percent": 276,
@@ -23421,16 +23391,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 2607,
-        "name": "髮夾",
-        "rate": "???",
-        "icon_url": "images/items/2607.gif",
-        "slotCount": 1,
-        "slot": "飾品",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 4179,
         "name": "龍蠅卡片",
         "rate": 0.01,
@@ -28430,7 +28390,7 @@
         "job": 10994
       },
       "flee_95_percent": 383,
-      "hit_100_percent": 343,
+      "hit_100_percent": 393,
       "hp": 91620,
       "magic_attack": {
         "max": 415,
@@ -29969,16 +29929,6 @@
         "item_id": 512,
         "name": "蘋果",
         "rate": 10,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 4,
         "icon_url": "images/items/512.gif",
         "slotCount": 0,
         "slot": "-",
@@ -34258,8 +34208,8 @@
       },
       "defense": 91,
       "exp": {
-        "base": 6496,
-        "job": 1820
+        "base": 7413,
+        "job": 1482
       },
       "flee_95_percent": 296,
       "hit_100_percent": 305,
@@ -36895,8 +36845,8 @@
       },
       "defense": 20,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 726,
+        "job": 133
       },
       "flee_95_percent": 246,
       "hit_100_percent": 272,
@@ -43938,6 +43888,16 @@
         "slot": "單手劍",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 21039,
+        "name": "王室騎士巨劍",
+        "rate": "???",
+        "icon_url": "images/items/21039.gif",
+        "slotCount": 1,
+        "slot": "雙手劍",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -44431,8 +44391,8 @@
       },
       "defense": 126,
       "exp": {
-        "base": 6078,
-        "job": 1695
+        "base": 7159,
+        "job": 1431
       },
       "flee_95_percent": 291,
       "hit_100_percent": 292,
@@ -44774,7 +44734,7 @@
         "str": 56,
         "vit": 54
       },
-      "defense": 126,
+      "defense": 151,
       "exp": {
         "base": 4494,
         "job": 1247
@@ -47830,16 +47790,6 @@
       {
         "item_id": 508,
         "name": "黃色藥草",
-        "rate": 5,
-        "icon_url": "images/items/508.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 508,
-        "name": "黃色藥草",
         "rate": 6.25,
         "icon_url": "images/items/508.gif",
         "slotCount": 0,
@@ -49877,16 +49827,6 @@
         "name": "紅色魔力礦石",
         "rate": 1.5,
         "icon_url": "images/items/716.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 912,
-        "name": "剎勒空結晶",
-        "rate": 2.25,
-        "icon_url": "images/items/912.gif",
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
@@ -52871,6 +52811,16 @@
         "slot": "-",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002715,
+        "name": "浸溼的頭骨",
+        "rate": "???",
+        "icon_url": "images/items/1002715.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -53665,6 +53615,16 @@
         "icon_url": "images/items/560084.gif",
         "slotCount": 3,
         "slot": "拳套",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002720,
+        "name": "浸溼的犬齒",
+        "rate": "???",
+        "icon_url": "images/items/1002720.gif",
+        "slotCount": 0,
+        "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -54556,6 +54516,16 @@
         "slot": "頭上",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 630036,
+        "name": "騎士長矛",
+        "rate": "???",
+        "icon_url": "images/items/630036.gif",
+        "slotCount": 2,
+        "slot": "雙手矛",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -54912,6 +54882,16 @@
         "slotCount": 0,
         "slot": "頭上",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 550138,
+        "name": "橡木魔杖",
+        "rate": "???",
+        "icon_url": "images/items/550138.gif",
+        "slotCount": 3,
+        "slot": "手杖",
+        "enchantment_slots": 2,
         "card_prefix_name": ""
       }
     ],
@@ -55703,16 +55683,6 @@
         "item_id": 480414,
         "name": "連帽披肩",
         "rate": 0.13,
-        "icon_url": "images/items/480414.gif",
-        "slotCount": 1,
-        "slot": "披肩",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 480414,
-        "name": "連帽披肩",
-        "rate": "???",
         "icon_url": "images/items/480414.gif",
         "slotCount": 1,
         "slot": "披肩",
@@ -59992,6 +59962,26 @@
         "slot": "-",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 620049,
+        "name": "鋼斧",
+        "rate": "???",
+        "icon_url": "images/items/620049.gif",
+        "slotCount": 3,
+        "slot": "雙手斧",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002716,
+        "name": "浸溼的遺骨",
+        "rate": "???",
+        "icon_url": "images/items/1002716.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -61380,7 +61370,7 @@
       },
       "flee_95_percent": 438,
       "hit_100_percent": 384,
-      "hp": 68500,
+      "hp": 848500,
       "magic_attack": {
         "max": 333,
         "min": 259
@@ -63519,6 +63509,16 @@
         "slotCount": 2,
         "slot": "拳刃",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002718,
+        "name": "浸溼的圍裙",
+        "rate": "???",
+        "icon_url": "images/items/1002718.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -67176,16 +67176,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 7071,
-        "name": "破爛爛的衣服",
-        "rate": 0.01,
-        "icon_url": "images/items/7071.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 12676,
         "name": "城戰紫色藥水箱",
         "rate": 0.05,
@@ -69210,6 +69200,26 @@
         "slot": "-",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 560078,
+        "name": "昇龍拳套",
+        "rate": "???",
+        "icon_url": "images/items/560078.gif",
+        "slotCount": 1,
+        "slot": "拳套",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002717,
+        "name": "浸溼的鼻環",
+        "rate": "???",
+        "icon_url": "images/items/1002717.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -70147,6 +70157,16 @@
         "slotCount": 1,
         "slot": "鈍器",
         "enchantment_slots": 3,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002721,
+        "name": "浸溼的龜殼",
+        "rate": "???",
+        "icon_url": "images/items/1002721.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -71887,6 +71907,16 @@
         "icon_url": "images/items/401190.gif",
         "slotCount": 0,
         "slot": "頭上",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002722,
+        "name": "浸溼的冰雕玫瑰",
+        "rate": "???",
+        "icon_url": "images/items/1002722.gif",
+        "slotCount": 0,
+        "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -74459,7 +74489,7 @@
         "job": 1973
       },
       "flee_95_percent": 308,
-      "hit_100_percent": 335,
+      "hit_100_percent": 363,
       "hp": 12901,
       "magic_attack": {
         "max": 121,
@@ -76205,7 +76235,7 @@
         "str": 53,
         "vit": 10
       },
-      "defense": 79,
+      "defense": 94,
       "exp": {
         "base": 3872,
         "job": 1063
@@ -76217,7 +76247,7 @@
         "max": 124,
         "min": 92
       },
-      "magic_defense": 8
+      "magic_defense": 9
     },
     "release_date": "",
     "special_status": [
@@ -77869,6 +77899,16 @@
         "slot": "披肩",
         "enchantment_slots": 0,
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002724,
+        "name": "浸溼的高周波刀",
+        "rate": "???",
+        "icon_url": "images/items/1002724.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -78440,16 +78480,6 @@
         "icon_url": "images/items/7221.gif",
         "slotCount": 0,
         "slot": "-",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 420724,
-        "name": "(服飾)假面鬼披肩(歸屬)",
-        "rate": "???",
-        "icon_url": "images/items/420724.gif",
-        "slotCount": 0,
-        "slot": "頭下",
         "enchantment_slots": "",
         "card_prefix_name": ""
       },
@@ -79120,6 +79150,16 @@
         "slotCount": 3,
         "slot": "書籍",
         "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002723,
+        "name": "浸溼的灰燼",
+        "rate": "???",
+        "icon_url": "images/items/1002723.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -80454,6 +80494,16 @@
         "slotCount": 3,
         "slot": "弓",
         "enchantment_slots": "2-3",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002719,
+        "name": "浸溼的冰牙",
+        "rate": "???",
+        "icon_url": "images/items/1002719.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
         "card_prefix_name": ""
       }
     ],
@@ -82604,16 +82654,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 5,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 909,
         "name": "傑勒比結晶",
         "rate": 90,
@@ -83481,16 +83521,6 @@
         "item_id": 7071,
         "name": "破爛爛的衣服",
         "rate": 100,
-        "icon_url": "images/items/7071.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 7071,
-        "name": "破爛爛的衣服",
-        "rate": 0.05,
         "icon_url": "images/items/7071.gif",
         "slotCount": 0,
         "slot": "-",
@@ -85822,8 +85852,8 @@
       },
       "defense": 54,
       "exp": {
-        "base": "",
-        "job": ""
+        "base": 784,
+        "job": 143
       },
       "flee_95_percent": 253,
       "hit_100_percent": 269,
@@ -86144,16 +86174,6 @@
         "slot": "鎧甲",
         "enchantment_slots": 0,
         "card_prefix_name": ""
-      },
-      {
-        "item_id": 450347,
-        "name": "皮製外套",
-        "rate": 2,
-        "icon_url": "images/items/450347.gif",
-        "slotCount": 1,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -86341,16 +86361,6 @@
         "item_id": 450347,
         "name": "皮製外套",
         "rate": 3,
-        "icon_url": "images/items/450347.gif",
-        "slotCount": 1,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 450347,
-        "name": "皮製外套",
-        "rate": 2,
         "icon_url": "images/items/450347.gif",
         "slotCount": 1,
         "slot": "鎧甲",
@@ -86564,16 +86574,6 @@
         "item_id": 450347,
         "name": "皮製外套",
         "rate": 3,
-        "icon_url": "images/items/450347.gif",
-        "slotCount": 1,
-        "slot": "鎧甲",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 450347,
-        "name": "皮製外套",
-        "rate": 2,
         "icon_url": "images/items/450347.gif",
         "slotCount": 1,
         "slot": "鎧甲",
@@ -93010,16 +93010,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 7.5,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 601,
         "name": "蒼蠅翅膀",
         "rate": 25,
@@ -93242,16 +93232,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 7.5,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 601,
         "name": "蒼蠅翅膀",
         "rate": 25,
@@ -93453,16 +93433,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 7.5,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 601,
         "name": "蒼蠅翅膀",
         "rate": 25,
@@ -93657,16 +93627,6 @@
         "item_id": 512,
         "name": "蘋果",
         "rate": 50,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 7.5,
         "icon_url": "images/items/512.gif",
         "slotCount": 0,
         "slot": "-",
@@ -104711,8 +104671,8 @@
       },
       "defense": 91,
       "exp": {
-        "base": 97440,
-        "job": 27300
+        "base": 11195,
+        "job": 22230
       },
       "flee_95_percent": 296,
       "hit_100_percent": 309,
@@ -108142,16 +108102,6 @@
         "slot": "鈍器",
         "enchantment_slots": "2-3",
         "card_prefix_name": ""
-      },
-      {
-        "item_id": 590072,
-        "name": "木錘",
-        "rate": 4,
-        "icon_url": "images/items/590072.gif",
-        "slotCount": 4,
-        "slot": "鈍器",
-        "enchantment_slots": "2-3",
-        "card_prefix_name": ""
       }
     ],
     "spawns": [
@@ -108302,16 +108252,6 @@
         "item_id": 590072,
         "name": "木錘",
         "rate": 10,
-        "icon_url": "images/items/590072.gif",
-        "slotCount": 4,
-        "slot": "鈍器",
-        "enchantment_slots": "2-3",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 590072,
-        "name": "木錘",
-        "rate": 4,
         "icon_url": "images/items/590072.gif",
         "slotCount": 4,
         "slot": "鈍器",
@@ -109864,16 +109804,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 20,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 601,
         "name": "蒼蠅翅膀",
         "rate": 25,
@@ -111298,7 +111228,7 @@
         "job": 226750
       },
       "flee_95_percent": 383,
-      "hit_100_percent": 343,
+      "hit_100_percent": 393,
       "hp": 91620,
       "magic_attack": {
         "max": 415,
@@ -115515,7 +115445,7 @@
       },
       "flee_95_percent": 419,
       "hit_100_percent": 395,
-      "hp": 44885,
+      "hp": 448850,
       "magic_attack": {
         "max": 208,
         "min": 166
@@ -116677,16 +116607,6 @@
         "name": "紅色魔力礦石",
         "rate": 7.5,
         "icon_url": "images/items/716.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 912,
-        "name": "剎勒空結晶",
-        "rate": 11.25,
-        "icon_url": "images/items/912.gif",
         "slotCount": 0,
         "slot": "-",
         "enchantment_slots": 0,
@@ -118600,16 +118520,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 4,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 601,
         "name": "蒼蠅翅膀",
         "rate": 5,
@@ -118995,16 +118905,6 @@
         "item_id": 512,
         "name": "蘋果",
         "rate": 10,
-        "icon_url": "images/items/512.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 512,
-        "name": "蘋果",
-        "rate": 1.5,
         "icon_url": "images/items/512.gif",
         "slotCount": 0,
         "slot": "-",
@@ -120972,6 +120872,11 @@
         "map_name": "xma_f01_z",
         "description": "薑餅城區域",
         "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_fild01",
+        "description": "薑餅城區域",
+        "spawn_info": ""
       }
     ],
     "skills": []
@@ -121216,8 +121121,8 @@
     ],
     "spawns": [
       {
-        "map_name": "alde_dun04",
-        "description": "鐘塔地下4樓",
+        "map_name": "alde_dun03",
+        "description": "鐘塔地下3樓",
         "spawn_info": ""
       }
     ],
@@ -121316,7 +121221,7 @@
         "level": 2,
         "type": "地"
       },
-      "level": 126,
+      "level": 122,
       "race": "昆蟲",
       "size": "中"
     },
@@ -121376,6 +121281,4134 @@
       {
         "map_name": "alde_dun01",
         "description": "鐘塔地下1樓",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "25255": {
+    "id": 25255,
+    "name": {
+      "zh_tw": "馬型年獸",
+      "en": "ZTW_NIGHTMARE",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 3,
+        "type": "念"
+      },
+      "level": 69,
+      "race": "惡魔",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/1061.gif",
+    "stats": {
+      "attack": {
+        "max": 225,
+        "min": 225
+      },
+      "base_stats": {
+        "agi": 32,
+        "dex": 77,
+        "int": 15,
+        "luk": 15,
+        "str": 57,
+        "vit": 20
+      },
+      "defense": 116,
+      "exp": {
+        "base": "???",
+        "job": "???"
+      },
+      "flee_95_percent": 321,
+      "hit_100_percent": 304,
+      "hp": "???",
+      "magic_attack": {
+        "max": 165,
+        "min": 127
+      },
+      "magic_defense": 15
+    },
+    "release_date": "2026-02-11",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 1002736,
+        "name": "樂園紅包",
+        "rate": "???",
+        "icon_url": "images/items/1002736.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 103941,
+        "name": "RO新年鞭炮",
+        "rate": "???",
+        "icon_url": "images/items/103941.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun01",
+        "description": "鐘塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun02",
+        "description": "鐘塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun03",
+        "description": "鐘塔地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun04",
+        "description": "鐘塔地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d01_a",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d01_b",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d01_z",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d02_a",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d02_b",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d02_z",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "anthell01",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "anthell02",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_an_d02",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_an_d02_z",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d01",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d01_z",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d02",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d02_z",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f03",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f03_z",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f10",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f10_z",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gl_chy",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gl_chy_z",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_maz_d03",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_maz_d03_z",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_moc_f17",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_moc_f17_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_d04",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_d04_z",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_f10",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_f10_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_prt_d04",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_prt_d04_z",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_sp_d05",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_sp_d05_z",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_d02",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_d02_z",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_f01",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_f01_z",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d01_a",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d01_b",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d01_z",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d02_a",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d02_b",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d02_z",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d03_a",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d03_b",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d03_z",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "beach_dun",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "beach_dun2",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "beach_dun3",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_f02_a",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_f02_b",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_f02_z",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild01",
+        "description": "巴不其卡森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild02",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild03",
+        "description": "基乃依沼澤地",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild04",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild06",
+        "description": "山特樂曼西區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild07",
+        "description": "發樂斯燈塔",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild08",
+        "description": "山特樂曼東區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild09",
+        "description": "山特樂曼南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d00_a",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d00_b",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d00_z",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d01_a",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d01_b",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d01_z",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d02_a",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d02_b",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d02_z",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_dun00",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_dun01",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_dun02",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f04_a",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f04_b",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f04_z",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f05_a",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f05_b",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f05_z",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f10_a",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f10_b",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f10_z",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f11_a",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f11_b",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f11_z",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild00",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild01",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild02",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild03",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild04",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild05",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild06",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild07",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild08",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild09",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild10",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild11",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c01_a",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c01_b",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c01_z",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c02_a",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c02_b",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c02_z",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_cas01",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_cas02",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chu_a",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chu_b",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chu_z",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_church",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chy_a",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chy_b",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chy_z",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chyard",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_d02_a",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_d02_b",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_d02_z",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_dun01",
+        "description": "地下洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_dun02",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_in01",
+        "description": "克雷斯特漢姆 室內",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_k01_a",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_k01_b",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_k01_z",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_knt01",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_knt02",
+        "description": "騎士團2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_pri_a",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_pri_b",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_pri_z",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_prison",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_prison1",
+        "description": "地下監獄2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew01",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew02",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew03",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew04",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_step",
+        "description": "樓梯迷宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "glast_01",
+        "description": "克雷斯特漢姆",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx1",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx2",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx3",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx4",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx5",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d00_a",
+        "description": "海盜地洞密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d00_b",
+        "description": "海盜地洞密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d00_z",
+        "description": "海盜地洞密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d01_a",
+        "description": "海盜地洞密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d01_b",
+        "description": "海盜地洞密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d01_z",
+        "description": "海盜地洞密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d02_a",
+        "description": "海盜地洞密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d02_b",
+        "description": "海盜地洞密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d02_z",
+        "description": "海盜地洞密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d03_a",
+        "description": "海盜地洞密穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d03_b",
+        "description": "海盜地洞密穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d03_z",
+        "description": "海盜地洞密穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d04_a",
+        "description": "海盜地洞密穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d04_b",
+        "description": "海盜地洞密穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d04_z",
+        "description": "海盜地洞密穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun00",
+        "description": "海底洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun01",
+        "description": "海底洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun02",
+        "description": "海底洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun03",
+        "description": "海底洞穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun04",
+        "description": "海底洞穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d01_a",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d01_b",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d01_z",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d03_a",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d03_b",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d03_z",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d01_a",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d01_b",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d01_z",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d02_a",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d02_b",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d02_z",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d03_a",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d03_b",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d03_z",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_dun01",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_dun02",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_dun03",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_01",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_02",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_03",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_04",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_05",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_06",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_07",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_08",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_09",
+        "description": "妙勒尼山脈南邊山麓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_10",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_11",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_12",
+        "description": "妙勒尼山脈北邊山麓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f12_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f12_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f12_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f16_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f16_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f16_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f18_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f18_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f18_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild01",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild02",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild03",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild07",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild11",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild12",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild13",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild16",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild17",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild18",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild19",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd01",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd02",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd03",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd05",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd06",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f01_a",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f01_b",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f01_z",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f02_a",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f02_b",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f02_z",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_fild01",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_fild02",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "niflheim",
+        "description": "亡者國都尼芙菲姆",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d01_a",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d01_b",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d01_z",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d02_a",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d02_b",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d02_z",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orcsdun01",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orcsdun02",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d00_a",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d00_b",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d00_z",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d01_a",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d01_b",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d01_z",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d02_a",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d02_b",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d02_z",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d03_a",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d03_b",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d03_z",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d04_a",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d04_b",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d04_z",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun00",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun01",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun02",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun03",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun04",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f01_a",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f01_b",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f01_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f03_a",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f03_b",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f03_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f04_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f04_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f04_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f08_a",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f08_b",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f08_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild01",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild02",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild03",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild04",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild06",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild07",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild08",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild09",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild10",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d01_a",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d01_b",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d01_z",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d02_a",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d02_b",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d02_z",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d03_a",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d03_b",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d03_z",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d04_a",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d04_b",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d04_z",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f02_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f02_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f02_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f07_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f07_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f07_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f08_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f08_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f08_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f11_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f11_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f11_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild00",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild01",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild02",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild03",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild04",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild05",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild06",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild07",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild08",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild09",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild10",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild11",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_maze01",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_maze02",
+        "description": "迷宮森林2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_maze03",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb1",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb2",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb3",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb4",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d01_a",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d01_b",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d01_z",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d02_a",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d02_b",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d02_z",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d03_a",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d03_b",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d03_z",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d04_a",
+        "description": "金字塔4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d04_b",
+        "description": "金字塔4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d04_z",
+        "description": "金字塔4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d05_a",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d05_b",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d05_z",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d06_a",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d06_b",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d06_z",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d01_a",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d01_b",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d01_z",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d02_a",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d02_b",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d02_z",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d03_a",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d03_b",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d03_z",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d04_a",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d04_b",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d04_z",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d05_a",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d05_b",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d05_z",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d01_a",
+        "description": "鐘塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d01_b",
+        "description": "鐘塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d01_z",
+        "description": "鐘塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d02_a",
+        "description": "鐘塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d02_b",
+        "description": "鐘塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d02_z",
+        "description": "鐘塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d03_a",
+        "description": "鐘塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d03_b",
+        "description": "鐘塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d03_z",
+        "description": "鐘塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d01_a",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d01_b",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d01_z",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d02_a",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d02_b",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d02_z",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure01",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure02",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure_n1",
+        "description": "依斯魯得島失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure_n2",
+        "description": "依斯魯得島失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d01_a",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d01_b",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d01_z",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d02_a",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d02_b",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d02_z",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d03_a",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d03_b",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d03_z",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d04_a",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d04_b",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d04_z",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun01",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun02",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun03",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun04",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d01_a",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d01_b",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d01_z",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d02_a",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d02_b",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d02_z",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_a",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_b",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_z",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_dun01",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_dun02",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_fild01",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      }
+    ],
+    "skills": []
+  },
+  "25253": {
+    "id": 25253,
+    "name": {
+      "zh_tw": "年獸",
+      "en": "ZTW_DANCING_DRAGON",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": false,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "風"
+      },
+      "level": 52,
+      "race": "龍",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/1514.gif",
+    "stats": {
+      "attack": {
+        "max": 495,
+        "min": 377
+      },
+      "base_stats": {
+        "agi": 76,
+        "dex": 73,
+        "int": 30,
+        "luk": 30,
+        "str": 59,
+        "vit": 40
+      },
+      "defense": 83,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 305,
+      "hit_100_percent": 334,
+      "hp": "???",
+      "magic_attack": {
+        "max": 158,
+        "min": 136
+      },
+      "magic_defense": 36
+    },
+    "release_date": "2026-02-11",
+    "special_status": [],
+    "drops": [
+      {
+        "item_id": 1002736,
+        "name": "樂園紅包",
+        "rate": "???",
+        "icon_url": "images/items/1002736.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 103941,
+        "name": "RO新年鞭炮",
+        "rate": "???",
+        "icon_url": "images/items/103941.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "alde_dun01",
+        "description": "鐘塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun02",
+        "description": "鐘塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun03",
+        "description": "鐘塔地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "alde_dun04",
+        "description": "鐘塔地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d01_a",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d01_b",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d01_z",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d02_a",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d02_b",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "an_d02_z",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "anthell01",
+        "description": "螞蟻地獄密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "anthell02",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_an_d02",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_an_d02_z",
+        "description": "螞蟻地獄密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d01",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d01_z",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d02",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_d02_z",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f03",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f03_z",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f10",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gef_f10_z",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gl_chy",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gl_chy_z",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_maz_d03",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_maz_d03_z",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_moc_f17",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_moc_f17_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_d04",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_d04_z",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_f10",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_pay_f10_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_prt_d04",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_prt_d04_z",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_sp_d05",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_sp_d05_z",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_d02",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_d02_z",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_f01",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_xma_f01_z",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d01_a",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d01_b",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d01_z",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d02_a",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d02_b",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d02_z",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d03_a",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d03_b",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "bea_d03_z",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "beach_dun",
+        "description": "西邊洞穴加露",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "beach_dun2",
+        "description": "北邊洞穴盧安達",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "beach_dun3",
+        "description": "東邊洞穴馬吾",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_f02_a",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_f02_b",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_f02_z",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild01",
+        "description": "巴不其卡森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild02",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild03",
+        "description": "基乃依沼澤地",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild04",
+        "description": "克克魔海邊",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild06",
+        "description": "山特樂曼西區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild07",
+        "description": "發樂斯燈塔",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild08",
+        "description": "山特樂曼東區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "cmd_fild09",
+        "description": "山特樂曼南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d00_a",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d00_b",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d00_z",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d01_a",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d01_b",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d01_z",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d02_a",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d02_b",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_d02_z",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_dun00",
+        "description": "吉芬地下密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_dun01",
+        "description": "吉芬地下密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_dun02",
+        "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f04_a",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f04_b",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f04_z",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f05_a",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f05_b",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f05_z",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f10_a",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f10_b",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f10_z",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f11_a",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f11_b",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_f11_z",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild00",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild01",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild02",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild03",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild04",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild05",
+        "description": "冷豔舞姬村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild06",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild07",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild08",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild09",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild10",
+        "description": "獸人村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gef_fild11",
+        "description": "吉芬區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c01_a",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c01_b",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c01_z",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c02_a",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c02_b",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_c02_z",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_cas01",
+        "description": "克雷斯特漢姆古城1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_cas02",
+        "description": "克雷斯特漢姆古城2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chu_a",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chu_b",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chu_z",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_church",
+        "description": "修道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chy_a",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chy_b",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chy_z",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_chyard",
+        "description": "地下公墓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_d02_a",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_d02_b",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_d02_z",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_dun01",
+        "description": "地下洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_dun02",
+        "description": "地下洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_in01",
+        "description": "克雷斯特漢姆 室內",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_k01_a",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_k01_b",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_k01_z",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_knt01",
+        "description": "騎士團1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_knt02",
+        "description": "騎士團2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_pri_a",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_pri_b",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_pri_z",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_prison",
+        "description": "地下監獄1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_prison1",
+        "description": "地下監獄2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew01",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew02",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew03",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_sew04",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gl_step",
+        "description": "樓梯迷宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "glast_01",
+        "description": "克雷斯特漢姆",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx1",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx2",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx3",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx4",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "in_sphinx5",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d00_a",
+        "description": "海盜地洞密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d00_b",
+        "description": "海盜地洞密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d00_z",
+        "description": "海盜地洞密穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d01_a",
+        "description": "海盜地洞密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d01_b",
+        "description": "海盜地洞密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d01_z",
+        "description": "海盜地洞密穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d02_a",
+        "description": "海盜地洞密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d02_b",
+        "description": "海盜地洞密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d02_z",
+        "description": "海盜地洞密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d03_a",
+        "description": "海盜地洞密穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d03_b",
+        "description": "海盜地洞密穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d03_z",
+        "description": "海盜地洞密穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d04_a",
+        "description": "海盜地洞密穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d04_b",
+        "description": "海盜地洞密穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_d04_z",
+        "description": "海盜地洞密穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun00",
+        "description": "海底洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun01",
+        "description": "海底洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun02",
+        "description": "海底洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun03",
+        "description": "海底洞穴4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "iz_dun04",
+        "description": "海底洞穴5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d01_a",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d01_b",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d01_z",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d03_a",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d03_b",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "maz_d03_z",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d01_a",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d01_b",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d01_z",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d02_a",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d02_b",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d02_z",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d03_a",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d03_b",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_d03_z",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_dun01",
+        "description": "妙勒尼廢棄礦場1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_dun02",
+        "description": "妙勒尼 廢棄礦場2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjo_dun03",
+        "description": "妙勒尼廢棄礦場3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_01",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_02",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_03",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_04",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_05",
+        "description": "妙勒尼山脈北區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_06",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_07",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_08",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_09",
+        "description": "妙勒尼山脈南邊山麓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_10",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_11",
+        "description": "妙勒尼山脈南區",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "mjolnir_12",
+        "description": "妙勒尼山脈北邊山麓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f12_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f12_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f12_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f16_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f16_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f16_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f18_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f18_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_f18_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild01",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild02",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild03",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild07",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild11",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild12",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild13",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild16",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild17",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild18",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_fild19",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd01",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd02",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd03",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd05",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "moc_pryd06",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f01_a",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f01_b",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f01_z",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f02_a",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f02_b",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_f02_z",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_fild01",
+        "description": "尼芙菲姆偏僻村落斯凱領頓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "nif_fild02",
+        "description": "尼芙菲姆鬼峽谷",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "niflheim",
+        "description": "亡者國都尼芙菲姆",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d01_a",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d01_b",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d01_z",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d02_a",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d02_b",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orc_d02_z",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orcsdun01",
+        "description": "獸人地下洞窟1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "orcsdun02",
+        "description": "獸人地下洞窟2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d00_a",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d00_b",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d00_z",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d01_a",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d01_b",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d01_z",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d02_a",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d02_b",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d02_z",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d03_a",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d03_b",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d03_z",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d04_a",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d04_b",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_d04_z",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun00",
+        "description": "斐揚洞穴1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun01",
+        "description": "斐揚洞穴2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun02",
+        "description": "斐揚洞穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun03",
+        "description": "斐揚洞穴4樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_dun04",
+        "description": "斐揚洞穴5樓-廢村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f01_a",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f01_b",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f01_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f03_a",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f03_b",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f03_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f04_a",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f04_b",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f04_z",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f08_a",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f08_b",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_f08_z",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild01",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild02",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild03",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild04",
+        "description": "蘇克拉特沙漠",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild06",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild07",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild08",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild09",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pay_fild10",
+        "description": "斐揚森林",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d01_a",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d01_b",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d01_z",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d02_a",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d02_b",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d02_z",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d03_a",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d03_b",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d03_z",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d04_a",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d04_b",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_d04_z",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f02_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f02_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f02_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f07_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f07_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f07_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f08_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f08_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f08_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f11_a",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f11_b",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_f11_z",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild00",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild01",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild02",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild03",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild04",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild05",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild06",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild07",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild08",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild09",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild10",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_fild11",
+        "description": "普隆德拉區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_maze01",
+        "description": "迷宮森林1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_maze02",
+        "description": "迷宮森林2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_maze03",
+        "description": "迷宮森林3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb1",
+        "description": "地下水道1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb2",
+        "description": "地下水道2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb3",
+        "description": "地下水道3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "prt_sewb4",
+        "description": "地下水道4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d01_a",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d01_b",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d01_z",
+        "description": "金字塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d02_a",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d02_b",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d02_z",
+        "description": "金字塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d03_a",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d03_b",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d03_z",
+        "description": "金字塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d04_a",
+        "description": "金字塔4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d04_b",
+        "description": "金字塔4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d04_z",
+        "description": "金字塔4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d05_a",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d05_b",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d05_z",
+        "description": "金字塔地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d06_a",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d06_b",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "pry_d06_z",
+        "description": "金字塔地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d01_a",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d01_b",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d01_z",
+        "description": "人面獅身像地下1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d02_a",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d02_b",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d02_z",
+        "description": "人面獅身像地下2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d03_a",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d03_b",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d03_z",
+        "description": "人面獅身像地下3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d04_a",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d04_b",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d04_z",
+        "description": "人面獅身像地下4樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d05_a",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d05_b",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "sp_d05_z",
+        "description": "人面獅身像地下5樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d01_a",
+        "description": "鐘塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d01_b",
+        "description": "鐘塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d01_z",
+        "description": "鐘塔1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d02_a",
+        "description": "鐘塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d02_b",
+        "description": "鐘塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d02_z",
+        "description": "鐘塔2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d03_a",
+        "description": "鐘塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d03_b",
+        "description": "鐘塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tow_d03_z",
+        "description": "鐘塔3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d01_a",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d01_b",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d01_z",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d02_a",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d02_b",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tre_d02_z",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure01",
+        "description": "失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure02",
+        "description": "失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure_n1",
+        "description": "依斯魯得島失事輪1樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "treasure_n2",
+        "description": "依斯魯得島失事輪2樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d01_a",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d01_b",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d01_z",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d02_a",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d02_b",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d02_z",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d03_a",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d03_b",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d03_z",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d04_a",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d04_b",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_d04_z",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun01",
+        "description": "龜島",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun02",
+        "description": "龜島密穴",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun03",
+        "description": "良龜村",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "tur_dun04",
+        "description": "舊良宮",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d01_a",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d01_b",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d01_z",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d02_a",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d02_b",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_d02_z",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_a",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_b",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xma_f01_z",
+        "description": "薑餅城區域",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_dun01",
+        "description": "玩具工廠倉庫",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_dun02",
+        "description": "玩具分類場",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "xmas_fild01",
+        "description": "薑餅城區域",
         "spawn_info": ""
       }
     ],

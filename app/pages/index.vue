@@ -163,6 +163,7 @@ const filteredMonsters = computed(() => {
     const matchesName =
         q === "" ||
         (m.name.zh_tw && m.name.zh_tw.includes(q)) ||
+        m.id.toString() === q ||
         // 只有在 itemSearch 為 true 時，才會檢查掉落物
         (itemSearch.value && m.drops && m.drops.some(it => it.name.includes(q))) ||
         (Array.isArray(m.spawns) &&
