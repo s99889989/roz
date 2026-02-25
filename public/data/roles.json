@@ -30,7 +30,7 @@
     "role": [
       {"name": "洋蔥騎士", "job": "騎士", "level": "70", "guild": "下午茶"},
       {"name": "洋蔥奶霸", "job": "祭師", "level": "76", "guild": "下午茶"},
-      {"name": "洋蔥奶霸", "job": "鐵匠", "level": "72", "guild": "下午茶"}
+      {"name": "哈庫拉瑪塔塔", "job": "鐵匠", "level": "84", "guild": "下午茶"}
     ]
   },
   {
@@ -49,7 +49,7 @@
   {
     "name": "哞哞茶",
     "role": [
-      {"name": "哞哞茶", "job": "獵人", "level": "87", "guild": "鯊魚"}
+      {"name": "哞哞茶", "job": "獵人", "level": "90", "guild": "鯊魚"}
     ]
   },
   {
@@ -115,7 +115,7 @@
   {
     "name": "白水木",
     "role": [
-      {"name": "白水木", "job": "騎士", "level": "80", "guild": "下午茶"},
+      {"name": "白水木", "job": "騎士", "level": "87", "guild": "下午茶"},
       {"name": "捲葉榕", "job": "十字軍", "level": "81", "guild": "下午茶"}
     ]
   },
@@ -163,7 +163,7 @@
       {"name": "赫菲洛斯", "job": "鐵匠", "level": "71", "guild": "下午茶"},
       {"name": "暗夜騎士", "job": "騎士", "level": "79", "guild": "下午茶"},
       {"name": "艾倫米爾", "job": "詩人", "level": "70", "guild": "下午茶"},
-      {"name": "暗影凱爾", "job": "祭師", "level": "70", "guild": "下午茶"},
+      {"name": "暗影凱爾", "job": "刺客", "level": "70", "guild": "下午茶"},
       {"name": "亞德里安", "job": "賢者", "level": "73", "guild": ""},
 
       {"name": "別打臉", "job": "巫師", "level": "74", "guild": ""},
@@ -194,7 +194,7 @@
   {
     "name": "M=V/a",
     "role": [
-      {"name": "M=V/a", "job": "刺客", "level": "85", "guild": "鯊鯊"}
+      {"name": "M=V/a", "job": "刺客", "level": "87", "guild": "鯊鯊"}
     ]
   },
   {
