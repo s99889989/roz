@@ -10044,16 +10044,6 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 540106,
-        "name": "書",
-        "rate": "???",
-        "icon_url": "images/items/540106.gif",
-        "slotCount": 3,
-        "slot": "書籍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 700084,
         "name": "角弓",
         "rate": "???",
@@ -19137,6 +19127,26 @@
         "spawn_info": ""
       },
       {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
         "map_name": "pay_d00_a",
         "description": "斐揚洞穴1樓",
         "spawn_info": ""
@@ -20089,6 +20099,46 @@
         "spawn_info": ""
       },
       {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_a",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_b",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_z",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun02",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
         "map_name": "moc_f12_a",
         "description": "蘇克拉特沙漠",
         "spawn_info": ""
@@ -20370,6 +20420,46 @@
       {
         "map_name": "gef_dun02",
         "description": "吉芬地下密穴3樓",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_a",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_b",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_z",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun03",
+        "description": "崑崙武陵道院",
         "spawn_info": ""
       },
       {
@@ -24290,6 +24380,16 @@
         "icon_url": "images/items/420454.gif",
         "slotCount": 0,
         "slot": "頭下",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 700099,
+        "name": "弓",
+        "rate": "???",
+        "icon_url": "images/items/700099.gif",
+        "slotCount": 4,
+        "slot": "弓",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -31191,6 +31291,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 2217,
+        "name": "聖職之帽",
+        "rate": "???",
+        "icon_url": "images/items/2217.gif",
+        "slotCount": 1,
+        "slot": "頭上",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 4141,
         "name": "闇神官卡片",
         "rate": 0.01,
@@ -31248,16 +31358,6 @@
         "slotCount": 1,
         "slot": "書籍",
         "enchantment_slots": 3,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 2217,
-        "name": "聖職之帽",
-        "rate": "???",
-        "icon_url": "images/items/2217.gif",
-        "slotCount": 1,
-        "slot": "頭上",
-        "enchantment_slots": 0,
         "card_prefix_name": ""
       }
     ],
@@ -34445,7 +34545,7 @@
       "defense": 52,
       "exp": {
         "base": 651,
-        "job": 248
+        "job": 130
       },
       "flee_95_percent": 237,
       "hit_100_percent": 254,
@@ -43850,6 +43950,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 21039,
+        "name": "王室騎士巨劍",
+        "rate": "???",
+        "icon_url": "images/items/21039.gif",
+        "slotCount": 1,
+        "slot": "雙手劍",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 26016,
         "name": "王室騎士長矛",
         "rate": "???",
@@ -43886,16 +43996,6 @@
         "icon_url": "images/items/500098.gif",
         "slotCount": 2,
         "slot": "單手劍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 21039,
-        "name": "王室騎士巨劍",
-        "rate": "???",
-        "icon_url": "images/items/21039.gif",
-        "slotCount": 1,
-        "slot": "雙手劍",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       }
@@ -51443,6 +51543,16 @@
         "card_prefix_name": "射擊熟練的"
       },
       {
+        "item_id": 5121,
+        "name": "艾斯恩魔女假面",
+        "rate": "???",
+        "icon_url": "images/items/5121.gif",
+        "slotCount": 0,
+        "slot": "頭上/中",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 7017,
         "name": "行刑者手套",
         "rate": 0.03,
@@ -52180,22 +52290,22 @@
         "card_prefix_name": ""
       },
       {
-        "item_id": 510132,
-        "name": "大馬士革短劍",
-        "rate": "???",
-        "icon_url": "images/items/510132.gif",
-        "slotCount": 2,
-        "slot": "短劍",
-        "enchantment_slots": 0,
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 401084,
         "name": "(服飾)隊伍招聘!廣告牌(歸屬)",
         "rate": "???",
         "icon_url": "images/items/401084.gif",
         "slotCount": 0,
         "slot": "頭上",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 510132,
+        "name": "大馬士革短劍",
+        "rate": "???",
+        "icon_url": "images/items/510132.gif",
+        "slotCount": 2,
+        "slot": "短劍",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       },
@@ -52809,6 +52919,16 @@
         "icon_url": "images/items/7005.gif",
         "slotCount": 0,
         "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 430018,
+        "name": "(服飾)藏鏡人帽(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/430018.gif",
+        "slotCount": 0,
+        "slot": "頭上/中",
         "enchantment_slots": 0,
         "card_prefix_name": ""
       },
@@ -75920,6 +76040,2376 @@
       }
     ]
   },
+  "1408": {
+    "id": 1408,
+    "name": {
+      "zh_tw": "血蝴蝶",
+      "en": "BLOOD_BUTTERFLY",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "風"
+      },
+      "level": 122,
+      "race": "昆蟲",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/1408.gif",
+    "stats": {
+      "attack": {
+        "max": 598,
+        "min": 452
+      },
+      "base_stats": {
+        "agi": 68,
+        "dex": 108,
+        "int": 55,
+        "luk": 30,
+        "str": 70,
+        "vit": 40
+      },
+      "defense": 102,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 382,
+      "hit_100_percent": 368,
+      "hp": 204521,
+      "magic_attack": {
+        "max": 237,
+        "min": 195
+      },
+      "magic_defense": 65
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "偵測隱匿",
+      "協助同族",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標",
+      "被近戰時改變目標"
+    ],
+    "drops": [
+      {
+        "item_id": 924,
+        "name": "蝴蝶翅膀粉末",
+        "rate": 27.5,
+        "icon_url": "images/items/924.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1962,
+        "name": "細刃鞭子",
+        "rate": 0.01,
+        "icon_url": "images/items/1962.gif",
+        "slotCount": 0,
+        "slot": "鞭子",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4327,
+        "name": "血蝴蝶卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4327.gif",
+        "slotCount": 0,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": "著迷流動的"
+      },
+      {
+        "item_id": 7163,
+        "name": "銳利的觸角",
+        "rate": 23.04,
+        "icon_url": "images/items/7163.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7168,
+        "name": "巨大翅膀",
+        "rate": 12.5,
+        "icon_url": "images/items/7168.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_a",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_b",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_z",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun02",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_SLEEPATTACK",
+        "SkillNameZhTW": "睡眠攻擊",
+        "SkillID": 182,
+        "SkillLv": 5,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 7,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SLEEPATTACK",
+        "SkillNameZhTW": "睡眠攻擊",
+        "SkillID": 182,
+        "SkillLv": 5,
+        "Rate": "5.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 7,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DARKSTRIKE",
+        "SkillNameZhTW": "暗靈召喚",
+        "SkillID": 340,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "chase",
+        "CastTime": 700,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "KN_PIERCE",
+        "SkillNameZhTW": "連刺攻擊",
+        "SkillID": 56,
+        "SkillLv": 10,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 700,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      }
+    ]
+  },
+  "1409": {
+    "id": 1409,
+    "name": {
+      "zh_tw": "元宵童子",
+      "en": "RICE_CAKE_BOY",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 1,
+        "type": "無"
+      },
+      "level": 90,
+      "race": "人形",
+      "size": "小"
+    },
+    "image_url": "/images/monsters/1409.gif",
+    "stats": {
+      "attack": {
+        "max": 271,
+        "min": 217
+      },
+      "base_stats": {
+        "agi": 43,
+        "dex": 47,
+        "int": 5,
+        "luk": 10,
+        "str": 50,
+        "vit": 29
+      },
+      "defense": 144,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 280,
+      "hit_100_percent": 305,
+      "hp": 155389,
+      "magic_attack": {
+        "max": 94,
+        "min": 80
+      },
+      "magic_defense": 18
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "可物理攻擊",
+      "可移動",
+      "詠唱感知(閒置)"
+    ],
+    "drops": [
+      {
+        "item_id": 553,
+        "name": "包子",
+        "rate": 5,
+        "icon_url": "images/items/553.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2262,
+        "name": "小丑鼻子",
+        "rate": 0.01,
+        "icon_url": "images/items/2262.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4154,
+        "name": "元宵童子卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4154.gif",
+        "slotCount": 0,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": "散發甜蜜氣味的"
+      },
+      {
+        "item_id": 7150,
+        "name": "竹筒",
+        "rate": 16,
+        "icon_url": "images/items/7150.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7151,
+        "name": "油紙",
+        "rate": 12.5,
+        "icon_url": "images/items/7151.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7187,
+        "name": "慶典面具",
+        "rate": 15,
+        "icon_url": "images/items/7187.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7192,
+        "name": "小風車手裏刀",
+        "rate": 25,
+        "icon_url": "images/items/7192.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_f01_a",
+        "description": "崑崙原野崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_b",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_z",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_fild01",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_WINDATTACK",
+        "SkillNameZhTW": "風屬性攻擊",
+        "SkillID": 187,
+        "SkillLv": 3,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      }
+    ]
+  },
+  "1410": {
+    "id": 1410,
+    "name": {
+      "zh_tw": "猴桃木",
+      "en": "LIVE_PEACH_TREE",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "地"
+      },
+      "level": 119,
+      "race": "植物",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/1410.gif",
+    "stats": {
+      "attack": {
+        "max": 590,
+        "min": 448
+      },
+      "base_stats": {
+        "agi": 52,
+        "dex": 92,
+        "int": 40,
+        "luk": 50,
+        "str": 76,
+        "vit": 55
+      },
+      "defense": 141,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 370,
+      "hit_100_percent": 354,
+      "hp": 189552,
+      "magic_attack": {
+        "max": 226,
+        "min": 182
+      },
+      "magic_defense": 52
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標"
+    ],
+    "drops": [
+      {
+        "item_id": 526,
+        "name": "蜂膠",
+        "rate": 5,
+        "icon_url": "images/items/526.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 532,
+        "name": "香蕉汁",
+        "rate": 0.5,
+        "icon_url": "images/items/532.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 603,
+        "name": "神秘藍箱",
+        "rate": 0.03,
+        "icon_url": "images/items/603.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 604,
+        "name": "枯樹枝",
+        "rate": 2,
+        "icon_url": "images/items/604.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4217,
+        "name": "猴桃木卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4217.gif",
+        "slotCount": 0,
+        "slot": "盾牌",
+        "enchantment_slots": "",
+        "card_prefix_name": "自動治療的"
+      },
+      {
+        "item_id": 7164,
+        "name": "石榴桃",
+        "rate": 21.83,
+        "icon_url": "images/items/7164.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_a",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_b",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_z",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun02",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_GUIDEDATTACK",
+        "SkillNameZhTW": "必中攻擊",
+        "SkillID": 172,
+        "SkillLv": 2,
+        "Rate": "5.00%",
+        "State": "chase",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_GUIDEDATTACK",
+        "SkillNameZhTW": "必中攻擊",
+        "SkillID": 172,
+        "SkillLv": 3,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AM_POTIONPITCHER",
+        "SkillNameZhTW": "藥水投擲",
+        "SkillID": 231,
+        "SkillLv": 2,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 19,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AM_POTIONPITCHER",
+        "SkillNameZhTW": "藥水投擲",
+        "SkillID": 231,
+        "SkillLv": 2,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 19,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AM_POTIONPITCHER",
+        "SkillNameZhTW": "藥水投擲",
+        "SkillID": 231,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 500,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 18,
+        "Chat": ""
+      }
+    ]
+  },
+  "1412": {
+    "id": 1412,
+    "name": {
+      "zh_tw": "惡雲仙人",
+      "en": "EVIL_CLOUD_HERMIT",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "無"
+      },
+      "level": 124,
+      "race": "無形",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/1412.gif",
+    "stats": {
+      "attack": {
+        "max": 893,
+        "min": 647
+      },
+      "base_stats": {
+        "agi": 57,
+        "dex": 119,
+        "int": 60,
+        "luk": 45,
+        "str": 63,
+        "vit": 45
+      },
+      "defense": 85,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 400,
+      "hit_100_percent": 362,
+      "hp": 224222,
+      "magic_attack": {
+        "max": 195,
+        "min": 177
+      },
+      "magic_defense": 59
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標"
+    ],
+    "drops": [
+      {
+        "item_id": 548,
+        "name": "起士",
+        "rate": 28,
+        "icon_url": "images/items/548.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 550,
+        "name": "仙貝",
+        "rate": 22.5,
+        "icon_url": "images/items/550.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 553,
+        "name": "包子",
+        "rate": 34,
+        "icon_url": "images/items/553.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 693,
+        "name": "雷擊術等級5",
+        "rate": 0.5,
+        "icon_url": "images/items/693.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 757,
+        "name": "鋁原石",
+        "rate": 0.75,
+        "icon_url": "images/items/757.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4262,
+        "name": "惡雲仙人卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4262.gif",
+        "slotCount": 0,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": "陰森森天氣的"
+      },
+      {
+        "item_id": 7162,
+        "name": "片雲",
+        "rate": 23.28,
+        "icon_url": "images/items/7162.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d02_a",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_b",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_z",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_a",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_b",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_z",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun02",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun03",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_BLINDATTACK",
+        "SkillNameZhTW": "致盲攻擊",
+        "SkillID": 177,
+        "SkillLv": 3,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 29,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_BLINDATTACK",
+        "SkillNameZhTW": "致盲攻擊",
+        "SkillID": 177,
+        "SkillLv": 3,
+        "Rate": "5.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 29,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "MG_LIGHTNINGBOLT",
+        "SkillNameZhTW": "雷擊術",
+        "SkillID": 20,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 1500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "MG_LIGHTNINGBOLT",
+        "SkillNameZhTW": "雷擊術",
+        "SkillID": 20,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "chase",
+        "CastTime": 1500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_TELEPORT",
+        "SkillNameZhTW": "瞬間移動",
+        "SkillID": 26,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      }
+    ]
+  },
+  "1413": {
+    "id": 1413,
+    "name": {
+      "zh_tw": "人蔘精",
+      "en": "WILD_GINSENG",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "火"
+      },
+      "level": 117,
+      "race": "植物",
+      "size": "小"
+    },
+    "image_url": "/images/monsters/1413.gif",
+    "stats": {
+      "attack": {
+        "max": 856,
+        "min": 626
+      },
+      "base_stats": {
+        "agi": 51,
+        "dex": 91,
+        "int": 60,
+        "luk": 50,
+        "str": 76,
+        "vit": 60
+      },
+      "defense": 72,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 367,
+      "hit_100_percent": 351,
+      "hp": 186578,
+      "magic_attack": {
+        "max": 243,
+        "min": 199
+      },
+      "magic_defense": 80
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "可物理攻擊",
+      "可移動",
+      "詠唱感知(閒置)"
+    ],
+    "drops": [
+      {
+        "item_id": 520,
+        "name": "西納雷葉子",
+        "rate": 17.5,
+        "icon_url": "images/items/520.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 521,
+        "name": "蘆薈葉子",
+        "rate": 17.5,
+        "icon_url": "images/items/521.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 578,
+        "name": "草莓",
+        "rate": 5,
+        "icon_url": "images/items/578.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1032,
+        "name": "噬人樹花",
+        "rate": 24,
+        "icon_url": "images/items/1032.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1033,
+        "name": "噬人樹根",
+        "rate": 19,
+        "icon_url": "images/items/1033.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4232,
+        "name": "人蔘精卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4232.gif",
+        "slotCount": 0,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": "使恢復精力的"
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d03_a",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_b",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_z",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun03",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_MAGICALATTACK",
+        "SkillNameZhTW": "惡魔衝擊",
+        "SkillID": 192,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 1000,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 7,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_BARRIER",
+        "SkillNameZhTW": "絕對防禦",
+        "SkillID": 204,
+        "SkillLv": 1,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 3000,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 9,
+        "Chat": ""
+      }
+    ]
+  },
+  "1415": {
+    "id": 1415,
+    "name": {
+      "zh_tw": "小花豹",
+      "en": "BABY_LEOPARD",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 1,
+        "type": "念"
+      },
+      "level": 102,
+      "race": "動物",
+      "size": "小"
+    },
+    "image_url": "/images/monsters/1415.gif",
+    "stats": {
+      "attack": {
+        "max": 464,
+        "min": 346
+      },
+      "base_stats": {
+        "agi": 36,
+        "dex": 61,
+        "int": 4,
+        "luk": 10,
+        "str": 46,
+        "vit": 20
+      },
+      "defense": 115,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 302,
+      "hit_100_percent": 306,
+      "hp": 181056,
+      "magic_attack": {
+        "max": 140,
+        "min": 108
+      },
+      "magic_defense": 7
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "可物理攻擊",
+      "可移動",
+      "憤怒狀態",
+      "被攻擊時改變目標",
+      "被近戰時改變目標"
+    ],
+    "drops": [
+      {
+        "item_id": 517,
+        "name": "肉",
+        "rate": 10,
+        "icon_url": "images/items/517.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 756,
+        "name": "神之金屬原石",
+        "rate": 0.75,
+        "icon_url": "images/items/756.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4233,
+        "name": "小花豹卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4233.gif",
+        "slotCount": 0,
+        "slot": "盔甲",
+        "enchantment_slots": "",
+        "card_prefix_name": "畢帝特龍好運的"
+      },
+      {
+        "item_id": 7171,
+        "name": "花豹外皮",
+        "rate": 26,
+        "icon_url": "images/items/7171.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7172,
+        "name": "花豹指甲",
+        "rate": 16,
+        "icon_url": "images/items/7172.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 510130,
+        "name": "大駒短劍",
+        "rate": 0.5,
+        "icon_url": "images/items/510130.gif",
+        "slotCount": 3,
+        "slot": "短劍",
+        "enchantment_slots": 3,
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d02_a",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_b",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_z",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun02",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_a",
+        "description": "崑崙原野崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_b",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_z",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_fild01",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_CRITICALSLASH",
+        "SkillNameZhTW": "無視防禦攻擊",
+        "SkillID": 170,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_CRITICALSLASH",
+        "SkillNameZhTW": "無視防禦攻擊",
+        "SkillID": 170,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "angry",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_EMOTION",
+        "SkillNameZhTW": "表情",
+        "SkillID": 197,
+        "SkillLv": 1,
+        "Rate": "20.00%",
+        "State": "walk",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": 2,
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      }
+    ]
+  },
+  "1416": {
+    "id": 1416,
+    "name": {
+      "zh_tw": "妖仙女",
+      "en": "WICKED_NYMPH",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 3,
+        "type": "暗"
+      },
+      "level": 126,
+      "race": "惡魔",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/1416.gif",
+    "stats": {
+      "attack": {
+        "max": 712,
+        "min": 534
+      },
+      "base_stats": {
+        "agi": 46,
+        "dex": 92,
+        "int": 70,
+        "luk": 60,
+        "str": 84,
+        "vit": 45
+      },
+      "defense": 59,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 379,
+      "hit_100_percent": 355,
+      "hp": 248013,
+      "magic_attack": {
+        "max": 334,
+        "min": 256
+      },
+      "magic_defense": 58
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "偵測隱匿",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標",
+      "被近戰時改變目標",
+      "詠唱感知(追擊)",
+      "詠唱感知(閒置)",
+      "變更追擊目標"
+    ],
+    "drops": [
+      {
+        "item_id": 984,
+        "name": "神之金屬",
+        "rate": 0.05,
+        "icon_url": "images/items/984.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1918,
+        "name": "琵琶",
+        "rate": 0.05,
+        "icon_url": "images/items/1918.gif",
+        "slotCount": 0,
+        "slot": "樂器",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4258,
+        "name": "妖仙女卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4258.gif",
+        "slotCount": 0,
+        "slot": "頭具",
+        "enchantment_slots": "",
+        "card_prefix_name": "頭腦會變好的"
+      },
+      {
+        "item_id": 7165,
+        "name": "害羞之服",
+        "rate": 19.89,
+        "icon_url": "images/items/7165.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7166,
+        "name": "柔軟的綢緞布",
+        "rate": 6.9,
+        "icon_url": "images/items/7166.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 12002,
+        "name": "治癒術等級5",
+        "rate": 0.5,
+        "icon_url": "images/items/12002.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d03_a",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_b",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_z",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun03",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "friend",
+        "ConditionType": "friendhpltmaxrate",
+        "ConditionValue": 60,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "friend",
+        "ConditionType": "friendhpltmaxrate",
+        "ConditionValue": 60,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "friend",
+        "ConditionType": "friendhpltmaxrate",
+        "ConditionValue": 60,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "SA_DISPELL",
+        "SkillNameZhTW": "魔法效果解除",
+        "SkillID": 289,
+        "SkillLv": 5,
+        "Rate": "0.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_STOP",
+        "SkillNameZhTW": "停止",
+        "SkillID": 342,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      }
+    ]
+  },
+  "1417": {
+    "id": 1417,
+    "name": {
+      "zh_tw": "拉鏈熊",
+      "en": "ZIPPER_BEAR",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 1,
+        "type": "暗"
+      },
+      "level": 117,
+      "race": "動物",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/1417.gif",
+    "stats": {
+      "attack": {
+        "max": 700,
+        "min": 518
+      },
+      "base_stats": {
+        "agi": 51,
+        "dex": 70,
+        "int": 35,
+        "luk": 20,
+        "str": 68,
+        "vit": 50
+      },
+      "defense": 169,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 336,
+      "hit_100_percent": 345,
+      "hp": 182743,
+      "magic_attack": {
+        "max": 200,
+        "min": 164
+      },
+      "magic_defense": 52
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "可物理攻擊",
+      "可移動",
+      "詠唱感知(閒置)"
+    ],
+    "drops": [
+      {
+        "item_id": 512,
+        "name": "蘋果",
+        "rate": 0.45,
+        "icon_url": "images/items/512.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 518,
+        "name": "蜂蜜",
+        "rate": 4.5,
+        "icon_url": "images/items/518.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 526,
+        "name": "蜂膠",
+        "rate": 2,
+        "icon_url": "images/items/526.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4281,
+        "name": "拉鏈熊卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4281.gif",
+        "slotCount": 0,
+        "slot": "武器",
+        "enchantment_slots": "",
+        "card_prefix_name": "嚴厲執行的"
+      },
+      {
+        "item_id": 7161,
+        "name": "拉鏈熊毛皮",
+        "rate": 22.31,
+        "icon_url": "images/items/7161.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7167,
+        "name": "魔幻拉鏈",
+        "rate": 17.5,
+        "icon_url": "images/items/7167.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_CRITICALSLASH",
+        "SkillNameZhTW": "無視防禦攻擊",
+        "SkillID": 170,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_STUNATTACK",
+        "SkillNameZhTW": "昏迷攻擊",
+        "SkillID": 179,
+        "SkillLv": 2,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 1500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      }
+    ]
+  },
+  "1418": {
+    "id": 1418,
+    "name": {
+      "zh_tw": "墨蛇君",
+      "en": "DARK_SNAKE_LORD",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": true,
+    "basic_info": {
+      "element": {
+        "level": 3,
+        "type": "念"
+      },
+      "level": 105,
+      "race": "動物",
+      "size": "大"
+    },
+    "image_url": "/images/monsters/1418.gif",
+    "stats": {
+      "attack": {
+        "max": 3686,
+        "min": 2532
+      },
+      "base_stats": {
+        "agi": 172,
+        "dex": 235,
+        "int": 135,
+        "luk": 88,
+        "str": 122,
+        "vit": 107
+      },
+      "defense": 314,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 539,
+      "hit_100_percent": 494,
+      "hp": 173407500,
+      "magic_attack": {
+        "max": 2822,
+        "min": 1630
+      },
+      "magic_defense": 185
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "MVP",
+      "主動攻擊",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標",
+      "被近戰時改變目標",
+      "詠唱感知(追擊)",
+      "詠唱感知(閒置)",
+      "變更追擊目標"
+    ],
+    "drops": [
+      {
+        "item_id": 1471,
+        "name": "火靈之矛",
+        "rate": 0.4,
+        "icon_url": "images/items/1471.gif",
+        "slotCount": 0,
+        "slot": "雙手矛",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1474,
+        "name": "加野矛",
+        "rate": 2.5,
+        "icon_url": "images/items/1474.gif",
+        "slotCount": 0,
+        "slot": "雙手槍",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4330,
+        "name": "墨蛇君卡片",
+        "rate": 0.01,
+        "icon_url": "images/items/4330.gif",
+        "slotCount": 0,
+        "slot": "頭具",
+        "enchantment_slots": "",
+        "card_prefix_name": "不詛咒的"
+      },
+      {
+        "item_id": 5012,
+        "name": "學士帽",
+        "rate": 0.4,
+        "icon_url": "images/items/5012.gif",
+        "slotCount": 0,
+        "slot": "頭上",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7169,
+        "name": "太極盤",
+        "rate": 29.1,
+        "icon_url": "images/items/7169.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7226,
+        "name": "幻藥",
+        "rate": 4.5,
+        "icon_url": "images/items/7226.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 10020,
+        "name": "靈幻道士之劍",
+        "rate": 25.5,
+        "icon_url": "images/items/10020.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "b_gon_d03",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "b_gon_d03_z",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "MG_FROSTDIVER",
+        "SkillNameZhTW": "冰凍術",
+        "SkillID": 15,
+        "SkillLv": 40,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "MG_FROSTDIVER",
+        "SkillNameZhTW": "冰凍術",
+        "SkillID": 15,
+        "SkillLv": 40,
+        "Rate": "20.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 0,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "MG_FROSTDIVER",
+        "SkillNameZhTW": "冰凍術",
+        "SkillID": 15,
+        "SkillLv": 40,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 0,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "skillused",
+        "ConditionValue": 18,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SUMMONSLAVE",
+        "SkillNameZhTW": "召喚隨從",
+        "SkillID": 196,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 700,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "slavele",
+        "ConditionValue": 2,
+        "Val1": 1531,
+        "Val2": 1531,
+        "Val3": 1564,
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SUMMONSLAVE",
+        "SkillNameZhTW": "召喚隨從",
+        "SkillID": 196,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 700,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "slavele",
+        "ConditionValue": 2,
+        "Val1": 1531,
+        "Val2": 1531,
+        "Val3": 1564,
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DARKBREATH",
+        "SkillNameZhTW": "黑暗呼吸",
+        "SkillID": 202,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 800,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 29,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_TELEPORT",
+        "SkillNameZhTW": "瞬間移動",
+        "SkillID": 26,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 0,
+        "Delay": 0,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "rudeattacked",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_STOP",
+        "SkillNameZhTW": "停止",
+        "SkillID": 342,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 15000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SHIELDBRAKE",
+        "SkillNameZhTW": "破壞盾牌",
+        "SkillID": 346,
+        "SkillLv": 10,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 0,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_POWERUP",
+        "SkillNameZhTW": "力量提升",
+        "SkillID": 349,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_CALLSLAVE",
+        "SkillNameZhTW": "召回隨從",
+        "SkillID": 352,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_CALLSLAVE",
+        "SkillNameZhTW": "召回隨從",
+        "SkillID": 352,
+        "SkillLv": 1,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DRAGONFEAR",
+        "SkillNameZhTW": "天龍恐懼",
+        "SkillID": 659,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": 0,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DRAGONFEAR",
+        "SkillNameZhTW": "天龍恐懼",
+        "SkillID": 659,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 80,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 32,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_WIDESILENCE",
+        "SkillNameZhTW": "廣範圍沉默",
+        "SkillID": 663,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 80,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 32,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_WIDESILENCE",
+        "SkillNameZhTW": "廣範圍沉默",
+        "SkillID": 663,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 80,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 32,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_ALLHEAL",
+        "SkillNameZhTW": "生命之流",
+        "SkillID": 687,
+        "SkillLv": 1,
+        "Rate": "50.00%",
+        "State": "attack",
+        "CastTime": 1500,
+        "Delay": 60000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "damagedgt",
+        "ConditionValue": 30000,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 20,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "SM_MAGNUM",
+        "SkillNameZhTW": "怒爆",
+        "SkillID": 7,
+        "SkillLv": 25,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "attackpcge",
+        "ConditionValue": 2,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      }
+    ]
+  },
   "1493": {
     "id": 1493,
     "name": {
@@ -78484,6 +80974,16 @@
         "card_prefix_name": ""
       },
       {
+        "item_id": 420724,
+        "name": "(服飾)假面鬼披肩(歸屬)",
+        "rate": "???",
+        "icon_url": "images/items/420724.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 480378,
         "name": "披肩",
         "rate": 0.01,
@@ -78873,6 +81373,16 @@
         "card_prefix_name": "狡猾的"
       },
       {
+        "item_id": 5475,
+        "name": "萬聖魔面具",
+        "rate": "???",
+        "icon_url": "images/items/5475.gif",
+        "slotCount": 0,
+        "slot": "頭中/下",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
         "item_id": 7154,
         "name": "毒粉",
         "rate": 0.5,
@@ -78899,16 +81409,6 @@
         "icon_url": "images/items/7220.gif",
         "slotCount": 0,
         "slot": "-",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
-        "item_id": 5475,
-        "name": "萬聖魔面具",
-        "rate": "???",
-        "icon_url": "images/items/5475.gif",
-        "slotCount": 0,
-        "slot": "頭中/下",
         "enchantment_slots": "",
         "card_prefix_name": ""
       }
@@ -85257,6 +87757,319 @@
         "Val4": "",
         "Val5": "",
         "Emotion": "",
+        "Chat": ""
+      }
+    ]
+  },
+  "2617": {
+    "id": 2617,
+    "name": {
+      "zh_tw": "狡猾妖仙女",
+      "en": "C5_WICKED_NYMPH",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": false,
+    "basic_info": {
+      "element": {
+        "level": 3,
+        "type": "暗"
+      },
+      "level": 126,
+      "race": "惡魔",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/2617.gif",
+    "stats": {
+      "attack": {
+        "max": 817,
+        "min": 605
+      },
+      "base_stats": {
+        "agi": 46,
+        "dex": 92,
+        "int": 70,
+        "luk": 60,
+        "str": 84,
+        "vit": 45
+      },
+      "defense": 46,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 379,
+      "hit_100_percent": 355,
+      "hp": 42455,
+      "magic_attack": {
+        "max": 334,
+        "min": 256
+      },
+      "magic_defense": 45
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "偵測隱匿",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標",
+      "被近戰時改變目標",
+      "詠唱感知(追擊)",
+      "詠唱感知(閒置)",
+      "變更追擊目標"
+    ],
+    "drops": [
+      {
+        "item_id": 984,
+        "name": "神之金屬",
+        "rate": 0.25,
+        "icon_url": "images/items/984.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1918,
+        "name": "琵琶",
+        "rate": 0.25,
+        "icon_url": "images/items/1918.gif",
+        "slotCount": 0,
+        "slot": "樂器",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4258,
+        "name": "妖仙女卡片",
+        "rate": 0.05,
+        "icon_url": "images/items/4258.gif",
+        "slotCount": 0,
+        "slot": "頭具",
+        "enchantment_slots": "",
+        "card_prefix_name": "頭腦會變好的"
+      },
+      {
+        "item_id": 7165,
+        "name": "害羞之服",
+        "rate": 99.45,
+        "icon_url": "images/items/7165.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7166,
+        "name": "柔軟的綢緞布",
+        "rate": 34.5,
+        "icon_url": "images/items/7166.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 12002,
+        "name": "治癒術等級5",
+        "rate": 2.5,
+        "icon_url": "images/items/12002.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d03_a",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_b",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d03_z",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun03",
+        "description": "崑崙武陵道院",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "friend",
+        "ConditionType": "friendhpltmaxrate",
+        "ConditionValue": 60,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "friend",
+        "ConditionType": "friendhpltmaxrate",
+        "ConditionValue": 60,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "friend",
+        "ConditionType": "friendhpltmaxrate",
+        "ConditionValue": 60,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 2,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "SA_DISPELL",
+        "SkillNameZhTW": "魔法效果解除",
+        "SkillID": 289,
+        "SkillLv": 5,
+        "Rate": "0.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_STOP",
+        "SkillNameZhTW": "停止",
+        "SkillID": 342,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 30000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
         "Chat": ""
       }
     ]
@@ -92195,6 +95008,197 @@
         "Val4": "",
         "Val5": "",
         "Emotion": 2,
+        "Chat": ""
+      }
+    ]
+  },
+  "2683": {
+    "id": 2683,
+    "name": {
+      "zh_tw": "菁英元宵童子",
+      "en": "C3_RICE_CAKE_BOY",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": false,
+    "basic_info": {
+      "element": {
+        "level": 1,
+        "type": "無"
+      },
+      "level": 90,
+      "race": "人形",
+      "size": "小"
+    },
+    "image_url": "images/monsters/2683.gif",
+    "stats": {
+      "attack": {
+        "max": 302,
+        "min": 238
+      },
+      "base_stats": {
+        "agi": 43,
+        "dex": 47,
+        "int": 5,
+        "luk": 10,
+        "str": 50,
+        "vit": 29
+      },
+      "defense": 96,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 280,
+      "hit_100_percent": 305,
+      "hp": 10490,
+      "magic_attack": {
+        "max": 94,
+        "min": 80
+      },
+      "magic_defense": 12
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "可物理攻擊",
+      "可移動",
+      "詠唱感知(閒置)"
+    ],
+    "drops": [
+      {
+        "item_id": 553,
+        "name": "包子",
+        "rate": 25,
+        "icon_url": "images/items/553.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 2262,
+        "name": "小丑鼻子",
+        "rate": 0.05,
+        "icon_url": "images/items/2262.gif",
+        "slotCount": 0,
+        "slot": "頭下",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4154,
+        "name": "元宵童子卡片",
+        "rate": 0.05,
+        "icon_url": "images/items/4154.gif",
+        "slotCount": 0,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": "散發甜蜜氣味的"
+      },
+      {
+        "item_id": 7150,
+        "name": "竹筒",
+        "rate": 80,
+        "icon_url": "images/items/7150.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7151,
+        "name": "油紙",
+        "rate": 62.5,
+        "icon_url": "images/items/7151.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7187,
+        "name": "慶典面具",
+        "rate": 75,
+        "icon_url": "images/items/7187.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7192,
+        "name": "小風車手裏刀",
+        "rate": 100,
+        "icon_url": "images/items/7192.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_f01_a",
+        "description": "崑崙原野崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_b",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_f01_z",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_fild01",
+        "description": "崑崙原野",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_WINDATTACK",
+        "SkillNameZhTW": "風屬性攻擊",
+        "SkillID": 187,
+        "SkillLv": 3,
+        "Rate": "20.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SUMMONSLAVE",
+        "SkillNameZhTW": "召喚隨從",
+        "SkillID": 196,
+        "SkillLv": 2,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 700,
+        "Delay": 30000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "slavele",
+        "ConditionValue": 0,
+        "Val1": 1409,
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
         "Chat": ""
       }
     ]
@@ -102783,7 +105787,7 @@
       },
       "defense": 53,
       "exp": {
-        "base": 308520,
+        "base": 1621980,
         "job": 95696
       },
       "flee_95_percent": 400,
@@ -103150,6 +106154,251 @@
         "Val4": "",
         "Val5": "",
         "Emotion": 2,
+        "Chat": ""
+      }
+    ]
+  },
+  "2775": {
+    "id": 2775,
+    "name": {
+      "zh_tw": "雄壯猴桃木",
+      "en": "C2_LIVE_PEACH_TREE",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": false,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "地"
+      },
+      "level": 119,
+      "race": "植物",
+      "size": "中"
+    },
+    "image_url": "images/monsters/2775.gif",
+    "stats": {
+      "attack": {
+        "max": 674,
+        "min": 504
+      },
+      "base_stats": {
+        "agi": 52,
+        "dex": 92,
+        "int": 40,
+        "luk": 50,
+        "str": 76,
+        "vit": 55
+      },
+      "defense": 109,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 370,
+      "hit_100_percent": 354,
+      "hp": 87770,
+      "magic_attack": {
+        "max": 226,
+        "min": 182
+      },
+      "magic_defense": 40
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標"
+    ],
+    "drops": [
+      {
+        "item_id": 526,
+        "name": "蜂膠",
+        "rate": 25,
+        "icon_url": "images/items/526.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 532,
+        "name": "香蕉汁",
+        "rate": 2.5,
+        "icon_url": "images/items/532.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 603,
+        "name": "神秘藍箱",
+        "rate": 0.15,
+        "icon_url": "images/items/603.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 604,
+        "name": "枯樹枝",
+        "rate": 10,
+        "icon_url": "images/items/604.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4217,
+        "name": "猴桃木卡片",
+        "rate": 0.05,
+        "icon_url": "images/items/4217.gif",
+        "slotCount": 0,
+        "slot": "盾牌",
+        "enchantment_slots": "",
+        "card_prefix_name": "自動治療的"
+      },
+      {
+        "item_id": 7164,
+        "name": "石榴桃",
+        "rate": 100,
+        "icon_url": "images/items/7164.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d02_a",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_b",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d02_z",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun02",
+        "description": "崑崙神仙的圍棋臺",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_GUIDEDATTACK",
+        "SkillNameZhTW": "必中攻擊",
+        "SkillID": 172,
+        "SkillLv": 3,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_GUIDEDATTACK",
+        "SkillNameZhTW": "必中攻擊",
+        "SkillID": 172,
+        "SkillLv": 3,
+        "Rate": "5.00%",
+        "State": "chase",
+        "CastTime": 1000,
+        "Delay": 20000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AM_POTIONPITCHER",
+        "SkillNameZhTW": "藥水投擲",
+        "SkillID": 231,
+        "SkillLv": 2,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 19,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AM_POTIONPITCHER",
+        "SkillNameZhTW": "藥水投擲",
+        "SkillID": 231,
+        "SkillLv": 2,
+        "Rate": "100.00%",
+        "State": "chase",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 30,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 19,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AM_POTIONPITCHER",
+        "SkillNameZhTW": "藥水投擲",
+        "SkillID": 231,
+        "SkillLv": 3,
+        "Rate": "100.00%",
+        "State": "idle",
+        "CastTime": 500,
+        "Delay": 10000,
+        "Cancelable": "no",
+        "Target": "self",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 18,
         "Chat": ""
       }
     ]
@@ -114871,6 +118120,265 @@
       }
     ]
   },
+  "2883": {
+    "id": 2883,
+    "name": {
+      "zh_tw": "迅捷血蝴蝶",
+      "en": "C1_BLOOD_BUTTERFLY",
+      "ko_kr": ""
+    },
+    "released": true,
+    "is_valid": false,
+    "basic_info": {
+      "element": {
+        "level": 2,
+        "type": "風"
+      },
+      "level": 122,
+      "race": "昆蟲",
+      "size": "中"
+    },
+    "image_url": "/images/monsters/2883.gif",
+    "stats": {
+      "attack": {
+        "max": 684,
+        "min": 510
+      },
+      "base_stats": {
+        "agi": 68,
+        "dex": 108,
+        "int": 55,
+        "luk": 30,
+        "str": 70,
+        "vit": 40
+      },
+      "defense": 79,
+      "exp": {
+        "base": "",
+        "job": ""
+      },
+      "flee_95_percent": 382,
+      "hit_100_percent": 368,
+      "hp": 35150,
+      "magic_attack": {
+        "max": 237,
+        "min": 195
+      },
+      "magic_defense": 50
+    },
+    "release_date": "2026-03-11",
+    "special_status": [
+      "主動攻擊",
+      "偵測隱匿",
+      "協助同族",
+      "可物理攻擊",
+      "可移動",
+      "被攻擊時改變目標",
+      "被近戰時改變目標"
+    ],
+    "drops": [
+      {
+        "item_id": 924,
+        "name": "蝴蝶翅膀粉末",
+        "rate": 100,
+        "icon_url": "images/items/924.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": 0,
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 1962,
+        "name": "細刃鞭子",
+        "rate": 0.05,
+        "icon_url": "images/items/1962.gif",
+        "slotCount": 0,
+        "slot": "鞭子",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 4327,
+        "name": "血蝴蝶卡片",
+        "rate": 0.05,
+        "icon_url": "images/items/4327.gif",
+        "slotCount": 0,
+        "slot": "飾品",
+        "enchantment_slots": "",
+        "card_prefix_name": "著迷流動的"
+      },
+      {
+        "item_id": 7163,
+        "name": "銳利的觸角",
+        "rate": 100,
+        "icon_url": "images/items/7163.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      },
+      {
+        "item_id": 7168,
+        "name": "巨大翅膀",
+        "rate": 62.5,
+        "icon_url": "images/items/7168.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
+      }
+    ],
+    "spawns": [
+      {
+        "map_name": "gon_d01_a",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_b",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_d01_z",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      },
+      {
+        "map_name": "gon_dun01",
+        "description": "崑崙西王母神殿",
+        "spawn_info": ""
+      }
+    ],
+    "skills": [
+      {
+        "SkillNameComment": "NPC_SLEEPATTACK",
+        "SkillNameZhTW": "睡眠攻擊",
+        "SkillID": 182,
+        "SkillLv": 5,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 7,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_SLEEPATTACK",
+        "SkillNameZhTW": "睡眠攻擊",
+        "SkillID": 182,
+        "SkillLv": 5,
+        "Rate": "5.00%",
+        "State": "chase",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 7,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_TELEPORT",
+        "SkillNameZhTW": "瞬間移動",
+        "SkillID": 26,
+        "SkillLv": 1,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 0,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 50,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "AL_HEAL",
+        "SkillNameZhTW": "治癒術",
+        "SkillID": 28,
+        "SkillLv": 5,
+        "Rate": "100.00%",
+        "State": "attack",
+        "CastTime": 500,
+        "Delay": 5000,
+        "Cancelable": "yes",
+        "Target": "self",
+        "ConditionType": "myhpltmaxrate",
+        "ConditionValue": 50,
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": "",
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "NPC_DARKSTRIKE",
+        "SkillNameZhTW": "暗靈召喚",
+        "SkillID": 340,
+        "SkillLv": 5,
+        "Rate": "20.00%",
+        "State": "chase",
+        "CastTime": 700,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      },
+      {
+        "SkillNameComment": "KN_PIERCE",
+        "SkillNameZhTW": "連刺攻擊",
+        "SkillID": 56,
+        "SkillLv": 10,
+        "Rate": "5.00%",
+        "State": "attack",
+        "CastTime": 700,
+        "Delay": 5000,
+        "Cancelable": "no",
+        "Target": "target",
+        "ConditionType": "always",
+        "ConditionValue": "",
+        "Val1": "",
+        "Val2": "",
+        "Val3": "",
+        "Val4": "",
+        "Val5": "",
+        "Emotion": 6,
+        "Chat": ""
+      }
+    ]
+  },
   "2884": {
     "id": 2884,
     "name": {
@@ -120931,16 +124439,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 27270,
-        "name": "超異小丑卡片",
-        "rate": "???",
-        "icon_url": "images/items/27270.gif",
-        "slotCount": 0,
-        "slot": "盾牌",
-        "enchantment_slots": "",
-        "card_prefix_name": "惡魔小丑的"
-      },
-      {
         "item_id": 1856,
         "name": "華麗演出拳套",
         "rate": "???",
@@ -120959,6 +124457,16 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 27270,
+        "name": "超異小丑卡片",
+        "rate": "???",
+        "icon_url": "images/items/27270.gif",
+        "slotCount": 0,
+        "slot": "盾牌",
+        "enchantment_slots": "",
+        "card_prefix_name": "惡魔小丑的"
       }
     ],
     "spawns": [
@@ -121020,16 +124528,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 27271,
-        "name": "伊莉莎白卡片",
-        "rate": "???",
-        "icon_url": "images/items/27271.gif",
-        "slotCount": 0,
-        "slot": "盾牌",
-        "enchantment_slots": "",
-        "card_prefix_name": "陰毒的"
-      },
-      {
         "item_id": 25506,
         "name": "可愛的掃把",
         "rate": "???",
@@ -121038,6 +124536,16 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 27271,
+        "name": "伊莉莎白卡片",
+        "rate": "???",
+        "icon_url": "images/items/27271.gif",
+        "slotCount": 0,
+        "slot": "盾牌",
+        "enchantment_slots": "",
+        "card_prefix_name": "陰毒的"
       }
     ],
     "spawns": [
@@ -121099,16 +124607,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 27272,
-        "name": "珍妮佛卡片",
-        "rate": "???",
-        "icon_url": "images/items/27272.gif",
-        "slotCount": 0,
-        "slot": "鎧甲",
-        "enchantment_slots": "",
-        "card_prefix_name": "毒死的"
-      },
-      {
         "item_id": 25507,
         "name": "絢麗的珊瑚",
         "rate": "???",
@@ -121117,6 +124615,16 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 27272,
+        "name": "珍妮佛卡片",
+        "rate": "???",
+        "icon_url": "images/items/27272.gif",
+        "slotCount": 0,
+        "slot": "鎧甲",
+        "enchantment_slots": "",
+        "card_prefix_name": "毒死的"
       }
     ],
     "spawns": [
@@ -121178,16 +124686,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 27273,
-        "name": "獸人將軍卡片",
-        "rate": "???",
-        "icon_url": "images/items/27273.gif",
-        "slotCount": 0,
-        "slot": "武器",
-        "enchantment_slots": "",
-        "card_prefix_name": "動物殺手的"
-      },
-      {
         "item_id": 25508,
         "name": "獸人將軍徽章",
         "rate": "???",
@@ -121196,6 +124694,16 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 27273,
+        "name": "獸人將軍卡片",
+        "rate": "???",
+        "icon_url": "images/items/27273.gif",
+        "slotCount": 0,
+        "slot": "武器",
+        "enchantment_slots": "",
+        "card_prefix_name": "動物殺手的"
       }
     ],
     "spawns": [
@@ -121257,16 +124765,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 27274,
-        "name": "吉克勞斯甲蟲卡片",
-        "rate": "???",
-        "icon_url": "images/items/27274.gif",
-        "slotCount": 0,
-        "slot": "鞋子",
-        "enchantment_slots": "",
-        "card_prefix_name": "瘋蟲的"
-      },
-      {
         "item_id": 25509,
         "name": "亮晶晶圓殼",
         "rate": "???",
@@ -121275,6 +124773,16 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 27274,
+        "name": "吉克勞斯甲蟲卡片",
+        "rate": "???",
+        "icon_url": "images/items/27274.gif",
+        "slotCount": 0,
+        "slot": "鞋子",
+        "enchantment_slots": "",
+        "card_prefix_name": "瘋蟲的"
       }
     ],
     "spawns": [
@@ -121336,16 +124844,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 1002736,
-        "name": "樂園紅包",
-        "rate": "???",
-        "icon_url": "images/items/1002736.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 103941,
         "name": "RO新年鞭炮",
         "rate": "???",
@@ -121354,2000 +124852,19 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002736,
+        "name": "樂園紅包",
+        "rate": "???",
+        "icon_url": "images/items/1002736.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
-    "spawns": [
-      {
-        "map_name": "alde_dun01",
-        "description": "鐘塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "alde_dun02",
-        "description": "鐘塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "alde_dun03",
-        "description": "鐘塔地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "alde_dun04",
-        "description": "鐘塔地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d01_a",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d01_b",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d01_z",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d02_a",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d02_b",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d02_z",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "anthell01",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "anthell02",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_an_d02",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_an_d02_z",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d01",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d01_z",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d02",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d02_z",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f03",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f03_z",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f10",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f10_z",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gl_chy",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gl_chy_z",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_maz_d03",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_maz_d03_z",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_moc_f17",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_moc_f17_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_d04",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_d04_z",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_f10",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_f10_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_prt_d04",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_prt_d04_z",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_sp_d05",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_sp_d05_z",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_d02",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_d02_z",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_f01",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_f01_z",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d01_a",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d01_b",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d01_z",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d02_a",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d02_b",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d02_z",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d03_a",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d03_b",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d03_z",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "beach_dun",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "beach_dun2",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "beach_dun3",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_f02_a",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_f02_b",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_f02_z",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild01",
-        "description": "巴不其卡森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild02",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild03",
-        "description": "基乃依沼澤地",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild04",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild06",
-        "description": "山特樂曼西區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild07",
-        "description": "發樂斯燈塔",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild08",
-        "description": "山特樂曼東區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild09",
-        "description": "山特樂曼南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d00_a",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d00_b",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d00_z",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d01_a",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d01_b",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d01_z",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d02_a",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d02_b",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d02_z",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_dun00",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_dun01",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_dun02",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f04_a",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f04_b",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f04_z",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f05_a",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f05_b",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f05_z",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f10_a",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f10_b",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f10_z",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f11_a",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f11_b",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f11_z",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild00",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild01",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild02",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild03",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild04",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild05",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild06",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild07",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild08",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild09",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild10",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild11",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c01_a",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c01_b",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c01_z",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c02_a",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c02_b",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c02_z",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_cas01",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_cas02",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chu_a",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chu_b",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chu_z",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_church",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chy_a",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chy_b",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chy_z",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chyard",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_d02_a",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_d02_b",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_d02_z",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_dun01",
-        "description": "地下洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_dun02",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_in01",
-        "description": "克雷斯特漢姆 室內",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_k01_a",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_k01_b",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_k01_z",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_knt01",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_knt02",
-        "description": "騎士團2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_pri_a",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_pri_b",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_pri_z",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_prison",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_prison1",
-        "description": "地下監獄2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew01",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew02",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew03",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew04",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_step",
-        "description": "樓梯迷宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "glast_01",
-        "description": "克雷斯特漢姆",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx1",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx2",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx3",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx4",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx5",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d00_a",
-        "description": "海盜地洞密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d00_b",
-        "description": "海盜地洞密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d00_z",
-        "description": "海盜地洞密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d01_a",
-        "description": "海盜地洞密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d01_b",
-        "description": "海盜地洞密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d01_z",
-        "description": "海盜地洞密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d02_a",
-        "description": "海盜地洞密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d02_b",
-        "description": "海盜地洞密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d02_z",
-        "description": "海盜地洞密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d03_a",
-        "description": "海盜地洞密穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d03_b",
-        "description": "海盜地洞密穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d03_z",
-        "description": "海盜地洞密穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d04_a",
-        "description": "海盜地洞密穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d04_b",
-        "description": "海盜地洞密穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d04_z",
-        "description": "海盜地洞密穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun00",
-        "description": "海底洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun01",
-        "description": "海底洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun02",
-        "description": "海底洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun03",
-        "description": "海底洞穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun04",
-        "description": "海底洞穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d01_a",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d01_b",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d01_z",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d03_a",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d03_b",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d03_z",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d01_a",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d01_b",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d01_z",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d02_a",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d02_b",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d02_z",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d03_a",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d03_b",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d03_z",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_dun01",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_dun02",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_dun03",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_01",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_02",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_03",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_04",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_05",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_06",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_07",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_08",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_09",
-        "description": "妙勒尼山脈南邊山麓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_10",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_11",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_12",
-        "description": "妙勒尼山脈北邊山麓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f12_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f12_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f12_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f16_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f16_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f16_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f18_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f18_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f18_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild01",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild02",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild03",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild07",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild11",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild12",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild13",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild16",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild17",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild18",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild19",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd01",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd02",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd03",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd05",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd06",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f01_a",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f01_b",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f01_z",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f02_a",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f02_b",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f02_z",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_fild01",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_fild02",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "niflheim",
-        "description": "亡者國都尼芙菲姆",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d01_a",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d01_b",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d01_z",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d02_a",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d02_b",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d02_z",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orcsdun01",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orcsdun02",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d00_a",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d00_b",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d00_z",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d01_a",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d01_b",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d01_z",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d02_a",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d02_b",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d02_z",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d03_a",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d03_b",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d03_z",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d04_a",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d04_b",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d04_z",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun00",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun01",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun02",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun03",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun04",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f01_a",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f01_b",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f01_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f03_a",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f03_b",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f03_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f04_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f04_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f04_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f08_a",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f08_b",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f08_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild01",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild02",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild03",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild04",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild06",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild07",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild08",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild09",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild10",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d01_a",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d01_b",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d01_z",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d02_a",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d02_b",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d02_z",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d03_a",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d03_b",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d03_z",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d04_a",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d04_b",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d04_z",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f02_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f02_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f02_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f07_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f07_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f07_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f08_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f08_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f08_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f11_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f11_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f11_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild00",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild01",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild02",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild03",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild04",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild05",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild06",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild07",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild08",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild09",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild10",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild11",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_maze01",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_maze02",
-        "description": "迷宮森林2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_maze03",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb1",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb2",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb3",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb4",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d01_a",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d01_b",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d01_z",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d02_a",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d02_b",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d02_z",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d03_a",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d03_b",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d03_z",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d04_a",
-        "description": "金字塔4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d04_b",
-        "description": "金字塔4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d04_z",
-        "description": "金字塔4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d05_a",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d05_b",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d05_z",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d06_a",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d06_b",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d06_z",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d01_a",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d01_b",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d01_z",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d02_a",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d02_b",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d02_z",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d03_a",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d03_b",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d03_z",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d04_a",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d04_b",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d04_z",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d05_a",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d05_b",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d05_z",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d01_a",
-        "description": "鐘塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d01_b",
-        "description": "鐘塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d01_z",
-        "description": "鐘塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d02_a",
-        "description": "鐘塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d02_b",
-        "description": "鐘塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d02_z",
-        "description": "鐘塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d03_a",
-        "description": "鐘塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d03_b",
-        "description": "鐘塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d03_z",
-        "description": "鐘塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d01_a",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d01_b",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d01_z",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d02_a",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d02_b",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d02_z",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure01",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure02",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure_n1",
-        "description": "依斯魯得島失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure_n2",
-        "description": "依斯魯得島失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d01_a",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d01_b",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d01_z",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d02_a",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d02_b",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d02_z",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d03_a",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d03_b",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d03_z",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d04_a",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d04_b",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d04_z",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun01",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun02",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun03",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun04",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d01_a",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d01_b",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d01_z",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d02_a",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d02_b",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d02_z",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_f01_a",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_f01_b",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_f01_z",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xmas_dun01",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xmas_dun02",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xmas_fild01",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      }
-    ],
+    "spawns": [],
     "skills": []
   },
   "25253": {
@@ -123400,16 +124917,6 @@
     "special_status": [],
     "drops": [
       {
-        "item_id": 1002736,
-        "name": "樂園紅包",
-        "rate": "???",
-        "icon_url": "images/items/1002736.gif",
-        "slotCount": 0,
-        "slot": "-",
-        "enchantment_slots": "",
-        "card_prefix_name": ""
-      },
-      {
         "item_id": 103941,
         "name": "RO新年鞭炮",
         "rate": "???",
@@ -123418,2000 +124925,19 @@
         "slot": "-",
         "enchantment_slots": "",
         "card_prefix_name": ""
+      },
+      {
+        "item_id": 1002736,
+        "name": "樂園紅包",
+        "rate": "???",
+        "icon_url": "images/items/1002736.gif",
+        "slotCount": 0,
+        "slot": "-",
+        "enchantment_slots": "",
+        "card_prefix_name": ""
       }
     ],
-    "spawns": [
-      {
-        "map_name": "alde_dun01",
-        "description": "鐘塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "alde_dun02",
-        "description": "鐘塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "alde_dun03",
-        "description": "鐘塔地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "alde_dun04",
-        "description": "鐘塔地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d01_a",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d01_b",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d01_z",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d02_a",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d02_b",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "an_d02_z",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "anthell01",
-        "description": "螞蟻地獄密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "anthell02",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_an_d02",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_an_d02_z",
-        "description": "螞蟻地獄密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d01",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d01_z",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d02",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_d02_z",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f03",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f03_z",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f10",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gef_f10_z",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gl_chy",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_gl_chy_z",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_maz_d03",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_maz_d03_z",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_moc_f17",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_moc_f17_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_d04",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_d04_z",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_f10",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_pay_f10_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_prt_d04",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_prt_d04_z",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_sp_d05",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_sp_d05_z",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_d02",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_d02_z",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_f01",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "b_xma_f01_z",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d01_a",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d01_b",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d01_z",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d02_a",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d02_b",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d02_z",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d03_a",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d03_b",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "bea_d03_z",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "beach_dun",
-        "description": "西邊洞穴加露",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "beach_dun2",
-        "description": "北邊洞穴盧安達",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "beach_dun3",
-        "description": "東邊洞穴馬吾",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_f02_a",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_f02_b",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_f02_z",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild01",
-        "description": "巴不其卡森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild02",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild03",
-        "description": "基乃依沼澤地",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild04",
-        "description": "克克魔海邊",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild06",
-        "description": "山特樂曼西區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild07",
-        "description": "發樂斯燈塔",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild08",
-        "description": "山特樂曼東區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "cmd_fild09",
-        "description": "山特樂曼南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d00_a",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d00_b",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d00_z",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d01_a",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d01_b",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d01_z",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d02_a",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d02_b",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_d02_z",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_dun00",
-        "description": "吉芬地下密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_dun01",
-        "description": "吉芬地下密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_dun02",
-        "description": "吉芬地下密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f04_a",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f04_b",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f04_z",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f05_a",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f05_b",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f05_z",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f10_a",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f10_b",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f10_z",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f11_a",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f11_b",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_f11_z",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild00",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild01",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild02",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild03",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild04",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild05",
-        "description": "冷豔舞姬村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild06",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild07",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild08",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild09",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild10",
-        "description": "獸人村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gef_fild11",
-        "description": "吉芬區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c01_a",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c01_b",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c01_z",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c02_a",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c02_b",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_c02_z",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_cas01",
-        "description": "克雷斯特漢姆古城1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_cas02",
-        "description": "克雷斯特漢姆古城2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chu_a",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chu_b",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chu_z",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_church",
-        "description": "修道院",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chy_a",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chy_b",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chy_z",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_chyard",
-        "description": "地下公墓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_d02_a",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_d02_b",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_d02_z",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_dun01",
-        "description": "地下洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_dun02",
-        "description": "地下洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_in01",
-        "description": "克雷斯特漢姆 室內",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_k01_a",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_k01_b",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_k01_z",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_knt01",
-        "description": "騎士團1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_knt02",
-        "description": "騎士團2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_pri_a",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_pri_b",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_pri_z",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_prison",
-        "description": "地下監獄1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_prison1",
-        "description": "地下監獄2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew01",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew02",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew03",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_sew04",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "gl_step",
-        "description": "樓梯迷宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "glast_01",
-        "description": "克雷斯特漢姆",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx1",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx2",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx3",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx4",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "in_sphinx5",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d00_a",
-        "description": "海盜地洞密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d00_b",
-        "description": "海盜地洞密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d00_z",
-        "description": "海盜地洞密穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d01_a",
-        "description": "海盜地洞密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d01_b",
-        "description": "海盜地洞密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d01_z",
-        "description": "海盜地洞密穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d02_a",
-        "description": "海盜地洞密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d02_b",
-        "description": "海盜地洞密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d02_z",
-        "description": "海盜地洞密穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d03_a",
-        "description": "海盜地洞密穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d03_b",
-        "description": "海盜地洞密穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d03_z",
-        "description": "海盜地洞密穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d04_a",
-        "description": "海盜地洞密穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d04_b",
-        "description": "海盜地洞密穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_d04_z",
-        "description": "海盜地洞密穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun00",
-        "description": "海底洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun01",
-        "description": "海底洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun02",
-        "description": "海底洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun03",
-        "description": "海底洞穴4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "iz_dun04",
-        "description": "海底洞穴5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d01_a",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d01_b",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d01_z",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d03_a",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d03_b",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "maz_d03_z",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d01_a",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d01_b",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d01_z",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d02_a",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d02_b",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d02_z",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d03_a",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d03_b",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_d03_z",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_dun01",
-        "description": "妙勒尼廢棄礦場1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_dun02",
-        "description": "妙勒尼 廢棄礦場2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjo_dun03",
-        "description": "妙勒尼廢棄礦場3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_01",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_02",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_03",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_04",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_05",
-        "description": "妙勒尼山脈北區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_06",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_07",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_08",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_09",
-        "description": "妙勒尼山脈南邊山麓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_10",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_11",
-        "description": "妙勒尼山脈南區",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "mjolnir_12",
-        "description": "妙勒尼山脈北邊山麓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f12_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f12_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f12_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f16_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f16_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f16_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f18_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f18_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_f18_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild01",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild02",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild03",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild07",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild11",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild12",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild13",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild16",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild17",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild18",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_fild19",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd01",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd02",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd03",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd05",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "moc_pryd06",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f01_a",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f01_b",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f01_z",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f02_a",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f02_b",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_f02_z",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_fild01",
-        "description": "尼芙菲姆偏僻村落斯凱領頓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "nif_fild02",
-        "description": "尼芙菲姆鬼峽谷",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "niflheim",
-        "description": "亡者國都尼芙菲姆",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d01_a",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d01_b",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d01_z",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d02_a",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d02_b",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orc_d02_z",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orcsdun01",
-        "description": "獸人地下洞窟1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "orcsdun02",
-        "description": "獸人地下洞窟2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d00_a",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d00_b",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d00_z",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d01_a",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d01_b",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d01_z",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d02_a",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d02_b",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d02_z",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d03_a",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d03_b",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d03_z",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d04_a",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d04_b",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_d04_z",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun00",
-        "description": "斐揚洞穴1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun01",
-        "description": "斐揚洞穴2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun02",
-        "description": "斐揚洞穴3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun03",
-        "description": "斐揚洞穴4樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_dun04",
-        "description": "斐揚洞穴5樓-廢村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f01_a",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f01_b",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f01_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f03_a",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f03_b",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f03_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f04_a",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f04_b",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f04_z",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f08_a",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f08_b",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_f08_z",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild01",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild02",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild03",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild04",
-        "description": "蘇克拉特沙漠",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild06",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild07",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild08",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild09",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pay_fild10",
-        "description": "斐揚森林",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d01_a",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d01_b",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d01_z",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d02_a",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d02_b",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d02_z",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d03_a",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d03_b",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d03_z",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d04_a",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d04_b",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_d04_z",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f02_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f02_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f02_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f07_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f07_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f07_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f08_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f08_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f08_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f11_a",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f11_b",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_f11_z",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild00",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild01",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild02",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild03",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild04",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild05",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild06",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild07",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild08",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild09",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild10",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_fild11",
-        "description": "普隆德拉區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_maze01",
-        "description": "迷宮森林1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_maze02",
-        "description": "迷宮森林2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_maze03",
-        "description": "迷宮森林3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb1",
-        "description": "地下水道1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb2",
-        "description": "地下水道2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb3",
-        "description": "地下水道3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "prt_sewb4",
-        "description": "地下水道4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d01_a",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d01_b",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d01_z",
-        "description": "金字塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d02_a",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d02_b",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d02_z",
-        "description": "金字塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d03_a",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d03_b",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d03_z",
-        "description": "金字塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d04_a",
-        "description": "金字塔4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d04_b",
-        "description": "金字塔4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d04_z",
-        "description": "金字塔4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d05_a",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d05_b",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d05_z",
-        "description": "金字塔地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d06_a",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d06_b",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "pry_d06_z",
-        "description": "金字塔地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d01_a",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d01_b",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d01_z",
-        "description": "人面獅身像地下1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d02_a",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d02_b",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d02_z",
-        "description": "人面獅身像地下2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d03_a",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d03_b",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d03_z",
-        "description": "人面獅身像地下3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d04_a",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d04_b",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d04_z",
-        "description": "人面獅身像地下4樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d05_a",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d05_b",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "sp_d05_z",
-        "description": "人面獅身像地下5樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d01_a",
-        "description": "鐘塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d01_b",
-        "description": "鐘塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d01_z",
-        "description": "鐘塔1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d02_a",
-        "description": "鐘塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d02_b",
-        "description": "鐘塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d02_z",
-        "description": "鐘塔2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d03_a",
-        "description": "鐘塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d03_b",
-        "description": "鐘塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tow_d03_z",
-        "description": "鐘塔3樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d01_a",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d01_b",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d01_z",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d02_a",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d02_b",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tre_d02_z",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure01",
-        "description": "失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure02",
-        "description": "失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure_n1",
-        "description": "依斯魯得島失事輪1樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "treasure_n2",
-        "description": "依斯魯得島失事輪2樓",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d01_a",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d01_b",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d01_z",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d02_a",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d02_b",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d02_z",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d03_a",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d03_b",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d03_z",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d04_a",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d04_b",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_d04_z",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun01",
-        "description": "龜島",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun02",
-        "description": "龜島密穴",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun03",
-        "description": "良龜村",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "tur_dun04",
-        "description": "舊良宮",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d01_a",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d01_b",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d01_z",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d02_a",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d02_b",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_d02_z",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_f01_a",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_f01_b",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xma_f01_z",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xmas_dun01",
-        "description": "玩具工廠倉庫",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xmas_dun02",
-        "description": "玩具分類場",
-        "spawn_info": ""
-      },
-      {
-        "map_name": "xmas_fild01",
-        "description": "薑餅城區域",
-        "spawn_info": ""
-      }
-    ],
+    "spawns": [],
     "skills": []
   }
 }
