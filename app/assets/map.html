@@ -1,127 +1,148 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自定義行程規劃工具</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>聖母健康農莊公告</title>
     <style>
-        body { background-color: #f1f5f9; color: #1e293b; font-family: sans-serif; }
-        .input-num { width: 60px; text-align: center; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px; }
-        .input-text { border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px; width: 100%; }
-
-        @media print {
-            .no-print { display: none !important; }
-            body { background: white; padding: 0; }
-            .container { max-width: 100% !important; box-shadow: none !important; border: none !important; }
-            input { border: none !important; background: transparent !important; pointer-events: none; }
-            table { border-collapse: collapse; }
-            th, td { border: 1px solid #000 !important; }
+        :root {
+            --main-red: #b32d2e;
+            --text-grey: #333;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border: 1px solid #ddd;
+            position: relative;
+            text-align: center;
+            padding-bottom: 250px; /* 為下方插畫預留空間 */
+            overflow: hidden;
+        }
+        /* 上方標題區 */
+        .header {
+            margin-top: 40px;
+        }
+        .farm-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--text-grey);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .sakura { color: #ffb7c5; font-size: 24px; }
+        .main-title {
+            font-size: 42px;
+            color: var(--main-red);
+            font-weight: 900;
+            margin: 15px 0;
+            letter-spacing: 2px;
+        }
+        /* 內文資訊區 */
+        .content {
+            padding: 0 40px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-grey);
+        }
+        .date-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .restaurant-section {
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--main-red);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .highlight {
+            color: var(--main-red);
+            font-weight: bold;
+        }
+        .contact-section {
+            margin-top: 25px;
+        }
+        .phone-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            font-weight: bold;
+        }
+        /* 下方插畫模擬區 (使用圖片或顏色塊模擬) */
+        .footer-illustration {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 230px;
+            background: linear-gradient(to bottom, transparent 0%, #a8d5ba 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 20px;
+        }
+        .kids-placeholder {
+            font-size: 60px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body>
 
-<div class="content"><div class="title weapon-category-title">武器種類</div><div class="column-table"><div class="column"><div class="cell label"><img src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/heraldic-flag.png" class="label-img weapon"><img src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/kitsune.png" class="label-img size"></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/bare-handed.png" alt="RO 武器體型修正表中「空手」武器的圖示"><div data-v-8cc571a6="" class="img-text">空手</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/dagger.png" alt="RO 武器體型修正表中「短劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">短劍</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/sword.png" alt="RO 武器體型修正表中「單手劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">單手劍</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/two-hand-sword.png" alt="RO 武器體型修正表中「雙手劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">雙手劍</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/spear.png" alt="RO 武器體型修正表中「矛(單手/雙手)」武器的圖示"><div data-v-8cc571a6="" class="img-text">矛</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/spear-peco-peco.png" alt="RO 武器體型修正表中「矛(騎乘狀態)」武器的圖示"><div data-v-8cc571a6="" class="img-text">矛(騎乘狀態)</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/axe.png" alt="RO 武器體型修正表中「斧(單手/雙手)」武器的圖示"><div data-v-8cc571a6="" class="img-text">斧</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/mace.png" alt="RO 武器體型修正表中「鈍器」武器的圖示"><div data-v-8cc571a6="" class="img-text">鈍器</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/rod.png" alt="RO 武器體型修正表中「手杖」武器的圖示"><div data-v-8cc571a6="" class="img-text">手杖</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/bow.png" alt="RO 武器體型修正表中「弓」武器的圖示"><div data-v-8cc571a6="" class="img-text">弓</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/katar.png" alt="RO 武器體型修正表中「拳刃」武器的圖示"><div data-v-8cc571a6="" class="img-text">拳刃</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/book.png" alt="RO 武器體型修正表中「書」武器的圖示"><div data-v-8cc571a6="" class="img-text">書</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/knuckle.png" alt="RO 武器體型修正表中「拳套」武器的圖示"><div data-v-8cc571a6="" class="img-text">拳套</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/instrument.png" alt="RO 武器體型修正表中「樂器」武器的圖示"><div data-v-8cc571a6="" class="img-text">樂器</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/whip.png" alt="RO 武器體型修正表中「鞭子」武器的圖示"><div data-v-8cc571a6="" class="img-text">鞭子</div></div><!----></div></div><div class="cell header"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/tables/weaponSizeModifier/human-shuriken.png" alt="RO 武器體型修正表中「風魔手裏劍」武器的圖示"><div data-v-8cc571a6="" class="img-text">風魔手裏劍</div></div><!----></div></div></div><div class="column"><div class="cell label"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/ui/size-small.png" alt="RO 武器體型表中小型體型的圖示"><div data-v-8cc571a6="" class="img-text">小型</div></div><!----></div></div><div class="column-block"><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell red">50%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div></div></div><div class="column"><div class="cell label"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/ui/size-medium.png" alt="RO 武器體型表中中型體型的圖示"><div data-v-8cc571a6="" class="img-text">中型</div></div><!----></div></div><div class="column-block"><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div></div></div><div class="column"><div class="cell label"><div data-v-8cc571a6="" class="filter-button is-text-shown"><div data-v-8cc571a6="" class="content"><img data-v-8cc571a6="" src="https://assets.twroz.wiki/images/ui/size-large.png" alt="RO 武器體型表中大型體型的圖示"><div data-v-8cc571a6="" class="img-text">大型</div></div><!----></div></div><div class="column-block"><div class="cell green">100%</div><div class="cell red">50%</div><div class="cell brown">75%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell green">100%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell red">50%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell brown">75%</div><div class="cell green">100%</div></div></div></div></div>
+<div class="container">
+    <div class="header">
+        <div class="farm-name"><span class="sakura">🌸</span> 聖母健康農莊 <span class="sakura">🌸</span></div>
+        <div class="main-title">春節休園公告</div>
+    </div>
 
-<script>
-    // 預設地點資料
-    let schedule = [
-        { name: "教會", travel: 0, stay: 30 },
-        { name: "醫院", travel: 6, stay: 15 },
-        { name: "張豪傑", travel: 4, stay: 5 },
-        { name: "陳松春", travel: 13, stay: 30 },
-        { name: "施又維", travel: 10, stay: 30 },
-        { name: "林時君", travel: 1, stay: 30 },
-        { name: "駱雲華", travel: 1, stay: 30 },
-        { name: "吳婉君", travel: 5, stay: 30 },
-        { name: "教會", travel: 7, stay: 0 },
-    ];
+    <div class="content">
+        <div class="date-box">
+            <span>▣</span>
+            <span>休園日期：2/14 (六) － 2/22 (日)</span>
+        </div>
 
-    function calculate() {
-        const startTimeVal = document.getElementById('startTime').value;
-        const [h, m] = startTimeVal.split(':').map(Number);
-        let current = new Date();
-        current.setHours(h, m, 0);
+        <div class="restaurant-section">
+            <div class="section-title">🍎 田園餐廳 ‧ 特別服務方案</div>
+            <div style="margin-left: 30px;">
+                休園期間，餐廳採<span class="highlight">預約制</span>開放。<br>
+                <span class="highlight">定位條件：</span>團體訂位 <span class="highlight">40人以上 (午晚餐均可)</span>。
+            </div>
+        </div>
 
-        const tbody = document.getElementById('schedule-body');
-        const emptyState = document.getElementById('empty-state');
+        <div class="contact-section">
+            <div style="display: flex; gap: 10px; font-weight: bold;">
+                <span>📞</span>
+                <div>
+                    預約專線<br>
+                    <a href="tel:089381382" class="phone-link">089-381382 #889</a>
+                    <a href="tel:0963816271" class="phone-link">或打 0963-816271</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        if (schedule.length === 0) {
-            tbody.innerHTML = '';
-            emptyState.classList.remove('hidden');
-            return;
-        } else {
-            emptyState.classList.add('hidden');
-        }
+    <div class="footer-illustration">
+        <div class="kids-placeholder">🧑‍🤝‍🧑🎨🐾</div>
+        <div style="color: #2e5a1c; font-weight: bold;">🧧 祝大家新春愉快 平安健康 🧧</div>
+    </div>
+</div>
 
-        tbody.innerHTML = '';
-
-        schedule.forEach((item, i) => {
-            // 時間累加：從第二站開始計算 (抵達時間 = 上一站離開時間 + 這一站路程)
-            if (i > 0) {
-                const prevStay = schedule[i-1].stay || 0;
-                const thisTravel = item.travel || 0;
-                current.setMinutes(current.getMinutes() + prevStay + thisTravel);
-            }
-
-            const timeStr = current.getHours().toString().padStart(2, '0') + ":" +
-                current.getMinutes().toString().padStart(2, '0');
-
-            const row = document.createElement('tr');
-            row.className = "border-b border-slate-100 hover:bg-slate-50 transition-colors";
-            row.innerHTML = `
-                    <td class="py-4 text-center font-bold text-xl text-blue-600">
-                        ${timeStr}
-                    </td>
-                    <td class="px-4 py-4">
-                        <input type="text" value="${item.name}" oninput="updateData(${i}, 'name', this.value)" class="input-text font-bold text-slate-800 text-lg no-print">
-                        <span class="hidden print:inline font-bold text-lg">${item.name}</span>
-                    </td>
-                    <td class="py-4 text-center">
-                        ${i === 0 ? '<span class="text-slate-300">-</span>' : `
-                            <input type="number" value="${item.travel}" oninput="updateData(${i}, 'travel', this.value)" class="input-num no-print">
-                            <span class="hidden print:inline">${item.travel} 分</span>
-                        `}
-                    </td>
-                    <td class="py-4 text-center">
-                        <input type="number" value="${item.stay}" oninput="updateData(${i}, 'stay', this.value)" class="input-num no-print">
-                        <span class="hidden print:inline">${item.stay} 分</span>
-                    </td>
-                    <td class="py-4 text-center no-print">
-                        <button onclick="removeLocation(${i})" class="text-red-400 hover:text-red-600">🗑️</button>
-                    </td>
-                `;
-            tbody.appendChild(row);
-        });
-    }
-
-    // 更新資料並重新計算
-    function updateData(index, field, value) {
-        if (field === 'name') {
-            schedule[index].name = value;
-        } else {
-            schedule[index][field] = parseInt(value) || 0;
-            calculate(); // 分鐘數改變才需要重新推算時間
-        }
-    }
-
-    // 新增地點
-    function addLocation() {
-        schedule.push({ name: "新地點", travel: 10, stay: 30 });
-        calculate();
-    }
-
-    // 移除地點
-    function removeLocation(index) {
-        if (confirm('確定要刪除此行程點嗎？')) {
-            schedule.splice(index, 1);
-            calculate();
-        }
-    }
-
-    // 初始執行
-    calculate();
-</script>
 </body>
 </html>
