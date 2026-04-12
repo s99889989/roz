@@ -99,6 +99,10 @@
                   <NuxtLink to="/profession/AdvancedSecondJobOutfit" href="" class="block px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">
                     進階二轉服飾</NuxtLink>
                 </li>
+<!--                <li>-->
+<!--                  <NuxtLink to="/profession/skilltree" href="" class="block px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">-->
+<!--                    技能樹</NuxtLink>-->
+<!--                </li>-->
               </ul>
             </div>
           </li>
