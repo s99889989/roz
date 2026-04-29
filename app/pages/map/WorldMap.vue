@@ -1,85 +1,133 @@
 <script setup>
-import { ref, reactive, computed } from 'vue'
-import {monstersSearch} from "~/assets/data/monstersSearch.js";
-import {worldMapData} from "~/assets/data/worldMapData.js";
-/* 地圖 DOM */
+import { ref, reactive, computed, onMounted } from 'vue'
+import { worldMapData } from '~/assets/data/worldMapData.js'
+
+/* ── 地圖 DOM ── */
 const mapRef = ref(null)
 
-/* Tooltip 狀態 */
+/* ── 怪物資料（從 JSON fetch）── */
+const monstersDB = ref({})   // key = monster id
+// 以 map_name 為 key，value = 出現在該地圖的怪物清單
+// { "prt_fild08": [{ id, count, name, level, element, size, race, img }, ...] }
+const mapMonsters = ref({})
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/data/monsters_display_index.json')
+    if (!res.ok) throw new Error('載入失敗')
+    const data = await res.json()
+    monstersDB.value = data
+
+    // 建立 mapMonsters 索引
+    const index = {}
+    for (const m of Object.values(data)) {
+      if (!Array.isArray(m.spawns)) continue
+      for (const spawn of m.spawns) {
+        const mapName = spawn.map_name
+        if (!mapName) continue
+        if (!index[mapName]) index[mapName] = []
+        index[mapName].push({
+          id: m.id,
+          count: spawn.amount ?? spawn.count ?? '?',
+          name: m.name?.zh_tw ?? m.name?.en ?? String(m.id),
+          level: m.basic_info?.level ?? '?',
+          element: `${m.basic_info?.element?.type ?? ''}${m.basic_info?.element?.level ?? ''}`,
+          size: m.basic_info?.size ?? '?',
+          race: m.basic_info?.race ?? '?',
+          img: `/images/monsters/${m.id}.gif`,
+        })
+      }
+    }
+    // 依等級排序
+    for (const k of Object.keys(index)) {
+      index[k].sort((a, b) => (a.level ?? 0) - (b.level ?? 0))
+    }
+    mapMonsters.value = index
+  } catch (e) {
+    console.error('worldmap monster load error:', e)
+  }
+})
+
+/* ── 熱區資料 ── */
+const areas = ref(worldMapData)
+
+/* ── 地圖縮放比例（圖片實際顯示寬 vs 設計寬 870px）── */
+const mapNaturalW = 870  // worldMapData 座標基準寬度
+
+// 取得目前地圖顯示寬度，用於動態縮放 getStyle
+const mapDisplayW = ref(870)
+const updateMapW = () => {
+  if (mapRef.value) mapDisplayW.value = mapRef.value.offsetWidth
+}
+onMounted(() => {
+  updateMapW()
+  window.addEventListener('resize', updateMapW)
+})
+import { onBeforeUnmount } from 'vue'
+onBeforeUnmount(() => window.removeEventListener('resize', updateMapW))
+
+const scale = computed(() => mapDisplayW.value / mapNaturalW)
+
+function getStyle(area) {
+  const s = scale.value
+  return {
+    left:   (area.x * s) + 'px',
+    top:    (area.y * s) + 'px',
+    width:  (area.w * s) + 'px',
+    height: (area.h * s) + 'px',
+  }
+}
+
+/* ── Tooltip（點擊切換）── */
 const tooltip = reactive({
   visible: false,
   x: 0,
   y: 0,
-  data: {}
+  area: null,
 })
-/* 熱區資料 */
-const areas = ref(worldMapData)
-const monsters = ref(monstersSearch)
-/* 計算 Tooltip 樣式 */
-const tooltipStyle = computed(() => ({
-  left: tooltip.x + 'px',
-  top: tooltip.y + 'px'
-}))
 
-/* 區塊樣式 */
-function getStyle(area) {
-  return {
-    // left: area.x + '%',
-    // top: area.y + '%',
-    // width: area.w + '%',
-    // height: area.h + '%'
-    left: (area.x * 1.151) + 'px',
-    top: (area.y * 1.1) +  'px',
-    width: area.w + 'px',
-    height: area.h + 'px',
-  }
-}
+const tooltipStyle = computed(() => {
+  if (!mapRef.value) return {}
+  const mapW = mapRef.value.offsetWidth
+  const mapH = mapRef.value.offsetHeight
+  // 防止超出右邊或下方
+  const ttW = 320
+  const ttH = 300
+  let x = tooltip.x + 14
+  let y = tooltip.y + 14
+  if (x + ttW > mapW) x = tooltip.x - ttW - 4
+  if (y + ttH > mapH) y = tooltip.y - ttH - 4
+  return { left: x + 'px', top: y + 'px' }
+})
 
-const displayTooltip = (e, area) => {
-
-  if(tooltip.data === area){
+function onAreaClick(e, area) {
+  e.stopPropagation()
+  if (tooltip.area === area && tooltip.visible) {
     tooltip.visible = false
-    tooltip.data = {}
+    tooltip.area = null
     return
   }
-  tooltip.visible = true
-  tooltip.data = area
-
   const rect = mapRef.value.getBoundingClientRect()
-  tooltip.x = e.clientX - rect.left + 15
-  tooltip.y = e.clientY - rect.top + 15
-  // tooltip.x = e.clientX + 15
-  // tooltip.y = e.clientY - 60
-}
-
-const onMapClick = (e) => {
-  if (e.target.classList.contains('tooltip-box')) {
-    return
-  }
-  if (!e.target.classList.contains('map-area')) {
-    tooltip.visible = false
-    tooltip.data = {}
-  }
-}
-const getMonster = (id) => {
-  return monsters.value[id]
-}
-const openMonster = (id) => {
-  window.open(`/monster/monster`, import.meta.url, '_blank') // 開新分頁
-}
-/* 顯示 Tooltip */
-function showTooltip(e, area) {
+  tooltip.x = e.clientX - rect.left
+  tooltip.y = e.clientY - rect.top
+  tooltip.area = area
   tooltip.visible = true
-  tooltip.data = area
-
-  const rect = mapRef.value.getBoundingClientRect()
-  tooltip.x = e.clientX - rect.left + 15
-  tooltip.y = e.clientY - rect.top + 15
 }
 
-/* 隱藏 Tooltip */
-function hideTooltip() {
+function onMapClick() {
   tooltip.visible = false
+  tooltip.area = null
+}
+
+/* ── 當前地圖的怪物清單 ── */
+const currentMonsters = computed(() => {
+  if (!tooltip.area) return []
+  return mapMonsters.value[tooltip.area.code] ?? []
+})
+
+/* ── 地圖名稱：若 worldMapData 沒填 name，就顯示 code ── */
+function areaLabel(area) {
+  return area.name || area.code
 }
 </script>
 
@@ -88,85 +136,82 @@ function hideTooltip() {
     <div class="map-card">
 
       <h2 class="main-title">世界地圖</h2>
+
       <div class="map-container" ref="mapRef" @click="onMapClick">
         <img
             src="/images/map_midgard.jpg"
             class="world-map"
             alt="世界地圖"
+            @load="updateMapW"
         />
 
         <!-- 熱區 -->
-<!--        <div-->
-<!--            v-for="(area, i) in areas"-->
-<!--            :key="i"-->
-<!--            class="map-area"-->
-<!--            :style="getStyle(area)"-->
-<!--            @click="displayTooltip($event, area)"-->
-<!--        ></div>-->
-
         <div
             v-for="(area, i) in areas"
             :key="i"
             class="map-area"
             :style="getStyle(area)"
-            @mouseenter="showTooltip($event, area)"
-            @mouseleave="hideTooltip"
+            :class="{ active: tooltip.area === area }"
+            @click.stop="onAreaClick($event, area)"
         >
-          <div class="p-0 m-0">
-            <span style="font-size: 8px; color: #ffffff" class="font-bold">{{area.code}}</span>
-          </div>
-
+          <span class="area-code">{{ area.code }}</span>
         </div>
 
-        <!-- 提示框 -->
-        <div
-            v-if="tooltip.visible"
-            class="tooltip-box"
-            :style="tooltipStyle"
-            @click.stop
-        >
-          <div class="flex">
-            <div class="tooltip-title">{{ tooltip.data.name }}</div>
-            <div class="ms-1 tooltip-text">({{ tooltip.data.code }})</div>
+        <!-- Tooltip -->
+        <Transition name="fade">
+          <div
+              v-if="tooltip.visible && tooltip.area"
+              class="tooltip-box"
+              :style="tooltipStyle"
+              @click.stop
+          >
+            <!-- 標題列 -->
+            <div class="tooltip-header">
+              <span class="tooltip-title">{{ areaLabel(tooltip.area) }}</span>
+              <span class="tooltip-code">({{ tooltip.area.code }})</span>
+              <button class="tooltip-close" @click="onMapClick">✕</button>
+            </div>
+
+            <!-- 無怪物 -->
+            <div v-if="currentMonsters.length === 0" class="tooltip-empty">
+              此地圖無怪物資料
+            </div>
+
+            <!-- 怪物表格 -->
+            <div v-else class="tooltip-scroll">
+              <table class="tooltip-table">
+                <thead>
+                <tr>
+                  <th></th>
+                  <th>魔物</th>
+                  <th>等級</th>
+                  <th>數量</th>
+                  <th>屬性</th>
+                  <th>體型</th>
+                  <th>種族</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="m in currentMonsters" :key="m.id">
+                  <td><img :src="m.img" :alt="m.name" class="mob-img"></td>
+                  <td class="mob-name">{{ m.name }}</td>
+                  <td>{{ m.level }}</td>
+                  <td>{{ m.count }}</td>
+                  <td>{{ m.element }}</td>
+                  <td>{{ m.size }}</td>
+                  <td>{{ m.race }}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
           </div>
-
-          <!-- 表格 -->
-          <table v-if="tooltip.data.monsters.length > 0" class="tooltip-table">
-            <thead>
-            <tr>
-              <th>等級</th>
-              <th>魔物</th>
-              <th>數量</th>
-              <th>屬性</th>
-              <th>體型</th>
-              <th>種族</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr v-for="m in tooltip.data.monsters" :key="m.id">
-              <td>{{ getMonster(m.id).basic_info.level }}</td>
-              <td class="mob-name">
-                {{ getMonster(m.id).name.zh_tw }}
-              </td>
-              <td>{{ m.count }}</td>
-              <td>
-                {{ getMonster(m.id).basic_info.element.type }}
-                {{ getMonster(m.id).basic_info.element.level }}
-              </td>
-              <td>{{ getMonster(m.id).basic_info.size }}</td>
-              <td>{{ getMonster(m.id).basic_info.race }}</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+        </Transition>
       </div>
 
     </div>
   </div>
 </template>
-
-
 
 <style scoped>
 .map-wrapper {
@@ -179,14 +224,10 @@ function hideTooltip() {
   background: #3a2c1f;
   border-radius: 12px;
   padding: 30px;
-  /* 修改：移除 margin: auto，改為靠左 */
-  margin: 0;
   max-width: 1000px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   color: #fff8e1;
   font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
-
-  /* 新增：確保內部區塊也靠左排列 */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -194,23 +235,20 @@ function hideTooltip() {
 
 .main-title {
   color: #c9a063;
-  /* 修改：從 center 改為 left */
   text-align: left;
   font-size: 2.2rem;
   border-bottom: 3px double #c9a063;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  /* 新增：讓標題寬度隨文字內容延伸，或設為 100% */
   width: 100%;
 }
 
 .map-container {
-
   position: relative;
   width: 100%;
   border: 3px solid #8b5a2b;
   border-radius: 10px;
-  //padding: 2px 2vw 3rem;
+  overflow: hidden;
 }
 
 .world-map {
@@ -221,63 +259,157 @@ function hideTooltip() {
 /* 熱區 */
 .map-area {
   position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
+  overflow: hidden;
+  transition: background 0.15s, border-color 0.15s;
 }
 
-.map-area:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border: 2px solid #e3e3e3;
+.map-area:hover,
+.map-area.active {
+  background: rgba(255, 204, 102, 0.18);
+  border: 1.5px solid #ffd966;
+}
+
+.area-code {
+  font-size: 7px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+  line-height: 1;
+  pointer-events: none;
+  display: block;
+  padding: 1px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Tooltip */
 .tooltip-box {
-  position: absolute;   /* 取代 absolute */
-  z-index: 10;
-  background: #2c2118;
+  position: absolute;
+  z-index: 50;
+  background: #1e160e;
   color: #fff8e1;
   border: 2px solid #c9a063;
-  border-radius: 8px;
-  padding: 10px 14px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-width: 260px;
+  max-width: 360px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.75);
+  pointer-events: auto;
+}
 
-  white-space: nowrap;
-
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-
+.tooltip-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
 }
 
 .tooltip-title {
   font-weight: bold;
   color: #ffcc66;
-  margin-bottom: 3px;
+  font-size: 1rem;
+  flex: 1;
 }
 
-.tooltip-text {
-  font-size: 0.9rem;
-  color: #ddd;
+.tooltip-code {
+  font-size: 0.8rem;
+  color: #aaa;
 }
+
+.tooltip-close {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0 2px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.tooltip-close:hover {
+  color: #fff;
+}
+
+.tooltip-empty {
+  color: #888;
+  font-size: 0.85rem;
+  padding: 6px 0;
+}
+
+/* 表格捲動區 */
+.tooltip-scroll {
+  max-height: 260px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c9a063 #2c2118;
+}
+
+.tooltip-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tooltip-scroll::-webkit-scrollbar-track {
+  background: #2c2118;
+}
+
+.tooltip-scroll::-webkit-scrollbar-thumb {
+  background-color: #c9a063;
+  border-radius: 3px;
+}
+
 .tooltip-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 11px;
 }
+
 .tooltip-table th {
-  border: 1px solid #c9a063;
-  padding: 2px 4px;
+  border: 1px solid #5a4530;
+  padding: 3px 5px;
+  background: #2c2118;
+  color: #c9a063;
   font-weight: bold;
   white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .tooltip-table td {
-  border: 1px solid #c9a063;
-  padding: 2px 4px;
+  border: 1px solid #3a2e22;
+  padding: 3px 5px;
   text-align: center;
   white-space: nowrap;
+}
+
+.tooltip-table tr:nth-child(even) td {
+  background: #221a12;
+}
+
+.mob-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .mob-name {
   text-align: left;
   font-weight: bold;
+  color: #ffe599;
 }
 
+/* Transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
