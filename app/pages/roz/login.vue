@@ -64,7 +64,7 @@ const handleCredential = async (response) => {
     if (data.error) {
       errorMsg.value = data.error;
     } else {
-      router.push('/roz/account');
+      router.push('/roz/accounts');
     }
   } catch {
     errorMsg.value = '登入失敗，請再試一次';
