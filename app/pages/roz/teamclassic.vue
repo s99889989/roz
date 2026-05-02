@@ -755,11 +755,14 @@ const showToast = (msg) => {
 onMounted(() => {
   document.title = '經典組隊';
   loadAll();
+  console.log('讀取')
   // 自動選取上次的分隊
   const lastId = localStorage.getItem('roz_classic_last');
   if (lastId && classics.value.some(c => c.id === lastId)) {
+    console.log('A')
     selectClassic(lastId);
   } else if (classics.value.length > 0) {
+    console.log('B')
     selectClassic(classics.value[0].id);  // 沒有記錄就選第一個
   }
 });
