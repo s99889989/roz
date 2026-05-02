@@ -176,6 +176,8 @@
                       class="text-xs bg-[#4a6b5e] hover:bg-[#5b8573] text-[#a8f0c8] px-3 py-1 rounded border border-[#a8f0c8]/20 transition">編輯</button>
               <button v-if="acc.permission === 'owner'" @click="confirmDelete(acc)"
                       class="text-xs bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-3 py-1 rounded border border-[#f0a8a8]/20 transition">刪除</button>
+              <button v-if="acc.permission !== 'owner'" @click="confirmLeaveShare(acc)"
+                      class="text-xs bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-3 py-1 rounded border border-[#f0a8a8]/20 transition">退出</button>
               <span class="text-[#a6937c] text-sm transition-transform duration-300 select-none"
                     :class="collapsed[acc.id] ? '' : 'rotate-180'">▼</span>
             </div>
@@ -221,6 +223,8 @@
                       class="text-xs bg-[#4a6b5e] hover:bg-[#5b8573] text-[#a8f0c8] px-2.5 py-1 rounded border border-[#a8f0c8]/20 transition">編輯</button>
               <button v-if="acc.permission === 'owner'" @click="confirmDelete(acc)"
                       class="text-xs bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-2.5 py-1 rounded border border-[#f0a8a8]/20 transition">刪除</button>
+              <button v-if="acc.permission !== 'owner'" @click="confirmLeaveShare(acc)"
+                      class="text-xs bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-2.5 py-1 rounded border border-[#f0a8a8]/20 transition">退出</button>
             </div>
           </div>
           <div class="p-3 grid grid-cols-2 gap-2">
@@ -311,6 +315,23 @@
               <button @click="revokeShare(member.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">移除</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 退出共享確認 Modal ══ -->
+    <div v-if="leaveTarget" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" @click.self="leaveTarget = null">
+      <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-sm p-6 text-center">
+        <div class="text-4xl mb-3">🚪</div>
+        <h3 class="text-[#f1d483] font-bold text-xl mb-2">確認退出共享？</h3>
+        <p class="text-[#a6937c] text-base mb-5">退出後將無法再存取帳號「<span class="text-[#e0d3b8] font-bold">{{ leaveTarget?.name }}</span>」。</p>
+        <div class="flex gap-3 justify-center">
+          <button @click="leaveTarget = null"
+                  class="px-5 py-2 bg-[#3d2b1f] hover:bg-[#5e4b37] text-[#a6937c] rounded border border-[#5e4b37] transition font-bold">取消</button>
+          <button @click="leaveShare" :disabled="isSaving"
+                  class="px-5 py-2 bg-[#8b3a3a] hover:bg-[#a04040] text-white rounded transition font-bold disabled:opacity-50">
+            {{ isSaving ? '退出中...' : '確認退出' }}
+          </button>
         </div>
       </div>
     </div>
@@ -510,6 +531,24 @@ const deleteAccount = async () => {
   } finally {
     isSaving.value = false;
   }
+};
+
+// ── 退出共享 ──────────────────────────────────────────────────────
+const leaveTarget = ref(null);
+const confirmLeaveShare = (acc) => { leaveTarget.value = acc; };
+const leaveShare = async () => {
+  isSaving.value = true;
+  try {
+    const data = await (await fetch(
+        `${BASE()}/leave-share/${leaveTarget.value.ownerGoogleId}/${leaveTarget.value.id}`,
+        { method: 'DELETE', credentials: 'include' }
+    )).json();
+    if (data.error) { showToast(data.error); return; }
+    leaveTarget.value = null;
+    await loadAccounts();
+    showToast('已退出共享');
+  } catch { showToast('退出失敗'); }
+  finally { isSaving.value = false; }
 };
 
 // ── 分享 ──────────────────────────────────────────────────────────
