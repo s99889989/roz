@@ -116,7 +116,6 @@
                   <div class="flex items-center gap-2 overflow-hidden flex-1">
                     <span class="text-[#f1d483] text-[10px] font-bold bg-[#5e4b37] px-2 py-0.5 rounded shrink-0">帳號</span>
                     <span class="text-[#e0d3b8] font-bold truncate">{{ group.name }}</span>
-                    <span v-if="group.sharedFromName" class="text-[#a6937c] text-[10px] truncate">（{{ group.sharedFromName }}）</span>
                   </div>
                   <span class="transition-transform duration-300 text-[#a6937c] text-xs shrink-0 ml-2"
                         :class="{ 'rotate-180': !collapsedGroups[gIdx] }">▼</span>

@@ -167,7 +167,6 @@
               <span v-else-if="acc.permission === 'edit'" class="text-[#a8f0c8] text-xs font-bold bg-[#2a4a3a] px-2.5 py-1 rounded shrink-0">共享·編輯</span>
               <span v-else class="text-[#a6c8f0] text-xs font-bold bg-[#2a3a4a] px-2.5 py-1 rounded shrink-0">共享·使用</span>
               <span class="text-[#e0d3b8] font-bold truncate text-base">{{ acc.name }}</span>
-              <span v-if="acc.sharedFromName" class="text-[#a6937c] text-xs shrink-0">（{{ acc.sharedFromName }}）</span>
               <span class="text-[#a6937c] text-sm shrink-0">{{ acc.roles?.length || 0 }} 個角色</span>
             </div>
             <div class="flex items-center gap-2 shrink-0 ml-2" @click.stop>
@@ -214,7 +213,6 @@
               <span v-if="acc.permission === 'owner'" class="text-[#f1d483] text-xs font-bold bg-[#5e4b37] px-2 py-0.5 rounded shrink-0">帳號</span>
               <span v-else class="text-[#a8f0c8] text-xs font-bold bg-[#2a4a3a] px-2 py-0.5 rounded shrink-0">共享</span>
               <span class="text-[#e0d3b8] font-black truncate text-base">{{ acc.name }}</span>
-              <span v-if="acc.sharedFromName" class="text-[#a6937c] text-xs truncate">（{{ acc.sharedFromName }}）</span>
             </div>
             <div class="flex items-center gap-1.5 shrink-0 ml-2">
               <button v-if="acc.permission === 'owner'" @click="openShareModal(acc)"

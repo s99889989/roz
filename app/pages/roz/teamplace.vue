@@ -186,7 +186,6 @@
                         <div class="flex items-center gap-1.5 min-w-0">
                           <span class="text-[#f1d483] text-[10px] font-bold bg-[#5e4b37] px-1.5 py-0.5 rounded shrink-0">帳號</span>
                           <span class="text-[#e0d3b8] text-sm font-bold truncate">{{ acc.name }}</span>
-                          <span v-if="acc.sharedFromName" class="text-[#a6937c] text-[10px] truncate">（{{ acc.sharedFromName }}）</span>
                         </div>
                         <span class="text-[#a6937c] text-xs ml-1 shrink-0"
                               :class="collapsedAccGroups[acc.id] ? '' : 'rotate-180'">▼</span>
