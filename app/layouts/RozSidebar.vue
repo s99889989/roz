@@ -57,19 +57,23 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import {ref, onMounted, watch} from 'vue';
+import {useRoute, useRouter} from 'vue-router';
+import {useCommonStore} from '~/stores/common.js';
 
-const route  = useRoute();
+const route = useRoute();
 const router = useRouter();
+const commonStore = useCommonStore();
+const BASE = () => commonStore.data.main_url + '/roz/user';
 
-const visible     = ref(false);
+const visible = ref(false);
 const sidebarOpen = ref(true);
 
 const navItems = [
-  { to: '/roz/accounts',  icon: '👤', label: '帳號管理'    },
-  { to: '/roz/teamplace', icon: '⚔️', label: '副本組隊'    },
-  { to: '/roz/taskcd',    icon: '⏱️', label: '任務 CD 追蹤' },
+  {to: '/roz/accounts', icon: '👤', label: '帳號管理'},
+  {to: '/roz/teamplace', icon: '⚔️', label: '副本組隊'},
+  {to: '/roz/dungeons', icon: '🗺️', label: '副本管理'},
+  {to: '/roz/taskcd', icon: '⏱️', label: '任務 CD 追蹤'},
 ];
 
 const isActive = (path) => route.path === path;
@@ -81,29 +85,33 @@ const toggleSidebar = () => {
   localStorage.setItem(SIDEBAR_KEY, String(sidebarOpen.value));
 };
 
+// 登出：打 Spring Boot
 const logout = async () => {
-  await $fetch('/api/roz/logout', { method: 'POST' });
+  try {
+    await fetch(`${BASE()}/logout`, {method: 'POST', credentials: 'include'});
+  } catch { /* 忽略 */
+  }
   visible.value = false;
-  router.push('/');
+  router.push('/roz/login');
 };
 
-// 用 useFetch 在 SSR 階段就取得 cookie 狀態，不需等 onMounted
-const { data: checkData } = await useFetch('/api/roz/check');
-if (checkData.value?.ok) visible.value = true;
-
-// 路由切換時重新確認（例如登入後跳轉）
-watch(() => route.path, async () => {
+// 確認登入狀態：打 Spring Boot /roz/user/me
+const checkLogin = async () => {
   try {
-    const res = await $fetch('/api/roz/check');
-    visible.value = !!res?.ok;
+    const res = await fetch(`${BASE()}/me`, {credentials: 'include'});
+    const data = await res.json();
+    visible.value = !data.error;
   } catch {
     visible.value = false;
   }
-});
+};
 
-onMounted(() => {
-  // 恢復上次收合狀態（localStorage 只能在 client 讀）
+// 路由切換時重新確認
+watch(() => route.path, checkLogin);
+
+onMounted(async () => {
   const saved = localStorage.getItem(SIDEBAR_KEY);
   if (saved !== null) sidebarOpen.value = saved === 'true';
+  await checkLogin();
 });
 </script>
