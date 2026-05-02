@@ -468,7 +468,7 @@ const startEdit = (acc) => {
   console.log('editingId after set:', editingId.value);
   formError.value = '';
   editForm.value = { name: acc.name, roles: (acc.roles || []).map(r => ({ name: r.name, job: r.job || '', level: r.level || null })) };
-  collapsed.value[acc.id] = false;
+  collapsed.value = { ...collapsed.value, [acc.id]: false };
 };
 const saveEdit = async (acc) => {
   if (!editForm.value.name.trim()) { formError.value = '請輸入帳號名稱'; return; }
