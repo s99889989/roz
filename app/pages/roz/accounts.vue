@@ -407,6 +407,7 @@ const loadAccounts = async () => {
   loading.value = true;
   try {
     const data = await (await fetch(`${BASE()}/list`, { credentials: 'include' })).json();
+    console.log('accounts data:', data);  // ← 加這行
     accounts.value = data;
     data.forEach(a => { if (collapsed.value[a.id] === undefined) collapsed.value[a.id] = true; });
   } catch (e) { console.error(e); }
