@@ -56,7 +56,7 @@
                   <option v-for="n in 12" :key="n" :value="n">{{ n }} 隊</option>
                 </select>
               </div>
-              <button v-if="canEdit" @click="resetAll"
+              <button v-if="activeDetail.permission === 'owner'" @click="resetAll"
                       class="bg-[#5e4b37] hover:bg-[#8b3a3a] text-white px-3 py-1.5 rounded font-bold border border-white/10 transition text-sm">
                 全部重置
               </button>
@@ -71,6 +71,11 @@
               <button v-if="activeDetail.permission === 'owner'" @click="confirmDelete"
                       class="bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-3 py-1.5 rounded font-bold border border-[#f0a8a8]/20 transition text-sm">
                 刪除
+              </button>
+              <!-- 退出共享（非 owner 才顯示） -->
+              <button v-if="activeDetail.permission !== 'owner'" @click="showLeaveConfirm = true"
+                      class="bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-3 py-1.5 rounded font-bold border border-[#f0a8a8]/20 transition text-sm">
+                退出
               </button>
             </div>
           </template>
@@ -307,6 +312,22 @@
       </div>
     </div>
 
+    <!-- ══ 退出共享確認 ══ -->
+    <div v-if="showLeaveConfirm" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" @click.self="showLeaveConfirm = false">
+      <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-sm p-6 text-center">
+        <div class="text-4xl mb-3">🚪</div>
+        <h3 class="text-[#f1d483] font-bold text-xl mb-2">確認退出共享？</h3>
+        <p class="text-[#a6937c] mb-5">退出後將無法再存取分隊「<span class="text-[#e0d3b8] font-bold">{{ activeDetail?.name }}</span>」。</p>
+        <div class="flex gap-3 justify-center">
+          <button @click="showLeaveConfirm = false" class="px-5 py-2 bg-[#3d2b1f] hover:bg-[#5e4b37] text-[#a6937c] rounded border border-[#5e4b37] transition font-bold">取消</button>
+          <button @click="leaveShare" :disabled="isSaving"
+                  class="px-5 py-2 bg-[#8b3a3a] hover:bg-[#a04040] text-white rounded transition font-bold disabled:opacity-50">
+            {{ isSaving ? '退出中...' : '確認退出' }}
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- ══ 分享 Modal ══ -->
     <div v-if="shareModal.show" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" @click.self="shareModal.show = false">
       <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-md p-6">
@@ -389,7 +410,7 @@ const commonStore  = useCommonStore();
 const BASE_CLASSIC = () => commonStore.data.main_url + '/roz/classic';
 const BASE_ACCOUNT = () => commonStore.data.main_url + '/roz/account';
 
-const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩人':'詩人','刺客':'刺客','賢者':'賢者','巫師':'巫師','練金':'練金','十字軍':'十字軍','舞孃':'舞孃','武僧':'祭師','獵人':'詩人' };
+const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩人':'詩人','刺客':'刺客','賢者':'賢者','巫師':'巫師','練金':'練金','十字軍':'十字軍','舞孃':'舞孃','武僧':'祭師','獵人':'詩人','流氓':'流氓' };
 const getJobImg  = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
 
 const baseThemes = [
@@ -400,8 +421,8 @@ const baseThemes = [
   { border: 'border-[#a45b5b]', tagBg: '#a45b5b' },
   { border: 'border-[#5ba48e]', tagBg: '#5ba48e' },
 ];
-const getSquadColor      = (i) => baseThemes[i % baseThemes.length];
-const getJobComposition  = (members) => {
+const getSquadColor     = (i) => baseThemes[i % baseThemes.length];
+const getJobComposition = (members) => {
   const map = {};
   members.forEach(m => { if (m.job) map[m.job] = (map[m.job] || 0) + 1; });
   return map;
@@ -424,6 +445,7 @@ const showCreateModal   = ref(false);
 const newName           = ref('');
 const createError       = ref('');
 const showDeleteConfirm = ref(false);
+const showLeaveConfirm  = ref(false);  // 退出共享確認
 const renameModal       = ref({ show: false, name: '' });
 const shareModal        = ref({ show: false, permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] });
 const showAcceptModal   = ref(false);
@@ -434,8 +456,6 @@ const isAccepting       = ref(false);
 // ── 計算 ──────────────────────────────────────────────────────────
 const ownCount = computed(() => classics.value.filter(c => c.permission === 'owner').length);
 const canEdit  = computed(() => activeDetail.value?.permission === 'owner' || activeDetail.value?.permission === 'edit');
-
-// allChars：展開所有帳號的角色成一個陣列
 const allChars = computed(() => charGroups.value.flatMap(g => g.roles));
 
 const squads = computed(() => {
@@ -465,12 +485,11 @@ const loadAll = async () => {
 };
 
 const selectClassic = async (id) => {
-  console.log('選擇: '+id)
   if (activeId.value === id) return;
   localStorage.setItem('roz_classic_last', id);
-  activeId.value     = id;
-  activeDetail.value = null;
-  charGroups.value   = [];
+  activeId.value      = id;
+  activeDetail.value  = null;
+  charGroups.value    = [];
   detailLoading.value = true;
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/${id}`, { credentials: 'include' })).json();
@@ -484,17 +503,14 @@ const selectClassic = async (id) => {
 // ── 從 allAccounts 建立名冊，套用儲存的分配 ────────────────────────
 const buildCharGroups = (assignments) => {
   charGroups.value = allAccounts.value.map((acc) => ({
-    id:             acc.id,
-    name:           acc.name,
-    sharedFromName: acc.sharedFromName || '',
+    id:   acc.id,
+    name: acc.name,
     roles: (acc.roles || [])
-        .filter(r => r.name)                    // ← 用 r.name（新版 API 欄位）
+        .filter(r => r.name)
         .map(r => {
-          const saved = assignments.find(
-              a => a.charName === r.name && a.accountId === acc.id
-          );
+          const saved = assignments.find(a => a.charName === r.name && a.accountId === acc.id);
           return {
-            charName:      r.name,              // ← r.name 轉成 charName 供內部使用
+            charName:      r.name,
             accountName:   acc.name,
             ownerGoogleId: acc.ownerGoogleId || '',
             accountId:     acc.id,
@@ -505,7 +521,6 @@ const buildCharGroups = (assignments) => {
           };
         })
   }));
-  // 預設全部收起
   charGroups.value.forEach((_, i) => { collapsedGroups.value[i] = true; });
 };
 
@@ -519,18 +534,16 @@ const toggleSupport = (char) => {
   saveAssignments();
 };
 
-// 判斷同一帳號是否已有角色在某小隊（每帳號每小隊最多一個非BUFF角色）
 const isAccountInSquad = (gIdx, sIdx) =>
     squads.value[sIdx].members.some(m =>
         charGroups.value[gIdx].roles.some(r => !r.isSupport && r.charName === m.charName)
     );
 
 const getButtonClass = (sIdx, gIdx, isSupport) => {
-  const theme = getSquadColor(sIdx);
   if (!isSupport && isAccountInSquad(gIdx, sIdx))
     return 'bg-[#dcd2bb] text-[#b4a992] cursor-not-allowed border-transparent';
-  return `border-2 text-[#4a3728] hover:text-white transition`
-      + ` border-current`; // 簡化：用 theme tagBg 內嵌 style 更好，這裡用預設樣式
+  const theme = baseThemes[sIdx % baseThemes.length];
+  return `border-2 border-[${theme.tagBg}] text-[#4a3728] hover:bg-[${theme.tagBg}] hover:text-white transition`;
 };
 
 const addToSquad = (char, sIdx, gIdx) => {
@@ -540,33 +553,26 @@ const addToSquad = (char, sIdx, gIdx) => {
 };
 
 const removeFromSquad = (member) => {
-  const char = allChars.value.find(
-      c => c.charName === member.charName && c.accountId === member.accountId
-  );
-  if (char) {
-    char.assignedTo = null;
-    saveAssignments();
-  }
+  const char = allChars.value.find(c => c.charName === member.charName && c.accountId === member.accountId);
+  if (char) { char.assignedTo = null; saveAssignments(); }
 };
 
 const resetAll = () => {
-  allChars.value.forEach(c => {
-    c.assignedTo = null;
-    c.isSupport = false;
-  });
+  allChars.value.forEach(c => { c.assignedTo = null; c.isSupport = false; });
   saveAssignments();
 };
 
-// ── 自動儲存（節流 500ms） ────────────────────────────────────────
+// ── 自動儲存（節流 500ms）+ 空陣列保護 ───────────────────────────
 let saveTimer = null;
 const saveAssignments = () => {
   if (!canEdit.value || !activeId.value) return;
+  if (allChars.value.length === 0) return;  // ← 空陣列不存，防止覆蓋
   clearTimeout(saveTimer);
   saveTimer = setTimeout(async () => {
     try {
       await fetch(`${BASE_CLASSIC()}/${activeId.value}/save`, {
         method: 'POST', credentials: 'include',
-        headers: {'Content-Type': 'application/json'},
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           squadCount: squadCount.value,
           assignments: allChars.value.map(c => ({
@@ -667,6 +673,26 @@ const deleteClassic = async () => {
   }
 };
 
+// ── 退出共享 ──────────────────────────────────────────────────────
+const leaveShare = async () => {
+  isSaving.value = true;
+  try {
+    await fetch(`${BASE_CLASSIC()}/leave-share/${activeId.value}`, {
+      method: 'DELETE', credentials: 'include'
+    });
+    showLeaveConfirm.value = false;
+    activeId.value = null;
+    activeDetail.value = null;
+    charGroups.value = [];
+    await loadAll();
+    showToast('已退出共享');
+  } catch {
+    showToast('退出失敗');
+  } finally {
+    isSaving.value = false;
+  }
+};
+
 // ── 分享 ──────────────────────────────────────────────────────────
 const openShareModal = async () => {
   shareModal.value = {show: true, permission: 'view', generating: false, code: '', expiresAt: '', shareList: []};
@@ -754,16 +780,11 @@ const showToast = (msg) => {
 onMounted(async () => {
   document.title = '經典組隊';
   await loadAll();
-
-  // 自動選取上次的分隊
   const lastId = localStorage.getItem('roz_classic_last');
-  console.log('讀取: ' + lastId)
   if (lastId && classics.value.some(c => c.id === lastId)) {
-    console.log('A')
     selectClassic(lastId);
   } else if (classics.value.length > 0) {
-    console.log('B')
-    selectClassic(classics.value[0].id);  // 沒有記錄就選第一個
+    selectClassic(classics.value[0].id);
   }
 });
 </script>
