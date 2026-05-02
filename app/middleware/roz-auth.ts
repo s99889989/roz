@@ -3,14 +3,18 @@
 // 在每個 roz 頁面的 definePageMeta 加上：middleware: 'roz-auth'
 
 export default defineNuxtRouteMiddleware(async (to) => {
-  // login 頁本身不需要檢查
   if (to.path === '/roz/login') return;
 
-  // Server side：從 cookie 讀取
-  // Client side：呼叫 API 確認 session
+  // 取得 Spring Boot base URL
+  const commonStore = useCommonStore();
+  const base = (commonStore?.data?.main_url ?? '') + '/roz/user';
+
   try {
-    const res = await $fetch('/api/roz/check');
-    if (!res.ok) {
+    const res = await $fetch(`${base}/me`, {
+      credentials: 'include',
+    });
+    // me 回傳有 error 就視為未登入
+    if ((res as any).error) {
       return navigateTo('/roz/login');
     }
   } catch {

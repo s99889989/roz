@@ -14,6 +14,11 @@ export default defineNuxtConfig({
       tailwindcss(),
     ]
   },
+  runtimeConfig: {
+    public: {
+      googleClientId: '441605672654-9j73r51g6j2mar17ptblhskfvard1em9.apps.googleusercontent.com', // .env: NUXT_PUBLIC_GOOGLE_CLIENT_ID=123456789-xxx.apps.googleusercontent.com
+    },
+  },
   app: {
     head: {
       charset: 'utf-8',

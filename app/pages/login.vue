@@ -40,31 +40,24 @@
 <script setup>
 definePageMeta({ layout: 'blank' });
 
-const router     = useRouter();
-const errorMsg   = ref('');
-const config     = useRuntimeConfig();
-const commonStore = useCommonStore ? useCommonStore() : null;
-
-// Spring Boot base URL（從 commonStore 取，與其他頁面一致）
-const BASE = () => (commonStore?.data?.main_url ?? '') + '/roz/user';
+const router   = useRouter();
+const errorMsg = ref('');
 
 // Google Client ID 放在 nuxt.config runtimeConfig.public.googleClientId
+const config         = useRuntimeConfig();
 const GOOGLE_CLIENT_ID = config.public.googleClientId;
 
 const handleCredential = async (response) => {
   errorMsg.value = '';
   try {
-    const res = await fetch(`${BASE()}/google-login`, {
+    const res = await $fetch('/api/roz/google-login', {
       method: 'POST',
-      credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ credential: response.credential }),
+      body:   { credential: response.credential },
     });
-    const data = await res.json();
-    if (data.error) {
-      errorMsg.value = data.error;
+    if (res.ok) {
+      router.push('/roz/accounts');
     } else {
-      router.push('/roz/account');
+      errorMsg.value = res.message || '此 Google 帳號沒有進入權限';
     }
   } catch {
     errorMsg.value = '登入失敗，請再試一次';
