@@ -8,7 +8,6 @@
         <p class="text-[#a6937c] text-sm mt-1">建立隊伍，為每個副本分配角色</p>
       </div>
       <div class="flex gap-2 flex-wrap items-center">
-        <!-- 方案A：視圖切換 -->
         <div class="flex bg-[#1e150d] border border-[#5e4b37] rounded-lg p-0.5">
           <button @click="viewMode = 'edit'"
                   class="px-3 py-1.5 text-sm font-bold rounded-md transition"
@@ -35,22 +34,17 @@
     <div v-if="loading" class="max-w-[1800px] mx-auto text-center py-20 text-[#a6937c] italic text-lg">讀取中...</div>
 
     <div v-else class="max-w-[1800px] mx-auto">
-
       <div v-if="teams.length === 0"
            class="text-center py-20 text-[#a6937c] italic bg-[#3d2b1f] rounded-xl border border-[#5e4b37] mb-4">
         尚未建立任何隊伍，點右上角「建立隊伍」開始
       </div>
 
-      <!-- ══════════════════════════════════════════════
-           方案 A：總覽模式 — 所有隊伍攤開，每隊顯示所有副本縮圖
-      ══════════════════════════════════════════════ -->
+      <!-- ══ 總覽模式 ══ -->
       <div v-if="viewMode === 'overview'">
         <div v-if="overviewLoading" class="text-center py-20 text-[#a6937c] italic">載入總覽中...</div>
         <div v-else class="space-y-6">
           <div v-for="team in teamsWithDetail" :key="team.id"
                class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl overflow-hidden">
-
-            <!-- 隊伍標頭 -->
             <div class="bg-[#2c1e14] px-4 py-3 flex items-center justify-between border-b border-[#5e4b37]">
               <div class="flex items-center gap-2">
                 <span v-if="team.permission === 'owner'" class="text-[#f1d483] text-xs font-bold bg-[#5e4b37] px-2.5 py-1 rounded">我的</span>
@@ -63,37 +57,27 @@
                 編輯分配
               </button>
             </div>
-
-            <!-- 所有副本橫向排列 -->
             <div class="p-4">
               <div v-if="!team.detail" class="text-[#a6937c] italic text-sm py-4 text-center">尚未分配任何副本</div>
               <div v-else class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))">
                 <div v-for="dName in dungeonList" :key="dName"
                      class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl p-3">
-                  <!-- 副本名稱 -->
                   <div class="text-[#f1d483] text-xs font-bold mb-2 pb-1.5 border-b border-[#5e4b37] flex items-center justify-between">
                     <span>{{ dName }}</span>
-                    <span class="text-[#a6937c] font-normal">
-                      {{ (team.detail.dungeons?.[dName] || []).filter(s => s.status === 'in').length }}/12
-                    </span>
+                    <span class="text-[#a6937c] font-normal">{{ (team.detail.dungeons?.[dName] || []).filter(s => s.status === 'in').length }}/12</span>
                   </div>
-                  <!-- 成員縮圖 -->
                   <div v-if="!(team.detail.dungeons?.[dName]?.length)" class="text-[#5e4b37] text-xs italic text-center py-2">未分配</div>
                   <div v-else class="space-y-1">
-                    <!-- 副本內 -->
                     <div v-for="slot in (team.detail.dungeons[dName] || []).filter(s => s.status === 'in')"
-                         :key="slot.roleName + slot.accountId"
-                         class="flex items-center gap-1.5">
+                         :key="slot.roleName+slot.accountId" class="flex items-center gap-1.5">
                       <div class="w-6 h-6 bg-[#3d2b1f] rounded-full border border-[#5b8fa4]/40 flex items-center justify-center overflow-hidden shrink-0">
                         <img :src="getJobImg(slot.job)" class="w-4 h-4 object-contain">
                       </div>
                       <span class="text-[#e0d3b8] text-xs truncate">{{ slot.roleName }}</span>
                       <span class="text-[#a6937c] text-[10px] shrink-0">{{ slot.job }}</span>
                     </div>
-                    <!-- BUFF -->
                     <div v-for="slot in (team.detail.dungeons[dName] || []).filter(s => s.status === 'buff')"
-                         :key="'b'+slot.roleName + slot.accountId"
-                         class="flex items-center gap-1.5 opacity-70">
+                         :key="'b'+slot.roleName+slot.accountId" class="flex items-center gap-1.5 opacity-70">
                       <div class="w-6 h-6 bg-[#3d2b1f] rounded-full border border-[#a0c878]/30 flex items-center justify-center overflow-hidden shrink-0">
                         <img :src="getJobImg(slot.job)" class="w-4 h-4 object-contain">
                       </div>
@@ -108,9 +92,7 @@
         </div>
       </div>
 
-      <!-- ══════════════════════════════════════════════
-           方案 C：編輯模式 — 多副本並排，不需要一個一個切換
-      ══════════════════════════════════════════════ -->
+      <!-- ══ 編輯模式 ══ -->
       <div v-else class="space-y-3">
         <div v-for="team in teams" :key="team.id"
              class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl overflow-hidden"
@@ -138,52 +120,124 @@
             </div>
           </div>
 
-          <!-- 展開：方案C — 所有副本橫向並排顯示 -->
+          <!-- 隊伍展開 -->
           <div v-if="activeTeamId === team.id">
             <div v-if="teamDetailLoading" class="py-10 text-center text-[#a6937c] italic">載入中...</div>
             <div v-else-if="teamDetail" class="p-4">
-
               <div class="grid grid-cols-1 xl:grid-cols-12 gap-4">
 
-                <!-- 左：角色名冊 -->
-                <div class="xl:col-span-3 bg-[#2c1e14] border border-[#5e4b37] rounded-xl p-3">
-                  <h3 class="text-[#f1d483] font-bold text-sm mb-3">📜 角色名冊</h3>
-                  <div v-if="allAccounts.length === 0" class="text-[#6b5a4a] text-sm italic text-center py-6">尚無可用帳號</div>
-                  <div v-else class="space-y-2 max-h-[70vh] overflow-y-auto pr-1 custom-scrollbar">
+                <!-- ══ 左側：名冊 + 副本操作 ══ -->
+                <div class="xl:col-span-4 bg-[#2c1e14] border border-[#5e4b37] rounded-xl overflow-hidden flex flex-col">
+
+                  <!-- 左側標頭：顯示選中的副本或提示 -->
+                  <div class="px-4 py-3 border-b border-[#5e4b37] flex items-center justify-between">
+                    <div>
+                      <div v-if="activeDungeon" class="text-[#f1d483] font-bold text-sm">
+                        ⚔️ {{ activeDungeon }}
+                        <span class="text-[#a6937c] font-normal text-xs ml-1">
+                          {{ currentSlots.filter(s => s.status === 'in').length }}/12 人
+                        </span>
+                      </div>
+                      <div v-else class="text-[#a6937c] text-sm">← 請從右側選擇副本</div>
+                    </div>
+                    <button v-if="activeDungeon && canEdit && currentSlots.length > 0"
+                            @click="clearDungeon(activeDungeon)"
+                            class="text-[10px] text-[#f0a8a8] hover:text-red-400 border border-[#f0a8a8]/20 px-2 py-0.5 rounded transition">
+                      清空
+                    </button>
+                  </div>
+
+                  <!-- 圖例 -->
+                  <div v-if="activeDungeon" class="flex gap-3 text-[10px] text-[#a6937c] px-4 py-2 border-b border-[#5e4b37]/50 flex-wrap">
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#5b8fa4] inline-block"></span>副本內</span>
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#a0c878] inline-block"></span>場外 BUFF</span>
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#8d7a64] inline-block"></span>已分配其他副本</span>
+                  </div>
+
+                  <!-- 名冊（帳號群組） -->
+                  <div class="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-2">
+                    <div v-if="allAccounts.length === 0" class="text-[#6b5a4a] text-sm italic text-center py-8">尚無可用帳號</div>
+
                     <div v-for="acc in allAccounts" :key="acc.id"
                          class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg overflow-hidden">
+                      <!-- 帳號標頭 -->
                       <div @click="toggleAccGroup(acc.id)"
                            class="px-3 py-2 flex items-center justify-between cursor-pointer hover:bg-[#4a3828] transition">
                         <div class="flex items-center gap-1.5 min-w-0">
                           <span class="text-[#f1d483] text-[10px] font-bold bg-[#5e4b37] px-1.5 py-0.5 rounded shrink-0">帳號</span>
                           <span class="text-[#e0d3b8] text-sm font-bold truncate">{{ acc.name }}</span>
+                          <span v-if="acc.sharedFromName" class="text-[#a6937c] text-[10px] truncate">（{{ acc.sharedFromName }}）</span>
                         </div>
-                        <span class="text-[#a6937c] text-xs ml-1" :class="collapsedAccGroups[acc.id] ? '' : 'rotate-180'">▼</span>
+                        <span class="text-[#a6937c] text-xs ml-1 shrink-0" :class="collapsedAccGroups[acc.id] ? '' : 'rotate-180'">▼</span>
                       </div>
+
+                      <!-- 角色列表 -->
                       <div v-show="!collapsedAccGroups[acc.id]" class="px-2 pb-2 space-y-1">
                         <div v-for="role in acc.roles" :key="role.name"
-                             class="flex items-center justify-between bg-[#2c1e14] rounded-lg px-2 py-1.5 gap-2">
-                          <div class="flex items-center gap-2 min-w-0">
-                            <div class="w-7 h-7 bg-[#3d2b1f] rounded-full border border-[#5e4b37] flex items-center justify-center overflow-hidden shrink-0">
-                              <img :src="getJobImg(role.job)" class="w-4 h-4 object-contain">
-                            </div>
-                            <div class="min-w-0">
-                              <div class="text-[#e0d3b8] text-xs font-bold truncate">{{ role.name }}</div>
-                              <div class="text-[#a6937c] text-[10px]">{{ role.job || '未設定' }}</div>
-                            </div>
+                             class="flex items-center gap-2 rounded-lg px-2 py-2 transition"
+                             :class="getSlotStatusInDungeon(acc, role, activeDungeon)
+                               ? getSlotStatusInDungeon(acc, role, activeDungeon) === 'in'
+                                 ? 'bg-[#1e3a4a] border border-[#5b8fa4]/40'
+                                 : 'bg-[#1e3a1e] border border-[#a0c878]/30'
+                               : isRoleInOtherDungeon(acc, role)
+                                 ? 'bg-[#2c1e14] opacity-50'
+                                 : 'bg-[#2c1e14] hover:bg-[#3d2b1f]'">
+
+                          <!-- 職業圖示 -->
+                          <div class="w-8 h-8 bg-[#3d2b1f] rounded-full border border-[#5e4b37] flex items-center justify-center overflow-hidden shrink-0">
+                            <img :src="getJobImg(role.job)" class="w-5 h-5 object-contain">
                           </div>
-                          <!-- 方案C：同時顯示在哪些副本 -->
-                          <div class="shrink-0 flex flex-wrap gap-0.5 justify-end max-w-[80px]">
-                            <template v-for="dName in dungeonList" :key="dName">
-                              <span v-if="getSlotStatusInDungeon(acc, role, dName)"
-                                    class="text-[9px] px-1 py-0.5 rounded font-bold"
-                                    :class="getSlotStatusInDungeon(acc, role, dName) === 'in'
+
+                          <!-- 角色資訊 -->
+                          <div class="flex-1 min-w-0">
+                            <div class="text-[#e0d3b8] text-sm font-bold truncate">{{ role.name }}</div>
+                            <div class="text-[#a6937c] text-[10px]">{{ role.job || '未設定' }}</div>
+                          </div>
+
+                          <!-- 操作按鈕 -->
+                          <div class="shrink-0">
+                            <!-- 已在此副本 -->
+                            <div v-if="activeDungeon && getSlotStatusInDungeon(acc, role, activeDungeon)" class="flex items-center gap-1">
+                              <span class="text-[10px] px-1.5 py-0.5 rounded font-bold"
+                                    :class="getSlotStatusInDungeon(acc, role, activeDungeon) === 'in'
                                       ? 'bg-[#2a4a6a] text-[#a8c0f0]'
-                                      : 'bg-[#2a4a2a] text-[#a0c878]'"
-                                    :title="dName">
-                                {{ dName.slice(0, 2) }}
+                                      : 'bg-[#2a4a2a] text-[#a0c878]'">
+                                {{ getSlotStatusInDungeon(acc, role, activeDungeon) === 'in' ? '副本內' : 'BUFF' }}
                               </span>
-                            </template>
+                              <button v-if="canEdit" @click="removeSlotInDungeon(acc, role, activeDungeon)"
+                                      class="text-[#f0a8a8] hover:text-red-400 transition text-sm leading-none">✕</button>
+                            </div>
+                            <!-- 在其他副本 -->
+                            <div v-else-if="activeDungeon && isRoleInOtherDungeon(acc, role)"
+                                 class="text-[10px] text-[#6b5a4a] italic">他副本</div>
+                            <!-- 可分配 -->
+                            <div v-else-if="activeDungeon && canEdit" class="flex gap-1">
+                              <button @click="addSlotInDungeon(acc, role, 'in', activeDungeon)"
+                                      :disabled="currentSlots.filter(s => s.status === 'in').length >= 12"
+                                      class="text-[10px] px-2 py-1 rounded border font-bold transition bg-[#2c1e14] border-[#5e4b37] text-[#a6937c] hover:border-[#5b8fa4] hover:text-[#5b8fa4] disabled:opacity-30">
+                                入
+                              </button>
+                              <button @click="addSlotInDungeon(acc, role, 'buff', activeDungeon)"
+                                      class="text-[10px] px-2 py-1 rounded border font-bold transition bg-[#2c1e14] border-[#5e4b37] text-[#a6937c] hover:border-[#a0c878] hover:text-[#a0c878]">
+                                B
+                              </button>
+                            </div>
+                            <!-- 未選副本 -->
+                            <div v-else-if="!activeDungeon">
+                              <!-- 顯示此角色在哪些副本 -->
+                              <div class="flex flex-wrap gap-0.5 justify-end max-w-[80px]">
+                                <template v-for="dName in dungeonList" :key="dName">
+                                  <span v-if="getSlotStatusInDungeon(acc, role, dName)"
+                                        class="text-[9px] px-1 py-0.5 rounded font-bold"
+                                        :class="getSlotStatusInDungeon(acc, role, dName) === 'in'
+                                          ? 'bg-[#2a4a6a] text-[#a8c0f0]'
+                                          : 'bg-[#2a4a2a] text-[#a0c878]'"
+                                        :title="dName">
+                                    {{ dName.slice(0, 2) }}
+                                  </span>
+                                </template>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -191,97 +245,64 @@
                   </div>
                 </div>
 
-                <!-- 右：方案C — 所有副本並排，不需切換 tab -->
-                <div class="xl:col-span-9">
-                  <div v-if="dungeonList.length === 0" class="text-[#6b5a4a] text-sm italic text-center py-10">尚未建立副本，請至副本管理新增</div>
-
-                  <!-- 副本 grid，自動填滿欄位 -->
-                  <div class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))">
+                <!-- ══ 右側：副本卡片 grid ══ -->
+                <div class="xl:col-span-8">
+                  <div v-if="dungeonList.length === 0"
+                       class="text-[#6b5a4a] text-sm italic text-center py-10 bg-[#2c1e14] border border-[#5e4b37] rounded-xl">
+                    尚未建立副本，請至副本管理新增
+                  </div>
+                  <div v-else class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))">
                     <div v-for="dName in dungeonList" :key="dName"
-                         class="bg-[#2c1e14] border rounded-xl overflow-hidden transition"
-                         :class="activeDungeon === dName ? 'border-[#f1d483]/50' : 'border-[#5e4b37] hover:border-[#8b7a64]'">
+                         class="bg-[#2c1e14] border-2 rounded-xl overflow-hidden transition cursor-pointer"
+                         :class="activeDungeon === dName
+                           ? 'border-[#f1d483]'
+                           : 'border-[#5e4b37] hover:border-[#8b7a64]'"
+                         @click="activeDungeon = activeDungeon === dName ? '' : dName">
 
                       <!-- 副本標頭 -->
-                      <div class="px-3 py-2 bg-[#1e150d] border-b border-[#5e4b37] flex items-center justify-between cursor-pointer"
-                           @click="activeDungeon = activeDungeon === dName ? '' : dName">
+                      <div class="px-3 py-2 flex items-center justify-between"
+                           :class="activeDungeon === dName ? 'bg-[#3a2e10]' : 'bg-[#1e150d]'">
                         <div class="flex items-center gap-2">
-                          <span class="text-[#f1d483] text-sm font-bold">{{ dName }}</span>
+                          <span class="font-bold text-sm"
+                                :class="activeDungeon === dName ? 'text-[#f1d483]' : 'text-[#e0d3b8]'">
+                            {{ dName }}
+                          </span>
                           <span class="text-[#a6937c] text-xs">
                             {{ (teamDetail.dungeons?.[dName] || []).filter(s => s.status === 'in').length }}/12
                           </span>
                         </div>
-                        <div class="flex items-center gap-1" @click.stop>
-                          <button v-if="canEdit && (teamDetail.dungeons?.[dName]?.length)"
-                                  @click="clearDungeon(dName)"
-                                  class="text-[10px] text-[#f0a8a8] hover:text-red-400 border border-[#f0a8a8]/20 px-1.5 py-0.5 rounded transition">清</button>
-                          <span class="text-[#a6937c] text-xs" :class="activeDungeon === dName ? 'rotate-180' : ''">▼</span>
-                        </div>
+                        <span v-if="activeDungeon === dName" class="text-[#f1d483] text-[10px] font-bold">選中</span>
                       </div>
 
-                      <!-- 副本成員（縮圖，永遠顯示） -->
+                      <!-- 副本成員（結果顯示） -->
                       <div class="p-2 space-y-1 min-h-[60px]">
                         <div v-if="!(teamDetail.dungeons?.[dName]?.length)"
                              class="text-[#5e4b37] text-xs italic text-center py-3">未分配</div>
                         <template v-else>
                           <!-- 副本內 -->
                           <div v-for="slot in (teamDetail.dungeons[dName] || []).filter(s => s.status === 'in')"
-                               :key="slot.roleName + slot.accountId"
-                               class="flex items-center gap-1.5 group">
-                            <div class="w-7 h-7 bg-[#3d2b1f] rounded-full border border-[#5b8fa4]/40 flex items-center justify-center overflow-hidden shrink-0">
-                              <img :src="getJobImg(slot.job)" class="w-4 h-4 object-contain">
+                               :key="slot.roleName+slot.accountId"
+                               class="flex items-center gap-1.5">
+                            <div class="w-6 h-6 bg-[#3d2b1f] rounded-full border border-[#5b8fa4]/40 flex items-center justify-center overflow-hidden shrink-0">
+                              <img :src="getJobImg(slot.job)" class="w-3.5 h-3.5 object-contain">
                             </div>
-                            <div class="flex-1 min-w-0">
-                              <div class="text-[#e0d3b8] text-xs font-bold truncate">{{ slot.roleName }}</div>
-                              <div class="text-[#a6937c] text-[10px]">{{ slot.accountName }}</div>
-                            </div>
-                            <button v-if="canEdit" @click="removeSlotInDungeon(slot, dName)"
-                                    class="text-[#f0a8a8] hover:text-red-400 transition text-sm leading-none opacity-0 group-hover:opacity-100 shrink-0">✕</button>
+                            <span class="text-[#e0d3b8] text-xs font-bold truncate flex-1">{{ slot.roleName }}</span>
+                            <span class="text-[#a6937c] text-[10px] shrink-0">{{ slot.job }}</span>
                           </div>
                           <!-- BUFF -->
                           <div v-if="(teamDetail.dungeons[dName] || []).some(s => s.status === 'buff')"
-                               class="border-t border-[#5e4b37]/50 pt-1 mt-1">
+                               class="border-t border-[#5e4b37]/40 pt-1 mt-1">
                             <div v-for="slot in (teamDetail.dungeons[dName] || []).filter(s => s.status === 'buff')"
                                  :key="'b'+slot.roleName+slot.accountId"
-                                 class="flex items-center gap-1.5 opacity-70 group">
-                              <div class="w-7 h-7 bg-[#1e3a1e] rounded-full border border-[#a0c878]/30 flex items-center justify-center overflow-hidden shrink-0">
-                                <img :src="getJobImg(slot.job)" class="w-4 h-4 object-contain">
+                                 class="flex items-center gap-1.5 opacity-70">
+                              <div class="w-6 h-6 bg-[#1e3a1e] rounded-full border border-[#a0c878]/30 flex items-center justify-center overflow-hidden shrink-0">
+                                <img :src="getJobImg(slot.job)" class="w-3.5 h-3.5 object-contain">
                               </div>
-                              <div class="flex-1 min-w-0">
-                                <div class="text-[#a6937c] text-xs truncate">{{ slot.roleName }} <span class="text-[#6b8a6b]">BUFF</span></div>
-                              </div>
-                              <button v-if="canEdit" @click="removeSlotInDungeon(slot, dName)"
-                                      class="text-[#f0a8a8] hover:text-red-400 transition text-sm leading-none opacity-0 group-hover:opacity-100 shrink-0">✕</button>
+                              <span class="text-[#a6937c] text-xs truncate flex-1">{{ slot.roleName }}</span>
+                              <span class="text-[#6b8a6b] text-[10px] shrink-0">B</span>
                             </div>
                           </div>
                         </template>
-                      </div>
-
-                      <!-- 展開：分配操作區（點副本標頭展開） -->
-                      <div v-if="activeDungeon === dName && canEdit"
-                           class="border-t border-[#5e4b37] p-2 bg-[#1a1208]">
-                        <div class="text-[#a6937c] text-[10px] mb-2">從名冊選角色加入：</div>
-                        <div class="space-y-1 max-h-[200px] overflow-y-auto custom-scrollbar">
-                          <template v-for="acc in allAccounts" :key="acc.id">
-                            <template v-for="role in acc.roles" :key="role.name">
-                              <div v-if="!getSlotStatusInDungeon(acc, role, dName)"
-                                   class="flex items-center justify-between bg-[#2c1e14] rounded px-2 py-1 gap-1">
-                                <div class="flex items-center gap-1.5 min-w-0">
-                                  <div class="w-5 h-5 bg-[#3d2b1f] rounded-full flex items-center justify-center overflow-hidden shrink-0">
-                                    <img :src="getJobImg(role.job)" class="w-3 h-3 object-contain">
-                                  </div>
-                                  <span class="text-[#e0d3b8] text-xs truncate">{{ role.name }}</span>
-                                </div>
-                                <div class="flex gap-1 shrink-0">
-                                  <button @click="addSlotInDungeon(acc, role, 'in', dName)"
-                                          :disabled="(teamDetail.dungeons?.[dName] || []).filter(s => s.status === 'in').length >= 12"
-                                          class="text-[9px] px-1.5 py-0.5 rounded border transition font-bold bg-[#2c1e14] border-[#5e4b37] text-[#a6937c] hover:border-[#5b8fa4] hover:text-[#5b8fa4] disabled:opacity-30">入</button>
-                                  <button @click="addSlotInDungeon(acc, role, 'buff', dName)"
-                                          class="text-[9px] px-1.5 py-0.5 rounded border transition font-bold bg-[#2c1e14] border-[#5e4b37] text-[#a6937c] hover:border-[#a0c878] hover:text-[#a0c878]">B</button>
-                                </div>
-                              </div>
-                            </template>
-                          </template>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -314,7 +335,7 @@
     <div v-if="renameModal.show" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" @click.self="renameModal.show = false">
       <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-sm p-6">
         <h3 class="text-[#f1d483] font-bold text-lg mb-4">隊伍改名</h3>
-        <input v-model="renameModal.name" placeholder="新的隊伍名稱"
+        <input v-model="renameModal.name"
                class="w-full bg-[#3d2b1f] border border-[#5e4b37] rounded-lg px-4 py-3 text-[#e0d3b8] outline-none focus:border-[#f1d483] transition mb-3" />
         <div class="flex gap-2">
           <button @click="submitRename" :disabled="!renameModal.name.trim() || isSaving"
@@ -428,21 +449,21 @@ const getJobImg  = (job) => `/images/profession/role/${jobFileMap[job] || '詩�
 
 // ── 狀態 ──────────────────────────────────────────────────────────
 const loading            = ref(true);
-const viewMode           = ref('edit');   // 'edit' | 'overview'
+const viewMode           = ref('edit');
 const teams              = ref([]);
 const allAccounts        = ref([]);
 const dungeonList        = ref([]);
 const activeTeamId       = ref(null);
 const teamDetail         = ref(null);
 const teamDetailLoading  = ref(false);
-const activeDungeon      = ref('');       // 方案C：點副本標頭展開分配區
+const activeDungeon      = ref('');
 const collapsedAccGroups = ref({});
 const isSaving           = ref(false);
 const toast              = ref({ show: false, message: '' });
 
-// 方案A：總覽
-const overviewLoading  = ref(false);
-const teamsWithDetail  = ref([]);
+// 總覽
+const overviewLoading = ref(false);
+const teamsWithDetail = ref([]);
 
 // 建立
 const showCreateModal = ref(false);
@@ -456,16 +477,21 @@ const renameModal = ref({ show: false, teamId: '', name: '' });
 const deleteTeamTarget = ref(null);
 
 // 分享
-const teamShareModal = ref({ show: false, teamId: '', teamName: '', permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] });
+const teamShareModal      = ref({ show: false, teamId: '', teamName: '', permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] });
 const showAcceptTeamModal = ref(false);
-const acceptTeamCode  = ref('');
-const acceptTeamError = ref('');
-const isAcceptingTeam = ref(false);
+const acceptTeamCode      = ref('');
+const acceptTeamError     = ref('');
+const isAcceptingTeam     = ref(false);
 
 // ── 計算 ──────────────────────────────────────────────────────────
 const canEdit = computed(() => {
   const t = teams.value.find(t => t.id === activeTeamId.value);
   return t && (t.permission === 'owner' || t.permission === 'edit');
+});
+
+const currentSlots = computed(() => {
+  if (!teamDetail.value || !activeDungeon.value) return [];
+  return teamDetail.value.dungeons?.[activeDungeon.value] || [];
 });
 
 // ── 載入 ──────────────────────────────────────────────────────────
@@ -480,14 +506,13 @@ const loadAll = async () => {
     teams.value       = Array.isArray(teamsData)    ? teamsData    : [];
     allAccounts.value = Array.isArray(accountsData) ? accountsData : [];
     dungeonList.value = Array.isArray(dungeonData)  ? dungeonData.map(d => d.name || d) : [];
-    allAccounts.value.forEach(a => { collapsedAccGroups.value[a.id] = true; });
+    allAccounts.value.forEach(a => { collapsedAccGroups.value[a.id] = false; });
   } catch (e) { console.error(e); }
   finally { loading.value = false; }
 };
 
-// 方案A：載入所有隊伍的詳細資料
 const loadAllTeamDetails = async () => {
-  if (teamsWithDetail.value.length > 0) return; // 已載入過就不重複
+  if (teamsWithDetail.value.length > 0) return;
   overviewLoading.value = true;
   try {
     const details = await Promise.all(
@@ -502,10 +527,10 @@ const loadAllTeamDetails = async () => {
   } finally { overviewLoading.value = false; }
 };
 
-// 從總覽切到編輯某隊
 const openTeamEdit = async (team) => {
   activeTeamId.value = team.id;
-  teamDetail.value = null;
+  teamDetail.value   = null;
+  activeDungeon.value = '';
   teamDetailLoading.value = true;
   try {
     const data = await (await fetch(`${BASE_TEAM()}/${team.id}`, { credentials: 'include' })).json();
@@ -515,9 +540,9 @@ const openTeamEdit = async (team) => {
 
 const toggleTeam = async (teamId) => {
   if (activeTeamId.value === teamId) { activeTeamId.value = null; activeDungeon.value = ''; return; }
-  activeTeamId.value = teamId;
+  activeTeamId.value  = teamId;
   activeDungeon.value = '';
-  teamDetail.value = null;
+  teamDetail.value    = null;
   teamDetailLoading.value = true;
   try {
     const data = await (await fetch(`${BASE_TEAM()}/${teamId}`, { credentials: 'include' })).json();
@@ -530,36 +555,46 @@ const toggleAccGroup = (accId) => {
   collapsedAccGroups.value = { ...collapsedAccGroups.value, [accId]: !collapsedAccGroups.value[accId] };
 };
 
-// ── 方案C：角色在某副本的狀態 ─────────────────────────────────────
+// ── 角色在副本的狀態 ──────────────────────────────────────────────
 const getSlotStatusInDungeon = (acc, role, dName) => {
   if (!teamDetail.value?.dungeons?.[dName]) return null;
-  const slot = teamDetail.value.dungeons[dName].find(s => s.accountId === acc.id && s.roleName === role.name);
+  const slot = teamDetail.value.dungeons[dName].find(
+      s => s.accountId === acc.id && s.roleName === role.name
+  );
   return slot ? slot.status : null;
 };
 
-// ── 分配操作（方案C：直接指定副本名） ────────────────────────────
+// 角色是否在其他副本（排除目前選中的）
+const isRoleInOtherDungeon = (acc, role) => {
+  if (!teamDetail.value?.dungeons) return false;
+  return dungeonList.value.some(dName => {
+    if (dName === activeDungeon.value) return false;
+    return (teamDetail.value.dungeons[dName] || []).some(
+        s => s.accountId === acc.id && s.roleName === role.name
+    );
+  });
+};
+
+// ── 分配操作 ──────────────────────────────────────────────────────
 const addSlotInDungeon = async (acc, role, status, dName) => {
-  if (!canEdit.value) return;
-  if (!teamDetail.value.dungeons) teamDetail.value.dungeons = {};
-  const current = teamDetail.value.dungeons[dName] || [];
-  if (status === 'in' && current.filter(s => s.status === 'in').length >= 12) {
+  if (!canEdit.value || !dName) return;
+  if (status === 'in' && currentSlots.value.filter(s => s.status === 'in').length >= 12) {
     showToast('副本內最多 12 人'); return;
   }
+  if (!teamDetail.value.dungeons) teamDetail.value.dungeons = {};
+  const current  = teamDetail.value.dungeons[dName] || [];
   const newSlots = [...current, {
     ownerGoogleId: acc.ownerGoogleId || '', accountId: acc.id,
     accountName: acc.name, roleName: role.name, job: role.job || '', status
   }];
   teamDetail.value.dungeons[dName] = newSlots;
   await saveSlotsInDungeon(newSlots, dName);
-  // 同步更新總覽
-  const tw = teamsWithDetail.value.find(t => t.id === activeTeamId.value);
-  if (tw?.detail?.dungeons) tw.detail.dungeons[dName] = newSlots;
 };
 
-const removeSlotInDungeon = async (slot, dName) => {
+const removeSlotInDungeon = async (acc, role, dName) => {
   if (!canEdit.value) return;
   const newSlots = (teamDetail.value.dungeons?.[dName] || []).filter(
-      s => !(s.accountId === slot.accountId && s.roleName === slot.roleName)
+      s => !(s.accountId === acc.id && s.roleName === role.name)
   );
   teamDetail.value.dungeons[dName] = newSlots;
   await saveSlotsInDungeon(newSlots, dName);
@@ -593,8 +628,7 @@ const saveSlotsInDungeon = async (slots, dName) => {
 // ── 隊伍 CRUD ─────────────────────────────────────────────────────
 const createTeam = async () => {
   if (!newTeamName.value.trim()) return;
-  isSaving.value = true;
-  createError.value = '';
+  isSaving.value = true; createError.value = '';
   try {
     const data = await (await fetch(`${BASE_TEAM()}/create`, {
       method: 'POST', credentials: 'include',
@@ -602,9 +636,8 @@ const createTeam = async () => {
       body: JSON.stringify({ name: newTeamName.value.trim() })
     })).json();
     if (data.error) { createError.value = data.error; return; }
-    showCreateModal.value = false;
-    newTeamName.value = '';
-    teamsWithDetail.value = []; // 清掉總覽快取
+    showCreateModal.value = false; newTeamName.value = '';
+    teamsWithDetail.value = [];
     await loadAll();
     showToast('隊伍已建立');
   } catch { createError.value = '建立失敗'; }
@@ -652,8 +685,7 @@ const openTeamShare = async (team) => {
   } catch { teamShareModal.value.shareList = []; }
 };
 const generateTeamInvite = async () => {
-  teamShareModal.value.generating = true;
-  teamShareModal.value.code = '';
+  teamShareModal.value.generating = true; teamShareModal.value.code = '';
   try {
     const data = await (await fetch(`${BASE_TEAM()}/share/${teamShareModal.value.teamId}`, {
       method: 'POST', credentials: 'include',
@@ -678,8 +710,7 @@ const revokeTeamShare = async (targetGoogleId) => {
 
 const submitAcceptTeam = async () => {
   if (acceptTeamCode.value.length < 6) return;
-  isAcceptingTeam.value = true;
-  acceptTeamError.value = '';
+  isAcceptingTeam.value = true; acceptTeamError.value = '';
   try {
     const data = await (await fetch(`${BASE_TEAM()}/accept-share`, {
       method: 'POST', credentials: 'include',
@@ -687,8 +718,7 @@ const submitAcceptTeam = async () => {
       body: JSON.stringify({ code: acceptTeamCode.value.toUpperCase() })
     })).json();
     if (data.error) { acceptTeamError.value = data.error; return; }
-    showAcceptTeamModal.value = false;
-    acceptTeamCode.value = '';
+    showAcceptTeamModal.value = false; acceptTeamCode.value = '';
     teamsWithDetail.value = [];
     await loadAll();
     showToast(`已加入隊伍「${data.teamName}」`);
@@ -708,5 +738,6 @@ onMounted(() => { document.title = '副本組隊'; loadAll(); });
 .custom-scrollbar::-webkit-scrollbar { width: 6px; }
 .custom-scrollbar::-webkit-scrollbar-track { background: #2c1e14; }
 .custom-scrollbar::-webkit-scrollbar-thumb { background: #5e4b37; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8d7a64; }
 select option { background-color: #2c1e14; color: #e0d3b8; }
 </style>
