@@ -125,7 +125,9 @@
                      class="bg-[#2c1e14] px-4 py-3 flex items-center justify-between"
                      :class="activeDetail.permission !== 'view' ? 'cursor-pointer hover:opacity-80 transition-opacity' : ''">
                   <div class="flex items-center gap-2 overflow-hidden flex-1">
-                    <span class="text-[#f1d483] text-[10px] font-bold bg-[#5e4b37] px-2 py-0.5 rounded shrink-0">帳號</span>
+                    <span v-if="group.permission === 'edit'" class="text-[#a8f0c8] text-[10px] font-bold bg-[#2a4a3a] px-2 py-0.5 rounded shrink-0">共享·編輯</span>
+                    <span v-else-if="group.permission === 'use'" class="text-[#a6c8f0] text-[10px] font-bold bg-[#2a3a4a] px-2 py-0.5 rounded shrink-0">共享·使用</span>
+                    <span v-else class="text-[#f1d483] text-[10px] font-bold bg-[#5e4b37] px-2 py-0.5 rounded shrink-0">帳號</span>
                     <span class="text-[#e0d3b8] font-bold truncate">{{ group.name }}</span>
                   </div>
                   <span v-if="activeDetail.permission !== 'view'"
@@ -554,6 +556,7 @@ const buildCharGroups = (assignments, permission) => {
     charGroups.value = allAccounts.value.map((acc) => ({
       id:   acc.id,
       name: acc.name,
+      permission: acc.permission,
       roles: (acc.roles || [])
           .filter(r => r.name)
           .map(r => {
