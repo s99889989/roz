@@ -677,7 +677,7 @@ const deleteClassic = async () => {
 const leaveShare = async () => {
   isSaving.value = true;
   try {
-    const res = await fetch(`${BASE_CLASSIC()}/leave-share/${activeId.value}`, {
+    const res = await fetch(`${BASE_CLASSIC()}/do-leave/${activeId.value}`, {
       method: 'DELETE', credentials: 'include'
     });
     const data = await res.json();
