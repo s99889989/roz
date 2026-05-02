@@ -42,7 +42,7 @@
                       : 'bg-[#2c1e14] border-[#5e4b37] text-[#a6937c] hover:border-[#8b7a64]'">
               {{ c.name }}
               <span class="text-[10px] ml-1 opacity-60">
-                {{ c.permission === 'owner' ? '我的' : c.permission === 'edit' ? '編輯' : '查看' }}
+               {{ c.permission === 'owner' ? '我的' : c.permission === 'edit' ? '共享·編輯' : '共享·查看' }}
               </span>
             </button>
           </div>
