@@ -24,7 +24,6 @@
 
     <div v-else class="max-w-[1600px] mx-auto">
 
-      <!-- 沒有分隊 -->
       <div v-if="classics.length === 0"
            class="text-center py-20 text-[#a6937c] italic bg-[#3d2b1f] rounded-xl border border-[#5e4b37]">
         尚未建立任何分隊，點右上角「建立分隊」開始
@@ -48,7 +47,6 @@
             </button>
           </div>
 
-          <!-- 選定分隊的操作 -->
           <template v-if="activeId && activeDetail">
             <div class="flex items-center gap-2 shrink-0 flex-wrap">
               <div class="flex items-center gap-1.5">
@@ -78,15 +76,12 @@
           </template>
         </div>
 
-        <!-- 未選 -->
         <div v-if="!activeId" class="text-center py-20 text-[#a6937c] italic bg-[#3d2b1f] rounded-xl border border-[#5e4b37]">
           請選擇上方的分隊開始分配
         </div>
 
-        <!-- 載入中 -->
         <div v-else-if="detailLoading" class="text-center py-20 text-[#a6937c] italic">載入中...</div>
 
-        <!-- 主體 -->
         <div v-else-if="activeDetail" class="grid grid-cols-1 xl:grid-cols-12 gap-8">
 
           <!-- ══ 左側角色名冊 ══ -->
@@ -103,21 +98,19 @@
               </div>
             </h2>
 
-            <!-- 圖例 -->
             <div class="flex gap-3 text-[10px] text-[#a6937c] flex-wrap">
               <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#a0c878] inline-block"></span>場外 BUFF</span>
               <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#8d7a64] inline-block"></span>已分配</span>
             </div>
 
             <div v-if="charGroups.length === 0" class="text-[#a6937c] italic py-10 text-center bg-[#3d2b1f] rounded">
-              正在讀取角色資料...
+              尚無角色資料
             </div>
 
             <div v-else class="space-y-3 overflow-y-auto max-h-[75vh] pr-2 custom-scrollbar">
               <div v-for="(group, gIdx) in charGroups" :key="group.id"
                    class="bg-[#3d2b1f] border border-[#5e4b37] rounded overflow-hidden">
 
-                <!-- 帳號標頭 -->
                 <div @click="toggleGroup(gIdx)"
                      class="bg-[#2c1e14] px-4 py-3 flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity">
                   <div class="flex items-center gap-2 overflow-hidden flex-1">
@@ -129,69 +122,60 @@
                         :class="{ 'rotate-180': !collapsedGroups[gIdx] }">▼</span>
                 </div>
 
-                <!-- 角色卡片 -->
                 <div v-show="!collapsedGroups[gIdx]" class="p-3 grid gap-2 border-t border-[#5e4b37]">
-                  <template v-for="char in group.roles" :key="char.name">
-                    <div v-if="char.name"
-                         class="bg-[#f5f1e6] text-[#2c1e14] p-2.5 rounded-lg shadow-md transition-all flex items-center gap-2"
-                         :class="[
-                           char.isSupport ? 'border-2 border-[#a0c878]' :
-                           char.assignedTo ? 'opacity-40 grayscale scale-95' :
-                           'hover:bg-[#fffcf5] border-2 border-transparent hover:border-[#f1d483]'
-                         ]">
+                  <div v-for="char in group.roles" :key="char.charName"
+                       class="bg-[#f5f1e6] text-[#2c1e14] p-2.5 rounded-lg shadow-md transition-all flex items-center gap-2"
+                       :class="[
+                         char.isSupport ? 'border-2 border-[#a0c878]' :
+                         char.assignedTo ? 'opacity-40 grayscale scale-95' :
+                         'hover:bg-[#fffcf5] border-2 border-transparent hover:border-[#f1d483]'
+                       ]">
 
-                      <!-- 職業圖示 -->
-                      <div class="relative shrink-0 pt-1 pb-4">
-                        <div class="w-12 h-12 bg-[#ede4cf] rounded-full border-2 border-[#dcd2bb] flex items-center justify-center overflow-hidden shadow-inner">
-                          <img :src="getJobImg(char.job)" :alt="char.job" class="w-9 h-9 object-contain">
-                        </div>
-                        <span class="absolute bottom-1 left-1/2 -translate-x-1/2 bg-[#5e4b37] text-[#f1d483] text-[9px] px-1.5 py-0.5 rounded-full whitespace-nowrap border border-[#2c1e14]">
-                          {{ char.job || '冒險者' }}
-                        </span>
+                    <div class="relative shrink-0 pt-1 pb-4">
+                      <div class="w-12 h-12 bg-[#ede4cf] rounded-full border-2 border-[#dcd2bb] flex items-center justify-center overflow-hidden shadow-inner">
+                        <img :src="getJobImg(char.job)" :alt="char.job" class="w-9 h-9 object-contain">
                       </div>
+                      <span class="absolute bottom-1 left-1/2 -translate-x-1/2 bg-[#5e4b37] text-[#f1d483] text-[9px] px-1.5 py-0.5 rounded-full whitespace-nowrap border border-[#2c1e14]">
+                        {{ char.job || '冒險者' }}
+                      </span>
+                    </div>
 
-                      <!-- 名稱與按鈕 -->
-                      <div class="flex-1 min-w-0">
-                        <div class="flex justify-between items-center mb-1">
-                          <div class="font-black text-base text-[#4a3728] truncate leading-tight">{{ char.name }}</div>
-                          <div class="flex items-center gap-1 shrink-0">
-                            <span v-if="char.level" class="text-[#8d7a64] text-[10px] font-mono">Lv.{{ char.level }}</span>
-                            <button v-if="canEdit" @click="toggleSupport(char)"
-                                    :title="char.isSupport ? '取消 BUFF' : '設為場外 BUFF'"
-                                    class="text-[10px] px-1.5 py-0.5 rounded border transition font-bold"
-                                    :class="char.isSupport
-                                      ? 'bg-[#a0c878] text-[#2c1e14] border-[#7aaa4a]'
-                                      : 'bg-transparent text-[#8d7a64] border-[#c5b99a] hover:border-[#a0c878]'">
-                              🎵
-                            </button>
-                          </div>
-                        </div>
-
-                        <!-- BUFF 標籤 -->
-                        <div v-if="char.isSupport"
-                             class="text-center py-1 bg-[#d4edb8] text-[#4a7a1a] text-[10px] font-bold rounded border border-[#a0c878]">
-                          🎵 場外 BUFF
-                        </div>
-                        <!-- 已分配 -->
-                        <div v-else-if="char.assignedTo"
-                             class="text-center py-1 bg-[#dcd2bb] text-[#8d7a64] text-[10px] font-bold rounded">
-                          已分配 → 隊伍 {{ String.fromCharCode(64 + char.assignedTo) }}
-                        </div>
-                        <!-- 分配按鈕 -->
-                        <div v-else-if="canEdit" class="grid grid-cols-4 sm:grid-cols-6 gap-1 mt-1">
-                          <button v-for="sIdx in squadCount" :key="sIdx"
-                                  @click="addToSquad(char, sIdx - 1, gIdx)"
-                                  :disabled="!char.isSupport && isAccountInSquad(gIdx, sIdx - 1)"
-                                  class="py-1 text-[10px] font-bold rounded border transition uppercase"
-                                  :class="getButtonClass(sIdx - 1, gIdx, char.isSupport)">
-                            {{ String.fromCharCode(64 + sIdx) }}
+                    <div class="flex-1 min-w-0">
+                      <div class="flex justify-between items-center mb-1">
+                        <div class="font-black text-base text-[#4a3728] truncate leading-tight">{{ char.charName }}</div>
+                        <div class="flex items-center gap-1 shrink-0">
+                          <span v-if="char.level" class="text-[#8d7a64] text-[10px] font-mono">Lv.{{ char.level }}</span>
+                          <button v-if="canEdit" @click="toggleSupport(char)"
+                                  :title="char.isSupport ? '取消 BUFF' : '設為場外 BUFF'"
+                                  class="text-[10px] px-1.5 py-0.5 rounded border transition font-bold"
+                                  :class="char.isSupport
+                                    ? 'bg-[#a0c878] text-[#2c1e14] border-[#7aaa4a]'
+                                    : 'bg-transparent text-[#8d7a64] border-[#c5b99a] hover:border-[#a0c878]'">
+                            🎵
                           </button>
                         </div>
-                        <!-- 查看模式 -->
-                        <div v-else class="text-[#a6937c] text-[10px] italic text-center py-1">查看模式</div>
                       </div>
+
+                      <div v-if="char.isSupport"
+                           class="text-center py-1 bg-[#d4edb8] text-[#4a7a1a] text-[10px] font-bold rounded border border-[#a0c878]">
+                        🎵 場外 BUFF
+                      </div>
+                      <div v-else-if="char.assignedTo"
+                           class="text-center py-1 bg-[#dcd2bb] text-[#8d7a64] text-[10px] font-bold rounded">
+                        已分配 → 隊伍 {{ String.fromCharCode(64 + char.assignedTo) }}
+                      </div>
+                      <div v-else-if="canEdit" class="grid grid-cols-4 sm:grid-cols-6 gap-1 mt-1">
+                        <button v-for="sIdx in squadCount" :key="sIdx"
+                                @click="addToSquad(char, sIdx - 1, gIdx)"
+                                :disabled="!char.isSupport && isAccountInSquad(gIdx, sIdx - 1)"
+                                class="py-1 text-[10px] font-bold rounded border transition uppercase"
+                                :class="getButtonClass(sIdx - 1, gIdx, char.isSupport)">
+                          {{ String.fromCharCode(64 + sIdx) }}
+                        </button>
+                      </div>
+                      <div v-else class="text-[#a6937c] text-[10px] italic text-center py-1">查看模式</div>
                     </div>
-                  </template>
+                  </div>
                 </div>
               </div>
             </div>
@@ -208,7 +192,6 @@
                    class="bg-[#f5f1e6] rounded shadow-xl border-t-8 flex flex-col"
                    :class="getSquadColor(sIdx).border">
 
-                <!-- 標頭 -->
                 <div class="p-4 border-b border-[#dcd2bb] flex justify-between items-center">
                   <h3 class="font-black text-xl text-[#2c1e14]">隊伍 {{ String.fromCharCode(64 + sIdx + 1) }}</h3>
                   <span class="bg-white/40 px-2 py-0.5 rounded text-[10px] font-bold text-[#8d7a64]">
@@ -216,7 +199,6 @@
                   </span>
                 </div>
 
-                <!-- 職業組成 -->
                 <div class="px-3 pt-2 pb-1 flex flex-wrap gap-1 min-h-[26px]">
                   <span v-for="(count, job) in getJobComposition(squad.members)" :key="job"
                         class="text-[9px] font-bold px-1.5 py-0.5 rounded-full text-white"
@@ -227,9 +209,8 @@
                         class="text-[9px] text-[#c2b9a3] italic">尚無成員</span>
                 </div>
 
-                <!-- 隊員 -->
                 <div class="p-3 flex-1 min-h-[360px] space-y-2">
-                  <div v-for="member in squad.members" :key="member.charName"
+                  <div v-for="member in squad.members" :key="member.charName + member.accountId"
                        class="bg-white border border-[#e8dfc8] p-2.5 rounded-xl shadow-sm flex items-center group">
                     <div class="relative shrink-0 pt-1 pb-3">
                       <div class="w-11 h-11 bg-[#f8f5ee] rounded-full border border-[#dcd2bb] flex items-center justify-center overflow-hidden">
@@ -256,19 +237,17 @@
                   </div>
                 </div>
 
-                <!-- 場外 BUFF -->
                 <div v-if="squad.supporters.length > 0"
                      class="px-3 pb-2 pt-2 border-t border-dashed border-[#c8be9e]">
                   <div class="text-[9px] text-[#8d7a64] font-bold mb-1">🎵 場外 BUFF</div>
                   <div class="flex flex-wrap gap-1">
-                    <span v-for="sup in squad.supporters" :key="sup.charName"
+                    <span v-for="sup in squad.supporters" :key="sup.charName + sup.accountId"
                           class="text-[10px] bg-[#d4edb8] text-[#3d6818] px-2 py-0.5 rounded-full border border-[#a0c878] font-bold">
                       {{ sup.charName }} <span class="opacity-60 text-[9px]">{{ sup.job }}</span>
                     </span>
                   </div>
                 </div>
 
-                <!-- 底部 -->
                 <div class="p-3 bg-[#ede4cf] border-t border-[#dcd2bb] rounded-b-lg flex justify-between items-center">
                   <span class="text-xs text-[#4a3728] font-bold">隊內人數</span>
                   <span class="text-lg font-mono font-black text-[#4a3728] px-3 py-0.5 bg-white/40 rounded-lg">
@@ -303,7 +282,7 @@
     <div v-if="renameModal.show" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" @click.self="renameModal.show = false">
       <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-sm p-6">
         <h3 class="text-[#f1d483] font-bold text-lg mb-4">分隊改名</h3>
-        <input v-model="renameModal.name" placeholder="新的分隊名稱"
+        <input v-model="renameModal.name"
                class="w-full bg-[#3d2b1f] border border-[#5e4b37] rounded-lg px-4 py-3 text-[#e0d3b8] outline-none focus:border-[#f1d483] transition mb-3" />
         <div class="flex gap-2">
           <button @click="submitRename" :disabled="!renameModal.name.trim() || isSaving"
@@ -415,48 +394,50 @@ const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩�
 const getJobImg  = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
 
 const baseThemes = [
-  { border: 'border-[#5b8fa4]', tagBg: '#5b8fa4', btn: 'border-[#5b8fa4] text-[#5b8fa4] hover:bg-[#5b8fa4] hover:text-white' },
-  { border: 'border-[#8fa45b]', tagBg: '#8fa45b', btn: 'border-[#8fa45b] text-[#8fa45b] hover:bg-[#8fa45b] hover:text-white' },
-  { border: 'border-[#a47a5b]', tagBg: '#a47a5b', btn: 'border-[#a47a5b] text-[#a47a5b] hover:bg-[#a47a5b] hover:text-white' },
-  { border: 'border-[#8e5ba4]', tagBg: '#8e5ba4', btn: 'border-[#8e5ba4] text-[#8e5ba4] hover:bg-[#8e5ba4] hover:text-white' },
-  { border: 'border-[#a45b5b]', tagBg: '#a45b5b', btn: 'border-[#a45b5b] text-[#a45b5b] hover:bg-[#a45b5b] hover:text-white' },
+  { border: 'border-[#5b8fa4]', tagBg: '#5b8fa4' },
+  { border: 'border-[#8fa45b]', tagBg: '#8fa45b' },
+  { border: 'border-[#a47a5b]', tagBg: '#a47a5b' },
+  { border: 'border-[#8e5ba4]', tagBg: '#8e5ba4' },
+  { border: 'border-[#a45b5b]', tagBg: '#a45b5b' },
+  { border: 'border-[#5ba48e]', tagBg: '#5ba48e' },
 ];
-const getSquadColor = (i) => baseThemes[i % baseThemes.length];
+const getSquadColor      = (i) => baseThemes[i % baseThemes.length];
+const getJobComposition  = (members) => {
+  const map = {};
+  members.forEach(m => { if (m.job) map[m.job] = (map[m.job] || 0) + 1; });
+  return map;
+};
 
 // ── 狀態 ──────────────────────────────────────────────────────────
-const loading       = ref(true);
-const classics      = ref([]);
-const allAccounts   = ref([]);  // 從 /roz/account/list 讀
-const activeId      = ref(null);
-const activeDetail  = ref(null);
-const detailLoading = ref(false);
-const isSaving      = ref(false);
-const toast         = ref({ show: false, message: '' });
-
-// 分隊操作
-const showCreateModal  = ref(false);
-const newName          = ref('');
-const createError      = ref('');
-const showDeleteConfirm = ref(false);
-const renameModal      = ref({ show: false, name: '' });
-
-// 分享
-const shareModal = ref({ show: false, permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] });
-const showAcceptModal = ref(false);
-const acceptCode      = ref('');
-const acceptError     = ref('');
-const isAccepting     = ref(false);
-
-// 名冊
+const loading        = ref(true);
+const classics       = ref([]);
+const allAccounts    = ref([]);
+const activeId       = ref(null);
+const activeDetail   = ref(null);
+const detailLoading  = ref(false);
+const isSaving       = ref(false);
+const toast          = ref({ show: false, message: '' });
 const charGroups     = ref([]);
 const collapsedGroups = ref({});
 const squadCount     = ref(4);
+
+const showCreateModal   = ref(false);
+const newName           = ref('');
+const createError       = ref('');
+const showDeleteConfirm = ref(false);
+const renameModal       = ref({ show: false, name: '' });
+const shareModal        = ref({ show: false, permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] });
+const showAcceptModal   = ref(false);
+const acceptCode        = ref('');
+const acceptError       = ref('');
+const isAccepting       = ref(false);
 
 // ── 計算 ──────────────────────────────────────────────────────────
 const ownCount = computed(() => classics.value.filter(c => c.permission === 'owner').length);
 const canEdit  = computed(() => activeDetail.value?.permission === 'owner' || activeDetail.value?.permission === 'edit');
 
-const allChars = computed(() => charGroups.value.flatMap(g => g.roles).filter(r => r.charName));
+// allChars：展開所有帳號的角色成一個陣列
+const allChars = computed(() => charGroups.value.flatMap(g => g.roles));
 
 const squads = computed(() => {
   const result = [];
@@ -469,12 +450,6 @@ const squads = computed(() => {
   }
   return result;
 });
-
-const getJobComposition = (members) => {
-  const map = {};
-  members.forEach(m => { if (m.job) map[m.job] = (map[m.job] || 0) + 1; });
-  return map;
-};
 
 // ── 載入 ──────────────────────────────────────────────────────────
 const loadAll = async () => {
@@ -492,41 +467,44 @@ const loadAll = async () => {
 
 const selectClassic = async (id) => {
   if (activeId.value === id) return;
-  activeId.value    = id;
+  activeId.value     = id;
   activeDetail.value = null;
+  charGroups.value   = [];
   detailLoading.value = true;
-
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/${id}`, { credentials: 'include' })).json();
     activeDetail.value = data;
     squadCount.value   = data.squadCount || 4;
-
-    // 把帳號 + 角色展開成名冊，並套用已儲存的分配
     buildCharGroups(data.assignments || []);
   } catch (e) { console.error(e); }
   finally { detailLoading.value = false; }
 };
 
-// 從 allAccounts 建立 charGroups，並套用 assignments
+// ── 從 allAccounts 建立名冊，套用儲存的分配 ────────────────────────
 const buildCharGroups = (assignments) => {
-  charGroups.value = allAccounts.value.map((acc, gIdx) => ({
+  charGroups.value = allAccounts.value.map((acc) => ({
     id:             acc.id,
     name:           acc.name,
     sharedFromName: acc.sharedFromName || '',
-    roles: (acc.roles || []).filter(r => r.name).map(r => {
-      const saved = assignments.find(a => a.charName === r.name && a.accountId === acc.id);
-      return {
-        charName:      r.name,
-        accountName:   acc.name,
-        ownerGoogleId: acc.ownerGoogleId || '',
-        accountId:     acc.id,
-        job:           r.job   || '',
-        level:         r.level || null,
-        assignedTo:    saved?.assignedTo  || null,
-        isSupport:     saved?.isSupport   || false,
-      };
-    })
+    roles: (acc.roles || [])
+        .filter(r => r.name)                    // ← 用 r.name（新版 API 欄位）
+        .map(r => {
+          const saved = assignments.find(
+              a => a.charName === r.name && a.accountId === acc.id
+          );
+          return {
+            charName:      r.name,              // ← r.name 轉成 charName 供內部使用
+            accountName:   acc.name,
+            ownerGoogleId: acc.ownerGoogleId || '',
+            accountId:     acc.id,
+            job:           r.job   || '',
+            level:         r.level || null,
+            assignedTo:    saved?.assignedTo ?? null,
+            isSupport:     saved?.isSupport  ?? false,
+          };
+        })
   }));
+  // 預設全部收起
   charGroups.value.forEach((_, i) => { collapsedGroups.value[i] = true; });
 };
 
@@ -540,28 +518,41 @@ const toggleSupport = (char) => {
   saveAssignments();
 };
 
+// 判斷同一帳號是否已有角色在某小隊（每帳號每小隊最多一個非BUFF角色）
 const isAccountInSquad = (gIdx, sIdx) =>
-  squads.value[sIdx].members.some(m =>
-    charGroups.value[gIdx].roles.some(r => !r.isSupport && r.charName === m.charName)
-  );
+    squads.value[sIdx].members.some(m =>
+        charGroups.value[gIdx].roles.some(r => !r.isSupport && r.charName === m.charName)
+    );
 
 const getButtonClass = (sIdx, gIdx, isSupport) => {
+  const theme = getSquadColor(sIdx);
   if (!isSupport && isAccountInSquad(gIdx, sIdx))
     return 'bg-[#dcd2bb] text-[#b4a992] cursor-not-allowed border-transparent';
-  return getSquadColor(sIdx).btn;
+  return `border-2 text-[#4a3728] hover:text-white transition`
+      + ` border-current`; // 簡化：用 theme tagBg 內嵌 style 更好，這裡用預設樣式
 };
 
 const addToSquad = (char, sIdx, gIdx) => {
-  if (char.isSupport || !isAccountInSquad(gIdx, sIdx)) {
-    char.assignedTo = sIdx + 1;
+  if (!char.isSupport && isAccountInSquad(gIdx, sIdx)) return;
+  char.assignedTo = sIdx + 1;
+  saveAssignments();
+};
+
+const removeFromSquad = (member) => {
+  const char = allChars.value.find(
+      c => c.charName === member.charName && c.accountId === member.accountId
+  );
+  if (char) {
+    char.assignedTo = null;
     saveAssignments();
   }
 };
 
-const removeFromSquad = (char) => { char.assignedTo = null; saveAssignments(); };
-
 const resetAll = () => {
-  allChars.value.forEach(c => { c.assignedTo = null; c.isSupport = false; });
+  allChars.value.forEach(c => {
+    c.assignedTo = null;
+    c.isSupport = false;
+  });
   saveAssignments();
 };
 
@@ -574,148 +565,226 @@ const saveAssignments = () => {
     try {
       await fetch(`${BASE_CLASSIC()}/${activeId.value}/save`, {
         method: 'POST', credentials: 'include',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           squadCount: squadCount.value,
           assignments: allChars.value.map(c => ({
-            charName:      c.charName,
-            accountName:   c.accountName,
+            charName: c.charName,
+            accountName: c.accountName,
             ownerGoogleId: c.ownerGoogleId,
-            accountId:     c.accountId,
-            job:           c.job,
-            level:         c.level,
-            assignedTo:    c.assignedTo || null,
-            isSupport:     c.isSupport  || false,
+            accountId: c.accountId,
+            job: c.job,
+            level: c.level,
+            assignedTo: c.assignedTo ?? null,
+            isSupport: c.isSupport ?? false,
           }))
         })
       });
-    } catch (e) { console.error('儲存失敗:', e); }
+    } catch (e) {
+      console.error('儲存失敗:', e);
+    }
   }, 500);
 };
 
-// squadCount 改變時清掉超出範圍的分配並儲存
 watch(squadCount, (newVal) => {
-  allChars.value.forEach(c => { if (c.assignedTo > newVal) c.assignedTo = null; });
+  allChars.value.forEach(c => {
+    if (c.assignedTo > newVal) c.assignedTo = null;
+  });
   saveAssignments();
 });
 
-// ── 建立/改名/刪除 ────────────────────────────────────────────────
+// ── 建立 / 改名 / 刪除 ───────────────────────────────────────────
 const createClassic = async () => {
   if (!newName.value.trim()) return;
-  isSaving.value = true; createError.value = '';
+  isSaving.value = true;
+  createError.value = '';
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/create`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: newName.value.trim() })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: newName.value.trim()})
     })).json();
-    if (data.error) { createError.value = data.error; return; }
+    if (data.error) {
+      createError.value = data.error;
+      return;
+    }
     showCreateModal.value = false;
     newName.value = '';
     await loadAll();
     showToast('分隊已建立');
     selectClassic(data.id);
-  } catch { createError.value = '建立失敗'; }
-  finally { isSaving.value = false; }
+  } catch {
+    createError.value = '建立失敗';
+  } finally {
+    isSaving.value = false;
+  }
 };
 
-const startRename = () => { renameModal.value = { show: true, name: activeDetail.value?.name || '' }; };
+const startRename = () => {
+  renameModal.value = {show: true, name: activeDetail.value?.name || ''};
+};
 const submitRename = async () => {
   isSaving.value = true;
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/rename/${activeId.value}`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: renameModal.value.name.trim() })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: renameModal.value.name.trim()})
     })).json();
-    if (data.error) { showToast(data.error); return; }
+    if (data.error) {
+      showToast(data.error);
+      return;
+    }
     renameModal.value.show = false;
-    await loadAll();
     if (activeDetail.value) activeDetail.value.name = renameModal.value.name.trim();
+    classics.value = classics.value.map(c => c.id === activeId.value ? {...c, name: renameModal.value.name.trim()} : c);
     showToast('已改名');
-  } catch { showToast('改名失敗'); }
-  finally { isSaving.value = false; }
+  } catch {
+    showToast('改名失敗');
+  } finally {
+    isSaving.value = false;
+  }
 };
 
-const confirmDelete = () => { showDeleteConfirm.value = true; };
+const confirmDelete = () => {
+  showDeleteConfirm.value = true;
+};
 const deleteClassic = async () => {
   isSaving.value = true;
   try {
-    await fetch(`${BASE_CLASSIC()}/remove/${activeId.value}`, { method: 'DELETE', credentials: 'include' });
+    await fetch(`${BASE_CLASSIC()}/remove/${activeId.value}`, {method: 'DELETE', credentials: 'include'});
     showDeleteConfirm.value = false;
     activeId.value = null;
     activeDetail.value = null;
     charGroups.value = [];
     await loadAll();
     showToast('分隊已刪除');
-  } catch { showToast('刪除失敗'); }
-  finally { isSaving.value = false; }
+  } catch {
+    showToast('刪除失敗');
+  } finally {
+    isSaving.value = false;
+  }
 };
 
 // ── 分享 ──────────────────────────────────────────────────────────
 const openShareModal = async () => {
-  shareModal.value = { show: true, permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] };
+  shareModal.value = {show: true, permission: 'view', generating: false, code: '', expiresAt: '', shareList: []};
   await loadShareList();
 };
 const loadShareList = async () => {
   try {
-    const data = await (await fetch(`${BASE_CLASSIC()}/share-list/${activeId.value}`, { credentials: 'include' })).json();
+    const data = await (await fetch(`${BASE_CLASSIC()}/share-list/${activeId.value}`, {credentials: 'include'})).json();
     shareModal.value.shareList = Array.isArray(data) ? data : [];
-  } catch { shareModal.value.shareList = []; }
+  } catch {
+    shareModal.value.shareList = [];
+  }
 };
 const generateInvite = async () => {
-  shareModal.value.generating = true; shareModal.value.code = '';
+  shareModal.value.generating = true;
+  shareModal.value.code = '';
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/share/${activeId.value}`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ permission: shareModal.value.permission })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({permission: shareModal.value.permission})
     })).json();
-    if (data.error) { showToast(data.error); return; }
+    if (data.error) {
+      showToast(data.error);
+      return;
+    }
     shareModal.value.code = data.code;
     shareModal.value.expiresAt = data.expiresAt;
-  } catch { showToast('產生失敗'); }
-  finally { shareModal.value.generating = false; }
+  } catch {
+    showToast('產生失敗');
+  } finally {
+    shareModal.value.generating = false;
+  }
 };
-const copyCode    = () => { navigator.clipboard?.writeText(shareModal.value.code); showToast('邀請碼已複製'); };
+const copyCode = () => {
+  navigator.clipboard?.writeText(shareModal.value.code);
+  showToast('邀請碼已複製');
+};
 const revokeShare = async (targetGoogleId) => {
   try {
-    await fetch(`${BASE_CLASSIC()}/revoke-share/${activeId.value}/${targetGoogleId}`, { method: 'DELETE', credentials: 'include' });
+    await fetch(`${BASE_CLASSIC()}/revoke-share/${activeId.value}/${targetGoogleId}`, {
+      method: 'DELETE',
+      credentials: 'include'
+    });
     await loadShareList();
     showToast('已移除共享');
-  } catch { showToast('移除失敗'); }
+  } catch {
+    showToast('移除失敗');
+  }
 };
 
 const submitAccept = async () => {
   if (acceptCode.value.length < 6) return;
-  isAccepting.value = true; acceptError.value = '';
+  isAccepting.value = true;
+  acceptError.value = '';
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/accept-share`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ code: acceptCode.value.toUpperCase() })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({code: acceptCode.value.toUpperCase()})
     })).json();
-    if (data.error) { acceptError.value = data.error; return; }
+    if (data.error) {
+      acceptError.value = data.error;
+      return;
+    }
     showAcceptModal.value = false;
     acceptCode.value = '';
     await loadAll();
     showToast(`已加入分隊「${data.name}」（${data.permission === 'edit' ? '編輯' : '查看'}權限）`);
-  } catch { acceptError.value = '驗證失敗，請再試一次'; }
-  finally { isAccepting.value = false; }
+  } catch {
+    acceptError.value = '驗證失敗，請再試一次';
+  } finally {
+    isAccepting.value = false;
+  }
 };
 
 // ── 工具 ──────────────────────────────────────────────────────────
-const showToast = (msg) => { toast.value = { show: true, message: msg }; setTimeout(() => { toast.value.show = false; }, 2500); };
+const showToast = (msg) => {
+  toast.value = {show: true, message: msg};
+  setTimeout(() => {
+    toast.value.show = false;
+  }, 2500);
+};
 
-onMounted(() => { document.title = '經典組隊'; loadAll(); });
+onMounted(() => {
+  document.title = '經典組隊';
+  loadAll();
+});
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.3s, transform 0.3s; }
-.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
-.custom-scrollbar::-webkit-scrollbar { width: 6px; }
-.custom-scrollbar::-webkit-scrollbar-track { background: #2c1e14; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: #5e4b37; border-radius: 10px; }
-.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8d7a64; }
-select option { background-color: #3d2b1f; color: #f1d483; }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2c1e14;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #5e4b37;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8d7a64;
+}
+
+select option {
+  background-color: #3d2b1f;
+  color: #f1d483;
+}
 </style>
