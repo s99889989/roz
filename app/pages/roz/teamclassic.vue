@@ -752,12 +752,13 @@ const showToast = (msg) => {
   }, 2500);
 };
 
-onMounted(() => {
+onMounted(async () => {
   document.title = '經典組隊';
-  loadAll();
-  console.log('讀取')
+  await loadAll();
+
   // 自動選取上次的分隊
   const lastId = localStorage.getItem('roz_classic_last');
+  console.log('讀取: ' + lastId)
   if (lastId && classics.value.some(c => c.id === lastId)) {
     console.log('A')
     selectClassic(lastId);
