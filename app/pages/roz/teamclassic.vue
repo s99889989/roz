@@ -467,6 +467,7 @@ const loadAll = async () => {
 
 const selectClassic = async (id) => {
   if (activeId.value === id) return;
+  localStorage.setItem('roz_classic_last', id);
   activeId.value     = id;
   activeDetail.value = null;
   charGroups.value   = [];
