@@ -60,7 +60,7 @@
             <div class="p-4">
               <div v-if="!team.detail" class="text-[#a6937c] italic text-sm py-4 text-center">尚未分配任何副本</div>
               <div v-else class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))">
-                <div v-for="dName in dungeonList" :key="dName"
+                <div v-for="dName in dungeonList.filter(d => team.detail?.dungeons?.[d]?.length > 0)" :key="dName"
                      class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl p-3">
                   <div class="text-[#f1d483] text-xs font-bold mb-2 pb-1.5 border-b border-[#5e4b37] flex items-center justify-between">
                     <span>{{ dName }}</span>
