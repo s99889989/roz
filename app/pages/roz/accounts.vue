@@ -462,8 +462,10 @@ const cancelAdd = () => { isAdding.value = false; formError.value = ''; };
 
 // ── 編輯 ──────────────────────────────────────────────────────────
 const startEdit = (acc) => {
+  console.log('startEdit called, acc.id:', acc.id);
   cancelAdd();
   editingId.value = acc.id;
+  console.log('editingId after set:', editingId.value);
   formError.value = '';
   editForm.value = { name: acc.name, roles: (acc.roles || []).map(r => ({ name: r.name, job: r.job || '', level: r.level || null })) };
   collapsed.value[acc.id] = false;
