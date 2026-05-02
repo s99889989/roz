@@ -677,20 +677,21 @@ const deleteClassic = async () => {
 const leaveShare = async () => {
   isSaving.value = true;
   try {
-    await fetch(`${BASE_CLASSIC()}/leave-share/${activeId.value}`, {
+    const res = await fetch(`${BASE_CLASSIC()}/leave-share/${activeId.value}`, {
       method: 'DELETE', credentials: 'include'
     });
+    const data = await res.json();
+    console.log('leaveShare response:', data);  // ← 加這行
     showLeaveConfirm.value = false;
-    activeId.value = null;
-    activeDetail.value = null;
-    charGroups.value = [];
+    activeId.value = null; activeDetail.value = null; charGroups.value = [];
     await loadAll();
+    console.log('classics after reload:', classics.value);  // ← 加這行
     showToast('已退出共享');
-  } catch {
+  } catch (e) {
+    console.error('leaveShare error:', e);  // ← 加這行
     showToast('退出失敗');
-  } finally {
-    isSaving.value = false;
   }
+  finally { isSaving.value = false; }
 };
 
 // ── 分享 ──────────────────────────────────────────────────────────
