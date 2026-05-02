@@ -466,6 +466,7 @@ const loadAll = async () => {
 };
 
 const selectClassic = async (id) => {
+  console.log('選擇: '+id)
   if (activeId.value === id) return;
   localStorage.setItem('roz_classic_last', id);
   activeId.value     = id;

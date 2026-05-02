@@ -39,94 +39,99 @@
         尚未建立任何隊伍，點右上角「建立隊伍」開始
       </div>
 
-      <!-- ══ 總覽模式 ══ -->
+      <!-- ══ 總覽模式 — 單一大 grid，卡片跨隊伍填滿 ══ -->
       <div v-if="viewMode === 'overview'">
         <div v-if="overviewLoading" class="text-center py-20 text-[#a6937c] italic">載入總覽中...</div>
-        <div v-else class="space-y-6">
-          <div v-for="team in teamsWithDetail" :key="team.id"
-               class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl overflow-hidden">
 
-            <!-- 隊伍標頭 -->
-            <div class="bg-[#2c1e14] px-4 py-3 flex items-center justify-between border-b border-[#5e4b37]">
-              <div class="flex items-center gap-2">
-                <span v-if="team.permission === 'owner'" class="text-[#f1d483] text-xs font-bold bg-[#5e4b37] px-2.5 py-1 rounded">我的</span>
-                <span v-else-if="team.permission === 'edit'" class="text-[#a8f0c8] text-xs font-bold bg-[#2a4a3a] px-2.5 py-1 rounded">共享·編輯</span>
-                <span v-else class="text-[#a6c8f0] text-xs font-bold bg-[#2a3a4a] px-2.5 py-1 rounded">共享·查看</span>
-                <span class="text-[#e0d3b8] font-bold text-lg">{{ team.name }}</span>
-              </div>
-              <button @click="viewMode = 'edit'; openTeamEdit(team)"
-                      class="text-xs bg-[#4a6b5e] hover:bg-[#5b8573] text-[#a8f0c8] px-3 py-1 rounded border border-[#a8f0c8]/20 transition">
-                編輯分配
-              </button>
-            </div>
+        <div v-else-if="allOverviewCards.length === 0"
+             class="text-center py-20 text-[#a6937c] italic bg-[#3d2b1f] rounded-xl border border-[#5e4b37]">
+          所有隊伍尚未分配任何副本
+        </div>
 
-            <!-- 副本卡片（只顯示有分配的） -->
-            <div class="p-4">
-              <div v-if="!team.detail || !assignedDungeons(team).length"
-                   class="text-[#a6937c] italic text-sm py-4 text-center">尚未分配任何副本</div>
+        <div v-else>
+          <!-- 隊伍快速導覽 -->
+          <div class="flex flex-wrap gap-2 mb-4 items-center">
+            <span class="text-[#a6937c] text-xs">隊伍：</span>
+            <button v-for="team in teamsWithDetail" :key="team.id"
+                    @click="viewMode = 'edit'; openTeamEdit(team)"
+                    class="text-xs bg-[#3d2b1f] hover:bg-[#5e4b37] border border-[#5e4b37] text-[#a6937c] hover:text-[#f1d483] px-3 py-1 rounded transition">
+              {{ team.name }}
+              <span class="opacity-50 ml-1">{{ assignedDungeons(team).length }} 副本</span>
+            </button>
+          </div>
 
-              <div v-else class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))">
-                <div v-for="dName in assignedDungeons(team)" :key="dName"
-                     class="bg-[#f5f1e6] rounded-xl shadow-lg border-t-4 border-[#5b8fa4] overflow-hidden">
+          <!-- 單一大 grid -->
+          <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))">
+            <template v-for="card in allOverviewCards" :key="card.teamId + card.dName">
+              <div class="bg-[#f5f1e6] rounded-xl shadow-lg overflow-hidden"
+                   :style="{ borderTop: `4px solid ${card.color}` }">
 
-                  <!-- 副本標頭 -->
-                  <div class="px-4 py-3 border-b border-[#dcd2bb] flex items-center justify-between bg-[#ede4cf]">
-                    <h3 class="font-black text-base text-[#2c1e14]">{{ dName }}</h3>
-                    <div class="flex items-center gap-2">
-                      <span class="text-[10px] font-bold text-[#8d7a64]">
-                        {{ (team.detail.dungeons[dName] || []).filter(s => s.status === 'in').length }}/12
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- 職業組成標籤 -->
-                  <div class="px-3 pt-2 pb-1 flex flex-wrap gap-1 min-h-[26px] bg-[#f5f1e6]">
-                    <span v-for="(count, job) in getJobComposition((team.detail.dungeons[dName] || []).filter(s => s.status === 'in'))"
-                          :key="job"
-                          class="text-[9px] font-bold px-1.5 py-0.5 rounded-full text-white bg-[#5b8fa4]">
-                      {{ job }} ×{{ count }}
+                <!-- 隊伍名 + 副本名 -->
+                <div class="px-4 py-3 border-b border-[#dcd2bb] bg-[#ede4cf]">
+                  <div class="text-[9px] font-bold mb-0.5 flex items-center gap-1.5"
+                       :style="{ color: card.color }">
+                    <span class="px-1.5 py-0.5 rounded text-white text-[9px]"
+                          :style="{ backgroundColor: card.color }">
+                      {{ card.teamName }}
                     </span>
                   </div>
-
-                  <!-- 副本內成員 -->
-                  <div class="p-3 space-y-1.5">
-                    <div v-for="slot in (team.detail.dungeons[dName] || []).filter(s => s.status === 'in')"
-                         :key="slot.roleName+slot.accountId"
-                         class="bg-white border border-[#e8dfc8] px-3 py-2 rounded-lg flex items-center gap-2 shadow-sm">
-                      <div class="w-9 h-9 bg-[#f8f5ee] rounded-full border border-[#dcd2bb] flex items-center justify-center overflow-hidden shrink-0">
-                        <img :src="getJobImg(slot.job)" class="w-6 h-6 object-contain">
-                      </div>
-                      <div class="flex-1 min-w-0">
-                        <div class="font-black text-sm text-[#2c1e14] truncate">{{ slot.roleName }}</div>
-                        <div class="text-[10px] text-[#8d7a64]">{{ slot.job }} · {{ slot.accountName }}</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- 場外 BUFF -->
-                  <div v-if="(team.detail.dungeons[dName] || []).some(s => s.status === 'buff')"
-                       class="px-3 pb-3 pt-1 border-t border-dashed border-[#dcd2bb]">
-                    <div class="text-[9px] text-[#8d7a64] font-bold mb-1">🎵 場外 BUFF</div>
-                    <div class="flex flex-wrap gap-1">
-                      <span v-for="slot in (team.detail.dungeons[dName] || []).filter(s => s.status === 'buff')"
-                            :key="'b'+slot.roleName"
-                            class="text-[10px] bg-[#d4edb8] text-[#3d6818] px-2 py-0.5 rounded-full border border-[#a0c878] font-bold">
-                        {{ slot.roleName }} <span class="opacity-60">{{ slot.job }}</span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- 底部人數 -->
-                  <div class="px-4 py-2 bg-[#ede4cf] border-t border-[#dcd2bb] flex justify-between items-center">
-                    <span class="text-xs text-[#4a3728] font-bold">隊內人數</span>
-                    <span class="font-mono font-black text-[#4a3728] text-sm">
-                      {{ (team.detail.dungeons[dName] || []).filter(s => s.status === 'in').length }}
-                      <span class="text-xs">人</span>
+                  <div class="flex items-center justify-between">
+                    <h3 class="font-black text-base text-[#2c1e14]">{{ card.dName }}</h3>
+                    <span class="text-[10px] font-bold text-[#8d7a64]">
+                      {{ card.inSlots.length }}/12
                     </span>
                   </div>
                 </div>
+
+                <!-- 職業組成 -->
+                <div class="px-3 pt-2 pb-1 flex flex-wrap gap-1 min-h-[26px] bg-[#f5f1e6]">
+                  <span v-for="(count, job) in getJobComposition(card.inSlots)" :key="job"
+                        class="text-[9px] font-bold px-1.5 py-0.5 rounded-full text-white"
+                        :style="{ backgroundColor: card.color }">
+                    {{ job }} ×{{ count }}
+                  </span>
+                  <span v-if="!card.inSlots.length" class="text-[9px] text-[#c2b9a3] italic">尚無成員</span>
+                </div>
+
+                <!-- 成員 -->
+                <div class="p-3 space-y-1.5">
+                  <div v-for="slot in card.inSlots" :key="slot.roleName+slot.accountId"
+                       class="bg-white border border-[#e8dfc8] px-3 py-2 rounded-lg flex items-center gap-2 shadow-sm">
+                    <div class="w-9 h-9 bg-[#f8f5ee] rounded-full border border-[#dcd2bb] flex items-center justify-center overflow-hidden shrink-0">
+                      <img :src="getJobImg(slot.job)" class="w-6 h-6 object-contain">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="font-black text-sm text-[#2c1e14] truncate">{{ slot.roleName }}</div>
+                      <div class="text-[10px] text-[#8d7a64]">{{ slot.job }} · {{ slot.accountName }}</div>
+                    </div>
+                  </div>
+                  <div v-if="!card.inSlots.length"
+                       class="h-16 flex items-center justify-center text-[#c2b9a3] italic border-2 border-dashed border-[#dcd2bb] rounded-xl text-sm">
+                    尚無成員
+                  </div>
+                </div>
+
+                <!-- 場外 BUFF -->
+                <div v-if="card.buffSlots.length > 0"
+                     class="px-3 pb-3 pt-1 border-t border-dashed border-[#dcd2bb]">
+                  <div class="text-[9px] text-[#8d7a64] font-bold mb-1">🎵 場外 BUFF</div>
+                  <div class="flex flex-wrap gap-1">
+                    <span v-for="slot in card.buffSlots" :key="'b'+slot.roleName"
+                          class="text-[10px] bg-[#d4edb8] text-[#3d6818] px-2 py-0.5 rounded-full border border-[#a0c878] font-bold">
+                      {{ slot.roleName }} <span class="opacity-60">{{ slot.job }}</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- 底部 -->
+                <div class="px-4 py-2 bg-[#ede4cf] border-t border-[#dcd2bb] flex justify-between items-center">
+                  <span class="text-xs text-[#4a3728] font-bold">隊內人數</span>
+                  <span class="font-mono font-black text-[#4a3728] text-sm">
+                    {{ card.inSlots.length }} <span class="text-xs">人</span>
+                  </span>
+                </div>
               </div>
-            </div>
+            </template>
           </div>
         </div>
       </div>
@@ -439,13 +444,16 @@ const BASE_DUNGEON = () => commonStore.data.main_url + '/roz/dungeon';
 const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩人':'詩人','刺客':'刺客','賢者':'賢者','巫師':'巫師','練金':'練金','十字軍':'十字軍','舞孃':'舞孃','武僧':'祭師','獵人':'詩人' };
 const getJobImg  = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
 
+// 每個隊伍的顏色
+const teamColors = ['#5b8fa4', '#8fa45b', '#a47a5b', '#8e5ba4', '#a45b5b', '#5ba48e', '#a4975b', '#5b6fa4'];
+const getTeamColor = (idx) => teamColors[idx % teamColors.length];
+
 const getJobComposition = (slots) => {
   const map = {};
   slots.forEach(s => { if (s.job) map[s.job] = (map[s.job] || 0) + 1; });
   return map;
 };
 
-// 只回傳有分配資料的副本名稱
 const assignedDungeons = (team) => {
   if (!team.detail?.dungeons) return [];
   return dungeonList.value.filter(d => (team.detail.dungeons[d] || []).length > 0);
@@ -468,16 +476,36 @@ const toast              = ref({ show: false, message: '' });
 const overviewLoading = ref(false);
 const teamsWithDetail = ref([]);
 
-const showCreateModal = ref(false);
-const newTeamName     = ref('');
-const createError     = ref('');
-const renameModal     = ref({ show: false, teamId: '', name: '' });
+const showCreateModal  = ref(false);
+const newTeamName      = ref('');
+const createError      = ref('');
+const renameModal      = ref({ show: false, teamId: '', name: '' });
 const deleteTeamTarget = ref(null);
 const teamShareModal      = ref({ show: false, teamId: '', teamName: '', permission: 'view', generating: false, code: '', expiresAt: '', shareList: [] });
 const showAcceptTeamModal = ref(false);
 const acceptTeamCode      = ref('');
 const acceptTeamError     = ref('');
 const isAcceptingTeam     = ref(false);
+
+// ── 總覽：把所有隊伍的副本卡片攤平成一個陣列 ─────────────────────
+const allOverviewCards = computed(() => {
+  const cards = [];
+  teamsWithDetail.value.forEach((team, tIdx) => {
+    const color = getTeamColor(tIdx);
+    assignedDungeons(team).forEach(dName => {
+      const slots = team.detail?.dungeons?.[dName] || [];
+      cards.push({
+        teamId:   team.id,
+        teamName: team.name,
+        dName,
+        color,
+        inSlots:   slots.filter(s => s.status === 'in'),
+        buffSlots: slots.filter(s => s.status === 'buff'),
+      });
+    });
+  });
+  return cards;
+});
 
 // ── 計算 ──────────────────────────────────────────────────────────
 const canEdit = computed(() => {
@@ -524,8 +552,8 @@ const loadAllTeamDetails = async () => {
 };
 
 const openTeamEdit = async (team) => {
-  activeTeamId.value = team.id;
-  teamDetail.value   = null;
+  activeTeamId.value  = team.id;
+  teamDetail.value    = null;
   activeDungeon.value = '';
   teamDetailLoading.value = true;
   try {
@@ -697,29 +725,67 @@ const submitAcceptTeam = async () => {
   try {
     const data = await (await fetch(`${BASE_TEAM()}/accept-share`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ code: acceptTeamCode.value.toUpperCase() })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({code: acceptTeamCode.value.toUpperCase()})
     })).json();
-    if (data.error) { acceptTeamError.value = data.error; return; }
-    showAcceptTeamModal.value = false; acceptTeamCode.value = '';
+    if (data.error) {
+      acceptTeamError.value = data.error;
+      return;
+    }
+    showAcceptTeamModal.value = false;
+    acceptTeamCode.value = '';
     teamsWithDetail.value = [];
     await loadAll();
     showToast(`已加入隊伍「${data.teamName}」`);
-  } catch { acceptTeamError.value = '驗證失敗，請再試一次'; }
-  finally { isAcceptingTeam.value = false; }
+  } catch {
+    acceptTeamError.value = '驗證失敗，請再試一次';
+  } finally {
+    isAcceptingTeam.value = false;
+  }
 };
 
-const showToast = (msg) => { toast.value = { show: true, message: msg }; setTimeout(() => { toast.value.show = false; }, 2500); };
+const showToast = (msg) => {
+  toast.value = {show: true, message: msg};
+  setTimeout(() => {
+    toast.value.show = false;
+  }, 2500);
+};
 
-onMounted(() => { document.title = '副本組隊'; loadAll(); });
+onMounted(() => {
+  document.title = '副本組隊';
+  loadAll();
+});
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.3s, transform 0.3s; }
-.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
-.custom-scrollbar::-webkit-scrollbar { width: 6px; }
-.custom-scrollbar::-webkit-scrollbar-track { background: #2c1e14; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: #5e4b37; border-radius: 10px; }
-.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8d7a64; }
-select option { background-color: #2c1e14; color: #e0d3b8; }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2c1e14;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #5e4b37;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8d7a64;
+}
+
+select option {
+  background-color: #2c1e14;
+  color: #e0d3b8;
+}
 </style>
