@@ -9,8 +9,13 @@
         <p class="text-[#a6937c] text-xs mt-1">私人管理區域，僅限授權帳號進入</p>
       </div>
 
+      <!-- 讀取中（檢查是否已登入） -->
+      <div v-if="checking" class="text-center text-[#a6937c] italic text-sm py-8">
+        驗證中...
+      </div>
+
       <!-- 卡片 -->
-      <div class="bg-[#3d2b1f] border border-[#5e4b37] rounded-2xl p-6 shadow-2xl">
+      <div v-else class="bg-[#3d2b1f] border border-[#5e4b37] rounded-2xl p-6 shadow-2xl">
 
         <!-- 錯誤訊息 -->
         <p v-if="errorMsg" class="text-red-400 text-xs bg-red-900/20 border border-red-800/30 rounded-lg px-3 py-2 mb-4">
@@ -40,21 +45,36 @@
 <script setup>
 definePageMeta({ layout: 'blank' });
 
-const router     = useRouter();
-const errorMsg   = ref('');
-const config     = useRuntimeConfig();
-const commonStore = useCommonStore ? useCommonStore() : null;
+const router      = useRouter();
+const errorMsg    = ref('');
+const checking    = ref(true);  // 頁面載入時先檢查是否已登入
+const config      = useRuntimeConfig();
+const commonStore = useCommonStore();
 
-// Spring Boot base URL（從 commonStore 取，與其他頁面一致）
-const BASE = () => (commonStore?.data?.main_url ?? '') + '/roz/user';
-
-// Google Client ID 放在 nuxt.config runtimeConfig.public.googleClientId
+const BASE = () => commonStore.data.main_url + '/roz/user';
 const GOOGLE_CLIENT_ID = config.public.googleClientId;
 
+// ── 載入時先確認是否已登入，已登入直接跳轉 ────────────────────────
+onMounted(async () => {
+  try {
+    const res  = await fetch(`${BASE()}/me`, { credentials: 'include' });
+    const data = await res.json();
+    if (!data.error) {
+      // 已登入（cookie 還有效）→ 直接跳帳號頁
+      router.replace('/roz/accounts');
+      return;
+    }
+  } catch { /* 未登入，正常顯示登入頁 */ }
+
+  checking.value = false;
+  initGoogleScript();
+});
+
+// ── Google GIS ────────────────────────────────────────────────────
 const handleCredential = async (response) => {
   errorMsg.value = '';
   try {
-    const res = await fetch(`${BASE()}/google-login`, {
+    const res  = await fetch(`${BASE()}/google-login`, {
       method: 'POST',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json' },
@@ -79,12 +99,12 @@ const initGoogle = () => {
     auto_select: false,
   });
   window.google.accounts.id.renderButton(
-    document.getElementById('roz-google-btn'),
-    { theme: 'outline', size: 'large', text: 'signin_with', locale: 'zh-TW', width: 240 }
+      document.getElementById('roz-google-btn'),
+      { theme: 'outline', size: 'large', text: 'signin_with', locale: 'zh-TW', width: 240 }
   );
 };
 
-onMounted(() => {
+const initGoogleScript = () => {
   if (!document.getElementById('google-gsi-script')) {
     const script  = document.createElement('script');
     script.id     = 'google-gsi-script';
@@ -96,5 +116,5 @@ onMounted(() => {
   } else if (window.google) {
     initGoogle();
   }
-});
+};
 </script>
