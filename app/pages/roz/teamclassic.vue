@@ -550,7 +550,8 @@ const buildCharGroups = (assignments, permission) => {
         isSupport:   a.isSupport  ?? false,
       });
     }
-    charGroups.value = Object.values(groupMap);
+    // 只保留有角色的群組
+    charGroups.value = Object.values(groupMap).filter(g => g.roles.length > 0);
   } else {
     // owner / edit 模式：從自己的帳號清單建名冊
     charGroups.value = allAccounts.value.map((acc) => ({

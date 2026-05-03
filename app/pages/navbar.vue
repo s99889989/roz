@@ -92,6 +92,10 @@
                     技能樹</NuxtLink>
                 </li>
                 <li>
+                  <NuxtLink href="/profession/profession-skills" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">
+                    技能樹</NuxtLink>
+                </li>
+                <li>
                   <NuxtLink to="/profession/Alchemy" href="" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">
                     煉金資訊</NuxtLink>
                 </li>
