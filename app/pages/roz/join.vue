@@ -14,11 +14,9 @@
       <p class="text-[#a6937c] text-sm">{{ errorMsg }}</p>
     </div>
 
-    <!-- 已登入 → 直接加入 -->
+    <!-- ready：顯示邀請資訊 -->
     <div v-else-if="status === 'ready'"
          class="bg-[#3d2b1f] border border-[#5e4b37] rounded-2xl p-8 max-w-sm w-full shadow-2xl">
-
-      <!-- 隊伍資訊卡 -->
       <div class="text-center mb-6">
         <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-[#2c1e14] border-2 border-[#f1d483]/40 flex items-center justify-center text-3xl">
           ⚔️
@@ -81,8 +79,9 @@
 <script setup>
 definePageMeta({ layout: 'blank' });
 
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import { useHead, useFetch } from '#imports';
 import { useCommonStore } from '~/stores/common.js';
 
 const route  = useRoute();
@@ -91,73 +90,68 @@ const commonStore = useCommonStore();
 const BASE_TEAM = () => commonStore.data.main_url + '/roz/team';
 const BASE_USER = () => commonStore.data.main_url + '/roz/user';
 
-const code       = computed(() => (route.query.code || '').toString().toUpperCase());
-const status     = ref('loading');   // loading | invalid | ready | joined
-const errorMsg   = ref('');
-const inviteInfo = ref({ teamName: '', permission: 'view', expiresAt: '' });
-const isLoggedIn = ref(false);
-const userName   = ref('');
-const joining    = ref(false);
-const joinError  = ref('');
+// ── 從 URL 取 code（SSR 和 client 都能讀到）
+const code = computed(() => (route.query.code || '').toString().toUpperCase());
 
-// ── SEO / OG tags（SSR 時由 useHead 注入）──────────────────────────
-import { useHead } from '#imports';
-import { computed } from 'vue';
-
-const ogTitle = computed(() =>
-  inviteInfo.value.teamName
-    ? `加入隊伍：${inviteInfo.value.teamName} | ROZ 組隊`
-    : 'ROZ 副本組隊邀請'
+// ── SSR 階段就 fetch 邀請資訊，讓 Discord bot 能讀到 OG tags
+const { data: fetchedInfo } = await useFetch(
+    () => `${BASE_TEAM()}/invite-info/${code.value}`,
+    { key: `invite-${code.value}`, server: true }
 );
 
+const inviteInfo = computed(() => ({
+  teamName:   fetchedInfo.value?.teamName   || '',
+  permission: fetchedInfo.value?.permission || 'view',
+  expiresAt:  fetchedInfo.value?.expiresAt  || '',
+}));
+
+const isValidInvite = computed(() => !!fetchedInfo.value?.teamName && !fetchedInfo.value?.error);
+
+// ── OG tags（SITE_URL 改成你的網域）
+const SITE_URL = 'https://aftroz.netlify.app';
+
 useHead({
-  title: ogTitle,
+  title: computed(() =>
+      inviteInfo.value.teamName
+          ? `加入隊伍：${inviteInfo.value.teamName} | ROZ 組隊`
+          : 'ROZ 副本組隊邀請'
+  ),
   meta: [
-    { property: 'og:title',       content: ogTitle },
+    { property: 'og:title', content: computed(() =>
+          inviteInfo.value.teamName
+              ? `加入隊伍：${inviteInfo.value.teamName}`
+              : 'ROZ 副本組隊邀請'
+      )},
     { property: 'og:description', content: computed(() =>
-        inviteInfo.value.teamName
-          ? `你被邀請加入「${inviteInfo.value.teamName}」，點擊連結加入副本組隊！`
-          : '加入 ROZ 副本組隊'
-    )},
-    { property: 'og:type',        content: 'website' },
-    { property: 'og:image',       content: '/images/roz-ogimage.png' },
-    { name: 'theme-color',        content: '#2c1e14' },
+          inviteInfo.value.teamName
+              ? `你被邀請加入「${inviteInfo.value.teamName}」${inviteInfo.value.permission === 'edit' ? '（編輯權限）' : '（查看權限）'}，點擊加入！`
+              : '加入 ROZ 副本組隊'
+      )},
+    { property: 'og:type',  content: 'website' },
+    { property: 'og:image', content: `${SITE_URL}/images/roz-ogimage.png` },
+    { property: 'og:url',   content: computed(() => `${SITE_URL}/roz/join?code=${code.value}`) },
+    { name: 'theme-color',  content: '#f1d483' },
   ]
 });
 
-// ── 初始化 ────────────────────────────────────────────────────────
+// ── 頁面狀態
+const status    = ref(isValidInvite.value ? 'ready' : 'invalid');
+const errorMsg  = ref(fetchedInfo.value?.error || '邀請連結無效');
+const isLoggedIn = ref(false);
+const userName  = ref('');
+const joining   = ref(false);
+const joinError = ref('');
+
+// ── client 端確認登入狀態
 onMounted(async () => {
-  if (!code.value) {
-    status.value = 'invalid';
-    errorMsg.value = '缺少邀請碼';
-    return;
-  }
-
-  // 1. 查詢邀請碼資訊
-  try {
-    const info = await (await fetch(`${BASE_TEAM()}/invite-info/${code.value}`)).json();
-    if (info.error) {
-      status.value = 'invalid';
-      errorMsg.value = info.error;
-      return;
-    }
-    inviteInfo.value = info;
-  } catch {
-    status.value = 'invalid';
-    errorMsg.value = '無法連線，請稍後再試';
-    return;
-  }
-
-  // 2. 檢查是否登入
+  if (!isValidInvite.value) return;
   try {
     const me = await (await fetch(`${BASE_USER()}/me`, { credentials: 'include' })).json();
-    if (me && me.googleId && !me.error) {
+    if (me?.googleId && !me.error) {
       isLoggedIn.value = true;
       userName.value = me.name || me.email || '';
     }
   } catch { /* 未登入 */ }
-
-  status.value = 'ready';
 });
 
 const acceptInvite = async () => {
@@ -169,10 +163,7 @@ const acceptInvite = async () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ code: code.value })
     })).json();
-    if (data.error) {
-      joinError.value = data.error;
-      return;
-    }
+    if (data.error) { joinError.value = data.error; return; }
     status.value = 'joined';
   } catch {
     joinError.value = '加入失敗，請稍後再試';
