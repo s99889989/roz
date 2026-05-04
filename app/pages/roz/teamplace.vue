@@ -273,6 +273,10 @@
                           <span class="text-[#a6937c] text-xs">{{
                               (teamDetail.dungeons?.[dName] || []).filter(s => s.status === 'in').length
                             }}/12</span>
+                          <span v-if="dungeonMap[dName]?.minLevel != null"
+                                class="text-[9px] font-bold px-1 py-0.5 rounded bg-[#4a3820] text-[#c8a84b] border border-[#c8a84b]/30">
+                            Lv.{{ dungeonMap[dName].minLevel }}+
+                          </span>
                         </div>
                         <span v-if="activeDungeon === dName" class="text-[#f1d483] text-[10px] font-bold">選中</span>
                       </div>
@@ -493,7 +497,7 @@
 <script setup>
 definePageMeta({layout: 'roz', middleware: 'roz-auth'});
 
-import {ref, computed, onMounted} from 'vue';
+import {ref, computed, onMounted, watch} from 'vue';
 import {useCommonStore} from '~/stores/common.js';
 
 const commonStore = useCommonStore();
@@ -536,7 +540,8 @@ const assignedDungeons = (team) => {
 
 // ── 狀態 ──────────────────────────────────────────────────────────
 const loading = ref(true);
-const viewMode = ref('edit');
+const viewMode = ref(localStorage.getItem('roz_viewMode') || 'edit');
+watch(viewMode, v => localStorage.setItem('roz_viewMode', v));
 const teams = ref([]);
 const allAccounts = ref([]);
 const dungeonList = ref([]);
@@ -551,7 +556,10 @@ const toast = ref({show: false, message: ''});
 
 const overviewLoading = ref(false);
 const teamsWithDetail = ref([]);
-const selectedTeamIds = ref([]);  // 總覽篩選：空陣列 = 顯示全部
+const selectedTeamIds = ref(
+    JSON.parse(localStorage.getItem('roz_selectedTeamIds') || '[]')
+);
+watch(selectedTeamIds, v => localStorage.setItem('roz_selectedTeamIds', JSON.stringify(v)), {deep: true});
 
 const showCreateModal = ref(false);
 const newTeamName = ref('');
@@ -624,7 +632,8 @@ const loadAll = async () => {
     dungeonList.value = rawDungeons.map(d => d.name || d);
     dungeonMap.value  = Object.fromEntries(rawDungeons.map(d => [d.name || d, d]));
     allAccounts.value.forEach(a => {
-      collapsedAccGroups.value[a.id] = true;
+      if (!(a.id in collapsedAccGroups.value))
+        collapsedAccGroups.value[a.id] = true;
     });
   } catch (e) {
     console.error(e);
@@ -968,9 +977,10 @@ const showToast = (msg) => {
   }, 2500);
 };
 
-onMounted(() => {
+onMounted(async () => {
   document.title = '副本組隊';
-  loadAll();
+  await loadAll();
+  if (viewMode.value === 'overview') loadAllTeamDetails();
 });
 </script>
 
