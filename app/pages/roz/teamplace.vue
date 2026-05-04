@@ -428,12 +428,12 @@
           {{ teamShareModal.generating ? '產生中...' : '產生邀請碼' }}
         </button>
         <div v-if="teamShareModal.code" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg p-3 text-center mb-4">
-          <div class="text-3xl font-black font-mono text-[#f1d483] tracking-[0.3em] mb-1">{{
-              teamShareModal.code
-            }}
+          <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（多人可用）</div>
+          <div class="text-sm font-mono text-[#f1d483] break-all mb-1">
+            {{ joinBaseUrl }}/roz/join?code={{ teamShareModal.code }}
           </div>
           <div class="text-[#a6937c] text-xs">{{ teamShareModal.expiresAt }} 前有效</div>
-          <button @click="copyTeamCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製邀請碼
+          <button @click="copyTeamCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製連結
           </button>
         </div>
         <div>
@@ -532,6 +532,8 @@ const getJobComposition = (slots) => {
   });
   return map;
 };
+
+const joinBaseUrl = computed(() => typeof window !== 'undefined' ? window.location.origin : '');
 
 const assignedDungeons = (team) => {
   if (!team.detail?.dungeons) return [];
@@ -911,8 +913,9 @@ const generateTeamInvite = async () => {
   }
 };
 const copyTeamCode = () => {
-  navigator.clipboard?.writeText(teamShareModal.value.code);
-  showToast('邀請碼已複製');
+  const url = `${window.location.origin}/roz/join?code=${teamShareModal.value.code}`;
+  navigator.clipboard?.writeText(url);
+  showToast('邀請連結已複製');
 };
 const updateTeamShare = async (member) => {
   const newPerm = member.permission === 'edit' ? 'view' : 'edit';
