@@ -48,20 +48,12 @@
         </div>
         <div v-else>
           <div class="flex flex-wrap gap-2 mb-4 items-center">
-            <span class="text-[#a6937c] text-xs shrink-0">顯示隊伍：</span>
+            <span class="text-[#a6937c] text-xs">隊伍：</span>
             <button v-for="team in teamsWithDetail" :key="team.id"
-                    @click="toggleTeamFilter(team.id)"
-                    class="text-xs border px-3 py-1 rounded transition font-bold"
-                    :class="selectedTeamIds.length === 0 || selectedTeamIds.includes(team.id)
-                      ? 'bg-[#5e4b37] border-[#f1d483]/60 text-[#f1d483]'
-                      : 'bg-[#3d2b1f] border-[#5e4b37] text-[#a6937c] hover:text-[#e0d3b8]'">
+                    @click="viewMode = 'edit'; openTeamEdit(team)"
+                    class="text-xs bg-[#3d2b1f] hover:bg-[#5e4b37] border border-[#5e4b37] text-[#a6937c] hover:text-[#f1d483] px-3 py-1 rounded transition">
               {{ team.name }}
-              <span class="opacity-60 ml-1">{{ assignedDungeons(team).length }} 副本</span>
-            </button>
-            <button v-if="selectedTeamIds.length > 0"
-                    @click="selectedTeamIds.length = 0"
-                    class="text-xs text-[#a6937c] hover:text-[#f0a8a8] border border-[#5e4b37] px-2 py-1 rounded transition">
-              ✕ 清除篩選
+              <span class="opacity-50 ml-1">{{ assignedDungeons(team).length }} 副本</span>
             </button>
           </div>
           <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))">
@@ -211,7 +203,7 @@
                           </div>
                           <div class="flex-1 min-w-0">
                             <div class="text-[#e0d3b8] text-sm font-bold truncate">{{ role.name }}</div>
-                            <div class="text-[#a6937c] text-[10px]">{{ role.job || '未設定' }}</div>
+                            <div class="text-[#a6937c] text-[10px]">{{ role.job || '未設定' }}<span v-if="role.level" class="ml-1 text-[#c8a84b]">Lv.{{ role.level }}</span></div>
                           </div>
                           <div class="shrink-0">
                             <div v-if="activeDungeon && getSlotStatusInDungeon(acc, role, activeDungeon)"
@@ -288,7 +280,7 @@
                               <img :src="getJobImg(slot.job)" class="w-3.5 h-3.5 object-contain">
                             </div>
                             <span class="text-[#e0d3b8] text-xs font-bold truncate flex-1">{{ slot.roleName }}</span>
-                            <span class="text-[#a6937c] text-[10px] shrink-0">{{ slot.job }}</span>
+                            <span class="text-[#a6937c] text-[10px] shrink-0">{{ slot.job }}<template v-if="slot.level"> · <span class="text-[#c8a84b]">{{ slot.level }}</span></template></span>
                           </div>
                           <div v-if="(teamDetail.dungeons[dName] || []).some(s => s.status === 'buff')"
                                class="border-t border-[#5e4b37]/40 pt-1 mt-1">
@@ -541,7 +533,6 @@ const toast = ref({show: false, message: ''});
 
 const overviewLoading = ref(false);
 const teamsWithDetail = ref([]);
-const selectedTeamIds = ref([]);  // 總覽篩選：空陣列 = 顯示全部
 
 const showCreateModal = ref(false);
 const newTeamName = ref('');
@@ -568,7 +559,6 @@ const isAcceptingTeam = ref(false);
 const allOverviewCards = computed(() => {
   const cards = [];
   teamsWithDetail.value.forEach((team, tIdx) => {
-    if (selectedTeamIds.value.length > 0 && !selectedTeamIds.value.includes(team.id)) return;
     const color = getTeamColor(tIdx);
     assignedDungeons(team).forEach(dName => {
       const slots = team.detail?.dungeons?.[dName] || [];
@@ -581,15 +571,6 @@ const allOverviewCards = computed(() => {
   });
   return cards;
 });
-
-const toggleTeamFilter = (teamId) => {
-  const idx = selectedTeamIds.value.indexOf(teamId);
-  if (idx === -1) {
-    selectedTeamIds.value.push(teamId);
-  } else {
-    selectedTeamIds.value.splice(idx, 1);
-  }
-};
 
 // ── 計算 ──────────────────────────────────────────────────────────
 const canEdit = computed(() => {
@@ -703,6 +684,7 @@ const addSlotInDungeon = async (acc, role, status, dName) => {
     accountName: acc.name,
     roleName: role.name,
     job: role.job || '',
+    level: role.level || '',
     status
   }];
   teamDetail.value.dungeons[dName] = newSlots;
