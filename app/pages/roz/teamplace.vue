@@ -48,12 +48,20 @@
         </div>
         <div v-else>
           <div class="flex flex-wrap gap-2 mb-4 items-center">
-            <span class="text-[#a6937c] text-xs">隊伍：</span>
+            <span class="text-[#a6937c] text-xs shrink-0">顯示隊伍：</span>
             <button v-for="team in teamsWithDetail" :key="team.id"
-                    @click="viewMode = 'edit'; openTeamEdit(team)"
-                    class="text-xs bg-[#3d2b1f] hover:bg-[#5e4b37] border border-[#5e4b37] text-[#a6937c] hover:text-[#f1d483] px-3 py-1 rounded transition">
+                    @click="toggleTeamFilter(team.id)"
+                    class="text-xs border px-3 py-1 rounded transition font-bold"
+                    :class="selectedTeamIds.length === 0 || selectedTeamIds.includes(team.id)
+                      ? 'bg-[#5e4b37] border-[#f1d483]/60 text-[#f1d483]'
+                      : 'bg-[#3d2b1f] border-[#5e4b37] text-[#a6937c] hover:text-[#e0d3b8]'">
               {{ team.name }}
-              <span class="opacity-50 ml-1">{{ assignedDungeons(team).length }} 副本</span>
+              <span class="opacity-60 ml-1">{{ assignedDungeons(team).length }} 副本</span>
+            </button>
+            <button v-if="selectedTeamIds.length > 0"
+                    @click="selectedTeamIds.length = 0"
+                    class="text-xs text-[#a6937c] hover:text-[#f0a8a8] border border-[#5e4b37] px-2 py-1 rounded transition">
+              ✕ 清除篩選
             </button>
           </div>
           <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))">
@@ -533,6 +541,7 @@ const toast = ref({show: false, message: ''});
 
 const overviewLoading = ref(false);
 const teamsWithDetail = ref([]);
+const selectedTeamIds = ref([]);  // 總覽篩選：空陣列 = 顯示全部
 
 const showCreateModal = ref(false);
 const newTeamName = ref('');
@@ -559,6 +568,7 @@ const isAcceptingTeam = ref(false);
 const allOverviewCards = computed(() => {
   const cards = [];
   teamsWithDetail.value.forEach((team, tIdx) => {
+    if (selectedTeamIds.value.length > 0 && !selectedTeamIds.value.includes(team.id)) return;
     const color = getTeamColor(tIdx);
     assignedDungeons(team).forEach(dName => {
       const slots = team.detail?.dungeons?.[dName] || [];
@@ -571,6 +581,15 @@ const allOverviewCards = computed(() => {
   });
   return cards;
 });
+
+const toggleTeamFilter = (teamId) => {
+  const idx = selectedTeamIds.value.indexOf(teamId);
+  if (idx === -1) {
+    selectedTeamIds.value.push(teamId);
+  } else {
+    selectedTeamIds.value.splice(idx, 1);
+  }
+};
 
 // ── 計算 ──────────────────────────────────────────────────────────
 const canEdit = computed(() => {
