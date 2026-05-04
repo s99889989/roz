@@ -447,9 +447,18 @@
                   {{ m.permission === 'edit' ? '編輯' : '查看' }}
                 </span>
               </div>
-              <button @click="revokeTeamShare(m.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">
-                移除
-              </button>
+              <div class="flex items-center gap-2">
+                <button @click="updateTeamShare(m)"
+                        class="text-xs border px-2 py-0.5 rounded transition"
+                        :class="m.permission === 'edit'
+                          ? 'border-[#a8c0f0]/40 text-[#a8c0f0] hover:bg-[#2a3a4a]'
+                          : 'border-[#a8f0c8]/40 text-[#a8f0c8] hover:bg-[#2a4a3a]'">
+                  改為{{ m.permission === 'edit' ? '查看' : '編輯' }}
+                </button>
+                <button @click="revokeTeamShare(m.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">
+                  移除
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -535,6 +544,7 @@ const activeTeamId = ref(null);
 const teamDetail = ref(null);
 const teamDetailLoading = ref(false);
 const activeDungeon = ref('');
+const dungeonMap = ref({});  // name → { name, minLevel, ... }
 const collapsedAccGroups = ref({});
 const isSaving = ref(false);
 const toast = ref({show: false, message: ''});
@@ -610,7 +620,9 @@ const loadAll = async () => {
     ]);
     teams.value = Array.isArray(teamsData) ? teamsData : [];
     allAccounts.value = Array.isArray(accountsData) ? accountsData : [];
-    dungeonList.value = Array.isArray(dungeonData) ? dungeonData.map(d => d.name || d) : [];
+    const rawDungeons = Array.isArray(dungeonData) ? dungeonData : [];
+    dungeonList.value = rawDungeons.map(d => d.name || d);
+    dungeonMap.value  = Object.fromEntries(rawDungeons.map(d => [d.name || d, d]));
     allAccounts.value.forEach(a => {
       collapsedAccGroups.value[a.id] = true;
     });
@@ -691,6 +703,14 @@ const addSlotInDungeon = async (acc, role, status, dName) => {
   if (status === 'in' && currentSlots.value.filter(s => s.status === 'in').length >= 12) {
     showToast('副本內最多 12 人');
     return;
+  }
+  // 最低等級檢查（BUFF 不受等級限制）
+  if (status === 'in') {
+    const minLevel = dungeonMap.value[dName]?.minLevel;
+    if (minLevel != null && (role.level == null || role.level < minLevel)) {
+      showToast(`${role.name} 等級不足（需 Lv.${minLevel}）`);
+      return;
+    }
   }
   if (!teamDetail.value.dungeons) teamDetail.value.dungeons = {};
   const current = teamDetail.value.dungeons[dName] || [];
@@ -885,6 +905,22 @@ const copyTeamCode = () => {
   navigator.clipboard?.writeText(teamShareModal.value.code);
   showToast('邀請碼已複製');
 };
+const updateTeamShare = async (member) => {
+  const newPerm = member.permission === 'edit' ? 'view' : 'edit';
+  try {
+    const data = await (await fetch(`${BASE_TEAM()}/update-share/${teamShareModal.value.teamId}/${member.googleId}`, {
+      method: 'POST', credentials: 'include',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({permission: newPerm})
+    })).json();
+    if (data.error) { showToast(data.error); return; }
+    member.permission = newPerm;
+    showToast(`已改為${newPerm === 'edit' ? '編輯' : '查看'}權限`);
+  } catch {
+    showToast('更新失敗');
+  }
+};
+
 const revokeTeamShare = async (targetGoogleId) => {
   try {
     await fetch(`${BASE_TEAM()}/revoke-share/${teamShareModal.value.teamId}/${targetGoogleId}`, {

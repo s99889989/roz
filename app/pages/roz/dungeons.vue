@@ -12,14 +12,21 @@
     <div class="max-w-[800px] mx-auto">
 
       <!-- 新增副本 -->
-      <div class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-6 flex gap-2">
-        <input v-model="newName" placeholder="輸入副本名稱（例：波利村）"
-               @keydown.enter="addDungeon"
-               class="flex-1 bg-[#2c1e14] border border-[#5e4b37] rounded-lg px-4 py-2.5 text-[#e0d3b8] outline-none focus:border-[#f1d483] transition" />
-        <button @click="addDungeon" :disabled="!newName.trim() || isSaving"
-                class="bg-[#4a7c59] hover:bg-[#3d6849] text-white px-5 py-2.5 rounded-lg font-bold transition disabled:opacity-50 shrink-0">
-          ＋ 新增
-        </button>
+      <div class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-6">
+        <div class="flex gap-2">
+          <input v-model="newName" placeholder="輸入副本名稱（例：波利村）"
+                 @keydown.enter="addDungeon"
+                 class="flex-1 bg-[#2c1e14] border border-[#5e4b37] rounded-lg px-4 py-2.5 text-[#e0d3b8] outline-none focus:border-[#f1d483] transition" />
+          <div class="flex items-center gap-1.5 bg-[#2c1e14] border border-[#5e4b37] rounded-lg px-3 focus-within:border-[#f1d483] transition shrink-0">
+            <span class="text-[#a6937c] text-xs whitespace-nowrap">最低等級</span>
+            <input v-model.number="newMinLevel" type="number" min="1" max="99" placeholder="—"
+                   class="w-14 bg-transparent text-[#f1d483] font-bold text-sm outline-none text-center" />
+          </div>
+          <button @click="addDungeon" :disabled="!newName.trim() || isSaving"
+                  class="bg-[#4a7c59] hover:bg-[#3d6849] text-white px-5 py-2.5 rounded-lg font-bold transition disabled:opacity-50 shrink-0">
+            ＋ 新增
+          </button>
+        </div>
       </div>
       <p v-if="addError" class="text-red-400 text-sm mb-4 -mt-4">{{ addError }}</p>
 
@@ -49,10 +56,20 @@
             <span class="text-[#a6937c] font-mono text-xs w-5 text-right">{{ idx + 1 }}</span>
             <span class="text-[#e0d3b8] font-bold text-base">{{ d.name }}</span>
           </div>
-          <button @click="confirmRemove(d.name)"
-                  class="text-xs bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-3 py-1 rounded border border-[#f0a8a8]/20 transition">
-            刪除
-          </button>
+          <div class="flex items-center gap-3">
+            <!-- 最低等級 -->
+            <div class="flex items-center gap-1.5">
+              <span class="text-[#a6937c] text-xs">最低等級</span>
+              <input :value="d.minLevel ?? ''"
+                     @change="updateMinLevel(d, $event.target.value)"
+                     type="number" min="1" max="99" placeholder="—"
+                     class="w-14 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1 text-[#f1d483] font-bold text-sm text-center outline-none focus:border-[#f1d483] transition" />
+            </div>
+            <button @click="confirmRemove(d.name)"
+                    class="text-xs bg-[#6b4a4a] hover:bg-[#853b3b] text-[#f0a8a8] px-3 py-1 rounded border border-[#f0a8a8]/20 transition">
+              刪除
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -97,6 +114,7 @@ const BASE = () => commonStore.data.main_url + '/roz/dungeon';
 const loading     = ref(true);
 const dungeons    = ref([]);
 const newName     = ref('');
+const newMinLevel = ref(null);
 const addError    = ref('');
 const isSaving    = ref(false);
 const deleteTarget = ref(null);
@@ -118,18 +136,27 @@ const addDungeon = async () => {
   try {
     const data = await (await fetch(`${BASE()}/add`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: newName.value.trim() })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: newName.value.trim(), minLevel: newMinLevel.value || null})
     })).json();
-    if (data.error) { addError.value = data.error; return; }
+    if (data.error) {
+      addError.value = data.error;
+      return;
+    }
     newName.value = '';
+    newMinLevel.value = null;
     await loadDungeons();
     showToast('副本已新增');
-  } catch { addError.value = '新增失敗'; }
-  finally { isSaving.value = false; }
+  } catch {
+    addError.value = '新增失敗';
+  } finally {
+    isSaving.value = false;
+  }
 };
 
-const confirmRemove = (name) => { deleteTarget.value = name; };
+const confirmRemove = (name) => {
+  deleteTarget.value = name;
+};
 const removeDungeon = async () => {
   isSaving.value = true;
   try {
@@ -139,8 +166,26 @@ const removeDungeon = async () => {
     deleteTarget.value = null;
     await loadDungeons();
     showToast('副本已刪除');
-  } catch { showToast('刪除失敗'); }
-  finally { isSaving.value = false; }
+  } catch {
+    showToast('刪除失敗');
+  } finally {
+    isSaving.value = false;
+  }
+};
+
+const updateMinLevel = async (d, val) => {
+  const minLevel = val === '' ? null : parseInt(val);
+  d.minLevel = minLevel;
+  try {
+    await fetch(`${BASE()}/update/${encodeURIComponent(d.name)}`, {
+      method: 'POST', credentials: 'include',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({minLevel})
+    });
+    showToast('已更新');
+  } catch {
+    showToast('更新失敗');
+  }
 };
 
 const moveDungeon = async (idx, dir) => {
@@ -152,18 +197,34 @@ const moveDungeon = async (idx, dir) => {
   try {
     await fetch(`${BASE()}/reorder`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ names: arr.map(d => d.name) })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({names: arr.map(d => d.name)})
     });
-  } catch { showToast('排序同步失敗'); }
+  } catch {
+    showToast('排序同步失敗');
+  }
 };
 
-const showToast = (msg) => { toast.value = { show: true, message: msg }; setTimeout(() => { toast.value.show = false; }, 2500); };
+const showToast = (msg) => {
+  toast.value = {show: true, message: msg};
+  setTimeout(() => {
+    toast.value.show = false;
+  }, 2500);
+};
 
-onMounted(() => { document.title = '副本管理'; loadDungeons(); });
+onMounted(() => {
+  document.title = '副本管理';
+  loadDungeons();
+});
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.3s, transform 0.3s; }
-.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
 </style>
