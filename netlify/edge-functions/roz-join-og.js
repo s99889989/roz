@@ -31,7 +31,9 @@ export default async (request, context) => {
 
   if (code) {
     try {
+      console.log('API_URL:', API_URL, '| code:', code);
       const res  = await fetch(`${API_URL}/roz/team/invite-info/${code}`);
+      console.log('API status:', res.status);
       const info = await res.json();
       if (!info.error && info.teamName) {
         teamName   = info.teamName;
