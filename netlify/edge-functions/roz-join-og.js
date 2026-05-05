@@ -57,10 +57,8 @@ export default async (request, context) => {
   <meta property="og:title"       content="${escHtml(title)}" />
   <meta property="og:description" content="${escHtml(description)}" />
   <meta property="og:image"       content="${OG_IMAGE}" />
-  <meta property="og:image:width"  content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta property="og:url"         content="${escHtml(request.url)}" />
-  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:card"        content="summary" />
   <meta name="twitter:title"       content="${escHtml(title)}" />
   <meta name="twitter:description" content="${escHtml(description)}" />
   <meta name="twitter:image"       content="${OG_IMAGE}" />`;
