@@ -24,18 +24,17 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=500, initial-scale=1',
       title: 'RO 樂園資訊',
+      htmlAttrs: {
+        lang: 'tw'
+      },
       meta: [
         { name: 'description', content: 'RO樂園' },
         { name: 'og:title', content: 'RO樂園' },
-        { name: 'og:description', content: 'RO樂園' },
+        { name: 'og:description', content: '資料查詢站' },
         { name: 'og:image', content: '/logo.ico' },
         { name: 'twitter:image', content: '/images/og_image.jpg' },
       ],
       link: [
-        {
-          rel: "icon",
-          href: "/logo.png",
-        },
         {
           href: "vue-virtual-scroller/dist/vue-virtual-scroller.css",
           rel: "stylesheet"
