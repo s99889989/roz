@@ -8,7 +8,7 @@
  */
 
 const SITE_URL  = 'https://aftroz.netlify.app';
-const API_URL   = 'https://your-api.com';  // ← 改成你的 Spring Boot API 網址
+const API_URL   = 'https://madustrialtd.asuscomm.com:8080';  // ← 改成你的 Spring Boot API 網址
 const OG_IMAGE  = `${SITE_URL}/images/roz-ogimage.png`;
 
 // 判斷是否為 bot（Discord、Slack、Telegram、LINE 等）
