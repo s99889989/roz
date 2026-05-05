@@ -55,7 +55,10 @@
 
 <script setup>
 definePageMeta({ layout: 'blank' });
-
+useSeoMeta({
+  '111111123132',
+  '123',
+})
 import { ref, computed, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useCommonStore } from '~/stores/common.js';
