@@ -31,8 +31,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'RO樂園' },
         { name: 'og:title', content: 'RO樂園' },
         { name: 'og:description', content: '資料查詢站' },
-        { name: 'og:image', content: '/logo.png' },
-        { name: 'twitter:image', content: '/images/og_image.jpg' },
+        { name: 'og:image', content: '/images/og_image.jpg' },
       ],
       link: [
         {
