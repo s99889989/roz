@@ -8,7 +8,7 @@
  */
 
 const SITE_URL  = 'https://aftroz.netlify.app';
-const API_URL   = 'https://madustrialtd.asuscomm.com:8080';  // ← 改成你的 Spring Boot API 網址
+const API_URL   = 'https://your-api.com';  // ← 改成你的 Spring Boot API 網址
 const OG_IMAGE  = `${SITE_URL}/images/roz-ogimage.png`;
 
 // 判斷是否為 bot（Discord、Slack、Telegram、LINE 等）
@@ -52,12 +52,11 @@ export default async (request, context) => {
   // 注入 OG + Twitter meta（插在 </head> 前）
   const metaTags = `
   <!-- Dynamic OG by Edge Function -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:site_name"   content="ROZ 樂園" />
-  <meta property="og:title"       content="${escHtml(title)}" />
-  <meta property="og:description" content="${escHtml(description)}" />
-  <meta property="og:image"       content="${OG_IMAGE}" />
-  <meta property="og:url"         content="${escHtml(request.url)}" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:site_name"    content="ROZ 樂園" />
+  <meta property="og:title"        content="${escHtml(title)}" />
+  <meta property="og:description"  content="${escHtml(description)}" />
+  <meta property="og:url"          content="${escHtml(request.url)}" />
   <meta name="twitter:card"        content="summary" />
   <meta name="twitter:title"       content="${escHtml(title)}" />
   <meta name="twitter:description" content="${escHtml(description)}" />
