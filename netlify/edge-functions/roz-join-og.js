@@ -56,8 +56,8 @@ export default async (request, context) => {
   <!-- Dynamic OG by Edge Function -->
   <meta property="og:type"         content="website" />
   <meta property="og:site_name"    content="ROZ 樂園" />
-  <meta property="og:title"        content="${escHtml(title)}" />
-  <meta property="og:description"  content="${escHtml(description)}" />
+  <meta property="og:title"        content="111111111111111111111" />
+  <meta property="og:description"  content="222222222222222222222" />
   <meta property="og:url"          content="${escHtml(request.url)}" />
   <meta name="twitter:card"        content="summary" />
   <meta name="twitter:title"       content="${escHtml(title)}" />
