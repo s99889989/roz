@@ -427,7 +427,7 @@
 </template>
 
 <script setup>
-definePageMeta({ layout: 'roz');
+definePageMeta({ layout: 'roz'});
 
 import { ref, computed, watch, onMounted } from 'vue';
 import { useCommonStore } from '~/stores/common.js';

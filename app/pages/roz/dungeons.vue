@@ -103,7 +103,7 @@
 </template>
 
 <script setup>
-definePageMeta({ layout: 'roz');
+definePageMeta({ layout: 'roz'});
 
 import { ref, onMounted } from 'vue';
 import { useCommonStore } from '~/stores/common.js';
