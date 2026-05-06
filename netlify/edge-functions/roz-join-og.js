@@ -46,7 +46,7 @@ export default async (request, context) => {
   }
 
   const title = code ? `加入隊伍：${teamName}` : 'ROZ 副本組隊邀請';
-
+  document.title = title;
   // 拿原始靜態 HTML
   const response = await context.next();
   const html     = await response.text();
