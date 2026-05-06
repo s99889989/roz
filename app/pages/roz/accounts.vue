@@ -360,6 +360,7 @@
         <span class="text-green-400">✔</span> {{ toast.message }}
       </div>
     </transition>
+
   </div>
 </template>
 
