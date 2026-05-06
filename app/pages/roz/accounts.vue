@@ -291,9 +291,12 @@
             {{ shareModal.generating ? '產生中...' : '產生邀請碼' }}
           </button>
           <div v-if="shareModal.code" class="mt-3 bg-[#3d2b1f] border border-[#5e4b37] rounded-lg p-3 text-center">
-            <div class="text-3xl font-black font-mono text-[#f1d483] tracking-[0.3em] mb-1">{{ shareModal.code }}</div>
-            <div class="text-[#a6937c] text-xs">{{ shareModal.expiresAt }} 前有效</div>
-            <button @click="copyCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製邀請碼</button>
+            <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（對方點擊即可加入）</div>
+            <div class="text-xs font-mono text-[#f1d483] break-all mb-1">{{ shareModal.joinUrl }}</div>
+            <div class="text-[#a6937c] text-[10px] mb-2">{{ shareModal.expiresAt }} 前有效・一次性</div>
+            <div class="text-[#a6937c] text-[10px] mb-1">或手動輸入邀請碼</div>
+            <div class="text-2xl font-black font-mono text-[#f1d483] tracking-[0.3em] mb-1">{{ shareModal.code }}</div>
+            <button @click="copyCode" class="mt-1 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製邀請連結</button>
           </div>
         </div>
         <div>
@@ -425,6 +428,7 @@ const shareModal = ref({
   generating: false,
   code: '',
   expiresAt: '',
+  joinUrl: '',
   shareList: []
 });
 const showAcceptModal = ref(false);
@@ -633,6 +637,7 @@ const openShareModal = async (acc) => {
     generating: false,
     code: '',
     expiresAt: '',
+    joinUrl: '',
     shareList: []
   };
   await loadShareList();
@@ -663,6 +668,7 @@ const generateInviteCode = async () => {
     }
     shareModal.value.code = data.code;
     shareModal.value.expiresAt = data.expiresAt;
+    shareModal.value.joinUrl = data.joinUrl || '';
   } catch {
     showToast('產生失敗');
   } finally {
@@ -670,8 +676,9 @@ const generateInviteCode = async () => {
   }
 };
 const copyCode = () => {
-  navigator.clipboard?.writeText(shareModal.value.code);
-  showToast('邀請碼已複製');
+  const text = shareModal.value.joinUrl || shareModal.value.code;
+  navigator.clipboard?.writeText(text);
+  showToast(shareModal.value.joinUrl ? '邀請連結已複製' : '邀請碼已複製');
 };
 const updateShare = async (member) => {
   const newPerm = member.permission === 'edit' ? 'use' : 'edit';

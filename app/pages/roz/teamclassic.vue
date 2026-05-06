@@ -378,9 +378,12 @@
           {{ shareModal.generating ? '產生中...' : '產生邀請碼' }}
         </button>
         <div v-if="shareModal.code" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg p-3 text-center mb-4">
-          <div class="text-3xl font-black font-mono text-[#f1d483] tracking-[0.3em] mb-1">{{ shareModal.code }}</div>
-          <div class="text-[#a6937c] text-xs">{{ shareModal.expiresAt }} 前有效</div>
-          <button @click="copyCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製邀請碼</button>
+          <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（對方點擊即可加入）</div>
+          <div class="text-xs font-mono text-[#f1d483] break-all mb-1">{{ shareModal.joinUrl }}</div>
+          <div class="text-[#a6937c] text-[10px] mb-2">{{ shareModal.expiresAt }} 前有效・一次性</div>
+          <div class="text-[#a6937c] text-[10px] mb-1">或手動輸入邀請碼</div>
+          <div class="text-2xl font-black font-mono text-[#f1d483] tracking-[0.3em] mb-1">{{ shareModal.code }}</div>
+          <button @click="copyCode" class="mt-1 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製邀請連結</button>
         </div>
         <div>
           <p class="text-[#a6937c] text-sm font-bold mb-2">目前共享成員</p>
@@ -436,77 +439,61 @@
 </template>
 
 <script setup>
-definePageMeta({layout: 'roz'});
+definePageMeta({ layout: 'roz'});
 
-import {ref, computed, watch, onMounted, onUnmounted} from 'vue';
-import {useCommonStore} from '~/stores/common.js';
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
+import { useCommonStore } from '~/stores/common.js';
 
-const commonStore = useCommonStore();
+const commonStore  = useCommonStore();
 const BASE_CLASSIC = () => commonStore.data.main_url + '/roz/classic';
 const BASE_ACCOUNT = () => commonStore.data.main_url + '/roz/account';
 
-const jobFileMap = {
-  '祭師': '祭師',
-  '鐵匠': '鐵匠',
-  '騎士': '騎士',
-  '詩人': '詩人',
-  '刺客': '刺客',
-  '賢者': '賢者',
-  '巫師': '巫師',
-  '練金': '練金',
-  '十字軍': '十字軍',
-  '舞孃': '舞孃',
-  '武僧': '祭師',
-  '獵人': '詩人',
-  '流氓': '流氓'
-};
-const getJobImg = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
+const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩人':'詩人','刺客':'刺客','賢者':'賢者','巫師':'巫師','練金':'練金','十字軍':'十字軍','舞孃':'舞孃','武僧':'祭師','獵人':'詩人','流氓':'流氓' };
+const getJobImg  = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
 
 const baseThemes = [
-  {border: 'border-[#5b8fa4]', tagBg: '#5b8fa4'},
-  {border: 'border-[#8fa45b]', tagBg: '#8fa45b'},
-  {border: 'border-[#a47a5b]', tagBg: '#a47a5b'},
-  {border: 'border-[#8e5ba4]', tagBg: '#8e5ba4'},
-  {border: 'border-[#a45b5b]', tagBg: '#a45b5b'},
-  {border: 'border-[#5ba48e]', tagBg: '#5ba48e'},
+  { border: 'border-[#5b8fa4]', tagBg: '#5b8fa4' },
+  { border: 'border-[#8fa45b]', tagBg: '#8fa45b' },
+  { border: 'border-[#a47a5b]', tagBg: '#a47a5b' },
+  { border: 'border-[#8e5ba4]', tagBg: '#8e5ba4' },
+  { border: 'border-[#a45b5b]', tagBg: '#a45b5b' },
+  { border: 'border-[#5ba48e]', tagBg: '#5ba48e' },
 ];
-const getSquadColor = (i) => baseThemes[i % baseThemes.length];
+const getSquadColor     = (i) => baseThemes[i % baseThemes.length];
 const getJobComposition = (members) => {
   const map = {};
-  members.forEach(m => {
-    if (m.job) map[m.job] = (map[m.job] || 0) + 1;
-  });
+  members.forEach(m => { if (m.job) map[m.job] = (map[m.job] || 0) + 1; });
   return map;
 };
 
 // ── 狀態 ──────────────────────────────────────────────────────────
-const loading = ref(true);
-const classics = ref([]);
-const allAccounts = ref([]);
-const activeId = ref(null);
-const activeDetail = ref(null);
-const detailLoading = ref(false);
-const isSaving = ref(false);
-const toast = ref({show: false, message: ''});
-const charGroups = ref([]);
+const loading        = ref(true);
+const classics       = ref([]);
+const allAccounts    = ref([]);
+const activeId       = ref(null);
+const activeDetail   = ref(null);
+const detailLoading  = ref(false);
+const isSaving       = ref(false);
+const toast          = ref({ show: false, message: '' });
+const charGroups     = ref([]);
 const collapsedGroups = ref({});
-const squadCount = ref(4);
+const squadCount     = ref(4);
 
-const showCreateModal = ref(false);
-const newName = ref('');
-const createError = ref('');
+const showCreateModal   = ref(false);
+const newName           = ref('');
+const createError       = ref('');
 const showDeleteConfirm = ref(false);
-const showLeaveConfirm = ref(false);
-const renameModal = ref({show: false, name: ''});
-const shareModal = ref({show: false, permission: 'view', generating: false, code: '', expiresAt: '', shareList: []});
-const showAcceptModal = ref(false);
-const acceptCode = ref('');
-const acceptError = ref('');
-const isAccepting = ref(false);
+const showLeaveConfirm  = ref(false);
+const renameModal       = ref({ show: false, name: '' });
+const shareModal        = ref({ show: false, permission: 'view', generating: false, code: '', expiresAt: '', joinUrl: '', shareList: [] });
+const showAcceptModal   = ref(false);
+const acceptCode        = ref('');
+const acceptError       = ref('');
+const isAccepting       = ref(false);
 
 // ── 計算 ──────────────────────────────────────────────────────────
 const ownCount = computed(() => classics.value.filter(c => c.permission === 'owner').length);
-const canEdit = computed(() => activeDetail.value?.permission === 'owner' || activeDetail.value?.permission === 'edit');
+const canEdit  = computed(() => activeDetail.value?.permission === 'owner' || activeDetail.value?.permission === 'edit');
 const allChars = computed(() => charGroups.value.flatMap(g => g.roles));
 
 const squads = computed(() => {
@@ -514,7 +501,7 @@ const squads = computed(() => {
   for (let i = 1; i <= squadCount.value; i++) {
     const assigned = allChars.value.filter(c => c.assignedTo === i);
     result.push({
-      members: assigned.filter(c => !c.isSupport),
+      members:    assigned.filter(c => !c.isSupport),
       supporters: assigned.filter(c => c.isSupport),
     });
   }
@@ -526,35 +513,29 @@ const loadAll = async () => {
   loading.value = true;
   try {
     const [classicsData, accountsData] = await Promise.all([
-      (await fetch(`${BASE_CLASSIC()}/list`, {credentials: 'include'})).json(),
-      (await fetch(`${BASE_ACCOUNT()}/list`, {credentials: 'include'})).json(),
+      (await fetch(`${BASE_CLASSIC()}/list`, { credentials: 'include' })).json(),
+      (await fetch(`${BASE_ACCOUNT()}/list`, { credentials: 'include' })).json(),
     ]);
-    classics.value = Array.isArray(classicsData) ? classicsData : [];
+    classics.value    = Array.isArray(classicsData) ? classicsData : [];
     allAccounts.value = Array.isArray(accountsData) ? accountsData : [];
-  } catch (e) {
-    console.error(e);
-  } finally {
-    loading.value = false;
-  }
+  } catch (e) { console.error(e); }
+  finally { loading.value = false; }
 };
 
 const selectClassic = async (id) => {
   if (activeId.value === id) return;
   localStorage.setItem('roz_classic_last', id);
-  activeId.value = id;
-  activeDetail.value = null;
-  charGroups.value = [];
+  activeId.value      = id;
+  activeDetail.value  = null;
+  charGroups.value    = [];
   detailLoading.value = true;
   try {
-    const data = await (await fetch(`${BASE_CLASSIC()}/${id}`, {credentials: 'include'})).json();
+    const data = await (await fetch(`${BASE_CLASSIC()}/${id}`, { credentials: 'include' })).json();
     activeDetail.value = data;
-    squadCount.value = data.squadCount || 4;
+    squadCount.value   = data.squadCount || 4;
     buildCharGroups(data.assignments || [], data.permission);
-  } catch (e) {
-    console.error(e);
-  } finally {
-    detailLoading.value = false;
-  }
+  } catch (e) { console.error(e); }
+  finally { detailLoading.value = false; }
 };
 
 // ── 建立名冊 ──────────────────────────────────────────────────────
@@ -566,19 +547,19 @@ const buildCharGroups = (assignments, permission) => {
       const key = a.accountId || a.accountName;
       if (!groupMap[key]) {
         groupMap[key] = {
-          id: a.accountId || key,
+          id:   a.accountId   || key,
           name: a.accountName || key,
           roles: []
         };
       }
       groupMap[key].roles.push({
-        charName: a.charName,
+        charName:    a.charName,
         accountName: a.accountName,
-        accountId: a.accountId,
-        job: a.job || '',
-        level: a.level || null,
-        assignedTo: a.assignedTo ?? null,
-        isSupport: a.isSupport ?? false,
+        accountId:   a.accountId,
+        job:         a.job   || '',
+        level:       a.level || null,
+        assignedTo:  a.assignedTo ?? null,
+        isSupport:   a.isSupport  ?? false,
       });
     }
     // 只保留有角色的群組
@@ -586,7 +567,7 @@ const buildCharGroups = (assignments, permission) => {
   } else {
     // owner / edit 模式：從自己的帳號清單建名冊
     charGroups.value = allAccounts.value.map((acc) => ({
-      id: acc.id,
+      id:   acc.id,
       name: acc.name,
       permission: acc.permission,
       roles: (acc.roles || [])
@@ -594,32 +575,24 @@ const buildCharGroups = (assignments, permission) => {
           .map(r => {
             const saved = assignments.find(a => a.charName === r.name && a.accountId === acc.id);
             return {
-              charName: r.name,
-              accountName: acc.name,
+              charName:      r.name,
+              accountName:   acc.name,
               ownerGoogleId: acc.ownerGoogleId || '',
-              accountId: acc.id,
-              job: r.job || '',
-              level: r.level || null,
-              assignedTo: saved?.assignedTo ?? null,
-              isSupport: saved?.isSupport ?? false,
+              accountId:     acc.id,
+              job:           r.job   || '',
+              level:         r.level || null,
+              assignedTo:    saved?.assignedTo ?? null,
+              isSupport:     saved?.isSupport  ?? false,
             };
           })
     }));
-    charGroups.value.forEach((_, i) => {
-      collapsedGroups.value[i] = true;
-    });
+    charGroups.value.forEach((_, i) => { collapsedGroups.value[i] = true; });
   }
 };
 
 // ── 名冊操作 ──────────────────────────────────────────────────────
-const toggleGroup = (idx) => {
-  collapsedGroups.value[idx] = !collapsedGroups.value[idx];
-};
-const setAllCollapse = (v) => {
-  charGroups.value.forEach((_, i) => {
-    collapsedGroups.value[i] = v;
-  });
-};
+const toggleGroup    = (idx) => { collapsedGroups.value[idx] = !collapsedGroups.value[idx]; };
+const setAllCollapse = (v)   => { charGroups.value.forEach((_, i) => { collapsedGroups.value[i] = v; }); };
 
 const toggleSupport = (char) => {
   char.isSupport = !char.isSupport;
@@ -647,17 +620,11 @@ const addToSquad = (char, sIdx, gIdx) => {
 
 const removeFromSquad = (member) => {
   const char = allChars.value.find(c => c.charName === member.charName && c.accountId === member.accountId);
-  if (char) {
-    char.assignedTo = null;
-    saveAssignments();
-  }
+  if (char) { char.assignedTo = null; saveAssignments(); }
 };
 
 const resetAll = () => {
-  allChars.value.forEach(c => {
-    c.assignedTo = null;
-    c.isSupport = false;
-  });
+  allChars.value.forEach(c => { c.assignedTo = null; c.isSupport = false; });
   saveAssignments();
 };
 
@@ -671,103 +638,78 @@ const saveAssignments = () => {
     try {
       await fetch(`${BASE_CLASSIC()}/${activeId.value}/save`, {
         method: 'POST', credentials: 'include',
-        headers: {'Content-Type': 'application/json'},
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           squadCount: squadCount.value,
           assignments: allChars.value.map(c => ({
-            charName: c.charName,
-            accountName: c.accountName,
+            charName:      c.charName,
+            accountName:   c.accountName,
             ownerGoogleId: c.ownerGoogleId || '',
-            accountId: c.accountId,
-            job: c.job,
-            level: c.level,
-            assignedTo: c.assignedTo ?? null,
-            isSupport: c.isSupport ?? false,
+            accountId:     c.accountId,
+            job:           c.job,
+            level:         c.level,
+            assignedTo:    c.assignedTo ?? null,
+            isSupport:     c.isSupport  ?? false,
           }))
         })
       });
-    } catch (e) {
-      console.error('儲存失敗:', e);
-    }
+    } catch (e) { console.error('儲存失敗:', e); }
   }, 500);
 };
 
 watch(squadCount, (newVal) => {
-  allChars.value.forEach(c => {
-    if (c.assignedTo > newVal) c.assignedTo = null;
-  });
+  allChars.value.forEach(c => { if (c.assignedTo > newVal) c.assignedTo = null; });
   saveAssignments();
 });
 
 // ── 建立 / 改名 / 刪除 ───────────────────────────────────────────
 const createClassic = async () => {
   if (!newName.value.trim()) return;
-  isSaving.value = true;
-  createError.value = '';
+  isSaving.value = true; createError.value = '';
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/create`, {
       method: 'POST', credentials: 'include',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({name: newName.value.trim()})
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: newName.value.trim() })
     })).json();
-    if (data.error) {
-      createError.value = data.error;
-      return;
-    }
-    showCreateModal.value = false;
-    newName.value = '';
+    if (data.error) { createError.value = data.error; return; }
+    showCreateModal.value = false; newName.value = '';
     await loadAll();
     showToast('分隊已建立');
     selectClassic(data.id);
-  } catch {
-    createError.value = '建立失敗';
-  } finally {
-    isSaving.value = false;
-  }
+  } catch { createError.value = '建立失敗'; }
+  finally { isSaving.value = false; }
 };
 
-const startRename = () => {
-  renameModal.value = {show: true, name: activeDetail.value?.name || ''};
-};
+const startRename  = () => { renameModal.value = { show: true, name: activeDetail.value?.name || '' }; };
 const submitRename = async () => {
   isSaving.value = true;
   try {
     const data = await (await fetch(`${BASE_CLASSIC()}/rename/${activeId.value}`, {
       method: 'POST', credentials: 'include',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({name: renameModal.value.name.trim()})
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: renameModal.value.name.trim() })
     })).json();
-    if (data.error) {
-      showToast(data.error);
-      return;
-    }
+    if (data.error) { showToast(data.error); return; }
     renameModal.value.show = false;
     if (activeDetail.value) activeDetail.value.name = renameModal.value.name.trim();
-    classics.value = classics.value.map(c => c.id === activeId.value ? {...c, name: renameModal.value.name.trim()} : c);
+    classics.value = classics.value.map(c => c.id === activeId.value ? { ...c, name: renameModal.value.name.trim() } : c);
     showToast('已改名');
-  } catch {
-    showToast('改名失敗');
-  } finally {
-    isSaving.value = false;
-  }
+  } catch { showToast('改名失敗'); }
+  finally { isSaving.value = false; }
 };
 
-const confirmDelete = () => {
-  showDeleteConfirm.value = true;
-};
+const confirmDelete = () => { showDeleteConfirm.value = true; };
 const deleteClassic = async () => {
   isSaving.value = true;
   try {
-    await fetch(`${BASE_CLASSIC()}/remove/${activeId.value}`, {method: 'DELETE', credentials: 'include'});
+    await fetch(`${BASE_CLASSIC()}/remove/${activeId.value}`, { method: 'DELETE', credentials: 'include' });
     showDeleteConfirm.value = false;
-    activeId.value = null;
-    activeDetail.value = null;
-    charGroups.value = [];
+    activeId.value = null; activeDetail.value = null; charGroups.value = [];
     await loadAll();
     showToast('分隊已刪除');
-  } catch {
-    showToast('刪除失敗');
-  } finally {
+  } catch { showToast('刪除失敗'); }
+  finally {
     isSaving.value = false;
   }
 };
@@ -798,7 +740,7 @@ const leaveShare = async () => {
 
 // ── 分享 ──────────────────────────────────────────────────────────
 const openShareModal = async () => {
-  shareModal.value = {show: true, permission: 'view', generating: false, code: '', expiresAt: '', shareList: []};
+  shareModal.value = {show: true, permission: 'view', generating: false, code: '', expiresAt: '', joinUrl: '', shareList: []};
   await loadShareList();
 };
 const loadShareList = async () => {
@@ -824,6 +766,7 @@ const generateInvite = async () => {
     }
     shareModal.value.code = data.code;
     shareModal.value.expiresAt = data.expiresAt;
+    shareModal.value.joinUrl = data.joinUrl || '';
   } catch {
     showToast('產生失敗');
   } finally {
@@ -831,8 +774,9 @@ const generateInvite = async () => {
   }
 };
 const copyCode = () => {
-  navigator.clipboard?.writeText(shareModal.value.code);
-  showToast('邀請碼已複製');
+  const text = shareModal.value.joinUrl || shareModal.value.code;
+  navigator.clipboard?.writeText(text);
+  showToast(shareModal.value.joinUrl ? '邀請連結已複製' : '邀請碼已複製');
 };
 const updateShare = async (member) => {
   const newPerm = member.permission === 'edit' ? 'view' : 'edit';
@@ -842,47 +786,33 @@ const updateShare = async (member) => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({permission: newPerm})
     })).json();
-    if (data.error) {
-      showToast(data.error);
-      return;
-    }
+    if (data.error) { showToast(data.error); return; }
     member.permission = newPerm;
     showToast(`已改為${newPerm === 'edit' ? '編輯' : '查看'}權限`);
-  } catch {
-    showToast('更新失敗');
-  }
+  } catch { showToast('更新失敗'); }
 };
 
 // ── SSE 即時同步 ──────────────────────────────────────────────────
 let sseConnection = null;
-
 const subscribeClassicSSE = (id) => {
-  if (sseConnection) {
-    sseConnection.close();
-    sseConnection = null;
-  }
+  if (sseConnection) { sseConnection.close(); sseConnection = null; }
   if (!id) return;
-  sseConnection = new EventSource(`${BASE_CLASSIC()}/subscribe/${id}`, {withCredentials: true});
+  sseConnection = new EventSource(`${BASE_CLASSIC()}/subscribe/${id}`, { withCredentials: true });
   sseConnection.onmessage = async () => {
     try {
-      const data = await (await fetch(`${BASE_CLASSIC()}/${id}`, {credentials: 'include'})).json();
+      const data = await (await fetch(`${BASE_CLASSIC()}/${id}`, { credentials: 'include' })).json();
       if (!data.error) {
         activeDetail.value = data;
-        squadCount.value = data.squadCount || 4;
+        squadCount.value   = data.squadCount || 4;
         buildCharGroups(data.assignments || [], data.permission);
       }
-    } catch {
-    }
+    } catch {}
   };
   sseConnection.onerror = () => {
-    sseConnection?.close();
-    sseConnection = null;
-    setTimeout(() => {
-      if (activeId.value) subscribeClassicSSE(activeId.value);
-    }, 5000);
+    sseConnection?.close(); sseConnection = null;
+    setTimeout(() => { if (activeId.value) subscribeClassicSSE(activeId.value); }, 5000);
   };
 };
-
 watch(activeId, (newId) => subscribeClassicSSE(newId));
 
 const revokeShare = async (targetGoogleId) => {
@@ -930,9 +860,7 @@ const showToast = (msg) => {
   }, 2500);
 };
 
-onUnmounted(() => {
-  sseConnection?.close();
-});
+onUnmounted(() => { sseConnection?.close(); });
 
 onMounted(async () => {
   document.title = '經典組隊';

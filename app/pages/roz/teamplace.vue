@@ -437,9 +437,9 @@
           {{ teamShareModal.generating ? '產生中...' : '產生邀請碼' }}
         </button>
         <div v-if="teamShareModal.code" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg p-3 text-center mb-4">
-          <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（多人可用）</div>
+          <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（對方點擊即可加入）</div>
           <div class="text-sm font-mono text-[#f1d483] break-all mb-1">
-            {{ joinBaseUrl }}/roz/join?code={{ teamShareModal.code }}
+            {{ teamShareModal.joinUrl || `${joinBaseUrl}/roz/join?type=team&code=${teamShareModal.code}` }}
           </div>
           <div class="text-[#a6937c] text-xs">{{ teamShareModal.expiresAt }} 前有效</div>
           <button @click="copyTeamCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製連結</button>
@@ -584,7 +584,7 @@ const deleteTeamTarget   = ref(null);
 const leaveTeamTarget    = ref(null);
 const teamShareModal     = ref({
   show: false, teamId: '', teamName: '', permission: 'view',
-  generating: false, code: '', expiresAt: '', shareList: []
+  generating: false, code: '', expiresAt: '', joinUrl: '', shareList: []
 });
 const showAcceptTeamModal = ref(false);
 const acceptTeamCode     = ref('');
@@ -880,7 +880,7 @@ const leaveTeam = async () => {
 const openTeamShare = async (team) => {
   teamShareModal.value = {
     show: true, teamId: team.id, teamName: team.name,
-    permission: 'view', generating: false, code: '', expiresAt: '', shareList: []
+    permission: 'view', generating: false, code: '', expiresAt: '', joinUrl: '', shareList: []
   };
   try {
     const data = await (await fetch(`${BASE_TEAM()}/share-list/${team.id}`, {credentials: 'include'})).json();
@@ -899,11 +899,12 @@ const generateTeamInvite = async () => {
     if (data.error) { showToast(data.error); return; }
     teamShareModal.value.code = data.code;
     teamShareModal.value.expiresAt = data.expiresAt;
+    teamShareModal.value.joinUrl = data.joinUrl || `${window.location.origin}/roz/join?type=team&code=${data.code}`;
   } catch { showToast('產生失敗'); }
   finally { teamShareModal.value.generating = false; }
 };
 const copyTeamCode = () => {
-  const url = `${window.location.origin}/roz/join?code=${teamShareModal.value.code}`;
+  const url = teamShareModal.value.joinUrl || `${window.location.origin}/roz/join?type=team&code=${teamShareModal.value.code}`;
   navigator.clipboard?.writeText(url);
   showToast('邀請連結已複製');
 };
@@ -971,11 +972,34 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.3s, transform 0.3s; }
-.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
-.custom-scrollbar::-webkit-scrollbar { width: 6px; }
-.custom-scrollbar::-webkit-scrollbar-track { background: #2c1e14; }
-.custom-scrollbar::-webkit-scrollbar-thumb { background: #5e4b37; border-radius: 10px; }
-.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8d7a64; }
-select option { background-color: #2c1e14; color: #e0d3b8; }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2c1e14;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #5e4b37;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8d7a64;
+}
+
+select option {
+  background-color: #2c1e14;
+  color: #e0d3b8;
+}
 </style>
