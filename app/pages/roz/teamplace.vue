@@ -547,7 +547,11 @@ watch(viewMode, v => localStorage.setItem('roz_viewMode', v));
 const teams = ref([]);
 const allAccounts = ref([]);
 const dungeonList = ref([]);
-const activeTeamId = ref(null);
+const activeTeamId = ref(localStorage.getItem('roz_activeTeamId') || null);
+watch(activeTeamId, v => v
+    ? localStorage.setItem('roz_activeTeamId', v)
+    : localStorage.removeItem('roz_activeTeamId')
+);
 const teamDetail = ref(null);
 const teamDetailLoading = ref(false);
 const activeDungeon = ref('');
@@ -984,6 +988,12 @@ onMounted(async () => {
   document.title = '副本組隊';
   await loadAll();
   if (viewMode.value === 'overview') loadAllTeamDetails();
+  // 恢復上次展開的隊伍
+  if (activeTeamId.value) {
+    const savedId = activeTeamId.value;
+    activeTeamId.value = null; // 先清掉讓 toggleTeam 重新載入
+    await toggleTeam(savedId);
+  }
 });
 </script>
 
