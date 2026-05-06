@@ -45,7 +45,7 @@ onMounted(() => {
 <template>
   <RozTopNav />
   <Navbar />
-  <bg id="main" class="flex w-full container-top flex-col items-center justify-center">
+  <bg id="main" class="flex w-full container-top flex-col items-center">
     <div class="w-full 2xl:w-3/4">
       <NuxtLayout>
         <NuxtPage />
