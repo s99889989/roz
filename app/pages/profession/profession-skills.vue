@@ -1,5 +1,5 @@
 <template>
-  <div class="ps-root">
+  <div id="outer" class="ps-root">
 
     <div v-if="loading" class="ps-loading">
       <span class="ps-loading-dot"></span>
@@ -58,7 +58,7 @@
               <button class="ps-reset-btn" @click="resetGroup(group)" title="重置技能點">↺ 重置</button>
             </div>
 
-            <!-- 固定 7×6 grid，不足補空格 -->
+            <!-- 7 欄 grid，自動列數 -->
             <div class="ps-grid">
               <div
                   v-for="(cell, idx) in paddedRows(group)"
@@ -232,16 +232,22 @@ function skillKey(img) {
   return `${selectedJob.value}:${img}`
 }
 
-// 將 group.rows 攤平並補足至固定 7×6 = 42 格
+// 將 group.rows 攤平，補足至最後一個有內容格子所在列的末尾
 const COLS = 7
 const ROWS = 6
 const EMPTY_CELL = { empty: true, img: '', name: '', point: '0', skid: null }
 
 function paddedRows(group) {
   const flat = group.rows.flatMap(r => r)
-  const total = COLS * ROWS
-  while (flat.length < total) flat.push({ ...EMPTY_CELL })
-  return flat.slice(0, total)
+  // 找最後一個非空格的 index
+  let lastFilled = -1
+  for (let i = flat.length - 1; i >= 0; i--) {
+    if (!flat[i].empty) { lastFilled = i; break }
+  }
+  // 補到該列末尾（ceil to next multiple of COLS），最多 COLS*ROWS
+  const needed = lastFilled < 0 ? COLS : Math.min(Math.ceil((lastFilled + 1) / COLS) * COLS, COLS * ROWS)
+  while (flat.length < needed) flat.push({ ...EMPTY_CELL })
+  return flat.slice(0, needed)
 }
 
 // 從 title "職業 - 技能點 (1/70)" 取出職業名稱
@@ -599,8 +605,10 @@ function adjustPoint(d) {
   padding: 12px 16px 16px;
   border-radius: 12px;
   align-self: flex-start;
-  width: 100%;
+  width: fit-content;
+  min-width: 100%;
   min-height: 100%;
+  box-sizing: border-box;
   font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
 }
 
@@ -855,7 +863,7 @@ function adjustPoint(d) {
 .ps-grid {
   display: grid;
   grid-template-columns: repeat(7, var(--cell-size));
-  grid-template-rows: repeat(6, var(--cell-size));
+  grid-auto-rows: var(--cell-size);
   gap: 10px;
 }
 
@@ -1046,20 +1054,20 @@ function adjustPoint(d) {
   }
 
   .ps-tab-label {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .ps-group-header {
-    padding: 5px 8px;
+    padding: 6px 10px;
   }
 
   .ps-group-title {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .ps-reset-btn {
-    font-size: 12px;
-    padding: 3px 8px;
+    font-size: 13px;
+    padding: 4px 10px;
     border-radius: 4px;
     border: 1px solid var(--c-border);
     background: transparent;
@@ -1092,7 +1100,7 @@ function adjustPoint(d) {
   }
 
   .ps-toggle-label {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--c-gold);
     font-weight: 600;
     letter-spacing: .3px;
@@ -1145,13 +1153,12 @@ function adjustPoint(d) {
   }
 
   .ps-group-count {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   /* Grid 自適應填滿寬度，高度鎖 1:1 */
   .ps-grid {
     grid-template-columns: repeat(7, 1fr) !important;
-    grid-template-rows: none !important;
     grid-auto-rows: 1fr;
     width: 100%;
   }
@@ -1170,14 +1177,14 @@ function adjustPoint(d) {
   }
 
   .ps-skill-name {
-    font-size: 8.5px;
+    font-size: 6px;
     margin-top: 2px;
   }
 
   .ps-badge {
-    font-size: 9px;
+    font-size: 10px;
     padding: 0 2px;
-    line-height: 13px;
+    line-height: 14px;
   }
 }
 </style>
@@ -1369,5 +1376,68 @@ function adjustPoint(d) {
 .ps-point-max {
   font-size: 14px;
   color: #9a7030;
+}
+
+/* ── Modal：手機版字體放大 ── */
+@media (max-width: 720px) {
+  .ps-modal {
+    width: 94vw;
+    max-width: 94vw;
+    max-height: 85vh;
+    border-radius: 10px;
+  }
+
+  .ps-modal-close {
+    font-size: 20px;
+    top: 12px;
+    right: 14px;
+  }
+
+  .ps-modal-body {
+    padding: 20px 16px 12px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .ps-modal-footer {
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .ps-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .ps-btn--max {
+    width: auto;
+    padding: 0 12px;
+    font-size: 14px;
+    height: 48px;
+  }
+
+  .ps-point-pill {
+    padding: 8px 16px;
+    min-width: 88px;
+  }
+
+  .ps-point-cur {
+    font-size: 30px;
+  }
+
+  .ps-point-sep {
+    font-size: 16px;
+  }
+
+  .ps-point-max {
+    font-size: 16px;
+  }
+
+  .ps-tooltip {
+    font-size: 14px;
+    max-width: 260px;
+    padding: 10px 12px;
+  }
 }
 </style>
