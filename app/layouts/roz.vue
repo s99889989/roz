@@ -1,6 +1,5 @@
 <template>
   <div>
-    <RozTopNav />
     <slot />
   </div>
 </template>

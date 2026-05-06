@@ -4,6 +4,7 @@ import { onMounted } from 'vue'
 import { useFlowbite } from '~/composables/useFlowbite';
 import {initFlowbite} from "flowbite";
 import Navbar from "./pages/navbar.vue";
+import RozTopNav from '~/layouts/RozTopNav.vue';
 // import RozSidebar from "~/layouts/RozSidebar.vue";
 useHead({
   charset: 'utf-8',
@@ -42,7 +43,7 @@ onMounted(() => {
 
 </script>
 <template>
-  <RozSidebar />
+  <RozTopNav />
   <Navbar />
   <bg id="main" class="flex w-full container-top flex-col items-center justify-center">
     <div class="w-full 2xl:w-3/4">
