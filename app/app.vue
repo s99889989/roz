@@ -1,11 +1,9 @@
-
 <script setup>
 import { onMounted } from 'vue'
 import { useFlowbite } from '~/composables/useFlowbite';
 import {initFlowbite} from "flowbite";
 import Navbar from "./pages/navbar.vue";
-import RozTopNav from '~/layouts/RozTopNav.vue';
-// import RozSidebar from "~/layouts/RozSidebar.vue";
+
 useHead({
   charset: 'utf-8',
   viewport: 'width=500, initial-scale=1',
@@ -32,18 +30,14 @@ useHead({
   ]
 })
 
-
-
-// initialize components based on data attribute selectors
 onMounted(() => {
   useFlowbite(() => {
     initFlowbite();
   })
 })
-
 </script>
+
 <template>
-  <RozTopNav />
   <Navbar />
   <bg id="main" class="flex w-full container-top flex-col items-center">
     <div class="w-full 2xl:w-3/4">
@@ -53,6 +47,7 @@ onMounted(() => {
     </div>
   </bg>
 </template>
+
 <style scoped>
 bg {
   background: #43321c;
@@ -62,5 +57,4 @@ bg {
   padding: 30px;
   min-height: 100vh;
 }
-
 </style>
