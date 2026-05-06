@@ -77,6 +77,7 @@
                   @click="!cell.empty && openModal(cell)"
                   @mouseenter="!cell.empty && showTooltip($event, cell)"
                   @mouseleave="hideTooltip"
+                  @wheel.prevent="!cell.empty && !defaultKeys.has(skillKey(cell.img)) && onCellWheel($event, cell)"
               >
                 <template v-if="!cell.empty">
                   <img
@@ -119,7 +120,7 @@
     <!-- ── Modal ── -->
     <teleport to="body">
       <div v-if="modal.visible" class="ps-overlay" @click.self="closeModal">
-        <div class="ps-modal">
+        <div class="ps-modal" @wheel.prevent="onModalWheel">
           <button class="ps-modal-close" @click="closeModal">✕</button>
           <div class="ps-modal-body" v-html="modal.html"></div>
           <div class="ps-modal-footer" v-if="!modal.isDefault">
@@ -376,7 +377,31 @@ const tooltip = reactive({visible: false, x: 0, y: 0, html: ''})
 const tooltipEl = ref(null)
 
 function buildHtml(cell) {
-  return skillMeta.value[cell.img]?.desc ?? `<strong>${cell.name}</strong>`
+  const raw = skillMeta.value[cell.img]?.desc ?? `<strong>${cell.name}</strong>`
+  return raw
+}
+
+// 在 modal 用：把 [Lv N] 等級列表包成兩欄 grid
+function buildModalHtml(cell) {
+  const raw = skillMeta.value[cell.img]?.desc ?? `<strong>${cell.name}</strong>`
+  // 把 <br> 分行後，找出 [Lv N] 開頭的行，包進 ps-lv-grid
+  const lines = raw.split(/<br\s*\/?>/i)
+  const lvLines = []
+  const infoLines = []
+  let foundLv = false
+  for (const line of lines) {
+    if (/^\s*\[Lv/.test(line)) {
+      foundLv = true
+      lvLines.push(`<div class="ps-lv-entry">${line.trim()}</div>`)
+    } else if (!foundLv) {
+      infoLines.push(line)
+    }
+  }
+  let html = infoLines.join('<br>')
+  if (lvLines.length) {
+    html += `<div class="ps-lv-grid">${lvLines.join('')}</div>`
+  }
+  return html
 }
 
 function showTooltip(e, cell) {
@@ -471,7 +496,7 @@ function openModal(cell) {
   activeSkill.value = cell
   modal.img = cell.img
   modal.maxLv = skillMeta.value[cell.img]?.maxLv ?? 1
-  modal.html = buildHtml(cell)
+  modal.html = buildModalHtml(cell)
   modal.visible = true
   // 預設有點的技能（不可手動調整）→ 隱藏 -/+ 按鈕
   const key = skillKey(cell.img)
@@ -513,6 +538,30 @@ function resetGroup(group) {
 function closeModal() {
   modal.visible = false;
   activeSkill.value = null
+}
+
+// 滾輪調整技能等級（電腦版）
+function onModalWheel(e) {
+  if (modal.isDefault || !modal.visible) return
+  // deltaY > 0 往下滾 → 減少；往上滾 → 增加
+  const d = e.deltaY > 0 ? -1 : 1
+  adjustPoint(d)
+}
+
+// 直接在技能格上滾輪調整（不需要開 Modal）
+function onCellWheel(e, cell) {
+  const d = e.deltaY > 0 ? -1 : 1
+  // 暫借 modal state 讓 adjustPoint / cascadeDowngrade 能找到正確 group
+  const prevImg = modal.img
+  const prevMaxLv = modal.maxLv
+  const prevVisible = modal.visible
+  modal.img = cell.img
+  modal.maxLv = skillMeta.value[cell.img]?.maxLv ?? 1
+  adjustPoint(d)
+  if (!prevVisible) {
+    modal.img = prevImg
+    modal.maxLv = prevMaxLv
+  }
 }
 
 // 遞迴滿足前置：要讓 img 達到 targetLv，先確保其所有前置達到要求等級
@@ -985,7 +1034,7 @@ function adjustPoint(d) {
   position: absolute;
   top: 3px;
   right: 3px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
   color: var(--c-text-dim);
   background: rgba(0, 0, 0, 0.45);
@@ -1228,13 +1277,13 @@ function adjustPoint(d) {
   background: #1e160a;
   border: 1px solid #6a4e20;
   border-radius: 12px;
-  width: 360px;
+  width: 680px;
   max-width: 92vw;
-  max-height: 80vh;
-  overflow-y: auto;
+  max-height: 85vh;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), inset 0 0 0 1px rgba(200, 160, 80, 0.1);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   animation: ps-modal-in .18s ease;
 }
 
@@ -1268,15 +1317,38 @@ function adjustPoint(d) {
 }
 
 .ps-modal-body {
-  padding: 20px 20px 14px;
-  font-size: 16px;
+  padding: 20px 24px 16px;
+  font-size: 14px;
   line-height: 1.8;
   color: #d4b896;
   border-bottom: 1px solid #3a2810;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .ps-modal-body br {
   display: block;
+}
+
+/* 等級列表兩欄 grid */
+.ps-modal-body .ps-lv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 16px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #3a2810;
+}
+
+.ps-modal-body .ps-lv-entry {
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ps-modal-body .ps-lv-entry:nth-child(odd) {
+  background: rgba(200, 160, 80, 0.04);
 }
 
 .ps-modal-footer {
@@ -1385,6 +1457,16 @@ function adjustPoint(d) {
     max-width: 94vw;
     max-height: 85vh;
     border-radius: 10px;
+    overflow-y: auto;
+  }
+
+  .ps-modal-body {
+    overflow-y: visible;
+  }
+
+  /* 手機版等級列表維持單欄 */
+  .ps-modal-body .ps-lv-grid {
+    grid-template-columns: 1fr;
   }
 
   .ps-modal-close {
