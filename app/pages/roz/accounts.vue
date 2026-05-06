@@ -312,7 +312,16 @@
                   {{ member.permission === 'edit' ? '編輯' : '使用' }}
                 </span>
               </div>
-              <button @click="revokeShare(member.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">移除</button>
+              <div class="flex items-center gap-2">
+                <button @click="updateShare(member)"
+                        class="text-xs border px-2 py-0.5 rounded transition"
+                        :class="member.permission === 'edit'
+                          ? 'border-[#a8c0f0]/40 text-[#a8c0f0] hover:bg-[#2a3a4a]'
+                          : 'border-[#a8f0c8]/40 text-[#a8f0c8] hover:bg-[#2a4a3a]'">
+                  改為{{ member.permission === 'edit' ? '使用' : '編輯' }}
+                </button>
+                <button @click="revokeShare(member.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">移除</button>
+              </div>
             </div>
           </div>
         </div>
@@ -365,57 +374,88 @@
 </template>
 
 <script setup>
-definePageMeta({ layout: 'roz'});
+definePageMeta({layout: 'roz'});
 
-import { ref, onMounted } from 'vue';
-import { useCommonStore } from '~/stores/common.js';
+import {ref, onMounted} from 'vue';
+import {useCommonStore} from '~/stores/common.js';
 
 const commonStore = useCommonStore();
 const BASE = () => commonStore.data.main_url + '/roz/account';
 
 const jobList = ['祭師', '鐵匠', '騎士', '詩人', '刺客', '賢者', '巫師', '練金', '十字軍', '舞孃', '武僧', '獵人', '流氓'];
-const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩人':'詩人','刺客':'刺客','賢者':'賢者','巫師':'巫師','練金':'練金','十字軍':'十字軍','舞孃':'舞孃','武僧':'祭師','獵人':'詩人','流氓':'流氓' };
+const jobFileMap = {
+  '祭師': '祭師',
+  '鐵匠': '鐵匠',
+  '騎士': '騎士',
+  '詩人': '詩人',
+  '刺客': '刺客',
+  '賢者': '賢者',
+  '巫師': '巫師',
+  '練金': '練金',
+  '十字軍': '十字軍',
+  '舞孃': '舞孃',
+  '武僧': '祭師',
+  '獵人': '詩人',
+  '流氓': '流氓'
+};
 const getJobImg = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
 
 // ── 狀態 ──────────────────────────────────────────────────────────
-const loading           = ref(true);
-const accounts          = ref([]);
-const collapsed         = ref({});
-const viewMode          = ref('list');
-const isAdding          = ref(false);
-const editingAcc        = ref(null);   // 改成存整個 acc 物件，不用 id 比對
-const isSaving          = ref(false);
-const formError         = ref('');
+const loading = ref(true);
+const accounts = ref([]);
+const collapsed = ref({});
+const viewMode = ref('list');
+const isAdding = ref(false);
+const editingAcc = ref(null);   // 改成存整個 acc 物件，不用 id 比對
+const isSaving = ref(false);
+const formError = ref('');
 const showDeleteConfirm = ref(false);
-const deleteTarget      = ref(null);
-const toast             = ref({ show: false, message: '' });
-const firstRoleInput    = ref(null);
-const newAccount        = ref({ name: '', roles: [{ name: '', job: '', level: null }] });
-const editForm          = ref({ name: '', roles: [] });
+const deleteTarget = ref(null);
+const toast = ref({show: false, message: ''});
+const firstRoleInput = ref(null);
+const newAccount = ref({name: '', roles: [{name: '', job: '', level: null}]});
+const editForm = ref({name: '', roles: []});
 
 // 分享
-const shareModal = ref({ show: false, accId: '', accName: '', permission: 'use', generating: false, code: '', expiresAt: '', shareList: [] });
+const shareModal = ref({
+  show: false,
+  accId: '',
+  accName: '',
+  permission: 'use',
+  generating: false,
+  code: '',
+  expiresAt: '',
+  shareList: []
+});
 const showAcceptModal = ref(false);
-const acceptCode      = ref('');
-const acceptError     = ref('');
-const isAccepting     = ref(false);
+const acceptCode = ref('');
+const acceptError = ref('');
+const isAccepting = ref(false);
 
 // ── 視圖模式 ──────────────────────────────────────────────────────
 const VIEW_KEY = 'roz_accounts_view';
-const setViewMode = (mode) => { viewMode.value = mode; if (import.meta.client) localStorage.setItem(VIEW_KEY, mode); };
-const toggleCollapse = (id) => { collapsed.value = { ...collapsed.value, [id]: !collapsed.value[id] }; };
+const setViewMode = (mode) => {
+  viewMode.value = mode;
+  if (import.meta.client) localStorage.setItem(VIEW_KEY, mode);
+};
+const toggleCollapse = (id) => {
+  collapsed.value = {...collapsed.value, [id]: !collapsed.value[id]};
+};
 
 // ── 載入 ──────────────────────────────────────────────────────────
 const loadAccounts = async () => {
   loading.value = true;
   try {
-    const data = await (await fetch(`${BASE()}/list`, { credentials: 'include' })).json();
+    const data = await (await fetch(`${BASE()}/list`, {credentials: 'include'})).json();
     accounts.value = Array.isArray(data) ? data : [];
     accounts.value.forEach(a => {
       if (collapsed.value[a.id] === undefined) collapsed.value[a.id] = true;
     });
-  } catch (e) { console.error(e); }
-  finally { loading.value = false; }
+  } catch (e) {
+    console.error(e);
+  } finally {
+    loading.value = false;
+  }
 };
 
 // ── 排序 ──────────────────────────────────────────────────────────
@@ -428,41 +468,64 @@ const moveAccount = async (idx, dir) => {
   try {
     await fetch(`${BASE()}/reorder`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ids: arr.filter(a => a.permission === 'owner').map(a => a.id) })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ids: arr.filter(a => a.permission === 'owner').map(a => a.id)})
     });
-  } catch (e) { console.error('排序同步失敗:', e); }
+  } catch (e) {
+    console.error('排序同步失敗:', e);
+  }
 };
 
 // ── 新增 ──────────────────────────────────────────────────────────
 const startAddAccount = () => {
   cancelEdit();
-  newAccount.value = { name: '', roles: [{ name: '', job: '', level: null }] };
+  newAccount.value = {name: '', roles: [{name: '', job: '', level: null}]};
   formError.value = '';
   isAdding.value = true;
 };
-const focusFirstRole = () => { firstRoleInput.value?.focus(); };
+const focusFirstRole = () => {
+  firstRoleInput.value?.focus();
+};
 const saveNewAccount = async () => {
-  if (!newAccount.value.name.trim()) { formError.value = '請輸入帳號名稱'; return; }
-  if (!newAccount.value.roles.some(r => r.name.trim())) { formError.value = '請至少輸入一個角色名稱'; return; }
+  if (!newAccount.value.name.trim()) {
+    formError.value = '請輸入帳號名稱';
+    return;
+  }
+  if (!newAccount.value.roles.some(r => r.name.trim())) {
+    formError.value = '請至少輸入一個角色名稱';
+    return;
+  }
   isSaving.value = true;
   try {
     const payload = {
       name: newAccount.value.name.trim(),
-      roles: newAccount.value.roles.filter(r => r.name.trim()).map(r => ({ name: r.name.trim(), job: r.job || '', level: r.level || null }))
+      roles: newAccount.value.roles.filter(r => r.name.trim()).map(r => ({
+        name: r.name.trim(),
+        job: r.job || '',
+        level: r.level || null
+      }))
     };
     const data = await (await fetch(`${BASE()}/add`, {
       method: 'POST', credentials: 'include',
-      headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
+      headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
     })).json();
-    if (data.error) { formError.value = data.error; return; }
+    if (data.error) {
+      formError.value = data.error;
+      return;
+    }
     isAdding.value = false;
     await loadAccounts();
     showToast('帳號已新增');
-  } catch { formError.value = '儲存失敗'; }
-  finally { isSaving.value = false; }
+  } catch {
+    formError.value = '儲存失敗';
+  } finally {
+    isSaving.value = false;
+  }
 };
-const cancelAdd = () => { isAdding.value = false; formError.value = ''; };
+const cancelAdd = () => {
+  isAdding.value = false;
+  formError.value = '';
+};
 
 // ── 編輯（改成跟新增一樣，頂部展開區塊）────────────────────────────
 const startEdit = (acc) => {
@@ -536,20 +599,28 @@ const deleteAccount = async () => {
 
 // ── 退出共享 ──────────────────────────────────────────────────────
 const leaveTarget = ref(null);
-const confirmLeaveShare = (acc) => { leaveTarget.value = acc; };
+const confirmLeaveShare = (acc) => {
+  leaveTarget.value = acc;
+};
 const leaveShare = async () => {
   isSaving.value = true;
   try {
     const data = await (await fetch(
         `${BASE()}/leave-share/${leaveTarget.value.ownerGoogleId}/${leaveTarget.value.id}`,
-        { method: 'DELETE', credentials: 'include' }
+        {method: 'DELETE', credentials: 'include'}
     )).json();
-    if (data.error) { showToast(data.error); return; }
+    if (data.error) {
+      showToast(data.error);
+      return;
+    }
     leaveTarget.value = null;
     await loadAccounts();
     showToast('已退出共享');
-  } catch { showToast('退出失敗'); }
-  finally { isSaving.value = false; }
+  } catch {
+    showToast('退出失敗');
+  } finally {
+    isSaving.value = false;
+  }
 };
 
 // ── 分享 ──────────────────────────────────────────────────────────
@@ -602,6 +673,25 @@ const copyCode = () => {
   navigator.clipboard?.writeText(shareModal.value.code);
   showToast('邀請碼已複製');
 };
+const updateShare = async (member) => {
+  const newPerm = member.permission === 'edit' ? 'use' : 'edit';
+  try {
+    const data = await (await fetch(`${BASE()}/update-share/${shareModal.value.accId}/${member.googleId}`, {
+      method: 'POST', credentials: 'include',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({permission: newPerm})
+    })).json();
+    if (data.error) {
+      showToast(data.error);
+      return;
+    }
+    member.permission = newPerm;
+    showToast(`已改為${newPerm === 'edit' ? '編輯' : '使用'}權限`);
+  } catch {
+    showToast('更新失敗');
+  }
+};
+
 const revokeShare = async (targetGoogleId) => {
   try {
     await fetch(`${BASE()}/revoke-share/${shareModal.value.accId}/${targetGoogleId}`, {
