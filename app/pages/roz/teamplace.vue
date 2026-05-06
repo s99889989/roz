@@ -420,22 +420,19 @@
           <h3 class="text-[#f1d483] font-bold text-lg">分享隊伍：{{ teamShareModal.teamName }}</h3>
           <button @click="teamShareModal.show = false" class="text-[#a6937c] hover:text-[#f0a8a8] text-xl leading-none">✕</button>
         </div>
-        <div class="flex gap-2 mb-3">
-          <button @click="teamShareModal.permission = 'view'"
+        <div class="flex gap-2 mb-4">
+          <button @click="teamShareModal.permission = 'view'; generateTeamInvite()"
                   class="flex-1 py-2 rounded border text-sm font-bold transition"
                   :class="teamShareModal.permission === 'view' ? 'bg-[#2a3a4a] border-[#a8c0f0] text-[#a8c0f0]' : 'bg-[#3d2b1f] border-[#5e4b37] text-[#a6937c]'">
             查看<br><span class="text-[10px] font-normal">只能看，不能改</span>
           </button>
-          <button @click="teamShareModal.permission = 'edit'"
+          <button @click="teamShareModal.permission = 'edit'; generateTeamInvite()"
                   class="flex-1 py-2 rounded border text-sm font-bold transition"
                   :class="teamShareModal.permission === 'edit' ? 'bg-[#2a4a3a] border-[#a8f0c8] text-[#a8f0c8]' : 'bg-[#3d2b1f] border-[#5e4b37] text-[#a6937c]'">
             編輯<br><span class="text-[10px] font-normal">可修改副本分配</span>
           </button>
         </div>
-        <button @click="generateTeamInvite" :disabled="teamShareModal.generating"
-                class="w-full py-2 bg-[#4a7c59] hover:bg-[#3d6849] text-white rounded font-bold transition disabled:opacity-50 mb-3">
-          {{ teamShareModal.generating ? '產生中...' : '產生邀請碼' }}
-        </button>
+        <div v-if="teamShareModal.generating" class="text-center text-[#a6937c] text-sm py-2 mb-3">載入邀請連結中...</div>
         <div v-if="teamShareModal.code" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg p-3 text-center mb-4">
           <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（對方點擊即可加入）</div>
           <div class="text-sm font-mono text-[#f1d483] break-all mb-1">
@@ -883,8 +880,11 @@ const openTeamShare = async (team) => {
     permission: 'view', generating: false, code: '', expiresAt: '', joinUrl: '', shareList: []
   };
   try {
-    const data = await (await fetch(`${BASE_TEAM()}/share-list/${team.id}`, {credentials: 'include'})).json();
-    teamShareModal.value.shareList = Array.isArray(data) ? data : [];
+    const [shareListData] = await Promise.all([
+      (await fetch(`${BASE_TEAM()}/share-list/${team.id}`, {credentials: 'include'})).json(),
+      generateTeamInvite()
+    ]);
+    teamShareModal.value.shareList = Array.isArray(shareListData) ? shareListData : [];
   } catch { teamShareModal.value.shareList = []; }
 };
 const generateTeamInvite = async () => {
@@ -972,34 +972,11 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-  transform: translateY(8px);
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #2c1e14;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #5e4b37;
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #8d7a64;
-}
-
-select option {
-  background-color: #2c1e14;
-  color: #e0d3b8;
-}
+.fade-enter-active, .fade-leave-active { transition: opacity 0.3s, transform 0.3s; }
+.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
+.custom-scrollbar::-webkit-scrollbar { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #2c1e14; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #5e4b37; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8d7a64; }
+select option { background-color: #2c1e14; color: #e0d3b8; }
 </style>

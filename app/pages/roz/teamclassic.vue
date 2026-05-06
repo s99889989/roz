@@ -361,22 +361,19 @@
           <h3 class="text-[#f1d483] font-bold text-lg">分享分隊：{{ activeDetail?.name }}</h3>
           <button @click="shareModal.show = false" class="text-[#a6937c] hover:text-[#f0a8a8] text-xl leading-none">✕</button>
         </div>
-        <div class="flex gap-2 mb-3">
-          <button @click="shareModal.permission = 'view'"
+        <div class="flex gap-2 mb-4">
+          <button @click="shareModal.permission = 'view'; generateInvite()"
                   class="flex-1 py-2 rounded border text-sm font-bold transition"
                   :class="shareModal.permission === 'view' ? 'bg-[#2a3a4a] border-[#a8c0f0] text-[#a8c0f0]' : 'bg-[#3d2b1f] border-[#5e4b37] text-[#a6937c]'">
             查看<br><span class="text-[10px] font-normal">只能看分配結果</span>
           </button>
-          <button @click="shareModal.permission = 'edit'"
+          <button @click="shareModal.permission = 'edit'; generateInvite()"
                   class="flex-1 py-2 rounded border text-sm font-bold transition"
                   :class="shareModal.permission === 'edit' ? 'bg-[#2a4a3a] border-[#a8f0c8] text-[#a8f0c8]' : 'bg-[#3d2b1f] border-[#5e4b37] text-[#a6937c]'">
             編輯<br><span class="text-[10px] font-normal">可修改分配・自動取得帳號使用權</span>
           </button>
         </div>
-        <button @click="generateInvite" :disabled="shareModal.generating"
-                class="w-full py-2 bg-[#4a7c59] hover:bg-[#3d6849] text-white rounded font-bold transition disabled:opacity-50 mb-3">
-          {{ shareModal.generating ? '產生中...' : '產生邀請碼' }}
-        </button>
+        <div v-if="shareModal.generating" class="text-center text-[#a6937c] text-sm py-2 mb-3">載入邀請連結中...</div>
         <div v-if="shareModal.code" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg p-3 text-center mb-4">
           <div class="text-[#a6937c] text-[10px] mb-1">邀請連結（對方點擊即可加入）</div>
           <div class="text-xs font-mono text-[#f1d483] break-all mb-1">{{ shareModal.joinUrl }}</div>
@@ -741,7 +738,7 @@ const leaveShare = async () => {
 // ── 分享 ──────────────────────────────────────────────────────────
 const openShareModal = async () => {
   shareModal.value = {show: true, permission: 'view', generating: false, code: '', expiresAt: '', joinUrl: '', shareList: []};
-  await loadShareList();
+  await Promise.all([loadShareList(), generateInvite()]);
 };
 const loadShareList = async () => {
   try {
