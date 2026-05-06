@@ -50,7 +50,9 @@
                 <template v-if="hoverSimCost && hoverSimCost.has(group)">
                   <span class="ps-sim-cur">{{ displayAllocated(group) + groupInitPts(group.title) }}</span>
                   <span class="ps-sim-arrow"> → </span>
-                  <span class="ps-sim-next">{{ Math.min(displayAllocated(group) + groupInitPts(group.title) + (hoverSimCost.get(group) ?? 0), groupMaxPts(group.title)) }}</span>
+                  <span class="ps-sim-next"
+                        :class="{ 'ps-sim-next--over': displayAllocated(group) + groupInitPts(group.title) + (hoverSimCost.get(group) ?? 0) > groupMaxPts(group.title) }"
+                  >{{ displayAllocated(group) + groupInitPts(group.title) + (hoverSimCost.get(group) ?? 0) }}</span>
                 </template>
                 <template v-else>{{ displayAllocated(group) + groupInitPts(group.title) }}</template>
                 /{{ groupMaxPts(group.title) }})
@@ -608,18 +610,19 @@ function adjustPoint(d) {
     const g = findGroup(modal.img)
     const isFG = firstGroup() === g
     const max = g ? groupMaxPts(g.title) - groupInitPts(g.title) : 0
+
+    // 計算前置補點的額外消耗（同 group 內）
+    const prereqCost = calcPrereqCost(modal.img, next, g)
+
     if (isFG) {
-      // 一轉技能：自己點數池 + 二轉剩餘
-      if (groupAllocated(g) >= max + laterGroupsRemaining()) return
+      if (groupAllocated(g) + prereqCost >= max + laterGroupsRemaining()) return
     } else {
-      // 二轉：只看自己 group 的上限
-      // 二轉：一轉必須先點滿
       const fg2 = firstGroup()
       if (fg2) {
         const fgMax2 = groupMaxPts(fg2.title) - groupInitPts(fg2.title)
         if (groupAllocated(fg2) < fgMax2) return
       }
-      if (g && displayAllocated(g) >= max) return
+      if (g && displayAllocated(g) + prereqCost >= max) return
     }
     ensurePrereqs(modal.img, next)      // 加點前自動補前置
   }
@@ -627,6 +630,25 @@ function adjustPoint(d) {
   if (d < 0 && next < cur) {
     cascadeDowngrade(modal.img, next)
   }
+}
+
+// 計算為了讓 img 升到 targetLv，同一 group 內的前置需要額外補多少點
+function calcPrereqCost(img, targetLv, group) {
+  if (targetLv <= 0 || !group) return 0
+  const prereqs = prereqMap.value[img] ?? []
+  let cost = 0
+  for (const { img: pImg, lv: pLv } of prereqs) {
+    const cur = allocatedPoints[skillKey(pImg)] ?? 0
+    if (cur < pLv) {
+      // 前置不足，需要補到 pLv，再遞迴算它自己的前置
+      const inSameGroup = group.rows.some(row => row.some(c => !c.empty && c.img === pImg))
+      if (inSameGroup) {
+        cost += (pLv - cur)
+        cost += calcPrereqCost(pImg, pLv, group)
+      }
+    }
+  }
+  return cost
 }
 </script>
 
@@ -895,6 +917,10 @@ function adjustPoint(d) {
 .ps-sim-next {
   color: #60e060;
   font-weight: 900;
+}
+
+.ps-sim-next--over {
+  color: #ff5555;
 }
 
 .ps-group-count {
