@@ -5,31 +5,31 @@ import { useFlowbite } from '~/composables/useFlowbite';
 import {initFlowbite} from "flowbite";
 import Navbar from "./pages/navbar.vue";
 // import RozSidebar from "~/layouts/RozSidebar.vue";
-// useHead({
-//   charset: 'utf-8',
-//   viewport: 'width=500, initial-scale=1',
-//   title: 'RO 樂園資訊',
-//   htmlAttrs: {
-//     lang: 'tw'
-//   },
-//   meta: [
-//     { name: 'description', content: 'RO樂園' },
-//     { name: 'og:title', content: 'RO樂園' },
-//     { name: 'og:description', content: '資料查詢站' },
-//     { name: 'og:image', content: '/images/og_image.jpg' },
-//   ],
-//   link: [
-//     {
-//       href: "vue-virtual-scroller/dist/vue-virtual-scroller.css",
-//       rel: "stylesheet"
-//     },
-//     { rel: 'icon', href: '/logo.png' }
-//   ],
-//   script: [
-//     { src: "vue.js" },
-//     { src: "vue-virtual-scroller/dist/vue-virtual-scroller.min.js" },
-//   ]
-// })
+useHead({
+  charset: 'utf-8',
+  viewport: 'width=500, initial-scale=1',
+  title: 'RO 樂園資訊',
+  htmlAttrs: {
+    lang: 'tw'
+  },
+  meta: [
+    { name: 'description', content: 'RO樂園' },
+    { name: 'og:title', content: 'RO樂園' },
+    { name: 'og:description', content: '資料查詢站' },
+    { name: 'og:image', content: '/images/og_image.jpg' },
+  ],
+  link: [
+    {
+      href: "vue-virtual-scroller/dist/vue-virtual-scroller.css",
+      rel: "stylesheet"
+    },
+    { rel: 'icon', href: '/logo.png' }
+  ],
+  script: [
+    { src: "vue.js" },
+    { src: "vue-virtual-scroller/dist/vue-virtual-scroller.min.js" },
+  ]
+})
 
 
 
