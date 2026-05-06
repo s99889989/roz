@@ -14,7 +14,7 @@
                   :class="viewMode === 'edit' ? 'bg-[#5e4b37] text-[#f1d483]' : 'text-[#a6937c] hover:text-[#e0d3b8]'">
             ✏️ 編輯
           </button>
-          <button @click="viewMode = 'overview'; loadAllTeamDetails()"
+          <button @click="viewMode = 'overview'; loadAllTeamDetails(true)"
                   class="px-3 py-1.5 text-sm font-bold rounded-md transition"
                   :class="viewMode === 'overview' ? 'bg-[#5e4b37] text-[#f1d483]' : 'text-[#a6937c] hover:text-[#e0d3b8]'">
             👁 總覽
@@ -185,7 +185,11 @@
                   <div class="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-2">
                     <div v-if="allAccounts.length === 0" class="text-[#6b5a4a] text-sm italic text-center py-8">尚無可用帳號</div>
                     <div v-for="acc in allAccounts" :key="acc.id"
-                         class="bg-[#3d2b1f] border border-[#5e4b37] rounded-lg overflow-hidden">
+                         class="border rounded-lg overflow-hidden transition"
+                         :class="hiddenAccounts.has(acc.id)
+                           ? 'bg-[#2a1e14] border-[#3d2b1f] opacity-50'
+                           : 'bg-[#3d2b1f] border-[#5e4b37]'">
+                      <!-- 帳號 Header -->
                       <div @click="toggleAccGroup(acc.id)"
                            class="px-3 py-2 flex items-center justify-between cursor-pointer hover:bg-[#4a3828] transition">
                         <div class="flex items-center gap-1.5 min-w-0">
@@ -193,11 +197,25 @@
                           <span v-else-if="acc.permission === 'edit'" class="text-[#a8f0c8] text-[10px] font-bold bg-[#2a4a3a] px-1.5 py-0.5 rounded shrink-0">共享·編輯</span>
                           <span v-else class="text-[#a6c8f0] text-[10px] font-bold bg-[#2a3a4a] px-1.5 py-0.5 rounded shrink-0">共享·使用</span>
                           <span class="text-[#e0d3b8] text-sm font-bold truncate">{{ acc.name }}</span>
+                          <span v-if="hiddenAccounts.has(acc.id)"
+                                class="text-[#f0a8a8] text-[9px] font-bold bg-[#3d1e1e] px-1.5 py-0.5 rounded shrink-0">未上線</span>
                         </div>
-                        <span class="text-[#a6937c] text-xs ml-1 shrink-0"
-                              :class="collapsedAccGroups[acc.id] ? '' : 'rotate-180'">▼</span>
+                        <!-- 右側：隱藏按鈕 + 展開箭頭 -->
+                        <div class="flex items-center gap-1.5 shrink-0 ml-1" @click.stop>
+                          <button @click="toggleHideAccount(acc.id)"
+                                  :title="hiddenAccounts.has(acc.id) ? '點擊恢復顯示' : '標記為未上線（隱藏角色）'"
+                                  class="text-[9px] px-1.5 py-0.5 rounded border transition font-bold"
+                                  :class="hiddenAccounts.has(acc.id)
+                                    ? 'border-[#f0a8a8]/50 text-[#f0a8a8] bg-[#3d1e1e] hover:bg-[#4a2a2a]'
+                                    : 'border-[#5e4b37] text-[#6b5a4a] hover:border-[#f0a8a8]/50 hover:text-[#f0a8a8]'">
+                            {{ hiddenAccounts.has(acc.id) ? '▶ 恢復' : '隱藏' }}
+                          </button>
+                          <span class="text-[#a6937c] text-xs transition-transform duration-300 select-none"
+                                :class="collapsedAccGroups[acc.id] ? '' : 'rotate-180'">▼</span>
+                        </div>
                       </div>
-                      <div v-show="!collapsedAccGroups[acc.id]" class="px-2 pb-2 space-y-1">
+                      <!-- 角色列表：隱藏中的帳號不展開 -->
+                      <div v-show="!collapsedAccGroups[acc.id] && !hiddenAccounts.has(acc.id)" class="px-2 pb-2 space-y-1">
                         <div v-for="role in acc.roles" :key="role.name"
                              class="flex items-center gap-2 rounded-lg px-2 py-2 transition"
                              :class="getSlotStatusInDungeon(acc, role, activeDungeon)
@@ -205,8 +223,7 @@
                                  ? 'bg-[#1e3a4a] border border-[#5b8fa4]/40'
                                  : 'bg-[#1e3a1e] border border-[#a0c878]/30'
                                : 'bg-[#2c1e14] hover:bg-[#3d2b1f]'">
-                          <div
-                              class="w-8 h-8 bg-[#3d2b1f] rounded-full border border-[#5e4b37] flex items-center justify-center overflow-hidden shrink-0">
+                          <div class="w-8 h-8 bg-[#3d2b1f] rounded-full border border-[#5e4b37] flex items-center justify-center overflow-hidden shrink-0">
                             <img :src="getJobImg(role.job)" class="w-5 h-5 object-contain">
                           </div>
                           <div class="flex-1 min-w-0">
@@ -267,12 +284,10 @@
                            :class="activeDungeon === dName ? 'bg-[#3a2e10]' : 'bg-[#1e150d]'">
                         <div class="flex items-center gap-2">
                           <span class="font-bold text-sm"
-                                :class="activeDungeon === dName ? 'text-[#f1d483]' : 'text-[#e0d3b8]'">{{
-                              dName
-                            }}</span>
-                          <span class="text-[#a6937c] text-xs">{{
-                              (teamDetail.dungeons?.[dName] || []).filter(s => s.status === 'in').length
-                            }}/12</span>
+                                :class="activeDungeon === dName ? 'text-[#f1d483]' : 'text-[#e0d3b8]'">{{ dName }}</span>
+                          <span class="text-[#a6937c] text-xs">
+                            {{ (teamDetail.dungeons?.[dName] || []).filter(s => s.status === 'in').length }}/12
+                          </span>
                           <span v-if="dungeonMap[dName]?.minLevel != null"
                                 class="text-[9px] font-bold px-1 py-0.5 rounded bg-[#4a3820] text-[#c8a84b] border border-[#c8a84b]/30">
                             Lv.{{ dungeonMap[dName].minLevel }}+
@@ -287,8 +302,7 @@
                         <template v-else>
                           <div v-for="slot in (teamDetail.dungeons[dName] || []).filter(s => s.status === 'in')"
                                :key="slot.roleName+slot.accountId" class="flex items-center gap-1.5">
-                            <div
-                                class="w-6 h-6 bg-[#3d2b1f] rounded-full border border-[#5b8fa4]/40 flex items-center justify-center overflow-hidden shrink-0">
+                            <div class="w-6 h-6 bg-[#3d2b1f] rounded-full border border-[#5b8fa4]/40 flex items-center justify-center overflow-hidden shrink-0">
                               <img :src="getJobImg(slot.job)" class="w-3.5 h-3.5 object-contain">
                             </div>
                             <span class="text-[#e0d3b8] text-xs font-bold truncate flex-1">{{ slot.roleName }}</span>
@@ -298,8 +312,7 @@
                                class="border-t border-[#5e4b37]/40 pt-1 mt-1">
                             <div v-for="slot in (teamDetail.dungeons[dName] || []).filter(s => s.status === 'buff')"
                                  :key="'b'+slot.roleName+slot.accountId" class="flex items-center gap-1.5 opacity-70">
-                              <div
-                                  class="w-6 h-6 bg-[#1e3a1e] rounded-full border border-[#a0c878]/30 flex items-center justify-center overflow-hidden shrink-0">
+                              <div class="w-6 h-6 bg-[#1e3a1e] rounded-full border border-[#a0c878]/30 flex items-center justify-center overflow-hidden shrink-0">
                                 <img :src="getJobImg(slot.job)" class="w-3.5 h-3.5 object-contain">
                               </div>
                               <span class="text-[#a6937c] text-xs truncate flex-1">{{ slot.roleName }}</span>
@@ -365,8 +378,7 @@
       <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-sm p-6 text-center">
         <div class="text-4xl mb-3">⚠️</div>
         <h3 class="text-[#f1d483] font-bold text-xl mb-2">確認刪除隊伍？</h3>
-        <p class="text-[#a6937c] mb-5">隊伍「<span class="text-[#e0d3b8] font-bold">{{ deleteTeamTarget.name }}</span>」及所有副本分配將永久刪除。
-        </p>
+        <p class="text-[#a6937c] mb-5">隊伍「<span class="text-[#e0d3b8] font-bold">{{ deleteTeamTarget.name }}</span>」及所有副本分配將永久刪除。</p>
         <div class="flex gap-3 justify-center">
           <button @click="deleteTeamTarget = null"
                   class="px-5 py-2 bg-[#3d2b1f] hover:bg-[#5e4b37] text-[#a6937c] rounded border border-[#5e4b37] transition font-bold">
@@ -386,8 +398,7 @@
       <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-sm p-6 text-center">
         <div class="text-4xl mb-3">🚪</div>
         <h3 class="text-[#f1d483] font-bold text-xl mb-2">確認退出共享？</h3>
-        <p class="text-[#a6937c] mb-5">退出後將無法再存取隊伍「<span
-            class="text-[#e0d3b8] font-bold">{{ leaveTeamTarget?.name }}</span>」。</p>
+        <p class="text-[#a6937c] mb-5">退出後將無法再存取隊伍「<span class="text-[#e0d3b8] font-bold">{{ leaveTeamTarget?.name }}</span>」。</p>
         <div class="flex gap-3 justify-center">
           <button @click="leaveTeamTarget = null"
                   class="px-5 py-2 bg-[#3d2b1f] hover:bg-[#5e4b37] text-[#a6937c] rounded border border-[#5e4b37] transition font-bold">
@@ -407,9 +418,7 @@
       <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl shadow-2xl w-full max-w-md p-6">
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-[#f1d483] font-bold text-lg">分享隊伍：{{ teamShareModal.teamName }}</h3>
-          <button @click="teamShareModal.show = false" class="text-[#a6937c] hover:text-[#f0a8a8] text-xl leading-none">
-            ✕
-          </button>
+          <button @click="teamShareModal.show = false" class="text-[#a6937c] hover:text-[#f0a8a8] text-xl leading-none">✕</button>
         </div>
         <div class="flex gap-2 mb-3">
           <button @click="teamShareModal.permission = 'view'"
@@ -433,8 +442,7 @@
             {{ joinBaseUrl }}/roz/join?code={{ teamShareModal.code }}
           </div>
           <div class="text-[#a6937c] text-xs">{{ teamShareModal.expiresAt }} 前有效</div>
-          <button @click="copyTeamCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製連結
-          </button>
+          <button @click="copyTeamCode" class="mt-2 text-xs text-[#a8f0c8] hover:text-white transition">📋 複製連結</button>
         </div>
         <div>
           <p class="text-[#a6937c] text-sm font-bold mb-2">目前共享成員</p>
@@ -459,9 +467,7 @@
                           : 'border-[#a8f0c8]/40 text-[#a8f0c8] hover:bg-[#2a4a3a]'">
                   改為{{ m.permission === 'edit' ? '查看' : '編輯' }}
                 </button>
-                <button @click="revokeTeamShare(m.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">
-                  移除
-                </button>
+                <button @click="revokeTeamShare(m.googleId)" class="text-xs text-[#f0a8a8] hover:text-red-400 transition">移除</button>
               </div>
             </div>
           </div>
@@ -497,28 +503,18 @@
 <script setup>
 definePageMeta({layout: 'roz'});
 
-import {ref, computed, onMounted, watch} from 'vue';
+import {ref, computed, onMounted, onUnmounted, watch} from 'vue';
 import {useCommonStore} from '~/stores/common.js';
 
 const commonStore = useCommonStore();
-const BASE_TEAM = () => commonStore.data.main_url + '/roz/team';
+const BASE_TEAM    = () => commonStore.data.main_url + '/roz/team';
 const BASE_ACCOUNT = () => commonStore.data.main_url + '/roz/account';
 const BASE_DUNGEON = () => commonStore.data.main_url + '/roz/dungeon';
 
 const jobFileMap = {
-  '祭師': '祭師',
-  '鐵匠': '鐵匠',
-  '騎士': '騎士',
-  '詩人': '詩人',
-  '刺客': '刺客',
-  '賢者': '賢者',
-  '巫師': '巫師',
-  '練金': '練金',
-  '十字軍': '十字軍',
-  '舞孃': '舞孃',
-  '武僧': '祭師',
-  '獵人': '詩人',
-  '流氓': '流氓'
+  '祭師': '祭師', '鐵匠': '鐵匠', '騎士': '騎士', '詩人': '詩人',
+  '刺客': '刺客', '賢者': '賢者', '巫師': '巫師', '練金': '練金',
+  '十字軍': '十字軍', '舞孃': '舞孃', '武僧': '祭師', '獵人': '詩人', '流氓': '流氓'
 };
 const getJobImg = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
 
@@ -527,9 +523,7 @@ const getTeamColor = (idx) => teamColors[idx % teamColors.length];
 
 const getJobComposition = (slots) => {
   const map = {};
-  slots.forEach(s => {
-    if (s.job) map[s.job] = (map[s.job] || 0) + 1;
-  });
+  slots.forEach(s => { if (s.job) map[s.job] = (map[s.job] || 0) + 1; });
   return map;
 };
 
@@ -541,52 +535,61 @@ const assignedDungeons = (team) => {
 };
 
 // ── 狀態 ──────────────────────────────────────────────────────────
-const loading = ref(true);
-const viewMode = ref(localStorage.getItem('roz_viewMode') || 'edit');
+const loading        = ref(true);
+const viewMode       = ref(localStorage.getItem('roz_viewMode') || 'edit');
 watch(viewMode, v => localStorage.setItem('roz_viewMode', v));
-const teams = ref([]);
-const allAccounts = ref([]);
-const dungeonList = ref([]);
-const activeTeamId = ref(localStorage.getItem('roz_activeTeamId') || null);
+const teams          = ref([]);
+const allAccounts    = ref([]);
+const dungeonList    = ref([]);
+const activeTeamId   = ref(localStorage.getItem('roz_activeTeamId') || null);
 watch(activeTeamId, v => v
     ? localStorage.setItem('roz_activeTeamId', v)
     : localStorage.removeItem('roz_activeTeamId')
 );
-const teamDetail = ref(null);
+const teamDetail        = ref(null);
 const teamDetailLoading = ref(false);
-const activeDungeon = ref('');
-const dungeonMap = ref({});  // name → { name, minLevel, ... }
+const activeDungeon     = ref('');
+const dungeonMap        = ref({});
 const collapsedAccGroups = ref({});
-const isSaving = ref(false);
-const toast = ref({show: false, message: ''});
+const isSaving          = ref(false);
+const toast             = ref({show: false, message: ''});
 
-const overviewLoading = ref(false);
-const teamsWithDetail = ref([]);
-const selectedTeamIds = ref(
-    JSON.parse(localStorage.getItem('roz_selectedTeamIds') || '[]')
-);
+const overviewLoading  = ref(false);
+const teamsWithDetail  = ref([]);
+const selectedTeamIds  = ref(JSON.parse(localStorage.getItem('roz_selectedTeamIds') || '[]'));
 watch(selectedTeamIds, v => localStorage.setItem('roz_selectedTeamIds', JSON.stringify(v)), {deep: true});
 
-const showCreateModal = ref(false);
-const newTeamName = ref('');
-const createError = ref('');
-const renameModal = ref({show: false, teamId: '', name: ''});
-const deleteTeamTarget = ref(null);
-const leaveTeamTarget = ref(null);  // 退出共享
-const teamShareModal = ref({
-  show: false,
-  teamId: '',
-  teamName: '',
-  permission: 'view',
-  generating: false,
-  code: '',
-  expiresAt: '',
-  shareList: []
+// ── 隱藏帳號（未上線） ────────────────────────────────────────────
+const HIDDEN_ACC_KEY = 'roz_hidden_accounts';
+const hiddenAccounts = ref(new Set(JSON.parse(localStorage.getItem(HIDDEN_ACC_KEY) || '[]')));
+
+const toggleHideAccount = (accId) => {
+  const next = new Set(hiddenAccounts.value);
+  if (next.has(accId)) {
+    next.delete(accId);
+  } else {
+    next.add(accId);
+    // 隱藏時同時收起
+    collapsedAccGroups.value = {...collapsedAccGroups.value, [accId]: true};
+  }
+  hiddenAccounts.value = next;
+  localStorage.setItem(HIDDEN_ACC_KEY, JSON.stringify([...next]));
+};
+
+const showCreateModal    = ref(false);
+const newTeamName        = ref('');
+const createError        = ref('');
+const renameModal        = ref({show: false, teamId: '', name: ''});
+const deleteTeamTarget   = ref(null);
+const leaveTeamTarget    = ref(null);
+const teamShareModal     = ref({
+  show: false, teamId: '', teamName: '', permission: 'view',
+  generating: false, code: '', expiresAt: '', shareList: []
 });
 const showAcceptTeamModal = ref(false);
-const acceptTeamCode = ref('');
-const acceptTeamError = ref('');
-const isAcceptingTeam = ref(false);
+const acceptTeamCode     = ref('');
+const acceptTeamError    = ref('');
+const isAcceptingTeam    = ref(false);
 
 // ── 總覽卡片 ──────────────────────────────────────────────────────
 const allOverviewCards = computed(() => {
@@ -598,8 +601,8 @@ const allOverviewCards = computed(() => {
       const slots = team.detail?.dungeons?.[dName] || [];
       cards.push({
         teamId: team.id, teamName: team.name, dName, color,
-        inSlots: slots.filter(s => s.status === 'in'),
-        buffSlots: slots.filter(s => s.status === 'buff'),
+        inSlots:   slots.filter(s => s.status === 'in'  && !hiddenAccounts.value.has(s.accountId)),
+        buffSlots: slots.filter(s => s.status === 'buff' && !hiddenAccounts.value.has(s.accountId)),
       });
     });
   });
@@ -628,13 +631,13 @@ const loadAll = async () => {
   loading.value = true;
   try {
     const [teamsData, accountsData, dungeonData] = await Promise.all([
-      (await fetch(`${BASE_TEAM()}/list`, {credentials: 'include'})).json(),
+      (await fetch(`${BASE_TEAM()}/list`,    {credentials: 'include'})).json(),
       (await fetch(`${BASE_ACCOUNT()}/list`, {credentials: 'include'})).json(),
       (await fetch(`${BASE_DUNGEON()}/list`, {credentials: 'include'})).json(),
     ]);
-    teams.value = Array.isArray(teamsData) ? teamsData : [];
+    teams.value       = Array.isArray(teamsData)    ? teamsData    : [];
     allAccounts.value = Array.isArray(accountsData) ? accountsData : [];
-    const rawDungeons = Array.isArray(dungeonData) ? dungeonData : [];
+    const rawDungeons = Array.isArray(dungeonData)  ? dungeonData  : [];
     dungeonList.value = rawDungeons.map(d => d.name || d);
     dungeonMap.value  = Object.fromEntries(rawDungeons.map(d => [d.name || d, d]));
     allAccounts.value.forEach(a => {
@@ -648,8 +651,8 @@ const loadAll = async () => {
   }
 };
 
-const loadAllTeamDetails = async () => {
-  if (teamsWithDetail.value.length > 0) return;
+const loadAllTeamDetails = async (force = false) => {
+  if (!force && teamsWithDetail.value.length > 0) return;
   overviewLoading.value = true;
   try {
     const details = await Promise.all(
@@ -657,9 +660,7 @@ const loadAllTeamDetails = async () => {
           try {
             const d = await (await fetch(`${BASE_TEAM()}/${t.id}`, {credentials: 'include'})).json();
             return {...t, detail: d};
-          } catch {
-            return {...t, detail: null};
-          }
+          } catch { return {...t, detail: null}; }
         })
     );
     teamsWithDetail.value = details;
@@ -668,16 +669,13 @@ const loadAllTeamDetails = async () => {
   }
 };
 
-const openTeamEdit = async (team) => {
-  activeTeamId.value = team.id;
-  teamDetail.value = null;
-  activeDungeon.value = '';
-  teamDetailLoading.value = true;
-  try {
-    const data = await (await fetch(`${BASE_TEAM()}/${team.id}`, {credentials: 'include'})).json();
-    teamDetail.value = data;
-  } finally {
-    teamDetailLoading.value = false;
+const syncOverviewDetail = (teamId, dungeons) => {
+  const idx = teamsWithDetail.value.findIndex(t => t.id === teamId);
+  if (idx !== -1) {
+    teamsWithDetail.value[idx] = {
+      ...teamsWithDetail.value[idx],
+      detail: {...(teamsWithDetail.value[idx].detail || {}), dungeons}
+    };
   }
 };
 
@@ -687,9 +685,9 @@ const toggleTeam = async (teamId) => {
     activeDungeon.value = '';
     return;
   }
-  activeTeamId.value = teamId;
+  activeTeamId.value  = teamId;
   activeDungeon.value = '';
-  teamDetail.value = null;
+  teamDetail.value    = null;
   teamDetailLoading.value = true;
   try {
     const data = await (await fetch(`${BASE_TEAM()}/${teamId}`, {credentials: 'include'})).json();
@@ -700,6 +698,38 @@ const toggleTeam = async (teamId) => {
     teamDetailLoading.value = false;
   }
 };
+
+
+// ── SSE 即時同步 ──────────────────────────────────────────────────
+let sseConnection = null;
+
+const subscribeTeamSSE = (teamId) => {
+  if (sseConnection) { sseConnection.close(); sseConnection = null; }
+  if (!teamId) return;
+
+  const url = `${BASE_TEAM()}/subscribe/${teamId}`;
+  sseConnection = new EventSource(url, { withCredentials: true });
+
+  sseConnection.onmessage = async () => {
+    // 收到對方更新通知，靜默重抓 teamDetail
+    try {
+      const data = await (await fetch(`${BASE_TEAM()}/${teamId}`, { credentials: 'include' })).json();
+      if (!data.error) {
+        teamDetail.value = data;
+        syncOverviewDetail(teamId, data.dungeons);
+      }
+    } catch {}
+  };
+
+  sseConnection.onerror = () => {
+    sseConnection?.close();
+    sseConnection = null;
+    // 5 秒後重連
+    setTimeout(() => { if (activeTeamId.value) subscribeTeamSSE(activeTeamId.value); }, 5000);
+  };
+};
+
+watch(activeTeamId, (newId) => subscribeTeamSSE(newId));
 
 const toggleAccGroup = (accId) => {
   collapsedAccGroups.value = {...collapsedAccGroups.value, [accId]: !collapsedAccGroups.value[accId]};
@@ -716,50 +746,50 @@ const getSlotStatusInDungeon = (acc, role, dName) => {
 const addSlotInDungeon = async (acc, role, status, dName) => {
   if (!canEdit.value || !dName) return;
   if (status === 'in' && currentSlots.value.filter(s => s.status === 'in').length >= 12) {
-    showToast('副本內最多 12 人');
-    return;
+    showToast('副本內最多 12 人'); return;
   }
-  // 最低等級檢查（BUFF 不受等級限制）
+  // 同帳號不能在同副本出現兩次
+  const existing = (teamDetail.value.dungeons?.[dName] || []);
+  const accAlreadyIn = existing.some(s => s.accountId === acc.id);
+  if (accAlreadyIn) {
+    showToast(`${acc.name} 已在此副本中`); return;
+  }
   if (status === 'in') {
     const minLevel = dungeonMap.value[dName]?.minLevel;
     if (minLevel != null && (role.level == null || role.level < minLevel)) {
-      showToast(`${role.name} 等級不足（需 Lv.${minLevel}）`);
-      return;
+      showToast(`${role.name} 等級不足（需 Lv.${minLevel}）`); return;
     }
   }
   if (!teamDetail.value.dungeons) teamDetail.value.dungeons = {};
-  const current = teamDetail.value.dungeons[dName] || [];
+  const current  = teamDetail.value.dungeons[dName] || [];
   const newSlots = [...current, {
     ownerGoogleId: acc.ownerGoogleId || '',
-    accountId: acc.id,
-    accountName: acc.name,
-    roleName: role.name,
-    job: role.job || '',
-    level: role.level ?? null,
-    status
+    accountId: acc.id, accountName: acc.name,
+    roleName: role.name, job: role.job || '',
+    level: role.level ?? null, status
   }];
   teamDetail.value.dungeons[dName] = newSlots;
+  syncOverviewDetail(activeTeamId.value, teamDetail.value.dungeons);
   await saveSlotsInDungeon(newSlots, dName);
 };
 
 const removeSlotInDungeon = async (acc, role, dName) => {
   if (!canEdit.value) return;
-  const newSlots = (teamDetail.value.dungeons?.[dName] || []).filter(s => !(s.accountId === acc.id && s.roleName === role.name));
+  const newSlots = (teamDetail.value.dungeons?.[dName] || [])
+      .filter(s => !(s.accountId === acc.id && s.roleName === role.name));
   teamDetail.value.dungeons[dName] = newSlots;
+  syncOverviewDetail(activeTeamId.value, teamDetail.value.dungeons);
   await saveSlotsInDungeon(newSlots, dName);
 };
 
 const clearDungeon = async (dName) => {
   try {
     await fetch(`${BASE_TEAM()}/${activeTeamId.value}/dungeon/${encodeURIComponent(dName)}`, {
-      method: 'DELETE',
-      credentials: 'include'
+      method: 'DELETE', credentials: 'include'
     });
-    if (teamDetail.value?.dungeons) teamDetail.value.dungeons[dName] = [];
+    if (teamDetail.value?.dungeons) { teamDetail.value.dungeons[dName] = []; syncOverviewDetail(activeTeamId.value, teamDetail.value.dungeons); }
     showToast('已清空');
-  } catch {
-    showToast('清空失敗');
-  }
+  } catch { showToast('清空失敗'); }
 };
 
 let saveTimers = {};
@@ -772,9 +802,7 @@ const saveSlotsInDungeon = async (slots, dName) => {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({dungeonName: dName, slots})
       });
-    } catch {
-      showToast('儲存失敗');
-    }
+    } catch { showToast('儲存失敗'); }
   }, 400);
 };
 
@@ -789,25 +817,17 @@ const createTeam = async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({name: newTeamName.value.trim()})
     })).json();
-    if (data.error) {
-      createError.value = data.error;
-      return;
-    }
+    if (data.error) { createError.value = data.error; return; }
     showCreateModal.value = false;
     newTeamName.value = '';
     teamsWithDetail.value = [];
     await loadAll();
     showToast('隊伍已建立');
-  } catch {
-    createError.value = '建立失敗';
-  } finally {
-    isSaving.value = false;
-  }
+  } catch { createError.value = '建立失敗'; }
+  finally { isSaving.value = false; }
 };
 
-const startRenameTeam = (team) => {
-  renameModal.value = {show: true, teamId: team.id, name: team.name};
-};
+const startRenameTeam = (team) => { renameModal.value = {show: true, teamId: team.id, name: team.name}; };
 const submitRename = async () => {
   isSaving.value = true;
   try {
@@ -816,24 +836,16 @@ const submitRename = async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({name: renameModal.value.name.trim()})
     })).json();
-    if (data.error) {
-      showToast(data.error);
-      return;
-    }
+    if (data.error) { showToast(data.error); return; }
     renameModal.value.show = false;
     teamsWithDetail.value = [];
     await loadAll();
     showToast('隊伍已改名');
-  } catch {
-    showToast('改名失敗');
-  } finally {
-    isSaving.value = false;
-  }
+  } catch { showToast('改名失敗'); }
+  finally { isSaving.value = false; }
 };
 
-const confirmDeleteTeam = (team) => {
-  deleteTeamTarget.value = team;
-};
+const confirmDeleteTeam = (team) => { deleteTeamTarget.value = team; };
 const deleteTeam = async () => {
   isSaving.value = true;
   try {
@@ -843,57 +855,37 @@ const deleteTeam = async () => {
     teamsWithDetail.value = [];
     await loadAll();
     showToast('隊伍已刪除');
-  } catch {
-    showToast('刪除失敗');
-  } finally {
-    isSaving.value = false;
-  }
+  } catch { showToast('刪除失敗'); }
+  finally { isSaving.value = false; }
 };
 
-// ── 退出共享 ──────────────────────────────────────────────────────
-const confirmLeaveTeam = (team) => {
-  leaveTeamTarget.value = team;
-};
+const confirmLeaveTeam = (team) => { leaveTeamTarget.value = team; };
 const leaveTeam = async () => {
   isSaving.value = true;
   try {
     const data = await (await fetch(`${BASE_TEAM()}/leave-share/${leaveTeamTarget.value.id}`, {
       method: 'DELETE', credentials: 'include'
     })).json();
-    if (data.error) {
-      showToast(data.error);
-      return;
-    }
+    if (data.error) { showToast(data.error); return; }
     if (activeTeamId.value === leaveTeamTarget.value.id) activeTeamId.value = null;
     leaveTeamTarget.value = null;
     teamsWithDetail.value = [];
     await loadAll();
     showToast('已退出共享');
-  } catch {
-    showToast('退出失敗');
-  } finally {
-    isSaving.value = false;
-  }
+  } catch { showToast('退出失敗'); }
+  finally { isSaving.value = false; }
 };
 
 // ── 隊伍分享 ──────────────────────────────────────────────────────
 const openTeamShare = async (team) => {
   teamShareModal.value = {
-    show: true,
-    teamId: team.id,
-    teamName: team.name,
-    permission: 'view',
-    generating: false,
-    code: '',
-    expiresAt: '',
-    shareList: []
+    show: true, teamId: team.id, teamName: team.name,
+    permission: 'view', generating: false, code: '', expiresAt: '', shareList: []
   };
   try {
     const data = await (await fetch(`${BASE_TEAM()}/share-list/${team.id}`, {credentials: 'include'})).json();
     teamShareModal.value.shareList = Array.isArray(data) ? data : [];
-  } catch {
-    teamShareModal.value.shareList = [];
-  }
+  } catch { teamShareModal.value.shareList = []; }
 };
 const generateTeamInvite = async () => {
   teamShareModal.value.generating = true;
@@ -904,17 +896,11 @@ const generateTeamInvite = async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({permission: teamShareModal.value.permission})
     })).json();
-    if (data.error) {
-      showToast(data.error);
-      return;
-    }
+    if (data.error) { showToast(data.error); return; }
     teamShareModal.value.code = data.code;
     teamShareModal.value.expiresAt = data.expiresAt;
-  } catch {
-    showToast('產生失敗');
-  } finally {
-    teamShareModal.value.generating = false;
-  }
+  } catch { showToast('產生失敗'); }
+  finally { teamShareModal.value.generating = false; }
 };
 const copyTeamCode = () => {
   const url = `${window.location.origin}/roz/join?code=${teamShareModal.value.code}`;
@@ -932,23 +918,17 @@ const updateTeamShare = async (member) => {
     if (data.error) { showToast(data.error); return; }
     member.permission = newPerm;
     showToast(`已改為${newPerm === 'edit' ? '編輯' : '查看'}權限`);
-  } catch {
-    showToast('更新失敗');
-  }
+  } catch { showToast('更新失敗'); }
 };
-
 const revokeTeamShare = async (targetGoogleId) => {
   try {
     await fetch(`${BASE_TEAM()}/revoke-share/${teamShareModal.value.teamId}/${targetGoogleId}`, {
-      method: 'DELETE',
-      credentials: 'include'
+      method: 'DELETE', credentials: 'include'
     });
     const data = await (await fetch(`${BASE_TEAM()}/share-list/${teamShareModal.value.teamId}`, {credentials: 'include'})).json();
     teamShareModal.value.shareList = Array.isArray(data) ? data : [];
     showToast('已移除共享');
-  } catch {
-    showToast('移除失敗');
-  }
+  } catch { showToast('移除失敗'); }
 };
 
 const submitAcceptTeam = async () => {
@@ -961,71 +941,41 @@ const submitAcceptTeam = async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({code: acceptTeamCode.value.toUpperCase()})
     })).json();
-    if (data.error) {
-      acceptTeamError.value = data.error;
-      return;
-    }
+    if (data.error) { acceptTeamError.value = data.error; return; }
     showAcceptTeamModal.value = false;
     acceptTeamCode.value = '';
     teamsWithDetail.value = [];
     await loadAll();
     showToast(`已加入隊伍「${data.teamName}」`);
-  } catch {
-    acceptTeamError.value = '驗證失敗，請再試一次';
-  } finally {
-    isAcceptingTeam.value = false;
-  }
+  } catch { acceptTeamError.value = '驗證失敗，請再試一次'; }
+  finally { isAcceptingTeam.value = false; }
 };
 
 const showToast = (msg) => {
   toast.value = {show: true, message: msg};
-  setTimeout(() => {
-    toast.value.show = false;
-  }, 2500);
+  setTimeout(() => { toast.value.show = false; }, 2500);
 };
+
+onUnmounted(() => { sseConnection?.close(); });
 
 onMounted(async () => {
   document.title = '副本組隊';
   await loadAll();
   if (viewMode.value === 'overview') loadAllTeamDetails();
-  // 恢復上次展開的隊伍
   if (activeTeamId.value) {
     const savedId = activeTeamId.value;
-    activeTeamId.value = null; // 先清掉讓 toggleTeam 重新載入
+    activeTeamId.value = null;
     await toggleTeam(savedId);
   }
 });
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-  transform: translateY(8px);
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #2c1e14;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #5e4b37;
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #8d7a64;
-}
-
-select option {
-  background-color: #2c1e14;
-  color: #e0d3b8;
-}
+.fade-enter-active, .fade-leave-active { transition: opacity 0.3s, transform 0.3s; }
+.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(8px); }
+.custom-scrollbar::-webkit-scrollbar { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #2c1e14; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #5e4b37; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8d7a64; }
+select option { background-color: #2c1e14; color: #e0d3b8; }
 </style>
