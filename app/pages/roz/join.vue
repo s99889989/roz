@@ -55,7 +55,7 @@
 
 <script setup>
 definePageMeta({ layout: 'blank' });
-const title = 'RO樂園'
+const title = '加入隊伍'
 const description = ''
 
 useSeoMeta({

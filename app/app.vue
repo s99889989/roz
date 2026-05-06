@@ -30,30 +30,7 @@ useHead({
     { src: "vue-virtual-scroller/dist/vue-virtual-scroller.min.js" },
   ]
 })
-// useHead({
-//   meta: [
-//     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-//   ],
-//   link: [
-//     { rel: 'icon', href: '/logo.png' }
-//   ],
-//   htmlAttrs: {
-//     lang: 'tw'
-//   }
-// })
-//
-// const title = 'RO樂園'
-// const description = ''
 
-// useSeoMeta({
-//   title,
-//   description,
-//   ogTitle: title,
-//   ogDescription: description,
-//   ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-//   twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-//   twitterCard: 'summary_large_image'
-// })
 
 
 // initialize components based on data attribute selectors
