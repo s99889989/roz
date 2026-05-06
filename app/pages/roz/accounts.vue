@@ -365,7 +365,7 @@
 </template>
 
 <script setup>
-definePageMeta({ layout: 'roz', middleware: 'roz-auth' });
+definePageMeta({ layout: 'roz');
 
 import { ref, onMounted } from 'vue';
 import { useCommonStore } from '~/stores/common.js';
