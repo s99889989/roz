@@ -19,10 +19,11 @@
           >
             <div class="ps-tab-img-wrap">
               <img
-                  v-if="validImgs.has(`__tab__${job.job}`)"
+                  v-if="!imgErrors.has(`__tab__${job.job}`)"
                   :src="`/images/profession/role/${job.job}.png`"
                   :alt="job.job"
                   class="ps-tab-img"
+                  @error="onTabImgError(job.job)"
               />
               <div v-else class="ps-tab-img-placeholder"></div>
             </div>
@@ -86,6 +87,7 @@
                   <img
                       :src="skillImgSrc(cell.img)"
                       :alt="cell.name" class="ps-icon"
+                      @error="onSkillImgError(cell.img)"
                   />
                   <div class="ps-skill-name">{{ cell.name }}</div>
                   <div v-if="hoveredPrereqs.has(cell.img)" class="ps-prereq-label"
@@ -155,14 +157,21 @@ const skillsData = ref([])
 const skillMeta  = ref({})
 const prereqMap  = ref({})
 const loading    = ref(true)
-const validImgs  = reactive(new Set())   // 預先確認存在的圖片 key
+const imgErrors  = reactive(new Set())   // 載入失敗的圖片 key
 
 const FALLBACK_IMG = '/images/profession/skills/no_skill.png'
 
 function skillImgSrc(img) {
-  return validImgs.has(img)
-      ? `/images/profession/skills/${img}.png`
-      : FALLBACK_IMG
+  return imgErrors.has(img) ? FALLBACK_IMG : `/images/profession/skills/${img}.png`
+}
+function onSkillImgError(img) {
+  imgErrors.add(img)
+}
+function tabImgSrc(job) {
+  return imgErrors.has(`__tab__${job}`) ? null : `/images/profession/role/${job}.png`
+}
+function onTabImgError(job) {
+  imgErrors.add(`__tab__${job}`)
 }
 
 onMounted(async () => {
@@ -173,8 +182,8 @@ onMounted(async () => {
     fetch('/data/profession-skills-prereq.json'),
   ])
   skillsData.value = await gridRes.json()
-  skillMeta.value  = await metaRes.json()
-  prereqMap.value  = await prereqRes.json()
+  skillMeta.value = await metaRes.json()
+  prereqMap.value = await prereqRes.json()
   selectedJob.value = skillsData.value[0]?.job ?? ''
 
   // 批次初始化所有預設點數，並記錄為 defaultKeys（不計入點數消耗）
@@ -195,38 +204,12 @@ onMounted(async () => {
     }
   }
 
-  // 批次 HEAD 請求確認圖片是否存在，不存在則用預設圖，避免 console 404
-  const seen = new Set()
-  const checks = []
-  for (const job of skillsData.value) {
-    // tab 圖示
-    const tabKey = `__tab__${job.job}`
-    checks.push(
-        fetch(`/images/profession/role/${job.job}.png`, { method: 'HEAD' })
-            .then(r => { if (r.ok) validImgs.add(tabKey) })
-            .catch(() => {})
-    )
-    // 技能圖示
-    for (const group of job.groups)
-      for (const row of group.rows)
-        for (const cell of row)
-          if (!cell.empty && cell.img && !seen.has(cell.img)) {
-            seen.add(cell.img)
-            checks.push(
-                fetch(`/images/profession/skills/${cell.img}.png`, { method: 'HEAD' })
-                    .then(r => { if (r.ok) validImgs.add(cell.img) })
-                    .catch(() => {})
-            )
-          }
-  }
-  await Promise.all(checks)
-
   loading.value = false
 })
 
 // ── Job ───────────────────────────────────────────────
 const selectedJob = ref('')
-const currentJob  = computed(() => skillsData.value.find(j => j.job === selectedJob.value))
+const currentJob = computed(() => skillsData.value.find(j => j.job === selectedJob.value))
 
 // ── Points ────────────────────────────────────────────
 const allocatedPoints = reactive({})
@@ -240,18 +223,21 @@ function skillKey(img) {
 // 將 group.rows 攤平，補足至最後一個有內容格子所在列的末尾
 const COLS = 7
 const ROWS = 6
-const EMPTY_CELL = { empty: true, img: '', name: '', point: '0', skid: null }
+const EMPTY_CELL = {empty: true, img: '', name: '', point: '0', skid: null}
 
 function paddedRows(group) {
   const flat = group.rows.flatMap(r => r)
   // 找最後一個非空格的 index
   let lastFilled = -1
   for (let i = flat.length - 1; i >= 0; i--) {
-    if (!flat[i].empty) { lastFilled = i; break }
+    if (!flat[i].empty) {
+      lastFilled = i;
+      break
+    }
   }
   // 補到該列末尾（ceil to next multiple of COLS），最多 COLS*ROWS
   const needed = lastFilled < 0 ? COLS : Math.min(Math.ceil((lastFilled + 1) / COLS) * COLS, COLS * ROWS)
-  while (flat.length < needed) flat.push({ ...EMPTY_CELL })
+  while (flat.length < needed) flat.push({...EMPTY_CELL})
   return flat.slice(0, needed)
 }
 
@@ -335,7 +321,7 @@ function displayAllocated(group) {
 // 取得目前 hover 技能的所有前置（含遞迴）-> Map<img, requiredLv>
 function collectPrereqs(img, result = new Map()) {
   const prereqs = prereqMap.value[img] ?? []
-  for (const { img: pImg, lv: pLv } of prereqs) {
+  for (const {img: pImg, lv: pLv} of prereqs) {
     if (!result.has(pImg) || result.get(pImg) < pLv) {
       result.set(pImg, pLv)
       collectPrereqs(pImg, result)
@@ -624,7 +610,7 @@ function cascadeDowngrade(img, newLv) {
       for (const cell of row) {
         if (cell.empty) continue
         const prereqs = prereqMap.value[cell.img] ?? []
-        for (const { img: pImg, lv: pLv } of prereqs) {
+        for (const {img: pImg, lv: pLv} of prereqs) {
           if (pImg === img && newLv < pLv) {
             // 前置不達標，把這個技能降到 0
             const k = skillKey(cell.img)
@@ -674,7 +660,7 @@ function calcPrereqCost(img, targetLv, group) {
   if (targetLv <= 0 || !group) return 0
   const prereqs = prereqMap.value[img] ?? []
   let cost = 0
-  for (const { img: pImg, lv: pLv } of prereqs) {
+  for (const {img: pImg, lv: pLv} of prereqs) {
     const cur = allocatedPoints[skillKey(pImg)] ?? 0
     if (cur < pLv) {
       // 前置不足，需要補到 pLv，再遞迴算它自己的前置
@@ -804,7 +790,7 @@ function calcPrereqCost(img, targetLv, group) {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   overflow: hidden;
   flex-shrink: 0;
 }
