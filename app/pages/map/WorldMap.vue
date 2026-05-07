@@ -60,6 +60,7 @@ const updateMapW = () => {
   if (mapRef.value) mapDisplayW.value = mapRef.value.offsetWidth
 }
 onMounted(() => {
+  document.title = 'RO樂園-世界地圖';
   updateMapW()
   window.addEventListener('resize', updateMapW)
 })

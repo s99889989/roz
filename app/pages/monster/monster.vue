@@ -365,6 +365,7 @@ function getEquipClass(item) {
 }
 
 onMounted(() => {
+  document.title = 'RO樂園-魔物查詢';
   const savedItem = localStorage.getItem('itemSearch');
   const savedElement = localStorage.getItem('elementShow');
   const savedDrop = localStorage.getItem('dropShow');

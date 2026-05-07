@@ -68,6 +68,8 @@
 </template>
 
 <script>
+import {nextTick, onMounted} from "vue";
+
 export default {
   name: 'ContentListPage',
   data() {
@@ -94,6 +96,9 @@ export default {
     };
   }
 }
+onMounted(() => {
+  document.title = 'RO樂園-副本清單';
+})
 </script>
 
 <style scoped>

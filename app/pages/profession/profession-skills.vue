@@ -166,6 +166,7 @@ function skillImgSrc(img) {
 }
 
 onMounted(async () => {
+  document.title = 'RO樂園-技能模擬';
   const [gridRes, metaRes, prereqRes] = await Promise.all([
     fetch('/data/profession-skills-grid.json'),
     fetch('/data/profession-skills-meta.json'),

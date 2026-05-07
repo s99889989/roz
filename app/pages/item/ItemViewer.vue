@@ -82,6 +82,7 @@ function updateColCount(width) {
 let resizeObserver = null
 
 onMounted(() => {
+  document.title = 'RO樂園-物品查詢';
   nextTick(() => {
     if (scrollerRef.value) {
       updateColCount(scrollerRef.value.offsetWidth)

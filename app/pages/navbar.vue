@@ -129,7 +129,7 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
                    class="z-10 hidden font-normal bg-[#6c5543] divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <ul class="py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
 <!--                  <li><NuxtLink href="https://rz.fharr.com/db/skilltree" target="_blank"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">技能樹</NuxtLink></li>-->
-                  <li><NuxtLink href="/profession/profession-skills"                               class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">技能樹</NuxtLink></li>
+                  <li><NuxtLink href="/profession/profession-skills"                               class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">技能模擬</NuxtLink></li>
                   <li><NuxtLink to="/profession/Alchemy"                                          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">煉金資訊</NuxtLink></li>
                   <li><NuxtLink to="/profession/AdvancedSecondJobOutfit"                          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">進階二轉服飾</NuxtLink></li>
                 </ul>
