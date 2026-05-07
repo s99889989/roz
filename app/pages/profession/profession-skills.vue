@@ -75,9 +75,10 @@
                 'ps-cell--default': !cell.empty && defaultKeys.has(skillKey(cell.img)),
                 'ps-cell--prereq': !cell.empty && hoveredPrereqs.has(cell.img),
                 'ps-cell--prereq-unmet': !cell.empty && hoveredPrereqs.has(cell.img) && (allocatedPoints[skillKey(cell.img)] ?? 0) < hoveredPrereqs.get(cell.img),
+                'ps-cell--hovered': !cell.empty && hoverImg === cell.img && hoverGroup === group,
               }"
                   @click="!cell.empty && openModal(cell)"
-                  @mouseenter="!cell.empty && showTooltip($event, cell)"
+                  @mouseenter="!cell.empty && showTooltip($event, cell, group)"
                   @mouseleave="hideTooltip"
                   @wheel.prevent="!cell.empty && !defaultKeys.has(skillKey(cell.img)) && onCellWheel($event, cell)"
               >
@@ -352,26 +353,52 @@ const hoverSimCost = computed(() => {
   if (!hoverImg.value || !currentJob.value) return null
   const img = hoverImg.value
   const curLv = allocatedPoints[skillKey(img)] ?? 0
-  if (curLv > 0) return null   // 已有點數，不模擬
+  const maxLv = skillMeta.value[img]?.maxLv ?? 1
+  if (curLv >= maxLv) return null   // 已滿級，不模擬
 
   const prereqs = collectPrereqs(img)
   // cost map: group -> extra points needed
   const costMap = new Map()
 
-  // cost for the skill itself: 1 point
-  const sg = findGroup(img)
+  // cost for the skill itself: 1 point — use hoverGroup to avoid img collision
+  const sg = hoverGroup.value ?? findGroup(img)
   if (sg) costMap.set(sg, (costMap.get(sg) ?? 0) + 1)
 
-  // cost for each unmet prereq
+  // cost for each unmet prereq — prefer same group as hover skill to avoid cross-group img collision
   for (const [pImg, pLv] of prereqs) {
     const pCur = allocatedPoints[skillKey(pImg)] ?? 0
     const needed = Math.max(0, pLv - pCur)
     if (needed > 0 && !defaultKeys.has(skillKey(pImg))) {
-      const pg = findGroup(pImg)
+      const pg = findGroup(pImg, sg)
       if (pg) costMap.set(pg, (costMap.get(pg) ?? 0) + needed)
     }
   }
-  return costMap
+  // 借用邏輯：一轉 group 若已滿，多出的 cost 轉移給二轉 groups
+  const fg = firstGroup()
+  if (fg && costMap.has(fg)) {
+    const fgMax = groupMaxPts(fg.title) - groupInitPts(fg.title)
+    const fgUsed = groupAllocated(fg)
+    const fgRemaining = Math.max(0, fgMax - fgUsed)
+    const fgCost = costMap.get(fg)
+    const overflow = Math.max(0, fgCost - fgRemaining)
+    if (overflow > 0) {
+      costMap.set(fg, Math.min(fgCost, fgRemaining))
+      const laterGroups = currentJob.value.groups.filter(g => g !== fg)
+      let rem = overflow
+      for (const lg of laterGroups) {
+        if (rem <= 0) break
+        costMap.set(lg, (costMap.get(lg) ?? 0) + rem)
+        rem = 0
+      }
+    }
+  }
+
+  // 移除 cost 為 0 的 group，避免觸發不必要的模擬顯示
+  for (const [g, c] of costMap) {
+    if (c <= 0) costMap.delete(g)
+  }
+
+  return costMap.size > 0 ? costMap : null
 })
 
 // ── Tooltip ───────────────────────────────────────────
@@ -406,13 +433,14 @@ function buildModalHtml(cell) {
   return html
 }
 
-function showTooltip(e, cell) {
+function showTooltip(e, cell, group) {
   if (showTooltipSetting.value) {
     tooltip.html = buildHtml(cell)
     tooltip.visible = true
     placeTooltip(e)
   }
   hoverImg.value = cell.img
+  hoverGroup.value = group ?? null
 }
 
 function placeTooltip(e) {
@@ -451,18 +479,26 @@ function placeTooltip(e) {
 function hideTooltip() {
   tooltip.visible = false
   hoverImg.value = null
+  hoverGroup.value = null
 }
 
 // ── Modal ─────────────────────────────────────────────
 const modal = reactive({visible: false, img: '', maxLv: 1, html: '', isDefault: false})
 const activeSkill = ref(null)
 const hoverImg = ref(null)
+const hoverGroup = ref(null)
 const showTooltipSetting = ref(true)
 const currentPoint = computed(() => allocatedPoints[skillKey(modal.img)] ?? 0)
 
 // 找出目前技能所屬的 group（用來算上限）
-function findGroup(img) {
+// preferGroup: 若該 group 內也有此 img，優先回傳（避免跨 group 同名 img 找錯）
+function findGroup(img, preferGroup = null) {
   if (!currentJob.value) return null
+  if (preferGroup) {
+    for (const row of preferGroup.rows)
+      for (const cell of row)
+        if (!cell.empty && cell.img === img) return preferGroup
+  }
   for (const group of currentJob.value.groups)
     for (const row of group.rows)
       for (const cell of row)
@@ -987,6 +1023,14 @@ function calcPrereqCost(img, targetLv, group) {
 .ps-cell--active {
   border-color: var(--c-active-bd) !important;
   box-shadow: 0 0 0 2px rgba(96, 168, 240, 0.35) !important;
+}
+
+.ps-cell--hovered {
+  background: #2a1e38 !important;
+  border-color: #a078e0 !important;
+  box-shadow: 0 0 0 2px rgba(160, 120, 224, 0.45), 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+  transform: translateY(-1px);
+  z-index: 1;
 }
 
 .ps-cell--prereq {
