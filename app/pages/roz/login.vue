@@ -47,7 +47,7 @@ definePageMeta({ layout: 'blank' });
 
 const router      = useRouter();
 const errorMsg    = ref('');
-const checking    = ref(true);  // 頁面載入時先檢查是否已登入
+const checking    = ref(true);
 const config      = useRuntimeConfig();
 const commonStore = useCommonStore();
 
@@ -60,7 +60,7 @@ onMounted(async () => {
     const res  = await fetch(`${BASE()}/me`, { credentials: 'include' });
     const data = await res.json();
     if (!data.error) {
-      // 已登入（cookie 還有效）→ 直接跳帳號頁
+      commonStore.setRozUser(data);
       router.replace('/roz/accounts');
       return;
     }
@@ -84,6 +84,7 @@ const handleCredential = async (response) => {
     if (data.error) {
       errorMsg.value = data.error;
     } else {
+      commonStore.setRozUser(data);
       router.push('/roz/accounts');
     }
   } catch {

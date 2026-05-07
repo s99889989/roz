@@ -10,7 +10,10 @@ const BASE = () => commonStore.data.main_url + '/roz/user';
 
 const open    = ref(false);
 const menuRef = ref(null);
-const user    = ref({ name: '', email: '', picture: '' });
+
+// 直接用 store 的 rozUser，不再維護自己的 user ref
+const user   = commonStore.rozUser;
+const loaded = ref(false);
 
 const navItems = [
   { to: '/roz/accounts',    icon: '👤', label: '帳號管理'     },
@@ -23,7 +26,8 @@ const navItems = [
 const logout = async () => {
   try { await fetch(`${BASE()}/logout`, { method: 'POST', credentials: 'include' }); } catch {}
   open.value = false;
-  router.push('/roz/login');
+  commonStore.clearRozUser();
+  router.push('/monster/monster');
 };
 
 const handleClickOutside = (e) => {
@@ -32,11 +36,15 @@ const handleClickOutside = (e) => {
 
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
-  try {
-    const res  = await fetch(`${BASE()}/me`, { credentials: 'include' });
-    const data = await res.json();
-    if (!data.error) user.value = data;
-  } catch {}
+  // store 已有資料（登入頁寫入）就不再 fetch；重新整理時 store 是空的才補 fetch
+  if (!commonStore.rozUser.name) {
+    try {
+      const res  = await fetch(`${BASE()}/me`, { credentials: 'include' });
+      const data = await res.json();
+      if (!data.error) commonStore.setRozUser(data);
+    } catch {}
+  }
+  loaded.value = true;
 });
 
 onUnmounted(() => document.removeEventListener('click', handleClickOutside));
@@ -128,7 +136,7 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
               <div id="dropdownProfession"
                    class="z-10 hidden font-normal bg-[#6c5543] divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <ul class="py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-<!--                  <li><NuxtLink href="https://rz.fharr.com/db/skilltree" target="_blank"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">技能樹</NuxtLink></li>-->
+                  <!--                  <li><NuxtLink href="https://rz.fharr.com/db/skilltree" target="_blank"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">技能樹</NuxtLink></li>-->
                   <li><NuxtLink href="/profession/profession-skills"                               class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">技能模擬</NuxtLink></li>
                   <li><NuxtLink to="/profession/Alchemy"                                          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">煉金資訊</NuxtLink></li>
                   <li><NuxtLink to="/profession/AdvancedSecondJobOutfit"                          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">進階二轉服飾</NuxtLink></li>
@@ -173,12 +181,12 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
               <div id="dropdownCalculate"
                    class="z-10 hidden font-normal bg-[#6c5543] divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <ul class="py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-                  <li><NuxtLink to="/calculate/RestoreMagic"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">回魔計算</NuxtLink></li>
-                  <li><NuxtLink to="/calculate/state"                 class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">素質計算</NuxtLink></li>
-                  <li><NuxtLink to="/calculate/level"                 class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">升級計算</NuxtLink></li>
-                  <li><NuxtLink to="/calculate/DefenseCalculation"    class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">防禦計算</NuxtLink></li>
+                  <li><NuxtLink to="/calculate/RestoreMagic"           class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">回魔計算</NuxtLink></li>
+                  <li><NuxtLink to="/calculate/state"                  class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">素質計算</NuxtLink></li>
+                  <li><NuxtLink to="/calculate/level"                  class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">升級計算</NuxtLink></li>
+                  <li><NuxtLink to="/calculate/DefenseCalculation"     class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">防禦計算</NuxtLink></li>
                   <li><NuxtLink to="/calculate/ReincarnationTechnique" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">轉生術計算</NuxtLink></li>
-                  <li><NuxtLink to="/calculate/HitCalc"               class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">命中迴避計算</NuxtLink></li>
+                  <li><NuxtLink to="/calculate/HitCalc"                class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">命中迴避計算</NuxtLink></li>
                 </ul>
               </div>
             </li>
@@ -198,13 +206,14 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
               <div id="dropdownKnow"
                    class="z-10 hidden font-normal bg-[#6c5543] divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <ul class="py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-                  <li><NuxtLink to="/other/OtherWeb"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">樂園相關網站</NuxtLink></li>
+                  <li><NuxtLink to="/other/OtherWeb"         class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">樂園相關網站</NuxtLink></li>
                   <li><NuxtLink href="https://event.gnjoy.com.tw/RoZ/RoZ_ShopSearch" target="_blank" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">露天網頁查詢</NuxtLink></li>
-                  <li><NuxtLink to="/other/time_experience"   class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">定時經驗加倍</NuxtLink></li>
-                  <li><NuxtLink to="/other/pet"               class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">寵物</NuxtLink></li>
-                  <li><NuxtLink to="/other/AttributeCounter"  class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">屬性相剋</NuxtLink></li>
-                  <li><NuxtLink to="/other/WeaponSize"        class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">武器體型</NuxtLink></li>
-                  <li><NuxtLink to="/other/Command"           class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">指令</NuxtLink></li>
+                  <li><NuxtLink to="/other/time_experience"  class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">定時經驗加倍</NuxtLink></li>
+                  <li><NuxtLink to="/other/pet"              class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">寵物</NuxtLink></li>
+                  <li><NuxtLink to="/other/AttributeCounter" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">屬性相剋</NuxtLink></li>
+                  <li><NuxtLink to="/other/WeaponSize"       class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">武器體型</NuxtLink></li>
+                  <li><NuxtLink to="/other/Command"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">指令</NuxtLink></li>
+                  <li><NuxtLink to="/other/RozShopSearch"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">測試</NuxtLink></li>
                 </ul>
               </div>
             </li>
@@ -213,8 +222,8 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
         </div>
       </div>
 
-      <!-- 右側：頭像選單 -->
-      <div class="relative shrink-0" ref="menuRef">
+      <!-- 右側：頭像選單（fetch 完成且已登入才顯示） -->
+      <div v-if="loaded && user.name" class="relative shrink-0" ref="menuRef">
 
         <!-- 頭像按鈕 -->
         <button @click="open = !open"

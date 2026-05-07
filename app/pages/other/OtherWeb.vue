@@ -58,6 +58,7 @@ export default {
         { title: '銀雪筆記', link: 'https://ronews.ginyuki.com/category/kro/roz' },
         { title: 'RO廣播', link: 'https://ro-garden.com/ ' },
         { title: 'DivinePride', link: 'https://www.divine-pride.net/' },
+        { title: 'VR RO', link: 'https://jazzy-train-4ca.notion.site/VR-RO-357c0c446a118039a89ed46a4aa55daa' },
       ]
     };
   }

@@ -8,5 +8,20 @@ export const useCommonStore = defineStore('useFamilyStore', () => {
   const data = reactive({
     main_url: 'https://madustrialtd.asuscomm.com:8080'
   })
-  return { data }
+
+  const rozUser = reactive({ name: '', email: '', picture: '' })
+
+  const setRozUser = (user) => {
+    rozUser.name    = user?.name    ?? ''
+    rozUser.email   = user?.email   ?? ''
+    rozUser.picture = user?.picture ?? ''
+  }
+
+  const clearRozUser = () => {
+    rozUser.name    = ''
+    rozUser.email   = ''
+    rozUser.picture = ''
+  }
+
+  return { data, rozUser, setRozUser, clearRozUser }
 })
