@@ -68,6 +68,8 @@
 
 <script setup>
 // 完全模擬圖片中的數據
+import {onMounted} from "vue";
+
 const sizeModifiers = [
   { name: '空手', icon: '👊', s: 100, m: 100, l: 100 },
   { name: '短劍', icon: '🗡️', s: 100, m: 75, l: 50 },
@@ -98,6 +100,9 @@ function getPenaltyClass(value) {
   if (value === 75) return 'text-[#f2f2f2] bg-[#a88a64]';  // 褐色底白字
   return 'text-[#f2f2f2] bg-[#cc5a4b]';                 // 紅底白字
 }
+onMounted(() => {
+  document.title = 'RO樂園-武器體型';
+})
 </script>
 
 <style scoped>

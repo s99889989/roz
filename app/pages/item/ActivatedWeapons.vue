@@ -1,4 +1,6 @@
 <script setup>
+import {nextTick, onMounted} from "vue";
+
 const items = ref([
   {
     image: 'activated_weapons_w1'
@@ -52,6 +54,9 @@ const items = ref([
     image: 'activated_weapons_w17'
   },
 ])
+onMounted(() => {
+  document.title = 'RO樂園-活化武器系統(★武器)';
+})
 </script>
 
 <template>

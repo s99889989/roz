@@ -1,4 +1,6 @@
 <script>
+import {onMounted} from "vue";
+
 export default {
   name: 'CardEnhanceSystem',
   data() {
@@ -69,6 +71,9 @@ export default {
     }
   }
 }
+onMounted(() => {
+  document.title = 'RO樂園-飼養戒指';
+})
 </script>
 
 <template>

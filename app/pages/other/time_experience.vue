@@ -1,5 +1,9 @@
 <script setup>
-// 無需特別邏輯，純展示
+import {onMounted} from "vue";
+
+onMounted(() => {
+  document.title = 'RO樂園-定時經驗加倍';
+})
 </script>
 
 <template>

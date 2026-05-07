@@ -202,7 +202,6 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
                   <li><NuxtLink href="https://event.gnjoy.com.tw/RoZ/RoZ_ShopSearch" target="_blank" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">露天網頁查詢</NuxtLink></li>
                   <li><NuxtLink to="/other/time_experience"   class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">定時經驗加倍</NuxtLink></li>
                   <li><NuxtLink to="/other/pet"               class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">寵物</NuxtLink></li>
-                  <li><NuxtLink to="/other/tonic"             class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">補品效率</NuxtLink></li>
                   <li><NuxtLink to="/other/AttributeCounter"  class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">屬性相剋</NuxtLink></li>
                   <li><NuxtLink to="/other/WeaponSize"        class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">武器體型</NuxtLink></li>
                   <li><NuxtLink to="/other/Command"           class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">指令</NuxtLink></li>

@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import {ref, computed, onMounted} from "vue";
 
 // 玩家
 const playerHit = ref(100);
@@ -109,6 +109,9 @@ const playerDodgeRate = computed(() => {
   }
   return value;
 });
+onMounted(() => {
+  document.title = 'RO樂園-命中迴避計算';
+})
 </script>
 
 <style scoped>

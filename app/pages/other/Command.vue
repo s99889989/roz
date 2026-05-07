@@ -53,6 +53,8 @@
 </template>
 
 <script>
+import {onMounted} from "vue";
+
 export default {
   name: 'CommandList',
   data() {
@@ -206,6 +208,9 @@ export default {
     }
   }
 }
+onMounted(() => {
+  document.title = 'RO樂園-指令';
+})
 </script>
 
 <style scoped>

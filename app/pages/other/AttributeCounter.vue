@@ -58,6 +58,8 @@
 </template>
 
 <script setup>
+import {onMounted} from "vue";
+
 const elements = ['無', '水', '地', '火', '風', '毒', '聖', '暗', '念', '不死'];
 
 /**
@@ -128,6 +130,10 @@ const lv4Data = [
 
 // 四個等級的數據容器
 const elementData = [lv1Data, lv2Data, lv3Data, lv4Data];
+
+onMounted(() => {
+  document.title = 'RO樂園-屬性相剋';
+})
 </script>
 
 <style scoped>

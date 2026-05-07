@@ -1,5 +1,5 @@
 <script setup>
-import {computed, ref} from 'vue'
+import {computed, onMounted, ref} from 'vue'
 
 const int = ref(6)
 const maxsp = ref(100)
@@ -90,6 +90,10 @@ const total = computed(() => {
 })
 
 const perMinute = computed(() => Math.round(total.value * (60 / 8)))
+
+onMounted(() => {
+  document.title = 'RO樂園-回魔計算';
+})
 </script>
 
 <template>

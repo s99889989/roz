@@ -61,7 +61,11 @@
 </template>
 
 <script setup>
-// 無需特別邏輯，純靜態展示頁
+import {onMounted} from "vue";
+
+onMounted(() => {
+  document.title = 'RO樂園-聖物';
+})
 </script>
 
 <style scoped>

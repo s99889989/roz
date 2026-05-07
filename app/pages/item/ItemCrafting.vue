@@ -65,6 +65,8 @@
 
 <script setup>
 // 🪶 頭飾資料
+import {onMounted} from "vue";
+
 const headItems = [
   { name: '礦坑安全帽', effect: 'DEX+2', materials: '安全帽*1、手提燈*1、鋼鐵*25、水晶鏡子*1<br>邪骸礦工、赤蒼蠅、綠蒼蠅、巨石怪<br>夢羅克商人販售' },
   { name: '鋼鐵面具', effect: '火屬性攻擊的抗性+10%', materials: '鋼鐵*50<br>赤蒼蠅、綠蒼蠅、巨石怪' },
@@ -108,6 +110,9 @@ const chemList = [
 function formatText(t) {
   return t.replace(/★([^、<]+)/g, '<span class="star">★$1</span>')
 }
+onMounted(() => {
+  document.title = 'RO樂園-物品製作';
+})
 </script>
 
 <style scoped>

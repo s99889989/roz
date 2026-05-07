@@ -47,6 +47,8 @@
 </template>
 
 <script>
+import {onMounted} from "vue";
+
 export default {
   name: "RebornSkill",
   data() {
@@ -81,6 +83,9 @@ export default {
     },
   },
 };
+onMounted(() => {
+  document.title = 'RO樂園-轉生術計算';
+})
 </script>
 
 <style scoped>

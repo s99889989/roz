@@ -1,6 +1,6 @@
 
 <script setup>
-import { reactive, ref, computed, watch } from 'vue'
+import {reactive, ref, computed, watch, onMounted} from 'vue'
 
 /* ---------- config / constants ---------- */
 // stat max
@@ -298,7 +298,9 @@ try {
 const btnWarnStyle = { background: '#ffb300', color: '#0f0f14', fontWeight: 700 }
 const btnInfoStyle = { background: '#1f8ed8', color: '#fff', fontWeight: 700 }
 const cardStyle = { background: '#241D16', border: '1px solid #24242b', borderRadius: '8px' }
-
+onMounted(() => {
+  document.title = 'RO樂園-素質計算';
+})
 </script>
 
 <template>

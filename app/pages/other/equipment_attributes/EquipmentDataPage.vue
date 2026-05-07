@@ -1,6 +1,6 @@
 
 <script setup>
-import {computed, ref} from 'vue'
+import {computed, onMounted, ref} from 'vue'
 import {equipmentData} from "../../../assets/data/equipment.js";
 
 // 範例：把 data 轉成方便操作的扁平結構
@@ -75,6 +75,9 @@ const visiblePrefixes = computed(() => {
   const group = flat.filter(f => f.source === first.source && f.type === first.type)
   const sorted = group.sort((a, b) => a.prefix.localeCompare(b.prefix, undefined, {numeric: true}))
   return sorted.map(s => s.list)
+})
+onMounted(() => {
+  document.title = 'RO樂園-裝備詞條';
 })
 </script>
 

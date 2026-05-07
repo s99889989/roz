@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import {onMounted, ref} from 'vue';
 
 // 定義職業服飾資料
 interface Outfit {
@@ -128,6 +128,9 @@ const copyGuide = (text: string) => {
   navigator.clipboard.writeText(text);
   alert('導引指令已複製: ' + text);
 };
+onMounted(() => {
+  document.title = 'RO樂園-進階二轉服飾';
+})
 </script>
 
 <template>

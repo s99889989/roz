@@ -46,6 +46,8 @@
 </template>
 
 <script>
+import {onMounted} from "vue";
+
 export default {
   name: 'ContentListPage',
   data() {
@@ -60,6 +62,9 @@ export default {
     };
   }
 }
+onMounted(() => {
+  document.title = 'RO樂園-副本裝備';
+})
 </script>
 
 <style scoped>

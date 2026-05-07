@@ -92,6 +92,7 @@ function createNewChar(name = "新角色") {
 }
 
 onMounted(() => {
+  document.title = 'RO樂園-升級計算';
   const saved = localStorage.getItem("ro_calculator_chars");
   if (saved) {
     characters.value = JSON.parse(saved);

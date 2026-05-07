@@ -1,6 +1,6 @@
 
 <script setup>
-import { ref, computed } from 'vue'
+import {ref, computed, onMounted} from 'vue'
 
 const type = ref('weapon1')
 const defValue = ref(200)
@@ -79,6 +79,9 @@ const physicalReduction = computed(() =>
 const magicalReduction = computed(() =>
     ( 100 - ( (1000 + mdefValue.value) / (1000 + 10 * mdefValue.value) ) * 100).toFixed(1)
 )
+onMounted(() => {
+  document.title = 'RO樂園-精煉';
+})
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
+import {ref, computed, onMounted} from "vue";
 
 // =========================
 // 🧪 資料區 HP 補品
@@ -103,6 +103,9 @@ function sort(table, key) {
     return sortDirection.value === "asc" ? valA - valB : valB - valA;
   });
 }
+onMounted(() => {
+  document.title = 'RO樂園-';
+})
 </script>
 
 

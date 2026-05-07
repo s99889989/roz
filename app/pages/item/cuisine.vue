@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import {onMounted, ref} from 'vue'
 
 const current = ref('STR')
 const attributes = ['STR', 'INT', 'DEX', 'AGI', 'VIT', 'LUK']
@@ -246,6 +246,9 @@ const getItemImg = (id) => {
   // return `https://assets.twroz.wiki/images/wearing/${id}_b.png`
   return `/images/items/${id}.gif`
 }
+onMounted(() => {
+  document.title = 'RO樂園-料理';
+})
 </script>
 
 <template>

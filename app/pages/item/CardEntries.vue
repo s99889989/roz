@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-import { reactive, ref, computed } from 'vue';
+import {reactive, ref, computed, onMounted} from 'vue';
 
 const query = ref('');
 const filterCategory = ref('全部');
@@ -309,6 +309,9 @@ const grouped = computed(() => {
   }
   return out;
 });
+onMounted(() => {
+  document.title = 'RO樂園-卡片詞條';
+})
 </script>
 
 <style scoped>

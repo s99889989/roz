@@ -169,7 +169,7 @@
 </template>
 
 <script setup>
-import { reactive, ref, computed } from 'vue';
+import {reactive, ref, computed, onMounted} from 'vue';
 
 const globalQuery = ref('');
 const opened = reactive({ weapons: false, strong: false, kenbet: false, potions: false });
@@ -310,6 +310,9 @@ const filteredWeapons = computed(() => {
       (w.skill || '').toLowerCase().includes(q)
   ));
 });
+onMounted(() => {
+  document.title = 'RO樂園-煉金資訊';
+})
 </script>
 
 <style scoped>

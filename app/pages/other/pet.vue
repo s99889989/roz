@@ -66,7 +66,7 @@
 
 
 <script setup>
-import {ref, computed} from "vue";
+import {ref, computed, onMounted} from "vue";
 
 const pets = [
   {
@@ -195,4 +195,7 @@ const filteredPets = computed(() =>
       return matchType && matchKeyword;
     })
 );
+onMounted(() => {
+  document.title = 'RO樂園-寵物';
+})
 </script>
