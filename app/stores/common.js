@@ -4,9 +4,10 @@ export const useCommonStore = defineStore('useFamilyStore', () => {
   // https://madustrialtd.asuscomm.com:9100
   // http://localhost:9100
   // https://madustrialtd.asuscomm.com:8080
-  // http://localhost:8080
+  // https://madustrialtd.asuscomm.com:8080
   const data = reactive({
-    main_url: 'https://madustrialtd.asuscomm.com:8080'
+    main_url: 'https://madustrialtd.asuscomm.com:8080',
+    roz_url:  'http://madustrialtd.asuscomm.com:4000',
   })
 
   const rozUser = reactive({ name: '', email: '', picture: '' })
