@@ -11,16 +11,44 @@ const AUTH = () => commonStore.data.roz_url + '/auth';
 // ── 登入狀態 ─────────────────────────────────────────────────────
 const loggedIn     = ref(false);
 const showLogin    = ref(false);
-const loginForm    = reactive({ acc: '', password: '', remember: false });
+const loginForm    = reactive({ acc: '', password: '' });
 const loginLoading = ref(false);
 const loginError   = ref('');
+const showCreds    = ref(false);
+const creds        = reactive({ cookies: '', token: '' });
+const editingCreds = ref(false);
+const editCreds    = reactive({ cookies: '', token: '' });
 
 async function checkStatus() {
   try {
     const res  = await fetch(`${AUTH()}/status`, { credentials: 'include' });
     const data = await res.json();
     loggedIn.value = data.loggedIn ?? false;
+    if (loggedIn.value) await fetchCreds();
   } catch { loggedIn.value = false; }
+}
+
+async function fetchCreds() {
+  try {
+    const res  = await fetch(`${AUTH()}/credentials`, { credentials: 'include' });
+    const data = await res.json();
+    creds.cookies = data.cookies || '';
+    creds.token   = data.token   || '';
+    editCreds.cookies = creds.cookies;
+    editCreds.token   = creds.token;
+  } catch {}
+}
+
+function startEditCreds() {
+  editCreds.cookies = creds.cookies;
+  editCreds.token   = creds.token;
+  editingCreds.value = true;
+}
+
+function saveEditCreds() {
+  creds.cookies = editCreds.cookies;
+  creds.token   = editCreds.token;
+  editingCreds.value = false;
 }
 
 async function doLogin() {
@@ -36,6 +64,7 @@ async function doLogin() {
     });
     const data = await res.json();
     if (data.success) {
+      // 記住帳號密碼
       if (loginForm.remember) {
         localStorage.setItem('roz_login_remember', '1');
         localStorage.setItem('roz_login_acc',      loginForm.acc);
@@ -45,10 +74,11 @@ async function doLogin() {
         localStorage.removeItem('roz_login_acc');
         localStorage.removeItem('roz_login_pwd');
       }
-      loggedIn.value     = true;
-      showLogin.value    = false;
+      loggedIn.value   = true;
+      showLogin.value  = false;
       loginForm.acc      = '';
       loginForm.password = '';
+      await fetchCreds();
     } else {
       loginError.value = data.message || '登入失敗';
     }
@@ -63,9 +93,12 @@ async function doLogout() {
   try {
     await fetch(`${AUTH()}/logout`, { method: 'POST', credentials: 'include' });
   } catch {}
-  loggedIn.value    = false;
+  loggedIn.value = false;
+  creds.cookies  = '';
+  creds.token    = '';
+  showCreds.value = false;
   shopResults.value = []; historyResults.value = [];
-  totalCount.value  = 0;  errorMsg.value = '';
+  totalCount.value = 0; errorMsg.value = '';
 }
 
 onMounted(async () => {
@@ -74,7 +107,8 @@ onMounted(async () => {
   server.value      = localStorage.getItem('roz_shop_server')      || '529';
   storeType.value   = localStorage.getItem('roz_shop_storetype')   || '0';
   historyDays.value = localStorage.getItem('roz_shop_historydays') || '1';
-  const remembered  = localStorage.getItem('roz_login_remember');
+  // 讀取記住的帳號密碼
+  const remembered = localStorage.getItem('roz_login_remember');
   if (remembered === '1') {
     loginForm.acc      = localStorage.getItem('roz_login_acc')  || '';
     loginForm.password = localStorage.getItem('roz_login_pwd')  || '';
@@ -101,6 +135,7 @@ const shopResults    = ref([]);
 const historyResults = ref([]);
 const totalCount     = ref(0);
 const currentPage    = ref(1);
+const lastToken      = ref('');
 const pageSize       = 30;
 
 const totalPages = computed(() => Math.ceil(totalCount.value / pageSize));
@@ -122,7 +157,7 @@ async function openDetail(item) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
-      body: JSON.stringify({ div_svr: server.value, SSI: item.SSI2 }),
+      body: JSON.stringify({ div_svr: server.value, SSI: item.SSI2, token: lastToken.value }),
     });
     const data = await res.json();
     if (data.error) { errorMsg.value = data.error; showDetail.value = false; return; }
@@ -170,35 +205,37 @@ async function doSearch(page = 1) {
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
         body: JSON.stringify({
-          div_svr:       server.value,
-          div_storetype: storeType.value,
-          txb_KeyWord:   keyword.value.trim(),
-          row_start:     String((page - 1) * pageSize + 1),
-          sort_by:       'itemPrice',
-          sort_desc:     '',
+          div_svr: server.value, div_storetype: storeType.value,
+          txb_KeyWord: keyword.value.trim(),
+          row_start: String((page - 1) * pageSize + 1),
+          sort_by: 'itemPrice', sort_desc: '',
+          _cookies: creds.cookies || undefined,
+          _token:   creds.token   || undefined,
         }),
       });
       const data = await res.json();
       if (data.error) { errorMsg.value = data.error; return; }
       shopResults.value = data.dt      || [];
       totalCount.value  = data.dt2?.[0]?.count || 0;
+      lastToken.value   = data.token   || '';
     } else {
       const res  = await fetch(`${BASE()}/history`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
         body: JSON.stringify({
-          div_svr:          server.value,
-          div_history_days: historyDays.value,
-          txb_KeyWord:      keyword.value.trim(),
-          sort_by:          'SumitemCNT',
-          sort_desc:        'desc',
+          div_svr: server.value, div_history_days: historyDays.value,
+          txb_KeyWord: keyword.value.trim(),
+          sort_by: 'SumitemCNT', sort_desc: 'desc',
+          _cookies: creds.cookies || undefined,
+          _token:   creds.token   || undefined,
         }),
       });
       const data = await res.json();
       if (data.error) { errorMsg.value = data.error; return; }
       historyResults.value = data.dt      || [];
       totalCount.value     = data.dt2?.[0]?.count || 0;
+      lastToken.value      = data.token   || '';
     }
   } catch (e) {
     errorMsg.value = '查詢失敗：' + e.message;
@@ -242,15 +279,61 @@ const randomOpts = computed(() => {
           🔑 尚未登入
         </button>
         <div v-else class="flex items-center gap-2">
-          <span class="text-xs text-[#a8f0c8] bg-[#2a4a3a] border border-[#a8f0c8]/30 px-3 py-1.5 rounded-lg">
-            ✅ 已登入
-          </span>
+          <button @click="showCreds = !showCreds"
+                  class="text-xs text-[#a8f0c8] bg-[#2a4a3a] border border-[#a8f0c8]/30 px-3 py-1.5 rounded-lg hover:bg-[#2a5a4a] transition">
+            ✅ 已登入 {{ showCreds ? '▲' : '▼' }}
+          </button>
           <button @click="doLogout"
                   class="px-3 py-1.5 rounded-lg text-sm bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] transition">
             登出
           </button>
         </div>
       </div>
+
+      <!-- Credentials 展開區塊 -->
+      <Transition name="modal">
+        <div v-if="showCreds" class="bg-[#1e150d] border border-[#5e4b37] rounded-xl p-4 mb-4 text-xs space-y-3">
+          <!-- 檢視模式 -->
+          <template v-if="!editingCreds">
+            <div>
+              <p class="text-[#a6937c] mb-1 font-bold">Cookie</p>
+              <textarea readonly :value="creds.cookies" rows="3"
+                        class="w-full bg-[#2c1e14] border border-[#5e4b37] rounded-lg px-3 py-2 text-[#e0d3b8] resize-none focus:outline-none font-mono text-xs" />
+            </div>
+            <div>
+              <p class="text-[#a6937c] mb-1 font-bold">RequestVerificationToken</p>
+              <input readonly :value="creds.token"
+                     class="w-full bg-[#2c1e14] border border-[#5e4b37] rounded-lg px-3 py-2 text-[#e0d3b8] focus:outline-none font-mono text-xs" />
+            </div>
+            <div class="flex justify-end">
+              <button @click="startEditCreds"
+                      class="px-3 py-1.5 rounded-lg bg-[#3d2b1f] text-[#f1d483] border border-[#f1d483]/30 hover:bg-[#4a3528] transition text-xs font-bold">
+                ✏️ 手動修改
+              </button>
+            </div>
+          </template>
+
+          <!-- 編輯模式 -->
+          <template v-else>
+            <div>
+              <p class="text-[#a6937c] mb-1 font-bold">Cookie <span class="text-[#f0a8a8]">（編輯中）</span></p>
+              <textarea v-model="editCreds.cookies" rows="4"
+                        class="w-full bg-[#2c1e14] border border-[#f1d483]/50 rounded-lg px-3 py-2 text-[#e0d3b8] resize-none focus:outline-none font-mono text-xs" />
+            </div>
+            <div>
+              <p class="text-[#a6937c] mb-1 font-bold">RequestVerificationToken <span class="text-[#f0a8a8]">（編輯中）</span></p>
+              <input v-model="editCreds.token"
+                     class="w-full bg-[#2c1e14] border border-[#f1d483]/50 rounded-lg px-3 py-2 text-[#e0d3b8] focus:outline-none font-mono text-xs" />
+            </div>
+            <div class="flex justify-end gap-2">
+              <button @click="editingCreds = false"
+                      class="px-3 py-1.5 rounded-lg bg-[#3d2b1f] text-[#a6937c] hover:bg-[#4a3528] transition text-xs">取消</button>
+              <button @click="saveEditCreds"
+                      class="px-3 py-1.5 rounded-lg bg-[#f1d483] text-[#2c1e14] font-bold hover:bg-[#e8c870] transition text-xs">儲存</button>
+            </div>
+          </template>
+        </div>
+      </Transition>
 
       <!-- Tab -->
       <div class="flex gap-2 mb-4">
@@ -411,7 +494,6 @@ const randomOpts = computed(() => {
 
           <div class="overflow-y-auto px-6 py-4 flex-1">
             <div v-if="detailLoading" class="text-center py-8 text-[#a6937c]">載入中...</div>
-
             <div v-else-if="detailData">
 
               <!-- 露天商店資訊 -->
@@ -560,6 +642,7 @@ const randomOpts = computed(() => {
                    class="w-full bg-[#3d2b1f] border border-[#5e4b37] rounded-lg px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] focus:outline-none focus:border-[#f1d483]" />
           </div>
 
+          <!-- 記住帳號密碼 -->
           <label class="flex items-center gap-2 mb-4 cursor-pointer select-none">
             <input v-model="loginForm.remember" type="checkbox"
                    class="w-4 h-4 rounded accent-[#f1d483] cursor-pointer" />
@@ -568,6 +651,7 @@ const randomOpts = computed(() => {
 
           <p v-if="loginError" class="mb-3 text-sm text-[#f0a8a8] bg-[#4a1a1a] rounded-lg px-3 py-2">⚠️ {{ loginError }}</p>
 
+          <!-- 登入中提示 -->
           <div v-if="loginLoading" class="mb-3 text-sm text-[#a6937c] bg-[#3d2b1f] rounded-lg px-3 py-2 text-center">
             ⏳ 正在開啟瀏覽器並自動登入，請稍候...
           </div>
