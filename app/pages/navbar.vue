@@ -20,6 +20,7 @@ const navItems = [
   { to: '/roz/teamplace',   icon: '⚔️', label: '副本組隊'     },
   { to: '/roz/teamclassic', icon: '🏰', label: '經典組隊'     },
   { to: '/roz/dungeons',    icon: '🗺️', label: '副本管理'     },
+  { to: '/roz/ShopSearch',  icon: '🎪', label: '露天商店' },
   { to: '/roz/taskcd',      icon: '⏱️', label: '任務 CD 追蹤' },
 ];
 
@@ -213,7 +214,7 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside));
                   <li><NuxtLink to="/other/AttributeCounter" class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">屬性相剋</NuxtLink></li>
                   <li><NuxtLink to="/other/WeaponSize"       class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">武器體型</NuxtLink></li>
                   <li><NuxtLink to="/other/Command"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">指令</NuxtLink></li>
-                  <li><NuxtLink to="/other/RozShopSearch"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">測試</NuxtLink></li>
+<!--                  <li><NuxtLink to="/other/RozShopSearch"          class="block font-bold text-lg px-4 py-2 hover:bg-[#7f6753] dark:hover:bg-gray-600 dark:hover:text-white">測試</NuxtLink></li>-->
                 </ul>
               </div>
             </li>

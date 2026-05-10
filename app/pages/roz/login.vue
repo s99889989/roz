@@ -45,6 +45,7 @@
 <script setup>
 definePageMeta({ layout: 'blank' });
 
+const route       = useRoute();
 const router      = useRouter();
 const errorMsg    = ref('');
 const checking    = ref(true);
@@ -54,6 +55,13 @@ const commonStore = useCommonStore();
 const BASE = () => commonStore.data.main_url + '/roz/user';
 const GOOGLE_CLIENT_ID = config.public.googleClientId;
 
+// 取得登入後要跳轉的目標，預設 /roz/accounts
+const redirectTarget = computed(() => {
+  const r = route.query.redirect;
+  if (r && typeof r === 'string' && r.startsWith('/roz')) return r;
+  return '/roz/accounts';
+});
+
 // ── 載入時先確認是否已登入，已登入直接跳轉 ────────────────────────
 onMounted(async () => {
   try {
@@ -61,7 +69,7 @@ onMounted(async () => {
     const data = await res.json();
     if (!data.error) {
       commonStore.setRozUser(data);
-      router.replace('/roz/accounts');
+      router.replace(redirectTarget.value);
       return;
     }
   } catch { /* 未登入，正常顯示登入頁 */ }
@@ -85,7 +93,7 @@ const handleCredential = async (response) => {
       errorMsg.value = data.error;
     } else {
       commonStore.setRozUser(data);
-      router.push('/roz/accounts');
+      router.push(redirectTarget.value);
     }
   } catch {
     errorMsg.value = '登入失敗，請再試一次';
@@ -107,11 +115,11 @@ const initGoogle = () => {
 
 const initGoogleScript = () => {
   if (!document.getElementById('google-gsi-script')) {
-    const script  = document.createElement('script');
-    script.id     = 'google-gsi-script';
-    script.src    = 'https://accounts.google.com/gsi/client';
-    script.async  = true;
-    script.defer  = true;
+    const script = document.createElement('script');
+    script.id = 'google-gsi-script';
+    script.src = 'https://accounts.google.com/gsi/client';
+    script.async = true;
+    script.defer = true;
     script.onload = () => initGoogle();
     document.head.appendChild(script);
   } else if (window.google) {
