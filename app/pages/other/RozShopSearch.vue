@@ -47,8 +47,11 @@ async function doLogin() {
       }
       loggedIn.value     = true;
       showLogin.value    = false;
-      loginForm.acc      = '';
-      loginForm.password = '';
+      // 不記住時才清空（記住時保留方便重新登入）
+      if (!loginForm.remember) {
+        loginForm.acc      = '';
+        loginForm.password = '';
+      }
     } else {
       loginError.value = data.message || '登入失敗';
     }
@@ -112,6 +115,8 @@ const detailData    = ref(null);
 const detailTab     = ref('store');
 
 async function openDetail(item) {
+  await checkStatus();
+  if (!loggedIn.value) { showLogin.value = true; return; }
   showDetail.value    = true;
   detailLoading.value = true;
   detailData.value    = null;
@@ -122,7 +127,7 @@ async function openDetail(item) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
-      body: JSON.stringify({ div_svr: server.value, SSI: item.SSI2 }),
+      body: JSON.stringify({ div_svr: server.value, SSI: item.SSI2, token: item.token }),
     });
     const data = await res.json();
     if (data.error) { errorMsg.value = data.error; showDetail.value = false; return; }
@@ -157,6 +162,7 @@ function copyCoord(item) {
 // ── 查詢 ─────────────────────────────────────────────────────────
 async function doSearch(page = 1) {
   if (!keyword.value.trim()) { errorMsg.value = '請輸入關鍵字'; return; }
+  await checkStatus();
   if (!loggedIn.value)       { showLogin.value = true; return; }
 
   errorMsg.value    = '';
