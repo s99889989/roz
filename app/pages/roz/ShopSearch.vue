@@ -8,6 +8,31 @@ const commonStore = useCommonStore();
 const BASE = () => commonStore.data.roz_url + '/shop';
 const AUTH = () => commonStore.data.roz_url + '/auth';
 
+// ── 統一 fetch wrapper + 登入攔截 ────────────────────────────────
+// 後端 session 過期時回 HTTP 200 + { error: '請先登入' }，同時也處理 HTTP 401
+async function authFetch(url, options = {}) {
+  const res = await fetch(url, { credentials: 'include', ...options });
+  if (res.status === 401) {
+    loggedIn.value  = false;
+    showLogin.value = true;
+    throw new Error('SESSION_EXPIRED');
+  }
+  return res;
+}
+
+// 解析回應，遇到「請先登入」自動彈 modal 並 throw；其他 error 也 throw
+function handleApiResponse(data) {
+  if (data?.error) {
+    if (data.error.includes('請先登入')) {
+      loggedIn.value  = false;
+      showLogin.value = true;
+      throw new Error('SESSION_EXPIRED');
+    }
+    throw new Error(data.error);
+  }
+  return data;
+}
+
 // ── 熱門關鍵字 ───────────────────────────────────────────────────
 const hotKeywords = ref([]);
 async function fetchHotKeywords() {
@@ -225,17 +250,16 @@ async function openDetail(item) {
   detailData.value    = null;
   detailTab.value     = 'store';
   try {
-    const res  = await fetch(`${BASE()}/store-detail`, {
+    const res  = await authFetch(`${BASE()}/store-detail`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      credentials: 'include',
       body: JSON.stringify({ div_svr: server.value, SSI: item.SSI2 }),
     });
     const data = await res.json();
-    if (data.error) { errorMsg.value = data.error; showDetail.value = false; return; }
+    handleApiResponse(data);
     detailData.value = data;
   } catch (e) {
-    errorMsg.value = '查詢失敗：' + e.message;
+    if (e.message !== 'SESSION_EXPIRED') errorMsg.value = '查詢失敗：' + e.message;
     showDetail.value = false;
   } finally {
     detailLoading.value = false;
@@ -268,10 +292,9 @@ async function doSearch(page = 1) {
   try {
     if (activeTab.value === 'shop') {
       shopCurrentPage.value = page;
-      const res  = await fetch(`${BASE()}/search`, {
+      const res  = await authFetch(`${BASE()}/search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
         body: JSON.stringify({
           div_svr: server.value, div_storetype: storeType.value,
           txb_KeyWord: keyword.value.trim(),
@@ -280,15 +303,14 @@ async function doSearch(page = 1) {
         }),
       });
       const data = await res.json();
-      if (data.error) { errorMsg.value = data.error; return; }
+      handleApiResponse(data);
       shopResultsRaw.value  = data.dt      || [];
       shopTotalCount.value  = data.dt2?.[0]?.count || 0;
     } else {
       historyCurrentPage.value = page;
-      const res  = await fetch(`${BASE()}/history`, {
+      const res  = await authFetch(`${BASE()}/history`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
         body: JSON.stringify({
           div_svr: server.value, div_history_days: historyDays.value,
           txb_KeyWord: keyword.value.trim(),
@@ -296,12 +318,12 @@ async function doSearch(page = 1) {
         }),
       });
       const data = await res.json();
-      if (data.error) { errorMsg.value = data.error; return; }
+      handleApiResponse(data);
       historyResults.value      = data.dt      || [];
       historyTotalCount.value   = data.dt2?.[0]?.count || 0;
     }
   } catch (e) {
-    errorMsg.value = '查詢失敗：' + e.message;
+    if (e.message !== 'SESSION_EXPIRED') errorMsg.value = '查詢失敗：' + e.message;
   } finally {
     loading.value = false;
   }
@@ -373,13 +395,13 @@ async function fetchSearchHistory(page = 1) {
   searchHistoryLoading.value = true;
   searchHistoryPage.value    = page;
   try {
-    const res  = await fetch(`${BASE()}/search-history?page=${page}&pageSize=${searchHistoryPageSize}`, { credentials: 'include' });
+    const res  = await authFetch(`${BASE()}/search-history?page=${page}&pageSize=${searchHistoryPageSize}`);
     const data = await res.json();
     searchHistoryRecords.value    = data.records    || [];
     searchHistoryTotal.value      = data.total      || 0;
     searchHistoryTotalPages.value = data.totalPages || 1;
   } catch (e) {
-    errorMsg.value = '讀取查詢紀錄失敗：' + e.message;
+    if (e.message !== 'SESSION_EXPIRED') errorMsg.value = '讀取查詢紀錄失敗：' + e.message;
   } finally {
     searchHistoryLoading.value = false;
   }
@@ -429,10 +451,9 @@ async function loadHistoryDetail(page = 1) {
   historyDetailLoading.value = true;
   historyDetailPage.value    = page;
   try {
-    const res  = await fetch(`${BASE()}/history-detail`, {
+    const res  = await authFetch(`${BASE()}/history-detail`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      credentials: 'include',
       body: JSON.stringify({
         div_svr:          server.value,
         div_history_days: historyDetailItem.value.days || historyDays.value,
@@ -445,12 +466,12 @@ async function loadHistoryDetail(page = 1) {
       }),
     });
     const data = await res.json();
-    if (data.error) { errorMsg.value = data.error; showHistoryDetail.value = false; return; }
+    handleApiResponse(data);
     historyDetailChart.value   = data.chart   || [];
     historyDetailRecords.value = data.detail  || [];
     historyDetailTotal.value   = data.totalCount || 0;
   } catch (e) {
-    errorMsg.value = '查詢失敗：' + e.message;
+    if (e.message !== 'SESSION_EXPIRED') errorMsg.value = '查詢失敗：' + e.message;
     showHistoryDetail.value = false;
   } finally {
     historyDetailLoading.value = false;
@@ -464,7 +485,11 @@ function historyDetailSort(by) {
     historyDetailSortBy.value   = by;
     historyDetailSortDesc.value = 'desc';
   }
-  loadHistoryDetail(1);
+  if (historyDetailItem.value?._fromRecord) {
+    historyDetailPage.value = 1;  // 前端排序，只需重置頁碼
+  } else {
+    loadHistoryDetail(1);
+  }
 }
 
 function sortIcon(by) {
@@ -497,17 +522,16 @@ async function openItemDetail(itemID_e) {
   itemDetailLoading.value = true;
   itemDetailData.value    = null;
   try {
-    const res  = await fetch(`${BASE()}/item-detail`, {
+    const res  = await authFetch(`${BASE()}/item-detail`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      credentials: 'include',
       body: JSON.stringify({ itemID: itemID_e }),
     });
     const data = await res.json();
-    if (data.error) { errorMsg.value = data.error; showItemDetail.value = false; return; }
+    handleApiResponse(data);
     itemDetailData.value = data;
   } catch (e) {
-    errorMsg.value = '查詢失敗：' + e.message;
+    if (e.message !== 'SESSION_EXPIRED') errorMsg.value = '查詢失敗：' + e.message;
     showItemDetail.value = false;
   } finally {
     itemDetailLoading.value = false;
@@ -646,11 +670,19 @@ const filteredDetailRecords = computed(() => {
       : all;
 
   if (isFromRecord) {
-    // DB 資料全部在記憶體，前端自己分頁
-    const ps    = historyDetailPageSize;
-    const page  = historyDetailPage.value;
-    historyDetailTotal.value = filtered.length;
-    return filtered.slice((page - 1) * ps, page * ps);
+    // 前端排序
+    const by   = historyDetailSortBy.value;
+    const desc = historyDetailSortDesc.value === 'desc';
+    const sorted = [...filtered].sort((a, b) => {
+      const av = Number(a[by]) || 0;
+      const bv = Number(b[by]) || 0;
+      return desc ? bv - av : av - bv;
+    });
+    // 前端分頁
+    const ps   = historyDetailPageSize;
+    const page = historyDetailPage.value;
+    historyDetailTotal.value = sorted.length;
+    return sorted.slice((page - 1) * ps, page * ps);
   }
   return filtered;
 });
