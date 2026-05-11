@@ -127,6 +127,7 @@ function switchTab(tab) {
   if (activeTab.value === tab) return;
   activeTab.value = tab;
   errorMsg.value  = '';
+  if (tab === 'searchHistory') fetchSearchHistory(searchHistoryPage.value);
 }
 
 watch(keyword,     v => localStorage.setItem('roz_shop_keyword',     v));
@@ -135,7 +136,7 @@ watch(storeType,   v => localStorage.setItem('roz_shop_storetype',   v));
 watch(historyDays, v => localStorage.setItem('roz_shop_historydays', v));
 
 // ── 排序（純前端，不重打 API）────────────────────────────────────
-const sortKey = ref('price_asc'); // 預設單價低→高
+const sortKey = ref('price_asc');
 
 const sortOptions = [
   { label: '單價 低→高', value: 'price_asc'  },
@@ -147,23 +148,19 @@ const sortOptions = [
 // ── 價格區間（前端過濾）─────────────────────────────────────────
 const priceMin     = ref('');
 const priceMax     = ref('');
-const priceUnit    = ref(1); // 1 = z，10000 = 萬z
+const priceUnit    = ref(1);
 const priceUnitLabel = computed(() => priceUnit.value === 1 ? 'z' : '萬z');
 
-// 實際 z 值
 const priceMinZ = computed(() => priceMin.value !== '' ? Number(priceMin.value) * priceUnit.value : null);
 const priceMaxZ = computed(() => priceMax.value !== '' ? Number(priceMax.value) * priceUnit.value : null);
 const isFiltered = computed(() => priceMinZ.value !== null || priceMaxZ.value !== null);
 
 function togglePriceUnit() {
-  // 切換單位時，嘗試換算已輸入的數值
   if (priceUnit.value === 1) {
-    // z → 萬z
     if (priceMin.value !== '') priceMin.value = String(Math.floor(Number(priceMin.value) / 10000));
     if (priceMax.value !== '') priceMax.value = String(Math.floor(Number(priceMax.value) / 10000));
     priceUnit.value = 10000;
   } else {
-    // 萬z → z
     if (priceMin.value !== '') priceMin.value = String(Number(priceMin.value) * 10000);
     if (priceMax.value !== '') priceMax.value = String(Number(priceMax.value) * 10000);
     priceUnit.value = 1;
@@ -185,12 +182,8 @@ const historyTotalPages = computed(() => Math.ceil(historyTotalCount.value / pag
 // 套用過濾 + 排序（純前端，不重打 API）
 const shopResults = computed(() => {
   let list = [...shopResultsRaw.value];
-
-  // 價格過濾
   if (priceMinZ.value !== null) list = list.filter(i => Number(i.itemPrice) >= priceMinZ.value);
   if (priceMaxZ.value !== null) list = list.filter(i => Number(i.itemPrice) <= priceMaxZ.value);
-
-  // 排序
   switch (sortKey.value) {
     case 'price_asc':  list.sort((a, b) => Number(a.itemPrice) - Number(b.itemPrice)); break;
     case 'price_desc': list.sort((a, b) => Number(b.itemPrice) - Number(a.itemPrice)); break;
@@ -201,6 +194,22 @@ const shopResults = computed(() => {
 });
 
 const filteredCount = computed(() => shopResults.value.length);
+
+// ── 分頁跳頁輸入 ─────────────────────────────────────────────────
+const shopPageInput     = ref('');
+const historyPageInput  = ref('');
+const srPageInput       = ref('');
+
+function jumpPage(type, totalPages) {
+  const inputMap = { shop: shopPageInput, history: historyPageInput, searchHistory: srPageInput };
+  const raw  = parseInt(inputMap[type].value, 10);
+  if (isNaN(raw)) return;
+  const page = Math.min(Math.max(1, raw), totalPages);
+  inputMap[type].value = '';
+  if (type === 'shop')          doSearch(page);
+  if (type === 'history')       doSearch(page);
+  if (type === 'searchHistory') fetchSearchHistory(page);
+}
 
 // ── 商店詳細 Modal ───────────────────────────────────────────────
 const showDetail    = ref(false);
@@ -267,7 +276,6 @@ async function doSearch(page = 1) {
           div_svr: server.value, div_storetype: storeType.value,
           txb_KeyWord: keyword.value.trim(),
           row_start: String((page - 1) * pageSize + 1),
-          // 固定從 API 取 itemPrice asc，前端再做排序
           sort_by: 'itemPrice', sort_desc: '',
         }),
       });
@@ -299,9 +307,92 @@ async function doSearch(page = 1) {
   }
 }
 
+// ── 查詢紀錄 ─────────────────────────────────────────────────────
+const searchHistoryRecords    = ref([]);
+const searchHistoryTotal      = ref(0);
+const searchHistoryTotalPages = ref(1);
+const searchHistoryPage       = ref(1);
+const searchHistoryPageSize   = 20;
+const searchHistoryLoading    = ref(false);
+const searchHistoryKeyword    = ref('');
+
+const filteredSearchHistory = computed(() => {
+  const kw = searchHistoryKeyword.value.trim().toLowerCase();
+  if (!kw) return searchHistoryRecords.value;
+  return searchHistoryRecords.value.filter(r => r.itemName.toLowerCase().includes(kw));
+});
+
+// 展開某一筆紀錄的詳細物品列表
+const expandedHistoryId    = ref(null);
+const expandedItemsPage    = ref({});   // { [recordId]: currentPage }
+const expandedItemsSearch  = ref({});   // { [recordId]: keyword }
+const EXPANDED_PAGE_SIZE   = 30;
+
+function toggleExpand(id) {
+  if (expandedHistoryId.value === id) {
+    expandedHistoryId.value = null;
+  } else {
+    expandedHistoryId.value = id;
+    if (!expandedItemsPage.value[id])   expandedItemsPage.value[id]   = 1;
+    if (expandedItemsSearch.value[id] === undefined) expandedItemsSearch.value[id] = '';
+  }
+}
+
+function getExpandedItems(record) {
+  const kw = (expandedItemsSearch.value[record.id] || '').trim().toLowerCase();
+  const filtered = kw
+      ? record.items.filter(i => {
+        const slots  = [i.slot_1, i.slot_2, i.slot_3, i.slot_4].filter(Boolean).join(' ');
+        const opts   = [i.RandomOpt1, i.RandomOpt2, i.RandomOpt3, i.RandomOpt4, i.RandomOpt5].filter(Boolean).join(' ');
+        const refine = i.itemRefining > 0 ? `+${i.itemRefining}` : '';
+        return [slots, opts, refine, i.mapName || '', i.regDate_ || ''].join(' ').toLowerCase().includes(kw);
+      })
+      : record.items;
+
+  const page      = expandedItemsPage.value[record.id] || 1;
+  const totalPages = Math.ceil(filtered.length / EXPANDED_PAGE_SIZE) || 1;
+  const start     = (page - 1) * EXPANDED_PAGE_SIZE;
+  return {
+    items: filtered.slice(start, start + EXPANDED_PAGE_SIZE),
+    total: filtered.length,
+    page,
+    totalPages,
+  };
+}
+
+function setExpandedPage(id, page) {
+  expandedItemsPage.value = { ...expandedItemsPage.value, [id]: page };
+}
+
+function setExpandedSearch(id, val) {
+  expandedItemsSearch.value = { ...expandedItemsSearch.value, [id]: val };
+  expandedItemsPage.value   = { ...expandedItemsPage.value,   [id]: 1 };
+}
+
+async function fetchSearchHistory(page = 1) {
+  searchHistoryLoading.value = true;
+  searchHistoryPage.value    = page;
+  try {
+    const res  = await fetch(`${BASE()}/search-history?page=${page}&pageSize=${searchHistoryPageSize}`, { credentials: 'include' });
+    const data = await res.json();
+    searchHistoryRecords.value    = data.records    || [];
+    searchHistoryTotal.value      = data.total      || 0;
+    searchHistoryTotalPages.value = data.totalPages || 1;
+  } catch (e) {
+    errorMsg.value = '讀取查詢紀錄失敗：' + e.message;
+  } finally {
+    searchHistoryLoading.value = false;
+  }
+}
+
+function serverLabel(s) { return s === '529' ? '西格倫' : s === '629' ? '艾克瑟' : s; }
+function formatDate(iso) {
+  const d = new Date(iso);
+  return `${d.getFullYear()}/${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ` +
+      `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
 function formatPrice(n) { return Number(n).toLocaleString(); }
 function storeTypeLabel(t) { return t === 0 ? '販售' : '收購'; }
-
 function itemDisplayName(item) {
   return item.itemRefining > 0 ? `+${item.itemRefining} ${item.itemName}` : item.itemName;
 }
@@ -309,6 +400,260 @@ function slotDisplay(item) {
   const s = [item.slot_1, item.slot_2, item.slot_3, item.slot_4].filter(Boolean);
   return s.length ? s.join('・') : '-';
 }
+
+// ── 成交資訊 Modal ───────────────────────────────────────────────
+const showHistoryDetail      = ref(false);
+const historyDetailLoading   = ref(false);
+const historyDetailItem      = ref(null);   // 來自 history list 的那一筆
+const historyDetailChart     = ref([]);     // GroupByHour / GroupByDay
+const historyDetailRecords   = ref([]);     // DealDetail 當頁
+const historyDetailTotal     = ref(0);
+const historyDetailPage      = ref(1);
+const historyDetailPageSize  = 30;
+const historyDetailTotalPages = computed(() => Math.ceil(historyDetailTotal.value / historyDetailPageSize) || 1);
+const historyDetailPageInput = ref('');
+const historyDetailSortBy    = ref('regDate_');
+const historyDetailSortDesc  = ref('desc');
+
+async function openHistoryDetail(item) {
+  await checkStatus();
+  if (!loggedIn.value) { showLogin.value = true; return; }
+  historyDetailItem.value    = item;
+  showHistoryDetail.value    = true;
+  historyDetailPage.value    = 1;
+  detailSearchKeyword.value  = '';
+  await loadHistoryDetail(1);
+}
+
+async function loadHistoryDetail(page = 1) {
+  historyDetailLoading.value = true;
+  historyDetailPage.value    = page;
+  try {
+    const res  = await fetch(`${BASE()}/history-detail`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({
+        div_svr:          server.value,
+        div_history_days: historyDetailItem.value.days || historyDays.value,
+        itemID:           historyDetailItem.value.itemID_e,
+        itemName:         historyDetailItem.value.itemName,
+        row_start:        String((page - 1) * historyDetailPageSize + 1),
+        sort_by:          historyDetailSortBy.value,
+        sort_desc:        historyDetailSortDesc.value,
+        GroupByMap:       'true',
+      }),
+    });
+    const data = await res.json();
+    if (data.error) { errorMsg.value = data.error; showHistoryDetail.value = false; return; }
+    historyDetailChart.value   = data.chart   || [];
+    historyDetailRecords.value = data.detail  || [];
+    historyDetailTotal.value   = data.totalCount || 0;
+  } catch (e) {
+    errorMsg.value = '查詢失敗：' + e.message;
+    showHistoryDetail.value = false;
+  } finally {
+    historyDetailLoading.value = false;
+  }
+}
+
+function historyDetailSort(by) {
+  if (historyDetailSortBy.value === by) {
+    historyDetailSortDesc.value = historyDetailSortDesc.value === 'desc' ? '' : 'desc';
+  } else {
+    historyDetailSortBy.value   = by;
+    historyDetailSortDesc.value = 'desc';
+  }
+  loadHistoryDetail(1);
+}
+
+function sortIcon(by) {
+  if (historyDetailSortBy.value !== by) return '⇅';
+  return historyDetailSortDesc.value === 'desc' ? '↓' : '↑';
+}
+
+function jumpHistoryDetail(totalPages) {
+  const raw  = parseInt(historyDetailPageInput.value, 10);
+  if (isNaN(raw)) return;
+  const page = Math.min(Math.max(1, raw), totalPages);
+  historyDetailPageInput.value = '';
+  if (historyDetailItem.value?._fromRecord) {
+    historyDetailPage.value = page;
+  } else {
+    loadHistoryDetail(page);
+  }
+}
+
+// ── 道具說明 Modal ───────────────────────────────────────────────
+const showItemDetail    = ref(false);
+const itemDetailLoading = ref(false);
+const itemDetailData    = ref(null);  // { name, desc, slotCount }
+
+async function openItemDetail(itemID_e) {
+  if (!itemID_e) return;
+  await checkStatus();
+  if (!loggedIn.value) { showLogin.value = true; return; }
+  showItemDetail.value    = true;
+  itemDetailLoading.value = true;
+  itemDetailData.value    = null;
+  try {
+    const res  = await fetch(`${BASE()}/item-detail`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({ itemID: itemID_e }),
+    });
+    const data = await res.json();
+    if (data.error) { errorMsg.value = data.error; showItemDetail.value = false; return; }
+    itemDetailData.value = data;
+  } catch (e) {
+    errorMsg.value = '查詢失敗：' + e.message;
+    showItemDetail.value = false;
+  } finally {
+    itemDetailLoading.value = false;
+  }
+}
+
+function dealSlots(item) {
+  return [item.slot_1, item.slot_2, item.slot_3, item.slot_4].filter(Boolean);
+}
+function dealOpts(item) {
+  return [item.RandomOpt1, item.RandomOpt2, item.RandomOpt3, item.RandomOpt4, item.RandomOpt5].filter(Boolean);
+}
+function mapLabelShort(mapName) { return mapName ? mapName.replace('.gat', '') : ''; }
+
+// 折線圖（Canvas + requestAnimationFrame，純 vanilla）
+import { nextTick } from 'vue';
+function drawChart(data) {
+  nextTick(() => {
+    const canvas = document.getElementById('hdChart');
+    if (!canvas || !data.length) return;
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width  = canvas.offsetWidth;
+    const H = canvas.height = 220;
+    const PAD = { top: 20, right: 20, bottom: 40, left: 70 };
+    const pw = W - PAD.left - PAD.right;
+    const ph = H - PAD.top  - PAD.bottom;
+
+    ctx.clearRect(0, 0, W, H);
+
+    const prices = data.map(d => d.AvgPrice);
+    const minP   = Math.min(...prices);
+    const maxP   = Math.max(...prices);
+    const range  = maxP - minP || 1;
+
+    const x = (i) => PAD.left + (i / (data.length - 1 || 1)) * pw;
+    const y = (v) => PAD.top  + ph - ((v - minP) / range) * ph;
+
+    // grid lines
+    ctx.strokeStyle = 'rgba(94,75,55,0.4)';
+    ctx.lineWidth   = 1;
+    for (let i = 0; i <= 4; i++) {
+      const yy = PAD.top + (ph / 4) * i;
+      ctx.beginPath(); ctx.moveTo(PAD.left, yy); ctx.lineTo(PAD.left + pw, yy); ctx.stroke();
+      const val = maxP - (range / 4) * i;
+      ctx.fillStyle = '#a6937c';
+      ctx.font = '11px sans-serif';
+      ctx.textAlign = 'right';
+      ctx.fillText(val >= 1e6 ? (val/1e6).toFixed(1)+'M' : val >= 1e3 ? (val/1e3).toFixed(0)+'K' : val, PAD.left - 6, yy + 4);
+    }
+
+    // line
+    ctx.beginPath();
+    ctx.strokeStyle = '#f1d483';
+    ctx.lineWidth   = 2;
+    data.forEach((d, i) => {
+      i === 0 ? ctx.moveTo(x(i), y(d.AvgPrice)) : ctx.lineTo(x(i), y(d.AvgPrice));
+    });
+    ctx.stroke();
+
+    // dots + labels
+    data.forEach((d, i) => {
+      ctx.beginPath();
+      ctx.arc(x(i), y(d.AvgPrice), 3, 0, Math.PI * 2);
+      ctx.fillStyle = '#f1d483';
+      ctx.fill();
+      // x-axis label (every nth to avoid clutter)
+      if (data.length <= 12 || i % Math.ceil(data.length / 12) === 0) {
+        ctx.fillStyle = '#a6937c';
+        ctx.font      = '10px sans-serif';
+        ctx.textAlign = 'center';
+        const label = d.regDate_.replace(/2\d{3}\//, '');
+        ctx.fillText(label, x(i), H - PAD.bottom + 15);
+      }
+    });
+  });
+}
+
+watch(historyDetailChart, (val) => { if (val.length) drawChart(val); });
+
+// ── 從查詢紀錄開成交資訊（直接用 DB 資料，不打 API）──────────
+function openHistoryDetailFromRecord(record) {
+  const stats = calcRecordStats(record);
+  historyDetailItem.value = {
+    itemName:    record.itemName,
+    itemID_e:    record.itemID_e || '',
+    MinPrice:    stats.min,
+    AvgPrice:    stats.avg,
+    MaxPrice:    stats.max,
+    SumitemCNT:  record.totalCNT || stats.sum,
+    _fromRecord: true,
+  };
+  historyDetailChart.value   = record.chart  || [];
+  historyDetailRecords.value = record.items  || [];
+  historyDetailTotal.value   = record.items?.length || 0;
+  historyDetailPage.value    = 1;
+  detailSearchKeyword.value  = '';
+  showHistoryDetail.value    = true;
+}
+
+// 覆蓋 totalPages（從 record 開時用 items 本身算，不依賴 API totalCount）
+const historyDetailTotalPages_override = ref(null);
+
+// 計算 record 的統計資料
+function calcRecordStats(record) {
+  const items = record.items || [];
+  if (!items.length) return { min: 0, avg: 0, max: 0, sum: 0, dateRange: '' };
+  const prices = items.map(i => i.itemPrice_a);
+  const min    = Math.min(...prices);
+  const max    = Math.max(...prices);
+  const avg    = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length);
+  const sum    = items.reduce((a, i) => a + (i.itemCNT || 0), 0);
+  // 日期範圍：從 regDate_ 算
+  const dates  = [...new Set(items.map(i => i.regDate_).filter(Boolean))].sort();
+  const dateRange = dates.length > 1
+      ? `${dates[0].replace(/\d{4}\//, '')} ~ ${dates[dates.length-1].replace(/\d{4}\//, '')}（${dates.length} 天）`
+      : dates.length === 1 ? `${dates[0].replace(/\d{4}\//, '')}（1 天）` : '';
+  return { min, avg, max, sum, dateRange };
+}
+
+// ── 成交資訊 Modal 內搜尋（前端 filter，不重打 API）──────────────
+const detailSearchKeyword = ref('');
+
+const filteredDetailRecords = computed(() => {
+  const kw   = detailSearchKeyword.value.trim().toLowerCase();
+  const all  = historyDetailRecords.value;
+  const isFromRecord = historyDetailItem.value?._fromRecord;
+
+  const filtered = kw
+      ? all.filter(rec => {
+        const slots  = [rec.slot_1, rec.slot_2, rec.slot_3, rec.slot_4].filter(Boolean).join(' ');
+        const opts   = [rec.RandomOpt1, rec.RandomOpt2, rec.RandomOpt3, rec.RandomOpt4, rec.RandomOpt5].filter(Boolean).join(' ');
+        const map    = rec.mapName ? rec.mapName.replace('.gat', '') : '';
+        const refine = rec.itemRefining > 0 ? `+${rec.itemRefining}` : '';
+        return [slots, opts, map, refine, rec.itemName || ''].join(' ').toLowerCase().includes(kw);
+      })
+      : all;
+
+  if (isFromRecord) {
+    // DB 資料全部在記憶體，前端自己分頁
+    const ps    = historyDetailPageSize;
+    const page  = historyDetailPage.value;
+    historyDetailTotal.value = filtered.length;
+    return filtered.slice((page - 1) * ps, page * ps);
+  }
+  return filtered;
+});
 
 const detailSlots = computed(() => {
   if (!detailData.value) return [];
@@ -346,6 +691,11 @@ const randomOpts = computed(() => {
             📜 成交紀錄
             <span v-if="historyTotalCount > 0" class="ml-1 text-[10px] text-[#a6937c]">{{ historyTotalCount }}</span>
           </button>
+          <button @click="switchTab('searchHistory')"
+                  class="px-3 py-1.5 text-sm font-bold rounded-md transition"
+                  :class="activeTab === 'searchHistory' ? 'bg-[#5e4b37] text-[#f1d483]' : 'text-[#a6937c] hover:text-[#e0d3b8]'">
+            🕘 查詢紀錄
+          </button>
         </div>
         <button v-if="!loggedIn" @click="showLogin = true"
                 class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition bg-[#4a1a1a] text-[#f0a8a8] border border-[#f0a8a8]/30 hover:bg-[#5a2020] animate-pulse">
@@ -363,8 +713,8 @@ const randomOpts = computed(() => {
 
     <div class="max-w-[1400px] mx-auto">
 
-      <!-- 搜尋列 -->
-      <div class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-4">
+      <!-- 搜尋列（查詢紀錄 tab 時隱藏） -->
+      <div v-show="activeTab !== 'searchHistory'" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-4">
 
         <!-- 第一行：關鍵字 + 基本條件 + 查詢 -->
         <div class="flex flex-wrap gap-3 items-end">
@@ -431,7 +781,6 @@ const randomOpts = computed(() => {
               <input v-model="priceMax" type="number" min="0" placeholder="不限"
                      class="w-28 bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition" />
             </div>
-            <!-- 單位切換 -->
             <button @click="togglePriceUnit"
                     class="pb-2 px-2.5 py-1.5 rounded text-xs font-bold border transition mb-[1px]"
                     :class="priceUnit === 10000
@@ -479,7 +828,6 @@ const randomOpts = computed(() => {
 
         <!-- ══ 商店 tab ══ -->
         <div v-show="activeTab === 'shop'">
-          <!-- 結果數 -->
           <div v-if="shopTotalCount > 0" class="text-sm text-[#a6937c] mb-3 flex items-center gap-2 flex-wrap">
             <span>共 <span class="text-[#f1d483] font-bold">{{ shopTotalCount }}</span> 筆</span>
             <span v-if="shopTotalPages > 1">（第 {{ shopCurrentPage }} / {{ shopTotalPages }} 頁）</span>
@@ -523,10 +871,10 @@ const randomOpts = computed(() => {
                   <td class="px-4 py-2.5 text-right font-bold text-[#f1d483]">{{ formatPrice(item.itemPrice) }} z</td>
                   <td class="px-4 py-2.5 text-right text-[#a6937c]">{{ item.itemCNT }}</td>
                   <td class="px-4 py-2.5 text-center">
-                      <span class="text-xs px-2 py-0.5 rounded-full"
-                            :class="item.storetype === 0 ? 'bg-[#2a4a3a] text-[#a8f0c8]' : 'bg-[#2a3a4a] text-[#a8c0f0]'">
-                        {{ storeTypeLabel(item.storetype) }}
-                      </span>
+                    <span class="text-xs px-2 py-0.5 rounded-full"
+                          :class="item.storetype === 0 ? 'bg-[#2a4a3a] text-[#a8f0c8]' : 'bg-[#2a3a4a] text-[#a8c0f0]'">
+                      {{ storeTypeLabel(item.storetype) }}
+                    </span>
                   </td>
                 </tr>
                 </tbody>
@@ -558,16 +906,26 @@ const randomOpts = computed(() => {
             </div>
 
             <!-- 分頁 -->
-            <div v-if="shopTotalPages > 1" class="flex justify-center gap-2 mt-4">
+            <div v-if="shopTotalPages > 1" class="flex justify-center items-center gap-2 mt-4 flex-wrap">
               <button @click="doSearch(shopCurrentPage - 1)" :disabled="shopCurrentPage <= 1"
                       class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-sm">
                 ← 上一頁
               </button>
-              <span class="px-3 py-1.5 text-sm text-[#f1d483]">{{ shopCurrentPage }} / {{ shopTotalPages }}</span>
+              <span class="px-2 py-1.5 text-sm text-[#f1d483]">{{ shopCurrentPage }} / {{ shopTotalPages }}</span>
               <button @click="doSearch(shopCurrentPage + 1)" :disabled="shopCurrentPage >= shopTotalPages"
                       class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-sm">
                 下一頁 →
               </button>
+              <!-- 跳頁 -->
+              <div class="flex items-center gap-1.5 ml-2">
+                <input v-model="shopPageInput" type="number" min="1" :max="shopTotalPages" placeholder="頁碼"
+                       @keyup.enter="jumpPage('shop', shopTotalPages)"
+                       class="w-16 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1.5 text-sm text-[#e0d3b8] text-center outline-none focus:border-[#f1d483] transition" />
+                <button @click="jumpPage('shop', shopTotalPages)"
+                        class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] transition text-sm">
+                  跳至
+                </button>
+              </div>
             </div>
           </div>
 
@@ -592,7 +950,6 @@ const randomOpts = computed(() => {
 
         <!-- ══ 成交紀錄 tab ══ -->
         <div v-show="activeTab === 'history'">
-          <!-- 結果數 -->
           <div v-if="historyTotalCount > 0" class="text-sm text-[#a6937c] mb-3">
             共 <span class="text-[#f1d483] font-bold">{{ historyTotalCount }}</span> 筆
             <span v-if="historyTotalPages > 1">（第 {{ historyCurrentPage }} / {{ historyTotalPages }} 頁）</span>
@@ -609,16 +966,28 @@ const randomOpts = computed(() => {
                   <th class="px-4 py-3 font-bold text-right">平均成交價</th>
                   <th class="px-4 py-3 font-bold text-right">最高成交價</th>
                   <th class="px-4 py-3 font-bold text-right">成交數量</th>
+                  <th class="px-4 py-3 font-bold text-center">成交資訊</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr v-for="(item, i) in historyResults" :key="i"
                     class="border-t border-[#5e4b37] hover:bg-[#3d2b1f] transition">
-                  <td class="px-4 py-2.5 font-bold text-[#e0d3b8]">{{ item.itemName }}</td>
+                  <td class="px-4 py-2.5">
+                    <button @click="openItemDetail(item.itemID_e)"
+                            class="font-bold text-[#e0d3b8] hover:text-[#f1d483] transition text-left">
+                      {{ item.itemName }}
+                    </button>
+                  </td>
                   <td class="px-4 py-2.5 text-right text-[#a8f0c8]">{{ formatPrice(item.MinPrice) }} z</td>
                   <td class="px-4 py-2.5 text-right text-[#f1d483] font-bold">{{ formatPrice(item.AvgPrice) }} z</td>
                   <td class="px-4 py-2.5 text-right text-[#f0a8a8]">{{ formatPrice(item.MaxPrice) }} z</td>
                   <td class="px-4 py-2.5 text-right text-[#a6937c]">{{ item.SumitemCNT }}</td>
+                  <td class="px-4 py-2.5 text-center">
+                    <button @click="openHistoryDetail(item)"
+                            class="px-2.5 py-1 rounded text-xs border border-[#5e4b37] bg-[#2c1e14] text-[#a6937c] hover:border-[#f1d483] hover:text-[#f1d483] transition">
+                      📊
+                    </button>
+                  </td>
                 </tr>
                 </tbody>
               </table>
@@ -628,7 +997,16 @@ const randomOpts = computed(() => {
             <div class="md:hidden space-y-2">
               <div v-for="(item, i) in historyResults" :key="i"
                    class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-3">
-                <p class="font-bold text-[#e0d3b8] text-sm mb-2">{{ item.itemName }}</p>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <button @click="openItemDetail(item.itemID_e)"
+                          class="font-bold text-[#e0d3b8] text-sm hover:text-[#f1d483] transition text-left">
+                    {{ item.itemName }}
+                  </button>
+                  <button @click="openHistoryDetail(item)"
+                          class="shrink-0 px-2.5 py-1 rounded text-xs border border-[#5e4b37] bg-[#2c1e14] text-[#a6937c] hover:border-[#f1d483] hover:text-[#f1d483] transition">
+                    📊
+                  </button>
+                </div>
                 <div class="grid grid-cols-2 gap-y-1 text-xs">
                   <span class="text-[#a6937c]">最低成交</span><span class="text-[#a8f0c8] text-right font-bold">{{ formatPrice(item.MinPrice) }} z</span>
                   <span class="text-[#a6937c]">平均成交</span><span class="text-[#f1d483] text-right font-bold">{{ formatPrice(item.AvgPrice) }} z</span>
@@ -639,16 +1017,26 @@ const randomOpts = computed(() => {
             </div>
 
             <!-- 分頁 -->
-            <div v-if="historyTotalPages > 1" class="flex justify-center gap-2 mt-4">
+            <div v-if="historyTotalPages > 1" class="flex justify-center items-center gap-2 mt-4 flex-wrap">
               <button @click="doSearch(historyCurrentPage - 1)" :disabled="historyCurrentPage <= 1"
                       class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-sm">
                 ← 上一頁
               </button>
-              <span class="px-3 py-1.5 text-sm text-[#f1d483]">{{ historyCurrentPage }} / {{ historyTotalPages }}</span>
+              <span class="px-2 py-1.5 text-sm text-[#f1d483]">{{ historyCurrentPage }} / {{ historyTotalPages }}</span>
               <button @click="doSearch(historyCurrentPage + 1)" :disabled="historyCurrentPage >= historyTotalPages"
                       class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-sm">
                 下一頁 →
               </button>
+              <!-- 跳頁 -->
+              <div class="flex items-center gap-1.5 ml-2">
+                <input v-model="historyPageInput" type="number" min="1" :max="historyTotalPages" placeholder="頁碼"
+                       @keyup.enter="jumpPage('history', historyTotalPages)"
+                       class="w-16 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1.5 text-sm text-[#e0d3b8] text-center outline-none focus:border-[#f1d483] transition" />
+                <button @click="jumpPage('history', historyTotalPages)"
+                        class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] transition text-sm">
+                  跳至
+                </button>
+              </div>
             </div>
           </div>
 
@@ -660,8 +1048,403 @@ const randomOpts = computed(() => {
           </div>
         </div>
 
+        <!-- ══ 查詢紀錄 tab ══ -->
+        <div v-show="activeTab === 'searchHistory'">
+          <div class="flex flex-col gap-2 mb-3">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div class="text-sm text-[#a6937c]">
+                共 <span class="text-[#f1d483] font-bold">{{ filteredSearchHistory.length }}</span> 筆查詢紀錄
+                <span v-if="searchHistoryTotalPages > 1">（第 {{ searchHistoryPage }} / {{ searchHistoryTotalPages }} 頁）</span>
+              </div>
+              <button @click="fetchSearchHistory(searchHistoryPage)"
+                      class="text-xs px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] transition">
+                🔄 重新載入
+              </button>
+            </div>
+            <div class="relative">
+              <input v-model="searchHistoryKeyword" type="text" placeholder="搜尋道具名稱..."
+                     class="w-full bg-[#1e140c] border border-[#5e4b37] rounded-lg px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] focus:outline-none focus:border-[#f1d483] transition pr-8" />
+              <button v-if="searchHistoryKeyword" @click="searchHistoryKeyword = ''"
+                      class="absolute right-2 top-1/2 -translate-y-1/2 text-[#6b5a4a] hover:text-[#a6937c] text-xs">✕</button>
+            </div>
+          </div>
+
+          <div v-if="searchHistoryLoading" class="text-center py-20 text-[#a6937c] italic">載入中...</div>
+
+          <div v-else-if="searchHistoryRecords.length > 0">
+            <!-- 寬螢幕：表格 -->
+            <div class="hidden md:block overflow-x-auto rounded-xl border border-[#5e4b37]">
+              <table class="w-full text-sm">
+                <thead>
+                <tr class="bg-[#3d2b1f] text-[#f1d483] text-left">
+                  <th class="px-4 py-3 font-bold">道具名稱</th>
+                  <th class="px-4 py-3 font-bold text-right">最低成交價</th>
+                  <th class="px-4 py-3 font-bold text-right">平均成交價</th>
+                  <th class="px-4 py-3 font-bold text-right">最高成交價</th>
+                  <th class="px-4 py-3 font-bold text-right">成交數量</th>
+                  <th class="px-4 py-3 font-bold text-center">資料範圍</th>
+                  <th class="px-4 py-3 font-bold text-center">成交資訊</th>
+                </tr>
+                </thead>
+                <tbody>
+                <template v-for="record in filteredSearchHistory" :key="record.id">
+                  <tr class="border-t border-[#5e4b37] hover:bg-[#3d2b1f] transition">
+                    <td class="px-4 py-2.5">
+                      <button @click="record.itemID_e && openItemDetail(record.itemID_e)"
+                              :class="record.itemID_e ? 'hover:text-[#e8c870] cursor-pointer' : 'cursor-default'"
+                              class="font-bold text-[#f1d483] transition text-left">
+                        {{ record.itemName }}
+                      </button>
+                      <div class="text-[10px] text-[#6b5a4a] mt-0.5">{{ serverLabel(record.server) }} · {{ record.days }}天</div>
+                    </td>
+                    <td class="px-4 py-2.5 text-right text-[#a8f0c8]">{{ formatPrice(calcRecordStats(record).min) }} z</td>
+                    <td class="px-4 py-2.5 text-right text-[#f1d483] font-bold">{{ formatPrice(calcRecordStats(record).avg) }} z</td>
+                    <td class="px-4 py-2.5 text-right text-[#f0a8a8]">{{ formatPrice(calcRecordStats(record).max) }} z</td>
+                    <td class="px-4 py-2.5 text-right text-[#a6937c]">{{ record.totalCNT || calcRecordStats(record).sum }}</td>
+                    <td class="px-4 py-2.5 text-center text-[#a6937c] text-xs">{{ calcRecordStats(record).dateRange }}</td>
+                    <td class="px-4 py-2.5 text-center">
+                      <button @click="openHistoryDetailFromRecord(record)"
+                              class="px-2.5 py-1 rounded text-xs border border-[#5e4b37] bg-[#2c1e14] text-[#a6937c] hover:border-[#f1d483] hover:text-[#f1d483] transition">
+                        📊
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- 展開的物品列表 -->
+                  <tr v-if="expandedHistoryId === record.id" class="border-t border-[#5e4b37]/40">
+                    <td colspan="7" class="px-4 py-3 bg-[#251810]">
+                      <!-- 搜尋 + 統計 -->
+                      <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+                        <p class="text-[11px] text-[#a6937c]">
+                          共 <span class="text-[#f1d483] font-bold">{{ getExpandedItems(record).total }}</span> 筆
+                          <span v-if="getExpandedItems(record).totalPages > 1">
+                            （第 {{ getExpandedItems(record).page }} / {{ getExpandedItems(record).totalPages }} 頁）
+                          </span>
+                        </p>
+                        <div class="flex items-center gap-1.5">
+                          <input :value="expandedItemsSearch[record.id] || ''"
+                                 @input="setExpandedSearch(record.id, $event.target.value)"
+                                 type="text" placeholder="搜尋精煉/卡片/附加..."
+                                 class="w-48 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1 text-xs text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition" />
+                          <button v-if="expandedItemsSearch[record.id]"
+                                  @click="setExpandedSearch(record.id, '')"
+                                  class="text-xs text-[#a6937c] hover:text-[#f0a8a8] transition px-1">✕</button>
+                        </div>
+                      </div>
+                      <table class="w-full text-xs">
+                        <thead>
+                        <tr class="text-[#a6937c]">
+                          <th class="text-right pb-2 font-semibold">成交單價</th>
+                          <th class="text-right pb-2 font-semibold">數量</th>
+                          <th class="text-left pb-2 font-semibold">日期</th>
+                          <th class="text-left pb-2 font-semibold">精煉</th>
+                          <th class="text-left pb-2 font-semibold">卡片/附加</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="(item, j) in getExpandedItems(record).items" :key="j" class="border-t border-[#5e4b37]/30 align-top">
+                          <td class="py-1.5 text-right text-[#f1d483] font-bold whitespace-nowrap">{{ formatPrice(item.itemPrice_a) }} z</td>
+                          <td class="py-1.5 text-right text-[#a6937c]">{{ item.itemCNT }}</td>
+                          <td class="py-1.5 text-[#a6937c] whitespace-nowrap">{{ item.regDate_ }}</td>
+                          <td class="py-1.5 text-[#a8f0c8]">{{ item.itemRefining > 0 ? '+' + item.itemRefining : '-' }}</td>
+                          <td class="py-1.5">
+                            <div class="text-[#e8c870] text-[11px]">{{ [item.slot_1,item.slot_2,item.slot_3,item.slot_4].filter(Boolean).join('・') || '-' }}</div>
+                            <div v-for="opt in [item.RandomOpt1,item.RandomOpt2,item.RandomOpt3,item.RandomOpt4,item.RandomOpt5].filter(Boolean)" :key="opt" class="text-[#a8c8f0] text-[11px]">{{ opt }}</div>
+                          </td>
+                        </tr>
+                        <tr v-if="getExpandedItems(record).items.length === 0">
+                          <td colspan="5" class="py-4 text-center text-[#6b5a4a]">搜尋無結果</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <!-- items 分頁 -->
+                      <div v-if="getExpandedItems(record).totalPages > 1" class="flex justify-center items-center gap-2 mt-3 flex-wrap">
+                        <button @click="setExpandedPage(record.id, getExpandedItems(record).page - 1)"
+                                :disabled="getExpandedItems(record).page <= 1"
+                                class="px-2.5 py-1 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-xs">
+                          ← 上一頁
+                        </button>
+                        <span class="text-xs text-[#f1d483]">{{ getExpandedItems(record).page }} / {{ getExpandedItems(record).totalPages }}</span>
+                        <button @click="setExpandedPage(record.id, getExpandedItems(record).page + 1)"
+                                :disabled="getExpandedItems(record).page >= getExpandedItems(record).totalPages"
+                                class="px-2.5 py-1 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-xs">
+                          下一頁 →
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </template>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 窄螢幕：卡片 -->
+            <div class="md:hidden space-y-2">
+              <div v-for="record in filteredSearchHistory" :key="record.id"
+                   class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl overflow-hidden">
+                <div class="p-3">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <div>
+                      <button @click="record.itemID_e && openItemDetail(record.itemID_e)"
+                              :class="record.itemID_e ? 'hover:text-[#e8c870]' : ''"
+                              class="font-bold text-[#f1d483] text-sm transition text-left">
+                        {{ record.itemName }}
+                      </button>
+                      <p class="text-[10px] text-[#a6937c] mt-0.5">{{ serverLabel(record.server) }} · {{ record.days }}天 · {{ calcRecordStats(record).dateRange }}</p>
+                    </div>
+                    <button @click="openHistoryDetailFromRecord(record)"
+                            class="shrink-0 px-2.5 py-1 rounded text-xs border border-[#5e4b37] bg-[#2c1e14] text-[#a6937c] hover:border-[#f1d483] hover:text-[#f1d483] transition">
+                      📊
+                    </button>
+                  </div>
+                  <div class="grid grid-cols-2 gap-y-1 text-xs">
+                    <span class="text-[#a6937c]">最低成交</span><span class="text-[#a8f0c8] text-right font-bold">{{ formatPrice(calcRecordStats(record).min) }} z</span>
+                    <span class="text-[#a6937c]">平均成交</span><span class="text-[#f1d483] text-right font-bold">{{ formatPrice(calcRecordStats(record).avg) }} z</span>
+                    <span class="text-[#a6937c]">最高成交</span><span class="text-[#f0a8a8] text-right font-bold">{{ formatPrice(calcRecordStats(record).max) }} z</span>
+                    <span class="text-[#a6937c]">成交數量</span><span class="text-[#a6937c] text-right">{{ record.totalCNT || calcRecordStats(record).sum }}</span>
+                  </div>
+                </div>
+                <!-- 展開物品 -->
+                <div v-if="expandedHistoryId === record.id" class="border-t border-[#5e4b37]/50 bg-[#251810] px-3 py-2">
+                  <!-- 搜尋 + 統計 -->
+                  <div class="flex items-center gap-1.5 mb-2">
+                    <input :value="expandedItemsSearch[record.id] || ''"
+                           @input="setExpandedSearch(record.id, $event.target.value)"
+                           type="text" placeholder="搜尋精煉/卡片/附加..."
+                           class="flex-1 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1 text-xs text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition" />
+                    <button v-if="expandedItemsSearch[record.id]"
+                            @click="setExpandedSearch(record.id, '')"
+                            class="text-xs text-[#a6937c] hover:text-[#f0a8a8] transition">✕</button>
+                  </div>
+                  <p class="text-[10px] text-[#a6937c] mb-2">
+                    共 {{ getExpandedItems(record).total }} 筆
+                    <span v-if="getExpandedItems(record).totalPages > 1">· 第 {{ getExpandedItems(record).page }} / {{ getExpandedItems(record).totalPages }} 頁</span>
+                  </p>
+                  <div class="space-y-1.5">
+                    <div v-for="(item, j) in getExpandedItems(record).items" :key="j"
+                         class="text-xs border-b border-[#5e4b37]/20 pb-1.5 last:border-0 last:pb-0">
+                      <div class="flex items-center justify-between mb-0.5">
+                        <span class="text-[#f1d483] font-bold">{{ formatPrice(item.itemPrice_a) }} z</span>
+                        <span class="text-[#a6937c]">× {{ item.itemCNT }} · {{ item.regDate_ }}</span>
+                      </div>
+                      <div v-if="item.itemRefining > 0" class="text-[#a8f0c8]">精煉 +{{ item.itemRefining }}</div>
+                      <div class="text-[#e8c870]">{{ [item.slot_1,item.slot_2,item.slot_3,item.slot_4].filter(Boolean).join('・') }}</div>
+                      <div v-for="opt in [item.RandomOpt1,item.RandomOpt2,item.RandomOpt3,item.RandomOpt4,item.RandomOpt5].filter(Boolean)" :key="opt" class="text-[#a8c8f0]">{{ opt }}</div>
+                    </div>
+                    <p v-if="getExpandedItems(record).items.length === 0" class="text-center text-[#6b5a4a] py-2">搜尋無結果</p>
+                  </div>
+                  <!-- items 分頁 -->
+                  <div v-if="getExpandedItems(record).totalPages > 1" class="flex justify-center items-center gap-2 mt-3 flex-wrap">
+                    <button @click="setExpandedPage(record.id, getExpandedItems(record).page - 1)"
+                            :disabled="getExpandedItems(record).page <= 1"
+                            class="px-2.5 py-1 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-xs">
+                      ← 上一頁
+                    </button>
+                    <span class="text-xs text-[#f1d483]">{{ getExpandedItems(record).page }} / {{ getExpandedItems(record).totalPages }}</span>
+                    <button @click="setExpandedPage(record.id, getExpandedItems(record).page + 1)"
+                            :disabled="getExpandedItems(record).page >= getExpandedItems(record).totalPages"
+                            class="px-2.5 py-1 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-xs">
+                      下一頁 →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 分頁 -->
+            <div v-if="searchHistoryTotalPages > 1" class="flex justify-center items-center gap-2 mt-4 flex-wrap">
+              <button @click="fetchSearchHistory(searchHistoryPage - 1)" :disabled="searchHistoryPage <= 1"
+                      class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-sm">
+                ← 上一頁
+              </button>
+              <span class="px-2 py-1.5 text-sm text-[#f1d483]">{{ searchHistoryPage }} / {{ searchHistoryTotalPages }}</span>
+              <button @click="fetchSearchHistory(searchHistoryPage + 1)" :disabled="searchHistoryPage >= searchHistoryTotalPages"
+                      class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-sm">
+                下一頁 →
+              </button>
+              <!-- 跳頁 -->
+              <div class="flex items-center gap-1.5 ml-2">
+                <input v-model="srPageInput" type="number" min="1" :max="searchHistoryTotalPages" placeholder="頁碼"
+                       @keyup.enter="jumpPage('searchHistory', searchHistoryTotalPages)"
+                       class="w-16 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1.5 text-sm text-[#e0d3b8] text-center outline-none focus:border-[#f1d483] transition" />
+                <button @click="jumpPage('searchHistory', searchHistoryTotalPages)"
+                        class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] transition text-sm">
+                  跳至
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 空狀態 -->
+          <div v-else class="text-center py-16 text-[#6b5a4a]">
+            <div class="text-4xl mb-3">📭</div>
+            <p>尚無查詢紀錄</p>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <!-- ── 成交資訊 Modal ── -->
+    <Transition name="modal">
+      <div v-if="showHistoryDetail" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+           @click.self="showHistoryDetail = false">
+        <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl w-full max-w-3xl shadow-2xl max-h-[90vh] flex flex-col">
+
+          <!-- Header -->
+          <div class="px-6 pt-5 pb-3 border-b border-[#5e4b37] shrink-0">
+            <div class="flex items-center justify-between">
+              <div>
+                <h2 class="text-[#f1d483] font-black text-lg">📊 成交資訊</h2>
+                <p v-if="historyDetailItem" class="text-[#a6937c] text-xs mt-0.5">
+                  {{ historyDetailItem.itemName }}・{{ serverLabel(server) }}・{{ historyDays }} 天
+                </p>
+              </div>
+              <div v-if="historyDetailItem" class="text-right text-xs text-[#a6937c] space-y-0.5">
+                <div>最低 <span class="text-[#a8f0c8] font-bold">{{ formatPrice(historyDetailItem.MinPrice) }} z</span></div>
+                <div>平均 <span class="text-[#f1d483] font-bold">{{ formatPrice(historyDetailItem.AvgPrice) }} z</span></div>
+                <div>最高 <span class="text-[#f0a8a8] font-bold">{{ formatPrice(historyDetailItem.MaxPrice) }} z</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-y-auto flex-1 custom-scrollbar">
+            <div v-if="historyDetailLoading" class="text-center py-16 text-[#a6937c] italic">載入中...</div>
+            <div v-else>
+
+              <!-- 折線圖 -->
+              <div v-if="historyDetailChart.length > 0" class="px-6 pt-4 pb-2">
+                <p class="text-xs text-[#a6937c] mb-2">平均成交價趨勢</p>
+                <canvas id="hdChart" class="w-full" style="height:220px;"></canvas>
+              </div>
+
+              <!-- 明細 -->
+              <div class="px-6 pt-3 pb-4">
+                <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+                  <p class="text-xs text-[#a6937c]">
+                    共 <span class="text-[#f1d483] font-bold">{{ historyDetailTotal }}</span> 筆
+                    <span v-if="historyDetailTotalPages > 1">（第 {{ historyDetailPage }} / {{ historyDetailTotalPages }} 頁）</span>
+                    <span v-if="detailSearchKeyword" class="ml-1">
+                      · 篩選後 <span class="text-[#f1d483] font-bold">{{ filteredDetailRecords.length }}</span> 筆
+                    </span>
+                  </p>
+                  <!-- 搜尋欄 + 跳頁 -->
+                  <div class="flex items-center gap-1.5 flex-wrap">
+                    <input v-model="detailSearchKeyword" type="text" placeholder="搜尋精煉/卡片/附加能力/地圖..."
+                           class="w-56 bg-[#2c1e14] border border-[#5e4b37] rounded px-2.5 py-1.5 text-xs text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition" />
+                    <button v-if="detailSearchKeyword" @click="detailSearchKeyword = ''"
+                            class="text-xs text-[#a6937c] hover:text-[#f0a8a8] transition px-1">✕</button>
+                    <template v-if="historyDetailTotalPages > 1">
+                      <div class="flex items-center gap-1 ml-1">
+                        <button @click="historyDetailItem?._fromRecord ? historyDetailPage-- : loadHistoryDetail(historyDetailPage - 1)"
+                                :disabled="historyDetailPage <= 1"
+                                class="px-2 py-1 rounded bg-[#2c1e14] text-[#a6937c] border border-[#5e4b37] hover:bg-[#3d2b1f] disabled:opacity-30 transition text-xs">←</button>
+                        <span class="text-xs text-[#f1d483] px-1">{{ historyDetailPage }}/{{ historyDetailTotalPages }}</span>
+                        <button @click="historyDetailItem?._fromRecord ? historyDetailPage++ : loadHistoryDetail(historyDetailPage + 1)"
+                                :disabled="historyDetailPage >= historyDetailTotalPages"
+                                class="px-2 py-1 rounded bg-[#2c1e14] text-[#a6937c] border border-[#5e4b37] hover:bg-[#3d2b1f] disabled:opacity-30 transition text-xs">→</button>
+                        <input v-model="historyDetailPageInput" type="number" min="1" :max="historyDetailTotalPages" placeholder="頁"
+                               @keyup.enter="jumpHistoryDetail(historyDetailTotalPages)"
+                               class="w-12 bg-[#2c1e14] border border-[#5e4b37] rounded px-1.5 py-1 text-xs text-[#e0d3b8] text-center outline-none focus:border-[#f1d483] transition" />
+                        <button @click="jumpHistoryDetail(historyDetailTotalPages)"
+                                class="px-2 py-1 rounded bg-[#2c1e14] text-[#a6937c] border border-[#5e4b37] hover:bg-[#3d2b1f] transition text-xs">Go</button>
+                      </div>
+                    </template>
+                  </div>
+                </div>
+
+                <!-- 寬螢幕 -->
+                <div v-if="filteredDetailRecords.length > 0" class="hidden md:block overflow-x-auto rounded-xl border border-[#5e4b37]">
+                  <table class="w-full text-xs">
+                    <thead>
+                    <tr class="bg-[#3d2b1f] text-[#a6937c] text-left">
+                      <th class="px-3 py-2.5 cursor-pointer hover:text-[#f1d483] transition select-none"
+                          @click="historyDetailSort('itemPrice_a')">
+                        成交單價 {{ sortIcon('itemPrice_a') }}
+                      </th>
+                      <th class="px-3 py-2.5 text-center cursor-pointer hover:text-[#f1d483] transition select-none"
+                          @click="historyDetailSort('itemCNT')">
+                        數量 {{ sortIcon('itemCNT') }}
+                      </th>
+                      <th class="px-3 py-2.5 cursor-pointer hover:text-[#f1d483] transition select-none"
+                          @click="historyDetailSort('regDate_')">
+                        成交日期 {{ sortIcon('regDate_') }}
+                      </th>
+                      <th class="px-3 py-2.5">資訊</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(rec, i) in filteredDetailRecords" :key="i"
+                        class="border-t border-[#5e4b37] hover:bg-[#3d2b1f] transition align-top">
+                      <td class="px-3 py-2.5 font-bold text-[#f1d483] whitespace-nowrap">{{ formatPrice(rec.itemPrice_a) }} z</td>
+                      <td class="px-3 py-2.5 text-center text-[#a6937c]">{{ rec.itemCNT }}</td>
+                      <td class="px-3 py-2.5 text-[#a6937c] whitespace-nowrap">{{ rec.regDate_ }}</td>
+                      <td class="px-3 py-2.5">
+                        <div class="space-y-0.5 text-[#e0d3b8]">
+                          <div v-if="rec.itemRefining > 0" class="text-[#a8f0c8]">精煉 +{{ rec.itemRefining }}</div>
+                          <div v-if="rec.ItemGradeLevel > 0" class="text-[#f1d483]">階級 ★{{ rec.ItemGradeLevel }}</div>
+                          <div v-if="dealSlots(rec).length > 0" class="text-[#e8c870]">{{ dealSlots(rec).join('・') }}</div>
+                          <div v-for="opt in dealOpts(rec)" :key="opt" class="text-[#a8c8f0] text-[11px]">{{ opt }}</div>
+                          <div v-if="rec.mapName" class="text-[#6b5a4a] text-[11px]">{{ mapLabelShort(rec.mapName) }}</div>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- 窄螢幕 -->
+                <div v-if="filteredDetailRecords.length > 0" class="md:hidden space-y-2">
+                  <div v-for="(rec, i) in filteredDetailRecords" :key="i"
+                       class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-3">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="font-bold text-[#f1d483] text-sm">{{ formatPrice(rec.itemPrice_a) }} z</span>
+                      <span class="text-xs text-[#a6937c]">× {{ rec.itemCNT }}・{{ rec.regDate_ }}</span>
+                    </div>
+                    <div class="text-xs space-y-0.5">
+                      <div v-if="rec.itemRefining > 0" class="text-[#a8f0c8]">精煉 +{{ rec.itemRefining }}</div>
+                      <div v-if="dealSlots(rec).length > 0" class="text-[#e8c870]">{{ dealSlots(rec).join('・') }}</div>
+                      <div v-for="opt in dealOpts(rec)" :key="opt" class="text-[#a8c8f0]">{{ opt }}</div>
+                      <div v-if="rec.mapName" class="text-[#6b5a4a]">{{ mapLabelShort(rec.mapName) }}</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div v-else-if="!historyDetailLoading" class="text-center py-8 text-[#6b5a4a]">{{ detailSearchKeyword ? '搜尋無結果' : '查無明細' }}</div>
+
+                <!-- 分頁 -->
+                <div v-if="historyDetailTotalPages > 1" class="flex justify-center items-center gap-2 mt-4 flex-wrap">
+                  <button @click="historyDetailItem?._fromRecord ? historyDetailPage-- : loadHistoryDetail(historyDetailPage - 1)"
+                          :disabled="historyDetailPage <= 1"
+                          class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-xs">
+                    ← 上一頁
+                  </button>
+                  <span class="px-2 text-xs text-[#f1d483]">{{ historyDetailPage }} / {{ historyDetailTotalPages }}</span>
+                  <button @click="historyDetailItem?._fromRecord ? historyDetailPage++ : loadHistoryDetail(historyDetailPage + 1)"
+                          :disabled="historyDetailPage >= historyDetailTotalPages"
+                          class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] disabled:opacity-30 disabled:cursor-not-allowed transition text-xs">
+                    下一頁 →
+                  </button>
+                  <div class="flex items-center gap-1.5 ml-2">
+                    <input v-model="historyDetailPageInput" type="number" min="1" :max="historyDetailTotalPages" placeholder="頁碼"
+                           @keyup.enter="jumpHistoryDetail(historyDetailTotalPages)"
+                           class="w-14 bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1.5 text-xs text-[#e0d3b8] text-center outline-none focus:border-[#f1d483] transition" />
+                    <button @click="jumpHistoryDetail(historyDetailTotalPages)"
+                            class="px-3 py-1.5 rounded bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] transition text-xs">
+                      跳至
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-5 pt-3 border-t border-[#5e4b37] shrink-0">
+            <button @click="showHistoryDetail = false"
+                    class="w-full py-2 bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] rounded transition text-sm font-bold">關閉</button>
+          </div>
+        </div>
+      </div>
+    </Transition>
 
     <!-- ── 商店詳細 Modal ── -->
     <Transition name="modal">
@@ -766,6 +1549,41 @@ const randomOpts = computed(() => {
         </ol>
       </div>
     </div>
+
+    <!-- ── 道具說明 Modal ── -->
+    <Transition name="modal">
+      <div v-if="showItemDetail" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+           @click.self="showItemDetail = false">
+        <div class="bg-[#2c1e14] border border-[#5e4b37] rounded-xl w-full max-w-md shadow-2xl max-h-[80vh] flex flex-col">
+          <div class="px-6 pt-5 pb-3 border-b border-[#5e4b37] shrink-0">
+            <h2 class="text-[#f1d483] font-black text-lg">📖 道具說明</h2>
+          </div>
+          <div class="overflow-y-auto flex-1 px-6 py-4 custom-scrollbar">
+            <div v-if="itemDetailLoading" class="text-center py-8 text-[#a6937c] italic">載入中...</div>
+            <div v-else-if="itemDetailData" class="text-sm space-y-3">
+              <div v-if="itemDetailData.name" class="flex justify-between border-b border-[#5e4b37] pb-2">
+                <span class="text-[#a6937c]">道具名稱</span>
+                <span class="font-bold text-[#f1d483]">{{ itemDetailData.name }}</span>
+              </div>
+              <div v-if="itemDetailData.slotCount" class="flex justify-between border-b border-[#5e4b37] pb-2">
+                <span class="text-[#a6937c]">Slot 數</span>
+                <span class="font-bold text-[#e0d3b8]">{{ itemDetailData.slotCount }}</span>
+              </div>
+              <div>
+                <p class="text-[#a6937c] text-xs mb-2">敘述</p>
+                <pre class="text-xs text-[#e0d3b8] whitespace-pre-wrap font-sans leading-relaxed"
+                     v-html="parseDesc(itemDetailData.desc)"></pre>
+              </div>
+            </div>
+            <div v-else class="text-center py-8 text-[#6b5a4a]">查無資料</div>
+          </div>
+          <div class="px-6 pb-5 pt-3 border-t border-[#5e4b37] shrink-0">
+            <button @click="showItemDetail = false"
+                    class="w-full py-2 bg-[#3d2b1f] text-[#a6937c] border border-[#5e4b37] hover:bg-[#4a3528] rounded transition text-sm font-bold">關閉</button>
+          </div>
+        </div>
+      </div>
+    </Transition>
 
     <!-- ── 登入 Modal ── -->
     <Transition name="modal">
