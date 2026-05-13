@@ -102,25 +102,16 @@ async function doLogin() {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       credentials: 'include',
-      body: JSON.stringify({acc: loginForm.acc, password: loginForm.password}),
+      // remember 傳給後端，由後端決定 session cookie 有效期（30天 or 瀏覽器關閉失效）
+      // 帳號/身分證不再存入 localStorage
+      body: JSON.stringify({acc: loginForm.acc, password: loginForm.password, remember: loginForm.remember}),
     });
     const data = await res.json();
     if (data.success) {
-      if (loginForm.remember) {
-        localStorage.setItem('roz_login_remember', '1');
-        localStorage.setItem('roz_login_acc', loginForm.acc);
-        localStorage.setItem('roz_login_pwd', loginForm.password);
-      } else {
-        localStorage.removeItem('roz_login_remember');
-        localStorage.removeItem('roz_login_acc');
-        localStorage.removeItem('roz_login_pwd');
-      }
       loggedIn.value = true;
       showLogin.value = false;
-      if (!loginForm.remember) {
-        loginForm.acc = '';
-        loginForm.password = '';
-      }
+      loginForm.acc = '';
+      loginForm.password = '';
     } else {
       loginError.value = data.message || '登入失敗';
     }
@@ -153,12 +144,7 @@ onMounted(async () => {
   server.value = localStorage.getItem('roz_shop_server') || '529';
   storeType.value = localStorage.getItem('roz_shop_storetype') || '0';
   historyDays.value = localStorage.getItem('roz_shop_historydays') || '1';
-  const remembered = localStorage.getItem('roz_login_remember');
-  if (remembered === '1') {
-    loginForm.acc = localStorage.getItem('roz_login_acc') || '';
-    loginForm.password = localStorage.getItem('roz_login_pwd') || '';
-    loginForm.remember = true;
-  }
+  // 帳號/身分證不再從 localStorage 讀取，登入狀態由後端 session cookie 維持
 });
 
 // ── 查詢表單 ─────────────────────────────────────────────────────
