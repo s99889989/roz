@@ -382,8 +382,8 @@ const commonStore = useCommonStore();
 const BASE = () => commonStore.data.main_url + '/roz/account';
 
 const jobList = ['祭師', '鐵匠', '騎士', '詩人', '刺客', '賢者', '巫師', '練金', '十字軍', '舞孃', '武僧', '獵人', '流氓'];
-const jobFileMap = { '祭師':'祭師','鐵匠':'鐵匠','騎士':'騎士','詩人':'詩人','刺客':'刺客','賢者':'賢者','巫師':'巫師','練金':'練金','十字軍':'十字軍','舞孃':'舞孃','武僧':'祭師','獵人':'詩人','流氓':'流氓' };
-const getJobImg = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.png`;
+const jobFileMap = { '祭師':'1_祭師','鐵匠':'1_鐵匠','騎士':'1_騎士','詩人':'1_詩人','刺客':'1_刺客','賢者':'1_賢者','巫師':'1_巫師','練金':'1_練金','十字軍':'1_十字軍','舞孃':'1_舞孃','武僧':'1_武僧','獵人':'1_獵人','流氓':'1_流氓' };
+const getJobImg = (job) => `/images/profession/role/${jobFileMap[job] || '詩人'}.jpg`;
 
 // ── 狀態 ──────────────────────────────────────────────────────────
 const loading           = ref(true);
