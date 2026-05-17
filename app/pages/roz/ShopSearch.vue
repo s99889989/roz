@@ -108,10 +108,21 @@ async function doLogin() {
     });
     const data = await res.json();
     if (data.success) {
+      if (loginForm.remember) {
+        localStorage.setItem('roz_login_remember', '1');
+        localStorage.setItem('roz_login_acc', loginForm.acc);
+        localStorage.setItem('roz_login_pwd', loginForm.password);
+      } else {
+        localStorage.removeItem('roz_login_remember');
+        localStorage.removeItem('roz_login_acc');
+        localStorage.removeItem('roz_login_pwd');
+      }
       loggedIn.value = true;
       showLogin.value = false;
-      loginForm.acc = '';
-      loginForm.password = '';
+      if (!loginForm.remember) {
+        loginForm.acc = '';
+        loginForm.password = '';
+      }
     } else {
       loginError.value = data.message || '登入失敗';
     }
@@ -144,7 +155,12 @@ onMounted(async () => {
   server.value = localStorage.getItem('roz_shop_server') || '529';
   storeType.value = localStorage.getItem('roz_shop_storetype') || '0';
   historyDays.value = localStorage.getItem('roz_shop_historydays') || '1';
-  // 帳號/身分證不再從 localStorage 讀取，登入狀態由後端 session cookie 維持
+  const remembered = localStorage.getItem('roz_login_remember');
+  if (remembered === '1') {
+    loginForm.acc = localStorage.getItem('roz_login_acc') || '';
+    loginForm.password = localStorage.getItem('roz_login_pwd') || '';
+    loginForm.remember = true;
+  }
 });
 
 // ── 查詢表單 ─────────────────────────────────────────────────────
@@ -162,6 +178,7 @@ function switchTab(tab) {
   activeTab.value = tab;
   errorMsg.value = '';
   if (tab === 'searchHistory') fetchSearchHistory(searchHistoryPage.value);
+  if (tab === 'alert') fetchAlertRules();
 }
 
 watch(keyword, v => localStorage.setItem('roz_shop_keyword', v));
@@ -187,7 +204,57 @@ const priceUnitLabel = computed(() => priceUnit.value === 1 ? 'z' : '萬z');
 
 const priceMinZ = computed(() => priceMin.value !== '' ? Number(priceMin.value) * priceUnit.value : null);
 const priceMaxZ = computed(() => priceMax.value !== '' ? Number(priceMax.value) * priceUnit.value : null);
-const isFiltered = computed(() => priceMinZ.value !== null || priceMaxZ.value !== null);
+
+// ── 附加能力過濾（前端）─────────────────────────────────────────
+// 每一條件：{ keyword: string, operator: '>' | '>=' | '<' | '<=' | '=', value: string }
+const optFilters = ref([]);
+
+function addOptFilter() {
+  optFilters.value.push({ keyword: '', operator: '>', value: '' });
+}
+
+function removeOptFilter(idx) {
+  optFilters.value.splice(idx, 1);
+}
+
+function clearOptFilters() {
+  optFilters.value = [];
+}
+
+// 解析附加能力字串中的數字（取最後一個數字，例如「增加 15」→ 15）
+function parseOptValue(str) {
+  const matches = str.match(/-?\d+(\.\d+)?/g);
+  if (!matches) return null;
+  return Number(matches[matches.length - 1]);
+}
+
+// 判斷單一物品是否通過所有附加能力條件
+function matchOptFilters(item) {
+  if (optFilters.value.length === 0) return true;
+  const opts = [item.RandomOpt1, item.RandomOpt2, item.RandomOpt3, item.RandomOpt4, item.RandomOpt5].filter(Boolean);
+  for (const cond of optFilters.value) {
+    const kw = cond.keyword.trim().toLowerCase();
+    const threshold = cond.value !== '' ? Number(cond.value) : null;
+    if (!kw) continue; // 關鍵字空白略過此條件
+    // 找到含關鍵字的那條附加能力
+    const matched = opts.find(o => o.toLowerCase().includes(kw));
+    if (!matched) return false; // 沒找到直接不符合
+    if (threshold === null || isNaN(threshold)) continue; // 只要求有此能力，不限數值
+    const optVal = parseOptValue(matched);
+    if (optVal === null) return false;
+    switch (cond.operator) {
+      case '>':  if (!(optVal >  threshold)) return false; break;
+      case '>=': if (!(optVal >= threshold)) return false; break;
+      case '<':  if (!(optVal <  threshold)) return false; break;
+      case '<=': if (!(optVal <= threshold)) return false; break;
+      case '=':  if (!(optVal === threshold)) return false; break;
+    }
+  }
+  return true;
+}
+
+const hasOptFilter = computed(() => optFilters.value.some(f => f.keyword.trim() !== ''));
+const isFiltered = computed(() => priceMinZ.value !== null || priceMaxZ.value !== null || hasOptFilter.value);
 
 function togglePriceUnit() {
   if (priceUnit.value === 1) {
@@ -218,6 +285,7 @@ const shopResults = computed(() => {
   let list = [...shopResultsRaw.value];
   if (priceMinZ.value !== null) list = list.filter(i => Number(i.itemPrice) >= priceMinZ.value);
   if (priceMaxZ.value !== null) list = list.filter(i => Number(i.itemPrice) <= priceMaxZ.value);
+  if (hasOptFilter.value) list = list.filter(i => matchOptFilters(i));
   switch (sortKey.value) {
     case 'price_asc':
       list.sort((a, b) => Number(a.itemPrice) - Number(b.itemPrice));
@@ -260,7 +328,6 @@ const detailData = ref(null);
 const detailTab = ref('store');
 
 async function openDetail(item) {
-  await checkStatus();
   if (!loggedIn.value) {
     showLogin.value = true;
     return;
@@ -347,7 +414,8 @@ async function doSearch(page = 1) {
     errorMsg.value = '請輸入關鍵字';
     return;
   }
-  await checkStatus();
+  // 直接用前端 state 判斷，不再每次查詢前呼叫 checkStatus()。
+  // session 真正失效時由 authFetch + handleApiResponse 攔截（401 或 { error: '請先登入' }）。
   if (!loggedIn.value) {
     showLogin.value = true;
     return;
@@ -502,6 +570,13 @@ function slotDisplay(item) {
   return s.length ? s.join('・') : '-';
 }
 
+function randomOptDisplay(item) {
+  return [item.RandomOpt1, item.RandomOpt2, item.RandomOpt3, item.RandomOpt4, item.RandomOpt5].filter(Boolean);
+}
+
+// ── 商店結果顯示模式（table / card）─────────────────────────────
+const shopViewMode = ref(localStorage.getItem('roz_shop_viewmode') || 'table');
+watch(shopViewMode, v => localStorage.setItem('roz_shop_viewmode', v));
 // ── 成交資訊 Modal ───────────────────────────────────────────────
 const showHistoryDetail = ref(false);
 const historyDetailLoading = ref(false);
@@ -517,7 +592,6 @@ const historyDetailSortBy = ref('regDate_');
 const historyDetailSortDesc = ref('desc');
 
 async function openHistoryDetail(item) {
-  await checkStatus();
   if (!loggedIn.value) {
     showLogin.value = true;
     return;
@@ -598,7 +672,6 @@ const itemDetailData = ref(null);  // { name, desc, slotCount }
 
 async function openItemDetail(itemID_e) {
   if (!itemID_e) return;
-  await checkStatus();
   if (!loggedIn.value) {
     showLogin.value = true;
     return;
@@ -793,6 +866,109 @@ const randomOpts = computed(() => {
     detailData.value.RandomOpt3, detailData.value.RandomOpt4,
     detailData.value.RandomOpt5].filter(s => s);
 });
+
+// ── 價格警報 ─────────────────────────────────────────────────────
+const ALERT_BASE = () => commonStore.data.roz_url + '/alert';
+
+const alertRules = ref([]);
+const alertLoading = ref(false);
+const alertError = ref('');
+const alertForm = reactive({
+  keyword: '',
+  server: '529',
+  storeType: '0',
+  priceMin: '',
+  priceMax: '',
+  webhookUrl: '',
+});
+const alertSubmitting = ref(false);
+
+async function fetchAlertRules() {
+  if (!loggedIn.value) return;
+  alertLoading.value = true;
+  try {
+    const res = await authFetch(`${ALERT_BASE()}/rules`);
+    const data = await res.json();
+    alertRules.value = Array.isArray(data) ? data : [];
+  } catch (e) {
+    if (e.message !== 'SESSION_EXPIRED') alertError.value = '載入失敗：' + e.message;
+  } finally {
+    alertLoading.value = false;
+  }
+}
+
+async function addAlertRule() {
+  if (!alertForm.keyword.trim()) { alertError.value = '請輸入關鍵字'; return; }
+  if (!alertForm.webhookUrl.trim()) { alertError.value = '請輸入 Webhook URL'; return; }
+  alertError.value = '';
+  alertSubmitting.value = true;
+  try {
+    const res = await authFetch(`${ALERT_BASE()}/rules`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        keyword: alertForm.keyword.trim(),
+        server: alertForm.server,
+        storeType: alertForm.storeType,
+        priceMin: alertForm.priceMin !== '' ? Number(alertForm.priceMin) : null,
+        priceMax: alertForm.priceMax !== '' ? Number(alertForm.priceMax) : null,
+        webhookUrl: alertForm.webhookUrl.trim(),
+      }),
+    });
+    const data = await res.json();
+    if (data.error) { alertError.value = data.error; return; }
+    alertRules.value.unshift(data);
+    alertForm.keyword = '';
+    alertForm.priceMin = '';
+    alertForm.priceMax = '';
+    alertForm.webhookUrl = '';
+  } catch (e) {
+    if (e.message !== 'SESSION_EXPIRED') alertError.value = '新增失敗：' + e.message;
+  } finally {
+    alertSubmitting.value = false;
+  }
+}
+
+async function toggleAlertRule(rule) {
+  try {
+    const res = await authFetch(`${ALERT_BASE()}/rules/${rule.id}/toggle`, {
+      method: 'PATCH',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({enabled: rule.enabled === 1 ? false : true}),
+    });
+    const data = await res.json();
+    if (data.success) rule.enabled = rule.enabled === 1 ? 0 : 1;
+  } catch (e) {
+    if (e.message !== 'SESSION_EXPIRED') alertError.value = '操作失敗：' + e.message;
+  }
+}
+
+async function deleteAlertRule(id) {
+  if (!confirm('確定刪除此警報規則？')) return;
+  try {
+    const res = await authFetch(`${ALERT_BASE()}/rules/${id}`, {method: 'DELETE'});
+    const data = await res.json();
+    if (data.success) alertRules.value = alertRules.value.filter(r => r.id !== id);
+  } catch (e) {
+    if (e.message !== 'SESSION_EXPIRED') alertError.value = '刪除失敗：' + e.message;
+  }
+}
+
+async function runAlertNow() {
+  try {
+    const res = await authFetch(`${ALERT_BASE()}/run-now`, {method: 'POST'});
+    const data = await res.json();
+    alert(`執行完成：共檢查 ${data.checked} 條，觸發 ${data.triggered} 條`);
+  } catch (e) {
+    if (e.message !== 'SESSION_EXPIRED') alertError.value = '執行失敗：' + e.message;
+  }
+}
+
+function formatAlertDate(iso) {
+  if (!iso) return '-';
+  const d = new Date(iso);
+  return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
 </script>
 
 <template>
@@ -824,6 +1000,12 @@ const randomOpts = computed(() => {
                   :class="activeTab === 'searchHistory' ? 'bg-[#5e4b37] text-[#f1d483]' : 'text-[#a6937c] hover:text-[#e0d3b8]'">
             🕘 查詢紀錄
           </button>
+          <button @click="switchTab('alert')"
+                  class="px-3 py-1.5 text-sm font-bold rounded-md transition"
+                  :class="activeTab === 'alert' ? 'bg-[#5e4b37] text-[#f1d483]' : 'text-[#a6937c] hover:text-[#e0d3b8]'">
+            🔔 價格警報
+            <span v-if="alertRules.filter(r=>r.enabled===1).length > 0" class="ml-1 text-[10px] text-[#a6937c]">{{ alertRules.filter(r=>r.enabled===1).length }}</span>
+          </button>
         </div>
         <button v-if="!loggedIn" @click="showLogin = true"
                 class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition bg-[#4a1a1a] text-[#f0a8a8] border border-[#f0a8a8]/30 hover:bg-[#5a2020] animate-pulse">
@@ -843,7 +1025,7 @@ const randomOpts = computed(() => {
     <div class="max-w-[1400px] mx-auto">
 
       <!-- 搜尋列（查詢紀錄 tab 時隱藏） -->
-      <div v-show="activeTab !== 'searchHistory'" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-4">
+      <div v-show="activeTab !== 'searchHistory' && activeTab !== 'alert'" class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-4">
 
         <!-- 第一行：關鍵字 + 基本條件 + 查詢 -->
         <div class="flex flex-wrap gap-3 items-end">
@@ -917,10 +1099,59 @@ const randomOpts = computed(() => {
                       : 'bg-[#2c1e14] border-[#5e4b37] text-[#a6937c] hover:border-[#f1d483] hover:text-[#f1d483]'">
               {{ priceUnitLabel }}
             </button>
-            <button v-if="isFiltered" @click="priceMin = ''; priceMax = ''"
+            <button v-if="priceMinZ !== null || priceMaxZ !== null" @click="priceMin = ''; priceMax = ''"
                     class="pb-2 text-xs text-[#a6937c] hover:text-[#f0a8a8] transition mb-[1px]">
               ✕ 清除
             </button>
+          </div>
+        </div>
+
+        <!-- 第三行：附加能力過濾（商店 tab 才顯示） -->
+        <div v-if="activeTab === 'shop'" class="mt-3 pt-3 border-t border-[#5e4b37]/50">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs text-[#a6937c] font-bold">附加能力過濾</span>
+            <button @click="addOptFilter"
+                    class="text-xs px-2.5 py-1 rounded bg-[#2c1e14] border border-[#5e4b37] text-[#a6937c] hover:border-[#f1d483] hover:text-[#f1d483] transition">
+              + 新增條件
+            </button>
+            <button v-if="optFilters.length > 0" @click="clearOptFilters"
+                    class="text-xs text-[#a6937c] hover:text-[#f0a8a8] transition">
+              全部清除
+            </button>
+            <span class="text-[10px] text-[#5e4b37] ml-1">（過濾已載入的本頁結果）</span>
+          </div>
+          <div v-if="optFilters.length === 0" class="text-xs text-[#5e4b37] italic">
+            尚未設定條件，點「新增條件」來篩選附加能力
+          </div>
+          <div class="space-y-2">
+            <div v-for="(cond, idx) in optFilters" :key="idx"
+                 class="flex flex-wrap items-center gap-2">
+              <!-- 關鍵字輸入 -->
+              <input v-model="cond.keyword" type="text" placeholder="能力關鍵字，如：對植物"
+                     class="flex-1 min-w-36 bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-1.5 text-xs text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#a8d4f0] transition"/>
+              <!-- 運算符 -->
+              <select v-model="cond.operator"
+                      class="bg-[#2c1e14] border border-[#5e4b37] rounded px-2 py-1.5 text-xs text-[#e0d3b8] outline-none focus:border-[#a8d4f0] cursor-pointer transition">
+                <option value=">">＞ 大於</option>
+                <option value=">=">≥ 大於等於</option>
+                <option value="<">＜ 小於</option>
+                <option value="<=">≤ 小於等於</option>
+                <option value="=">＝ 等於</option>
+              </select>
+              <!-- 數值輸入 -->
+              <input v-model="cond.value" type="number" placeholder="數值（空白=只要有）"
+                     class="w-36 bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-1.5 text-xs text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#a8d4f0] transition"/>
+              <!-- 刪除 -->
+              <button @click="removeOptFilter(idx)"
+                      class="w-6 h-6 rounded-full bg-[#3d2b1f] text-[#6b5a4a] hover:bg-[#5a2020] hover:text-[#f0a8a8] border border-[#5e4b37] transition flex items-center justify-center text-xs font-bold shrink-0">
+                ✕
+              </button>
+              <!-- 預覽提示 -->
+              <span v-if="cond.keyword.trim()" class="text-[10px] text-[#5e8ab0] italic">
+                含「{{ cond.keyword.trim() }}」
+                <template v-if="cond.value !== ''">{{ cond.operator }} {{ cond.value }}</template>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -969,8 +1200,27 @@ const randomOpts = computed(() => {
           </div>
 
           <div v-if="shopResults.length > 0">
-            <!-- 寬螢幕：表格 -->
-            <div class="hidden md:block overflow-x-auto rounded-xl border border-[#5e4b37]">
+
+            <!-- ── 顯示模式切換 ── -->
+            <div class="flex items-center justify-end gap-1.5 mb-3">
+              <button @click="shopViewMode = 'table'"
+                      :class="shopViewMode === 'table'
+                        ? 'bg-[#5e4b37] text-[#f1d483] border-[#f1d483]/40'
+                        : 'bg-[#2c1e14] text-[#6b5a4a] border-[#5e4b37] hover:text-[#a6937c]'"
+                      class="px-2.5 py-1.5 rounded border text-xs font-bold transition flex items-center gap-1">
+                ☰ 表格
+              </button>
+              <button @click="shopViewMode = 'card'"
+                      :class="shopViewMode === 'card'
+                        ? 'bg-[#5e4b37] text-[#f1d483] border-[#f1d483]/40'
+                        : 'bg-[#2c1e14] text-[#6b5a4a] border-[#5e4b37] hover:text-[#a6937c]'"
+                      class="px-2.5 py-1.5 rounded border text-xs font-bold transition flex items-center gap-1">
+                ⊞ 卡片
+              </button>
+            </div>
+
+            <!-- ── 表格模式 ── -->
+            <div v-if="shopViewMode === 'table'" class="overflow-x-auto rounded-xl border border-[#5e4b37]">
               <table class="w-full text-sm">
                 <thead>
                 <tr class="bg-[#3d2b1f] text-[#f1d483] text-left">
@@ -978,6 +1228,7 @@ const randomOpts = computed(() => {
                   <th class="px-4 py-3 font-bold">道具名稱</th>
                   <th class="px-4 py-3 font-bold text-center">Slot</th>
                   <th class="px-4 py-3 font-bold">卡片</th>
+                  <th class="px-4 py-3 font-bold">附加能力</th>
                   <th class="px-4 py-3 font-bold text-right">單價</th>
                   <th class="px-4 py-3 font-bold text-right">數量</th>
                   <th class="px-4 py-3 font-bold text-center">類型</th>
@@ -997,13 +1248,18 @@ const randomOpts = computed(() => {
                   </td>
                   <td class="px-4 py-2.5 font-bold text-[#e0d3b8]">
                     {{ itemDisplayName(item) }}
-                    <span v-if="item.ItemGradeLevel > 0" class="text-[#f1d483] text-xs ml-1">★{{
-                        item.ItemGradeLevel
-                      }}</span>
+                    <span v-if="item.ItemGradeLevel > 0" class="text-[#f1d483] text-xs ml-1">★{{ item.ItemGradeLevel }}</span>
                   </td>
                   <td class="px-4 py-2.5 text-center text-[#a6937c] text-xs">{{ item.DefaultSlotCount ?? '-' }}</td>
                   <td class="px-4 py-2.5 text-xs">
                     <span v-if="slotDisplay(item) !== '-'" class="text-[#e8c870]">{{ slotDisplay(item) }}</span>
+                    <span v-else class="text-[#5e4b37]">-</span>
+                  </td>
+                  <td class="px-4 py-2.5 text-xs">
+                    <template v-if="randomOptDisplay(item).length > 0">
+                      <div v-for="(opt, oi) in randomOptDisplay(item)" :key="oi"
+                           class="text-[#a8d4f0] leading-snug">{{ opt }}</div>
+                    </template>
                     <span v-else class="text-[#5e4b37]">-</span>
                   </td>
                   <td class="px-4 py-2.5 text-right font-bold text-[#f1d483]">{{ formatPrice(item.itemPrice) }} z</td>
@@ -1019,34 +1275,62 @@ const randomOpts = computed(() => {
               </table>
             </div>
 
-            <!-- 窄螢幕：卡片 -->
-            <div class="md:hidden space-y-2">
+            <!-- ── 卡片模式 ── -->
+            <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
               <div v-for="(item, i) in shopResults" :key="i"
-                   class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-3">
-                <div class="flex items-start justify-between gap-2 mb-1.5">
-                  <p class="font-bold text-[#e0d3b8] text-sm leading-snug">
-                    {{ itemDisplayName(item) }}
-                    <span v-if="item.ItemGradeLevel > 0" class="text-[#f1d483] text-xs ml-1">★{{
-                        item.ItemGradeLevel
-                      }}</span>
-                  </p>
-                  <span class="text-xs px-2 py-0.5 rounded-full shrink-0"
+                   class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-3 flex flex-col gap-2 hover:border-[#f1d483]/40 transition">
+                <!-- 頂部：道具名稱 + 類型 badge -->
+                <div class="flex items-start justify-between gap-2">
+                  <div>
+                    <p class="font-bold text-[#e0d3b8] text-sm leading-snug">
+                      {{ itemDisplayName(item) }}
+                    </p>
+                    <span v-if="item.ItemGradeLevel > 0" class="text-[#f1d483] text-xs">★{{ item.ItemGradeLevel }}</span>
+                  </div>
+                  <span class="text-xs px-2 py-0.5 rounded-full shrink-0 mt-0.5"
                         :class="item.storetype === 0 ? 'bg-[#2a4a3a] text-[#a8f0c8]' : 'bg-[#2a3a4a] text-[#a8c0f0]'">
                     {{ storeTypeLabel(item.storetype) }}
                   </span>
                 </div>
-                <button @click="openDetail(item)" class="text-xs text-[#f1d483] hover:underline mb-2 block">
-                  {{ item.storeName }}
-                </button>
-                <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs">
-                  <span class="text-[#f1d483] font-bold">{{ formatPrice(item.itemPrice) }} z</span>
-                  <span class="text-[#a6937c]">× {{ item.itemCNT }}</span>
-                  <span class="text-[#a6937c]">Slot {{ item.DefaultSlotCount ?? '-' }}</span>
-                  <span v-if="slotDisplay(item) !== '-'" class="text-[#e8c870]">{{ slotDisplay(item) }}</span>
-                  <button v-if="isProntera(item.mapName)" @click="openMapModal(item)"
-                          class="text-[#a6937c] hover:text-[#f1d483] transition">
-                    📍 {{ item.xPos }}/{{ item.yPos }}
+
+                <!-- 商店名稱 + 地圖 -->
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <button @click="openDetail(item)" class="text-xs text-[#f1d483] hover:underline font-bold">
+                    {{ item.storeName }}
                   </button>
+                  <button v-if="isProntera(item.mapName)" @click="openMapModal(item)"
+                          class="text-[10px] text-[#a6937c] hover:text-[#f1d483] transition">
+                    📍{{ item.xPos }}/{{ item.yPos }}
+                  </button>
+                </div>
+
+                <!-- 分隔線 -->
+                <div class="border-t border-[#5e4b37]"></div>
+
+                <!-- 屬性列 -->
+                <div class="grid grid-cols-2 gap-x-3 gap-y-1 text-xs">
+                  <div class="text-[#6b5a4a]">Slot</div>
+                  <div class="text-[#a6937c]">{{ item.DefaultSlotCount ?? '-' }}</div>
+                  <div class="text-[#6b5a4a]">卡片</div>
+                  <div class="text-[#e8c870]">
+                    <span v-if="slotDisplay(item) !== '-'">{{ slotDisplay(item) }}</span>
+                    <span v-else class="text-[#5e4b37]">-</span>
+                  </div>
+                </div>
+
+                <!-- 附加能力 -->
+                <div v-if="randomOptDisplay(item).length > 0"
+                     class="bg-[#2c1e14] rounded-lg px-2.5 py-2 space-y-0.5">
+                  <div v-for="(opt, oi) in randomOptDisplay(item)" :key="oi"
+                       class="text-[#a8d4f0] text-xs leading-snug">
+                    · {{ opt }}
+                  </div>
+                </div>
+
+                <!-- 底部：價格 + 數量 -->
+                <div class="flex items-end justify-between mt-auto pt-1">
+                  <span class="text-[#f1d483] font-bold text-base">{{ formatPrice(item.itemPrice) }} z</span>
+                  <span class="text-[#6b5a4a] text-xs">× {{ item.itemCNT }}</span>
                 </div>
               </div>
             </div>
@@ -1079,11 +1363,17 @@ const randomOpts = computed(() => {
           <div v-else-if="shopResultsRaw.length > 0 && isFiltered"
                class="text-center py-12 text-[#6b5a4a]">
             <div class="text-3xl mb-2">🔍</div>
-            <p class="text-sm">目前價格區間內無結果</p>
-            <button @click="priceMin = ''; priceMax = ''"
-                    class="mt-3 text-xs text-[#a6937c] hover:text-[#f1d483] underline transition">
-              清除價格過濾
-            </button>
+            <p class="text-sm">目前過濾條件內無結果</p>
+            <div class="flex justify-center gap-3 mt-3 flex-wrap">
+              <button v-if="priceMinZ !== null || priceMaxZ !== null" @click="priceMin = ''; priceMax = ''"
+                      class="text-xs text-[#a6937c] hover:text-[#f1d483] underline transition">
+                清除價格過濾
+              </button>
+              <button v-if="hasOptFilter" @click="clearOptFilters"
+                      class="text-xs text-[#a6937c] hover:text-[#f1d483] underline transition">
+                清除附加能力過濾
+              </button>
+            </div>
           </div>
 
           <!-- 尚未查詢 -->
@@ -1484,6 +1774,183 @@ const randomOpts = computed(() => {
           <div v-else class="text-center py-16 text-[#6b5a4a]">
             <div class="text-4xl mb-3">📭</div>
             <p>尚無查詢紀錄</p>
+          </div>
+        </div>
+
+        <!-- ══ 價格警報 tab ══ -->
+        <div v-show="activeTab === 'alert'">
+          <!-- 未登入提示 -->
+          <div v-if="!loggedIn" class="text-center py-16 text-[#6b5a4a]">
+            <div class="text-4xl mb-3">🔑</div>
+            <p>請先登入才能使用價格警報</p>
+          </div>
+
+          <div v-else>
+            <!-- 新增規則表單 -->
+            <div class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-4 mb-4">
+              <h3 class="text-sm font-bold text-[#f1d483] mb-3">➕ 新增警報規則</h3>
+              <div class="flex flex-wrap gap-3 items-end">
+                <!-- 關鍵字 -->
+                <div class="flex-1 min-w-40">
+                  <label class="text-xs text-[#a6937c] mb-1 block">道具關鍵字</label>
+                  <input v-model="alertForm.keyword" type="text" placeholder="輸入道具名稱..."
+                         class="w-full bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition"/>
+                </div>
+                <!-- 伺服器 -->
+                <div>
+                  <label class="text-xs text-[#a6937c] mb-1 block">伺服器</label>
+                  <select v-model="alertForm.server"
+                          class="bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] outline-none focus:border-[#f1d483] cursor-pointer transition">
+                    <option value="529">西格倫</option>
+                    <option value="629">艾克瑟</option>
+                  </select>
+                </div>
+                <!-- 類型 -->
+                <div>
+                  <label class="text-xs text-[#a6937c] mb-1 block">類型</label>
+                  <select v-model="alertForm.storeType"
+                          class="bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] outline-none focus:border-[#f1d483] cursor-pointer transition">
+                    <option value="0">全部</option>
+                    <option value="1">收購</option>
+                    <option value="2">販售</option>
+                  </select>
+                </div>
+                <!-- 價格範圍 -->
+                <div class="flex items-end gap-2">
+                  <div>
+                    <label class="text-xs text-[#a6937c] mb-1 block">最低價格（z）</label>
+                    <input v-model="alertForm.priceMin" type="number" min="0" placeholder="不限"
+                           class="w-28 bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition"/>
+                  </div>
+                  <span class="text-[#5e4b37] pb-2 select-none">～</span>
+                  <div>
+                    <label class="text-xs text-[#a6937c] mb-1 block">最高價格（z）</label>
+                    <input v-model="alertForm.priceMax" type="number" min="0" placeholder="不限"
+                           class="w-28 bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition"/>
+                  </div>
+                </div>
+              </div>
+              <!-- Webhook URL -->
+              <div class="mt-3">
+                <label class="text-xs text-[#a6937c] mb-1 block">Discord Webhook URL</label>
+                <input v-model="alertForm.webhookUrl" type="text" placeholder="https://discord.com/api/webhooks/..."
+                       class="w-full bg-[#2c1e14] border border-[#5e4b37] rounded px-3 py-2 text-sm text-[#e0d3b8] placeholder-[#6b5a4a] outline-none focus:border-[#f1d483] transition"/>
+                <p class="text-[10px] text-[#6b5a4a] mt-1">Discord 頻道設定 → 整合 → Webhook → 複製 Webhook URL</p>
+              </div>
+              <p v-if="alertError" class="mt-2 text-sm text-[#f0a8a8] bg-[#4a1a1a] border border-[#f0a8a8]/20 rounded px-3 py-2">⚠️ {{ alertError }}</p>
+              <div class="flex justify-end gap-2 mt-3">
+                <button @click="runAlertNow"
+                        class="px-4 py-2 rounded bg-[#2a3a2a] text-[#a8f0c8] border border-[#a8f0c8]/20 hover:bg-[#3a4a3a] transition text-sm">
+                  ▶ 立即執行
+                </button>
+                <button @click="addAlertRule" :disabled="alertSubmitting"
+                        class="px-4 py-2 rounded bg-[#5e4b37] text-[#f1d483] border border-[#f1d483]/20 font-bold hover:bg-[#7a6350] disabled:opacity-50 disabled:cursor-not-allowed transition text-sm">
+                  {{ alertSubmitting ? '新增中...' : '➕ 新增規則' }}
+                </button>
+              </div>
+            </div>
+
+            <!-- 規則清單 -->
+            <div v-if="alertLoading" class="text-center py-12 text-[#a6937c] italic">載入中...</div>
+
+            <div v-else-if="alertRules.length > 0">
+              <!-- 寬螢幕：表格 -->
+              <div class="hidden md:block overflow-x-auto rounded-xl border border-[#5e4b37]">
+                <table class="w-full text-sm">
+                  <thead>
+                  <tr class="bg-[#3d2b1f] text-[#f1d483] text-left">
+                    <th class="px-4 py-3 font-bold">關鍵字</th>
+                    <th class="px-4 py-3 font-bold text-center">伺服器</th>
+                    <th class="px-4 py-3 font-bold text-center">類型</th>
+                    <th class="px-4 py-3 font-bold text-center">價格範圍</th>
+                    <th class="px-4 py-3 font-bold text-center">狀態</th>
+                    <th class="px-4 py-3 font-bold text-center">上次觸發</th>
+                    <th class="px-4 py-3 font-bold text-center">操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr v-for="rule in alertRules" :key="rule.id"
+                      class="border-t border-[#5e4b37] hover:bg-[#3d2b1f] transition"
+                      :class="rule.enabled === 0 ? 'opacity-50' : ''">
+                    <td class="px-4 py-2.5 font-bold text-[#f1d483]">{{ rule.keyword }}</td>
+                    <td class="px-4 py-2.5 text-center text-[#a6937c] text-xs">{{ rule.server === '529' ? '西格倫' : '艾克瑟' }}</td>
+                    <td class="px-4 py-2.5 text-center">
+                      <span class="text-xs px-2 py-0.5 rounded-full"
+                            :class="rule.storeType === '1' ? 'bg-[#2a3a4a] text-[#a8c0f0]' : rule.storeType === '2' ? 'bg-[#2a4a3a] text-[#a8f0c8]' : 'bg-[#3d2b1f] text-[#a6937c]'">
+                        {{ rule.storeType === '1' ? '收購' : rule.storeType === '2' ? '販售' : '全部' }}
+                      </span>
+                    </td>
+                    <td class="px-4 py-2.5 text-center text-xs text-[#e0d3b8]">
+                      <span v-if="rule.priceMin !== null || rule.priceMax !== null">
+                        {{ rule.priceMin !== null ? formatPrice(rule.priceMin) + ' z' : '不限' }}
+                        ～
+                        {{ rule.priceMax !== null ? formatPrice(rule.priceMax) + ' z' : '不限' }}
+                      </span>
+                      <span v-else class="text-[#6b5a4a]">不限</span>
+                    </td>
+                    <td class="px-4 py-2.5 text-center">
+                      <button @click="toggleAlertRule(rule)"
+                              class="text-xs px-2.5 py-0.5 rounded-full border transition"
+                              :class="rule.enabled === 1 ? 'bg-[#2a4a3a] border-[#a8f0c8]/30 text-[#a8f0c8] hover:bg-[#1a3a2a]' : 'bg-[#3d2b1f] border-[#5e4b37] text-[#6b5a4a] hover:border-[#f1d483] hover:text-[#f1d483]'">
+                        {{ rule.enabled === 1 ? '✅ 啟用中' : '⏸ 已停用' }}
+                      </button>
+                    </td>
+                    <td class="px-4 py-2.5 text-center text-xs text-[#a6937c]">{{ formatAlertDate(rule.lastTriggeredAt) }}</td>
+                    <td class="px-4 py-2.5 text-center">
+                      <button @click="deleteAlertRule(rule.id)"
+                              class="text-xs px-2.5 py-1 rounded border border-[#5e4b37] text-[#a6937c] hover:border-[#f0a8a8] hover:text-[#f0a8a8] transition">
+                        🗑 刪除
+                      </button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- 窄螢幕：卡片 -->
+              <div class="md:hidden space-y-2">
+                <div v-for="rule in alertRules" :key="rule.id"
+                     class="bg-[#3d2b1f] border border-[#5e4b37] rounded-xl p-3"
+                     :class="rule.enabled === 0 ? 'opacity-50' : ''">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <div>
+                      <p class="font-bold text-[#f1d483]">{{ rule.keyword }}</p>
+                      <p class="text-[10px] text-[#a6937c] mt-0.5">
+                        {{ rule.server === '529' ? '西格倫' : '艾克瑟' }} ·
+                        {{ rule.storeType === '1' ? '收購' : rule.storeType === '2' ? '販售' : '全部' }}
+                      </p>
+                    </div>
+                    <div class="flex gap-1.5">
+                      <button @click="toggleAlertRule(rule)"
+                              class="text-xs px-2 py-1 rounded border transition"
+                              :class="rule.enabled === 1 ? 'border-[#a8f0c8]/30 text-[#a8f0c8]' : 'border-[#5e4b37] text-[#6b5a4a]'">
+                        {{ rule.enabled === 1 ? '✅' : '⏸' }}
+                      </button>
+                      <button @click="deleteAlertRule(rule.id)"
+                              class="text-xs px-2 py-1 rounded border border-[#5e4b37] text-[#a6937c] hover:text-[#f0a8a8]">
+                        🗑
+                      </button>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-y-1 text-xs">
+                    <span class="text-[#a6937c]">價格範圍</span>
+                    <span class="text-right text-[#e0d3b8]">
+                      <template v-if="rule.priceMin !== null || rule.priceMax !== null">
+                        {{ rule.priceMin !== null ? formatPrice(rule.priceMin) : '不限' }} ～ {{ rule.priceMax !== null ? formatPrice(rule.priceMax) : '不限' }} z
+                      </template>
+                      <template v-else><span class="text-[#6b5a4a]">不限</span></template>
+                    </span>
+                    <span class="text-[#a6937c]">上次觸發</span>
+                    <span class="text-right text-[#a6937c]">{{ formatAlertDate(rule.lastTriggeredAt) }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div v-else class="text-center py-16 text-[#6b5a4a]">
+              <div class="text-4xl mb-3">🔔</div>
+              <p>尚無警報規則，新增一條開始監控</p>
+            </div>
           </div>
         </div>
 
