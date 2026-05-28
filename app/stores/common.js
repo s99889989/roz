@@ -10,8 +10,8 @@ export const useCommonStore = defineStore('useFamilyStore', () => {
   // http://localhost:4000
   // https://api.karltw.com
   const data = reactive({
-    main_url: 'https://api.karltw.com:8080',
-    roz_url:  'https://api.karltw.com:8000',
+    main_url: 'https://api.karltw.com',
+    roz_url:  'https://madustrialtd.asuscomm.com:8000',
   })
 
   const rozUser = reactive({ name: '', email: '', picture: '' })
